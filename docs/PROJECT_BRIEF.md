@@ -6,6 +6,12 @@ Create a **fourth, author-facing academic revision report** for *Kırâatlerin R
 
 The earlier reports are comprehensive but too technical and repetitive for the intended author. The fourth report must transform those findings into a practical correction guide.
 
+The controlled editorial workflow now has **seven stages**. Stages 1-6 produce and audit Markdown working artifacts. Stage 7 creates the final author-facing Markdown report at:
+
+`final/fourth-report.md`
+
+Only after the user reviews and approves that Markdown will the same content be converted into DOCX in a separate later step.
+
 ## User-facing correction unit
 
 The preferred unit is:
@@ -29,6 +35,7 @@ When two or more passages must be merged, moved or jointly rewritten, show the r
 - “completed / partially completed” bookkeeping
 - giant red-text inventories
 - raw technical metrics that do not tell the author what to change
+- internal stage codes and coverage ledgers
 
 ## Keep where actionable
 
@@ -42,8 +49,16 @@ When two or more passages must be merged, moved or jointly rewritten, show the r
 - clear language/tashih errors
 - resolvable bibliography errors
 
-## Naming
+## Source-safety rule
 
-Final DOCX target:
+Do not invent missing names, dates, works, readings, variants, page numbers, DOI values, or bibliographic details. When the project sources do not safely resolve a detail, remove or soften the unsupported detail when possible; otherwise mark the source limit plainly.
+
+## Final formats
+
+Primary reviewed artifact:
+
+`final/fourth-report.md`
+
+Later DOCX target after Markdown approval:
 
 `Kiraatlerin_Rivayetinde_Resm-i_Mushafin_Etkisi_Yazar_Icin_Nihai_Duzeltme_ve_Redaksiyon_Raporu.docx`
