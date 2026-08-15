@@ -1,185 +1,134 @@
-# AŞAMA 1 — Üç Raporun Süzülmesi ve Nihai Sorun Envanterinin Oluşturulması
+# AŞAMA 1 — Rapor Bulgularının Süzülmesi ve Tekilleştirilmiş Aday Sorun Envanteri
 
-Daha önce hazırlanan:
+Bu aşama, yazar için hazırlanacak Dördüncü Raporun **aday sorun havuzunu** oluşturur. Henüz kitap metni için yeni cümleler yazma ve nihai raporu hazırlama.
 
-- birinci kapsamlı akademik denetim raporunu,
-- ikinci metinsel akış, geçiş, tekrar ve anlatım denetimi raporunu,
-- üçüncü kalan düzeltmeler ve uygulama kontrol raporunu,
-- bunların birleştirildiği nihai raporu,
-- `düzeltilecekler` dosyasını,
-- güncel `redaktörden gelen` kitap nüshasını
+## Çalışma sözleşmesi
 
-esas al.
+1. `AGENTS.md` dosyasını önce oku ve bağlayıcı kabul et.
+2. Yalnız `editorial/fourth-report` dalında çalış. `main` ve `source/` altındaki dosyaları değiştirme.
+3. Dış kaynak veya internet kullanma.
+4. Bu aşamanın tek yazılabilir çıktısı `work/stage-01-final-inventory.md` dosyasıdır. Placeholder içeriğini tamamen değiştir.
+5. Aşama tamamlanınca yalnız bu aşama çıktısını commit et. Önerilen commit mesajı: `Stage 1: build deduplicated candidate issue inventory`.
+6. Sonraki aşamaya geçme.
 
-Bu, **Dördüncü Raporun hazırlanmasının 1. aşamasıdır.**
+## Kaynaklar ve kullanım biçimi
 
-Bu aşamada henüz Dördüncü Raporu yazma, DOCX oluşturma ve yeni düzeltme metinleri üretmeye başlama.
+Aşağıdaki dosyaları incele:
 
-## AMAÇ
+- `source/reports/report-01-kapsamli-akademik-son-denetim.docx`
+- `source/reports/report-02-akis-gecis-tekrar-anlatim.docx`
+- `source/reports/report-03-kalan-duzeltmeler-uygulama.docx`
+- `source/reports/combined-report.docx`
+- `source/notes/duzeltilecekler.docx`
+- gerektiğinde adayın yerini anlamak için `source/manuscript/current/redaktorden_gelen_extracted.md`
 
-Üç raporda ve ilgili proje dosyalarında bulunan bütün gerçek sorunları tek bir çalışma envanterinde toplamak; tekrar eden, artık geçerli olmayan, yalnız teknik nitelikte olan veya yazarın işlem yapmasını gerektirmeyen maddeleri ayıklamaktır.
+`combined-report.docx`, ilk üç raporun birleşik sürümüdür. Onu **dördüncü bağımsız bulgu kaynağı gibi sayma**; esas olarak eksik bulgu kontrolü ve çapraz doğrulama için kullan. Böylece aynı maddeyi iki kez sayma.
 
-Bu aşamanın sonunda elimizde:
+Bu aşamada güncel kitabı baştan sona yeniden denetleyerek yeni sorun üretmeye çalışma. Güncel kitap, adayın neye işaret ettiğini anlamak için yardımcı kaynaktır. Bir adayın güncel metinde gerçekten devam edip etmediğinin sistematik doğrulaması Aşama 2'nin görevidir.
 
-> **Dördüncü Raporda gerçekten ele alınması gereken tekilleştirilmiş sorunların eksiksiz ana listesi**
+## Amaç
 
-bulunmalıdır.
+Önceki raporlarda ve `düzeltilecekler` dosyasında bulunan bütün somut, yazar açısından işlem gerektirebilecek sorunları tek havuzda toplamak; aynı pasajla ilgili tekrarları birleştirmek ve Dördüncü Rapora taşınmaması gereken teknik veya meta maddeleri ayırmaktır.
 
-## 1. BÜTÜN BULGULARI TOPLA
+Aşağıdaki alanların tamamını kapsa:
 
-Üç rapordaki bütün somut sorunları incele.
-
-Özellikle şunları kaçırma:
-
-- bilimsel ve kavramsal sorunlar,
-- tarihsel anlatımda aşırı kesinlik,
-- kaynak ile iddia arasındaki uyumsuzluklar,
-- çelişkiler,
-- yanlış veya eksik ifadeler,
-- yanlış anlaşılabilecek cümleler,
-- tarih, kişi, eser ve bibliyografik sorunlar,
-- dil ve tashih sorunları,
-- paragraf içi akış sorunları,
-- paragraflar arası geçişler,
-- alt başlık ve bölüm geçişleri,
-- gereksiz tekrarlar,
-- gereksiz ara sonuçlar,
+- bilimsel ve kavramsal tutarlılık,
+- tarihsel anlatımda aşırı kesinlik veya yanlış anlaşılma riski,
+- kaynak ile iddia arasındaki uyumsuzluk,
+- bölüm veya pasajlar arası çelişki,
+- yanlış, eksik, bozuk veya muğlak ifade,
+- kişi, tarih, eser ve bibliyografik sorun,
+- dil ve tashih,
+- paragraf içi akış,
+- paragraflar, alt başlıklar ve bölümler arası geçiş,
+- gereksiz tekrar ve ara sonuç,
 - `Sonuç olarak` türü mekanik kapanışlar,
-- `değil/değildir` kullanımları,
-- kalıplaşmış ve mekanikleşen anlatım,
-- kırmızıyla işaretlenmiş ve gerçekten editoryal işlem gerektiren yerler,
-- kitap içinde kalmış yazar/redaktör/yayınevi notları,
-- önceki raporlarda “düzeltilmemiş” veya “kısmen düzeltilmiş” olarak kalan somut meseleler.
+- redaktörün değiştirilmesini istediği `değil/değildir` kullanımları,
+- kalıplaşmış veya mekanikleşen anlatım,
+- metinde kalmış yazar, redaktör veya yayınevi notları,
+- önceki raporlarda hâlen yapılacak işlem olarak görünen diğer somut maddeler.
 
-## 2. AYNI SORUNU TEKİLLEŞTİR
+## Tekilleştirme kuralı
 
-Aynı pasaj üç raporda farklı adlarla bulunuyorsa üç ayrı sorun oluşturma.
+Aynı pasaj farklı raporlarda farklı adlarla ele alınmışsa **tek aday sorun** oluştur. Örneğin bir paragraf bir raporda bilimsel sorun, diğerinde tekrar, üçüncüsünde kırmızı `değildir` kullanımı olarak görünüyorsa bunları ayrı ayrı çoğaltma. Bütün yönlerini aynı aday kaydında koru.
 
-Örneğin aynı paragraf:
+İki kayıt gerçekten farklı metin değişikliği gerektiriyorsa ayrı kalabilir. Yalnız konu benzerliği nedeniyle ilgisiz maddeleri birleştirme.
 
-- birinci raporda bilimsel sorun,
-- ikinci raporda tekrar veya akış sorunu,
-- üçüncü raporda kırmızı `değildir` işareti
+## Dördüncü Rapor havuzuna alınmayacaklar
 
-olarak geçmiş olabilir.
+Aşağıdaki kayıtları ayrı bir **Dışarıda Bırakılanlar Defteri**ne al; nihai aday listesine katma:
 
-Bunları tek bir ana sorun altında birleştir ve o sorunun bütün yönlerini iç çalışma notunda koru.
+- yalnız “tamamlandı/düzeltildi” bilgisini veren maddeler,
+- iyi veya korunabilir olduğu için açıklanan yerler,
+- önceki raporların tarihçesi ve karşılaştırma tabloları,
+- yönetici özeti, kapatma matrisi, uygulama sırası ve yayın kararı,
+- Word Heading stilleri, TOC/PAGEREF, OOXML, `run`, RTL/bidi, Zotero alanları, render/PDF prova gibi yazarın doğrudan çözemeyeceği teknik üretim meseleleri,
+- yalnız istatistik veya izleme amacı taşıyan kırmızı metin/karakter envanterleri.
 
-Aynı metnin nihai raporda birkaç kez düzeltilmesini gerektirecek çoğaltmalardan kaçın.
+Teknik görünen bir mesele metnin kendisinde yazarın düzeltebileceği gerçek bir hata oluşturuyorsa aday olarak koru. Örneğin yanlış yazılmış bir kelime metinsel sorundur; RTL `run` yapısı değildir.
 
-## 3. ŞUNLARI DÖRDÜNCÜ RAPOR HAVUZUNDAN ÇIKAR
+## Özellikle kaybolmaması gereken adaylar
 
-Yazarın doğrudan yapacağı bir işlem bulunmuyorsa aşağıdaki türde maddeleri nihai sorun havuzuna alma:
+Aşağıdaki liste hatırlatıcıdır; bununla sınırlı kalma:
 
-- zaten tamamen düzeltilmiş sorunlar,
-- yalnız “tamamlandı” bilgisini veren kayıtlar,
-- eski raporların karşılaştırma veya durum tabloları,
-- “önceki raporda vardı/yoktu” gibi rapor tarihçesi,
-- yönetici özeti,
-- kapanış matrisi,
-- yayın hazırlığı kararı,
-- nihai değerlendirme,
-- uygulama sırası gibi proje yönetimi bilgileri,
-- Word Heading stilleri,
-- TOC/PAGEREF,
-- OOXML,
-- `run`,
-- RTL/bidi,
-- Zotero aktif alanları,
-- Word alan kodları,
-- render/PDF teknik prova işlemleri,
-- yalnız teknik üretim veya dizgi personelinin anlayacağı sorunlar.
-
-Ancak teknik görünen bir mesele **metnin kendisinde yazarın düzeltebileceği gerçek bir hata oluşturuyorsa** onu koru.
-
-Örneğin yanlış yazılmış bir Arapça kelime metinsel sorundur; fakat RTL `run` yapısı yazar raporuna ait değildir.
-
-## 4. DÜZELTİLMİŞ MADDELERİ AYIKLA
-
-Bir rapor eski bir sorunun mevcut olduğunu söylüyorsa yalnız rapora güvenme.
-
-Güncel kitap nüshasında artık gerçekten giderilmiş olan sorunları Dördüncü Rapor havuzundan çıkar.
-
-Dördüncü Rapor yalnız **hâlen yapılması gereken işleri** içerecektir.
-
-## 5. BİBLİYOGRAFİK VE KAYNAK SORUNLARINI KORU
-
-Yazarın anlayabileceği ve düzeltebileceği:
-
-- açıkça bozuk tarihler,
-- müellif/eser adı sorunları,
-- yinelenmiş DOI biçimleri,
-- metin içinde kalmış `(?)`,
-- açık bibliyografik yazım sorunları
-
-envanterde kalsın.
-
-Fakat doğru bilgi proje dosyalarından doğrulanamıyorsa bu aşamada tahmin üretme.
-
-## 6. İÇ ÇALIŞMA ENVANTERİ
-
-Her gerçek sorun için geçici olarak şu bilgileri tut:
-
-- geçici iç çalışma numarası,
-- kitap bölümü,
-- alt başlık,
-- mümkünse güncel sayfa,
-- problemli pasajın başlangıcı,
-- sorun türü,
-- sorunun kısa açıklaması,
-- hangi rapor veya raporlarda geçtiği,
-- aynı sorunla birleştirilen diğer kayıtlar,
-- yazarın doğrudan düzeltebileceği bir mesele olup olmadığı,
-- sonraki aşamada bağlam doğrulaması gerekip gerekmediği.
-
-Bu numaralar yalnız çalışma içindir; nihai Dördüncü Raporda kullanılmayacaktır.
-
-## 7. ÖZELLİKLE KONTROL ET
-
-Şu meselelerin envanterde kaybolmadığından emin ol:
-
-- metin içinde kalmış yayınevi/yazar/redaktör notları,
-- B1-04 benzeri “ikinci maddeye yedirilecekti” türü tamamlanmamış editoryal işlemler,
+- metinde kalmış açık yazar/redaktör/yayınevi notları ve B1-04 benzeri tamamlanmamış editoryal işlemler,
 - mushaf sayısına ilişkin bölümler arası tutarsızlık,
 - Zerkeşî/İbnü’l-Cezerî kronoloji sorunu,
-- Hârice kimliği,
-- Ebû Şâme tarihi,
-- bozuk ölüm tarihleri,
+- Hârice kimliği ve Ebû Şâme tarihindeki tutarsızlıklar,
+- açıkça bozuk ölüm tarihleri ve `(?)` kayıtları,
 - resm-i mushaf / resm-i Osmânî ayrımı,
-- resmin özneleştirilmesi,
+- resmin özneleştirilmesi veya kırâatleri üreten bir unsur gibi sunulması,
 - kırâat/rivâyet/tarîk/vecih ayrımları,
-- şâz kırâat değerlendirmeleri,
-- üçüncü bölümde mana/hikmet iddiaları,
-- 3.7-3.12 arasındaki tekrar ve yapısal sorunlar,
-- ikinci bölümün kavramsal boşlukları,
+- şâz kırâat ve resme uygunluk değerlendirmeleri,
+- üçüncü bölümde mana/hikmet yorumlarının delil düzeyi,
+- 3.7-3.12 arasındaki tekrar ve mimari sorunlar,
+- ikinci bölümdeki kavramsal boşluklar,
 - önemli bölüm ve alt başlık geçişleri,
-- `değil/değildir`,
-- `Sonuç olarak`,
-- gereksiz ara sonuçlar,
-- kalıplaşmış anlatım,
-- açık dil/tashih sorunları,
-- kaynakçada yazarın düzeltebileceği açık hatalar.
+- `değil/değildir`, `Sonuç olarak`, gereksiz ara özetler ve kalıplaşmış anlatım,
+- açık dil/tashih ve kaynakça hataları.
 
-Bu liste yalnız hatırlatmadır; bununla sınırlı kalma.
+## Aday kayıt biçimi
 
-## 8. ÇIKTI
+Her aday için geçici bir iç çalışma kimliği kullan: `CAND-001`, `CAND-002` ... Bu kimlikler nihai yazar raporuna taşınmayacaktır.
 
-Bu aşamada yeni kitap metni yazma.
+Her kayıt en az şu alanları içersin:
 
-Bana yalnız:
+- **Kimlik**
+- **Kitap bölümü / alt başlık**
+- **Pasajı bulmak için başlangıç ifadesi** (raporlarda yeterli bilgi varsa)
+- **Aday sorunun kısa açıklaması**
+- **Sorunun boyutları**: bilimsel / kavramsal / tarihsel / dil / akış / tekrar / bibliyografik vb.
+- **Kaynak rapor(lar)**: hangi rapor veya not dosyasından geldiği
+- **Birleştirilen kayıtlar**: varsa
+- **Aşama 2'de özellikle doğrulanacak nokta**
 
-# DÖRDÜNCÜ RAPOR İÇİN TEMİZLENMİŞ NİHAİ SORUN ENVANTERİ
+Bu aşamada sayfa numarası kesin değilse tahmin etme. Aşama 2'de güncel kitap üzerinden doğrulanacaktır.
 
-başlığı altında, kitap sırasına göre düzenlenmiş tekilleştirilmiş sorun listesini ver.
+## Dışarıda bırakılanlar defteri
 
-Her sorun için kısa fakat yeterli açıklama kullan.
+Tekrarlanma, teknik olma, açıkça tamamlanmış olma veya yazar açısından işlem gerektirmeme nedeniyle taşınmayan kayıtları kısa biçimde ayrı bölümde göster. Böylece hiçbir bulgunun sessizce kaybolmadığı görülebilsin.
 
-Ayrıca en sonda yalnız üç toplam sayı ver:
+## Sayım kuralı
 
-- ilk taramada bulunan toplam kayıt,
-- tekrar/düzeltilmiş/teknik olduğu için çıkarılan kayıt,
-- sonraki aşamaya geçen tekilleştirilmiş gerçek sorun sayısı.
+Aşama sonunda yalnız doğrulanabilir sayıları ver:
 
-Tahmin üretme.
+1. raporlardan/notlardan çıkarılan ham aday kayıt sayısı,
+2. birleştirilen tekrar kayıt sayısı,
+3. teknik/meta/tamamlanmış olduğu için dışarıda bırakılan kayıt sayısı,
+4. Aşama 2'ye geçen tekilleştirilmiş aday sorun sayısı.
 
-Bu aşama bitince **dur ve Aşama 2’ye geçme.**
+Aynı birleşik raporu bağımsız kaynak gibi tekrar sayarak sayıları şişirme. Kesin sayım yapılamıyorsa sayı uydurma; nedenini açıkça belirt.
+
+## Çıktı
+
+`work/stage-01-final-inventory.md` dosyasını şu ana başlıklarla oluştur:
+
+1. `# Aşama 1 — Tekilleştirilmiş Aday Sorun Envanteri`
+2. `## Aday Sorunlar`
+3. `## Dışarıda Bırakılanlar Defteri`
+4. `## Sayım ve Kapsam Özeti`
+5. `## Aşama 2 İçin Açık Noktalar`
+
+Bu aşamada **önerilen nihai kitap cümlelerini sistematik olarak yazma**. Amaç yalnız temiz, izlenebilir ve eksiksiz aday havuzudur.
+
+Dosyayı yaz, kendi içinde tutarlılığını kontrol et, commit et ve **dur**.
