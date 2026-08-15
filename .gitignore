@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Word temporary/lock files
+~$*.docx
+~$*.doc
+
+# Temporary/render outputs
+.tmp/
+tmp/
+render/
+renders/
+*.pdf.tmp
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# Python/tool caches
+__pycache__/
+*.pyc
