@@ -1,241 +1,185 @@
-# AŞAMA 4 — Kitap Geneline Yayılan Değil/Değildir, Sonuç Olarak, Geçiş ve Kalıplaşmış Anlatım Sorunlarının Çözülmesi
+# AŞAMA 4 — Kitap Genelindeki Tekrarlanan, Kalıplaşmış ve Geçişe İlişkin Sorunların Sistematik Çözümü
 
-Aşama 1, 2 ve 3’te üretilen çalışma sonuçlarını ve güncel kitap nüshasını birlikte kullan.
+Bu aşama, tek bir bölüme bağlı olmayan ve kitap boyunca tekrar eden anlatım/akış sorunlarını sistematik olarak tarar. Aşama 3'te zaten çözülen pasajları gereksiz biçimde çoğaltma.
 
-Bu, Dördüncü Raporun hazırlanmasının **4. aşamasıdır.**
+## Çalışma sözleşmesi
 
-Aşama 3’te zaten çözülmüş bir pasajı yeniden çoğaltma. Aynı sorun daha önce çözüldüyse yeni çözüm üretmek yerine o çözümle tutarlılığını kontrol et.
+1. `AGENTS.md` dosyasını önce oku ve bağlayıcı kabul et.
+2. Yalnız `editorial/fourth-report` dalında çalış. `main`, `source/`, `prompts/` ve önceki aşama çıktılarını değiştirme.
+3. `work/stage-02-verified-inventory.md` ve `work/stage-03-direct-revisions.md` tamamlanmış değilse dur.
+4. Dış kaynak veya internet kullanma.
+5. Bu aşamanın tek yazılabilir çıktısı `work/stage-04-crosscutting-revisions.md` dosyasıdır. Placeholder içeriğini tamamen değiştir.
+6. Aşama tamamlanınca yalnız bu aşama çıktısını commit et. Önerilen commit mesajı: `Stage 4: resolve cross-cutting repetition and transition issues`.
+7. Aşama 5'e geçme.
 
-Henüz nihai DOCX oluşturma.
+## Kaynaklar
 
-## AMAÇ
+- bağlayıcı güncel nüsha: `source/manuscript/current/redaktorden_gelen.docx`
+- arama yardımcısı: `source/manuscript/current/redaktorden_gelen_extracted.md`
+- zorunlu redaktör/yazar notları: `source/notes/duzeltilecekler.docx`
+- önceki bulgu ve işaret envanterleri: `source/reports/`
+- Aşama 2 ve 3 çıktıları
 
-Kitabın yalnız belirli bir bölümüne değil, bütününe yayılan:
+Kırmızı biçimlendirme veya Word'e özgü işaret Markdown çıkarımında görünmüyorsa, üçüncü rapordaki işaret envanterini **yer bulma yardımcısı** olarak kullan ve mevcut metni güncel nüshada doğrula. Biçim bilgisini tahmin etme.
 
-- `değil/değildir`,
-- gereksiz negatif tanımlar,
-- `Sonuç olarak`,
-- gereksiz ara sonuç ve özet paragrafları,
-- kalıplaşmış ve mekanikleşen anlatım,
-- paragraf açılış ve kapanış tekrarları,
-- zayıf alt başlık ve bölüm geçişleri,
-- metinde kalmış yazar/redaktör/yayınevi notları
+## Amaç
 
-gibi sorunları tek tek gerçek çözümlere dönüştürmektir.
+Aşağıdaki kitap-geneli örüntüleri tam kapsamayla gözden geçir ve yalnız gerçekten müdahale gerektiren örnekler için doğrudan uygulanabilir çözüm üret:
 
-## 1. `DEĞİL / DEĞİLDİR`
+1. redaktörün işaretlediği `değil/değildir` kullanımları ve tekrarlanan negatif tanımlar,
+2. Sonuç bölümü dışındaki `Sonuç olarak` kullanımları,
+3. gereksiz ara sonuç ve özet paragrafları,
+4. kalıplaşmış paragraf açılış ve kapanışları,
+5. yakın mesafede tekrarlanan bağlaç/yüklem kalıpları,
+6. zayıf paragraf, alt başlık ve ana bölüm geçişleri,
+7. Aşama 3'te çözülmemiş açık çalışma notları.
 
-Redaktör tarafından işaretlenmiş ilgili kullanımları tek tek değerlendir.
+Bu aşama bir “AI detector” çalışması değildir. Metnin kökeni hakkında hüküm verme; yalnız doğal akademik Türkçeyi zayıflatan örüntüleri değerlendir.
 
-Her kullanım otomatik hata değildir.
+## 1. `değil/değildir` tam kapsama taraması
 
-Üç gruba ayır:
+Redaktörün özellikle gözden geçirilmesini istediği bütün ilgili kullanımları tek tek değerlendir. Her birini iç kontrolde üç sonuçtan birine bağla:
 
-### A. Değiştirilmesi gerekenler
+- `CHANGE` — değiştirilmesi gerekir;
+- `ALREADY_RESOLVED_STAGE3` — Aşama 3'te aynı pasaj zaten yeterli biçimde düzeltilmiştir;
+- `KEEP` — karşıtlık anlam için gerekli ve mevcut kullanım doğaldır.
 
-Yakın çevrede tekrar, mekanik negatif tanım veya daha doğal olumlu ifade imkânı bulunanlar.
+`KEEP` örneklerini yazarın nihai raporuna taşıma, fakat kapsam sayımında değerlendirildiğini göster.
 
-Bunlar için:
+`CHANGE` için mutlaka:
 
-**Bölüm/Başlık:**  
-...
+**Bölüm/Başlık → Sayfa → Bulmak için → Mevcut metin → Sorun → Önerilen düzeltme**
 
-**Sayfa:**  
-...
+zincirini tamamla.
 
-**Mevcut:**  
-> “...”
+Amaç `değil` sözcüğünü eş anlamlıyla değiştirmek değil; gerekiyorsa cümleyi olumlu ve daha doğal yapıyla yeniden kurmaktır.
 
-**Sorun:**  
-...
+## 2. `Sonuç olarak` tam kapsama taraması
 
-**Önerilen:**  
-> “...”
+**Sonuç bölümü dışındaki** bütün `Sonuç olarak` kullanımlarını güncel metinde yeniden say ve tek tek incele. Önceki raporlardaki sayıyı otomatik kabul etme.
 
-ver.
+Her kullanım için iç kontrolde şu kararlardan birini ver:
 
-### B. Aşama 3’te zaten düzeltilmiş olanlar
+- `KEEP-SYNTHESIS` — gerçek ve gerekli sentez;
+- `CHANGE-TRANSITION` — doğal geçişe dönüştürülmeli;
+- `MERGE` — önceki paragrafa yedirilmeli;
+- `DELETE` — yeni değer taşımayan gereksiz ara sonuç;
+- `ALREADY_RESOLVED_STAGE3`.
 
-Tekrar yeni madde üretme.
+Yazar raporuna yalnız değişiklik gerektirenleri taşı. “Geçişe dönüştür”, “yedir”, “kısalt” gibi soyut talimat bırakma; sonucu tam metin olarak ver.
 
-### C. Anlam bakımından korunması gerekenler
+## 3. Gereksiz ara sonuç ve özetler
 
-Bunları nihai Dördüncü Rapora taşıma. Yazarın yapacağı bir işlem yoktur.
+Bir paragrafı yalnız alt başlığın sonunda bulunduğu için gereksiz sayma. Şu testi uygula:
 
-Ama iç kontrolde korunma gerekçesini doğrula.
+- Önceki iki/üç paragrafta söylenenleri yeni bilgi veya yeni analitik sonuç olmadan tekrar ediyor mu?
+- Çıkarılırsa anlam kaybı oluyor mu?
+- Sonraki başlığa geçiş için gerçekten gerekli mi?
+- Aynı işlev bir önceki paragrafın tek cümlesiyle sağlanabilir mi?
 
-## 2. `SONUÇ OLARAK`
+Sorun varsa en ekonomik çözümü **uygulanmış metin** olarak ver.
 
-Sonuç bölümü dışındaki bütün kullanımları yeniden değerlendir.
+## 4. Kalıplaşmış anlatım taraması
 
-Gerçekten müdahale gerektiren her biri için uygun çözümü **uygula**:
-
-- tamamen çıkar,
-- önceki paragrafın sonuna yedir,
-- kısa değerlendirmeye dönüştür,
-- sonraki konuya doğal geçiş hâline getir.
-
-Ancak nihai öneride yalnız:
-
-> “önceki paragrafa yedir”
-
-deme.
-
-Yedirilmiş veya dönüştürülmüş metni tam olarak yaz.
-
-## 3. GEREKSİZ ARA SONUÇ VE ÖZET PARAGRAFLARI
-
-Bir paragraf:
-
-- önceki iki veya üç paragrafı yalnız yeniden anlatıyorsa,
-- yeni analitik değer taşımıyorsa,
-- alt başlığın sonunda sırf “kapatma” işlevi görüyorsa
-
-müdahale et.
-
-Eğer tamamen çıkarılabiliyorsa bunu açıkça söyle.
-
-Çıkarılması sonraki geçişi bozuyorsa gerekli yeni geçişi de hazır metin olarak ver.
-
-## 4. KALIPLAŞMIŞ ANLATIM
-
-“Formülaik anlatım” terimini artık kullanma.
-
-Şu yapılara özellikle bak:
+“Formülaik anlatım” terimini kullanma. Aşağıdaki kalıpları özellikle tara:
 
 - Bu bağlamda
 - Bu çerçevede
 - Bu noktada
 - Bu açıdan
 - Bu yönüyle
+- Bununla birlikte
 - Nitekim
 - Dolayısıyla
 - Böylece
-- Bununla birlikte
 - Bu durum
 - Bu yaklaşım
 - Bu süreç
+- söz konusu
 - göstermektedir
 - ortaya koymaktadır
 - açıkça ortaya koymaktadır
 - anlaşılmaktadır
+- değerlendirilmektedir
 - yalnız ... değil, aynı zamanda ...
 - ne ... ne de ...
+- bir taraftan ... diğer taraftan ...
+- art arda `-maktadır/-mektedir` yüklemleri
 
-Fakat toplam sayı tek başına hata değildir.
+Toplam kullanım sayısı **tek başına hata değildir**. Müdahale için özellikle yakın tekrar, aynı işlevin mekanik biçimde yinelenmesi, gerçek mantıksal ilişki olmadan bağlaç kullanılması, soyut dolgu veya aynı paragrafta tekdüze yüklem zinciri bulunmalı.
 
-Müdahale etmen için özellikle:
+Bütün `Nitekim`leri veya bütün `göstermektedir`leri değiştirme. Yalnız bağlamda gerçekten sorun yaratan kullanımları seç ve cümlenin tamamını doğal biçimde düzenle.
 
-- aynı sayfa veya yakın paragraflarda tekrar,
-- aynı işlevin birkaç kez yinelenmesi,
-- soyut dolgu,
-- gerçek mantıksal ilişki olmadan bağlaç kullanılması,
-- mekanik kapanış
+## 5. Paragraf açılış/kapanış kümeleri
 
-bulunmalıdır.
+Yakın paragraflarda art arda benzer açılış veya kapanışlar bulunuyorsa kümeyi birlikte değerlendir. Örneğin:
 
-## 5. HER KALIP İÇİN YÜZLERCE EŞ ANLAMLI ÜRETME
+- “Bu bağlamda...” / “Bu çerçevede...” / “Bu noktada...”
+- “Bu durum ... göstermektedir.” / “Böylece ... ortaya çıkmaktadır.” / “Sonuç olarak ... anlaşılmaktadır.”
 
-Amaç bütün `Nitekim`leri veya bütün `göstermektedir`leri değiştirmek değildir.
+Yalnız ilk kelimeyi değiştirerek sahte çeşitlilik üretme. Gerekirse paragrafın ilk veya son cümlesini içerik merkezli yeniden kur.
 
-Yalnız gerçekten göze batan ve metni mekanikleştiren örnekleri seç.
+## 6. Geçişlerin sistematik kontrolü
 
-Her biri için bağlama özel doğal cümle öner.
+Aşama 2 ve önceki raporlarda işaretlenen bütün önemli geçişleri tek tek kontrol et. Aşama 3'te çözülmüşse tekrar üretme; çözüm yetersizse bu aşamada daha iyi tek çözüm hazırla.
 
-## 6. SIKLIK BİLGİSİ
+Özellikle şu ana geçişlerin kapsandığını doğrula:
 
-Kitap genelindeki belirgin tekrarları kısa ve anlaşılır biçimde özetle.
+- Giriş → Birinci Bölüm
+- Birinci Bölüm → İkinci Bölüm
+- İkinci Bölüm → Üçüncü Bölüm
+- Üçüncü Bölüm → Dördüncü Bölüm
+- Dördüncü Bölüm → Sonuç
 
-Ancak:
+Ayrıca raporlarda işaretlenen önemli alt başlık geçişlerini de kapsa.
 
-- “yaklaşık gövde sıklığı”,
-- “edilgen yüklem zinciri”,
-- “formülaik density”
+Geçiş çözümünde önce şu sırayı uygula:
 
-gibi ifadeler kullanma.
+1. önceki paragrafın son cümlesini düzelt,
+2. sonraki paragrafın ilk cümlesini düzelt,
+3. gereksiz ara paragrafı çıkar/birleştir,
+4. yalnız gerçekten gerekliyse yeni geçiş cümlesi veya kısa paragraf ekle.
 
-Örneğin:
+## 7. Metinde kalmış notlar için son tarama
 
-> “`Nitekim` kitapta sık kullanılmaktadır. Bu tek başına sorun değildir; asıl problem birbirini izleyen paragraflarda birkaç kez tekrarlandığı yerlerdir.”
+Aşama 3'te çözülmemiş bütün açık çalışma notlarını yeniden kontrol et. Notun istediği işlem anlaşılabiliyorsa işlemi gerçekleştir ve nihai metni ver. B1-04 modeli burada da geçerlidir.
 
-gibi sade açıklama kullan.
+## 8. Sıklık bilgisi nasıl kullanılacak
 
-## 7. PARAGRAF AÇILIŞ VE KAPANIŞLARI
+Güncel metinden kesin sayılabilen belirgin kalıpları kısa bir iç özet olarak verebilirsin. Ancak sayıyı doğrudan “sorun” diye yorumlama. Örneğin:
 
-Art arda:
+> `Nitekim` toplam X kez geçmektedir; asıl müdahale gerektirenler yakın aralıklı ve aynı işlevli tekrarlar olarak aşağıda gösterilmiştir.
 
-- “Bu bağlamda...”
-- “Bu çerçevede...”
-- “Bu noktada...”
+Kesin sayım yapılamıyorsa tahmin üretme.
 
-veya:
+## 9. Aşama 3 ile çakışma kuralı
 
-- “Bu durum ... göstermektedir.”
-- “Böylece ... ortaya çıkmaktadır.”
-- “Sonuç olarak ... anlaşılmaktadır.”
+Aynı pasaj Aşama 3'te zaten düzeltilmişse:
 
-şeklinde mekanikleşen yerleri belirle.
+- öneri bütün sorunları çözüyorsa `ALREADY_RESOLVED_STAGE3` olarak kaydet ve yeniden yazar maddesi üretme;
+- yeni çapraz tarama, Aşama 3 önerisinde gerçek eksik gösteriyorsa tek bir **revize nihai öneri** oluştur ve bunu açıkça Aşama 5'in Aşama 3 çözümünün yerine kullanması gerektiğini belirt.
 
-Yalnız kelimeyi başka bir bağlaçla değiştirme.
+## Çıktı
 
-Gerekirse cümlenin bütün yapısını değiştir.
+`work/stage-04-crosscutting-revisions.md` dosyasını şu yapıyla oluştur:
 
-## 8. EKSİK VE ZAYIF GEÇİŞLER
+1. `# Aşama 4 — Kitap Geneli Anlatım ve Geçiş Düzeltmeleri`
+2. `## Değil/Değildir — Müdahale Gerektiren Kullanımlar`
+3. `## Sonuç Olarak ve Gereksiz Ara Sonuçlar`
+4. `## Kalıplaşmış ve Mekanikleşen Anlatım Örnekleri`
+5. `## Paragraf Açılış ve Kapanış Tekrarları`
+6. `## Eksik veya Zayıf Geçişler`
+7. `## Metinde Kalmış Çalışma Notları`
+8. `## Aşama 3 Çözümlerinin Yerine Geçen Revizyonlar`
+9. `## Kapsam ve Sayım Özeti`
 
-Önceki aşamalarda bulunan bütün önemli:
+Kapsam özetinde en az şunları ver:
 
-- paragraf,
-- alt başlık,
-- bölüm
+- incelenen redaktör işaretli `değil/değildir` sayısı ve `CHANGE/KEEP/ALREADY_RESOLVED` dağılımı,
+- Sonuç bölümü dışındaki `Sonuç olarak` toplamı ve karar dağılımı,
+- kontrol edilen önemli geçiş sayısı ve değişiklik gerektiren sayı,
+- kesin sayılabildiği ölçüde diğer belirgin kalıp sayımları.
 
-geçişlerini kontrol et.
+Bu sayımlar iç denetim içindir; nihai yazar raporuna otomatik olarak taşınmayacaktır.
 
-Aşama 3’te çözülmemiş kalan her geçiş için artık gerçek nihai metni üret.
-
-Özellikle:
-
-- Giriş → Birinci Bölüm,
-- Birinci → İkinci,
-- İkinci → Üçüncü,
-- Üçüncü → Dördüncü,
-- Dördüncü → Sonuç
-
-geçişlerini ayrıca doğrula.
-
-## 9. METİNDE KALMIŞ NOTLAR
-
-Bütün açık çalışma notlarını yeniden tara.
-
-Her biri için yalnız notu silmekle yetinme.
-
-Notun istediği editoryal işlem anlaşılabiliyorsa uygula ve ortaya çıkan kitap metnini ver.
-
-Özellikle B1-04 çalışma modelini kullan.
-
-## 10. YAPAY ZEKÂ İZLENİMİ HAKKINDA DİL
-
-Bir metnin yapay zekâ tarafından yazıldığını iddia etme.
-
-Gerekirse:
-
-> “Bu yapı kitap boyunca benzer biçimde tekrarlandığı için anlatımı kalıplaştırmakta ve mekanik bir görünüm vermektedir.”
-
-de.
-
-Yapay zekâ vurgusuna ancak gerçekten açıklayıcı olması gerekiyorsa ihtiyatlı biçimde değin.
-
-## 11. ÇIKTI
-
-Bana:
-
-# KİTAP GENELİNDE TEKRARLANAN VE KALIPLAŞMIŞ ANLATIM İÇİN DOĞRUDAN DÜZELTME ÖNERİLERİ
-
-başlığı altında yalnız gerçekten yazarın müdahale etmesi gereken örnekleri ver.
-
-Her biri için mümkün olduğunca:
-
-**Bölüm/Başlık → Sayfa → Mevcut metin → Sorun → Önerilen düzeltme**
-
-zincirini tamamla.
-
-Aşama 5’e geçmeden **dur.**
+Dosyayı tamamla, Aşama 3 ile çakışmaları çöz, commit et ve **dur**.
