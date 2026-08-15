@@ -1,138 +1,88 @@
-# AŞAMA 5 — Bütün Düzeltmelerin Birleştirilmesi, Bilimsel Güvenlik ve Yazar Kullanılabilirliği Kontrolü
+# AŞAMA 5 — Bütün Düzeltmelerin Tekilleştirilmesi ve Yazar-Odaklı Nihai İçerik Adayının Oluşturulması
 
-Aşama 1, 2, 3 ve 4’ün bütün çıktılarını birlikte kullan.
+Bu aşama, Aşama 3 ve 4'te üretilen çözümleri bir araya getirerek **tek, tutarlı ve yazarın anlayabileceği içerik adayı** oluşturur. Henüz nihai Dördüncü Rapor Markdown dosyasını oluşturma.
 
-Bu, Dördüncü Raporun hazırlanmasının **5. aşamasıdır.**
+## Çalışma sözleşmesi
 
-Henüz nihai DOCX dosyasını oluşturma.
+1. `AGENTS.md` dosyasını önce oku ve bağlayıcı kabul et.
+2. Yalnız `editorial/fourth-report` dalında çalış. `main`, `source/`, `prompts/` ve önceki aşama çıktılarını değiştirme.
+3. `work/stage-02-verified-inventory.md`, `work/stage-03-direct-revisions.md` ve `work/stage-04-crosscutting-revisions.md` tamamlanmış değilse dur.
+4. Dış kaynak veya internet kullanma.
+5. Bu aşamanın tek yazılabilir çıktısı `work/stage-05-final-content.md` dosyasıdır. Placeholder içeriğini tamamen değiştir.
+6. Aşama tamamlanınca yalnız bu aşama çıktısını commit et. Önerilen commit mesajı: `Stage 5: integrate author-facing revision content`.
+7. Aşama 6'ya geçme.
 
-## AMAÇ
+## Amaç
 
-Şimdiye kadar hazırlanmış bütün düzeltmeleri:
+Şimdiye kadar hazırlanmış bütün doğrulanmış ve çözülebilir maddeleri:
 
-1. tekilleştirmek,
-2. birbirleriyle uyumlu hâle getirmek,
-3. bilimsel açıdan güvenli olduklarını doğrulamak,
-4. yazarın anlayamayacağı teknik unsurlardan temizlemek,
-5. nihai Dördüncü Rapora girecek son içerik setini oluşturmak.
+- aynı pasajı tekrar etmeyecek biçimde tekilleştir,
+- bilimsel ve dilsel yönleri tek çözümde birleştir,
+- kitap sırasına yerleştir,
+- yazarın anlayamayacağı iç kod ve teknik dili çıkar,
+- “ne yapmalıyım?” sorusunu cevapsız bırakan maddeleri tamamla,
+- Dördüncü Rapora girecek **tam içerik adayını** oluştur.
 
-## 1. AYNI PASAJ İÇİN BİRDEN FAZLA ÖNERİ VARSA TEKLEŞTİR
+Bu aşamada esas görev yeni sorun aramak değil, mevcut doğrulanmış çözüm setini doğru biçimde bütünleştirmektir.
 
-Aşama 3 ve Aşama 4 aynı paragrafı farklı açılardan düzeltmiş olabilir.
+## Kaynak ve bağımlılık sırası
 
-İki ayrı öneriyi nihai rapora taşıma.
+İçerik oluştururken şu sırayı kullan:
 
-Bütün sorunları çözen **tek en iyi nihai metni** seç veya oluştur.
+1. Aşama 2 — hangi sorunların gerçekten mevcut olduğunu belirleyen doğrulama kaydı,
+2. Aşama 3 — yerel/bilimsel/dilsel doğrudan çözümler,
+3. Aşama 4 — çapraz tarama ve Aşama 3'ün yerine geçen güncellenmiş çözümler,
+4. güncel kitap nüshası — metin ve konum şüphesinde son hakem.
 
-## 2. YENİ ÇELİŞKİ ÜRETİLMEDİĞİNİ KONTROL ET
+Aşama 4 açıkça bir Aşama 3 önerisinin yerine geçen daha kapsamlı çözüm verdiyse yalnız Aşama 4 çözümünü kullan.
 
-Bir yerde yaptığın düzeltme kitabın başka yerindeki ifadeyle çelişiyor mu?
+## 1. Aynı pasajı tek maddeye indir
 
-Özellikle:
+Aynı paragraf veya metin parçası farklı aşamalarda:
 
-- mushaf sayısı,
-- yedi harf,
-- arza-i âhire,
-- sahâbe mushafları,
-- şâz kırâat,
-- resm-i Osmânî’nin işlevi,
-- kırâat/rivâyet/tarîk/vecih,
-- tarihsel kronoloji
+- bilimsel sorun,
+- `değil/değildir` sorunu,
+- tekrar,
+- geçiş,
+- dil/tashih
 
-gibi konuları çapraz kontrol et.
+olarak ayrı ayrı ele alınmış olabilir. Yazarın aynı yeri birkaç kez değiştirmesini isteme. Bütün gerçek sorunları çözen **tek nihai öneri** oluştur.
 
-## 3. ANA TEZ GÜVENLİĞİ
+Yalnız gerçekten farklı konumlarda ayrı değişiklik gerektiren sorunlar ayrı madde olarak kalsın.
 
-Bütün önerilen metinlerde şu çizgi korunmalıdır:
+## 2. Her yazar maddesinin zorunlu yapısı
 
-- Kırâatlerin aslî aktarım zemini sözlü rivâyet geleneğidir.
-- Telakki, müşâfehe, edâ ve isnad merkezîdir.
-- Resm-i Osmânî kırâatleri meydana getiren bağımsız kaynak değildir.
-- Resm, güvenilir rivâyetlerle nakledilen okuyuşların yazılı uygunluk alanını belirleyen tamamlayıcı ölçülerden biridir.
-- Resme ihtimal vermek tek başına sahihlik sağlamaz.
-- İsnad, Arap diline uygunluk ve resme uygunluk birbirini tamamlayan ölçülerdir.
+Her gerçek düzeltme maddesi mümkün olduğunca şu dört soruyu eksiksiz yanıtlamalıdır:
 
-Bir öneri bu çizgiyi zayıflatıyorsa düzelt.
+1. **Kitabın neresinde?**
+2. **Şu anda ne yazıyor?**
+3. **Buradaki sorun ne?**
+4. **Bunun yerine tam olarak ne yazılmalı veya ne yapılmalı?**
 
-## 4. TARİHSEL İHTİYAT
+Tercih edilen biçim:
 
-Önerilen hiçbir metin:
+### [Sorunun açık adı]
 
-- rivâyeti tartışmasız tarihsel olay,
-- klasik yorumu kesin gerçek,
-- yazarın çıkarımını kaynak görüşü
+**Bölüm/Başlık:** ...
 
-gibi göstermemelidir.
+**Sayfa:** ...
 
-Kaynakların izin verdiğinden güçlü kesinlik kullanma.
+**Bulmak için:** “...” ile başlayan paragraf
 
-## 5. YENİ BİLGİ ÜRETME KONTROLÜ
+**Mevcut metin:**
+> “...”
 
-Her öneriyi tekrar gözden geçir:
+**Sorun:**
+Kısa, açık ve teknik olmayan açıklama.
 
-- yeni tarih ekledim mi?
-- yeni kişi kimliği ekledim mi?
-- yeni eser veya kaynak ekledim mi?
-- yeni kırâat vechi ekledim mi?
-- proje dosyalarında olmayan bibliyografik bilgi ekledim mi?
+**Önerilen düzeltme:**
+> “...”
 
-Varsa çıkar.
+İki veya daha fazla mevcut parçanın birlikte değişmesi gerekiyorsa gerekli bütün parçaları göster ve birleşik nihai metni ver.
 
-## 6. DOĞRULANAMAYAN BİLGİLER
+## 3. Soyut editör talimatı bırakma
 
-Doğru tarih veya ayrıntı proje dosyalarından kesinleşmiyorsa:
-
-öncelikle şüpheli ayrıntıyı çıkartan güvenli metin kullan.
-
-Bu mümkün değilse açıkça:
-
-> “Bu ayrıntı mevcut proje dosyalarından kesinleştirilemediği için yeni bilgi önerilmemiştir.”
-
-de.
-
-Tahmin üretme.
-
-## 7. YAZAR DİLİ KONTROLÜ
-
-Her sorun açıklamasını şu soruyla kontrol et:
-
-> Bilgisayar ve editörlük terminolojisine hâkim olmayan yazar bunu ilk okumada anlayabilir mi?
-
-Şunları çıkar:
-
-- Heading,
-- run,
-- RTL,
-- bidi,
-- OOXML,
-- Zotero field,
-- manuscript,
-- kapatma matrisi,
-- sınıf C/D/E,
-- teknik kodlar,
-- paragraf kimlikleri.
-
-## 8. YER BİLGİSİ KONTROLÜ
-
-Her somut maddede mümkün olduğunca:
-
-- Bölüm/Başlık,
-- Sayfa,
-- paragrafın başlangıcı
-
-bulunsun.
-
-Yazarın metni bulmak için `Ctrl+F` bilmesi gerekmemelidir.
-
-## 9. HAZIR ÇÖZÜM KONTROLÜ
-
-Her madde için sor:
-
-> Yazar burayı nasıl düzelteceğini hâlâ kendisi tasarlamak zorunda mı?
-
-Eğer cevap evetse maddeyi tamamla.
-
-Özellikle şu soyut talimatları tek başına bırakma:
+Aşağıdaki ifadeler tek başına çözüm sayılmaz:
 
 - kısalt,
 - birleştir,
@@ -140,76 +90,115 @@ Eğer cevap evetse maddeyi tamamla.
 - taşı,
 - yeniden yaz,
 - daha ihtiyatlı kur,
+- olumlu ifade et,
 - geçiş ekle,
-- olumlu ifade et.
+- kaynak kontrolü yap.
 
-Mümkünse işlemi gerçekleştir ve nihai metni ver.
+Proje dosyaları izin verdiği ölçüde işlemi bizzat gerçekleştir ve yazarın kullanacağı metni ver.
 
-## 10. YALNIZ HÂLEN GEREKLİ MADDELER KALSIN
+Bir ayrıntı güvenli biçimde çözülemiyorsa bunu açıkça **Kaynak sınırı** olarak işaretle; uydurma çözüm üretme.
 
-Nihai içerik setinden çıkar:
+## 4. Yazar raporuna girmeyecek içerikler
 
-- “tamamlandı” maddeleri,
-- zaten düzeltilmiş şeyler,
-- sırf iyi olduğu için açıklanan yerler,
-- eski rapor tarihçesi,
-- teknik üretim sorunları,
-- yayın kararı,
-- yönetici özeti,
-- gereksiz istatistikler.
+Aşağıdakileri bu içerik adayından çıkar:
 
-## 11. TABLOLARI SINIRLA
+- `CAND-*`, `VERIFIED`, `CHANGE` gibi iç denetim kodları,
+- önceki raporların tarihçesi,
+- “tamamlandı/kısmen tamamlandı” durum takibi,
+- teknik Word/dizgi bilgileri,
+- Heading, TOC, PAGEREF, RTL, bidi, run, OOXML, Zotero field vb.,
+- yalnız istatistik veya kapsam kanıtı olarak tutulan tam envanterler,
+- yazarın yapacağı işlem olmayan `KEEP` maddeleri,
+- yayın kararı, yönetici özeti ve proje yönetimi dili.
 
-Nihai raporda tablo yalnız gerçekten yararlıysa kullanılacaktır.
+## 5. Bilimsel güvenlik kontrolü
 
-Muhtemel kısa tablolar:
+Her öneriyi şu ilkeler açısından yeniden oku:
 
-- önemli bölümler arası çelişkilerin özeti,
-- önemli eksik/zayıf geçişlerin özeti,
-- çok tekrarlanan bazı kalıpların kısa sıklık özeti.
+- kırâatlerin aslî aktarım zemini telakki, müşâfehe, edâ, isnad ve rivâyettir;
+- resm-i Osmânî bağımsız kırâat kaynağı değildir;
+- resme uygunluk ile isnad sahihliği birbirinden ayrıdır;
+- yazının ihtimal vermesi tek başına sahihlik değildir;
+- kırâat, rivâyet, tarîk, vecih terminolojisi karıştırılmamalıdır;
+- tarihsel rivâyet, klasik yorum ve yazar çıkarımı aynı kanıt düzeyinde sunulmamalıdır;
+- sahâbe mushafları ile Osmânî mushafların statüsü ayrılmalıdır;
+- yazım özelliklerine kaynakların desteklemediği mana/hikmet/i‘câz yüklenmemelidir.
 
-Ancak tablodaki gerçek sorunların ayrıntılı çözümü ayrıca metinde bulunmalıdır.
+Bir öneri kaynakların verdiğinden daha güçlü kesinlik üretiyorsa düzelt.
 
-Tablo çözümün yerine geçemez.
+## 6. Dipnot, alıntı ve bibliyografik güvenlik
 
-## 12. NİHAİ YAPIYI HAZIRLA
+- Yeni kaynak veya dipnot ekleme.
+- Mevcut dipnotun dayandığı iddiayı revizyonla değiştirme.
+- Doğrudan alıntıyı üslup amacıyla yeniden yazma.
+- Kaynakçada doğru ayrıntı proje dosyalarından kesinleşmiyorsa yeni bilgi uydurma.
+- Açık bozuk ayrıntı cümlenin anlamı için zorunlu değilse güvenli biçimde çıkarılması önerilebilir.
 
-Dördüncü Raporun içerik yapısını artık kesinleştir:
+## 7. Konum bilgisini sadeleştir
 
-1. Kısa Kullanım Açıklaması
-2. Önsözde Yapılması Önerilen Düzeltmeler
-3. Girişte Yapılması Önerilen Düzeltmeler
-4. Birinci Bölümde Yapılması Önerilen Düzeltmeler
-5. İkinci Bölümde Yapılması Önerilen Düzeltmeler
-6. Üçüncü Bölümde Yapılması Önerilen Düzeltmeler
-7. Dördüncü Bölümde Yapılması Önerilen Düzeltmeler
-8. Sonuç Bölümünde Yapılması Önerilen Düzeltmeler
-9. Kitap Genelinde Tekrarlanan ve Kalıplaşmış Anlatımlar
-10. Kaynakça ve Açık Bibliyografik Düzeltmeler
+Nihai yazar maddesinde mümkün olduğunca:
 
-Gerçek içerik gerektiriyorsa küçük değişiklikler yapabilirsin; fakat eski üç raporun “Birinci/İkinci/Üçüncü Kısım” yapısına dönme.
+- Bölüm/Başlık,
+- sayfa,
+- paragraf başlangıcı
 
-## 13. KULLANILABİLİRLİK TESTİ
+bulunsun.
 
-Her madde şu dört soruyu yanıtlamalı:
+Sayfa Aşama 2'de güvenilir biçimde doğrulanamamışsa yanlış sayı üretme. Böyle durumlarda başlık + paragraf başlangıcını kullan ve sayfa alanını `—` bırak.
 
-1. Kitabın neresinde?
-2. Şu anda ne yazıyor?
-3. Buradaki sorun ne?
-4. Bunun yerine tam olarak ne yazılmalı?
+## 8. Tablo politikası
 
-Bu dört sorudan biri cevapsızsa madde tamamlanmamıştır.
+Bu aşamada esas biçim **madde bazlı açıklama**dır. Tablo yalnız gerçekten toplu görünüm sağlıyorsa kullanılabilir.
 
-## 14. ÇIKTI
+Muhtemel üç kısa tablo:
 
-Bana:
+1. önemli bölümler arası çelişkilerin özeti,
+2. önemli eksik/zayıf geçişlerin özeti,
+3. çok tekrarlanan bazı anlatım kalıplarının kısa sıklık özeti.
 
-# DÖRDÜNCÜ RAPORA GİRECEK DOĞRULANMIŞ VE TEKİLLEŞTİRİLMİŞ NİHAİ İÇERİK
+Tablo hiçbir zaman ayrıntılı çözümün yerine geçmez. Tablodaki gerçek düzeltmeler ayrıca madde olarak bulunmalıdır.
 
-başlığı altında son içerik setini kitap sırasıyla sun.
+## 9. Kitap sırasına göre düzenle
 
-Bu çıktı, Aşama 6’da doğrudan DOCX’e dönüştürülecek kadar tamamlanmış olmalıdır.
+Yazar kitabıyla birlikte baştan sona ilerleyebilsin. İçeriği şu sırayla düzenle:
 
-Henüz DOCX oluşturma.
+1. Önsöz
+2. Giriş
+3. Birinci Bölüm
+4. İkinci Bölüm
+5. Üçüncü Bölüm
+6. Dördüncü Bölüm
+7. Sonuç
+8. Kitap Genelinde Tekrarlanan ve Kalıplaşmış Anlatımlar — yalnız bölüm içine doğal biçimde yerleştirilemeyen çapraz konular
+9. Kaynakça ve Açık Bibliyografik Düzeltmeler
 
-Aşama tamamlandığında **dur.**
+Aynı kitabın bölümünde çözülebilen `değil`, `Sonuç olarak` veya geçiş sorunu ayrıca 8. bölümde tekrar edilmesin.
+
+## 10. Kapsama uzlaştırması
+
+Aşama 2'de `VERIFIED`/`NEW-SOURCE` olarak taşınan her yazar-düzeltilebilir sorunun bu içerik adayında **tam olarak bir karşılığı** olmalıdır; şu istisnalar dışında:
+
+- Aşama 3/4'te başka maddeyle birleştirildi,
+- yazar için işlem gerektirmediği doğrulandı,
+- kaynak sınırı nedeniyle güvenli çözüm üretilemedi.
+
+Bu istisnaları iç denetim amacıyla dosyanın sonunda ayrı bir **Kapsam Uzlaştırma Özeti**nde listele. Bu özet Aşama 7'de nihai yazar raporuna taşınmayacaktır.
+
+## Çıktı
+
+`work/stage-05-final-content.md` dosyasını şu yapıyla oluştur:
+
+1. `# Aşama 5 — Yazar-Odaklı Nihai İçerik Adayı`
+2. `## Önsöz`
+3. `## Giriş`
+4. `## Birinci Bölüm`
+5. `## İkinci Bölüm`
+6. `## Üçüncü Bölüm`
+7. `## Dördüncü Bölüm`
+8. `## Sonuç`
+9. `## Kitap Genelinde Tekrarlanan ve Kalıplaşmış Anlatımlar`
+10. `## Kaynakça ve Açık Bibliyografik Düzeltmeler`
+11. `## Kaynak Sınırı Nedeniyle Tam Çözülemeyen Maddeler`
+12. `## Kapsam Uzlaştırma Özeti — Nihai Rapora Alınmayacak İç Denetim Bölümü`
+
+Bu dosya Aşama 6'nın bağımsız son denetimine girecek **tam içerik adayı** olmalıdır. Kendi içinde tekrar, çelişki ve eksik alan kontrolü yap; commit et ve **dur**.
