@@ -1,5 +1,7 @@
 # Codex Prompt — Create and Seed the Private GitHub Repository
 
+> **Historical bootstrap record.** The repository setup described below has already been completed. Do not execute this prompt again. The active editorial workflow was subsequently refined to **seven stages**; use `AGENTS.md`, `README.md`, and `prompts/stage-01.md` through `prompts/stage-07.md` for current instructions.
+
 You are setting up a GitHub repository for a staged academic editorial project.
 
 ## User authorization
