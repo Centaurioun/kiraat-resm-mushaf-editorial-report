@@ -1,226 +1,195 @@
-# AŞAMA 3 — Kitap Sırasına Göre Doğrudan Kullanılabilir Düzeltme Metinlerinin Hazırlanması
+# AŞAMA 3 — Doğrulanmış Sorunlar İçin Doğrudan Kullanılabilir Düzeltme Metinleri
 
-Aşama 2 sonunda oluşturduğun **Güncel Kitapla Doğrulanmış Nihai Sorun Envanterini** esas al.
+Bu aşama, Aşama 2'de doğrulanmış **yerel ve içerik odaklı** sorunları gerçek editoryal çözümlere dönüştürür. Henüz nihai Dördüncü Raporu oluşturma.
 
-Bu, Dördüncü Raporun hazırlanmasının **3. aşamasıdır.**
+## Çalışma sözleşmesi
 
-Aşama 1 ve Aşama 2’yi yeniden yapma.
+1. `AGENTS.md` dosyasını önce oku ve bağlayıcı kabul et.
+2. Yalnız `editorial/fourth-report` dalında çalış. `main`, `source/`, `prompts/` ve önceki aşama çıktılarını değiştirme.
+3. `work/stage-02-verified-inventory.md` tamamlanmış değilse dur.
+4. Dış kaynak veya internet kullanma.
+5. Bu aşamanın tek yazılabilir çıktısı `work/stage-03-direct-revisions.md` dosyasıdır. Placeholder içeriğini tamamen değiştir.
+6. Aşama tamamlanınca yalnız bu aşama çıktısını commit et. Önerilen commit mesajı: `Stage 3: draft source-grounded direct revisions`.
+7. Aşama 4'e geçme.
 
-Henüz DOCX hâlindeki nihai Dördüncü Raporu oluşturma.
+## Kaynak hiyerarşisi
 
-## AMAÇ
+Her düzeltmede güncel kitap nüshasını esas al:
 
-Önsözden Sonuç bölümüne kadar kitap sırasıyla ilerleyerek, doğrulanmış her somut sorun için yazarın mümkün olduğunca doğrudan kullanabileceği gerçek düzeltme metnini hazırlamaktır.
+1. `source/manuscript/current/redaktorden_gelen.docx`
+2. `source/manuscript/current/redaktorden_gelen_extracted.md`
+3. `source/notes/duzeltilecekler.docx`
+4. ilgili önceki rapor kayıtları
+
+Aşama 2'deki alıntı ile güncel kaynak arasında fark görürsen kaynağı yeniden kontrol et ve güncel metni esas al.
+
+## Amaç
+
+Aşama 2'de `VERIFIED` veya güvenli biçimde çözülebilir `NEW-SOURCE` olarak kalan her somut sorun için, yazarın mümkün olduğunca doğrudan kullanabileceği nihai metni üret.
 
 Bu aşamanın temel ilkesi:
 
-> **Editoryal işlemi yazara tarif etme; mümkün olduğunca işlemi kendin gerçekleştir ve sonucunu ver.**
+> **Editoryal işlemi yazara tarif etmek yerine, proje dosyaları izin verdiği ölçüde işlemi gerçekleştir ve ortaya çıkacak metni ver.**
 
-## 1. KİTAP SIRASINI TAKİP ET
+## Kapsam ayrımı
 
-Şu sırayla ilerle:
+Bu aşamada özellikle şunları çöz:
 
-1. Önsöz
-2. Giriş
-3. Birinci Bölüm
-4. İkinci Bölüm
-5. Üçüncü Bölüm
-6. Dördüncü Bölüm
-7. Sonuç
+- bilimsel ve kavramsal ifade sorunları,
+- tarihsel kesinlik ve yanlış anlaşılma riski,
+- bölümler arası somut çelişkiler,
+- açık dil/tashih ve sözdizimi sorunları,
+- metinde kalmış yazar/redaktör/yayınevi notları,
+- belirli paragraf veya alt başlığa özgü tekrar/akış/geçiş sorunları,
+- açık bibliyografik veya tarihsel bozukluk için proje dosyalarıyla güvenli biçimde verilebilen metinsel çözüm.
 
-Bu aşamada kitap genelindeki `değil/değildir`, `Sonuç olarak`, kalıplaşmış anlatım gibi çapraz tarama gerektiren özel meselelerin bütününü henüz bitirme. Bunlar Aşama 4’te ayrıca ele alınacaktır.
+Kitap geneline yayılan `değil/değildir`, `Sonuç olarak`, kalıplaşmış anlatım ve toplu geçiş taramasının **tam kapsaması** Aşama 4'te yapılacaktır. Ancak aynı pasajdaki bilimsel düzeltmeyle birlikte çözülmesi en doğru olan çapraz sorunları burada da düzelt.
 
-Ancak belirli bir pasajdaki bu sorun, başka bir bilimsel veya yapısal sorunla birlikte tek revizyon gerektiriyorsa burada çöz.
+## Her sorun için temel şablon
 
-## 2. HER SORUN İÇİN TEMEL ŞABLON
+Her somut maddeyi şu biçimde hazırla:
 
-Her somut sorun için:
+### [Açık ve yazarın anlayacağı sorun başlığı]
 
-### [Açık ve anlaşılır sorun başlığı]
+**Bölüm/Başlık:** ...
 
-**Bölüm/Başlık:**  
-...
+**Sayfa:** ...
 
-**Sayfa:**  
-...
+**Bulmak için:** “...” ile başlayan paragraf
 
-**Bulmak için:**  
-“...” ile başlayan paragraf
-
-**Mevcut metin:**  
+**Mevcut metin:**
 > “...”
 
-**Sorun:**  
-Kısa, açık ve yazarın rahatlıkla anlayabileceği açıklama.
+**Sorun:**
+Kısa, somut ve teknik olmayan açıklama.
 
-**Önerilen düzeltme:**  
+**Önerilen düzeltme:**
 > “...”
 
-Önerilen metin mümkün olduğunca doğrudan kopyalanıp kitaba konabilecek nitelikte olsun.
+Önerilen metin mümkün olduğunca doğrudan kopyalanıp ilgili yere konabilecek nitelikte olsun.
 
-## 3. “BİRLEŞTİR” DEMEK YETERLİ DEĞİLDİR
+## İşlem türünü uygulayarak göster
 
-İki paragrafın veya iki maddenin birleştirilmesi gerekiyorsa:
+### Birleştirme
 
-**Mevcut birinci metin:**  
+“Birleştirilsin” demekle yetinme. İlgili mevcut parçaları göster ve birleşmiş nihai metni yaz:
+
+**Mevcut birinci metin:** ...
+
+**Mevcut ikinci metin:** ...
+
+**Sorun:** ...
+
+**Bu iki metnin yerine önerilen biçim:**
 > “...”
 
-**Mevcut ikinci metin:**  
-> “...”
+### B1-04 tipi notlar
 
-**Sorun:**  
-...
+“Bu maddeyi ikinci maddeye yedirecektiniz” gibi bir çalışma notunda:
 
-**Bu iki metnin yerine önerilen biçim:**  
-> “...”
+- mevcut ikinci maddeyi,
+- mevcut üçüncü maddeyi,
+- gerekiyorsa listenin giriş cümlesini,
+- sorunun ne olduğunu
 
-şeklinde nihai birleşik metni oluştur.
+göster; ardından iki maddeyi gerçekten birleştiren yeni metni yaz. Çalışma notunun kitap metninden tamamen çıkarılacağını açıkça belirt.
 
-## 4. B1-04 ÖRNEĞİNİ TAM ÇÖZ
+### Kısaltma
 
-“Bu maddeyi ikinci maddeye yedirecektiniz” türündeki yazar/yayınevi notlarında:
+“Kısaltılsın” deme. Kısaltılmış cümle veya paragrafı tam olarak yaz. Tamamen çıkarılacak cümle varsa hangisi olduğunu göster.
 
-- mevcut ikinci maddeyi göster,
-- mevcut üçüncü maddeyi göster,
-- sorunu açıkla,
-- ikisini gerçekten birleştir,
-- kullanılacak nihai ikinci maddeyi yaz,
-- metin içinde kalmış editör notunun tamamen silineceğini belirt.
+### Bölme
 
-“İkinci maddeye yedirilsin” biçiminde soyut talimat bırakma.
+“Paragraf ikiye bölünsün” deme. Önerilen birinci ve ikinci paragrafı ayrı ayrı yaz. Yalnız uzunluk nedeniyle bölme; iki ayrı ana düşünce veya ciddi okunabilirlik sorunu bulunmalı.
 
-## 5. “KISALT” DEMEK YETERLİ DEĞİLDİR
+### Taşıma
 
-Bir paragraf kısaltılacaksa kısaltılmış biçimi tam olarak yaz.
+“2.3'e taşınsın” gibi belirsiz talimat bırakma. Mevcut yeri, yeni başlığı ve mümkünse hangi paragrafın ardından geleceğini belirt. Taşındığında kullanılacak metni de ver.
 
-Bir cümle çıkarılacaksa hangi cümlenin çıkarılacağını açıkça göster.
+### Geçiş
 
-## 6. “PARAGRAFI BÖL” DEMEK YETERLİ DEĞİLDİR
-
-Gerçekten iki paragrafa ayrılması gereken bir metinde:
-
-**Önerilen birinci paragraf:**  
-> “...”
-
-**Önerilen ikinci paragraf:**  
-> “...”
-
-şeklinde iki paragrafı da hazırla.
-
-Yalnız uzun olduğu için paragraf bölme. Düşünce yapısı gerçekten ayrılmayı gerektiriyorsa yap.
-
-## 7. “TAŞI” DEMEK YETERLİ DEĞİLDİR
-
-Bir metin başka başlığa taşınacaksa:
-
-- mevcut yeri,
-- yeni başlığı,
-- mümkünse hangi paragrafın ardından geleceğini,
-- taşındığında kullanılacak nihai biçimi
-
-açıkça ver.
-
-## 8. GEÇİŞ SORUNLARINI GERÇEKTEN ÇÖZ
-
-“Geçiş güçlendirilmeli” deme.
-
-Önce en az müdahaleli yolu seç:
+“Geçiş güçlendirilsin” deme. En az müdahaleli çözümü uygula:
 
 1. önceki paragrafın son cümlesini düzelt,
-2. yeni paragrafın ilk cümlesini düzelt,
+2. sonraki paragrafın ilk cümlesini düzelt,
 3. gereksiz ara paragrafı çıkar,
 4. iki paragrafı birleştir,
-5. ancak gerekiyorsa yeni geçiş cümlesi ekle.
+5. yalnız gerekiyorsa yeni geçiş cümlesi ekle.
 
-Seçtiğin çözümün nihai metnini yaz.
+Seçtiğin çözümün gerçek metnini ver.
 
-## 9. BÖLÜMLER ARASI ÇELİŞKİLERDE İKİ YERİ DE ÇÖZ
+## İki bölüm arasındaki çelişki
 
-Bir çelişki iki farklı bölümdeyse:
+Bir sorun iki farklı yerdeyse iki pasajı da göster ve tek tarafı düzelterek yeni çelişki bırakma:
 
-**Birinci yerdeki mevcut metin:**  
-> “...”
+**Birinci yerdeki mevcut metin:** ...
 
-**İkinci yerdeki mevcut metin:**  
-> “...”
+**İkinci yerdeki mevcut metin:** ...
 
-**Sorun:**  
-...
+**Sorun:** ...
 
-**Birinci yerde önerilen metin:**  
-> “...”
+**Birinci yerde önerilen metin:** ...
 
-**İkinci yerde önerilen metin:**  
-> “...”
+**İkinci yerde önerilen metin:** ...
 
-ver.
+Eğer yalnız bir tarafın değişmesi yeterliyse bunun nedenini kısa biçimde açıkla.
 
-Tek taraflı düzeltmeyle yeni çelişki bırakma.
+## Bilimsel güvenlik
 
-## 10. BİLİMSEL VE KAVRAMSAL SORUNLAR
+Her öneride aşağıdaki ayrımları koru:
 
-Yeni metin önerirken özellikle şunları koru:
+- kırâatlerin aslî aktarım zemini telakki, müşâfehe, edâ, isnad ve rivâyettir;
+- resm-i Osmânî kırâatleri meydana getiren bağımsız kaynak değildir;
+- resme uygunluk ile isnad sahihliği aynı ölçü değildir;
+- bir yazım biçiminin okuyuşa ihtimal vermesi okuyuşu kendiliğinden sahih yapmaz;
+- kırâat, rivâyet, tarîk ve vecih eş anlamlı değildir;
+- tarihsel rivâyet, klasik yorum ve yazarın çıkarımı birbirine karıştırılmamalıdır;
+- sahâbe mushaflarının tarihsel değeri ile Osmânî mushafların müşterek normatif otoritesi ayrılmalıdır;
+- resmdeki yazım özelliklerine kaynakların izin verdiğinden daha güçlü mana, hikmet veya i‘câz yüklenmemelidir.
 
-- kırâatin aslî aktarım zemini telakki, müşâfehe, edâ, isnad ve rivâyettir,
-- resm-i Osmânî bağımsız bir kırâat üreticisi değildir,
-- resme uygunluk ile isnad sahihliği aynı şey değildir,
-- yazının bir okuyuşa ihtimal vermesi o okuyuşun kendiliğinden sahih olduğunu göstermez,
-- kırâat/rivâyet/tarîk/vecih ayrımları korunmalıdır,
-- tarihsel rivâyet ile sonraki yorum birbirine karıştırılmamalıdır,
-- sahâbe mushaflarının tarihsel değeri ile Osmânî mushafların müşterek normatif statüsü ayrılmalıdır.
+## Kesinlik düzeyi
 
-## 11. KAYNAĞIN DESTEKLEDİĞİNDEN FAZLASINI SÖYLEME
+Bir ifadeyi daha akıcı hâle getirirken iddianın kanıt düzeyini yükseltme. Kaynakların gerektirdiği yerde “rivâyet edilmektedir”, “farklı görüşler bulunmaktadır”, “bu görüşe göre”, “mevcut veriler çerçevesinde” gibi ihtiyatı koru.
 
-Bir cümleyi daha akıcı hâle getirirken tarihsel kesinlik derecesini artırma.
+## Kaynak, dipnot ve alıntı güvenliği
 
-Gerekirse:
+- Yeni kaynak, dipnot veya bibliyografik ayrıntı üretme.
+- Mevcut bir cümlede dipnot varsa revizyon dipnotun dayandığı iddiayı değiştirmesin. Dipnotun yeni metinde hangi cümleyle ilişkili kalması gerektiğini gerektiğinde iç not olarak belirt.
+- Doğrudan alıntıyı sırf üslup için yeniden yazma. Sorun alıntının çevresindeki anlatımdaysa çevre metni düzelt.
+- Arapça âyet, kırâat örneği veya özel lafzı kaynak desteği olmadan değiştirme.
 
-- “rivâyet edilmektedir”,
-- “kaynaklarda farklı görüşler bulunmaktadır”,
-- “mevcut veriler çerçevesinde”,
-- “bu görüşe göre”
+## Doğrulanamayan ayrıntı
 
-gibi ihtiyatlı yapıları koru.
+Proje dosyaları doğru tarih, kimlik veya bibliyografik ayrıntıyı kesinleştirmiyorsa uydurma. Öncelikle şüpheli ayrıntıyı kaldırarak anlamı koruyan güvenli metin üret. Bu da mümkün değilse:
 
-## 12. DOĞRULANAMAYAN AYRINTI
+**Çözüm sınırı:** Bu ayrıntı mevcut proje dosyalarından kesinleştirilemediği için yeni bilgi önerilmemiştir.
 
-Proje dosyaları doğru tarih, isim veya bibliyografik ayrıntıyı kesinleştirmiyorsa uydurma.
+şeklinde açık kayıt bırak.
 
-Mümkünse sorunlu ayrıntıyı kaldırarak anlamı koruyan hazır bir cümle oluştur.
+## Aynı pasaj için tek çözüm
 
-Bu mümkün değilse sorunu açıkça belirt fakat yeni bilgi üretme.
+Bir pasajın bilimsel, dilsel, akışsal ve tekrar sorunları birlikteyse dört ayrı revizyon üretme. Hepsini birlikte çözen **tek nihai öneri** oluştur. Aşama 4 aynı pasajı yeniden ele alırsa bu çözüm temel alınacaktır.
 
-## 13. AYNI PASAJ İÇİN TEK NİHAİ ÇÖZÜM
+## Yazar dili
 
-Bir pasajın:
+Sorun açıklamalarında editör jargonu kullanma. Yazarın anlayacağı açık Türkçe kullan. “Kohesyon”, “redundans”, “diskursif kapanış”, “formülaik density” gibi terimlerden kaçın.
 
-- bilimsel,
-- dilsel,
-- akışsal,
-- tekrar
+## Çıktı
 
-sorunları birlikteyse bunları ayrı ayrı yeniden yazma.
+`work/stage-03-direct-revisions.md` dosyasını kitap sırasıyla oluştur:
 
-Bütün sorunları çözen tek nihai metin üret.
+1. `# Aşama 3 — Doğrudan Kullanılabilir Düzeltme Metinleri`
+2. `## Önsöz`
+3. `## Giriş`
+4. `## Birinci Bölüm`
+5. `## İkinci Bölüm`
+6. `## Üçüncü Bölüm`
+7. `## Dördüncü Bölüm`
+8. `## Sonuç`
+9. `## Kaynakça ve Bibliyografik Açık Düzeltmeler` — yalnız bu aşamada güvenli biçimde çözülenler
+10. `## Çözüm Sınırı Bulunan Maddeler`
+11. `## Aşama Özeti`
 
-## 14. DİL
+Aşama özetinde kaç doğrulanmış sorunun çözüldüğünü, kaçının Aşama 4'e bırakıldığını ve kaçında kaynak sınırı bulunduğunu ver. Sayıları uydurma.
 
-Rapor açıklamalarında teknik editör jargonundan kaçın.
-
-Örneğin:
-
-> “Bu cümle önceki paragrafta söylenen bilgiyi yeniden tekrar ettiği için gereksizdir.”
-
-gibi açık Türkçe kullan.
-
-## 15. ÇIKTI
-
-Bana kitap sırasıyla:
-
-# KİTAP BÖLÜMLERİ İÇİN DOĞRUDAN KULLANILABİLİR DÜZELTME METİNLERİ
-
-başlığı altında bütün somut düzeltmeleri ver.
-
-Henüz nihai DOCX raporu oluşturma.
-
-Aşama 4’te kitap geneline yayılan özel dil ve anlatım meselelerini ayrıca ele alacağımız için bu aşama bitince **dur.**
+Dosyayı tamamla, Aşama 2'deki doğrulanmış envanterle kapsama kontrolü yap, commit et ve **dur**.
