@@ -10,8 +10,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Önsözde ana tezi daha kısa ve işlevsel kurma
 
-**Bölüm/Başlık:** Önsöz, özellikle ikinci ve üçüncü paragraflar  
-**Kitaptaki sayfa:** 1  
+**Bölüm/Başlık:** Önsöz, özellikle ikinci ve üçüncü paragraflar
+**Kitaptaki sayfa:** 1
 **Bulmak için:** “Resm-i Osmânî’ye uygunluk...” ile başlayan paragraf ve hemen önceki paragraf.
 
 **Mevcut metin:** Önsöz, sözlü aktarım-yazı ilişkisini ve resm-i Osmânî’nin kırâatlerin kabulündeki yerini Girişte yeniden ele alınacak ayrıntı düzeyinde birkaç kez kurmaktadır.
@@ -23,8 +23,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Önsözün son paragrafında resm-i mushaf ile yazım biçimini ayırma
 
-**Bölüm/Başlık:** Önsöz, son paragraf  
-**Kitaptaki sayfa:** 1  
+**Bölüm/Başlık:** Önsöz, son paragraf
+**Kitaptaki sayfa:** 1
 **Bulmak için:** “Eserin, resm-i mushaf’ı yalnız geçmişte teşekkül etmiş bir imlâ biçimi...”
 
 **Mevcut metin:** Son paragraf, resm-i mushafı yalnız tarihsel bir imlâ biçimi olarak tanımlamakta ve Girişte yeniden açıklanan yöntem ilkelerini tekrar etmektedir.
@@ -38,8 +38,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Tarihsel çerçeveyi ayrıntılı ön özet olmaktan çıkarma
 
-**Bölüm/Başlık:** Giriş  
-**Kitaptaki sayfa:** 2 ve devamı  
+**Bölüm/Başlık:** Giriş
+**Kitaptaki sayfa:** 2 ve devamı
 **Bulmak için:** “Problemin tarihsel zemini, İslâm öncesi Arap yazısından...”
 
 **Mevcut metin:** Paragraf, İslâm öncesi yazıdan cem ve istinsaha kadar Birinci Bölümde yeniden anlatılacak tarihsel çizgiyi ayrıntılı biçimde özetlemekte ve istinsahın “öncelikli amacı” hakkında kesin hüküm vermektedir.
@@ -51,8 +51,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Kırâatin aktarım zeminini bütün unsurlarıyla tanımlama
 
-**Bölüm/Başlık:** Giriş, temel yaklaşım paragrafı  
-**Kitaptaki sayfa:** 2 ve devamı  
+**Bölüm/Başlık:** Giriş, temel yaklaşım paragrafı
+**Kitaptaki sayfa:** 2 ve devamı
 **Bulmak için:** “Çalışmada kırâatin aslî dayanağı, telakki ve müşâfehe yoluyla sürdürülen...”
 
 **Mevcut metin:** “okuyuş ve isnadla denetlenen” formülü kullanılıyor.
@@ -64,8 +64,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Amaç, kapsam, yöntem ve bölüm planını tekilleştirme
 
-**Bölüm/Başlık:** Giriş, ikinci yarı  
-**Kitaptaki sayfa:** 5-7  
+**Bölüm/Başlık:** Giriş, ikinci yarı
+**Kitaptaki sayfa:** 5-7
 **Bulmak için:** “Bu sınırlandırma, çalışmanın Kur’an tarihinin bütün meselelerini...” ile başlayan kısımdan bölüm planının sonuna kadar.
 
 **Mevcut metin:** Amaç, kapsam, katkı, yöntem ve dört bölümün içeriği birbirine yakın paragraflarda birkaç kez yeniden açıklanmaktadır.
@@ -81,8 +81,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Şehir mushaflarındaki sınırlı farklılığı negatif kalıpla anlatmama
 
-**Bölüm/Başlık:** Giriş  
-**Kitaptaki sayfa:** 2 ve devamı  
+**Bölüm/Başlık:** Giriş
+**Kitaptaki sayfa:** 2 ve devamı
 **Bulmak için:** “Bu yaklaşım, çalışmada kullanılan kavramlar arasında...” ile başlayan paragraf.
 
 **Mevcut metin:**
@@ -95,8 +95,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Yöntem ilkesini gövdeyle uyumlu biçimde ifade etme
 
-**Bölüm/Başlık:** Giriş, yöntem paragrafları  
-**Kitaptaki sayfa:** 5-7  
+**Bölüm/Başlık:** Giriş, yöntem paragrafları
+**Kitaptaki sayfa:** 5-7
 **Bulmak için:** “erken nakil, klasik yorum, çağdaş değerlendirme ve yazarın çıkarımı...” ayrımının yapıldığı kısım.
 
 **Mevcut metin:** Yöntem ayrımı doğru kurulmasına rağmen gövdedeki bazı tarihsel açıklamalar aynı kesinlik düzeyinde sürdürülmektedir.
@@ -108,8 +108,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Girişten Birinci Bölüme ikinci kapanış oluşturmadan geçme
 
-**Bölüm/Başlık:** Giriş, son paragraf  
-**Kitaptaki sayfa:** 7  
+**Bölüm/Başlık:** Giriş, son paragraf
+**Kitaptaki sayfa:** 7
 **Bulmak için:** “Bu yapı içinde araştırmanın temel sorusu...”
 
 **Mevcut metin:** Araştırma sorusu ikinci bir sonuç paragrafı gibi yeniden kurulmaktadır.
@@ -123,8 +123,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.1’de farklı kanıt düzeylerini ayırıp sentezi sona taşıma
 
-**Bölüm/Başlık:** 1.1. İslâm’dan Önce Arap Yazısının Durumu  
-**Kitaptaki sayfa:** 8-10  
+**Bölüm/Başlık:** 1.1. İslâm’dan Önce Arap Yazısının Durumu
+**Kitaptaki sayfa:** 8-10
 **Bulmak için:** Cahiliye şiirlerinin Kâbe’ye asılması, yazı bilen kişiler ve “Bu farklı görüşler birlikte değerlendirildiğinde...” ile başlayan sentez.
 
 **Mevcut metin:** Tartışmalı aktarımlar ile daha somut yazı kullanımı verileri aynı ağırlıkta sıralanıyor; ara sentez deliller tamamlanmadan önce geliyor.
@@ -134,25 +134,10 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 **Önerilen düzeltme:**
 > İslâm öncesi Arap toplumunda yazının kullanımına ilişkin bilgiler aynı kesinlik düzeyinde değildir. Şiirlerin Kâbe’ye asıldığına dair aktarımlar edebî gelenekte yer almakla birlikte tarihsel değeri konusunda ihtiyat gerektirir. Buna karşılık ticaret, sözleşme ve haberleşme gibi alanlarda yazının kullanıldığına ve bazı kişilerin okuma-yazma bildiğine ilişkin veriler, yazının tamamen bilinmeyen bir araç olmadığını göstermektedir. Bu veriler birlikte değerlendirildiğinde, vahyin nüzûlü sırasında Arap toplumunda sınırlı fakat mevcut bir yazı kültürünün bulunduğu söylenebilir.
 
-### 1.1’deki dil bozukluğunu ve Varaka notunu temizleme
-
-**Bölüm/Başlık:** 1.1  
-**Kitaptaki sayfa:** 8-10  
-**Bulmak için:** “Özellikle ticaretle uğraşanlar ve şehir hayatına...” ile “Varaka b. Nevfel’dir [(ö. 610 (?)].” ifadeleri.
-
-**Mevcut metin:** Cümle yapısı bozuk; Varaka b. Nevfel’in adından sonra bozulmuş tarih ve belirsizlik işareti bulunuyor.
-
-**Sorun:** Yayımlanacak metinde çalışma notu ve doğrulanmamış tarih kalmamalıdır.
-
-**Önerilen düzeltme:**
-> Özellikle ticaretle uğraşanlar ile şehir hayatının yazılı işlemlerine katılan bazı kimselerin yazıyı kullandığı anlaşılmaktadır.
->
-> Bu duruma dair dikkat çekici örneklerden biri, ilk vahiy hadisesinden sonra Hz. Hatice’nin Hz. Peygamber’i götürdüğü Varaka b. Nevfel’dir.
-
 ### 1.2’nin üçlü girişini tek paragrafta toplama
 
-**Bölüm/Başlık:** 1.2. Erken Dönemde Kur’an’ın Yazı ile İlişkisi  
-**Kitaptaki sayfa:** 10-11  
+**Bölüm/Başlık:** 1.2. Erken Dönemde Kur’an’ın Yazı ile İlişkisi
+**Kitaptaki sayfa:** 10-11
 **Bulmak için:** “Vahyin inişiyle birlikte yazının pozisyonu...” ile başlayan ilk üç paragraf.
 
 **Mevcut metin:** Yazının önemi, sözlü aktarımın merkezîliği ve yazılı kaydın tamamlayıcılığı somut rivâyetlere geçmeden önce birkaç kez kuruluyor.
@@ -164,8 +149,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.2’de rivâyetin gösterdiği sınırı aşan kesinliği azaltma
 
-**Bölüm/Başlık:** 1.2  
-**Kitaptaki sayfa:** 10-11  
+**Bölüm/Başlık:** 1.2
+**Kitaptaki sayfa:** 10-11
 **Bulmak için:** “Bu ve bunun gibi rivâyetler...”
 
 **Mevcut metin:**
@@ -178,8 +163,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.2’de ikinci ve üçüncü gerekçeyi gerçekten birleştirme
 
-**Bölüm/Başlık:** 1.2  
-**Kitaptaki sayfa:** 11-12  
+**Bölüm/Başlık:** 1.2
+**Kitaptaki sayfa:** 11-12
 **Bulmak için:** “İkinci olarak vahiy henüz tamamlanmadığından...” ve hemen sonraki “Üçüncü olarak sûrelerin tertibinin...” maddeleri.
 
 **Mevcut ikinci madde:**
@@ -197,8 +182,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Vahiy metinlerinin muhafazasına ilişkin iki modeli kesin tarihsel kurum gibi sunmama
 
-**Bölüm/Başlık:** 1.2  
-**Kitaptaki sayfa:** 12  
+**Bölüm/Başlık:** 1.2
+**Kitaptaki sayfa:** 12
 **Bulmak için:** “Birinci görüşe göre vahiy kâtipleri tarafından yazılan...” ve “İkinci görüş...”
 
 **Mevcut metin:** İki görüş, dönemdeki yazılı malzemenin muhafazasını kesin kurumsal biçimde açıklayan modeller gibi aktarılıyor.
@@ -210,8 +195,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.3’te cemi yazı-hafıza birlikteliği içinde anlatma
 
-**Bölüm/Başlık:** 1.3. Kur’an’ın Mushaflaştırılma İhtiyacı ve Tarihsel Arka Plan  
-**Kitaptaki sayfa:** 13-15  
+**Bölüm/Başlık:** 1.3. Kur’an’ın Mushaflaştırılma İhtiyacı ve Tarihsel Arka Plan
+**Kitaptaki sayfa:** 13-15
 **Bulmak için:** “Dolayısıyla Hz. Peygamber dönemindeki toplama, hafızada...”
 
 **Mevcut metin:** Cem kavramı yalnız hafızadaki toplamayla sınırlandırılıyor.
@@ -223,8 +208,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Hârice kimliğindeki çelişkiyi güvenli biçimde giderme
 
-**Bölüm/Başlık:** 1.3  
-**Kitaptaki sayfa:** 13-15  
+**Bölüm/Başlık:** 1.3
+**Kitaptaki sayfa:** 13-15
 **Bulmak için:** “Zeyd b. Sâbit’in kızı Hârice’den...” ve daha sonraki “Hârice b. Zeyd...” kullanımları.
 
 **Mevcut metin:** Aynı isim iki farklı kimlik nispetiyle kullanılıyor.
@@ -236,8 +221,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Ebû Bekir dönemindeki yazılı malzemeyi “suhuf” terimiyle tutarlı anlatma
 
-**Bölüm/Başlık:** 1.3  
-**Kitaptaki sayfa:** 14-15  
+**Bölüm/Başlık:** 1.3
+**Kitaptaki sayfa:** 14-15
 **Bulmak için:** Ebû Bekir döneminde derlenen malzemenin yer yer “mushaf”, yer yer “sahife/suhuf” olarak anıldığı paragraflar.
 
 **Mevcut metin:** Aynı tarihsel malzeme için terimler kayıyor.
@@ -249,8 +234,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Ebû Bekir suhufu, yedi harf ve Mervân meselesinde kesinliği azaltma
 
-**Bölüm/Başlık:** 1.3  
-**Kitaptaki sayfa:** 14-15  
+**Bölüm/Başlık:** 1.3
+**Kitaptaki sayfa:** 14-15
 **Bulmak için:** Ebû Bekir suhufunun yedi harfi içerdiğini kesinleştiren cümle ile “Görünen o ki, Mervân b. Hakem’i...” cümlesi.
 
 **Mevcut metin:** Yedi harfle ilişki kesin tarihsel hüküm gibi veriliyor; Mervân’ın niyeti psikolojik gerekçeyle açıklanıyor.
@@ -264,8 +249,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.3’ü yedi harf ve arza-i âhire tartışmasına girmeden kapatma
 
-**Bölüm/Başlık:** 1.3 sonu → 1.4  
-**Kitaptaki sayfa:** 15-16  
+**Bölüm/Başlık:** 1.3 sonu → 1.4
+**Kitaptaki sayfa:** 15-16
 **Bulmak için:** Ebû Bekir ceminden sonra yedi harf ve son arzaya geçen paragraflar.
 
 **Mevcut metin:** 1.3, 1.4’te yeniden ele alınacak tartışmayı önceden genişletiyor.
@@ -277,8 +262,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.4’ün açılışında yazı ve hafızayı birbirini tamamlayan unsurlar olarak kurma
 
-**Bölüm/Başlık:** 1.4. Resm-i Mushaf’ı Çoğaltmayı Gerektiren Sebepler  
-**Kitaptaki sayfa:** 16  
+**Bölüm/Başlık:** 1.4. Resm-i Mushaf’ı Çoğaltmayı Gerektiren Sebepler
+**Kitaptaki sayfa:** 16
 **Bulmak için:** “Hz. Ebû Bekir döneminde gerçekleştirilen ilk cem faaliyetiyle...”
 
 **Mevcut metin:** “Kur’an vahyinin tamamı yazılı malzeme üzerinden güvence altına alınmıştır” deniliyor.
@@ -290,8 +275,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.4’te ihtilafın mahiyetini ihtiyatlı anlatma ve Taberî çalışma notunu temizleme
 
-**Bölüm/Başlık:** 1.4  
-**Kitaptaki sayfa:** 16 ve devamı  
+**Bölüm/Başlık:** 1.4
+**Kitaptaki sayfa:** 16 ve devamı
 **Bulmak için:** “Bu rivâyetler, o dönemde Müslümanlar arasında kırâate yönelik ihtilafların...” ve Taberî’nin rivâyetine geçilen paragraf.
 
 **Mevcut metin:** İhtilaf “çok vahim bir noktaya gelmiş” biçiminde dramatize ediliyor; ayrıca `Taberî'nin (ö. 310/922) (Tâberî'nin ölüm tarihi daha önce geçti mi bakılabilir mi) rivâyetinde...` biçiminde çalışma notu kalmıştır.
@@ -305,8 +290,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.4’te yedi harf, arza-i âhire ve istinsah ilişkisini tek sentezle sonuçlandırma
 
-**Bölüm/Başlık:** 1.4, son kısım  
-**Kitaptaki sayfa:** 16-20  
+**Bölüm/Başlık:** 1.4, son kısım
+**Kitaptaki sayfa:** 16-20
 **Bulmak için:** Aynı ilişkiyi birkaç kez “hulâsa” ve sonuç cümleleriyle açıklayan paragraflar.
 
 **Mevcut metin:** Tarihsel rivâyet, klasik yorum ve yazarın sonucu birkaç kapanışta iç içe geçiyor.
@@ -318,8 +303,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.4’ten 1.5’e geçiş ekleme
 
-**Bölüm/Başlık:** 1.4 sonu → 1.5  
-**Kitaptaki sayfa:** 20  
+**Bölüm/Başlık:** 1.4 sonu → 1.5
+**Kitaptaki sayfa:** 20
 **Bulmak için:** 1.4’ün son paragrafı.
 
 **Mevcut durum:** İstinsahı gerektiren şartlardan doğrudan mushaf sayısına geçiliyor.
@@ -329,8 +314,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Mushaf sayısı konusunda 1.5 ile 4.1’i birlikte düzeltme ve aynı başlıktaki çalışma notlarını temizleme
 
-**Bölüm/Başlık:** 1.5 ve 4.1  
-**Kitaptaki sayfa:** 20-24 ve 87-90  
+**Bölüm/Başlık:** 1.5 ve 4.1
+**Kitaptaki sayfa:** 20-24 ve 87-90
 **Bulmak için:** 1.5’te “en güçlü kanaat... toplam altı nüsha” sonucuna ulaşan kısım; 4.1’de Dânî’nin dört ve yedi nüsha görüşlerinin aktarıldığı kısım.
 
 **Mevcut metin:** Bir yerde toplam altı nüsha en güçlü sonuç olarak kesinleştirilirken başka bir yerde Dânî’nin çoğunluk görüşü dört nüsha olarak aktarılmaktadır. Aynı başlıkta İbn Ebû Dâvud, Suyûtî, Amr b. Kays ve Muhammed Hamîdullah adlarının yanında çalışma notları veya bozuk tarihler de kalmıştır.
@@ -341,7 +326,23 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 > Hz. Osman döneminde çoğaltılan mushafların sayısı konusunda kaynaklarda farklı rivâyetler bulunmaktadır. Dânî, âlimlerin çoğunluğuna göre dört nüsha yazıldığını; bunlardan Kûfe, Basra ve Şam’a birer nüsha gönderildiğini, bir nüshanın da halifenin yanında kaldığını nakleder. Bunun yanında yedi nüsha görüşünü de aktarır. Bu nedenle rivâyetlerden hareketle tek bir toplam sayıyı tartışmasız biçimde kesinleştirmek yerine, farklı nakilleri kendi bağlamları içinde değerlendirmek daha isabetlidir.
 
 **4.1 için önerilen metin:**
-> Dânî’nin aktardığı çoğunluk görüşünde dört nüsha öne çıkmaktadır. Yedi nüsha görüşünde Mekke, Yemen ve Bahreyn’e de nüsha gönderildiği belirtilmekle birlikte bu merkezlere ilişkin rivâyetlerin tarihsel dayanağı aynı kuvvette değildir. Özellikle Yemen, Bahreyn, Mısır ve el-Cezîre’ye gönderildiği ileri sürülen mushaflara dair sonraki iddialar mevcut verilerle açık biçimde desteklenmemektedir.
+> Kur'an tarihi kaynaklarına göre Hz. Osman'ın istinsah ettirdiği mushafların sayısı konusunda ihtilaf bulunmakla birlikte, Ebu Amr ed-Dânî'nin (ö. 444/1053) aktardığı üzere ulemânın çoğunluğu bu sayının dört olduğu görüşündedir. Bu temel nüshalar Medine, Kûfe, Basra ve Şam'a tahsis edilmiştir (Dânî, 2010). Mekke, Yemen ve Bahreyn'e de birer nüsha gönderildiğini öne süren yedi nüsha rivayeti mevcut olsa da, Dânî bu görüşün diğerine kıyasla daha zayıf (galebe) olduğunu belirtir (Karaçam, 2012). Özellikle Yemen, Bahreyn, Mısır ve el-Cezîre gibi merkezlere mushaf gönderildiği iddiaları, mushaf imlâsı (resmü'l-mushaf) literatüründe bu bölgelere özgü herhangi bir imlâ farklılığının rapor edilmemesi nedeniyle tarihsel açıdan zayıf kabul edilmektedir (Altıkulaç, 2005; Harman, 2020). Dolayısıyla, kıraat imamlarının ihtilaflarına dayanak teşkil eden veriler sadece dört ana merkezle sınırlı kalmaktadır.
+
+**NOT:**
+Kaynakça:
+
+**Kitap:**
+Dânî, E. A. (2010). *El-Mukni‘ fî ma‘rifeti mersûmi mesâhifi ehli’l-emsâr* (M. A. Dehhân, Ed.). Dâru'l-Fikr. (Orijinal eserin yayın tarihi: 11. yüzyıl).
+
+**Ansiklopedi Maddesi:**
+Harman, Ö. F. (2020). Mushaf. *Türkiye Diyanet Vakfı İslam Ansiklopedisi* içinde (Cilt 31, ss. 240-246). Türkiye Diyanet Vakfı Yayınları. https://islamansiklopedisi.org.tr/mushaf
+
+**Akademik Kitap/İnceleme:**
+Altıkulaç, T. (2005). *Hz. Osman'a nisbet edilen mushaf-ı şerîf (Topkapı Sarayı Müzesi nüshası)*. İslam Tarih, Sanat ve Kültür Araştırma Merkezi (IRCICA).
+
+Altıkulaç, T. (2018). *Mushaf tarihi ve yapısı*. Diyanet İşleri Başkanlığı Yayınları.
+
+Karaçam, İ. (2012). *Kıraat ilminin kurucusu Ebu Amr ed-Dânî ve el-Teysîr*. Marmara Üniversitesi İlahiyat Fakültesi Vakfı Yayınları.
 
 **Aynı başlıkta yapılacak yerel tashihler:**
 - `İbn Ebû Dâvud'un (ö. 316/929 bu ölüm tarihi muhtemeln ileriki sayfalarda geçmiştir. İleriki sayfalardan silinmesi lazım)` → `İbn Ebû Dâvud'un (ö. 316/929)`.
@@ -351,8 +352,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.6’da resm kavramının sözlük ve terim anlamını tek çizgide kurma ve Kastallânî notunu temizleme
 
-**Bölüm/Başlık:** 1.6, 1.6.1 ve 1.6.2  
-**Kitaptaki sayfa:** 24-27  
+**Bölüm/Başlık:** 1.6, 1.6.1 ve 1.6.2
+**Kitaptaki sayfa:** 24-27
 **Bulmak için:** Resm kavramına geçmeden önceki tekrar eden girişler; Kastallânî’nin tanımının verildiği paragraf.
 
 **Mevcut metin:** Resmin niçin ele alındığı ve sözlük-teknik anlam farkı birkaç kez yeniden açıklanıyor. Kastallânî adında `ö. 923/1517 bu tarih daha önce geçtiyse silinsin` notu bulunuyor.
@@ -366,8 +367,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.7’de Ebû Ubeyde paragrafındaki tekrar ve aşırı “kurucu” dili azaltma
 
-**Bölüm/Başlık:** 1.7. Resm-i Osmânî’nin Tanımı, Önemi ve Mahiyeti  
-**Kitaptaki sayfa:** 27 ve devamı  
+**Bölüm/Başlık:** 1.7. Resm-i Osmânî’nin Tanımı, Önemi ve Mahiyeti
+**Kitaptaki sayfa:** 27 ve devamı
 **Bulmak için:** “İlk dönem âlimlerinden Ebû Ubeyde el-Kâsım b. Sellâm...”
 
 **Mevcut metin:** Aynı fikir paragrafın ortasında ve sonunda yeniden kuruluyor; “kurucu safha/teorik temel” gibi ifadeler kaynak aktarımından daha ileri sonuç izlenimi veriyor.
@@ -377,8 +378,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.7’de Dânî ve Ebû Dâvud paragraflarını olumlu tanımlarla yeniden kurma
 
-**Bölüm/Başlık:** 1.7  
-**Kitaptaki sayfa:** 27 ve devamı  
+**Bölüm/Başlık:** 1.7
+**Kitaptaki sayfa:** 27 ve devamı
 **Bulmak için:** Dânî ile başlayan paragraf ve “Dânî’nin talebesi olarak bilinen Ebû Dâvud...” paragrafı.
 
 **Mevcut metin:** “bir alan olmaktan çıkma”, “X değil Y” ve benzeri karşıtlıklar art arda tekrarlanıyor.
@@ -391,8 +392,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.7’de Zerkeşî paragrafındaki tekrarlanan olumsuz karşıtlıkları azaltma
 
-**Bölüm/Başlık:** 1.7  
-**Kitaptaki sayfa:** 27 ve devamı  
+**Bölüm/Başlık:** 1.7
+**Kitaptaki sayfa:** 27 ve devamı
 **Bulmak için:** “Zerkeşî ise, mushaf yazımını ele alırken...”
 
 **Mevcut metin:** Aynı “kıyas değil, nakil” karşıtlığı bir paragrafta birkaç kez yeniden kuruluyor.
@@ -404,8 +405,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.7’de çağdaş araştırmacıların görüşlerini aynı kalıpla tekrarlamama
 
-**Bölüm/Başlık:** 1.7  
-**Kitaptaki sayfa:** 27 ve devamı  
+**Bölüm/Başlık:** 1.7
+**Kitaptaki sayfa:** 27 ve devamı
 **Bulmak için:** el-Azamî, Zürkânî, Motzki ve Sinai’nin aktarıldığı ardışık paragraflar.
 
 **Mevcut metin:** Birkaç kaynak art arda “yalnızca ... değil”, “değiştiren değil”, “ortadan kaldırmak için değil” kalıplarıyla aktarılıyor ve yer yer tarihsel niyet kaynakların açık tespitinden daha kesin biçimde kuruluyor.
@@ -419,8 +420,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.8’de tevkîfîlik ile normatif bağlılığı ayırma ve Bâkıllânî notunu kaldırma
 
-**Bölüm/Başlık:** 1.8. Resm-i Osmânî Tevkîfî mi İctihâdî mi?  
-**Kitaptaki sayfa:** 31-34  
+**Bölüm/Başlık:** 1.8. Resm-i Osmânî Tevkîfî mi İctihâdî mi?
+**Kitaptaki sayfa:** 31-34
 **Bulmak için:** Resme bağlılığın gerekçesi tartışılırken aynı temel sorunun birkaç kez yeniden sorulduğu kısım; `Bâkıllânî (ö. 403/10113 daha önce geçtiyse silinsin)` ifadesi.
 
 **Mevcut metin:** Tevkîfîlik ile normatif bağlılık aynı tartışma gibi ilerliyor; Bâkıllânî’nin tarihi bozulmuş ve çalışma notu metinde kalmıştır.
@@ -434,8 +435,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.9’da resm-i mushaf ile resm-i Osmânî’yi eşitlememe, hazfi niyetle tanımlamama ve Ca‘berî notunu temizleme
 
-**Bölüm/Başlık:** 1.9. Resm-i Mushaf’ın Temel Özellikleri  
-**Kitaptaki sayfa:** 34-39  
+**Bölüm/Başlık:** 1.9. Resm-i Mushaf’ın Temel Özellikleri
+**Kitaptaki sayfa:** 34-39
 **Bulmak için:** “Resm-i Mushaf (resm-i Osmânî)”, “harfin bilinçli olarak düşürülmesi” ve `Ca'berî (ö. 832/1428 ölüm tarihleri tekrar gözden geçirilmeli.)` ifadeleri.
 
 **Mevcut metin:** Genel alan ile belirli tarihsel yazım çerçevesi eşitleniyor; hazif tanımına peşinen bilinçli niyet yükleniyor; Ca‘berî’nin yanında çalışma notu kalmıştır.
@@ -449,8 +450,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.9 ve 1.9.2’de tekrar eden kapanışları tek senteze indirme
 
-**Bölüm/Başlık:** 1.9 ve 1.9.2  
-**Kitaptaki sayfa:** 35-40  
+**Bölüm/Başlık:** 1.9 ve 1.9.2
+**Kitaptaki sayfa:** 35-40
 **Bulmak için:** Hazif örneklerinden sonra ve 1.9.2’nin son üç paragrafında aynı sonucu yeniden veren kapanışlar.
 
 **Mevcut metin:** Aynı alt başlık birden fazla sonuç paragrafıyla kapanıyor; yer yer resm özelliklerine “okuyuşu koruma amacı” yükleniyor.
@@ -460,8 +461,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 1.10’da kabul ölçütlerini kronoloji hatası olmadan bir kez kurma ve İbn Mücâhid notunu temizleme
 
-**Bölüm/Başlık:** 1.10. Resm-i Mushaf’ın Ortak Hâle Gelmesi ve Kırâatte Ölçü Olması  
-**Kitaptaki sayfa:** 40-45  
+**Bölüm/Başlık:** 1.10. Resm-i Mushaf’ın Ortak Hâle Gelmesi ve Kırâatte Ölçü Olması
+**Kitaptaki sayfa:** 40-45
 **Bulmak için:** İsnad, Arap diline uygunluk ve resme uygunluğun birkaç kez tekrarlandığı; Zerkeşî’nin İbnü’l-Cezerî’den sonraki bir isim gibi konumlandığı pasaj; `İbn Mücâhid (ö. 324/936 tekrar gözden geçirilsin)` ifadesi.
 
 **Mevcut metin:** Kriterler döngüsel biçimde yeniden anlatılıyor; kronolojik sıra bozuluyor; İbn Mücâhid’in yanında çalışma notu var.
@@ -476,12 +477,18 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 **Bölüm sonuna eklenecek geçiş:**
 > Resm-i Osmânî’nin kırâatlerin değerlendirilmesinde yazılı bir ölçü hâline gelmesi, bu ölçünün sözlü rivâyet düzeni içindeki yerini ayrıca açıklamayı gerekli kılar. İkinci bölüm bu sebeple kırâatlerin rivâyet mantığına yönelmektedir.
 
+### Birinci Bölümde kalan ölüm tarihi ve çalışma notlarını topluca temizleme
+
+**NOT:**
+1. `Amr b. Kays (ö. ?)` ifadesi `Amr b. Kays (ö. 146/763)` olarak güvenli biçimde düzeltilebilir. Kaynak: https://islamansiklopedisi.org.tr/amr-b-kays-el-mulai
+2. `Muhammed Hamîdullah (ö. 20029...)` ifadesi `Muhammed Hamîdullah (ö. 2002)` olarak güvenli biçimde düzeltilebilir. Kaynak: https://islamansiklopedisi.org.tr/muhammed-hamidullah
+
 ## İkinci Bölüm
 
 ### Kırâat olgusu ile kırâat ilminin disiplinleşmesini ayırma
 
-**Bölüm/Başlık:** 2.1. Kırâat Kavramı ve Rivâyet Temelli Yapısı  
-**Kitaptaki sayfa:** 45-46  
+**Bölüm/Başlık:** 2.1. Kırâat Kavramı ve Rivâyet Temelli Yapısı
+**Kitaptaki sayfa:** 45-46
 **Bulmak için:** Kırâat ilminin “ortaya çıkışı” ile erken okuyuş farklılıklarını aynı süreç gibi anlatan cümleler.
 
 **Sorun:** Okuyuşların erken aktarımı ile kırâat ilminin daha sonraki disiplinleşmesi aynı tarihsel olay değildir.
@@ -491,8 +498,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### İkinci Bölüme iki temel kavramsal alt başlık ekleme
 
-**Bölüm/Başlık:** 2.1 ile mevcut 2.2 arasına  
-**Kitaptaki sayfa:** 45-46  
+**Bölüm/Başlık:** 2.1 ile mevcut 2.2 arasına
+**Kitaptaki sayfa:** 45-46
 **Bulmak için:** Kırâat kavramından doğrudan rivâyet-sened tartışmasına geçilen yer.
 
 **Sorun:** Kırâat-rivâyet-tarîk-vecih ile telakki-müşâfehe-edâ ayrımları kitapta toplu ve açık biçimde kurulmamıştır.
@@ -508,8 +515,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 2.1 ile 2.2’nin görevlerini ayırma
 
-**Bölüm/Başlık:** 2.1 sonu → 2.2  
-**Kitaptaki sayfa:** 45-47  
+**Bölüm/Başlık:** 2.1 sonu → 2.2
+**Kitaptaki sayfa:** 45-47
 **Bulmak için:** 2.1’de ayrıntılı rivâyet/sened açıklamalarının ardından “Netice...” türü kapanış.
 
 **Mevcut metin:** 2.1, 2.2’nin esas konusu olan rivâyet ve isnadı önceden geniş biçimde işliyor.
@@ -519,8 +526,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Rivâyet, sened ve otoriteyi aynı negatif tanım kalıbıyla başlatmama
 
-**Bölüm/Başlık:** 2.2.1-2.2.3  
-**Kitaptaki sayfa:** 47-50  
+**Bölüm/Başlık:** 2.2.1-2.2.3
+**Kitaptaki sayfa:** 47-50
 **Bulmak için:** Üç alt başlığın “yalnız ... değildir” biçimindeki benzer açılışları.
 
 **Sorun:** Üç farklı kavram aynı karşıtlık kalıbıyla tanımlanıyor ve aralarındaki işlev farkı bulanıklaşıyor.
@@ -530,8 +537,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Kırâat imamlarını okuyuşların kurucusu gibi göstermeme
 
-**Bölüm/Başlık:** 2.2-2.3  
-**Kitaptaki sayfa:** 49-50  
+**Bölüm/Başlık:** 2.2-2.3
+**Kitaptaki sayfa:** 49-50
 **Bulmak için:** İmamların kendi okuyuşlarını “oluşturduğu” veya bağımsız biçimde “seçtiği” izlenimi veren cümleler.
 
 **Sorun:** İmam nispeti, kırâatin bağımsız biçimde o imam tarafından üretildiği anlamına gelmez.
@@ -541,8 +548,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 2.2’den 2.3’e ara sonucu gerçek geçişe dönüştürme
 
-**Bölüm/Başlık:** 2.2.3 → 2.3  
-**Kitaptaki sayfa:** 49-50  
+**Bölüm/Başlık:** 2.2.3 → 2.3
+**Kitaptaki sayfa:** 49-50
 **Bulmak için:** “Sonuç olarak kırâatlerde otorite ekseni...”
 
 **Mevcut metin:** Otorite ekseni ikinci kez özetleniyor.
@@ -552,8 +559,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 2.3 ve 2.4’te yazıyı kırâatlerin üreticisi veya tasarım aracı gibi göstermeme
 
-**Bölüm/Başlık:** 2.3-2.4  
-**Kitaptaki sayfa:** 50-57  
+**Bölüm/Başlık:** 2.3-2.4
+**Kitaptaki sayfa:** 50-57
 **Bulmak için:** Resmin “farklı kırâatleri taşıyacak şekilde tasarlandığı”, “resim olmasaydı...” veya resmin kırâat ve tefsiri doğrudan şekillendirdiği anlamına gelen cümleler.
 
 **Sorun:** Yazının birden fazla okuyuşla bağdaşması, tarihsel olarak baştan tasarlanmış bir amaçla özdeşleştirilmemelidir.
@@ -565,7 +572,7 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### İkinci Bölümden Üçüncü Bölüme somut örnekler üzerinden geçiş
 
-**Bölüm/Başlık:** 2.4 sonu → Üçüncü Bölüm  
+**Bölüm/Başlık:** 2.4 sonu → Üçüncü Bölüm
 **Kitaptaki sayfa:** 56-57
 
 **Önerilen düzeltme:**
@@ -575,8 +582,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 3.1’de gerçek uygunluk ile ihtimalî uygunluğu açıkça ayırma
 
-**Bölüm/Başlık:** 3.1. Resm-i Osmânî’nin Çoklu Kırâatleri Yansıtma Özelliği  
-**Kitaptaki sayfa:** 57-59  
+**Bölüm/Başlık:** 3.1. Resm-i Osmânî’nin Çoklu Kırâatleri Yansıtma Özelliği
+**Kitaptaki sayfa:** 57-59
 **Bulmak için:** Aynı harf iskeletinin birden fazla okuyuşa imkân verdiği örnekler.
 
 **Mevcut metin:** Yazıyla doğrudan örtüşen okuyuş ile harf iskeletinin ihtimali içinde bulunan okuyuş her yerde açıkça ayrılmıyor.
@@ -586,8 +593,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Şâz kırâati yalnız resme aykırılıkla açıklamama
 
-**Bölüm/Başlık:** 3.1-3.2  
-**Kitaptaki sayfa:** 57-60  
+**Bölüm/Başlık:** 3.1-3.2
+**Kitaptaki sayfa:** 57-60
 **Bulmak için:** Şâzlığın “resme uymadığı için” tek sebebe bağlandığı cümleler.
 
 **Sorun:** Şâzlık, tek bir kabul ölçüsüne indirgenemez.
@@ -597,8 +604,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 3.2’de lehçe ile yedi harfi doğrudan özdeşleştirmeme
 
-**Bölüm/Başlık:** 3.2  
-**Kitaptaki sayfa:** 59-60  
+**Bölüm/Başlık:** 3.2
+**Kitaptaki sayfa:** 59-60
 **Bulmak için:** Lehçe farklılıklarının yedi harfin kendisi gibi sunulduğu kısım.
 
 **Önerilen düzeltme:**
@@ -606,8 +613,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 3.3’te grafik özelliklerden doğrudan mana ve tasarım amacı çıkarmama
 
-**Bölüm/Başlık:** 3.3  
-**Kitaptaki sayfa:** 60-62  
+**Bölüm/Başlık:** 3.3
+**Kitaptaki sayfa:** 60-62
 **Bulmak için:** Nokta/hareke yokluğundan “asla işaret”, anlam zenginliği veya özel tasarım sonucu çıkaran cümleler.
 
 **Önerilen düzeltme:**
@@ -615,8 +622,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 3.4 başlığını ve çerçevesini mana/hikmet hükmünden arındırma
 
-**Bölüm/Başlık:** Mevcut 3.4  
-**Kitaptaki sayfa:** 62-64  
+**Bölüm/Başlık:** Mevcut 3.4
+**Kitaptaki sayfa:** 62-64
 **Mevcut başlık:** “Resm-i Osmânî’de Ziyâde ve Hazfin İnce Manaya Delaleti”
 
 **Sorun:** Başlık, hazif ve ziyâde biçimlerinin zorunlu olarak gizli mana taşıdığını sonuçtan önce kabul etmektedir.
@@ -632,8 +639,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Merrâkuşî ve benzeri hikmet yorumlarını kaynak görüşü olarak sınırlandırma
 
-**Bölüm/Başlık:** 3.4  
-**Kitaptaki sayfa:** 62-64  
+**Bölüm/Başlık:** 3.4
+**Kitaptaki sayfa:** 62-64
 **Bulmak için:** Harf biçiminden ilâhî kudret, korku, sürat, mağfiret vb. sonuçlar çıkarılan örnekler.
 
 **Sorun:** Yorum ile tarihsel-filolojik açıklama aynı delil düzeyinde sunulmamalıdır.
@@ -643,8 +650,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 3.5’te vasl-fasl ile anlam arasındaki ilişkiyi zorunlu sebep gibi sunmama
 
-**Bölüm/Başlık:** Mevcut 3.5  
-**Kitaptaki sayfa:** 64-66  
+**Bölüm/Başlık:** Mevcut 3.5
+**Kitaptaki sayfa:** 64-66
 **Mevcut başlık:** “Resm-i Osmânî’de Yazım Farkının Anlam Farkına İşaret Etmesi”
 
 **Önerilen başlık ve çerçeve:**
@@ -654,8 +661,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 3.6’da tarihsel oluşum ile sonraki bağlayıcılığı birbirinden ayırma
 
-**Bölüm/Başlık:** 3.6  
-**Kitaptaki sayfa:** 66-70  
+**Bölüm/Başlık:** 3.6
+**Kitaptaki sayfa:** 66-70
 **Bulmak için:** Resmin kökeni, tevkîfîlik, yazı tarihi ve bağlayıcılığın aynı açılışta iç içe geçtiği paragraflar.
 
 **Önerilen düzeltme:**
@@ -667,8 +674,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Mevcut 3.7-3.12’yi tek bütünlüklü başlık altında yeniden yapılandırma
 
-**Bölüm/Başlık:** Mevcut 3.7-3.12  
-**Kitaptaki sayfa:** 70-87  
+**Bölüm/Başlık:** Mevcut 3.7-3.12
+**Kitaptaki sayfa:** 70-87
 **Bulmak için:** Resm-i Osmânî’ye bağlılık, hata ve tahrif, sünnet, selef, müşâfehe, aslî yazım ve ümmet birliği başlıkları.
 
 **Mevcut metin:** Aynı ana savunma farklı başlıklarda yeniden kuruluyor; tarihsel açıklama, normatif bağlılık ve retorik/dinî yorum birbirine karışıyor. Doğrulanması güç modern örnekler ve uzun âyet listeleri de ana tartışmayı dağıtıyor.
@@ -702,8 +709,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.1’de resmi aktif fail gibi anlatmama ve rivâyetin merkezini koruma
 
-**Bölüm/Başlık:** 4.1. Resm-i Osmânî’nin Kırâat Rivâyetlerinin Tespiti ve Tahdidindeki Rolü  
-**Kitaptaki sayfa:** 87-90  
+**Bölüm/Başlık:** 4.1. Resm-i Osmânî’nin Kırâat Rivâyetlerinin Tespiti ve Tahdidindeki Rolü
+**Kitaptaki sayfa:** 87-90
 **Bulmak için:** Resmin okuyuşları “koruduğu, seçtiği, yönlendirdiği” türü aktif fiiller ve “Kırâat sünnettir” rivâyetlerinin ardından gelen sonuç.
 
 **Sorun:** Tarihsel aktörler ve kırâat âlimleri değerlendirme yapan öznelerdir; resm yazılı veridir.
@@ -715,7 +722,7 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.1’den 4.2’ye sahâbe mushaflarının statüsünü ayırarak geçme
 
-**Bölüm/Başlık:** 4.1 sonu → 4.2  
+**Bölüm/Başlık:** 4.1 sonu → 4.2
 **Kitaptaki sayfa:** 90
 
 **Önerilen düzeltme:**
@@ -723,8 +730,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.2’de sahâbe mushaflarına nispet edilen farklılıkları tek kategoriye indirmeme
 
-**Bölüm/Başlık:** 4.2  
-**Kitaptaki sayfa:** 90-94  
+**Bölüm/Başlık:** 4.2
+**Kitaptaki sayfa:** 90-94
 **Bulmak için:** Bütün farklılıkların “tefsirî ek”, “mensuh okuyuş” veya resmin dışladığı malzeme olarak topluca açıklandığı paragraflar.
 
 **Sorun:** Sahâbe mushaflarına nispet edilen bütün veriler aynı tür değildir; “mensuh/tefsirî” açıklaması topluca uygulanamaz.
@@ -734,8 +741,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.2’de kalan açık editör notunu tamamen kaldırma
 
-**Bölüm/Başlık:** 4.2  
-**Kitaptaki sayfa:** 90-94  
+**Bölüm/Başlık:** 4.2
+**Kitaptaki sayfa:** 90-94
 **Bulmak için:** `ifade edilmektedir.(burası daha önce düzeltilmemiş, "anlaşılmaktadır" olarak kalmış)Bunun en meşhur...`
 
 **Mevcut metin:**
@@ -750,8 +757,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.3’te İbn Şenebûz örneğini yalnız resme aykırılıkla açıklamama
 
-**Bölüm/Başlık:** 4.3  
-**Kitaptaki sayfa:** 94-97  
+**Bölüm/Başlık:** 4.3
+**Kitaptaki sayfa:** 94-97
 **Bulmak için:** İbn Şenebûz’un okuyuşlarının yalnız resme aykırılık sebebiyle reddedildiğini ifade eden pasaj.
 
 **Önerilen düzeltme:**
@@ -759,7 +766,7 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.3’ten 4.4’e kabul ölçütü ile tercih/tevcîh düzeyini ayırarak geçme
 
-**Bölüm/Başlık:** 4.3 sonu → 4.4  
+**Bölüm/Başlık:** 4.3 sonu → 4.4
 **Kitaptaki sayfa:** 97
 
 **Önerilen düzeltme:**
@@ -767,8 +774,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.4 başlığını ve tercih-tevcîh-vakıf ayrımını düzeltme
 
-**Bölüm/Başlık:** 4.4  
-**Kitaptaki sayfa:** 97-101  
+**Bölüm/Başlık:** 4.4
+**Kitaptaki sayfa:** 97-101
 **Mevcut başlık:** “Resm-i Osmânî’nin Kırâatlerin Tercîhî, Tevcîhi ve Vakıf Uygulamalarına Etkisi”
 
 **Önerilen başlık:**
@@ -783,8 +790,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.4-4.5’te resm rivâyetlerini kırâatin kurucu kaynağı gibi sunmama
 
-**Bölüm/Başlık:** 4.4-4.5  
-**Kitaptaki sayfa:** 97-104  
+**Bölüm/Başlık:** 4.4-4.5
+**Kitaptaki sayfa:** 97-104
 **Bulmak için:** Resm nakillerini “kurucu zemin” veya kırâat tarihinin temel kaynağı gibi niteleyen cümleler.
 
 **Önerilen düzeltme:**
@@ -792,8 +799,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.5’te her yazım özelliğine ortak niyet yüklememe ve biyografik çalışma notlarını ilgili yerlerde temizleme
 
-**Bölüm/Başlık:** 4.5  
-**Kitaptaki sayfa:** 101-104  
+**Bölüm/Başlık:** 4.5
+**Kitaptaki sayfa:** 101-104
 **Bulmak için:** Bütün yazım farklılıklarını “bilinçli/fonksiyonel tercih” olarak genelleyen paragraflar; Mehdevî, Ebû Amr, İbn Mu‘âz ve Sehâvî adlarının yanındaki notlar.
 
 **Sorun:** Bütün resm özellikleri aynı tarihsel niyetle açıklanıyor; ayrıca biyografik çalışma notları ana metinde kalmıştır.
@@ -809,8 +816,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.5’ten 4.6’ya erken yazıdan modern neşre zaman köprüsü kurma
 
-**Bölüm/Başlık:** 4.5 sonu → 4.6  
-**Kitaptaki sayfa:** 104  
+**Bölüm/Başlık:** 4.5 sonu → 4.6
+**Kitaptaki sayfa:** 104
 **Bulmak için:** Nokta ve hareke yokluğunun doğrudan farklı kırâatleri koruma amacıyla açıklandığı geçiş.
 
 **Önerilen düzeltme:**
@@ -818,8 +825,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.6’da modern mushaf sonucunu tek paragrafta toplama
 
-**Bölüm/Başlık:** 4.6  
-**Kitaptaki sayfa:** 104-109  
+**Bölüm/Başlık:** 4.6
+**Kitaptaki sayfa:** 104-109
 **Bulmak için:** Modern mushaf standardını birkaç kez sonuçlandıran paragraflar ve Dânî/Ebû Dâvud bilgilerinin yeniden geniş anlatımı.
 
 **Önerilen düzeltme:**
@@ -827,8 +834,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.7’ye doğrudan matbu mushaf tarihinden başlama ve nokta-hareke nedenini düzeltme
 
-**Bölüm/Başlık:** 4.7  
-**Kitaptaki sayfa:** 109 ve devamı  
+**Bölüm/Başlık:** 4.7
+**Kitaptaki sayfa:** 109 ve devamı
 **Bulmak için:** Başlığın ilk paragrafları ile “Nitekim İbn Kesîr’in de işaret ettiği üzere...” ve ardından “Bununla birlikte Osmânî mushaflarının ilk şeklinde...”
 
 **Mevcut metin:** Önce genel resm-kırâat çerçevesi tekrar ediliyor; sonra nokta ve hareke yokluğu farklı kırâatleri koruma amacıyla açıklanıyor.
@@ -840,8 +847,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### 4.7’de “ilk” nitelemelerini ve belirsiz kişi adlarını kaynak sınırı içinde tutma
 
-**Bölüm/Başlık:** 4.7  
-**Kitaptaki sayfa:** 109-114  
+**Bölüm/Başlık:** 4.7
+**Kitaptaki sayfa:** 109-114
 **Bulmak için:** Erken matbu mushafların “ilk/ilk resmî” diye kesin sıralandığı cümleler; `Mevlây Osman (?)`, Hâlid b. Ebü’l-Heyyâc ve Ebü’l-Fadl el-Huzâʿî kullanımları.
 
 **Sorun:** Proje dosyalarının açıkça doğrulamadığı tarihsel öncelik ve kişi belirsizlikleri kesinleştirilmemelidir; çalışma notları temizlenmelidir.
@@ -857,8 +864,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Modern mushaf standardizasyonunu tek nedene bağlamama
 
-**Bölüm/Başlık:** 4.7  
-**Kitaptaki sayfa:** 109-114  
+**Bölüm/Başlık:** 4.7
+**Kitaptaki sayfa:** 109-114
 **Bulmak için:** Modern standardı yalnız resm-i Osmânî’ye bağlılığın doğrudan sonucu gibi açıklayan paragraflar.
 
 **Önerilen düzeltme:**
@@ -868,8 +875,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Sonuçtaki örtüşen değerlendirmeleri iki odak paragrafta toplama
 
-**Bölüm/Başlık:** Sonuç, orta kısım  
-**Kitaptaki sayfa:** 114-116  
+**Bölüm/Başlık:** Sonuç, orta kısım
+**Kitaptaki sayfa:** 114-116
 **Bulmak için:** Resm-sözlü aktarım tamamlayıcılığı, kabul ölçütleri ve tarihsel standartlaşmayı art arda tekrar eden paragraflar.
 
 **Önerilen düzeltme:**
@@ -879,7 +886,7 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Modern mushaf standardizasyonunu Sonuçta da çok etkenli açıklama
 
-**Bölüm/Başlık:** Sonuç, matbu mushaflara ilişkin paragraf  
+**Bölüm/Başlık:** Sonuç, matbu mushaflara ilişkin paragraf
 **Kitaptaki sayfa:** 114-116
 
 **Önerilen düzeltme:**
@@ -887,8 +894,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Nihai hüküm ile ileri araştırma önerisini ayırma
 
-**Bölüm/Başlık:** Sonuç, son paragraf  
-**Kitaptaki sayfa:** 116  
+**Bölüm/Başlık:** Sonuç, son paragraf
+**Kitaptaki sayfa:** 116
 **Bulmak için:** Ana sonucu yeniden özetledikten sonra araştırma önerilerini aynı paragrafta sürdüren kapanış.
 
 **Önerilen düzeltme:**
@@ -900,7 +907,7 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### `değil/değildir`, `Sonuç olarak` ve benzeri kalıpları topluca değil bağlam içinde düzeltme
 
-**Bölüm/Başlık:** Kitap geneli  
+**Bölüm/Başlık:** Kitap geneli
 **Kitaptaki sayfa:** Çeşitli.
 
 **Sorun:** Yüksek sıklık tek başına hata değildir; mekanik toplu değişim anlam kaybına yol açabilir.
@@ -909,8 +916,8 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### `Kur’an` ve `İmam Mushaf` yazımını tekleştirme
 
-**Bölüm/Başlık:** Kitap geneli  
-**Kitaptaki sayfa:** Çeşitli  
+**Bölüm/Başlık:** Kitap geneli
+**Kitaptaki sayfa:** Çeşitli
 **Mevcut durum:** Ana metinde baskın `Kur’an` biçiminin yanında az sayıda `Kur’ân` ve ASCII apostroflu `Kur'an`; aynı tarihsel terim için `İmam mushaf`, `imam mushaf`, `İmam Mushaf` biçimleri bulunmaktadır.
 
 **Önerilen uygulama:** Ana metindeki kullanımlar `Kur’an` biçiminde tekleştirilmelidir. Aynı tarihsel nüshaya atıf yapan özel terim kullanımlarında `İmam Mushaf` tercih edilmelidir. Doğrudan eser adları ve bibliyografik kayıtların özgün yazımı ayrıca korunmalıdır.
@@ -919,7 +926,7 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Dipnot 32, 41 ve 105’te kalan çalışma notlarını kaldırma
 
-**Bölüm/Başlık:** Dipnotlar 32, 41 ve 105  
+**Bölüm/Başlık:** Dipnotlar 32, 41 ve 105
 **Kitaptaki sayfa:** İlgili dipnotların bulunduğu sayfalar.
 
 **Önerilen uygulama:**
@@ -949,7 +956,7 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### İki bozuk DOI kaydını güvenli biçimde temizleme
 
-**Bölüm/Başlık:** Kaynakça, Kahraman ve Maşalı kayıtları  
+**Bölüm/Başlık:** Kaynakça, Kahraman ve Maşalı kayıtları
 **Kitaptaki sayfa:** 117 ve devamı.
 
 **Mevcut metin:** Kahraman kaydında `https://doi.org/http://doi.org/1051702/esoguifd.791085`; Maşalı kaydında `https://doi.org/https://doi.org/10.56361/usul.173700` biçimleri vardır.
@@ -961,7 +968,7 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Aynı eserin farklı baskılarını fiilî kullanıma göre ayırma
 
-**Bölüm/Başlık:** Kaynakça ve ilgili dipnotlar  
+**Bölüm/Başlık:** Kaynakça ve ilgili dipnotlar
 **Kitaptaki sayfa:** 117 ve devamı; dipnotlar 2, 8, 86, 109 ve 373 başta olmak üzere ilgili ilk tam atıflar.
 
 **Mevcut durum:** Bazı eserler kaynakçada farklı baskı veya tahkiklerle birden fazla kayıtlıdır.
@@ -976,7 +983,7 @@ Bu rapor, kitapta hâlen düzeltilmesi veya geliştirilmesi gereken yerleri kita
 
 ### Ebû Şâme’nin iki el-Murşidu’l-vecîz baskısını son kez ilk tam atıflarla eşleştirme
 
-**Bölüm/Başlık:** Kaynakça ve Ebû Şâme dipnotları  
+**Bölüm/Başlık:** Kaynakça ve Ebû Şâme dipnotları
 **Kitaptaki sayfa:** Kaynakça 117 ve devamı; ilgili dipnotlar.
 
 **Mevcut durum:** Kaynakçada Tayyar Altıkulaç tahkikli Beyrut 1975 ve Velîd Müsâid et-Tabatabâî tahkikli Kuveyt 1993 kayıtları birlikte bulunmaktadır. Dipnot 86 açık biçimde 1993 baskısını kullanmaktadır; bazı sonraki kısa atıflarda ise yalnız `Ebû Şâme, el-Murşidu’l-vecîz, cilt/sayfa` biçimi bulunduğundan 1975 baskısının da fiilen kullanılıp kullanılmadığı çıkarılmış metinden kesinleştirilememektedir.
