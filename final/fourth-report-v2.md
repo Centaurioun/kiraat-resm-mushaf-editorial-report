@@ -657,7 +657,7 @@ Hazf örnekleri tamamlandıktan sonra aynı işlevleri yeniden sıralayan `Sonu�
 **Yer:** 1.10, s. 40-45
 
 **İfade:**
-> İbn Mücâhid (ö. 324/936 tekrar gözden geçirilsin) kırâatleri yedi imam etrafında toplayarak...
+> İbn Mücâhid (ö. 324/936 tekrar gözden geçirilsin) kırâatleri yedi imam etrafında toplayarak alanı sistemleştiren ilk isimlerden biri kabul edilmektedir.
 >
 > Böylece İbnü'l-Cezerî'nin ortaya koyduğu ölçüler zamanla kırâat ilminde genel kabul gören bir değerlendirme yöntemi hâline gelmiştir. Bu yaklaşımı benimseyen âlimlerden biri Zerkeşî'dir.
 
@@ -1168,7 +1168,7 @@ Birinci Bölümde ayrıntılı olarak anlatılan cem ve istinsah tarihi burada y
 **Yer:** 4.2
 
 **İfade:**
-> ifade edilmektedir.(burası daha önce düzeltilmemiş, "anlaşılmaktadır" olarak kalmış)Bunun en meşhur örneklerinden biri...
+> Kaynaklarda, bazı sahâbîlerin Rasûlullah'tan işittikleri okuyuşları neshedildiğini bilmeden muhafaza ettikleri, yazdıkları ve bir süre okumaya devam ettikleri ifade edilmektedir.(burası daha önce düzeltilmemiş, "anlaşılmaktadır" olarak kalmış)
 
 **Sorun:** Ana metnin ortasında açık editör notu kalmıştır.
 
