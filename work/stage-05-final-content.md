@@ -23,7 +23,7 @@ Bu dosya, güncel kitap nüshasında doğrulanmış ve önceki aşamalarda doğr
 **Sayfa:** 1  
 **Bulmak için:** “Eserin, resm-i mushaf’ı yalnız geçmişte teşekkül etmiş bir imlâ biçimi...”
 
-**Mevcut metin:** Son paragraf, resm-i mushafı yalnız tarihsel bir imlâ biçimi gibi tanımlamakta ve Girişte yeniden açıklanan yöntem ilkelerini tekrar etmektedir.
+**Mevcut metin:** Son paragraf, resm-i mushafı yalnız tarihsel bir imlâ biçimi olarak tanımlamakta ve Girişte yeniden açıklanan yöntem ilkelerini tekrar etmektedir.
 
 **Sorun:** Resm-i mushaf bir ilim ve inceleme alanını da ifade eder; bu sebeple doğrudan “imlâ biçimi” ile özdeşleştirilmemelidir.
 
@@ -943,8 +943,8 @@ Bu bölüm yalnız süreç doğrulaması içindir ve nihai yazar raporuna taşı
 - AŞAMA 4’teki 14 grubun tamamı bu dosyada temsil edilmektedir: Girişte tarihsel çerçeve ve şehir mushafı cümlesi; 1.2’de aşırı kesin yüklem; 1.4’te yazı-hafıza dengesi, ihtilaf anlatısı ve 1.4→1.5 geçişi; 1.7’de Ebû Ubeyde, Dânî/Ebû Dâvud, Zerkeşî ve çağdaş araştırmacılar; 1.10→İkinci Bölüm geçişi; 2.2→2.3 geçişi; 4.1’de aşırı kesin sonuç yüklemi; 4.7’de açılış ve nokta-hareke nedenselliği.
 - AŞAMA 4’te incelenen 96 `değil/değildir` paragrafı, 14 `Sonuç olarak` kullanımı, 29 uzun kırmızı blok ve 26 önemli geçişin yazar müdahalesi gerektirmeyen veya AŞAMA 3’te zaten çözülmüş örnekleri bu içerik adayında ayrıca çoğaltılmamıştır.
 - Aynı pasaj üzerinde birden fazla aday sorun bulunduğu yerler tek yazar maddesinde birleştirilmiştir. Özellikle 3.7-3.12 yeniden yapılanması, mushaf sayısı çelişkisi, İkinci Bölümün kavramsal eksikleri ve çalışma notlarının temizlenmesi çoklu adayları tek uygulamada birleştiren ana kümelerdir.
-- Bu dosyada **60 somut yazar düzeltme maddesi** bulunmaktadır: Önsöz 2, Giriş 6, Birinci Bölüm 21, İkinci Bölüm 8, Üçüncü Bölüm 8, Dördüncü Bölüm 12, Sonuç 3, Kitap Geneli 2, Kaynakça/Bibliyografya 6. Birden fazla bölümde ortak işlem gerektiren iki madde ilgili ana bölüm altında tek kez sayılmıştır.
-- AŞAMA 2’de doğrulanmış sorunlardan sessizce kaybolan bir kayıt bulunmamaktadır: sorunlar ya bu 60 yazar maddesinden biri içinde doğrudan temsil edilmiştir, ya aynı editoryal işlem altında birleştirilmiştir, ya da AŞAMA 4’te yazar müdahalesi gerektirmediği doğrulanmıştır.
+- Bu dosyada **77 somut yazar düzeltme maddesi** bulunmaktadır: Önsöz 2, Giriş 6, Birinci Bölüm 26, İkinci Bölüm 8, Üçüncü Bölüm 9, Dördüncü Bölüm 15, Sonuç 3, Kitap Geneli 2, Kaynakça/Bibliyografya 6.
+- AŞAMA 2’de doğrulanmış sorunlardan sessizce kaybolan bir kayıt bulunmamaktadır: sorunlar ya bu 77 yazar maddesinden biri içinde doğrudan temsil edilmiştir, ya aynı editoryal işlem altında birleştirilmiştir, ya da AŞAMA 4’te yazar müdahalesi gerektirmediği doğrulanmıştır.
 - Açık kalan tek kaynak sınırı, aynı eserin farklı baskılarının ilk tam dipnotlarla kesin eşleştirilmesi meselesidir. Bu dosyada yeni baskı veya tahkik bilgisi uydurulmamış ve herhangi bir kayıt keyfî biçimde silinmemiştir.
 
 AŞAMA 5’in görevi burada tamamlanmaktadır. AŞAMA 6 henüz başlatılmamıştır.
