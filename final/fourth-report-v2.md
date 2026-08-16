@@ -75,11 +75,9 @@ Bir öneri birden fazla mevcut paragrafın yerine geçiyorsa bu ayrıca belirtil
 
 **İfade:**
 > Bu sınırlandırma, çalışmanın Kur'an tarihinin bütün meselelerini veya yedi harf hakkındaki bütün görüşleri çözme iddiası taşımadığı anlamına gelmektedir.
-
-Aynı bölümde ayrıca:
-> Kitabın literatüre sağlamayı hedeflediği katkı...
-
-ve:
+>
+> Kitabın literatüre sağlamayı hedeflediği katkı, resm ilmi ile kırâat ilmini bütünüyle yeni kavramlarla açıklamak değil, çoğu zaman ayrı başlıklar altında incelenen meseleleri ortak bir problem etrafında buluşturmaktır.
+>
 > Kitabın dört ana bölümü bu düşünsel ilerleyişe göre düzenlenmiştir.
 
 **Sorun:** Kapsam, yöntem, katkı ve bölüm planı birbirine yakın paragraflarda aynı düşünceleri yeniden kurmaktadır.
@@ -148,10 +146,9 @@ Aynı başlıktaki `otaya koymaktadır` yazımı da `ortaya koymaktadır` olarak
 **Yer:** 1.1, son kısım
 
 **İfade:**
-> Bu farklı görüşler birlikte değerlendirildiğinde...
-
-ve daha sonra:
-> Bütün bu veriler bir arada değerlendirildiğinde...
+> Bu farklı görüşler birlikte değerlendirildiğinde ortaya daha şu mutedil tablo çıkmaktadır:
+>
+> Bütün bu veriler bir arada değerlendirildiğinde İslâm öncesi Arap toplumunda yazının hiç bilinmediğini söylemek mümkün değildir.
 
 **Sorun:** Aynı alt başlık iki ayrı sentez paragrafıyla aynı temel hükmü yeniden kurmaktadır.
 
@@ -164,8 +161,7 @@ ve daha sonra:
 
 **İfade:**
 > Vahyin inişiyle birlikte yazının pozisyonu belirgin bir şekilde değişmeye başlamıştır.
-
-Hemen ardından:
+>
 > Kur'an vahyinin kitaplaşma serüveni, işte bu tarihsel ve kültürel dönüşüm içinde şekillenmiştir.
 
 **Sorun:** Somut rivâyetlere geçilmeden önce aynı sözlü-yazılı aktarım çerçevesi birkaç kez kurulmaktadır.
@@ -227,7 +223,10 @@ Mevcut üçüncü madde ile parantez içindeki not tamamen çıkarılmalıdır.
 
 **Yer:** 1.2 sonu → 1.3 başlangıcı
 
-**İfade:** 1.2'nin yazılı vahiy malzemesinin muhafazasını sonuçlandıran son paragrafı ile 1.3'ün cem ihtiyacını yeniden genel çerçeveden başlatan ilk paragrafı.
+**İfade:**
+> Nüzûl döneminde yazıya geçirilen vahiy metinlerinin nasıl muhafaza edildiği meselesi de üzerinde durulması gereken önemli bir konudur.
+>
+> Nüzûl döneminde vahyin kayıt altına alındığı açık olmakla birlikte bu kayıtların kitap şeklinde bir araya getirilmediği görülmektedir.
 
 **Sorun:** Aynı sözlü-yazılı muhafaza çerçevesi iki başlık sınırında tekrar edilmektedir.
 
@@ -251,7 +250,7 @@ Mevcut üçüncü madde ile parantez içindeki not tamamen çıkarılmalıdır.
 **Yer:** 1.3, s. 13 ve devamı
 
 **İfade:**
-> Ayrıca Zeyd b. Sâbit'in kızı Hârice'den (ö. 100/718) gelen aktarıma göre...
+> Ayrıca Zeyd b. Sâbit'in kızı Hârice'den (ö. 100/718) gelen aktarıma göre Hz. Ebû Bekir'in Saîd b. el-Âs'ı Zeyd b. Sâbit'e yardımcı olarak atadığından da bahsedilmektedir.
 
 **Sorun:** Hârice b. Zeyd, Zeyd b. Sâbit'in kızı değil oğludur.
 
@@ -263,7 +262,9 @@ Mevcut üçüncü madde ile parantez içindeki not tamamen çıkarılmalıdır.
 **Yer:** 1.3, s. 14-15
 
 **İfade:**
-> Daha sonraki dönemlerde bu sahifelerin akıbeti ile ilgili farklı rivâyetler bulunmaktadır. Hz. Osman zamanında mushafın çoğaltılması meselesi gündeme geldiğinde, mushaf Hz. Hafsa'dan ödünç alınarak...
+> Daha sonraki dönemlerde bu sahifelerin akıbeti ile ilgili farklı rivâyetler bulunmaktadır.
+>
+> Hz. Osman zamanında mushafın çoğaltılması meselesi gündeme geldiğinde, mushaf Hz. Hafsa'dan ödünç alınarak istinsahın ardından kendisine iade edilmiştir.
 
 **Sorun:** Aynı tarihsel malzeme bir cümlede `sahifeler`, sonraki cümlede `mushaf` olarak anılmaktadır.
 
@@ -287,7 +288,7 @@ Mevcut üçüncü madde ile parantez içindeki not tamamen çıkarılmalıdır.
 **Yer:** 1.3, Hz. Hafsa'nın suhufunun akıbeti
 
 **İfade:**
-> Medine Valisi Mervân b. Hakem (ö. 132/749) tarafından Abdullah b. Ömer'den alınmış...
+> Kaynakların belirttiğine göre bu mushaf Hz. Hafsa'nın vefatından sonra Medine Valisi Mervân b. Hakem (ö. 132/749) tarafından Abdullah b. Ömer'den alınmış, bu ilk nüsha ile Hz. Osman'ın istinsah ettirdiği mushaflar arasında ihtilaf bulunduğu iddiasına kalkışılmaması için yaktırılmıştır.
 
 **Sorun:** 132/749 Mervân b. Hakem'in ölüm tarihi değildir. Doğru tarih 65/685'tir.
 
@@ -361,7 +362,7 @@ Taberî ilk kez burada veriliyorsa `Taberî (ö. 310/923)` kullanılmalı; daha 
 **Yer:** 1.4 sonu → 1.5
 
 **İfade:**
-> Hülasa...
+> Hülasa, istinsah kararı, vahyin aslını değiştirme veya yeni bir metin oluşturma girişimi değildir.
 
 **Sorun:** Bölüm, istinsah gerekçelerini zaten sentezledikten sonra ikinci kez kapanmaktadır. Ardından 1.5 doğrudan nüsha sayısına geçmektedir.
 
@@ -374,9 +375,8 @@ Taberî ilk kez burada veriliyorsa `Taberî (ö. 310/923)` kullanılmalı; daha 
 
 **İfade:**
 > Mevcut rivâyetler ışığında, Osmânî mushafları en kuvvetli ihtimalle şu şekilde tasnif etmek mümkündür: Halifenin yanında kalan "İmam Mushaf" ile birlikte Medine, Mekke, Şam, Kûfe ve Basra'ya gönderilen beş nüsha bulunmaktadır. Böylece toplam altı nüshanın varlığı ihtimalî kuvvet kazanmaktadır.
-
-Aynı bölümde:
-> tarihsel ve rivâyet analizi bakımından en güçlü kanaat "İmam Mushaf" ile birlikte toplam altı nüshanın yazıldığı yönündedir.
+>
+> Bu çerçevede istinsah sürecinde yazılan mushafların sayısı konusunda kesin bir rakam vermek güç olmakla birlikte, tarihsel ve rivâyet analizi bakımından en güçlü kanaat "İmam Mushaf" ile birlikte toplam altı nüshanın yazıldığı yönündedir.
 
 **Sorun:** Klasik kaynaklarda farklı sayımlar vardır. Bunlardan yeni bir tek `en güçlü altı` modeli çıkarmak kaynakların taşıdığı belirsizliği ortadan kaldırmaktadır.
 
@@ -388,7 +388,7 @@ Aynı bölümde:
 **Yer:** 1.5, Yemen ve Bahreyn mushafları paragrafı
 
 **İfade:**
-> Ebû Şâme (ö. 665/1276), Ebû Ali el-Ahvâzî'nin...
+> Ebû Şâme (ö. 665/1276), Ebû Ali el-Ahvâzî'nin (ö. 446/1055) Yemen ve Bahreyn mushafları hakkında "Ne bunlara dair bir haber işittik ne de izlerine rastladık." dediğini nakleder.
 
 **Sorun:** Miladî ölüm yılı yanlıştır. Doğru tarih 665/1267'dir.
 
@@ -425,7 +425,10 @@ Aynı bölümde:
 
 **Yer:** 1.5 sonu → 1.6 başlangıcı
 
-**İfade:** 1.5'in mushaf sayısı tartışmasını kapatan paragrafından sonra 1.6'nın doğrudan kavramsal tanıma başlaması.
+**İfade:**
+> Bu çerçevede istinsah sürecinde yazılan mushafların sayısı konusunda kesin bir rakam vermek güç olmakla birlikte, tarihsel ve rivâyet analizi bakımından en güçlü kanaat "İmam Mushaf" ile birlikte toplam altı nüshanın yazıldığı yönündedir.
+>
+> Resm-i Osmânî, Kur'an ilimleri içerisinde hem yazı tarihi hem de metnin korunması açısından merkezî bir kavramdır.
 
 **Sorun:** Tarihsel sayı tartışmasından `resm` kavramının tanımına ani geçiş vardır.
 
@@ -436,9 +439,12 @@ Aynı bölümde:
 
 **Yer:** 1.6. Resm-i Osmânî'nin Kavramsal Çerçevesi ve Tarihsel Oluşumu, s. 24
 
-**İfade:** Resm-i Osmânî'nin kavramsal çerçevesine geçerken art arda gelen ve bölümün ne yapacağını açıklayan giriş paragrafları.
+**İfade:**
+> Resm-i Osmânî, Kur'an ilimleri içerisinde hem yazı tarihi hem de metnin korunması açısından merkezî bir kavramdır.
+>
+> Bu çerçevede konuyu iki ana eksen üzerinde ele almak gerekmektedir.
 
-**Sorun:** Aynı bölüm amacı üç kez yeniden kurulmaktadır.
+**Sorun:** Aynı bölüm amacı art arda gelen meta-girişlerde yeniden kurulmaktadır.
 
 **Önerilen düzeltme:** Açılış tek paragrafta toplanmalıdır:
 > Resm-i Osmânî'nin kırâatlerle ilişkisini değerlendirebilmek için önce `resm` kelimesinin lügavî ve ıstılahî anlamını, ardından bu terimin mushaf yazımı bağlamındaki kullanımını açıklamak gerekir. Böylece tarihsel yazım biçimi ile bu yazım biçimini inceleyen resm ilmi birbirinden ayrılabilir.
@@ -448,7 +454,7 @@ Aynı bölümde:
 **Yer:** 1.6.2. Resm Kavramının Istılâhî Çerçevesi, s. 26
 
 **İfade:**
-> Cevherî (ö. 400/1009), "iz" ve "yazı" anlamına gelen resm kelimesinin zamanla Kur'an yazımına özgü teknik bir terime dönüştüğünü... belirtmiş...
+> Cevherî (ö. 400/1009), "iz" ve "yazı" anlamına gelen resm kelimesinin zamanla Kur'an yazımına özgü teknik bir terime dönüştüğünü ve erken dönem mushaf pratiğinin sistemleşmesiyle yakından ilgili olduğunu belirtmiş, Kur'an'ın Hz. Osman döneminde çoğaltılan nüshalarının belirli bir yazım düzenine bağlanmasının resm kavramını Kur'an ilimlerinin merkezî terimlerinden biri hâline getirdiğini söylemiştir.
 
 **Sorun:** Cevherî'nin sözlük kaydı kelimenin lügavî anlamını destekler; teknik terimin tarihsel gelişimini bu ayrıntıyla Cevherî'nin bizzat açıkladığı söylenemez.
 
@@ -461,9 +467,10 @@ Cevherî için tarih korunacaksa `ö. 400/1009'dan önce` biçimi tercih edilmel
 
 **Yer:** 1.6.1 → 1.6.2
 
-**İfade:** 1.6.2'nin başında `resm` kelimesinin yeniden `iz`, `işaret`, `yazı` anlamları üzerinden açıklanması.
+**İfade:**
+> Böylece resm kavramı yalnızca "iz bırakma" anlamından çıkar, teknik ve kurallı bir yazım anlayışına dönüşür.
 
-**Sorun:** 1.6.1'in konusu 1.6.2'de tekrarlanmakta, ıstılahî çerçeve gecikmektedir.
+**Sorun:** 1.6.1'in konusu 1.6.2'de tekrar edilmekte, ıstılahî çerçeve gecikmektedir.
 
 **Önerilen düzeltme:** 1.6.2 doğrudan şu paragrafla başlayabilir:
 > Mushaf ilimleri bağlamında `resm`, Osman mushaflarının kelime ve harf yazımlarını, bu yazımlarda görülen hazf, ziyâde, ibdâl, vasl ve fasl gibi özellikleri ve şehir mushaflarına nispet edilen yazım farklılıklarını konu edinen teknik bir kullanıma kavuşmuştur. Bu ıstılahî çerçeve, özellikle Dânî ve Ebû Dâvud'un eserlerinde sistemli biçimde görünür hâle gelmiştir.
@@ -473,9 +480,8 @@ Cevherî için tarih korunacaksa `ö. 400/1009'dan önce` biçimi tercih edilmel
 **Yer:** 1.6.2 ve 1.8
 
 **İfade:**
-> Kastallânî (ö. 923/1517 bu tarih daha önce geçtiyse silinsin) ise...
-
-ve:
+> Kastallânî (ö. 923/1517 bu tarih daha önce geçtiyse silinsin) ise, meseleyi bir adım daha ileri götürerek teknik bir düzleme taşır ve resm'i, "yazının lafza uygunluğu" şeklinde tanımlar.
+>
 > Bâkıllânî (ö. 403/10113 daha önce geçtiyse silinsin) ise şöyle demiştir:
 
 **Sorun:** Her iki yerde de çalışma notu ana metinde kalmıştır; Bâkıllânî'nin tarihindeki `10113` de açık yazım hatasıdır.
@@ -506,8 +512,7 @@ ve:
 
 **İfade:**
 > Dânî'nin yaklaşımının dikkat çeken yönlerinden biri, mushaf yazımını tek tip olarak sunmamasıdır.
-
-ve:
+>
 > Dânî'nin talebesi olarak bilinen Ebû Dâvud Süleymân b. Necâh, resm-i Osmânî ilminin gelişiminde hocasının açtığı yolu daha teknik ve ayrıntılı bir düzeye taşıyan önemli bir âlimdir.
 
 **Sorun:** İki ardışık paragraf aynı gelişmeyi `bir şey olmaktan çıkma`, `X değil Y` ve `sistemleşme` kalıplarıyla birkaç kez anlatmaktadır.
@@ -522,11 +527,9 @@ ve:
 **Yer:** 1.7
 
 **İfade:**
-> Zerkeşî ise, mushaf yazımını ele alırken...
+> Zerkeşî ise, mushaf yazımını ele alırken önemli bir ilkeye dikkat çeker.
 
-Paragraf içinde ayrıca `sadece ... değil`, `kıyas değil`, `yanlış kabul edilmez` gibi yakın karşıtlıklar art arda kullanılmaktadır.
-
-**Sorun:** Aynı düşünce farklı olumsuz kalıplarla tekrar edilmekte ve resmin normatif değerine ilişkin çıkarım kaynak aktarımından daha güçlü görünmektedir.
+**Sorun:** Paragrafın devamında aynı düşünce `sadece ... değil`, `kıyas değil`, `yanlış kabul edilmez` gibi farklı olumsuz kalıplarla tekrarlanmakta ve resmin normatif değerine ilişkin çıkarım kaynak aktarımından daha güçlü görünmektedir.
 
 **Önerilen düzeltme:**
 > Zerkeşî, Osman mushaflarında benimsenen yazım biçiminin dilcilerin kıyas yoluyla belirlediği standart imlâ kurallarıyla her zaman örtüşmediğine dikkat çeker. Onun aktardığı çerçevede mushaf hattının ölçüsü, sonraki kıyasî imlâdan ziyade sahâbe döneminden nakledilen yazım uygulamasıdır. Elif hazifleri, harf ziyadeleri ve vasl-fasl örneklerinin sonraki mushaflarda korunması da bu tarihsel aktarımın devamı olarak değerlendirilmiştir. Bu sebeple resm-i Osmânî'nin normatif değeri açıklanırken kıyasî imlâ ile nakledilmiş mushaf yazımı arasındaki farkın korunması yeterlidir; her yazım farklılığına ayrıca özel ve bilinçli bir amaç yüklenmemelidir.
@@ -536,7 +539,9 @@ Paragraf içinde ayrıca `sadece ... değil`, `kıyas değil`, `yanlış kabul e
 **Yer:** 1.7, çağdaş araştırmacılar kümesi
 
 **İfade:**
-> Harald Motzki ve Nicolai Sinai gibi çağdaş araştırmacılar...
+> Benzer şekilde Harald Motzki ve Nicolai Sinai gibi modern batılı araştırmacılar da erken İslâm toplumunda sözlü aktarımın güçlü olmakla birlikte yazının giderek artan bir önem kazandığına dikkat çekmektedir.
+>
+> Bu bağlamda resm-i Osmânî sözlü geleneği ortadan kaldıran değil, onu yazı üzerinden güvence altına alan bir gelişme olarak değerlendirilmelidir.
 
 **Sorun:** Motzki, Sinai, Déroche ve diğer çağdaş araştırmacıların farklı bağlamlardaki bulguları, kitabın bütün tezini doğrudan doğrulayan tek bir çizgiye dönüştürülmemelidir.
 
@@ -548,7 +553,7 @@ Paragraf içinde ayrıca `sadece ... değil`, `kıyas değil`, `yanlış kabul e
 **Yer:** 1.8. Resm-i Osmânî Tevkîfî mi İctihâdî mi, s. 31-34
 
 **İfade:**
-> Resm-i Osmânî Tevkîfî mi İctihâdi mi
+> Resm-i Osmânî Tevkîfî mi İctihâdi mi?
 
 **Sorun:** Bölüm boyunca `resmin tarihsel olarak nasıl ortaya çıktığı` ile `sonraki mushaflarda niçin bağlayıcı kabul edildiği` soruları yer yer aynı delillendirme içinde birleşmektedir.
 
@@ -586,7 +591,7 @@ Hazf örnekleri tamamlandıktan sonra aynı işlevleri yeniden sıralayan `Sonu�
 **Yer:** 1.9.1, İbdâl başlığı
 
 **İfade:**
-> Ca'berî (ö. 832/1428 ölüm tarihleri tekrar gözden geçirilmeli.), resm kurallarını sıralarken...
+> Ca'berî (ö. 832/1428 ölüm tarihleri tekrar gözden geçirilmeli.), resm kurallarını sıralarken ibdâli müstakil bir başlık altında ele almış ve bunun erken yazı geleneğiyle ilişkili olduğunu belirtmiştir.
 
 **Sorun:** Hem tarih yanlış hem çalışma notu ana metinde kalmıştır. Doğru tarih 732/1332'dir.
 
@@ -613,8 +618,7 @@ Hazf örnekleri tamamlandıktan sonra aynı işlevleri yeniden sıralayan `Sonu�
 
 **İfade:**
 > أُوْلوُا (Bakara 2/268)
-
-ve:
+>
 > بِأَيْيْدٍ (Zâriyât 51/47) kelimesinde de "yâ"nın yazımı fonetik zorunluluktan dolayı ziyade kabul edilmiştir.
 
 **Sorun:** `أُوْلوُا` örneği Bakara 2/269'dadır. `بِأَيْيْدٍ` yazımını `fonetik zorunluluk`la açıklayan gerekçe kaynak açıkça bunu kurmuyorsa kullanılmamalıdır.
@@ -627,7 +631,7 @@ ve:
 **Yer:** 1.9.2
 
 **İfade:**
-> وَوَصّٰى بِهَا إبْرَاهِيم ... وَأَوْصَى بِهَا إبْرَاهِيم (Bakara 2/85)
+> Diğer bir örnek ise şöyledir: وَوَصّٰى بِهَا إبْرَاهِيم (ve vassâ) -- وَأَوْصَى بِهَا إبْرَاهِيم (Bakara 2/85) (ve avsâ) kelimelerinde mushaf yazısı iki okuyuşa da gelebilecek yapıdadır.
 
 **Sorun:** Örnek Bakara 2/132'ye aittir.
 
@@ -640,8 +644,7 @@ ve:
 
 **İfade:**
 > Bu durum Osman mushaf yazısının bilinçli bir şekilde kırâat ihtimallerini ortadan kaldırmayan bir yazım sistemi olarak şekillendiğini göstermektedir.
-
-ve:
+>
 > Bu kuralların bütününe bakıldığında resm-i Osmânî'nin amacı sadece yazım birliğini sağlamak değil, sahâbeden gelen okuyuş geleneğini de korumaktır.
 
 **Sorun:** İşlevsel uyumluluktan doğrudan tarihsel tasarım amacı çıkarılmaktadır. Ayrıca son üç paragraf aynı sentezi tekrarlamaktadır.
@@ -655,9 +658,8 @@ ve:
 
 **İfade:**
 > İbn Mücâhid (ö. 324/936 tekrar gözden geçirilsin) kırâatleri yedi imam etrafında toplayarak...
-
-Aynı bölümde:
-> İbnü'l-Cezerî'nin sahih kırâatler için ortaya koyduğu prensipler, sonraki dönem kırâat birikiminde geniş kabul görmüştür. ... Bu yaklaşımı benimseyen âlimlerden biri Zerkeşî'dir.
+>
+> Böylece İbnü'l-Cezerî'nin ortaya koyduğu ölçüler zamanla kırâat ilminde genel kabul gören bir değerlendirme yöntemi hâline gelmiştir. Bu yaklaşımı benimseyen âlimlerden biri Zerkeşî'dir.
 
 **Sorun:** Çalışma notu kalmıştır. Ayrıca Zerkeşî, İbnü'l-Cezerî'den önce yaşadığı hâlde onun yaklaşımını benimseyen sonraki isim gibi sunulmaktadır. Üç kabul ölçüsü de birkaç kez yeniden sayılmaktadır.
 
@@ -670,7 +672,10 @@ Aynı bölümde:
 
 **Yer:** 1.10 sonu → İkinci Bölüm
 
-**İfade:** 1.10 resme uygunluğun ölçü niteliğiyle kapanırken İkinci Bölüm doğrudan `KIRÂATLERİN RİVÂYET MANTIĞI` başlığıyla başlamaktadır.
+**İfade:**
+> Böylece daha önce sözlü kırâat geleneğiyle birlikte varlığını sürdüren yazı, artık kırâatlerin değerlendirilmesinde dikkate alınan temel ölçütlerden biri olmuştur.
+>
+> KIRÂATLERİN RİVÂYET MANTIĞI
 
 **Sorun:** Yazılı ölçüden sözlü rivâyet düzenine neden geçildiği görünür değildir.
 
@@ -685,8 +690,6 @@ Aynı bölümde:
 
 **İfade:**
 > Kırâat ilmi bağımsız bir disiplin hâline hicrî II. ve III. yüzyıllarda gelmiştir.
-
-Aynı başlıkta kırâat farklılıklarının erken aktarımı da `kırâat ilminin ortaya çıkışı` ile aynı çizgide anlatılmaktadır.
 
 **Sorun:** Okuyuşların erken rivâyeti ile kırâat ilminin daha sonraki tasnif ve disiplinleşmesi aynı tarihsel olay değildir.
 
@@ -710,9 +713,11 @@ Aynı başlıkta kırâat farklılıklarının erken aktarımı da `kırâat ilm
 **Yer:** 2.2.1. Rivâyet
 
 **İfade:**
-> Kırâatlerin aktarımı baştan itibaren yazılı değil, sözlü...
+> İlk dönemden itibaren Kur'an Hz. Peygamber tarafından ashâba okunarak öğretilmiş; ashâb da Kur'an'ı hem ezberleyerek hem de okuyarak sonraki nesillere aktarmıştır.
+>
+> Bu durum kırâat ilminin baştan itibaren yazılı değil, birebir öğretim geleneği içinde geliştiğini göstermektedir.
 
-**Sorun:** Sözlü telakki ve edânın aslî rolü doğru olmakla birlikte cümle yazılı kaydı bütünüyle karşıt kutba yerleştirmekte ve kitabın ana teziyle uyuşmamaktadır.
+**Sorun:** Sözlü telakki ve edânın aslî rolü doğru olmakla birlikte ikinci cümle yazılı kaydı bütünüyle karşıt kutba yerleştirmekte ve kitabın ana teziyle uyuşmamaktadır.
 
 **Önerilen düzeltme:**
 > Kırâatlerin aktarımında aslî zemin telakki, müşâfehe ve edâya dayanan sözlü rivâyettir. Bununla birlikte Kur’an'ın yazılı kaydı ve mushaf geleneği bu aktarımın dışında değildir; yazı, rivâyet edilen okuyuşların müşterek metinle ilişkisini gösteren tamamlayıcı bir çerçeve sağlamıştır.
@@ -722,7 +727,7 @@ Aynı başlıkta kırâat farklılıklarının erken aktarımı da `kırâat ilm
 **Yer:** 2.2.2. Sened, s. 48
 
 **İfade:**
-> Mesela "Âsım (ö. 127/745) kırâati" denildiğinde burada sadece Âsım'ın tercih ettiği okuyuş biçimi değil...
+> Mesela "Âsım (ö. 127/745) kırâati" denildiğinde burada sadece Âsım'ın tercih ettiği okuyuş biçimi değil, bu okuyuşun ondan Hafs (ö. 180/796) ve Şu'be (ö. 193/809) gibi râviler vasıtasıyla nasıl aktarıldığı da anlatılmış olur.
 
 **Sorun:** `Âsım'ın tercih ettiği okuyuş` ifadesi imamı okuyuşun kurucusu veya şahsî tercihle belirleyicisi gibi gösterebilir.
 
@@ -736,9 +741,7 @@ Aynı başlıkta kırâat farklılıklarının erken aktarımı da `kırâat ilm
 **İfade:**
 > Kırâat ilmini anlamanın en sağlam yollarından biri, onu sadece "farklı okuyuşlar" meselesi olarak değil, rivâyet, sened ve ilmî otorite üzerine kurulmuş bir aktarım düzeni olarak ele almaktır.
 
-Alt başlıklarda `sadece ... değildir`, `yalnızca ... değildir` biçimindeki benzer açılışlar devam etmektedir.
-
-**Sorun:** Üç ayrı kavram aynı karşıtlık kalıbıyla tanımlandığı için bölüm mekanikleşmekte ve kavramların işlev farkı bulanıklaşmaktadır.
+**Sorun:** Alt başlıklarda `sadece ... değildir`, `yalnızca ... değildir` biçimindeki benzer açılışların sürmesi bölümü mekanikleştirmekte ve kavramların işlev farkını bulanıklaştırmaktadır.
 
 **Önerilen düzeltme:**
 > Rivâyet, bir okuyuşun belirli râviler aracılığıyla nakledilen aktarım hattını ifade eder. Sened, bu naklin kimlerden kimlere ulaştığını gösteren râvi zinciridir. Otorite ise okuyuşun öğretim ve aktarım geleneği içinde tanınan imam, râvi ve tarîklerle ilişkilendirilmesini ifade eder. Bu üç unsur birbirine bağlı olmakla birlikte aynı kavram değildir.
@@ -761,8 +764,7 @@ Alt başlıklarda `sadece ... değildir`, `yalnızca ... değildir` biçimindeki
 
 **İfade:**
 > Doğruya yakın olan, mushafın ihtilafa yol açan fazlalıkları ayıklayıp, sahih ve taşınabilir çeşitliliği koruyan bir çerçeve sunduğunu söylemektir.
-
-ve bölüm sonunda:
+>
 > Osmânî Mushaf, yedi harfin bütün dağınık ihtimallerini değil, sahih rivâyetle gelen, mushaf yazısının kaldırabildiği ve ümmetin üzerinde birleşebileceği okuyuşları muhafaza etmiştir.
 
 **Sorun:** Klasik kaynaklardaki farklı görüşler aktarıldıktan sonra bir tanesi tarihsel olarak en doğru mekanizma gibi kesinleştirilmektedir. Yedi harf sonraki kanonik kırâatlerle doğrudan özdeşleştirilmemelidir.
@@ -775,7 +777,7 @@ ve bölüm sonunda:
 **Yer:** 2.3, özellikle ilk ve son paragraflar
 
 **İfade:**
-> Sonuç olarak Osmânî mushaf ile yedi harf meselesi...
+> Sonuç olarak Osmânî mushaf ile yedi harf meselesi, Kur'an tarihinin en hassas ve tartışmalı meselelerinden biri olarak değerlendirilmiştir.
 
 **Sorun:** Birinci Bölümde anlatılan cem ve istinsah tarihi burada yeniden geniş biçimde kurulmakta, ardından uzun bir özetle 2.4'e geçiş gecikmektedir.
 
@@ -788,8 +790,7 @@ ve bölüm sonunda:
 
 **İfade:**
 > Bu gelişme doğrudan doğruya kırâat ve tefsîr alanını şekillendiren ölçülerden biri olmuştur.
-
-ve:
+>
 > Resmin ortaklaşması, dolaylı olarak kırâat imamlarının otoritesini daha da belirgin kılmış ve öğretim geleneğini daha disiplinli bir yapıya kavuşturmuştur.
 
 **Sorun:** Resmin rolü gereğinden aktif ve tek yönlü kurulmaktadır. Kırâat otoritesi, öğretim ağı, rivâyet ve ilmî kabul gibi başka unsurlar da belirleyicidir.
@@ -802,7 +803,7 @@ ve:
 **Yer:** 2.4
 
 **İfade:**
-> Resm ortak hâle gelmemiş olsaydı...
+> Şayet mushaf yazısı ortak olmasaydı farklı bölgelerde farklı yazım gelenekleri ve metin varyantları üzerinden gelişen yorum anlayışları oluşabilirdi.
 
 **Sorun:** Bilimsel açıklama yerine kanıtlanamayan alternatif tarih senaryosu kurulmaktadır.
 
@@ -813,7 +814,10 @@ ve:
 
 **Yer:** 2.4 sonu → Üçüncü Bölüm
 
-**İfade:** 2.4'ün genel etki değerlendirmesiyle kapanıp 3.1'in doğrudan çoklu kırâat örneklerine başlaması.
+**İfade:**
+> Böylece tefsîr ilmi, hem ortak mushaf metnini esas alan hem de bu metnin taşıdığı sahih kırâat çeşitliliğinden yararlanan dengeli bir disiplin hâline gelmiştir.
+>
+> RESM, KIRÂAT, LAFIZ VE MANA İLİŞKİSİ
 
 **Sorun:** Teorik çerçeveden somut resm örneklerine neden geçildiği açık değildir.
 
@@ -853,7 +857,7 @@ Bölümün başındaki `daha önce de zikretmiştik` türü meta-gönderme ayrı
 **Yer:** 3.1
 
 **İfade:**
-> Bu kelimeler otuz üç adet olup...
+> Bu kelimeler otuz üç adet olup, Osmânî mushaflara, her bir mushafta sabit olan kırâat vecihleri esas alınarak dağıtılmıştır. Söz konusu kelimeler şunlardır:
 
 **Sorun:** Uzun listedeki örnekler aynı tür resm-kırâat ilişkisini göstermemektedir. Şehir mushafı farkı, doğrudan uygunluk, ihtimalî uygunluk ve başka yazım farklılıkları tek kategoriye yaklaşmaktadır.
 
@@ -865,7 +869,7 @@ Bölümün başındaki `daha önce de zikretmiştik` türü meta-gönderme ayrı
 **Yer:** 3.1 sonu ve ilgili sonraki pasajlar
 
 **İfade:**
-> ... aksi takdirde o kırâat şâz olur.
+> Kırâatin temel şartlarından biri, resme en azından ihtimal yoluyla uygun olmasıdır; aksi takdirde o kırâat şâz olur.
 
 **Sorun:** Şâzlık tek bir kabul ölçüsüne indirgenmektedir. Naklin durumu, yaygınlık, ilmî kabul, dil ve resmle ilişki birlikte değerlendirilmelidir.
 
@@ -876,7 +880,8 @@ Bölümün başındaki `daha önce de zikretmiştik` türü meta-gönderme ayrı
 
 **Yer:** 3.2
 
-**İfade:** Yedi harf ruhsatını doğrudan Arap lehçelerindeki farklılıklarla açıklayan paragraf.
+**İfade:**
+> Bu yaklaşıma göre Kur'an'ın "yedi harf" üzere indirilmiş olması o günkü toplumun kullandığı farklı lehçe ve söyleyiş biçimlerine belirli bir kolaylık tanındığını gösterir.
 
 **Sorun:** Lehçe açıklaması klasik görüşlerden biridir; yedi harf meselesinin tamamını açıklayan tek yaklaşım değildir.
 
@@ -887,7 +892,8 @@ Bölümün başındaki `daha önce de zikretmiştik` türü meta-gönderme ayrı
 
 **Yer:** 3.3
 
-**İfade:** Nokta ve hareke yokluğunu farklı kırâatleri bilinçli biçimde koruma veya `asla işaret` işleviyle açıklayan paragraflar.
+**İfade:**
+> Bu açıklama, resm-i Osmânî'nin sadece harf iskeletini korumadığını; harekenin niteliğini, sesin dolgunluğunu ve okuyuş farkını da resm içinde işaretleyebildiğini gösterir.
 
 **Sorun:** Erken yazının grafik özellikleri ile sonraki işlevsel veya anlamsal yorumlar aynı kanıt düzeyinde değildir.
 
@@ -898,7 +904,10 @@ Bölümün başındaki `daha önce de zikretmiştik` türü meta-gönderme ayrı
 
 **Yer:** 3.3 sonu → 3.4
 
-**İfade:** Hareke ve ses ilişkisine dair teknik açıklamalardan hemen sonra `Ziyâde ve Hazfin İnce Manaya Delaleti` başlığına geçilmesi.
+**İfade:**
+> Bu ara yapı resm-i Osmânî'nin en dikkat çekici özelliklerinden kabul edilir.
+>
+> Resm-i Osmânî'de Ziyâde ve Hazfin İnce Manaya Delaleti
 
 **Sorun:** Tarihsel-imlâî açıklamadan klasik hikmet ve mana yorumlarına geçildiği okura belirtilmemektedir.
 
@@ -924,7 +933,8 @@ Bölümün başındaki `daha önce de zikretmiştik` türü meta-gönderme ayrı
 
 **Yer:** 3.4
 
-**İfade:** Harf biçiminden ilâhî kudret, korku, sürat, mağfiret veya benzeri anlam sonuçları çıkarılan paragraflar.
+**İfade:**
+> Ebu'l-Abbâs el-Merrâkuşî'ye (ö. 695/1295) nispet edilen açıklamaya göre bu hazifler, birinci âyette insanın şerre yönelmedeki aceleciliğine, ikinci âyette bâtılın süratle silinişine, üçüncü âyette çağrının ve cevabının çokluğuna, dördüncü âyette zebânîlerin derhâl harekete geçişine işaret eder.
 
 **Sorun:** Klasik hikmet yorumu ile tarihsel-filolojik açıklama birbirinden ayrılmamaktadır.
 
@@ -936,7 +946,7 @@ Bölümün başındaki `daha önce de zikretmiştik` türü meta-gönderme ayrı
 **Yer:** 3.4, örneklerin arasındaki genel sentez
 
 **İfade:**
-> resm-i Osmânî'yi ... aynı zamanda bir anlam işaretleme sistemi olarak değerlendirmek...
+> Bu nedenle resm-i Osmânî'yi sadece tek imlâ farklılıkları üzerinden okumak yeterli değildir; onu aynı zamanda bir anlam işaretleme sistemi olarak değerlendirmek gerekmektedir.
 
 **Sorun:** Örnekler tamamlanmadan resmin bütünü bir anlam işaretleme sistemine dönüştürülmektedir.
 
@@ -964,9 +974,10 @@ Bölümün başındaki `daha önce de zikretmiştik` türü meta-gönderme ayrı
 
 **Yer:** 3.6. Resm-i Mushaf'ın Bağlayıcılığı, Hikmet Boyutu ve Eleştirel Yaklaşımlar, s. 66-70
 
-**İfade:** Bölümün Ahmed b. Hanbel'in yazım sözü, tevkîfîlik, kırâat sıhhati, nahiv, hikmet, İbn Haldûn ve i‘câz tartışmalarını art arda aynı çizgide işlemesi.
+**İfade:**
+> İslâm ilimleri içinde resm-i mushaf meselesi, sadece imlâ biçimine ilişkin teknik bir konudan ibaret olmayıp kırâatin sahihliği, metin otoritesi ve anlam yorumuyla doğrudan ilişkili bir alan olarak ele alınmıştır.
 
-**Sorun:** Birbirinden farklı sorular zikzaklı bir akış içinde karışmaktadır.
+**Sorun:** Bölüm devamında Ahmed b. Hanbel'in yazım sözü, tevkîfîlik, kırâat sıhhati, nahiv, hikmet, İbn Haldûn ve i‘câz tartışmaları zikzaklı bir akış içinde birbirine karışmaktadır.
 
 **Önerilen yapı:**
 > Bölüm şu sırayla yeniden düzenlenmelidir: önce resme bağlılığın normatif gerekçeleri; ardından tevkîfîlik ve tarihsel köken tartışması; sonra dil ve nahiv açısından resm; daha sonra hikmet ve i‘câz yorumları; son olarak İbn Haldûn'un eleştirisi ve bu eleştiriye verilen cevapların kanıt değeri. Böylece `nasıl ortaya çıktı?`, `niçin korunmalı?` ve `hangi anlamlar yüklenmiştir?` soruları birbirinden ayrılmış olur.
@@ -977,8 +988,7 @@ Bölümün başındaki `daha önce de zikretmiştik` türü meta-gönderme ayrı
 
 **İfade:**
 > İbn Haldûn'un bu yaklaşımı resm-i mushaf'ın hüccet değerini zayıflatma tehlikesi taşımaktadır.
-
-ve:
+>
 > Çağdaş resm-i Osmânî literatüründe İbn Haldûn'a karşı geliştirilen cevaplar genellikle iki dayanak üzerinde ilerlemiştir. Birincisi, ilâhî koruma ilkesidir.
 
 **Sorun:** İbn Haldûn'un tarihsel açıklaması, ona verilen sonraki cevaplar ve yazarın değerlendirmesi birbirine yaklaşmaktadır. Teolojik savunma tarihsel kanıtın yerine geçmemelidir.
@@ -1002,9 +1012,10 @@ ve:
 
 **Yer:** 3.7 sonu
 
-**İfade:** Resm-i Osmânî'ye bağlılık ile modern imlâ arasında farklı görüşleri tasnif eden paragraf.
+**İfade:**
+> Bu üçlü tasnif birlikte değerlendirildiğinde, mushaf yazımında resm-i Osmânî meselesinin tek boyutlu bir tartışma olmadığı anlaşılmaktadır.
 
-**Sorun:** Bu malzeme `hata ve tahriften koruyucu işlev` başlığından çok 3.6'daki bağlayıcılık tartışmasına aittir.
+**Sorun:** Bu tasnif `hata ve tahriften koruyucu işlev` başlığından çok 3.6'daki bağlayıcılık tartışmasına aittir.
 
 **Önerilen düzeltme:** İlgili üç görüş tasnifi 3.6'ya taşınmalı ve şu geçişle verilmelidir:
 > Resme bağlılığın sonraki mushaf yazımındaki hükmü konusunda da farklı yaklaşımlar bulunmaktadır. Bir grup âlim Osmânî resme bağlılığı zorunlu görürken, bir kısmı öğretim ve kolaylık amacıyla çağdaş imlâdan yararlanılabileceğini, bir kısmı ise bu iki alan arasında kullanım bağlamına göre ayrım yapılabileceğini savunmuştur.
@@ -1015,15 +1026,15 @@ ve:
 
 **İfade:**
 > Resm-i Osmânî'ye Bağlılığın Hata ve Tahriften Koruyucu İşlevi
-
+>
 > Nebevî Rehberliğin ve Sünnetin Muhafazası Bağlamında Resm-i Osmânî'ye Bağlılık
-
+>
 > Selef-i Sâlihînin İlmî Faziletini İdrâk ve Resm-i Mushaf'ın Bu Fazilete Delaleti
-
+>
 > Kur'an-ı Kerim'in Öğreniminde Müşâfehe Geleneğinin İhyası ve Resm-i Osmânî'nin Bu Sürece Katkısı
-
+>
 > Mushafın Aslî Yazım Geleneğinin Korunması ve Bunun Gerekçeleri
-
+>
 > Resm-i Osmânî'nin Ümmet Birliği ve Ortak Dinî Hafıza Açısından İşlevi
 
 **Sorun:** Altı başlık büyük ölçüde `resme bağlılığın gerekçeleri` işlevini tekrar etmekte; tarihsel açıklama, normatif bağlılık ve dinî-retorik yorum birbirine karışmaktadır. Bununla birlikte her başlıktaki benzersiz kaynaklı malzemenin topluca silinmesi de doğru değildir.
@@ -1047,9 +1058,8 @@ ve:
 **Yer:** Mevcut 3.7, s. 70 ve devamı
 
 **İfade:**
-> Nitekim İsrail'in Fas, Gana, Gine, Mali ve diğer bazı Afrika ülkelerinde tahrif edilmiş mushaf nüshaları dağıttığı... iddia edilmiştir.
-
-ve:
+> Nitekim İsrail'in Fas, Gana, Gine, Mali ve diğer bazı Afrika ülkelerinde tahrif edilmiş mushaf nüshaları dağıttığı ve bu nüshalarda yüz bin adetlik baskı içinde bini aşkın kasıtlı tahrifin yer aldığı, bazı âyetlerden harf veya kelime düşürüldüğü ve bu yolla âyetlerin manasının tersine çevrildiği iddia edilmiştir.
+>
 > Bu son silmenin amacı, daha önce İsrail'in, Arapları yurtlarından çıkararak işlediği suçlardan dikkati uzaklaştırmaktır.
 
 **Sorun:** Dayanılan 1960'lı yıllara ait gazete nüshaları doğrudan doğrulanamamıştır. İkinci cümle ayrıca fail niyeti atfetmektedir.
@@ -1064,7 +1074,7 @@ ve:
 **Yer:** Mevcut 3.10
 
 **İfade:**
-> Şayet Kur'an lafızlarının tamamı telaffuza tam uygun biçimde yazılmış olsaydı...
+> Şayet Kur'an lafızlarının tamamı telaffuza tam uygun biçimde yazılmış olsaydı, birçok kimse onu herhangi bir rivâyet silsilesine başvurmaksızın okumaya cesaret edecek; bu durumda med, tahfif, imâle ve izhar gibi edâ vecihlerinin büyük kısmı ya zayıflayacak ya da bütünüyle ihmal edilecekti.
 
 **Sorun:** Alternatif bir tarih senaryosu kanıtlanmış neden-sonuç ilişkisi gibi kullanılmaktadır.
 
@@ -1075,7 +1085,8 @@ ve:
 
 **Yer:** Mevcut 3.11
 
-**İfade:** Modern imlâya geçilmesi hâlinde bazı kırâat vecihlerinin `zayi olacağı` yönündeki cümleler.
+**İfade:**
+> Mushaf resm'i konusunda gevşeklik gösterilmesi, yalnız yazı alanında bir dönüşüm meydana getirmekle kalmayacak, aynı zamanda mevcut resmin ihtiva ettiği birçok kırâat vechinin de zayi olmasına yol açacaktır.
 
 **Sorun:** Yazım değişikliğinin belirli vecihlerin yazıdaki görünürlüğünü etkilemesi ile kırâat rivâyetinin kendisinin ortadan kalkması aynı şey değildir.
 
@@ -1084,9 +1095,12 @@ ve:
 
 ## 82. Üçüncü Bölümden Dördüncü Bölüme geçişin ana probleme dönmemesi
 
-**Yer:** Yeni 3.7 sonu → Dördüncü Bölüm
+**Yer:** Mevcut 3.12 sonu → Dördüncü Bölüm
 
-**İfade:** Mevcut 3.12'nin ortak hafıza ve birlik vurgusuyla kapanması.
+**İfade:**
+> Dolayısıyla resm-i Osmânî'ye bağlılık, bu yorum çerçevesinde, yalnız yazının korunmasına indirgenmeyip, yazı üzerinden ümmetin ortak dinî referansının da korunması anlamına gelmektedir.
+>
+> RESM-İ OSMÂNÎ'NİN KIRÂAT VECİHLERİNİN RİVÂYET VE NAKLİNE ETKİSİ
 
 **Sorun:** Normatif bağlılık tartışmasından kırâatlerin tespiti, tahdidi ve uygulamadaki değerlendirilmesine dönüş açık değildir.
 
@@ -1099,7 +1113,8 @@ ve:
 
 **Yer:** 4.1, s. 87-90
 
-**İfade:** Resmin okuyuşları `koruduğu`, `seçtiği`, `yönlendirdiği` veya kendiliğinden `tespit ettiği` anlamına gelen cümleler.
+**İfade:**
+> Dolayısıyla resm-i Osmânî, sahih kırâat alanını tahdit eden ve onu ümmetin müşterek rivâyet zemini içinde koruyan kurucu bir unsur hüviyeti kazanmaktadır.
 
 **Sorun:** Resm bir yazılı veri ve kabul ölçüsüdür; okuyuşun kaynağı veya bağımsız öznesi değildir. Ayrıca Ebû Bekir cemi, Huzeyfe olayı ve Osmânî istinsahın ayrıntılı tarihçesi Birinci Bölümde zaten verilmiştir.
 
@@ -1113,11 +1128,11 @@ Birinci Bölümde ayrıntılı olarak anlatılan cem ve istinsah tarihi burada y
 **Yer:** 4.1
 
 **İfade:**
-> Kırâat vecihlerinin naklinde aslî dayanak...
+> Kırâat vecihlerinin naklinde aslî dayanak, yazılı metinden önce telakki ve müşâfehedir.
+>
+> Zira kırâat, sonraki neslin önceki nesilden aldığı ve uygulayarak sürdürdüğü ittiba edilen bir sünnet olarak anlaşılmıştır.
 
-Devamında `Kırâat sünnettir.` sözü ile Ebû Amr b. el-A‘lâ'nın ifadesinin bu anlayışı `açıkça ortaya koyduğu` söylenmektedir.
-
-**Sorun:** İki rivâyetten geniş bir tarihsel sonuca gereğinden güçlü yüklemle geçilmektedir.
+**Sorun:** Devamında `Kırâat sünnettir.` sözü ile Ebû Amr b. el-A‘lâ'nın ifadesinden geniş bir tarihsel sonuca gereğinden güçlü yüklemle geçilmektedir.
 
 **Önerilen düzeltme:**
 > “Kırâat sünnettir.” sözü ile Ebû Amr b. el-A‘lâ'dan nakledilen ifade, kırâat aktarımında rivâyet ve telakkinin merkezî konumuna işaret etmektedir.
@@ -1126,9 +1141,12 @@ Devamında `Kırâat sünnettir.` sözü ile Ebû Amr b. el-A‘lâ'nın ifadesi
 
 **Yer:** 4.1 sonu → 4.2
 
-**İfade:** 4.1 müşterek Osmânî mushaf çerçevesiyle kapanırken 4.2 doğrudan sahâbeye nispet edilen şahsî mushaflara geçmektedir.
+**İfade:**
+> Sahâbe mushafları bu tarihsel sürecin önemli tanıklarıdır.
+>
+> Sahâbe Mushaflarındaki Kırâat Rivâyetlerine Karşı Resm-i Osmânî'nin Konumu
 
-**Sorun:** İki malzemenin aynı normatif statüde olmadığı geçişte belirtilmemektedir.
+**Sorun:** Müşterek Osmânî mushaflarla şahsî sahâbe mushaflarının aynı normatif statüde olmadığı geçişte yeterince açık belirtilmemektedir.
 
 **Önerilen düzeltme:**
 > Osmânî mushaflar ümmetin müşterek yazılı başvuru zemini hâline gelirken, sahâbeye nispet edilen şahsî mushaflar erken dönemdeki okuyuş, tertip ve yazım çeşitliliğine ilişkin tarihsel veriler sunmaktadır. Bu iki malzemenin işlev ve otorite düzeyi aynı değildir. Bir sonraki başlık bu farkı ele almaktadır.
@@ -1137,9 +1155,10 @@ Devamında `Kırâat sünnettir.` sözü ile Ebû Amr b. el-A‘lâ'nın ifadesi
 
 **Yer:** 4.2, s. 90-94
 
-**İfade:** Sahâbe mushaflarındaki farklılıkların topluca `tefsirî ek`, `mensuh okuyuş` veya normatif mushafın dışladığı malzeme olarak açıklandığı paragraflar.
+**İfade:**
+> Sahâbe mushaflarında bulunan kırâat rivâyetlerinin bir başka kısmı ise, son arzadan sonra hükmü kalkmış yahut tilâveti neshedilmiş vecihlerle ilgilidir.
 
-**Sorun:** Kaynaklarda farklı okuyuş rivâyetleri, açıklayıcı ifadeler, tertip/yazım farkları ve tartışmalı kayıtlar aynı türde değildir.
+**Sorun:** Kaynaklarda farklı okuyuş rivâyetleri, açıklayıcı ifadeler, tertip/yazım farkları ve tartışmalı kayıtlar aynı türde değildir; bunların tamamı tek bir `mensuh/tefsirî` kategoriye yaklaştırılmamalıdır.
 
 **Önerilen düzeltme:**
 > Sahâbeye nispet edilen mushaf farklılıkları tek bir kategori altında değerlendirilmemelidir. Kaynaklarda farklı okuyuş rivâyetleri, açıklayıcı veya tefsirî ifadeler, kelime tertibi yahut yazım biçimine ilişkin aktarımlar ve isnadı veya yorumu tartışmalı kayıtlar birlikte yer almaktadır. Bu malzemenin tarihsel değeri, erken dönemdeki okuyuş ve yazı çeşitliliğine dair veri sunmasındadır. Buna karşılık ümmetin müşterek mushaf geleneğinde normatif ölçü, Osmânî mushafların yazılı çerçevesi ile sahih rivâyetin birlikte değerlendirilmesi üzerinden şekillenmiştir.
@@ -1162,7 +1181,8 @@ Parantez içindeki not tamamen çıkarılmalıdır.
 
 **Yer:** 4.2
 
-**İfade:** Resm-i Osmânî'nin sahâbe mushaflarındaki farklı malzemeyi `ayıklayan` ve `kurucu bir otorite` olduğu anlamına gelen cümleler.
+**İfade:**
+> Bu yönüyle Osmânî resm, sahâbe mushaflarından gelen okuyuş çeşitliliğini nihai mushaf otoritesi bakımından ayıklayan, bağlayıcı olanı şahsi ve açıklayıcı olandan ayıran kurucu bir otorite işlevi görmektedir.
 
 **Sorun:** Seçme ve ayıklama fiili bir yazım biçimine verilmektedir. Aktör tarihsel istinsah, müşterek mushaf kabulü ve sonraki ilmî değerlendirme sürecidir.
 
@@ -1173,7 +1193,8 @@ Parantez içindeki not tamamen çıkarılmalıdır.
 
 **Yer:** 4.2, İbn Mes‘ûd mushafı tartışması
 
-**İfade:** İbn Mes‘ûd'un tavrını `öfkeye bağlı geçici tepki`, `kırgınlık` veya benzeri psikolojik gerekçelerle açıklayan cümleler.
+**İfade:**
+> Nitekim onun, mushafının yakılmasına tepki gösterdiği ve insanlara mushaflarını gizlemelerini söylediği nakledilmekle birlikte, bu tavır erken dönem kaynaklarında sürekli ve esaslı bir muhalefet olmayıp, öfkeye bağlı geçici bir tepki olarak yorumlanmıştır.
 
 **Sorun:** Kaynak açıkça bu psikolojik gerekçeyi vermiyorsa niyet yazar hükmü olarak kesinleştirilemez.
 
@@ -1184,23 +1205,29 @@ Parantez içindeki not tamamen çıkarılmalıdır.
 
 **Yer:** 4.2 son kısım
 
-**İfade:** Sahâbe mushaflarının tarihsel değer taşıdığı fakat normatif mushaf otoritesi olmadığı yönündeki art arda sonuç paragrafları.
+**İfade:**
+> Sahâbe mushafları bu tarihsel sürecin önemli tanıklarıdır.
+>
+> Bu yönüyle Osmânî resm, sahâbe mushaflarından gelen okuyuş çeşitliliğini nihai mushaf otoritesi bakımından ayıklayan, bağlayıcı olanı şahsi ve açıklayıcı olandan ayıran kurucu bir otorite işlevi görmektedir.
 
-**Sorun:** Aynı ayrım birkaç kez yeniden kurulmakta ve bölüm iki genel sonuçla kapanmaktadır.
+**Sorun:** Tarihsel tanıklık ile normatif otorite ayrımı birkaç kez yeniden kurulmakta ve bölüm birden fazla genel sonuçla kapanmaktadır.
 
 **Önerilen düzeltme:** Mevcut tekrar blokları yerine:
 > Sahâbeye nispet edilen mushaf rivâyetleri, erken Kur’an aktarımında bulunan okuyuş, tertip ve yazım çeşitliliğini incelemek bakımından önemlidir. Bununla birlikte sonraki müşterek mushaf geleneğinin normatif zemini Osmânî mushaflar etrafında şekillenmiştir. Bu sebeple şahsî mushaf rivâyetleri tarihsel tanıklık ile normatif metin otoritesi birbirine karıştırılmadan kullanılmalıdır.
 
-## 91. İbn Şenebûz örneğinin yalnız resme aykırılıkla açıklanması
+## 91. İbn Şenbûz örneğinin yalnız resme aykırılıkla açıklanması
 
 **Yer:** 4.3, s. 94-97
 
-**İfade:** İbn Şenebûz'un `mushaf hattının dışına çıkan okuyuşları sebebiyle cezalandırıldığı` anlamındaki pasaj.
+**İfade:**
+> Bu anlayışın fiilî sonuçlar doğurduğunu gösteren en dikkat çekici örneklerden biri, İbn Şenbûz (ö. 328/939) hadisesidir.
+>
+> Onu tevbeye çağırmış, meselesini vezir İbn Mukle'ye (ö. 328/940) taşımış ve neticede İbn Şenbûz, Osmânî mushaf hattının dışına çıkan okuyuşları sebebiyle cezalandırılmıştır.
 
 **Sorun:** Hadise kamusal tilâvet, rivâyet, ilmî kabul, otorite ve Osmânî metin sınırıyla birlikte değerlendirilmelidir.
 
 **Önerilen düzeltme:**
-> İbn Şenebûz'a nispet edilen uygulamalar, kırâatlerin kamusal icrası ve kabul ölçütleri bağlamında tartışılmıştır. Bu örneği yalnız resm-i Osmânî'ye aykırılık üzerinden açıklamak yeterli değildir; naklin durumu, müşterek mushaf geleneği ve dönemin kırâat anlayışı birlikte dikkate alınmalıdır. Resme uygunluk bu değerlendirmede önemli bir unsur olmakla birlikte tek başına sahihlik veya şâzlık hükmü veren bağımsız ölçü değildir.
+> İbn Şenbûz'a nispet edilen uygulamalar, kırâatlerin kamusal icrası ve kabul ölçütleri bağlamında tartışılmıştır. Bu örneği yalnız resm-i Osmânî'ye aykırılık üzerinden açıklamak yeterli değildir; naklin durumu, müşterek mushaf geleneği ve dönemin kırâat anlayışı birlikte dikkate alınmalıdır. Resme uygunluk bu değerlendirmede önemli bir unsur olmakla birlikte tek başına sahihlik veya şâzlık hükmü veren bağımsız ölçü değildir.
 
 ## 92. Resme aykırı, âhâd, mensuh ve şâz okuyuşların tek çizgiye toplanması
 
@@ -1218,7 +1245,10 @@ Parantez içindeki not tamamen çıkarılmalıdır.
 
 **Yer:** 4.3 sonu → 4.4
 
-**İfade:** `Bütün bu veriler ışığında...` kapanışından doğrudan tercih, tevcîh ve vakıf konusuna geçilmesi.
+**İfade:**
+> Bütün bu veriler ışığında, resm-i Osmânî'ye aykırı kırâat vecihlerinin mensuh ve şâz sayılması meselesinin, mushaf hattının kırâat ilmindeki merkezî konumunu gösterdiği anlaşılmaktadır.
+>
+> Resm-i Osmânî'nin Kırâatlerin Tercîhî, Tevcîhi ve Vakıf Uygulamalarına Etkisi
 
 **Sorun:** Sahihlik/kabul ile kabul edilmiş okuyuşlar arasında yapılan tercih ve açıklama işlemlerinin farklı düzeyler olduğu görünür değildir.
 
@@ -1237,12 +1267,14 @@ Parantez içindeki not tamamen çıkarılmalıdır.
 **Önerilen başlık:**
 > **Resm-i Osmânî'nin Kırâatlerin Tercihi, Tevcîhi ve Vakıf Uygulamalarıyla İlişkisi**
 
-## 95. Kırâat imamlarının ham okuyuşlar arasından kurucu seçiciler gibi anlatılması
+## 95. Kırâat imamlarının rivâyet malzemesi karşısında kurucu seçiciler gibi anlatılması
 
 **Yer:** 4.4
 
 **İfade:**
-> Kırâat imamları kendilerine ulaşan farklı okuyuşlar arasından...
+> Bu etkinin ilk ve en belirgin tezahürü, kırâat imamlarının yaptıkları ihtiyarlarda görülmektedir.
+>
+> Sahâbenin okuduğu bütün vecihlerin umum kurrâ tarafından bütünüyle kuşatılması mümkün olmadığından, İslâm beldelerinin her biri tâbiîn döneminde bir kırâat imamına yönelmiş ve o imamın tercih ettiği okuyuşlar etrafında istikrar kazanmıştır.
 
 **Sorun:** İmamların mevcut rivâyetlerden bağımsız yeni okuyuşlar oluşturan veya serbestçe seçen kişiler olduğu izlenimi doğabilir.
 
@@ -1254,7 +1286,9 @@ Parantez içindeki not tamamen çıkarılmalıdır.
 **Yer:** 4.4 sonu
 
 **İfade:**
-> Resm, vakıf uygulamalarında da doğrudan belirleyici...
+> Resm-i Osmânî'nin kırâat ilmindeki tesiri, yalnız kırâat vecihlerinin kabulü ve tercihiyle sınırlı kalmamış; vakıf uygulamalarına ve edâ tercihlerine kadar uzanan daha geniş bir alanda da belirginleşmiştir.
+>
+> Nitekim kırâat geleneğinde vakıf, ilk bakışta sadece ses icrasıyla ilgili bir mesele gibi görünse de, gerçekte mushaf hattıyla doğrudan irtibatlandırılmıştır.
 
 **Sorun:** Mana temelli vakıf-ibtidâ, resmle ilişkili kelime sınırı ve rivâyet/edâya özgü vakıf uygulamaları aynı nedensellik içinde toplanmaktadır.
 
@@ -1263,9 +1297,12 @@ Parantez içindeki not tamamen çıkarılmalıdır.
 
 ## 97. Resm rivâyetlerinin kırâatin kurucu kaynağı gibi sunulması
 
-**Yer:** 4.4-4.5
+**Yer:** 4.5
 
-**İfade:** Resm nakillerini `kurucu zemin`, `okuyuşların kaynağı` veya benzeri ifadelerle tanımlayan cümleler.
+**İfade:**
+> Bu tespit, resm bilgisinin yalnız yazı tarihine ilişkin yardımcı tali bir veri alanı şeklinde görülmemesi gerektiğini; bilakis kırâat farklılıklarının anlaşılması için kurucu bir zemin teşkil ettiğini göstermektedir.
+>
+> Bu çerçevede denilebilir ki Osmânî mushafların hecâsına dair rivâyetler, yalnız yazı tarihine ilişkin malumat sunan tali veriler değildir. Aksine bunlar, kırâat ihtilaflarının tespiti, sınırlarının belirlenmesi ve yorumlanmasında kurucu işleve sahiptir.
 
 **Sorun:** Resm rivâyetleri yazım biçimlerini bildirir; kırâatlerin rivâyet kaynağının yerine geçmez.
 
@@ -1277,13 +1314,12 @@ Parantez içindeki not tamamen çıkarılmalıdır.
 **Yer:** 4.5, s. 101-104
 
 **İfade:**
-> Zeyd b. Sâbit'in yazdığı her şeyin bir hikmet ve ince sır...
-
-ve aynı bölümde:
+> Çünkü onlara göre bu yazı, vahiy kâtibi ve Rasûlullah'ın emini olan Zeyd b. Sâbit'in resmidir; onun yazdığı hiçbir şey hikmetsiz ve ince bir illetten yoksun değildir.
+>
 > el-Mehdevî (ö. 440/1048 daha önce geçmişmi)
-
+>
 > İbn Mu‘âz el-Cühenî (ö. 442/10509 daha önce geçti mi)
-
+>
 > Sehâvî (ö. 642/1244 daha önce geçti mi)
 
 **Sorun:** `Her yazımın hikmeti vardır` görüşü yazar sonucu gibi görünmektedir. Ayrıca çalışma notları ve tarihlerde hatalar vardır.
@@ -1297,19 +1333,22 @@ Yerel tashihlerde Mehdevî ilk kullanımda `el-Mehdevî (ö. 440/1048-49 [?])`, 
 
 **Yer:** 4.5 sonu → 4.6
 
-**İfade:** Erken resm rivâyetlerinden doğrudan sonraki mushaf yazım ve neşir uygulamalarına geçilmesi.
+**İfade:**
+> Resm-i Osmânî'nin Yazım Özelliklerine Dair Rivâyetlerin Kırâat İhtilaflarının Tespiti ve Yorumlanmasındaki Rolü
+>
+> Çağdaş Basılı Mushaflarda Resm-i Osmânî'nin Korunması ve Klasik Kaynaklara Dayalı Yazım Geleneği
 
-**Sorun:** Tarihsel devamlılık tek cümleyle bile olsa kurulmamaktadır.
+**Sorun:** Erken resm rivâyetlerinden sonraki mushaf yazım ve neşir uygulamalarına geçerken tarihsel devamlılık tek cümleyle bile olsa kurulmamaktadır.
 
 **Önerilen düzeltme:**
 > Klasik resm literatüründe kaydedilen bu yazım özellikleri, sonraki mushaf istinsah ve neşir geleneğinde başvuru kaynağı olmayı sürdürmüştür. Bu devamlılığın nasıl korunduğunu anlayabilmek için resmin sonraki mushaflarda uygulanma biçimine ayrıca bakmak gerekir.
 
 ## 100. İlk mushaflarda nokta ve hareke bulunmamasına bilinçli kırâat koruma amacı yüklenmesi
 
-**Yer:** 4.6-4.7 çevresi
+**Yer:** 4.7 başlangıcı
 
 **İfade:**
-> ilk şeklinde nokta ve hareke bulunmamaktadır. Bunun temel sebebi ... farklı kırâat vecihlerini...
+> Bununla birlikte Osmânî mushaflarının ilk şeklinde nokta ve hareke bulunmamaktadır. Bunun temel sebebi, mushaf resm'inin farklı kırâat vecihlerini ihtimal dâhilinde taşıyabilecek bir esnekliğe sahip olmasıdır.
 
 **Sorun:** Erken yazı sisteminin tarihsel özelliği ile sonraki kırâat uyumluluğu birbirine karışmaktadır.
 
@@ -1320,9 +1359,10 @@ Yerel tashihlerde Mehdevî ilk kullanımda `el-Mehdevî (ö. 440/1048-49 [?])`, 
 
 **Yer:** 4.6, son kısım
 
-**İfade:** Dânî ve Ebû Dâvud'un modern mushaf neşrindeki kaynak işlevini art arda yeniden açıklayan paragraflar.
+**İfade:**
+> Bütün bu veriler birlikte değerlendirildiğinde, çağdaş matbu mushaflarda resm-i Osmânî'nin korunmasının gelişigüzel bir tercih olmadığı açıkça anlaşılmaktadır.
 
-**Sorun:** Aynı kaynak işlevi birkaç kez sonuçlandırılmaktadır.
+**Sorun:** Devamındaki paragraflar Dânî ve Ebû Dâvud'un modern mushaf neşrindeki kaynak işlevini birkaç kez yeniden sonuçlandırmaktadır.
 
 **Önerilen düzeltme:**
 > Modern mushaf neşrinde resm-i Osmânî'nin uygulanması, klasik resm literatüründe kaydedilen yazım rivâyetleri ve kurallarının yeniden değerlendirilmesine dayanır. Dânî ve Ebû Dâvud'un eserleri bu bakımdan temel başvuru kaynakları arasındadır. Bununla birlikte modern neşir uygulaması yalnız klasik metinlerin aktarımından ibaret değildir; tashih kurulları, kırâat uzmanlığı ve neşir kurumlarının tercihleri de sürece katılmaktadır.
@@ -1331,9 +1371,10 @@ Yerel tashihlerde Mehdevî ilk kullanımda `el-Mehdevî (ö. 440/1048-49 [?])`, 
 
 **Yer:** 4.7, s. 109 ve devamı
 
-**İfade:** Başlığın ilk paragraflarında resm-kırâat ilişkisini ve hat/istinsah tarihini yeniden genel olarak açıklayan kısım.
+**İfade:**
+> İslâm tarihi boyunca mushaf istinsahı yalnız bir çoğaltma faaliyeti olarak görülmemiş, aynı zamanda güçlü bir hat ve yazı geleneği içinde gelişmiştir.
 
-**Sorun:** Başlık matbu mushafların yaygınlaşmasını ele alacağı hâlde önceki bölümlerde kurulmuş teorik çerçeveyi tekrar etmektedir.
+**Sorun:** Başlık matbu mushafların yaygınlaşmasını ele alacağı hâlde ilk paragraflar önceki bölümlerde kurulmuş hat ve istinsah tarihini yeniden anlatmaktadır.
 
 **Önerilen düzeltme:**
 > Mushafın matbaa yoluyla çoğaltılması, resm-i Osmânî'nin yeni üretim teknikleri içinde nasıl korunacağı meselesini gündeme getirmiştir. Erken matbu mushaflardan Osmanlı ve sonraki resmî neşir girişimlerine uzanan süreçte baskı tekniği, tashih mekanizmaları ve resm geleneğine bağlılık birlikte etkili olmuştur. Belirli kırâat rivâyetlerine göre hazırlanan baskılar ise bu tarihsel sürecin ayrı bir boyutunu oluşturmaktadır.
@@ -1352,11 +1393,14 @@ Yerel tashihlerde Mehdevî ilk kullanımda `el-Mehdevî (ö. 440/1048-49 [?])`, 
 
 ## 104. Modern mushaf standardizasyonunun tek nedene bağlanması
 
-**Yer:** 4.7 son kısım
+**Yer:** 4.6 sonu ve 4.7
 
-**İfade:** Modern mushaflardaki yüksek birlik düzeyini yalnız resm-i Osmânî'ye bağlılığın doğrudan sonucu olarak sunan paragraflar.
+**İfade:**
+> Bu çerçevede çağdaş mushaf neşirlerinde resm-i Osmânî'nin korunması üç temel amaca hizmet etmektedir.
+>
+> Üçüncü olarak ise, ümmetin elindeki matbu mushafları ortak bir yazı standardı etrafında toplayarak mushaf birliğini güçlendirmektedir.
 
-**Sorun:** Modern standardizasyon çok etkenli bir süreçtir.
+**Sorun:** Modern standardizasyon çok etkenli bir süreçtir; resme bağlılık tek başına açıklayıcı neden hâline getirilmemelidir.
 
 **Önerilen düzeltme:**
 > Modern mushafların yüksek düzeyde görsel ve metinsel birlik göstermesinde resm-i Osmânî'ye bağlılık önemli bir unsur olmakla birlikte tek etken değildir. Matbaa teknolojisinin gelişmesi, tashih ve denetim kurulları, kırâat ve yazım alanındaki uzmanlık, eğitim kurumları ve resmî neşir politikaları da bu standardizasyon sürecine katkıda bulunmuştur.
@@ -1365,9 +1409,12 @@ Yerel tashihlerde Mehdevî ilk kullanımda `el-Mehdevî (ö. 440/1048-49 [?])`, 
 
 **Yer:** 4.7
 
-**İfade:** Belirli kırâat rivâyetlerinin matbu mushaf yoluyla yaygınlaşmasını doğrudan tek nedenli süreç olarak anlatan paragraflar.
+**İfade:**
+> Bütün bu veriler, matbu mushafların sadece mevcut okuyuşları pasif biçimde yansıtan araçlar olmadığını göstermektedir.
+>
+> Aksine onlar, belirli kırâat rivâyetlerinin yaygınlaşmasında, standartlaşmasında ve geniş kitlelerce benimsenmesinde aktif rol oynamıştır.
 
-**Sorun:** Neşir, öğretim, bölgesel gelenek ve resmî tercih birlikte etkili olabilir.
+**Sorun:** Neşir, öğretim, bölgesel gelenek ve resmî tercih birlikte etkili olabilir; matbu mushaf tek nedene dönüştürülmemelidir.
 
 **Önerilen düzeltme:**
 > Belirli kırâat rivâyetlerine göre hazırlanan matbu mushaflar, bu rivâyetlerin yazılı görünürlüğünü ve kullanım alanını artırmıştır. Bununla birlikte bir rivâyetin belirli bölgelerde yaygınlaşması yalnız baskı faaliyetiyle açıklanamaz; öğretim gelenekleri, bölgesel kırâat tercihleri, resmî neşir politikaları ve eğitim kurumları da bu süreçte etkili olmuştur.
@@ -1377,7 +1424,7 @@ Yerel tashihlerde Mehdevî ilk kullanımda `el-Mehdevî (ö. 440/1048-49 [?])`, 
 **Yer:** 4.7, Osmanlı denetimi paragrafı
 
 **İfade:**
-> 1889'da kurulan Teftîş-i Mesâhif-i Şerîfe Meclisinin ... kontrol altına aldığını ortaya koymaktadır.
+> 1889'da kurulan Teftîş-i Mesâhif-i Şerîfe Meclisinin ve devamındaki denetim yapılarının, matbu İslâmî eserlerle birlikte mushaf neşrini de kontrol altına aldığını ortaya koymaktadır.
 
 **Sorun:** Cümlenin öznesi ve yüklemi birbirine bağlanmamaktadır.
 
@@ -1389,9 +1436,9 @@ Yerel tashihlerde Mehdevî ilk kullanımda `el-Mehdevî (ö. 440/1048-49 [?])`, 
 **Yer:** 4.7, son kısım
 
 **İfade:**
-> Bütün bu veriler, matbu mushafların sadece mevcut okuyuşları...
-
-ve Türkiye örneğinden sonra gelen ikinci genel sonuç paragrafı.
+> Bütün bu veriler, matbu mushafların sadece mevcut okuyuşları pasif biçimde yansıtan araçlar olmadığını göstermektedir.
+>
+> Özetle, Türkiye'de mushaf basımının tarihî seyri üç temel nitelikle öne çıkmaktadır: geç başlaması, sıkı biçimde denetlenmesi ve nihayet Diyanet İşleri Başkanlığı bünyesinde kurumsal bir standarda bağlanması.
 
 **Sorun:** Bölüm Türkiye örneğinden önce erken kapanmakta, sonra bir kez daha sonuçlandırılmaktadır.
 
@@ -1406,9 +1453,10 @@ ve Türkiye örneğinden sonra gelen ikinci genel sonuç paragrafı.
 
 **Yer:** Sonuç, s. 114-116
 
-**İfade:** Resm-sözlü aktarım tamamlayıcılığı, kabul ölçütleri ve tarihsel standartlaşmayı art arda yeniden kuran paragraflar.
+**İfade:**
+> Bu araştırmanın ortaya koyduğu temel sonuç, resm-i mushaf ile kırâat rivâyeti arasındaki ilişkinin yazı ile söz karşıtlığı üzerinden açıklanamayacağıdır.
 
-**Sorun:** Aynı nihai sonuç farklı ifadelerle birkaç kez yinelenmektedir.
+**Sorun:** Devamındaki paragraflarda aynı nihai sonuç resm-sözlü aktarım tamamlayıcılığı, kabul ölçütleri ve tarihsel standartlaşma üzerinden birkaç kez yeniden kurulmaktadır.
 
 **Önerilen düzeltme:** İlgili tekrar blokları yerine iki odaklı şu metin kullanılabilir:
 > Bu çalışmada ulaşılan temel sonuç, resm-i Osmânî'nin kırâatleri meydana getiren bağımsız bir kaynak olmadığı; kırâatlerin aslî aktarımının telakki, müşâfehe, edâ, isnad ve rivâyet yoluyla gerçekleştiğidir. Resm-i Osmânî ise rivâyetle sabit okuyuşların müşterek mushaf yazısıyla bağdaşma durumunu belirleyen tamamlayıcı bir ölçü olarak işlev görmüştür. Bazı okuyuşlar yazıda açık karşılık bulurken bazıları harf iskeletinin ihtimali içinde yer almış; ancak grafik ihtimal hiçbir durumda okuyuşun sahihliğini tek başına belirlememiştir.
@@ -1420,20 +1468,23 @@ ve Türkiye örneğinden sonra gelen ikinci genel sonuç paragrafı.
 **Yer:** Sonuç, matbu mushaflara ilişkin paragraf
 
 **İfade:**
-> Basılı mushaflar yalnız mevcut okuyuşları yansıtmamış, belirli rivâyetlerin standartlaşması...
+> Basılı mushaflar yalnız mevcut okuyuşları yansıtmamış, belirli rivâyetlerin standartlaşması ve geniş coğrafyalarda yaygınlaşması üzerinde de etkili olmuştur.
 
 **Sorun:** Matbu mushafların belirli rivâyetleri standartlaştırma etkisi fazla kesin ve tek yönlü ifade edilmektedir.
 
 **Önerilen düzeltme:**
 > Matbu mushafların yaygınlaşması, belirli kırâat rivâyetlerinin yazılı biçimde daha geniş çevrelere ulaşmasına katkı sağlamıştır. Bununla birlikte modern mushaf standardizasyonu yalnız baskının veya resm-i Osmânî'ye bağlılığın sonucu değildir; öğretim gelenekleri, tashih kurumları, kırâat uzmanlığı, bölgesel tercihler ve resmî neşir süreçleri de bu gelişmede etkili olmuştur.
 
-## 110. Nihai hüküm ile ileri araştırma önerisinin aynı paragrafta toplanması
+## 110. Nihai hüküm ile ileri araştırma önerisinin aynı kapanışta toplanması
 
 **Yer:** Sonuç, son kısım
 
-**İfade:** Ana sonucu yeniden özetledikten sonra gelecek araştırma önerilerini aynı paragrafta sürdüren kapanış.
+**İfade:**
+> Erken mushaf yazmaları, şehir mushaflarına nispet edilen farklılıklar, bölgesel kırâat gelenekleri ve çağdaş neşirlerin resm tercihleri, bu yaklaşımın daha ayrıntılı uygulanabileceği araştırma alanlarıdır.
+>
+> Sonuç olarak resm-i Osmânî, kırâati doğuran bağımsız kaynak değil, rivâyet yoluyla nakledilen kırâatlerin ortak yazılı sınırıdır.
 
-**Sorun:** Nihai hüküm ile gelecek çalışma önerisi aynı işlevde değildir.
+**Sorun:** Nihai hüküm ile gelecek çalışma önerisi aynı kapanış işlevinde yığılmaktadır.
 
 **Önerilen düzeltme:**
 > Son tahlilde resm-i Osmânî ile kırâat rivâyeti arasındaki ilişki, yazı ile sözlü aktarımın birbirinin yerine geçtiği değil, birbirini tamamladığı bir aktarım düzeni içinde anlaşılmalıdır. Resm, rivâyet edilen okuyuşların müşterek mushaf yazısıyla bağdaşma sınırlarını gösterirken, okuyuşun sahihliği ve edâsı rivâyet geleneği içinde belirlenmiştir.
@@ -1446,9 +1497,16 @@ ve Türkiye örneğinden sonra gelen ikinci genel sonuç paragrafı.
 
 **Yer:** Ana metin geneli
 
-**İfade:** Ana metinde `Kur’an` yanında sınırlı sayıda `Kur’ân` ve `Kur'an`; ayrıca `İmam mushaf`, `imam mushaf`, `İmam Mushaf` biçimlerinin birlikte kullanılması.
+**İfade:**
+> Kur’ân
+>
+> Kur'an
+>
+> İmam mushaf
+>
+> imam mushaf
 
-**Sorun:** Ev stili tam olarak tekleşmemiştir.
+**Sorun:** Ana metinde bu biçimler, tercih edilen `Kur’an` ve özel terim olarak `İmam Mushaf` ile birlikte kullanılmaktadır; ev stili tam olarak tekleşmemiştir.
 
 **Önerilen düzeltme:** Ana metinde **`Kur’an`** biçimi kullanılmalıdır. Bibliyografik eser adları ve doğrudan alıntıların özgün yazımı ayrıca korunabilir. Hz. Osman'ın yanında kalan belirli nüshaya özel ad niteliğinde gönderme yapıldığında **`İmam Mushaf`** kullanılmalıdır.
 
@@ -1457,11 +1515,11 @@ ve Türkiye örneğinden sonra gelen ikinci genel sonuç paragrafı.
 **Yer:** Dipnot 32, 41 ve 105
 
 **İfade:**
-> İbn Sa'd, et-Tabakâtü'l-kübrâ, 3/355. (bu dipnot daha önce geçmiş midir... buna bakılması.)
-
-> Mukaddimetân fî ulûmi'l-Kur'ân ... (bu eserin müellifi meçhuldür...
-
-> ... Letâifu'l-işârât..., 1/84.(bu eser daha önce tam adıyla geçmişmiydi)
+> İbn Sa'd, et-Tabakâtü'l-kübrâ, 3/355. (bu dipnot daha önce geçmiş midir.yoksa kitabın ilk adı bu şekilde mi) buna bakılması.
+>
+> Mukaddimetân fî ulûmi'l-Kur'ân, thk. Arthur Jeffery (Mektebetü'l-Hâncî, 1954), 25. (bu eserin müellifi meçhuldür literatürde bu şekilde geçiyor.
+>
+> Ebu'l-Abbâs Ahmed b. Muhammed b. Ebû Bekir Kastallânî, Letâifu'l-işârât li fünûni'l-kırâât, thk. Heyet (Medine: Merkezu'd-Dirâsâti'l-Kur'âniyye, 2013), 1/84.(bu eser daha önce tam adıyla geçmişmiydi)
 
 **Sorun:** Bibliyografik atıfların yanında yazara/editöre yönelik çalışma notları kalmıştır.
 
@@ -1471,9 +1529,18 @@ ve Türkiye örneğinden sonra gelen ikinci genel sonuç paragrafı.
 
 **Yer:** Dipnotlar geneli
 
-**İfade:** Müellif adlarında `ez-Zürkânî`, `es-Suyûtî`, `ed-Dânî` gibi biçimler ile sûre adlarında artikel kullanımının farklı şekillerde verilmesi.
+**İfade:**
+> ez-Zürkânî
+>
+> es-Suyûtî
+>
+> ed-Dânî
+>
+> Bakara 2/218
+>
+> el-Bakara
 
-**Sorun:** Müellif adı için seçilen ev stili ile sûre adlarının yazımı aynı işlem değildir.
+**Sorun:** Müellif adı için seçilen ev stili ile sûre adlarının yazımı aynı işlem değildir ve kitapta farklı örnekler yan yana bulunmaktadır.
 
 **Önerilen düzeltme:** Proje tercihi gereği dipnotta müellif adı olarak kullanılan `ez-Zürkânî`, `es-Suyûtî`, `ed-Dânî` gibi biçimler sırasıyla `Zürkânî`, `Suyûtî`, `Dânî` olarak tekleştirilebilir. Bu kural sûre adlarına uygulanmamalıdır. Sûre adlarında seçilen artikel kullanımı bütün kitapta aynı biçimde sürdürülmelidir.
 
@@ -1483,8 +1550,7 @@ ve Türkiye örneğinden sonra gelen ikinci genel sonuç paragrafı.
 
 **İfade:**
 > https://doi.org/http://doi.org/1051702/esoguifd.791085
-
-ve:
+>
 > https://doi.org/https://doi.org/10.56361/usul.173700
 
 **Sorun:** Her iki DOI URL'si yapısal olarak bozuktur.
@@ -1498,7 +1564,18 @@ biçiminde tek önekle yazılmalıdır.
 
 **Yer:** Kaynakça ve ilgili dipnotlar
 
-**İfade:** İbn Ebû Dâvud, Ebû Dâvud Süleymân b. Necâh ve İbn Kuteybe'nin aynı eserlerinin farklı baskılarla birden fazla kayıtlı olması.
+**İfade:**
+> İbn Ebû Dâvud, Ebû Bekir Abdullah b. Süleymân b. el-Eş'as. Kitâbu'l-mesâhif. thk. Muhibbüddîn Abdussubhân Vâiz. 2 Cilt. Beyrut: Dâru'l-Beşâiri'l-İslâmiyye, 2002.
+>
+> İbn Ebû Dâvud, Ebû Bekir Abdullah b. Süleymân. Kitâbu'l-mesâhif. thk. Selîm b. Îde'l-Hilâlî el-Eserî. Amman: Ğarâs, 2006.
+>
+> Ebû Dâvud, Süleymân b. Necâh. Muhtasaru't-tebyîn li hecâi't-tenzîl. thk. Ahmed b. Muhammed b. Muammer Şarşâl. 5 Cilt. Riyad: Mecmeu'l-Melik Fehd li't-Tibâati'l-Mushafi'ş-Şerîf, 2000.
+>
+> Necâh, Ebû Dâvud Süleymân b. Muhtasaru't-tebyîn li hecâi't-tenzîl. thk. Ahmed b. Ahmed Muammer Şarşâl. 2 Cilt. Medine: Mecmau'l-Melik Fahd li't-Tibâati ve'n-Neşr, 1999.
+>
+> İbn Kuteybe, Ebû Muhammed Abdullah b. Muslim. Te'vîlu muhtelifi'l-hadîs. thk. Muhammed Muhyiddîn el-Asfar. Beyrut: el-Mektebetü'l-İslâmî, 1999.
+>
+> İbn Kuteybe, Ebû Muhammed Abdullah b. Muslim. Te'vîlu muhtelifu'l-hadîs. thk. Muhammed Zuhrî en-Neccâr. Mektebetü'l-Küllîyât el-Ezheriyye, ts.
 
 **Sorun:** Bazı kayıtların fiilî kullanımı daha önce dipnotlarla eşleştirilebildiği hâlde hepsi `sonradan kontrol edilsin` düzeyinde bırakılmamalıdır.
 
@@ -1513,7 +1590,10 @@ biçiminde tek önekle yazılmalıdır.
 
 **Yer:** Kaynakça ve Ebû Şâme dipnotları
 
-**İfade:** Kaynakçada Tayyar Altıkulaç tahkikli 1975 baskısı ile Velîd Müsâid et-Tabatabâî tahkikli 1993 baskısının birlikte bulunması.
+**İfade:**
+> Ebû Şâme, Şihâbuddîn Abdurrahmân b. İsmâîl. el-Murşidu'l-vecîz ilâ ulûmin tetaallaku bi'l-kitâbi'l-azîz. thk. Tayyar Altıkulaç. 2 Cilt. Beyrut: Dâr Sadr, 1975.
+>
+> Ebû Şâme, Şihâbuddîn Abdurrahmân İsmâîl. el-Murşidu'l-vecîz ilâ ulûmin tetaallaku bi'l-kitâbi'l-Azîz. thk. Velîd Müsâid et-Tabatabâî. Kuveyt: Mektebetü'l-İmâm ez-Zehebî, 1993.
 
 **Sorun:** 1993 baskısının kullanımı açıktır; bazı kısa atıfların 1975 baskısına dayanıp dayanmadığı ise yalnız kısa cilt/sayfa değerlerinden kesinleştirilememektedir.
 
