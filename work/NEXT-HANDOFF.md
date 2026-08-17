@@ -4,9 +4,9 @@
 - Branch: `editorial/apply-fourth-fifth-reports`
 - Branch/checkpoint HEAD: `SELF`
 - Phase: `FOURTH_APPLY`
-- Last completed: `F4-032`
-- Next: `F4-033`
-- DO-NOT-REPEAT: bootstrap and `F4-001–032`.
+- Last completed: `F4-037`
+- Next: `F4-038`
+- DO-NOT-REPEAT: bootstrap and `F4-001–037`.
 
 ## Current recovery pipeline
 1. `work/apply_docx_edits.py` → F4-011 (`86f99b2186711a7d94159d9c1b7413b0248a0c5c`).
@@ -14,29 +14,31 @@
 3. `work/apply_f4_018_022.py` → F4-022 (`7d32131a8681b3334cb405a68f79c2494b8db5e7`).
 4. `work/apply_f4_023_027.py` → F4-027 (`a7e987b2ae84ada927b082974f5d90f4896d43d4`).
 5. `work/apply_f4_028_032.py` → F4-032 (`30bf55f09fa02d4b805d6695c149061f2b24031d`).
-- Current logical DOCX SHA-256: `7623dbd834b79effef62991932ec3d506cb7d6e4b77db0c976c495b50a24b127`.
-- Body paragraphs: **697**.
-- Ledger through F4-032: `75a27b5c7be2863ae25b1b37a50a768021fae6c0`.
-- State: `e17a168d97e120ecc763f5a338a722210f416b32`.
-- Validation: `df007ea599c1a98f0281f028a1fe21e9a666a340`.
+6. `work/apply_f4_033_037.py` → F4-037 (`58d891d493331863b9f8fdfb0436267a97d33f4e`).
+- Current logical DOCX SHA-256: `94bbdeec878f57d4d97f54ad393bddc79074230ec69886e1f0a455bbe483ed3a`.
+- Body paragraphs: **695**.
+- Ledger: `b0faacdd905a2da8b03a758ace888c3534a85102`.
+- State: `c23bad01bb25fac0994dcee6dc221695397959b9`.
+- Validation: `795f6f37e25b64b4baf887dc9a42906368a8e844`.
 
 ## Integrity
 - Footnotes/references 469/469; orphan/dangling/duplicate 0/0/0.
 - Fields 520/520; Zotero 465+1; RTL 365/365.
 - Protected OOXML baseline-identical except expected document.xml changes; ZIP/XML PASS.
-- Latest replay byte-idempotent; 25-page bounded QA PASS.
+- Latest replay byte-idempotent; 32-page bounded visual QA PASS after correcting inherited italics in F4-035.
 - Open HOLDs: none.
 
-## Locked semantic/citation decisions
-- F4-029: do not restore a section-level six-copy certainty. Footnote 88 belongs only to Kevserî's specific view.
-- F4-032: do not restore a claim that all contemporary researchers converge on six copies; detailed source-specific paragraphs and notes 89–95 remain.
-- Earlier locks for F4-008, F4-012, F4-015, F4-018, F4-024 and F4-026 remain in force.
+## Locked decisions
+- F4-035: FN101 stays on the limited writing-order proposition, FN102 on Cevherî lexical evidence, FN103 on Dânî/later technical development.
+- F4-036: FN100 stays on the technical-use definition.
+- F4-037: main-text work notes are fixed; the editor note embedded inside footnote 105 is intentionally left for F4-112.
+- All earlier citation/precedence locks remain active.
 
 ## Exact next group
-- F4-033: end 1.5 with the report transition from historical mushaf distribution to `resm` / `resm-i Osmânî` concepts (no literal Markdown backticks in DOCX).
-- F4-034: replace the meta-heavy 1.6 opening with the direct conceptual frame.
-- F4-035: revise the Cevherî paragraph so dictionary evidence supports only the lexical meaning; technical terminology is attributed to later resm literature. If Cevherî date is retained, normalize it to `ö. 400/1009'dan önce`.
-- F4-036: replace the 1.6.2 opening with the direct technical definition of resm.
-- F4-037: remove embedded Kastallânî/Bâkıllânî work notes; retain death dates only if these are their first current body occurrences.
+- F4-038: replace the repetitive/over-strong Ebû Ubeyde paragraph with the report's restrained early-resm formulation.
+- F4-039: consolidate Dânî and Ebû Dâvud repetition to the two report-approved paragraphs; preserve their genuine citations.
+- F4-040: replace Zerkeşî repetition/negative framing with the report's kıyasî-imlâ vs transmitted-mushaf-writing distinction.
+- F4-041: rewrite the modern-research cluster so Motzki/Sinai/Déroche-type evidence is not presented as directly proving the book's entire thesis.
+- F4-042: add the report-approved distinction at the start of 1.8 between historical origin/tevkîfîlik and later binding force.
 
-Re-locate all targets from CURRENT F4-032, preserve genuine citations, validate, and checkpoint after this five-item group.
+Re-locate all targets from CURRENT F4-037, preserve source-backed citations and Word structures, replay twice, run technical validation and affected-range visual QA, then checkpoint before F4-043.
