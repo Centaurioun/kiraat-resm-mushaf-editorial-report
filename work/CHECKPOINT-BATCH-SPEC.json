@@ -1,39 +1,39 @@
 {
-  "last_f4": 109,
-  "next_f4": 110,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-109.docx",
-  "sha256": "8e9000db5b0574d5203689eb70786babe01d59665dd51d09241f38f1f5c0cbc1",
-  "body_paragraphs": 675,
-  "technical_file": "work/runtime/F4-109-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-109-VISUAL-QA.md",
-  "visual_pages": 4,
+  "last_f4": 110,
+  "next_f4": 111,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-110.docx",
+  "sha256": "fcdca872a3efc36b96e9f9d600fd23ba73b45a4fec4857ea5434df2b6dd1c807",
+  "body_paragraphs": 676,
+  "technical_file": "work/runtime/F4-110-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-110-VISUAL-QA.md",
+  "visual_pages": 5,
   "holds": "none",
-  "validation_marker": "## F4-109 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_109.py`; candidate SHA-256 `8e9000db5b0574d5203689eb70786babe01d59665dd51d09241f38f1f5c0cbc1`.\n- F4-109 APPLIED: retained the unique Dânî/Ebû Dâvud classical-source and resm-zapt core in current P453 while replacing only the one-way print-causes-standardization/spread conclusion with the report-approved multicausal formulation.\n- Printed mushafs are now framed as contributing to wider written reach, while teaching traditions, tashih institutions, qiraat expertise, regional preferences and official publication processes are also named. P454 remains unchanged for F4-110.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P450–456: 4/4 pages inspected; PASS.\n- Durable boundary: last F4-109; next F4-110.",
+  "validation_marker": "## F4-110 checkpoint — PASS",
+  "validation_block": "- Accepted replay: `work/apply_f4_110.py`, revision 4; candidate SHA-256 `fcdca872a3efc36b96e9f9d600fd23ba73b45a4fec4857ea5434df2b6dd1c807`. Revisions 1–3 were explicitly rejected from durable state because bounded rendering placed the future-research paragraph with the bibliography.\n- F4-110 APPLIED: retained the unique ilmî-contribution core, separated the report-approved final judgment and future-research recommendation into distinct paragraphs, and kept `Kaynakça` as the bibliography boundary.\n- Layout repair: existing bookmark-backed `Kaynakça` heading now carries explicit `pageBreakBefore` so the future-research paragraph remains part of Sonuç and bibliography begins on the following page. Heading text/bookmarks remain intact.\n- Body paragraphs 675→676 because one additional future-research paragraph was created.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P452–458: 5/5 pages inspected; PASS.\n- Durable boundary: last F4-110; next F4-111.",
   "structural_state": [
-    "F4-073–108 remain intact and validated from prior durable checkpoints.",
-    "F4-109: modern printed-mushaf standardization/spread is now multicausal while the classical-source/resm-zabt result remains.",
-    "Current body paragraph count remains 675; all footnote identities and protected OOXML remain preserved.",
-    "F4-110+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh."
+    "F4-073–109 remain intact and validated from prior durable checkpoints.",
+    "F4-110: Sonuç now ends with retained ilmî contribution, separate final judgment, separate future-research paragraph, followed by Kaynakça on a new page.",
+    "Current body paragraph count is 676; all 469 footnote identities, 520 fields, bookmarks and protected OOXML remain preserved.",
+    "F4-111+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_109.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-109.docx`",
-    "SHA: `work/runtime/F4-109-SHA256.txt`",
-    "Postflight: `work/runtime/F4-109-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-109-TECHNICAL-VALIDATION.txt`",
-    "Human visual review: `work/F4-109-VISUAL-QA.md` — 4/4 PASS"
+    "Replay: `work/apply_f4_110.py` revision 4",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-110.docx`",
+    "SHA: `work/runtime/F4-110-SHA256.txt`",
+    "Postflight: `work/runtime/F4-110-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-110-TECHNICAL-VALIDATION.txt`",
+    "Human visual review: `work/F4-110-VISUAL-QA.md` — 5/5 PASS"
   ],
-  "next_action": "Apply only F4-110 to current F4-109. Separate the current Sonuç closing contribution/research material into: retained unique ilmî-contribution text; a distinct report-approved final judgment on oral transmission plus written rasm complementarity; and a separate future-research paragraph. Preserve the pre-existing Kaynakça heading/page-break and do not pre-apply F4-111+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-109`.",
+  "next_action": "Apply only F4-111 to current F4-110. Perform the report-required global main-text normalization of `Kur’an` and the specific-name form `İmam Mushaf`, while preserving bibliographic titles and direct quotations where original spelling must remain. Use a preflight inventory first so broad replacement does not touch fields, bibliography, quotations, Arabic/RTL runs or protected citation structures. Do not pre-apply F4-112+. Run deterministic replay, technical validation and bounded/global QA appropriate to the scope. Do not repeat `F4-001`–`F4-110`.",
   "updates": {
-    "F4-109": {
+    "F4-110": {
       "status": "APPLIED",
-      "section": "Sonuç — modern printed mushaf paragraph",
-      "action_type": "MULTICAUSAL_PRINT_STANDARDIZATION_REFRAME",
-      "resolved_location": "current P453",
+      "section": "Sonuç final closure",
+      "action_type": "FINAL_JUDGMENT_FUTURE_RESEARCH_SEPARATION_AND_BIB_PAGE_BOUNDARY",
+      "resolved_location": "current P454–457",
       "affected_footnote_ids": [],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Only the one-way causal closing was replaced; unique classical-source/resm-zabt core retained."
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 5/5_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Only revision 4 accepted. Kaynakça heading retains bookmarks and receives explicit pageBreakBefore for clean bibliography separation."
     }
   }
 }
