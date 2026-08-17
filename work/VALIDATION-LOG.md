@@ -412,3 +412,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render P450–456: 4/4 pages inspected; PASS.
 - Durable boundary: last F4-109; next F4-110.
+
+
+## F4-110 checkpoint — PASS
+- Accepted replay: `work/apply_f4_110.py`, revision 4; candidate SHA-256 `fcdca872a3efc36b96e9f9d600fd23ba73b45a4fec4857ea5434df2b6dd1c807`. Revisions 1–3 were explicitly rejected from durable state because bounded rendering placed the future-research paragraph with the bibliography.
+- F4-110 APPLIED: retained the unique ilmî-contribution core, separated the report-approved final judgment and future-research recommendation into distinct paragraphs, and kept `Kaynakça` as the bibliography boundary.
+- Layout repair: existing bookmark-backed `Kaynakça` heading now carries explicit `pageBreakBefore` so the future-research paragraph remains part of Sonuç and bibliography begins on the following page. Heading text/bookmarks remain intact.
+- Body paragraphs 675→676 because one additional future-research paragraph was created.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render P452–458: 5/5 pages inspected; PASS.
+- Durable boundary: last F4-110; next F4-111.

@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `a49f936ca2ce3bfa7aa3eec7a3e39004863346eb` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `aaf1558be1b3340de4f00bb1e2db726dcbe10981` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -12,17 +12,17 @@
 
 ## State machine
 - Current phase: `FOURTH_APPLY`
-- Last fully completed Fourth Report item: `F4-109`
-- Next Fourth Report item: `F4-110`
+- Last fully completed Fourth Report item: `F4-110`
+- Next Fourth Report item: `F4-111`
 - Last fully completed Fifth Report item: none
 - Next Fifth Report item: `F5-001` (do not start until Fourth Report validation passes)
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-109.docx`
-- Current working DOCX SHA-256: `8e9000db5b0574d5203689eb70786babe01d59665dd51d09241f38f1f5c0cbc1`
-- Last known good commit basis: `a49f936ca2ce3bfa7aa3eec7a3e39004863346eb`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-109.docx`
-- Current body paragraph count: 675
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-110.docx`
+- Current working DOCX SHA-256: `fcdca872a3efc36b96e9f9d600fd23ba73b45a4fec4857ea5434df2b6dd1c807`
+- Last known good commit basis: `aaf1558be1b3340de4f00bb1e2db726dcbe10981`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-110.docx`
+- Current body paragraph count: 676
 
 ## Integrity
 - Genuine footnotes/references: 469/469
@@ -34,17 +34,17 @@
 - Protected OOXML parts: baseline-identical
 
 ## Structural-edit state
-- F4-073–108 remain intact and validated from prior durable checkpoints.
-- F4-109: modern printed-mushaf standardization/spread is now multicausal while the classical-source/resm-zabt result remains.
-- Current body paragraph count remains 675; all footnote identities and protected OOXML remain preserved.
-- F4-110+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh.
+- F4-073–109 remain intact and validated from prior durable checkpoints.
+- F4-110: Sonuç now ends with retained ilmî contribution, separate final judgment, separate future-research paragraph, followed by Kaynakça on a new page.
+- Current body paragraph count is 676; all 469 footnote identities, 520 fields, bookmarks and protected OOXML remain preserved.
+- F4-111+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Last validation result: **PASS**.
 - Deterministic replay/idempotency: PASS.
-- Technical validation: PASS (`work/runtime/F4-109-TECHNICAL-VALIDATION.txt`).
-- Bounded visual QA: PASS, 4/4 pages inspected (`work/F4-109-VISUAL-QA.md`).
+- Technical validation: PASS (`work/runtime/F4-110-TECHNICAL-VALIDATION.txt`).
+- Bounded visual QA: PASS, 5/5 pages inspected (`work/F4-110-VISUAL-QA.md`).
 
 ## Exact next action
-Apply only F4-110 to current F4-109. Separate the current Sonuç closing contribution/research material into: retained unique ilmî-contribution text; a distinct report-approved final judgment on oral transmission plus written rasm complementarity; and a separate future-research paragraph. Preserve the pre-existing Kaynakça heading/page-break and do not pre-apply F4-111+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-109`.
+Apply only F4-111 to current F4-110. Perform the report-required global main-text normalization of `Kur’an` and the specific-name form `İmam Mushaf`, while preserving bibliographic titles and direct quotations where original spelling must remain. Use a preflight inventory first so broad replacement does not touch fields, bibliography, quotations, Arabic/RTL runs or protected citation structures. Do not pre-apply F4-112+. Run deterministic replay, technical validation and bounded/global QA appropriate to the scope. Do not repeat `F4-001`–`F4-110`.
