@@ -35,14 +35,19 @@ jobs:
           rows=[json.loads(x) for x in Path('work/application-ledger.jsonl').read_text(encoding='utf-8').splitlines() if x.strip()]
           assert len(rows)==210
           m={(r.get('id') or f"{r['report']}-{int(r['item_number']):03d}"):r for r in rows}
-          last=int(req['last_f4']); nxt=int(req['next_f4'])
+          last=int(req['last_f4']); nxt_raw=req.get('next_f4'); nxt=int(nxt_raw) if nxt_raw is not None else None
           assert all(m[f'F4-{n:03d}']['status']!='PENDING' for n in range(1,last+1))
-          assert m[f'F4-{nxt:03d}']['status']=='PENDING'
           state=Path('work/APPLICATION-STATE.md').read_text(encoding='utf-8')
           handoff=Path('work/NEXT-HANDOFF.md').read_text(encoding='utf-8')
           log=Path('work/VALIDATION-LOG.md').read_text(encoding='utf-8')
           assert f'Last fully completed Fourth Report item: `F4-{last:03d}`' in state
-          assert f'Next Fourth Report item: `F4-{nxt:03d}`' in state
+          if nxt is not None:
+              assert m[f'F4-{nxt:03d}']['status']=='PENDING'
+              assert f'Next Fourth Report item: `F4-{nxt:03d}`' in state
+          else:
+              assert all(m[f'F4-{n:03d}']['status']!='PENDING' for n in range(1,117))
+              assert 'Next Fourth Report item: none — Fourth Report application complete' in state
+              assert f"Current phase: `{req.get('next_phase','FOURTH_VALIDATE')}`" in state
           assert req['validation_marker'] in log
           assert f'DO-NOT-REPEAT: `F4-001`–`F4-{last:03d}`' in handoff
           PY
