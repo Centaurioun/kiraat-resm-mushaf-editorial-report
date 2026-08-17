@@ -1,0 +1,11 @@
+{
+  "checkpoint": "F4-057",
+  "input_docx": "artifacts/checkpoints/manuscript-working-f4-052.docx",
+  "input_sha256": "f94870a3b0b8a06acdb39cf104e78c3715f0c734068ee6dfc312795c863eabe4",
+  "script": "work/apply_f4_053_057.py",
+  "output_docx": "artifacts/checkpoints/manuscript-working-f4-057.docx",
+  "sha_file": "work/runtime/F4-057-SHA256.txt",
+  "postflight_file": "work/runtime/F4-057-POSTFLIGHT.txt",
+  "postflight_start": 203,
+  "postflight_end": 235
+}
