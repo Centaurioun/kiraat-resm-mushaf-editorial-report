@@ -455,3 +455,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is ALREADY_SATISFIED and byte-identical. Application validator permits only P578/P599 changes from durable F4-113; all non-document package parts are byte-identical, 520 fields and Zotero/ADDIN inventory remain intact.
 - Human visual QA P570–P605: workflow run 32080808433 / artifact 9305055721; 4/4 rasterized pages manually inspected and PASS. Bibliography line flow, italics and adjacent records remain clean.
 - Durable boundary: last F4-114; next F4-115.
+
+
+## F4-115 checkpoint — PASS
+- Final replay: `work/apply_f4_115.py`; candidate SHA-256 `73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf`; body paragraphs 676→674.
+- F4-115 APPLIED after full manuscript-use matching: FN2 confirms İbn Ebû Dâvud Vâiz 2002; FN8 confirms İbn Kuteybe en-Neccâr; FN109 confirms Süleymân b. Necâh Riyad 2000; FN373 confirms Süleymân b. Necâh Medine 1999.
+- Removed only the demonstrably unused bibliography-result paragraphs: original P548 İbn Ebû Dâvud / Selîm b. Îde’l-Hilâlî / Amman 2006 and original P557 İbn Kuteybe / Muhammed Muhyiddîn el-Asfar / Beyrut 1999. Both Necâh editions and the cited Vâiz/en-Neccâr records remain.
+- Deterministic second replay is ALREADY_SATISFIED and byte-identical. All non-document package parts are byte-identical to durable F4-114; 520 field instructions, ADDIN/Zotero field inventory, 469 footnote references, bookmarks, hyperlinks and RTL inventory are preserved.
+- Human visual QA P495–P615: workflow run 32081290071 / artifact 9305200072; 9/9 rasterized pages manually inspected and PASS.
+- Durable boundary: last F4-115; next F4-116.
