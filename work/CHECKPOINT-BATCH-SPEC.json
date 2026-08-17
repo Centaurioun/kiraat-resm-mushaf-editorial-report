@@ -1,38 +1,42 @@
 {
-  "last_f4": 77,
-  "next_f4": 78,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-077.docx",
-  "sha256": "9b8eea35a108e9cefe160e5d7f4975f9adbc278d2a6883cd016a3b67fa46a56c",
-  "body_paragraphs": 685,
-  "technical_file": "work/runtime/F4-077-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-077-VISUAL-QA.md",
-  "visual_pages": 14,
+  "last_f4": 78,
+  "next_f4": 79,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-078.docx",
+  "sha256": "131913a4e602ec88fa0582ebe1cd40cfe8f9c1e9461c5692d12d4c4b36465e6f",
+  "body_paragraphs": 678,
+  "technical_file": "work/runtime/F4-078-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-078-VISUAL-QA.md",
+  "visual_pages": 17,
   "holds": "none",
-  "validation_marker": "## F4-073–077 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_073_077_v3.py`; final candidate commit `b07eda97513611171eb74de05452bbfd48792605`.\n- Candidate SHA-256: `9b8eea35a108e9cefe160e5d7f4975f9adbc278d2a6883cd016a3b67fa46a56c`.\n- F4-073 STRUCTURALLY_APPLIED; F4-074 STRUCTURALLY_APPLIED; F4-075 STRUCTURALLY_APPLIED; F4-076 APPLIED; F4-077 STRUCTURALLY_APPLIED.\n- Second replay: all accepted changes and whitespace-preserve repair already satisfied; byte-identical.\n- Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; reference identity/multiplicity canonical-equal; body reference order changed only because accepted source-backed paragraphs were moved; 520 fields; protected OOXML baseline-identical.\n- Initial 14-page visual QA was rejected for two missing rendered spaces across run boundaries. v3 adds only `xml:space=preserve` to affected whitespace-bearing text nodes.\n- Corrected 14-page render: 14/14 visually inspected; PASS. Both spacing defects are resolved. No clipping, overlap, footnote overflow, heading damage, RTL defect, or batch-induced style propagation remains.\n- Durable boundary: last F4-077; next F4-078.",
+  "validation_marker": "## F4-078 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_078_v2.py`; candidate SHA-256 `131913a4e602ec88fa0582ebe1cd40cfe8f9c1e9461c5692d12d4c4b36465e6f`.\n- F4-078 STRUCTURALLY_APPLIED: current 3.7–3.12 consolidated under `Resm-i Osmânî’ye Bağlılığın Gerekçeleri ve Sınırları`; five former subsection headings demoted to bookmark-preserving transition prose; unique sourced material retained.\n- Eight citation-free repetitive/defensive conclusion paragraphs removed. F4-079/F4-080/F4-081 target claims intentionally remain for their own report items.\n- Second replay: byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical; bookmarks 53/53; hyperlinks 52; RTL canonical-equal.\n- Initial 17-page visual QA rejected because five demoted headings retained direct run-level bold formatting. v2 removes only direct run formatting from those five transition paragraphs. Repaired render adjudicated across all 17 pages (9 changed pages reinspected directly; 8 pages pixel-identical to already inspected first render): PASS.\n- Word TOC remains a stale derived field and must be refreshed in final Word field-refresh phase; field structures were not rewritten during citation-safe application.\n- Durable boundary: last F4-078; next F4-079.",
   "structural_state": [
-    "F4-073: 3.5 heading reframed to vasl/fasl language and interpretation; Arabic `أم` RTL runs preserved; duplicate second conclusion removed; FNs281–289 retained.",
-    "F4-074: 3.6 reordered into normativity, historical-origin/tevkîf, language/nahw, hikmet/i‘câz, Ibn Haldun criticism/response, and later binding-status views; source-backed paragraphs and FNs290–310 preserved.",
-    "F4-075: Ibn Haldun criticism and later response consolidated with semantic citation placement; FN307 follows Ibn Haldun claim and FN306 follows response literature.",
-    "F4-076: old mixed conclusion replaced by explicit three-level distinction between historical origin, binding status, and later interpretive meanings.",
-    "F4-077: three-view binding/general-orthography classification moved from old 3.7 into 3.6 with FNs319–324; stale old classification synthesis removed."
+    "F4-073–077 remain intact and validated from the prior durable checkpoint.",
+    "F4-078: old 3.7–3.12 architecture consolidated beneath one main heading, `Resm-i Osmânî’ye Bağlılığın Gerekçeleri ve Sınırları`; former 3.8–3.12 headings are bookmark-preserving normal-body transition sentences.",
+    "F4-078: unique source-backed paragraphs and all citation identities are retained; only citation-free repetitive/defensive conclusions were removed.",
+    "F4-078: F4-079 unverified Israel/Africa narrative, F4-080 counterfactual mushafaha claim, and F4-081 qirāʾa-loss claim remain intentionally unresolved for sequential application.",
+    "Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_073_077_v3.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-077.docx`",
-    "SHA: `work/runtime/F4-077-SHA256.txt`",
-    "Postflight: `work/runtime/F4-077-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-077-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-077-QA.pdf`",
-    "Human visual review: `work/F4-077-VISUAL-QA.md` — corrected render 14/14 PASS"
+    "Replay: `work/apply_f4_078_v2.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-078.docx`",
+    "SHA: `work/runtime/F4-078-SHA256.txt`",
+    "Postflight: `work/runtime/F4-078-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-078-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-078-QA.pdf`",
+    "Human visual review: `work/F4-078-VISUAL-QA.md` — repaired full-span 17-page adjudication PASS"
   ],
-  "next_action": "F4-078 is a major high-risk structural consolidation of current 3.7–3.12. Before editing, perform a full current-binary preflight of the entire cluster, inventory every paragraph, heading, footnote, field, Arabic/RTL run and downstream F4/F5 overlap, then implement the report-approved consolidation as one independently validated structural unit. Do not repeat `F4-001`–`F4-077`.",
+  "next_action": "Apply F4-079 to the current F4-078 binary. Replace the unverified Israel/Africa tampered-mushaf narrative with the report-approved limited attribution and explicit verification caveat, remove the unsupported motive attribution, preserve all 469 footnote references by semantically reanchoring FNs341–347 rather than deleting them, then run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-078`.",
   "updates": {
-    "F4-073": {"status":"STRUCTURALLY_APPLIED","section":"3.5","action_type":"BOOKMARK_PRESERVING_HEADING_AND_STRUCTURAL_REDUCTION","resolved_location":"current 3.5 heading/opening/examples/closing cluster","affected_footnote_ids":[281,282,283,284,285,286,287,288,289],"commit":"b07eda97513611171eb74de05452bbfd48792605","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 14/14_BOUNDED_VISUAL_QA_PASS","notes":"Heading reframed; P282 rewritten by targeted spans so Arabic RTL runs and FN281 survive; duplicate P286 conclusion removed; FNs282–289 remain with source material."},
-    "F4-074": {"status":"STRUCTURALLY_APPLIED","section":"3.6","action_type":"MAJOR_SUBSECTION_REORDER","resolved_location":"current 3.6 full conceptual cluster","affected_footnote_ids":[290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,308,309,310],"commit":"b07eda97513611171eb74de05452bbfd48792605","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 14/14_BOUNDED_VISUAL_QA_PASS","notes":"Reordered normative, historical-origin, language/nahw, hikmet/i‘câz, and Ibn Haldun evidence layers; source-backed material preserved."},
-    "F4-075": {"status":"STRUCTURALLY_APPLIED","section":"3.6","action_type":"EVIDENCE_LEVEL_AND_CITATION_REANCHORING","resolved_location":"Ibn Haldun criticism/response cluster","affected_footnote_ids":[306,307],"commit":"b07eda97513611171eb74de05452bbfd48792605","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 14/14_BOUNDED_VISUAL_QA_PASS","notes":"Criticism and later-response literature merged into one balanced paragraph. Citation placement follows supported propositions rather than obsolete paragraph order."},
-    "F4-076": {"status":"APPLIED","section":"3.6","action_type":"PARAGRAPH_REPLACEMENT","resolved_location":"current 3.6 balancing conclusion","affected_footnote_ids":[],"commit":"b07eda97513611171eb74de05452bbfd48792605","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 14/14_BOUNDED_VISUAL_QA_PASS","notes":"Replaced old mixed three-line conclusion with explicit historical-origin / binding-status / interpretive-level distinction."},
-    "F4-077": {"status":"STRUCTURALLY_APPLIED","section":"3.6/old 3.7","action_type":"PARAGRAPH_MOVE_WITH_CITATIONS","resolved_location":"three-view classification moved into current 3.6; old duplicate synthesis removed","affected_footnote_ids":[319,320,321,322,323,324],"commit":"b07eda97513611171eb74de05452bbfd48792605","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 14/14_BOUNDED_VISUAL_QA_PASS","notes":"Source-backed classification paragraphs moved with footnotes. Reference order changed intentionally due structural move; identity/multiplicity and semantic attachments preserved. v3 repairs two run-boundary xml:space rendering defects."
+    "F4-078": {
+      "status": "STRUCTURALLY_APPLIED",
+      "section": "3.7–3.12 consolidation",
+      "action_type": "MAJOR_HEADING_CONSOLIDATION_WITH_BOOKMARK_PRESERVATION",
+      "resolved_location": "current consolidated 3.7 cluster through Fourth Section boundary",
+      "affected_footnote_ids": [311,312,313,314,315,316,317,318,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360],
+      "commit": "d47b6102e9f3da0c7188472797b71462f7fa744a",
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 17/17_BOUNDED_VISUAL_QA_PASS_AFTER_STYLE_REPAIR",
+      "notes": "Consolidated six repetitive headings into one report-approved architecture while preserving unique cited material and all citation identities. Five former headings demoted with bookmarks preserved; v2 removes inherited direct bold formatting. F4-079–081 claims intentionally left for sequential items. Final TOC field refresh remains required."
     }
   }
 }
