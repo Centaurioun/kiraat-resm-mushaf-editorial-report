@@ -1,0 +1,55 @@
+name: application-preflight
+
+on:
+  push:
+    branches:
+      - editorial/apply-fourth-fifth-reports
+    paths:
+      - 'work/PREFLIGHT-REQUEST.json'
+      - '.github/workflows/application-preflight.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  preflight:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/apply-fourth-fifth-reports
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install lxml
+      - name: Extract current DOCX range
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from zipfile import ZipFile
+          from lxml import etree
+          req=json.loads(Path('work/PREFLIGHT-REQUEST.json').read_text(encoding='utf-8'))
+          W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'; NS={'w':W}
+          with ZipFile(req['docx']) as z:
+              d=etree.fromstring(z.read('word/document.xml')); f=etree.fromstring(z.read('word/footnotes.xml'))
+              ps=d.xpath('.//w:body/w:p',namespaces=NS); lines=[f"DOCX={req['docx']}",f"BODY_PARAGRAPHS={len(ps)}"]; note_ids=set()
+              for i in range(max(0,int(req['start'])),min(len(ps),int(req['end'])+1)):
+                  p=ps[i]; text=''.join(p.xpath('.//w:t/text()',namespaces=NS)); fns=p.xpath('.//w:footnoteReference/@w:id',namespaces=NS); note_ids.update(fns)
+                  lines.append(f'P{i}\tFN={fns}\tRTL={len(p.xpath(".//w:rtl",namespaces=NS))}\tFLD={len(p.xpath(".//w:instrText|.//w:fldChar",namespaces=NS))}\tBOOK={len(p.xpath(".//w:bookmarkStart|.//w:bookmarkEnd",namespaces=NS))}\t{text}')
+              lines.append('\nFOOTNOTES')
+              for fid in sorted(note_ids,key=lambda x:int(x)):
+                  hit=f.xpath(f'.//w:footnote[@w:id="{fid}"]',namespaces=NS)
+                  if hit: lines.append(f'FN{fid}\t'+''.join(hit[0].xpath('.//w:t/text()',namespaces=NS)))
+          out=Path(req['output']); out.parent.mkdir(parents=True,exist_ok=True); out.write_text('\n'.join(lines),encoding='utf-8')
+          PY
+      - name: Commit preflight evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          out=$(python -c "import json;print(json.load(open('work/PREFLIGHT-REQUEST.json'))['output'])")
+          git add "$out"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'checkpoint(preflight): inspect current application range [skip ci]'
+          git push origin HEAD:editorial/apply-fourth-fifth-reports
