@@ -292,3 +292,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, heading damage, blank-page regression or style propagation.
 - Durable boundary: last F4-096; next F4-097.
+
+
+## F4-097 checkpoint — PASS
+- Final replay: `work/apply_f4_097.py`; candidate SHA-256 `9f76e4b8a98a70a8af42a73b261945378c5bd423d94903b4ac20a94b2880f5da`.
+- F4-097 APPLIED: the FN417 opening claim now frames rasm reports as complementary evidence for written mushaf forms and their relationship to transmitted readings rather than a constitutive source of qiraat.
+- The citation-free 4.5 synthesis was replaced with the report-approved statement that rasm reports identify written forms/city-mushaf differences and do not replace the rivayat source of readings.
+- FN417 and all later source-backed material remain intact; visible Mehdevi/Ebu Amr/Ibn Muaz/Sehavi/Satibi work notes remain intentionally pending for later editorial correction.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, blank-page regression or style propagation.
+- Durable boundary: last F4-097; next F4-098.
