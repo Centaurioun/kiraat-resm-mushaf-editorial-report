@@ -10,25 +10,28 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - F4-018–022: replay `7d32131a8681b3334cb405a68f79c2494b8db5e7`; checkpoint PASS.
 - F4-023–027: replay `a7e987b2ae84ada927b082974f5d90f4896d43d4`; checkpoint PASS.
 - F4-028–032: replay `30bf55f09fa02d4b805d6695c149061f2b24031d`; checkpoint PASS.
-- F4-033–037: replay `58d891d493331863b9f8fdfb0436267a97d33f4e`; output SHA `94bbdeec878f57d4d97f54ad393bddc79074230ec69886e1f0a455bbe483ed3a`; 32-page bounded QA PASS after catching/fixing inherited italics.
+- F4-033–037: replay `58d891d493331863b9f8fdfb0436267a97d33f4e`; checkpoint PASS.
+- F4-038–042: replay `89f8263a3fb90454727660654d103e6e2c132c16`; output SHA `e23e7c57a52b5ef6f95c3f36ea2ab614274464bff6e65803198c5c868cb1181c`; 35-page bounded QA PASS.
 
-## F4-038–042 checkpoint — 2026-08-17
-- Input: validated F4-037 logical state.
-- Durable replay: `work/apply_f4_038_042.py`, commit `89f8263a3fb90454727660654d103e6e2c132c16`.
-- Durable ledger: `5969a0c676c80dadb1963c4245127d617c101f99`.
-- Output SHA-256: `e23e7c57a52b5ef6f95c3f36ea2ab614274464bff6e65803198c5c868cb1181c`.
-- Second replay returns all F4-038–042 targets already satisfied and produces exactly the same SHA. **BYTE IDEMPOTENCY PASS**.
-- Body paragraphs: **695 → 696** because F4-042 adds one report-approved distinction paragraph after the existing 1.8 heading.
-- F4-038: Ebû Ubeyde's role is now described as an important early appearance of resm thinking rather than a retrospectively complete technical formulation. Genuine footnote 108 retained at paragraph end.
-- F4-039: Dânî paragraph rewritten with notes 110/111 preserved in source order; Ebû Dâvud paragraph rewritten with note 112 preserved. The unique intervening Dânî/kırâat paragraph was intentionally left in place because the Fourth Report's explicit repetition target was the Dânî and Ebû Dâvud framing paragraphs, not that source-specific discussion.
-- F4-040: Zerkeşî paragraph now distinguishes transmitted mushaf writing from later kıyasî imlâ and explicitly avoids assigning a special conscious intention to every divergence. Notes 113/114/115 preserved in ascending source order.
-- F4-041: Motzki/Sinai paragraph rewritten exactly within the report's authorized scope; footnote 119 retained. A cross-check of the report did not authorize deleting the separate Déroche paragraph, so it remains for any later specifically applicable item.
-- F4-042: a new normal paragraph inserted immediately after the existing 1.8 heading. The heading's bookmark start/end remain unchanged; the original first 1.8 paragraph and its note 121 were not modified.
+## F4-043–047 checkpoint — 2026-08-17
+- Input: validated F4-042 logical state.
+- Durable replay runner: `work/apply_f4_043_047.py`; exact transformation/recovery specification: `work/F4-043-047-REPLAY-SPEC.md`.
+- Durable ledger commit: `86ebf507741218a7b2f38c3008f2eac97c825c53`.
+- Output SHA-256: `6621390d51f78d73fabf615f2c224dfb36b22c37cefc81e8e6cb568e20105fb7`.
+- Second local replay returns F4-043–047 all already satisfied and produces exactly the same SHA. **BYTE IDEMPOTENCY PASS**.
+- Body paragraphs remain **696**.
+- F4-043: replaced the direct `bilinçli uyum` inference with a compatibility-vs-causation distinction; genuine footnote 142 unchanged.
+- F4-044: hazf opening corrected with genuine footnote 145 preserved. The repeated `Sonuç olarak hazf...` conclusion was shortened; footnote 151 deliberately remains before the new synthesis, attached to the preceding source-specific examples.
+- F4-045: Ca‘berî sentence corrected to `(ö. 732/1332)`; paragraph notes 158–163 preserved, including note 161 immediately after the Ca‘berî proposition.
+- F4-046: overdetermined hemze-history explanation replaced with the report-approved early-writing/edâ framing; notes 166/167 remain with examples and 168 remains at the end.
+- F4-047: opening through note 171 preserved. Existing RTL runs for `أُوْلوُا`, `سَأُوْرِيكُمْ`, `بِأَيْيْدٍ` were reused; Bakara corrected to 2/269. Unsupported `fonetik zorunluluktan dolayı` reasoning removed. Note 172's own source supports only a limited meaning-centred interpretation, so note 172 now follows that limited caution sentence rather than the corrected examples.
 - Genuine footnotes/references: **469/469**; exact ID/reference sets baseline-identical; orphan/dangling/duplicate **0/0/0**.
-- Word fields: **520/520**; field-type inventory exact baseline match. Zotero **465 item + 1 bibliography**.
-- RTL **365/365**; bookmarks 53/53; hyperlinks 52; comments/revisions 0/0; sections 10.
+- Word fields: **520/520**; type inventory exact baseline match. Zotero **465 item + 1 bibliography**.
+- RTL **365/365**; bookmarks 53/53; hyperlinks 52; sections 10.
 - Protected `word/footnotes.xml`, `word/styles.xml`, `word/numbering.xml`, `word/settings.xml`, `word/_rels/document.xml.rels`: exact baseline hashes.
 - ZIP/package integrity PASS; all XML/rels parse PASS.
-- QA-only first 175 body paragraphs rendered as **35 pages**; all pages reviewed in contact-sheet form. Pages 26–29 inspected at full resolution, covering F4-038, both F4-039 targets, F4-040, F4-041, the 1.8 heading, inserted F4-042 paragraph, and the original following note-121 paragraph.
-- No clipping, overlap, footnote overflow, abnormal whitespace, unintended style/color propagation or edit-caused pagination defect.
-- Result: **PASS — F4-038–042 CHECKPOINT VALIDATED**.
+- QA-only first 190 body paragraphs rendered as **38 pages**. All 38 reviewed in contact-sheet form; pages 32–38 inspected at full resolution.
+- Page 34 confirms note 151 remains before the new hazf synthesis; page 36 confirms corrected Arabic/RTL ziyâde examples and note 172 placement render cleanly.
+- No clipping, overlap, footnote overflow, abnormal whitespace, unintended style propagation or edit-caused pagination defect.
+- Full-document direct render again exceeded the bounded execution window; this matches the pre-existing renderer limitation and does not waive final all-page acceptance.
+- Result: **PASS — F4-043–047 CHECKPOINT VALIDATED**.
