@@ -134,3 +134,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - First visual render was rejected because old Arabic-example paragraphs leaked numbering/centering into the new caveat prose. RTL-safe v2 removes only stale paragraph list/alignment/bidi formatting without copying paragraph-mark RTL or changing RTL counts.
 - Corrected bounded render: 4/4 pages inspected; PASS. No residual list numbering/centering, no blank RTL artifacts, no footnote overflow, clipping or style propagation.
 - Durable boundary: last F4-079; next F4-080.
+
+
+## F4-080 checkpoint — PASS
+- Final replay: `work/apply_f4_080.py`; candidate commit `eacf658a35c4075bf0ac92fed7a7475c60204449`; SHA-256 `26a91412247c513c0c607994547c5fdd56492c67bb0d9bc05ce7107e7f022851`.
+- F4-080 APPLIED: the unsupported counterfactual that fully phonetic writing would weaken mushafaha or cause eda forms to disappear was replaced with the report-approved evidentially bounded statement about telakki, mushafaha, isnad and the written framework.
+- FN340 is preserved on the replacement paragraph. Deterministic second replay is byte-identical.
+- Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 3/3 pages inspected; PASS. No clipping, overlap, style leakage, footnote overflow or transition damage.
+- Durable boundary: last F4-080; next F4-081.
