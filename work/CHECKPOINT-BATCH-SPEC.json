@@ -1,38 +1,38 @@
 {
-  "last_f4": 67,
-  "next_f4": 68,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-067.docx",
-  "sha256": "83ce4b2a4d1291d3d2defc47052230d634438e5e1d8a000231fcca9c1d138171",
+  "last_f4": 72,
+  "next_f4": 73,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-072.docx",
+  "sha256": "5c77048b0fc6b6fd91b06c1e37c48098f5ef99d66e8b8285cd3c56e4c614876a",
   "body_paragraphs": 686,
-  "technical_file": "work/runtime/F4-067-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-067-VISUAL-QA.md",
+  "technical_file": "work/runtime/F4-072-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-072-VISUAL-QA.md",
   "visual_pages": 7,
   "holds": "none",
-  "validation_marker": "## F4-063–067 checkpoint — PASS",
-  "validation_block": "- Replay: `work/apply_f4_063_067.py`; candidate commit `185d2358cb5d1e4a4ccc38a485f0e63f5c065cf8`.\n- Candidate SHA-256: `83ce4b2a4d1291d3d2defc47052230d634438e5e1d8a000231fcca9c1d138171`.\n- First replay: F4-063–067 APPLIED; second replay: all already satisfied; byte-identical.\n- Technical gate: ZIP/XML PASS; 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; Zotero 465+1; canonical-equal RTL/bookmarks/hyperlinks; protected OOXML baseline-identical.\n- Long F4-065 Arabic/city-mushaf paragraph retained 70 RTL runs and FNs241–245; Arabic text was not regenerated.\n- Bounded render: 7 pages; 7/7 visually inspected; PASS. No clipping, overlap, footnote overflow, heading damage, RTL defect, or batch-induced style propagation.\n- Durable boundary: last F4-067; next F4-068.",
+  "validation_marker": "## F4-068–072 checkpoint — PASS",
+  "validation_block": "- Replay: `work/apply_f4_068_072_v2.py`; candidate commit `6537a6fa4c678ef39f1b4fe67be5aa56db4751fc`.\n- Candidate SHA-256: `5c77048b0fc6b6fd91b06c1e37c48098f5ef99d66e8b8285cd3c56e4c614876a`.\n- First replay: F4-068–072 APPLIED; second replay: all already satisfied; byte-identical.\n- Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical; canonical structural invariants preserved.\n- F4-070 heading bookmark preserved by targeted span replacement; Arabic P275–277 was not regenerated.\n- Bounded render: 7 pages; 7/7 visually inspected; PASS.\n- Intermediate QA TOC display retained the pre-edit 3.4 heading because LibreOffice did not recalculate the preserved Word TOC field; actual body heading is correct and field recalculation remains a final acceptance task.\n- Durable boundary: last F4-072; next F4-073.",
   "structural_state": [
-    "F4-063: intentional-design/meta-reference framing removed; FN239 preserved.",
-    "F4-064: real vs probable resm compatibility separated; rivâyet remains basis of qiraat stability.",
-    "F4-065: long example list reframed as multiple resm–qiraat relation types without rebuilding Arabic; FNs240–245 preserved.",
-    "F4-066: shâz status no longer reduced to resm alone; FNs246–248 and Fâtiha Arabic example preserved.",
-    "F4-067: dialect explanation limited to one classical interpretation; FNs249/254 preserved and teleological design claim removed."
+    "F4-068: Mârginî interpretation retained as interpretation; graphic possibility separated from design/mana claims; FN263 preserved.",
+    "F4-069: explicit evidence-level transition inserted before 3.4.",
+    "F4-070: 3.4 heading changed to a classical-interpretation/delil-değeri frame with bookmark preserved; FN264 preserved.",
+    "F4-071: Merrâkuşî explanation labelled as later interpretive relation, not historical cause; Arabic examples and FNs271–274 preserved.",
+    "F4-072: global meaning-sign system generalization removed; FN275 preserved."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_063_067.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-067.docx`",
-    "SHA: `work/runtime/F4-067-SHA256.txt`",
-    "Postflight: `work/runtime/F4-067-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-067-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-067-QA.pdf`",
-    "Human visual review: `work/F4-067-VISUAL-QA.md` — 7/7 PASS"
+    "Replay: `work/apply_f4_068_072_v2.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-072.docx`",
+    "SHA: `work/runtime/F4-072-SHA256.txt`",
+    "Postflight: `work/runtime/F4-072-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-072-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-072-QA.pdf`",
+    "Human visual review: `work/F4-072-VISUAL-QA.md` — 7/7 PASS"
   ],
-  "next_action": "Read authoritative `F4-068`, re-locate it against `artifacts/checkpoints/manuscript-working-f4-067.docx`, inventory current 3.3–3.4 footnotes/fields/Arabic/RTL and later F4/F5 overlaps, then apply the next safe bounded Fourth Report unit. Do not repeat `F4-001`–`F4-067`.",
+  "next_action": "Read authoritative `F4-073`, re-locate it against `artifacts/checkpoints/manuscript-working-f4-072.docx`, inventory current 3.5–3.7 footnotes/fields/Arabic/RTL and later F4/F5 overlaps, then apply the next safe bounded Fourth Report unit. Do not repeat `F4-001`–`F4-072`.",
   "updates": {
-    "F4-063": {"status":"APPLIED","section":"3.1","action_type":"PARAGRAPH_REPLACEMENT","resolved_location":"current body paragraph 256","affected_footnote_ids":[239],"commit":"185d2358cb5d1e4a4ccc38a485f0e63f5c065cf8","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 7/7_BOUNDED_VISUAL_QA_PASS","notes":"Removed special-design inference and meta-reference; FN239 preserved."},
-    "F4-064": {"status":"APPLIED","section":"3.1","action_type":"PARAGRAPH_REPLACEMENT","resolved_location":"current body paragraph 257","affected_footnote_ids":[],"commit":"185d2358cb5d1e4a4ccc38a485f0e63f5c065cf8","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 7/7_BOUNDED_VISUAL_QA_PASS","notes":"Real vs probable compatibility defined; qiraat stability attributed to transmission rather than graphic possibility."},
-    "F4-065": {"status":"APPLIED","section":"3.1","action_type":"ARABIC_ADJACENT_TARGETED_REFRAMING","resolved_location":"current paragraphs 258–259","affected_footnote_ids":[240,241,242,243,244,245],"commit":"185d2358cb5d1e4a4ccc38a485f0e63f5c065cf8","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 7/7_BOUNDED_VISUAL_QA_PASS","notes":"33-example framing corrected; 70-RTL-run city-mushaf list preserved, not regenerated; teleological list synthesis softened."},
-    "F4-066": {"status":"APPLIED","section":"3.1","action_type":"IN_PARAGRAPH_CAUSALITY_CORRECTION","resolved_location":"current body paragraph 260","affected_footnote_ids":[246,247,248],"commit":"185d2358cb5d1e4a4ccc38a485f0e63f5c065cf8","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 7/7_BOUNDED_VISUAL_QA_PASS","notes":"Shâz category no longer explained by resm alone; Fâtiha Arabic example and notes preserved."},
-    "F4-067": {"status":"APPLIED","section":"3.2","action_type":"PARAGRAPH_REPLACEMENT_AND_CAUTION","resolved_location":"current paragraphs 262 and 264","affected_footnote_ids":[249,254],"commit":"185d2358cb5d1e4a4ccc38a485f0e63f5c065cf8","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 7/7_BOUNDED_VISUAL_QA_PASS","notes":"Dialect explanation retained as one classical interpretation, not exhaustive; design-intent claim removed; FNs249/254 preserved."
+    "F4-068": {"status":"APPLIED","section":"3.3","action_type":"IN_PARAGRAPH_EVIDENCE_LEVEL_CORRECTION","resolved_location":"current body paragraph 271","affected_footnote_ids":[263],"commit":"6537a6fa4c678ef39f1b4fe67be5aa56db4751fc","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 7/7_BOUNDED_VISUAL_QA_PASS","notes":"Mârginî attribution retained; graphic/phonetic possibility separated from intentional mana-design claim; FN263 preserved."},
+    "F4-069": {"status":"APPLIED","section":"3.3→3.4 transition","action_type":"PARAGRAPH_REPLACEMENT","resolved_location":"current body paragraph 272","affected_footnote_ids":[],"commit":"6537a6fa4c678ef39f1b4fe67be5aa56db4751fc","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 7/7_BOUNDED_VISUAL_QA_PASS","notes":"Inserted explicit transition distinguishing historical/phonetic evidence from later mana/hikmet interpretation."},
+    "F4-070": {"status":"APPLIED","section":"3.4","action_type":"BOOKMARK_PRESERVING_HEADING_AND_OPENING_REWRITE","resolved_location":"current heading paragraph 273 and opening paragraph 274","affected_footnote_ids":[264],"commit":"6537a6fa4c678ef39f1b4fe67be5aa56db4751fc","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 7/7_BOUNDED_VISUAL_QA_PASS","notes":"Heading changed by targeted text span so bookmark survives; interpretive-literature evidence level made explicit; FN264 preserved. Intermediate TOC display remains stale until final field recalculation."},
+    "F4-071": {"status":"APPLIED","section":"3.4","action_type":"IN_PARAGRAPH_INTERPRETATION_REFRAMING","resolved_location":"current body paragraph 277","affected_footnote_ids":[271,272,273,274],"commit":"6537a6fa4c678ef39f1b4fe67be5aa56db4751fc","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 7/7_BOUNDED_VISUAL_QA_PASS","notes":"Merrâkuşî meaning explanation retained as classical interpretation rather than historical cause; Arabic/hazf examples and note runs preserved."},
+    "F4-072": {"status":"APPLIED","section":"3.4","action_type":"PARAGRAPH_REPLACEMENT","resolved_location":"current body paragraph 278","affected_footnote_ids":[275],"commit":"6537a6fa4c678ef39f1b4fe67be5aa56db4751fc","verification":"TECHNICAL_PASS + IDEMPOTENCY_PASS + 7/7_BOUNDED_VISUAL_QA_PASS","notes":"Removed global meaning-sign system generalization; limited conclusion to classical interpretive relationships; FN275 preserved."
     }
   }
 }
