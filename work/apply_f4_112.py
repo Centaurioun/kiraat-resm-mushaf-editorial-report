@@ -43,14 +43,12 @@ def validate(src,out):
         ids_a=fa.xpath('./w:footnote/@w:id',namespaces=NS); ids_b=fb.xpath('./w:footnote/@w:id',namespaces=NS)
         refs_a=da.xpath('.//w:footnoteReference/@w:id',namespaces=NS); refs_b=db.xpath('.//w:footnoteReference/@w:id',namespaces=NS)
         if ids_a!=ids_b or refs_a!=refs_b: raise RuntimeError('footnote identity/reference order changed')
-        # footnotes.xml also contains Word's two special separator records. The manuscript contract is 469 genuine body references.
         if len(refs_b)!=469 or len(set(refs_b))!=469:
             raise RuntimeError(f'body footnote reference inventory {len(refs_b)} refs / {len(set(refs_b))} unique != 469/469')
         if len(ids_b)!=len(ids_a): raise RuntimeError(f'raw footnote element count changed {len(ids_a)}->{len(ids_b)}')
         idset=set(ids_b)
         missing=[x for x in refs_b if x not in idset]
         if missing: raise RuntimeError(f'body references missing from footnotes.xml: {missing[:10]}')
-        # Every non-target footnote, including special separator records, must remain canonically identical.
         for fid in ids_a:
             aa=fa.xpath(f'./w:footnote[@w:id="{fid}"]',namespaces=NS); bb=fb.xpath(f'./w:footnote[@w:id="{fid}"]',namespaces=NS)
             if len(aa)!=1 or len(bb)!=1: raise RuntimeError(f'footnote {fid} multiplicity changed')
@@ -60,9 +58,15 @@ def validate(src,out):
             if sig(aa)!=sig(bb): raise RuntimeError(f'target footnote structural drift: {fid}')
             if stale in text(bb): raise RuntimeError(f'stale work note remains: FN{fid}')
             if len(text(bb).strip())<20: raise RuntimeError(f'FN{fid} citation unexpectedly truncated')
-        if len(db.xpath('.//w:fldChar',namespaces=NS))!=520: raise RuntimeError('field count changed')
-        starts=db.xpath('.//w:bookmarkStart/@w:id',namespaces=NS); ends=db.xpath('.//w:bookmarkEnd/@w:id',namespaces=NS)
-        if len(starts)!=53 or len(ends)!=53: raise RuntimeError('bookmark count changed')
+        # document.xml is required byte-identical above; assert field/bookmark inventories pre/post rather than assuming a fixed fldChar count.
+        if da.xpath('.//w:fldChar/@w:fldCharType',namespaces=NS) != db.xpath('.//w:fldChar/@w:fldCharType',namespaces=NS):
+            raise RuntimeError('field-character inventory changed')
+        if da.xpath('.//w:instrText/text()',namespaces=NS) != db.xpath('.//w:instrText/text()',namespaces=NS):
+            raise RuntimeError('field-instruction inventory changed')
+        if da.xpath('.//w:bookmarkStart/@w:id',namespaces=NS) != db.xpath('.//w:bookmarkStart/@w:id',namespaces=NS):
+            raise RuntimeError('bookmark-start inventory changed')
+        if da.xpath('.//w:bookmarkEnd/@w:id',namespaces=NS) != db.xpath('.//w:bookmarkEnd/@w:id',namespaces=NS):
+            raise RuntimeError('bookmark-end inventory changed')
         for n in zb.namelist():
             if n.endswith('.xml') or n.endswith('.rels'): etree.fromstring(zb.read(n))
 
