@@ -10,40 +10,46 @@
 
 ## State machine
 - Phase: `FOURTH_APPLY`
-- Last fully completed Fourth item: `F4-027`
-- Next Fourth item: `F4-028`
-- Fifth Report remains blocked; next `F5-001` after Fourth completion.
-- DO-NOT-REPEAT: bootstrap and `F4-001–027`.
+- Last fully completed Fourth item: `F4-032`
+- Next Fourth item: `F4-033`
+- Fifth Report remains blocked until Fourth completion; next `F5-001`.
+- DO-NOT-REPEAT: bootstrap and `F4-001–032`.
 
 ## Deterministic recovery pipeline
 1. `work/apply_docx_edits.py` → F4-011 (`86f99b2186711a7d94159d9c1b7413b0248a0c5c`).
 2. `work/apply_f4_012_017.py` → F4-017 (`d533b450b20729130e850d7cbf37256a8e192306`).
 3. `work/apply_f4_018_022.py` → F4-022 (`7d32131a8681b3334cb405a68f79c2494b8db5e7`).
 4. `work/apply_f4_023_027.py` → F4-027 (`a7e987b2ae84ada927b082974f5d90f4896d43d4`).
-- Current reproducible logical DOCX SHA-256: `fe24f174ad7826dba8045a2584bc62e1b8a6ced867c8fbf2041da272f8fc3448`.
-- Body paragraphs: **700**.
-- Latest stage replay: **PASS, byte-identical**.
-- Ledger through F4-027: commit `d06c188c7130336b9a5f672b95f0f0ad63959caf`, content SHA `9abcca5c4dcf1cce93b13dd0b2a163cfd468bcb4`.
+5. `work/apply_f4_028_032.py` → F4-032 (`30bf55f09fa02d4b805d6695c149061f2b24031d`).
+- Current reproducible logical DOCX SHA-256: `7623dbd834b79effef62991932ec3d506cb7d6e4b77db0c976c495b50a24b127`.
+- Current body paragraphs: **697** (baseline 711).
+- Latest-stage replay: **PASS, byte-identical**.
+- Ledger through F4-032: commit `75a27b5c7be2863ae25b1b37a50a768021fae6c0`, content SHA `0154d4b4fa14f0db27049005e61a64b4bac97488`; exactly 210 records.
+- Edited DOCX binary is not falsely claimed persisted because the connector has no local binary upload parameter. Durable recovery remains canonical source + replay pipeline + hashes + ledger + validation.
 
 ## Integrity
-- Genuine footnotes/references **469/469**; orphan/dangling/duplicate **0/0/0**.
-- `word/footnotes.xml`: baseline-identical.
-- Word fields **520/520**; Zotero **465 item + 1 bibliography**.
-- Protected core OOXML unchanged except expected `word/document.xml`; ZIP/XML **PASS/PASS**.
+- Genuine footnotes/references: **469/469**; exact ID/reference sets unchanged.
+- Orphans/dangling/duplicates: **0/0/0**.
+- Word fields: **520/520** — TOC 1, PAGEREF 52, PAGE 1, ADDIN 466.
+- Zotero: **465 item + 1 bibliography**.
+- RTL inventory: **365/365**, unchanged from baseline.
+- Bookmarks 53/53; hyperlinks 52; comments 0; tracked revisions 0; sections 10.
+- `word/footnotes.xml`, styles, numbering, settings and document relationships: baseline-identical.
+- ZIP/XML parse integrity: **PASS/PASS**.
 
-## F4-023–027 result
-- F4-023 APPLIED: direct Mervân→yedi harf/arza causal mechanism replaced by source-level distinction.
-- F4-024 APPLIED: arza-i âhire framed as an explanatory view rather than certain historical mechanism; genuine footnote 49 retained on the corresponding arza/son-mukabele proposition.
-- F4-025 APPLIED: Ebû Bekir cem restored to written-memory complementarity.
-- F4-026 APPLIED: dramatic conflict language reduced; first body occurrence of Taberî corrected to `(ö. 310/923)` and work note removed; footnote 66 retained on concrete reading-variation evidence.
-- F4-027 APPLIED: `tam baş senede` removed without inventing a duration; note 63 unaffected.
+## F4-028–032 result
+- F4-028 APPLIED: second `Hülasa` closure replaced by direct transition into the mushaf-count section.
+- F4-029 STRUCTURALLY_APPLIED: one cautious multi-rivâyet synthesis replaces the new six-copy certainty. Footnote 88 remains only on Kevserî's own view. Three uncited repetition/certainty paragraphs were removed because leaving them would directly undo the report correction.
+- F4-030 APPLIED: Ebû Şâme corrected to `(ö. 665/1267)`; Ahvâzî death date omitted as requested.
+- F4-031 APPLIED: `(ö. ?)` removed after Amr b. Kays.
+- F4-032 APPLIED: contemporary-literature frame corrected, including Hamîdullah `(ö. 2002)`; the later sentence claiming a common six-copy consensus was replaced with an explicit non-convergence statement while notes 94/95 remained untouched.
 - Open HOLDs: none.
 
 ## Visual QA
-- QA-only first 100 current body paragraphs rendered as **23 pages**.
-- Pages 15–23 inspected; key affected pages 15, 16 and 19 separately inspected full resolution.
-- No clipping, overlap, footnote overflow, or unintended styling/pagination defect caused by F4-023–027.
-- Final all-page full-document QA remains mandatory.
+- First 115 current body paragraphs rendered as **25 pages**; contact-sheet scan completed and affected pages 20–25 inspected at full resolution.
+- No clipping, overlap, footnote overflow, unintended red/style propagation or batch-caused pagination defect.
+- Existing red editorial notes outside this batch remain source material for later report items.
+- Final full-document all-page acceptance remains mandatory.
 
-- Last validation: **PASS — F4-023–027 technical + source/citation placement + byte-idempotency + 23-page bounded visual QA**.
-- Exact next action: apply `F4-028` from CURRENT F4-027 state and continue sequentially.
+- Last validation: **PASS — F4-028–032 technical + citation semantics + byte-idempotency + 25-page bounded visual QA**.
+- Exact next action: apply `F4-033` from CURRENT F4-032 state, then proceed sequentially.
