@@ -1,39 +1,44 @@
 {
-  "last_f4": 112,
-  "next_f4": 113,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-112.docx",
-  "sha256": "58e23edd3cdbffbacaf8a2e14fc2dff5ea5357dd76b15cda30c4d31820e12e9a",
+  "last_f4": 113,
+  "next_f4": 114,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-113.docx",
+  "sha256": "e4287570d99f9d3c20f96752497787e6d97f6a07047555ecbe5c05e5c69bdac1",
   "body_paragraphs": 676,
-  "technical_file": "work/runtime/F4-112-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-112-VISUAL-QA.md",
-  "visual_pages": 3,
+  "technical_file": "work/runtime/F4-113-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-113-VISUAL-QA.md",
+  "visual_pages": 19,
   "holds": "none",
-  "validation_marker": "## F4-112 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_112.py`; candidate SHA-256 `58e23edd3cdbffbacaf8a2e14fc2dff5ea5357dd76b15cda30c4d31820e12e9a`.\n- F4-112 APPLIED: removed only the surviving editorial/work-note tails from genuine footnotes 32, 41 and 105; bibliographic citation content and all footnote IDs/body references are preserved.\n- Deterministic second replay is byte-identical. Footnote-aware technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; only authorized target footnote text differs, target footnote OOXML structure unchanged.\n- Visual QA used a P0–P118 prefix render to preserve the true footnote-reference sequence after bounded-slice rendering was found unsuitable for high-numbered footnotes. Real pages carrying FN32, FN41 and FN105 were inspected; all 3/3 target pages PASS.\n- Durable boundary: last F4-112; next F4-113.",
+  "protected_parts_status": "baseline-identical except explicitly authorized footnote-text changes in `word/footnotes.xml`; target footnote structure unchanged",
+  "validation_marker": "## F4-113 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_113.py`; candidate SHA-256 `e4287570d99f9d3c20f96752497787e6d97f6a07047555ecbe5c05e5c69bdac1`.\n- F4-113 APPLIED: normalized author-name article variants conservatively (`ed-Dânî` → `Dânî`, `ez-Zürkânî` → `Zürkânî`, `es-Suyûtî` → `Suyûtî`) and adopted articleless sura names only in explicit verified Qur'anic verse-reference contexts. Bibliographic work titles such as `el-Mukni‘` and `el-İtkân` remain untouched.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; canonical-to-candidate changed-footnote set exactly equals the authorized 31-ID set (including inherited F4-112 FN32/FN41/FN105); target footnote OOXML structure unchanged.\n- Human visual QA: three representative slices (P50–75, P274–280, P389–401), workflow runs 32079868743 / 32080087101 / 32080209568; all 19/19 rasterized pages manually inspected and PASS. Bounded-render high-footnote renumbering limitation is explicitly documented; original footnote identity is established by the structural gate and full-candidate postflight.\n- Durable boundary: last F4-113; next F4-114.",
   "structural_state": [
-    "F4-073–111 remain intact and validated from prior durable checkpoints.",
-    "F4-112: genuine footnotes 32, 41 and 105 now contain only their bibliographic citation text; editor/work notes are removed.",
-    "Current body paragraph count remains 676; all 469 footnote identities/references, 520 fields, bookmarks, hyperlinks and body XML structure remain preserved.",
-    "F4-113+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh."
+    "F4-073–112 remain intact and validated from prior durable checkpoints.",
+    "F4-113: genuine footnote text house style now uses `Dânî`, `Zürkânî`, `Suyûtî` for the targeted author-name variants and an articleless sura-name convention in explicit verified Qur'anic verse references.",
+    "Bibliographic work titles and unrelated article-bearing lexical contexts are preserved; no F4-114 transliteration work has been pre-applied.",
+    "Current body paragraph count remains 676; all 469 footnote identities/references, 520 fields, Zotero/ADDIN fields, bookmarks, hyperlinks and RTL structural inventory remain preserved."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_112.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-112.docx`",
-    "SHA: `work/runtime/F4-112-SHA256.txt`",
-    "Postflight: `work/runtime/F4-112-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-112-TECHNICAL-VALIDATION.txt`",
-    "Human visual review: `work/F4-112-VISUAL-QA.md` — 3/3 real target pages PASS using prefix render"
+    "Replay: `work/apply_f4_113.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-113.docx`",
+    "SHA: `work/runtime/F4-113-SHA256.txt`",
+    "Preflight: `work/runtime/F4-113-PREFLIGHT.txt`",
+    "Postflight: `work/runtime/F4-113-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-113-TECHNICAL-VALIDATION.txt`",
+    "Human visual review: `work/F4-113-VISUAL-QA.md` — 19/19 pages PASS across three representative slices",
+    "Visual Slice A: run 32079868743 / artifact 9304743549 / 8 pages",
+    "Visual Slice B: run 32080087101 / artifact 9304818453 / 4 pages",
+    "Visual Slice C: run 32080209568 / artifact 9304867454 / 7 pages"
   ],
-  "next_action": "Apply only F4-113 to current F4-112. Inventory author-name article variants and sura-name article variants in genuine footnotes before editing. Normalize author-name house-style forms such as `ez-Zürkânî`, `es-Suyûtî`, `ed-Dânî` to `Zürkânî`, `Suyûtî`, `Dânî` only where they function as author names; do not mechanically strip articles from sura names, work titles or other lexical contexts. Establish and apply one internally consistent sura-name article convention without altering bibliographic titles. Use footnote-specific validation and identity-preserving visual QA. Do not pre-apply F4-114+ or repeat `F4-001`–`F4-112`.",
+  "next_action": "Fetch the exact F4-114 item from `final/fourth-report-v2.md`, resolve it against the current durable F4-113 binary, run a read-only preflight, and apply only F4-114 if unambiguous. Do not pre-apply F4-115+ or repeat `F4-001`–`F4-113`.",
   "updates": {
-    "F4-112": {
+    "F4-113": {
       "status": "APPLIED",
-      "section": "Genuine footnotes 32, 41 and 105",
-      "action_type": "TARGETED_EDITORIAL_WORK_NOTE_REMOVAL",
-      "resolved_location": "word/footnotes.xml IDs 32,41,105",
-      "affected_footnote_ids": [32, 41, 105],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 3/3_TRUE_ID_PREFIX_VISUAL_QA_PASS",
-      "notes": "Only stale editor/work-note tails removed; bibliography text, footnote structures and all body references preserved."
+      "section": "Genuine footnotes — author-name and sura-name article/transliteration house style",
+      "action_type": "TARGETED_FOOTNOTE_ARTICLE_HOUSE_STYLE_NORMALIZATION",
+      "resolved_location": "word/footnotes.xml; context-verified author-name variants and Qur'anic sura+chapter/verse references only",
+      "affected_footnote_ids": [2,28,50,66,271,272,273,274,292,342,344,345,346,377,380,381,407,409,411,414,421,423,424,425,426,427,428,431],
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 19/19_REPRESENTATIVE_VISUAL_QA_PASS",
+      "notes": "Work-title articles and unrelated lexical contexts preserved; bounded-render high-number footnote remapping documented, with true identity established structurally."
     }
   }
 }
