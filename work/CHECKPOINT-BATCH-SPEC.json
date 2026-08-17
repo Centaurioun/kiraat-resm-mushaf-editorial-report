@@ -1,42 +1,42 @@
 {
-  "last_f4": 114,
-  "next_f4": 115,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-114.docx",
-  "sha256": "419bc27be6a259d03f42ed7da7f7bbf0b1f64c9af3ab6ed78393f6aa9a96ca56",
-  "body_paragraphs": 676,
-  "technical_file": "work/runtime/F4-114-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-114-VISUAL-QA.md",
-  "visual_pages": 4,
+  "last_f4": 115,
+  "next_f4": 116,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-115.docx",
+  "sha256": "73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf",
+  "body_paragraphs": 674,
+  "technical_file": "work/runtime/F4-115-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-115-VISUAL-QA.md",
+  "visual_pages": 9,
   "holds": "none",
-  "protected_parts_status": "baseline-identical except explicitly authorized footnote-text changes inherited from F4-112/F4-113; F4-114 changes only bibliography result text in `word/document.xml`",
-  "validation_marker": "## F4-114 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_114.py`; candidate SHA-256 `419bc27be6a259d03f42ed7da7f7bbf0b1f64c9af3ab6ed78393f6aa9a96ca56`.\n- F4-114 APPLIED: removed the malformed Kahraman DOI URL from P578 and repaired Maşalı P599 to `https://doi.org/10.56361/usul.173700`. The DOI text was not inside `w:hyperlink`, so hyperlink objects/relationships remained unchanged.\n- Deterministic second replay is ALREADY_SATISFIED and byte-identical. Application validator permits only P578/P599 changes from durable F4-113; all non-document package parts are byte-identical, 520 fields and Zotero/ADDIN inventory remain intact.\n- Human visual QA P570–P605: workflow run 32080808433 / artifact 9305055721; 4/4 rasterized pages manually inspected and PASS. Bibliography line flow, italics and adjacent records remain clean.\n- Durable boundary: last F4-114; next F4-115.",
+  "protected_parts_status": "baseline-identical except explicitly authorized footnote-text changes inherited from F4-112/F4-113; F4-114/F4-115 modify only bibliography result content/paragraphs in `word/document.xml` while Word/Zotero field instructions remain preserved",
+  "validation_marker": "## F4-115 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_115.py`; candidate SHA-256 `73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf`; body paragraphs 676→674.\n- F4-115 APPLIED after full manuscript-use matching: FN2 confirms İbn Ebû Dâvud Vâiz 2002; FN8 confirms İbn Kuteybe en-Neccâr; FN109 confirms Süleymân b. Necâh Riyad 2000; FN373 confirms Süleymân b. Necâh Medine 1999.\n- Removed only the demonstrably unused bibliography-result paragraphs: original P548 İbn Ebû Dâvud / Selîm b. Îde’l-Hilâlî / Amman 2006 and original P557 İbn Kuteybe / Muhammed Muhyiddîn el-Asfar / Beyrut 1999. Both Necâh editions and the cited Vâiz/en-Neccâr records remain.\n- Deterministic second replay is ALREADY_SATISFIED and byte-identical. All non-document package parts are byte-identical to durable F4-114; 520 field instructions, ADDIN/Zotero field inventory, 469 footnote references, bookmarks, hyperlinks and RTL inventory are preserved.\n- Human visual QA P495–P615: workflow run 32081290071 / artifact 9305200072; 9/9 rasterized pages manually inspected and PASS.\n- Durable boundary: last F4-115; next F4-116.",
   "structural_state": [
-    "F4-073–113 remain intact and validated from prior durable checkpoints.",
-    "F4-114: Kahraman bibliography record no longer carries the malformed DOI URL; Maşalı bibliography DOI is `https://doi.org/10.56361/usul.173700` with one DOI prefix.",
-    "F4-114 changed only visible bibliography result text at P578 and P599; Word/Zotero field instructions and hyperlink structures remain preserved.",
-    "Current body paragraph count remains 676; all 469 footnote identities/references, 520 fields, Zotero/ADDIN fields, bookmarks, hyperlinks and RTL structural inventory remain preserved."
+    "F4-073–114 remain intact and validated from prior durable checkpoints.",
+    "F4-115: unused bibliography records for İbn Ebû Dâvud 2006 and İbn Kuteybe el-Asfar 1999 are removed only after manuscript-use matching.",
+    "F4-115 preserves the cited İbn Ebû Dâvud Vâiz 2002 and İbn Kuteybe en-Neccâr records, and preserves both Süleymân b. Necâh editions because FN109 and FN373 cite different editions.",
+    "Current body paragraph count is 674; all 469 footnote identities/references, 520 fields, Zotero/ADDIN fields, bookmarks, hyperlinks and RTL structural inventory remain preserved."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_114.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-114.docx`",
-    "SHA: `work/runtime/F4-114-SHA256.txt`",
-    "Preflight: `work/runtime/F4-114-PREFLIGHT.txt`",
-    "Postflight: `work/runtime/F4-114-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-114-TECHNICAL-VALIDATION.txt`",
-    "Human visual review: `work/F4-114-VISUAL-QA.md` — 4/4 pages PASS",
-    "Visual workflow: run 32080808433 / artifact 9305055721"
+    "Replay: `work/apply_f4_115.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-115.docx`",
+    "SHA: `work/runtime/F4-115-SHA256.txt`",
+    "Preflight: `work/runtime/F4-115-PREFLIGHT.txt`",
+    "Postflight: `work/runtime/F4-115-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-115-TECHNICAL-VALIDATION.txt`",
+    "Human visual review: `work/F4-115-VISUAL-QA.md` — 9/9 pages PASS",
+    "Visual workflow: run 32081290071 / artifact 9305200072"
   ],
-  "next_action": "Apply only F4-115 against the current durable F4-114 binary. First verify the exact report-prescribed edition-use decisions against current footnote and bibliography evidence: keep İbn Ebû Dâvud 2002 and remove unused 2006; retain both Süleymân b. Necâh 2000 and 1999 because both are cited; keep İbn Kuteybe en-Neccâr record and remove unused 1999 el-Asfar record. Do not pre-apply F4-116 or repeat `F4-001`–`F4-114`.",
+  "next_action": "Apply only F4-116 against the current durable F4-115 binary. Reconfirm all Ebû Şâme `el-Murşidu’l-vecîz` footnote citations and match short volume/page references to the 1975 Tayyar Altıkulaç and 1993 Velîd Müsâid et-Tabatabâî bibliography editions. Keep 1993; retain 1975 only if current manuscript evidence proves actual use. If short citations cannot be safely edition-resolved from manuscript sequence, HOLD at F4-116. Do not enter FIFTH_APPLY before F4-116 is resolved and FOURTH_VALIDATE passes.",
   "updates": {
-    "F4-114": {
+    "F4-115": {
       "status": "APPLIED",
-      "section": "Kaynakça — Kahraman and Maşalı DOI records",
-      "action_type": "TARGETED_BIBLIOGRAPHY_DOI_REPAIR",
-      "resolved_location": "word/document.xml P578 and P599 bibliography result text",
-      "affected_body_paragraphs": [578,599],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_VISUAL_QA_PASS",
-      "notes": "Kahraman malformed DOI removed; Maşalı DOI single-prefix corrected; field instructions/hyperlinks preserved."
+      "section": "Kaynakça — duplicate-edition usage reconciliation",
+      "action_type": "EVIDENCE_MATCHED_UNUSED_BIBLIOGRAPHY_EDITION_REMOVAL",
+      "resolved_location": "word/document.xml bibliography result; original body P548 and P557 removed",
+      "affected_body_paragraphs": [548,557],
+      "verification": "FOOTNOTE_EDITION_MATCH_PASS + TECHNICAL_PASS + IDEMPOTENCY_PASS + 9/9_VISUAL_QA_PASS",
+      "notes": "Removed only unused İbn Ebû Dâvud 2006 and İbn Kuteybe el-Asfar 1999 records; preserved Vâiz 2002, en-Neccâr, and both cited Süleymân b. Necâh editions."
     }
   }
 }
