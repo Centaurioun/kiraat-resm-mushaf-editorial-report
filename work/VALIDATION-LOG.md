@@ -264,3 +264,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, heading damage, orphaned heading, run-boundary spacing defect or style propagation.
 - Durable boundary: last F4-093; next F4-094.
+
+
+## F4-094 checkpoint — PASS
+- Final replay: `work/apply_f4_094.py`; candidate SHA-256 `523fcf36cae029c4761e254a378beda7f378499ed8a0b13bcf0371cd83079894`.
+- F4-094 APPLIED: the bookmark-backed 4.4 heading was corrected from the grammatically problematic `Tercîhî, Tevcîhi ... Etkisi` formulation to `Resm-i Osmânî'nin Kırâatlerin Tercihi, Tevcîhi ve Vakıf Uygulamalarıyla İlişkisi`, avoiding one-way causal overstatement.
+- The two heading bookmarks remain preserved; the F4-093 transition and FN400+ source-backed opening material remain intact.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 4/4 pages inspected; PASS. The heading wraps cleanly over two lines with no clipping, overlap, orphaning, footnote overflow or style propagation.
+- Durable boundary: last F4-094; next F4-095.
