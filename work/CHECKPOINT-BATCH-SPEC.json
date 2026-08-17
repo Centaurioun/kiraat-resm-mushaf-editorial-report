@@ -1,42 +1,42 @@
 {
-  "last_f4": 90,
-  "next_f4": 91,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-090.docx",
-  "sha256": "4f6218852a35d1775610e19f199158677540870a4f3ea27974aabbcc7050d5e1",
+  "last_f4": 91,
+  "next_f4": 92,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-091.docx",
+  "sha256": "85fe7159297c0d7ca2c477a871af1655571e14fd7b68f44abe7040b7994bb222",
   "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-090-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-090-VISUAL-QA.md",
-  "visual_pages": 5,
+  "technical_file": "work/runtime/F4-091-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-091-VISUAL-QA.md",
+  "visual_pages": 4,
   "holds": "none",
-  "validation_marker": "## F4-090 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_090.py`, revision 2; candidate commit `8dcd3e9f12ffee82d648d247c0deaa96040d10ae`; SHA-256 `4f6218852a35d1775610e19f199158677540870a4f3ea27974aabbcc7050d5e1`.\n- F4-090 STRUCTURALLY_APPLIED: the earlier citation-free repeated 4.2 conclusion was removed, while the final citation-free conclusion immediately before 4.3 was replaced with the report-approved three-sentence synthesis distinguishing historical witness from normative text authority.\n- Source-backed FN384–388 paragraphs remain in sequence and the 4.3 heading/bookmark was not moved or rewritten. Body paragraph count changed only as expected, 678 -> 677.\n- Revision 1 visual QA exposed an inherited run-whitespace defect from the F4-089 paragraph. Revision 2 was regenerated from the F4-089 input and deterministically fixed the OOXML whitespace-preservation property; the corrected `değerlendirilmelidir. Kurtubî’nin` spacing is visually confirmed. Revision 1 is superseded and must not be used.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render revision 2: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, Arabic/RTL corruption, heading damage, blank-page regression or style propagation.\n- Durable boundary: last F4-090; next F4-091.",
+  "validation_marker": "## F4-091 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_091.py`; candidate commit `99a3565ce4b027b8a27dfc94c6197967d081b3b9`; SHA-256 `85fe7159297c0d7ca2c477a871af1655571e14fd7b68f44abe7040b7994bb222`.\n- F4-091 APPLIED: the Ibn Shanbudh example is now framed through public recitation, transmission, common mushaf tradition and period acceptance criteria rather than as a one-factor rasm-only causation.\n- FN391 remains on the rewritten Ibn Shanbudh paragraph; the following FN392–393 paragraph is untouched and reserved for F4-092.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, heading damage, run-boundary spacing defect or style propagation.\n- Durable boundary: last F4-091; next F4-092.",
   "structural_state": [
-    "F4-073–089 remain intact and validated from prior durable checkpoints.",
-    "F4-090: repeated citation-free 4.2 conclusions are consolidated into one bounded synthesis immediately before 4.3; FN384–388 evidence paragraphs remain intact.",
-    "The inherited F4-089 run-boundary whitespace rendering defect is remediated in the F4-090 revision 2 deterministic replay.",
-    "F4-091 is next; derived TOC field has not been recalculated and final Word field/TOC refresh remains required after editorial application."
+    "F4-073–090 remain intact and validated from prior durable checkpoints.",
+    "F4-091: the Ibn Shanbudh case is no longer reduced to rasm nonconformity alone; FN391 remains attached to the bounded case summary.",
+    "F4-092 begins in the following FN392–393 paragraph and remains pending.",
+    "Derived TOC field has not been recalculated; final Word field/TOC refresh remains required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_090.py` revision 2",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-090.docx`",
-    "Candidate commit: `8dcd3e9f12ffee82d648d247c0deaa96040d10ae`",
-    "SHA: `work/runtime/F4-090-SHA256.txt`",
-    "Postflight: `work/runtime/F4-090-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-090-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-090-QA.pdf`",
-    "Human visual review: `work/F4-090-VISUAL-QA.md` — revision 2, 5/5 PASS"
+    "Replay: `work/apply_f4_091.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-091.docx`",
+    "Candidate commit: `99a3565ce4b027b8a27dfc94c6197967d081b3b9`",
+    "SHA: `work/runtime/F4-091-SHA256.txt`",
+    "Postflight: `work/runtime/F4-091-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-091-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-091-QA.pdf`",
+    "Human visual review: `work/F4-091-VISUAL-QA.md` — 4/4 PASS"
   ],
-  "next_action": "Read F4-091 from the locked Fourth Report and apply only that item to the current F4-090 revision 2 binary. Preserve the completed F4-090 consolidation, FN384–388 sequence and the 4.3 heading/bookmark. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-090`.",
+  "next_action": "Read and apply only F4-092 to the current F4-091 binary. Preserve the F4-091 Ibn Shanbudh paragraph/FN391 and do not collapse later F4-093+ material. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-091`.",
   "updates": {
-    "F4-090": {
-      "status": "STRUCTURALLY_APPLIED",
-      "section": "4.2",
-      "action_type": "REPEATED_CONCLUSION_CONSOLIDATION_WITH_WHITESPACE_REMEDIATION",
-      "resolved_location": "earlier citation-free conclusion removed; final synthesis now current paragraph 372 immediately before 4.3",
-      "affected_footnote_ids": [],
-      "commit": "8dcd3e9f12ffee82d648d247c0deaa96040d10ae",
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + REVISION_2_5/5_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Preserved FN384–388 source-backed evidence and 4.3 heading/bookmark; revision 2 also fixes the inherited visible run-boundary whitespace defect without changing prose or citation placement."
+    "F4-091": {
+      "status": "APPLIED",
+      "section": "4.3",
+      "action_type": "MULTI_CRITERIA_HISTORICAL_REFRAME",
+      "resolved_location": "current paragraph 375",
+      "affected_footnote_ids": [391],
+      "commit": "99a3565ce4b027b8a27dfc94c6197967d081b3b9",
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Reframed the Ibn Shanbudh example without one-factor rasm causation; FN391 preserved. F4-092 starts in the next FN392–393 paragraph."
     }
   }
 }
