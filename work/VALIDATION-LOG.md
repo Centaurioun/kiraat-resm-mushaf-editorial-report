@@ -394,3 +394,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render P430–442: 6/6 pages inspected; PASS. The final 4.7 conclusion ends normally and `Sonuç` begins on the following page using the pre-existing page/section break.
 - Durable boundary: last F4-107; next F4-108.
+
+
+## F4-108 checkpoint — PASS
+- Final replay: `work/apply_f4_108.py`; candidate SHA-256 `38926bbf6e31f5b1d74ca5a883d1867bae35fa06ef89187d0d35d2860edf6bfa`.
+- F4-108 APPLIED: consolidated repeated main-thesis blocks in Sonuç into the report-approved two-focus framing. P443 now states the oral/riwayah transmission thesis plus rasm as complementary compatibility criterion; P445 states the joint oral/written framework and combined acceptance criteria.
+- The unique sahih/meşhur/âhâd/şâz distinction was retained in compact form at P446; unique historical/result paragraphs P444 and P447–454 remain unchanged. The former final repetition was removed.
+- Body paragraphs 676→675 solely because the final citation-free repetition paragraph was removed. Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render P442–456: 5/5 pages inspected; PASS. `Kaynakça` begins on the following page with the pre-existing break. P444 contains a pre-existing red directly formatted sentence not introduced or altered by F4-108.
+- Durable boundary: last F4-108; next F4-109.
