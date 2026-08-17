@@ -30,16 +30,16 @@
 {"id":"F4-030","report":"F4","item_number":30,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d","affected_footnote_ids":[85,86]}
 {"id":"F4-031","report":"F4","item_number":31,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d","affected_footnote_ids":[87]}
 {"id":"F4-032","report":"F4","item_number":32,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d","affected_footnote_ids":[94,95]}
-{"id":"F4-033","report":"F4","item_number":33,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e","notes":"1.5→1.6 transition inserted without Markdown backticks."}
-{"id":"F4-034","report":"F4","item_number":34,"status":"STRUCTURALLY_APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e","notes":"Three meta-opening paragraphs consolidated to one direct conceptual frame."}
-{"id":"F4-035","report":"F4","item_number":35,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e","affected_footnote_ids":[101,102,103],"notes":"FN101 retained on limited writing-order proposition; FN102 on Cevheri lexical meaning; FN103 on Dani/resm-literature technical development. Initial inherited italics caught in QA and fixed before checkpoint."}
-{"id":"F4-036","report":"F4","item_number":36,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e","affected_footnote_ids":[100],"notes":"Technical definition inserted; FN100 retained on technical-use sentence."}
-{"id":"F4-037","report":"F4","item_number":37,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e","affected_footnote_ids":[105,127],"notes":"Kastallani main-text work note removed; first-use correct date 923/1517 retained. Bakillani repeated malformed date/work note removed; FN105 footnote-internal editor note intentionally deferred to F4-112."}
-{"id":"F4-038","report":"F4","item_number":38,"status":"PENDING"}
-{"id":"F4-039","report":"F4","item_number":39,"status":"PENDING"}
-{"id":"F4-040","report":"F4","item_number":40,"status":"PENDING"}
-{"id":"F4-041","report":"F4","item_number":41,"status":"PENDING"}
-{"id":"F4-042","report":"F4","item_number":42,"status":"PENDING"}
+{"id":"F4-033","report":"F4","item_number":33,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e"}
+{"id":"F4-034","report":"F4","item_number":34,"status":"STRUCTURALLY_APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e"}
+{"id":"F4-035","report":"F4","item_number":35,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e","affected_footnote_ids":[101,102,103]}
+{"id":"F4-036","report":"F4","item_number":36,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e","affected_footnote_ids":[100]}
+{"id":"F4-037","report":"F4","item_number":37,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e","affected_footnote_ids":[105,127],"notes":"FN105 footnote-internal editor note deferred to F4-112."}
+{"id":"F4-038","report":"F4","item_number":38,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16","affected_footnote_ids":[108],"notes":"Ebû Ubeyde early-resm paragraph restrained; source citation retained."}
+{"id":"F4-039","report":"F4","item_number":39,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16","affected_footnote_ids":[110,111,112],"notes":"Dânî and Ebû Dâvud repetitions replaced by report-approved concise formulations; intervening unique Dânî/kırâat paragraph preserved."}
+{"id":"F4-040","report":"F4","item_number":40,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16","affected_footnote_ids":[113,114,115],"notes":"Kıyasî-imlâ vs transmitted mushaf-writing distinction applied; intentional-design overclaim removed."}
+{"id":"F4-041","report":"F4","item_number":41,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16","affected_footnote_ids":[119],"notes":"Motzki/Sinai evidence now limited to oral-written transmission context; not presented as direct proof of the book's whole thesis. Report scope did not authorize deleting the separate Déroche paragraph."}
+{"id":"F4-042","report":"F4","item_number":42,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16","notes":"Distinct historical-origin/tevkîf question from later normative binding force by inserting report-approved paragraph after protected 1.8 heading."}
 {"id":"F4-043","report":"F4","item_number":43,"status":"PENDING"}
 {"id":"F4-044","report":"F4","item_number":44,"status":"PENDING"}
 {"id":"F4-045","report":"F4","item_number":45,"status":"PENDING"}
