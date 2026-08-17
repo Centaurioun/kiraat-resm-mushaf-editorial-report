@@ -1,0 +1,79 @@
+name: application-batch
+
+on:
+  push:
+    branches:
+      - editorial/apply-fourth-fifth-reports
+    paths:
+      - 'work/BATCH-REQUEST.json'
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/apply-fourth-fifth-reports
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install lxml
+      - name: Apply requested deterministic batch twice
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/app work/runtime artifacts/checkpoints
+          python - <<'PY'
+          import json,hashlib,subprocess,sys
+          from pathlib import Path
+          req=json.loads(Path('work/BATCH-REQUEST.json').read_text(encoding='utf-8'))
+          inp=Path(req['input_docx']); got=hashlib.sha256(inp.read_bytes()).hexdigest()
+          if got != req['input_sha256']: raise SystemExit(f'input SHA mismatch: {got} != {req["input_sha256"]}')
+          out=Path('/tmp/app/out.docx'); rer=Path('/tmp/app/rerun.docx')
+          subprocess.run([sys.executable,req['script'],str(inp),str(out)],check=True)
+          subprocess.run([sys.executable,req['script'],str(out),str(rer)],check=True)
+          if out.read_bytes()!=rer.read_bytes(): raise SystemExit('idempotency failure: second replay differs')
+          sha=hashlib.sha256(out.read_bytes()).hexdigest()
+          dest=Path(req['output_docx']); dest.parent.mkdir(parents=True,exist_ok=True); dest.write_bytes(out.read_bytes())
+          sha_file=Path(req['sha_file']); sha_file.parent.mkdir(parents=True,exist_ok=True); sha_file.write_text(sha+'\n',encoding='utf-8')
+          PY
+      - name: Write current-range postflight
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from zipfile import ZipFile
+          from lxml import etree
+          req=json.loads(Path('work/BATCH-REQUEST.json').read_text(encoding='utf-8'))
+          W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'; NS={'w':W}
+          p=Path(req['output_docx'])
+          with ZipFile(p) as z:
+              d=etree.fromstring(z.read('word/document.xml')); f=etree.fromstring(z.read('word/footnotes.xml')); ps=d.xpath('.//w:body/w:p',namespaces=NS)
+              lines=[f'DOCX={p}',f'BODY_PARAGRAPHS={len(ps)}']; note_ids=set()
+              for i in range(max(0,int(req['postflight_start'])),min(len(ps),int(req['postflight_end'])+1)):
+                  q=ps[i]; text=''.join(q.xpath('.//w:t/text()',namespaces=NS)); fns=q.xpath('.//w:footnoteReference/@w:id',namespaces=NS); note_ids.update(fns)
+                  lines.append(f'P{i}\tFN={fns}\tRTL={len(q.xpath(".//w:rtl",namespaces=NS))}\tFLD={len(q.xpath(".//w:instrText|.//w:fldChar",namespaces=NS))}\tBOOK={len(q.xpath(".//w:bookmarkStart|.//w:bookmarkEnd",namespaces=NS))}\t{text}')
+              lines.append('\nFOOTNOTES')
+              for fid in sorted(note_ids,key=lambda x:int(x)):
+                  hit=f.xpath(f'.//w:footnote[@w:id="{fid}"]',namespaces=NS)
+                  if hit: lines.append(f'FN{fid}\t'+''.join(hit[0].xpath('.//w:t/text()',namespaces=NS)))
+          out=Path(req['postflight_file']); out.parent.mkdir(parents=True,exist_ok=True); out.write_text('\n'.join(lines),encoding='utf-8')
+          PY
+      - name: Commit candidate and evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python - <<'PY' > /tmp/paths
+          import json
+          r=json.load(open('work/BATCH-REQUEST.json'))
+          print(r['output_docx']);print(r['sha_file']);print(r['postflight_file'])
+          PY
+          while read -r p; do git add "$p"; done < /tmp/paths
+          if git diff --cached --quiet; then exit 0; fi
+          checkpoint=$(python -c "import json;print(json.load(open('work/BATCH-REQUEST.json'))['checkpoint'])")
+          git commit -m "checkpoint(runtime): persist ${checkpoint} candidate [skip ci]"
+          git push origin HEAD:editorial/apply-fourth-fifth-reports
