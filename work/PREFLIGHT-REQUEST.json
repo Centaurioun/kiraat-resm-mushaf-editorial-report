@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-085.docx",
-  "start": 360,
-  "end": 400,
-  "output": "work/runtime/F4-086-PREFLIGHT.txt",
-  "purpose": "full current 4.2 Companion-codex category and citation inventory before F4-086 high-risk rewrite"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-089.docx",
+  "start": 364,
+  "end": 374,
+  "output": "work/runtime/F4-090-PREFLIGHT.txt",
+  "purpose": "map current 4.2 citation-free repeated conclusions and source-backed FN383-388 paragraphs before F4-090 structural consolidation"
 }
