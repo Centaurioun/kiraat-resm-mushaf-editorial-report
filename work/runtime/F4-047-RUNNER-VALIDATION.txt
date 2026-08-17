@@ -1,0 +1,10 @@
+PASS
+footnotes=469
+references=469
+fields=520
+zotero=465+1
+rtl=306/306
+bookmarks=53/53
+hyperlinks=52
+protected_parts=baseline-identical
+idempotency=byte-identical-on-runner
