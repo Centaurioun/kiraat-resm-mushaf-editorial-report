@@ -447,3 +447,11 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; canonical-to-candidate changed-footnote set exactly equals the authorized 31-ID set (including inherited F4-112 FN32/FN41/FN105); target footnote OOXML structure unchanged.
 - Human visual QA: three representative slices (P50–75, P274–280, P389–401), workflow runs 32079868743 / 32080087101 / 32080209568; all 19/19 rasterized pages manually inspected and PASS. Bounded-render high-footnote renumbering limitation is explicitly documented; original footnote identity is established by the structural gate and full-candidate postflight.
 - Durable boundary: last F4-113; next F4-114.
+
+
+## F4-114 checkpoint — PASS
+- Final replay: `work/apply_f4_114.py`; candidate SHA-256 `419bc27be6a259d03f42ed7da7f7bbf0b1f64c9af3ab6ed78393f6aa9a96ca56`.
+- F4-114 APPLIED: removed the malformed Kahraman DOI URL from P578 and repaired Maşalı P599 to `https://doi.org/10.56361/usul.173700`. The DOI text was not inside `w:hyperlink`, so hyperlink objects/relationships remained unchanged.
+- Deterministic second replay is ALREADY_SATISFIED and byte-identical. Application validator permits only P578/P599 changes from durable F4-113; all non-document package parts are byte-identical, 520 fields and Zotero/ADDIN inventory remain intact.
+- Human visual QA P570–P605: workflow run 32080808433 / artifact 9305055721; 4/4 rasterized pages manually inspected and PASS. Bibliography line flow, italics and adjacent records remain clean.
+- Durable boundary: last F4-114; next F4-115.
