@@ -199,3 +199,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical; RTL inventory canonical-equal.
 - Bounded render: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, Arabic corruption, heading damage or style propagation.
 - Durable boundary: last F4-086; next F4-087.
+
+
+## F4-087 checkpoint — PASS
+- Final replay: `work/apply_f4_087.py`; candidate commit `a49959ebcc7cf55aece1874636838e083da536af`; SHA-256 `cedcc233e5e3ce9150f3ebbd66b199075517dcac4a7d771a455a03db5e16a3ce`.
+- F4-087 APPLIED: the explicit parenthetical editor/work note embedded in the FN377–378 paragraph was removed and ordinary spacing before `Bunun en meşhur örneklerinden biri...` was restored.
+- FN377–378, the Arabic Bakara 2/238 runs and all surrounding source-backed text remain in the same paragraph; F4-088 active-agent wording remains intentionally untouched.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, Arabic/RTL corruption or F4-087-induced style propagation.
+- Durable boundary: last F4-087; next F4-088.
