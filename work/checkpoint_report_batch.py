@@ -20,6 +20,7 @@ LEDGER.write_text('\n'.join(json.dumps(r,ensure_ascii=False,separators=(',',':')
 
 struct='\n'.join('- '+x for x in s.get('structural_state',[])) or '- Prior completed structural changes remain intact.'
 evidence='\n'.join('- '+x for x in s.get('evidence',[]))
+protected_status=s.get('protected_parts_status','baseline-identical')
 STATE.write_text(f'''# APPLICATION STATE
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
@@ -53,7 +54,7 @@ STATE.write_text(f'''# APPLICATION STATE
 - Zotero: 465 item + 1 bibliography preserved
 - Bookmarks: 53/53; hyperlinks: 52
 - Arabic/RTL structural inventory: canonical-equal
-- Protected OOXML parts: baseline-identical
+- Protected OOXML parts: {protected_status}
 
 ## Structural-edit state
 {struct}
@@ -96,7 +97,7 @@ HANDOFF.write_text(f'''# NEXT HANDOFF
 - Footnotes/references: 469/469; orphans/dangling/duplicates: 0/0/0
 - Word fields: 520; ADDIN: 466; Zotero: 465 item + 1 bibliography
 - Bookmarks: 53/53; hyperlinks: 52; RTL inventory canonical-equal
-- Protected OOXML: baseline-identical
+- Protected OOXML: {protected_status}
 
 ## Latest structural state
 {struct}
