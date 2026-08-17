@@ -24,8 +24,11 @@ jobs:
           python-version: '3.11'
       - run: pip install lxml
       - name: Extract current DOCX range and optional technical gate
+        id: extract
+        continue-on-error: true
         run: |
-          python - <<'PY'
+          mkdir -p work/runtime
+          python - <<'PY' 2> work/runtime/F4-113-PREFLIGHT-DIAGNOSTIC.txt
           import json,hashlib
           from pathlib import Path
           from zipfile import ZipFile
@@ -103,7 +106,21 @@ jobs:
                   'allowed_footnote_text_ids='+','.join(sorted(allowed,key=int))+'\n'
                   'actually_changed_footnote_ids='+','.join(sorted(changed,key=int))+'\n',encoding='utf-8')
           PY
+      - name: Commit preflight failure diagnostic
+        if: steps.extract.outcome == 'failure'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add work/runtime/F4-113-PREFLIGHT-DIAGNOSTIC.txt
+          if ! git diff --cached --quiet; then
+            git commit -m 'diagnostic(preflight): persist F4-113 technical-gate failure [skip ci]'
+            git push origin HEAD:editorial/apply-fourth-fifth-reports
+          fi
+      - name: Fail after diagnostic persistence
+        if: steps.extract.outcome == 'failure'
+        run: exit 1
       - name: Commit preflight evidence
+        if: steps.extract.outcome == 'success'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
