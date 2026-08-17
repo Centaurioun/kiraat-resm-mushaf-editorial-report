@@ -330,3 +330,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic replay is byte-identical after the helper-path repair. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render P423–429: 3/3 pages inspected; PASS. The pre-existing later Huzai work note remains outside this item and pending.
 - Durable boundary: last F4-100; next F4-101.
+
+
+## F4-101 checkpoint — PASS
+- Final replay: `work/apply_f4_101.py`; candidate SHA-256 `b2acdf0116b7b6efa23ddb1661ab6cc8ecd9528ebfb470b44c7a0c2585b2a3a7`.
+- F4-101 APPLIED: preserved the source-backed Dânî/Ebû Dâvud/modern-publication evidence in P416–420, replaced the first citation-free repeated conclusion with the report-approved three-sentence synthesis, and removed the redundant second conclusion.
+- The bookmark-backed 4.7 heading now follows the single synthesis directly. Body paragraphs decrease from 678 to 677.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render P416–425: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, heading orphaning, RTL corruption, blank-page regression, abnormal spacing or style propagation.
+- Durable boundary: last F4-101; next F4-102.
