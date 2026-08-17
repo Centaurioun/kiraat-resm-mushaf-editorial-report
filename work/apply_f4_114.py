@@ -2,8 +2,7 @@
 from pathlib import Path
 from zipfile import ZipFile
 from lxml import etree
-from collections import Counter
-import hashlib, shutil, sys
+import shutil, sys
 
 W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'
 NS={'w':W}
@@ -39,8 +38,6 @@ def replace_range(p,start,end,new):
     for n in touched:
         if n.xpath('ancestor::w:hyperlink',namespaces=NS):
             raise RuntimeError('target DOI occurs inside w:hyperlink; hold for relationship-aware handling')
-        if n.xpath('ancestor::w:instrText',namespaces=NS):
-            raise RuntimeError('target DOI occurs inside field instruction')
     prefix=vals[fi][:start-starts[fi]]
     suffix=vals[li][end-starts[li]:]
     nodes[fi].text=prefix+new+(suffix if fi==li else '')
@@ -72,9 +69,14 @@ def locate(ps,needle,prefix):
     return i,p,t
 
 
-def already_satisfied(d):
-    txt='\n'.join(ptext(p) for p in d.xpath('.//w:body/w:p',namespaces=NS))
-    return K_BAD not in txt and M_BAD not in txt and txt.count(M_GOOD)==1
+def satisfied_doc(d):
+    ps=d.xpath('.//w:body/w:p',namespaces=NS)
+    txt='\n'.join(ptext(p) for p in ps)
+    if K_BAD in txt or M_BAD in txt or txt.count(M_GOOD)!=1:
+        return False
+    if len(ps)!=676 or not ptext(ps[578]).endswith('11-36.'):
+        return False
+    return True
 
 
 def apply(src,out):
@@ -83,9 +85,9 @@ def apply(src,out):
         d=etree.fromstring(original['word/document.xml'])
         ps=d.xpath('.//w:body/w:p',namespaces=NS)
         if len(ps)!=676: raise RuntimeError(f'body paragraph count {len(ps)} != 676')
-        if already_satisfied(d):
+        if satisfied_doc(d):
             shutil.copyfile(src,out)
-            validate(src,out)
+            validate(src,out,expect_change=False)
             print('F4-114\tALREADY_SATISFIED')
             return
 
@@ -93,13 +95,11 @@ def apply(src,out):
         m_i,m_p,m_before=locate(ps,M_BAD,'Maşalı, Mehmet Emin.')
         k_sig=sig(k_p); m_sig=sig(m_p)
 
-        # Remove the malformed Kahraman DOI entirely, including the single separating space.
         k_token=' '+K_BAD
         k_pos=k_before.find(k_token)
         if k_pos<0: raise RuntimeError('Kahraman DOI is not preceded by expected single space')
         replace_range(k_p,k_pos,k_pos+len(k_token),'')
 
-        # Replace only the duplicated DOI prefix in the Maşalı record.
         m_pos=m_before.find(M_BAD)
         replace_range(m_p,m_pos,m_pos+len(M_BAD),M_GOOD)
 
@@ -117,15 +117,15 @@ def apply(src,out):
             for info in zin.infolist():
                 zout.writestr(info,xml if info.filename=='word/document.xml' else original[info.filename])
 
-    validate(src,out)
-    print(f'F4-114\tAPPLIED\tKAHraman=P{k_i}\tMASALI=P{m_i}')
-    print(f'KAHraman_BEFORE\t{k_before}')
-    print(f'KAHraman_AFTER\t{k_after}')
+    validate(src,out,expect_change=True)
+    print(f'F4-114\tAPPLIED\tKAHRAMAN=P{k_i}\tMASALI=P{m_i}')
+    print(f'KAHRAMAN_BEFORE\t{k_before}')
+    print(f'KAHRAMAN_AFTER\t{k_after}')
     print(f'MASALI_BEFORE\t{m_before}')
     print(f'MASALI_AFTER\t{m_after}')
 
 
-def validate(src,out):
+def validate(src,out,expect_change):
     with ZipFile(src) as za, ZipFile(out) as zb:
         if za.namelist()!=zb.namelist(): raise RuntimeError('ZIP member/order changed')
         if zb.testzip() is not None: raise RuntimeError('ZIP CRC failure')
@@ -138,19 +138,18 @@ def validate(src,out):
         da=etree.fromstring(za.read('word/document.xml'))
         db=etree.fromstring(zb.read('word/document.xml'))
         pa=da.xpath('.//w:body/w:p',namespaces=NS); pb=db.xpath('.//w:body/w:p',namespaces=NS)
-        if len(pa)!=len(pb)!=676: raise RuntimeError('body paragraph count changed')
-        if len(pa)!=676: raise RuntimeError(f'body paragraph count {len(pa)} != 676')
+        if len(pa)!=676 or len(pb)!=676: raise RuntimeError('body paragraph count changed')
 
         changed=[]
         for i,(a,b) in enumerate(zip(pa,pb)):
             if c14n(a)!=c14n(b): changed.append(i)
-        if set(changed)!={578,599}:
-            raise RuntimeError(f'unexpected changed body paragraphs: {changed}')
+        expected={578,599} if expect_change else set()
+        if set(changed)!=expected:
+            raise RuntimeError(f'unexpected changed body paragraphs: {changed}; expected={sorted(expected)}')
         for i in changed:
             if sig(pa[i])!=sig(pb[i]):
                 raise RuntimeError(f'P{i} structure changed')
 
-        # Field instructions and bibliography field must remain exactly intact.
         ia=instrs(za); ib=instrs(zb)
         if ia!=ib or len(ib)!=520: raise RuntimeError('field instruction inventory changed')
         addin=sum(1 for x in ib if 'ADDIN ' in x)
@@ -159,12 +158,10 @@ def validate(src,out):
         if (addin,item,bibl)!=(466,465,1):
             raise RuntimeError(f'Zotero/ADDIN field inventory changed: {(addin,item,bibl)}')
 
-        # Hyperlink objects/relationships are not touched by this plain-result-text operation.
         ha=da.xpath('//w:hyperlink',namespaces=NS); hb=db.xpath('//w:hyperlink',namespaces=NS)
-        if len(ha)!=len(hb)!=52: raise RuntimeError('hyperlink count changed')
+        if len(ha)!=52 or len(hb)!=52: raise RuntimeError(f'hyperlink count changed: {len(ha)}->{len(hb)}')
         if [sig(x) for x in ha] != [sig(x) for x in hb]: raise RuntimeError('hyperlink structure changed')
 
-        # Footnote refs, bookmarks and RTL structure stay identical to the durable input.
         ra=da.xpath('//w:footnoteReference/@w:id',namespaces=NS); rb=db.xpath('//w:footnoteReference/@w:id',namespaces=NS)
         if ra!=rb or len(rb)!=469 or len(set(rb))!=469: raise RuntimeError('footnote reference identity/order changed')
         if da.xpath('//w:bookmarkStart/@w:id',namespaces=NS)!=db.xpath('//w:bookmarkStart/@w:id',namespaces=NS): raise RuntimeError('bookmark starts changed')
@@ -172,11 +169,7 @@ def validate(src,out):
         if len(db.xpath('//w:bookmarkStart',namespaces=NS))!=53 or len(db.xpath('//w:bookmarkEnd',namespaces=NS))!=53: raise RuntimeError('bookmark count changed')
         if len(da.xpath('//w:rtl',namespaces=NS))!=len(db.xpath('//w:rtl',namespaces=NS)): raise RuntimeError('RTL inventory changed')
 
-        txt='\n'.join(ptext(p) for p in pb)
-        if K_BAD in txt or M_BAD in txt: raise RuntimeError('malformed DOI survives')
-        if txt.count(M_GOOD)!=1: raise RuntimeError(f'correct Maşalı DOI count {txt.count(M_GOOD)} != 1')
-        if not ptext(pb[578]).endswith('11-36.'):
-            raise RuntimeError('Kahraman DOI was not cleanly removed')
+        if not satisfied_doc(db): raise RuntimeError('F4-114 postconditions not satisfied')
 
 if __name__=='__main__':
     apply(Path(sys.argv[1]),Path(sys.argv[2]))
