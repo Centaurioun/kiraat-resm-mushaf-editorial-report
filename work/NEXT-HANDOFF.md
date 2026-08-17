@@ -2,17 +2,17 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `4b725caaefbd48ef6957438c249e8c32ffb3685f` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `a49f936ca2ce3bfa7aa3eec7a3e39004863346eb` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-108`
-- Next item: `F4-109`
-- DO-NOT-REPEAT: `F4-001`–`F4-108`
+- Last completed item: `F4-109`
+- Next item: `F4-110`
+- DO-NOT-REPEAT: `F4-001`–`F4-109`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-108.docx`
-- Current working SHA-256: `38926bbf6e31f5b1d74ca5a883d1867bae35fa06ef89187d0d35d2860edf6bfa`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-109.docx`
+- Current working SHA-256: `8e9000db5b0574d5203689eb70786babe01d59665dd51d09241f38f1f5c0cbc1`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
@@ -22,23 +22,21 @@
 - Protected OOXML: baseline-identical
 
 ## Latest structural state
-- F4-073–107 remain intact and validated from prior durable checkpoints.
-- F4-108: Sonuç begins with a two-focus thesis statement rather than repeated restatements, while unique historical and application results remain.
-- Current body paragraph count is 675; all 469 footnote identities and protected OOXML remain preserved.
-- F4-109+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh.
+- F4-073–108 remain intact and validated from prior durable checkpoints.
+- F4-109: modern printed-mushaf standardization/spread is now multicausal while the classical-source/resm-zabt result remains.
+- Current body paragraph count remains 675; all footnote identities and protected OOXML remain preserved.
+- F4-110+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh.
 
 ## Evidence
-- Preflight: `work/runtime/F4-108-PREFLIGHT.txt`
-- Replay: `work/apply_f4_108.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-108.docx`
-- SHA: `work/runtime/F4-108-SHA256.txt`
-- Postflight: `work/runtime/F4-108-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-108-TECHNICAL-VALIDATION.txt`
-- QA PDF: `work/runtime/F4-108-QA.pdf`
-- Human visual review: `work/F4-108-VISUAL-QA.md` — 5/5 PASS
+- Replay: `work/apply_f4_109.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-109.docx`
+- SHA: `work/runtime/F4-109-SHA256.txt`
+- Postflight: `work/runtime/F4-109-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-109-TECHNICAL-VALIDATION.txt`
+- Human visual review: `work/F4-109-VISUAL-QA.md` — 4/4 PASS
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Apply only F4-109 to current F4-108. Reframe the Sonuç paragraph on modern printed-mushaf standardization so print is not presented as a one-way sole driver of a qiraat's standardization/spread. Use the report-approved multicausal formulation and preserve the unique classical-source/resm-zabt relationship already present in that paragraph. Do not pre-apply F4-110+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-108`.
+Apply only F4-110 to current F4-109. Separate the current Sonuç closing contribution/research material into: retained unique ilmî-contribution text; a distinct report-approved final judgment on oral transmission plus written rasm complementarity; and a separate future-research paragraph. Preserve the pre-existing Kaynakça heading/page-break and do not pre-apply F4-111+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-109`.

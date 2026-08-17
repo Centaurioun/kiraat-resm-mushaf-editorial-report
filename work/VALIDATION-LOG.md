@@ -403,3 +403,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Body paragraphs 676→675 solely because the final citation-free repetition paragraph was removed. Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render P442–456: 5/5 pages inspected; PASS. `Kaynakça` begins on the following page with the pre-existing break. P444 contains a pre-existing red directly formatted sentence not introduced or altered by F4-108.
 - Durable boundary: last F4-108; next F4-109.
+
+
+## F4-109 checkpoint — PASS
+- Final replay: `work/apply_f4_109.py`; candidate SHA-256 `8e9000db5b0574d5203689eb70786babe01d59665dd51d09241f38f1f5c0cbc1`.
+- F4-109 APPLIED: retained the unique Dânî/Ebû Dâvud classical-source and resm-zapt core in current P453 while replacing only the one-way print-causes-standardization/spread conclusion with the report-approved multicausal formulation.
+- Printed mushafs are now framed as contributing to wider written reach, while teaching traditions, tashih institutions, qiraat expertise, regional preferences and official publication processes are also named. P454 remains unchanged for F4-110.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render P450–456: 4/4 pages inspected; PASS.
+- Durable boundary: last F4-109; next F4-110.
