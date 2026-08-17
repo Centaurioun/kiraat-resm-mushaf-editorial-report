@@ -1,5 +1,6 @@
 {
   "checkpoint": "F4-078",
+  "revision": 2,
   "script": "work/checkpoint_report_batch.py",
   "last_f4": 78,
   "next_f4": 79,
