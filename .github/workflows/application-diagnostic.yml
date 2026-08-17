@@ -1,0 +1,78 @@
+name: application-diagnostic
+
+on:
+  push:
+    branches:
+      - editorial/apply-fourth-fifth-reports
+    paths:
+      - 'work/DIAG-REQUEST.json'
+
+permissions:
+  contents: write
+
+jobs:
+  diagnose:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/apply-fourth-fifth-reports
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install lxml
+      - name: Compile and dry-run requested application script
+        shell: bash
+        run: |
+          set +e
+          mkdir -p work/runtime /tmp/appdiag
+          script=$(python -c "import json;print(json.load(open('work/DIAG-REQUEST.json'))['script'])")
+          inp=$(python -c "import json;print(json.load(open('work/DIAG-REQUEST.json'))['input_docx'])")
+          expected=$(python -c "import json;print(json.load(open('work/DIAG-REQUEST.json'))['input_sha256'])")
+          diag=$(python -c "import json;print(json.load(open('work/DIAG-REQUEST.json'))['diag_file'])")
+          got=$(sha256sum "$inp" | awk '{print $1}')
+          python -m py_compile "$script" > /tmp/appdiag/compile.log 2>&1
+          compile_rc=$?
+          run_rc=999
+          replay_rc=999
+          same=NA
+          if [ "$compile_rc" -eq 0 ] && [ "$got" = "$expected" ]; then
+            python "$script" "$inp" /tmp/appdiag/out.docx > /tmp/appdiag/run.log 2>&1
+            run_rc=$?
+            if [ "$run_rc" -eq 0 ]; then
+              python "$script" /tmp/appdiag/out.docx /tmp/appdiag/rerun.docx > /tmp/appdiag/replay.log 2>&1
+              replay_rc=$?
+              if [ "$replay_rc" -eq 0 ]; then
+                if cmp -s /tmp/appdiag/out.docx /tmp/appdiag/rerun.docx; then same=YES; else same=NO; fi
+              fi
+            fi
+          fi
+          {
+            echo "SCRIPT=$script"
+            echo "INPUT=$inp"
+            echo "EXPECTED_SHA256=$expected"
+            echo "ACTUAL_SHA256=$got"
+            echo "PY_COMPILE_RC=$compile_rc"
+            echo "RUN_RC=$run_rc"
+            echo "REPLAY_RC=$replay_rc"
+            echo "BYTE_IDENTICAL_REPLAY=$same"
+            if [ -f /tmp/appdiag/out.docx ]; then sha256sum /tmp/appdiag/out.docx | sed 's#  .*#  OUTPUT#'; fi
+            echo "--- COMPILE LOG ---"
+            cat /tmp/appdiag/compile.log 2>/dev/null || true
+            echo "--- RUN LOG ---"
+            cat /tmp/appdiag/run.log 2>/dev/null || true
+            echo "--- REPLAY LOG ---"
+            cat /tmp/appdiag/replay.log 2>/dev/null || true
+          } > "$diag"
+          exit 0
+      - name: Commit diagnostic evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          diag=$(python -c "import json;print(json.load(open('work/DIAG-REQUEST.json'))['diag_file'])")
+          git add "$diag"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "diagnostic(runtime): persist application evidence [skip ci]"
+          git push origin HEAD:editorial/apply-fourth-fifth-reports
