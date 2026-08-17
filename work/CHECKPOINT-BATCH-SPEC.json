@@ -1,40 +1,41 @@
 {
-  "last_f4": 107,
-  "next_f4": 108,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-107.docx",
-  "sha256": "a9edfb112efc69f95d99f400197d0f66ad47e977142dee8555d83cdc93233186",
-  "body_paragraphs": 676,
-  "technical_file": "work/runtime/F4-107-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-107-VISUAL-QA.md",
-  "visual_pages": 6,
+  "last_f4": 108,
+  "next_f4": 109,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-108.docx",
+  "sha256": "38926bbf6e31f5b1d74ca5a883d1867bae35fa06ef89187d0d35d2860edf6bfa",
+  "body_paragraphs": 675,
+  "technical_file": "work/runtime/F4-108-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-108-VISUAL-QA.md",
+  "visual_pages": 5,
   "holds": "none",
-  "validation_marker": "## F4-107 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_107.py`; candidate SHA-256 `a9edfb112efc69f95d99f400197d0f66ad47e977142dee8555d83cdc93233186`.\n- F4-107 APPLIED: removed the citation-free pre-Türkiye intermediate conclusion so 4.7 now proceeds directly from printed-mushaf chronology into the Ottoman/Türkiye control and publication experience.\n- Replaced only the repeated `Özetle...` Türkiye ending inside the FN469-bearing final paragraph with the report-approved single multicausal final conclusion. The source-backed Diyanet/imlâ propositions and FN469 remain in place.\n- The 1873 decision/permission versus 1874 actual-printing distinction remains unchanged. Body paragraphs 677→676 solely because the former citation-free intermediate conclusion paragraph was removed.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P430–442: 6/6 pages inspected; PASS. The final 4.7 conclusion ends normally and `Sonuç` begins on the following page using the pre-existing page/section break.\n- Durable boundary: last F4-107; next F4-108.",
+  "validation_marker": "## F4-108 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_108.py`; candidate SHA-256 `38926bbf6e31f5b1d74ca5a883d1867bae35fa06ef89187d0d35d2860edf6bfa`.\n- F4-108 APPLIED: consolidated repeated main-thesis blocks in Sonuç into the report-approved two-focus framing. P443 now states the oral/riwayah transmission thesis plus rasm as complementary compatibility criterion; P445 states the joint oral/written framework and combined acceptance criteria.\n- The unique sahih/meşhur/âhâd/şâz distinction was retained in compact form at P446; unique historical/result paragraphs P444 and P447–454 remain unchanged. The former final repetition was removed.\n- Body paragraphs 676→675 solely because the final citation-free repetition paragraph was removed. Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P442–456: 5/5 pages inspected; PASS. `Kaynakça` begins on the following page with the pre-existing break. P444 contains a pre-existing red directly formatted sentence not introduced or altered by F4-108.\n- Durable boundary: last F4-108; next F4-109.",
   "structural_state": [
-    "F4-073–106 remain intact and validated from prior durable checkpoints.",
-    "F4-107: 4.7 now has one final multicausal conclusion after the Türkiye material; the premature pre-Türkiye conclusion is removed.",
-    "Current body paragraph count is 676; FN467–469 identities and all protected OOXML remain preserved.",
-    "F4-108+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh."
+    "F4-073–107 remain intact and validated from prior durable checkpoints.",
+    "F4-108: Sonuç begins with a two-focus thesis statement rather than repeated restatements, while unique historical and application results remain.",
+    "Current body paragraph count is 675; all 469 footnote identities and protected OOXML remain preserved.",
+    "F4-109+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_107.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-107.docx`",
-    "SHA: `work/runtime/F4-107-SHA256.txt`",
-    "Postflight: `work/runtime/F4-107-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-107-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-107-QA.pdf`",
-    "Human visual review: `work/F4-107-VISUAL-QA.md` — 6/6 PASS"
+    "Preflight: `work/runtime/F4-108-PREFLIGHT.txt`",
+    "Replay: `work/apply_f4_108.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-108.docx`",
+    "SHA: `work/runtime/F4-108-SHA256.txt`",
+    "Postflight: `work/runtime/F4-108-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-108-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-108-QA.pdf`",
+    "Human visual review: `work/F4-108-VISUAL-QA.md` — 5/5 PASS"
   ],
-  "next_action": "Apply only F4-108 to current F4-107. In the Sonuç section, consolidate the repeated restatement of the main thesis into the report-approved two-focus conclusion text: qiraat transmission is fundamentally oral/riwayah-based while rasm-i Osmani is a complementary compatibility criterion, and oral transmission plus common written mushaf frame operate together without graphical possibility independently establishing authenticity. Preserve any unique nonrepetitive historical/result propositions outside the repeated blocks and do not pre-apply F4-109+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-107`.",
+  "next_action": "Apply only F4-109 to current F4-108. Reframe the Sonuç paragraph on modern printed-mushaf standardization so print is not presented as a one-way sole driver of a qiraat's standardization/spread. Use the report-approved multicausal formulation and preserve the unique classical-source/resm-zabt relationship already present in that paragraph. Do not pre-apply F4-110+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-108`.",
   "updates": {
-    "F4-107": {
+    "F4-108": {
       "status": "APPLIED",
-      "section": "4.7 final ordering and conclusion",
-      "action_type": "SINGLE_FINAL_CONCLUSION_REORDER",
-      "resolved_location": "former current paragraph 437 removed; final Türkiye paragraph now current P440",
-      "affected_footnote_ids": [469],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 6/6_BOUNDED_VISUAL_QA_PASS",
-      "notes": "FN469 retained on the source-backed Türkiye/imlâ paragraph. One citation-free intermediate conclusion removed; final multicausal conclusion moved to section end."
+      "section": "Sonuç",
+      "action_type": "TWO_FOCUS_MAIN_THESIS_CONSOLIDATION",
+      "resolved_location": "current P443, P445–446; former final repetition removed",
+      "affected_footnote_ids": [],
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 5/5_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Unique historical/result paragraphs preserved; only repeated thesis blocks consolidated."
     }
   }
 }
