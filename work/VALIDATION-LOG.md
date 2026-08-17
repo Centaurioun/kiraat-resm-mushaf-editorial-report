@@ -52,3 +52,19 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Visible pre-existing red editorial/style markings are deferred to their later Fourth/Fifth items; not introduced by F4-048–052.
 - Evidence: `work/runtime/F4-052-TECHNICAL-VALIDATION.txt`, `work/runtime/F4-052-POSTFLIGHT.txt`, `work/F4-052-VISUAL-QA.md`.
 - Durable boundary after this checkpoint: last `F4-052`; next `F4-053`.
+
+
+## F4-053–057 checkpoint — PASS
+- Replay: `work/apply_f4_053_057_v3.py` over durable F4-052 input.
+- Candidate DOCX: `artifacts/checkpoints/manuscript-working-f4-057.docx`.
+- Candidate SHA-256: `b77bc0066b22c9e66b250c53ff456045abde1f5410cb11ad98d77f3fb69d7810`.
+- First final replay: F4-053 APPLIED; F4-054 APPLIED; F4-055 APPLIED; F4-056 STRUCTURALLY_APPLIED; F4-057 APPLIED; OOXML whitespace-preserve repair APPLIED.
+- Second replay: all five items and whitespace repair ALREADY_SATISFIED; candidate byte-identical.
+- ZIP/XML: PASS; footnotes/references 469/469; orphan=0; dangling=0; duplicate=0.
+- Word fields 520; Zotero 465 item + 1 bibliography; protected OOXML parts baseline-identical.
+- Arabic/RTL, bookmarks and hyperlinks equal to canonical-source structural inventory.
+- Initial visual QA found one inherited run-boundary rendering defect (`ayrılmalıdır.İlk`); root cause was missing `xml:space="preserve"` despite a raw leading-space character.
+- `work/apply_f4_053_057_v3.py` repaired only the whitespace-preservation property. Final 9-page bounded render was inspected page-by-page; the defect is resolved and visual QA is PASS.
+- No new clipping, overlap, footnote overflow, blank page, heading damage, RTL damage or style propagation.
+- Pre-existing red Fifth-style targets and the later red footnote editorial note remain for their designated report items.
+- Durable boundary: last F4-057; next F4-058.
