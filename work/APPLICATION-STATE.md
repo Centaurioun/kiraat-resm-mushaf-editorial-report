@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `c59ef34b4ef092c2f66bcbdac937e991f4e880ef` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `eef3fb415be4076650569500576717acab82e693` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -12,16 +12,16 @@
 
 ## State machine
 - Current phase: `FOURTH_APPLY`
-- Last fully completed Fourth Report item: `F4-067`
-- Next Fourth Report item: `F4-068`
+- Last fully completed Fourth Report item: `F4-072`
+- Next Fourth Report item: `F4-073`
 - Last fully completed Fifth Report item: none
 - Next Fifth Report item: `F5-001` (do not start until Fourth Report validation passes)
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-067.docx`
-- Current working DOCX SHA-256: `83ce4b2a4d1291d3d2defc47052230d634438e5e1d8a000231fcca9c1d138171`
-- Last known good commit basis: `c59ef34b4ef092c2f66bcbdac937e991f4e880ef`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-067.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-072.docx`
+- Current working DOCX SHA-256: `5c77048b0fc6b6fd91b06c1e37c48098f5ef99d66e8b8285cd3c56e4c614876a`
+- Last known good commit basis: `eef3fb415be4076650569500576717acab82e693`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-072.docx`
 - Current body paragraph count: 686
 
 ## Integrity
@@ -34,18 +34,18 @@
 - Protected OOXML parts: baseline-identical
 
 ## Structural-edit state
-- F4-063: intentional-design/meta-reference framing removed; FN239 preserved.
-- F4-064: real vs probable resm compatibility separated; rivâyet remains basis of qiraat stability.
-- F4-065: long example list reframed as multiple resm–qiraat relation types without rebuilding Arabic; FNs240–245 preserved.
-- F4-066: shâz status no longer reduced to resm alone; FNs246–248 and Fâtiha Arabic example preserved.
-- F4-067: dialect explanation limited to one classical interpretation; FNs249/254 preserved and teleological design claim removed.
+- F4-068: Mârginî interpretation retained as interpretation; graphic possibility separated from design/mana claims; FN263 preserved.
+- F4-069: explicit evidence-level transition inserted before 3.4.
+- F4-070: 3.4 heading changed to a classical-interpretation/delil-değeri frame with bookmark preserved; FN264 preserved.
+- F4-071: Merrâkuşî explanation labelled as later interpretive relation, not historical cause; Arabic examples and FNs271–274 preserved.
+- F4-072: global meaning-sign system generalization removed; FN275 preserved.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Last validation result: **PASS**.
 - Deterministic replay/idempotency: PASS.
-- Technical validation: PASS (`work/runtime/F4-067-TECHNICAL-VALIDATION.txt`).
-- Bounded visual QA: PASS, 7/7 pages inspected (`work/F4-067-VISUAL-QA.md`).
+- Technical validation: PASS (`work/runtime/F4-072-TECHNICAL-VALIDATION.txt`).
+- Bounded visual QA: PASS, 7/7 pages inspected (`work/F4-072-VISUAL-QA.md`).
 
 ## Exact next action
-Read authoritative `F4-068`, re-locate it against `artifacts/checkpoints/manuscript-working-f4-067.docx`, inventory current 3.3–3.4 footnotes/fields/Arabic/RTL and later F4/F5 overlaps, then apply the next safe bounded Fourth Report unit. Do not repeat `F4-001`–`F4-067`.
+Read authoritative `F4-073`, re-locate it against `artifacts/checkpoints/manuscript-working-f4-072.docx`, inventory current 3.5–3.7 footnotes/fields/Arabic/RTL and later F4/F5 overlaps, then apply the next safe bounded Fourth Report unit. Do not repeat `F4-001`–`F4-072`.

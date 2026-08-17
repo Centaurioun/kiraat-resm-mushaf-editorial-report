@@ -92,3 +92,14 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Long F4-065 Arabic/city-mushaf paragraph retained 70 RTL runs and FNs241–245; Arabic text was not regenerated.
 - Bounded render: 7 pages; 7/7 visually inspected; PASS. No clipping, overlap, footnote overflow, heading damage, RTL defect, or batch-induced style propagation.
 - Durable boundary: last F4-067; next F4-068.
+
+
+## F4-068–072 checkpoint — PASS
+- Replay: `work/apply_f4_068_072_v2.py`; candidate commit `6537a6fa4c678ef39f1b4fe67be5aa56db4751fc`.
+- Candidate SHA-256: `5c77048b0fc6b6fd91b06c1e37c48098f5ef99d66e8b8285cd3c56e4c614876a`.
+- First replay: F4-068–072 APPLIED; second replay: all already satisfied; byte-identical.
+- Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical; canonical structural invariants preserved.
+- F4-070 heading bookmark preserved by targeted span replacement; Arabic P275–277 was not regenerated.
+- Bounded render: 7 pages; 7/7 visually inspected; PASS.
+- Intermediate QA TOC display retained the pre-edit 3.4 heading because LibreOffice did not recalculate the preserved Word TOC field; actual body heading is correct and field recalculation remains a final acceptance task.
+- Durable boundary: last F4-072; next F4-073.
