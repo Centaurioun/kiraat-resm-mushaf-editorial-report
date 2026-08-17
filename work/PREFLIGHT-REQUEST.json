@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-099.docx",
-  "start": 410,
-  "end": 455,
-  "output": "work/runtime/F4-100-PREFLIGHT.txt",
-  "purpose": "map the current 4.6 end, 4.7 heading and opening paragraphs before F4-100; identify the exact no-dot/no-vowel intentional-qiraat-preservation claim and preserve all associated footnotes/RTL/source structure without pre-applying F4-101+"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-100.docx",
+  "start": 414,
+  "end": 424,
+  "output": "work/runtime/F4-101-PREFLIGHT.txt",
+  "purpose": "map the current 4.6 final Dani/Abu Dawud/modern-publication evidence and repeated citation-free conclusions before F4-101; verify that source-backed P416-420 remain preservable while redundant conclusion paragraphs can be consolidated without pre-applying F4-102+"
 }
