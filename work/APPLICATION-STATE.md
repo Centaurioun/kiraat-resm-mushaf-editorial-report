@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `3ad3170a3e7fbb424bc2b4975e77ab0354a649ad` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `f9061ac5bdf59bdee0fb1b63f30ce8360d56e301` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -12,16 +12,16 @@
 
 ## State machine
 - Current phase: `FOURTH_APPLY`
-- Last fully completed Fourth Report item: `F4-080`
-- Next Fourth Report item: `F4-081`
+- Last fully completed Fourth Report item: `F4-081`
+- Next Fourth Report item: `F4-082`
 - Last fully completed Fifth Report item: none
 - Next Fifth Report item: `F5-001` (do not start until Fourth Report validation passes)
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-080.docx`
-- Current working DOCX SHA-256: `26a91412247c513c0c607994547c5fdd56492c67bb0d9bc05ce7107e7f022851`
-- Last known good commit basis: `3ad3170a3e7fbb424bc2b4975e77ab0354a649ad`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-080.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-081.docx`
+- Current working DOCX SHA-256: `707ca2de808935a2bec9a57dd7a2a335180b5ac76fe4e3eb1dece308658bed63`
+- Last known good commit basis: `f9061ac5bdf59bdee0fb1b63f30ce8360d56e301`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-081.docx`
 - Current body paragraph count: 677
 
 ## Integrity
@@ -34,17 +34,17 @@
 - Protected OOXML parts: baseline-identical
 
 ## Structural-edit state
-- F4-073–079 remain intact and validated from prior durable checkpoints.
-- F4-080: counterfactual mushafaha/eda-loss claim replaced by a bounded statement that eda details are transmitted through telakki, mushafaha and isnad while mushaf writing supplies the shared written framework; FN340 preserved.
-- F4-081 qiraat-loss claim remains intentionally unresolved for its own sequential application.
+- F4-073–080 remain intact and validated from prior durable checkpoints.
+- F4-081: modern-orthography claim now distinguishes possible loss/change of rasm-based graphic visibility from the continued existence/transmission of qiraat through telakki, eda and riwaya; no citation remapping was needed.
+- F4-082 Third-to-Fourth Section transition remains intentionally unresolved for its own sequential application.
 - Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Last validation result: **PASS**.
 - Deterministic replay/idempotency: PASS.
-- Technical validation: PASS (`work/runtime/F4-080-TECHNICAL-VALIDATION.txt`).
-- Bounded visual QA: PASS, 3/3 pages inspected (`work/F4-080-VISUAL-QA.md`).
+- Technical validation: PASS (`work/runtime/F4-081-TECHNICAL-VALIDATION.txt`).
+- Bounded visual QA: PASS, 4/4 pages inspected (`work/F4-081-VISUAL-QA.md`).
 
 ## Exact next action
-Apply F4-081 to the current F4-080 binary. Replace the claim that moving to modern orthography would cause qiraat variants themselves to be lost with the report-approved distinction: `Modern imlâya göre yazım, bazı kırâat vecihlerinin resm-i Osmânî içindeki ihtimalî uygunluğunu görünür kılan tarihsel yazım özelliklerini ortadan kaldırabilir veya farklılaştırabilir. Bununla birlikte kırâatlerin varlığı yalnız bu grafik imkâna bağlı değildir; okuyuşların asıl aktarım zemini telakki, edâ ve rivâyet geleneğidir.` Preserve the paragraph's existing footnote mapping, run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-080`.
+Apply F4-082 to the current F4-081 binary. Add the report-approved transition immediately before the Fourth Section boundary: `Resm-i Osmânî'ye bağlılığın tarihsel ve normatif gerekçeleri bu şekilde ayrıştırıldıktan sonra, resmin kırâat ilmindeki somut kullanım alanlarına dönmek gerekir. Dördüncü bölüm, resmin kırâat rivâyetlerinin tespiti ve tahdidi, sahâbe mushafları, şâz okuyuşlar, tercih, tevcîh ve sonraki mushaf neşriyle ilişkisini bu açıdan ele almaktadır.` Preserve the Fourth Section heading/bookmark structures and all citation identities; run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-081`.

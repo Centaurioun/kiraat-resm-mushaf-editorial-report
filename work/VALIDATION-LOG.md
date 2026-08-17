@@ -143,3 +143,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 3/3 pages inspected; PASS. No clipping, overlap, style leakage, footnote overflow or transition damage.
 - Durable boundary: last F4-080; next F4-081.
+
+
+## F4-081 checkpoint — PASS
+- Final replay: `work/apply_f4_081.py`; candidate commit `731f245b2a57abb181aa7b1f685ff665d172026c`; SHA-256 `707ca2de808935a2bec9a57dd7a2a335180b5ac76fe4e3eb1dece308658bed63`.
+- F4-081 APPLIED: the claim that changing orthography would cause qiraat variants themselves to disappear was replaced with the report-approved distinction between loss/change of graphic visibility within the Uthmanic rasm and the independent transmission basis of readings through telakki, eda and riwaya.
+- Target paragraph was citation-free and structurally plain; FN352 remains on the preceding filological paragraph. No footnote remapping was required.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL artifact or style propagation. Final-page whitespace is bounded-slice termination, not a new blank manuscript page.
+- Durable boundary: last F4-081; next F4-082.
