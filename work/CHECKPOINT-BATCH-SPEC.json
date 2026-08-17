@@ -1,42 +1,42 @@
 {
-  "last_f4": 89,
-  "next_f4": 90,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-089.docx",
-  "sha256": "740d2d4960e9d6918baf808cba1d290c88e86caaa43f4395f5335b4746e210be",
-  "body_paragraphs": 678,
-  "technical_file": "work/runtime/F4-089-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-089-VISUAL-QA.md",
-  "visual_pages": 4,
+  "last_f4": 90,
+  "next_f4": 91,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-090.docx",
+  "sha256": "4f6218852a35d1775610e19f199158677540870a4f3ea27974aabbcc7050d5e1",
+  "body_paragraphs": 677,
+  "technical_file": "work/runtime/F4-090-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-090-VISUAL-QA.md",
+  "visual_pages": 5,
   "holds": "none",
-  "validation_marker": "## F4-089 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_089.py`; candidate commit `c63d1d21db9c885b45f28df21cea123996421371`; SHA-256 `740d2d4960e9d6918baf808cba1d290c88e86caaa43f4395f5335b4746e210be`.\n- F4-089 APPLIED: the author-level psychological interpretation of Ibn Masud's objection was replaced with the report-approved bounded statement that the transmitted reports indicate objections related to the recension process and his codex without assigning a definite motive.\n- FN388 and the following explicitly source-attributed Kurtubi/Ibn Kathir discussion remain in the same paragraph. F4-090 repeated 4.2 conclusions remain intentionally pending.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, run-boundary spacing defect or style propagation.\n- Durable boundary: last F4-089; next F4-090.",
+  "validation_marker": "## F4-090 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_090.py`, revision 2; candidate commit `8dcd3e9f12ffee82d648d247c0deaa96040d10ae`; SHA-256 `4f6218852a35d1775610e19f199158677540870a4f3ea27974aabbcc7050d5e1`.\n- F4-090 STRUCTURALLY_APPLIED: the earlier citation-free repeated 4.2 conclusion was removed, while the final citation-free conclusion immediately before 4.3 was replaced with the report-approved three-sentence synthesis distinguishing historical witness from normative text authority.\n- Source-backed FN384–388 paragraphs remain in sequence and the 4.3 heading/bookmark was not moved or rewritten. Body paragraph count changed only as expected, 678 -> 677.\n- Revision 1 visual QA exposed an inherited run-whitespace defect from the F4-089 paragraph. Revision 2 was regenerated from the F4-089 input and deterministically fixed the OOXML whitespace-preservation property; the corrected `değerlendirilmelidir. Kurtubî’nin` spacing is visually confirmed. Revision 1 is superseded and must not be used.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render revision 2: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, Arabic/RTL corruption, heading damage, blank-page regression or style propagation.\n- Durable boundary: last F4-090; next F4-091.",
   "structural_state": [
-    "F4-073–088 remain intact and validated from prior durable checkpoints.",
-    "F4-089: Ibn Masud discussion now avoids author-level certainty about psychological motive while preserving source-attributed later interpretations and FN388.",
-    "F4-090 repeated historical-witness/normative-authority conclusions in 4.2 are next and require structural consolidation.",
-    "Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application."
+    "F4-073–089 remain intact and validated from prior durable checkpoints.",
+    "F4-090: repeated citation-free 4.2 conclusions are consolidated into one bounded synthesis immediately before 4.3; FN384–388 evidence paragraphs remain intact.",
+    "The inherited F4-089 run-boundary whitespace rendering defect is remediated in the F4-090 revision 2 deterministic replay.",
+    "F4-091 is next; derived TOC field has not been recalculated and final Word field/TOC refresh remains required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_089.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-089.docx`",
-    "Candidate commit: `c63d1d21db9c885b45f28df21cea123996421371`",
-    "SHA: `work/runtime/F4-089-SHA256.txt`",
-    "Postflight: `work/runtime/F4-089-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-089-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-089-QA.pdf`",
-    "Human visual review: `work/F4-089-VISUAL-QA.md` — 4/4 PASS"
+    "Replay: `work/apply_f4_090.py` revision 2",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-090.docx`",
+    "Candidate commit: `8dcd3e9f12ffee82d648d247c0deaa96040d10ae`",
+    "SHA: `work/runtime/F4-090-SHA256.txt`",
+    "Postflight: `work/runtime/F4-090-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-090-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-090-QA.pdf`",
+    "Human visual review: `work/F4-090-VISUAL-QA.md` — revision 2, 5/5 PASS"
   ],
-  "next_action": "Apply F4-090 to the current F4-089 binary as a high-risk structural consolidation of repeated 4.2 historical-witness versus normative-authority conclusions. Preserve all unique source-backed paragraphs and footnotes, and use the report-approved three-sentence synthesis only where repeated citation-free conclusion material can be safely consolidated. Do not alter the 4.3 heading/bookmark. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-089`.",
+  "next_action": "Read F4-091 from the locked Fourth Report and apply only that item to the current F4-090 revision 2 binary. Preserve the completed F4-090 consolidation, FN384–388 sequence and the 4.3 heading/bookmark. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-090`.",
   "updates": {
-    "F4-089": {
-      "status": "APPLIED",
+    "F4-090": {
+      "status": "STRUCTURALLY_APPLIED",
       "section": "4.2",
-      "action_type": "PSYCHOLOGICAL_MOTIVE_REDUCTION",
-      "resolved_location": "current paragraph 372",
-      "affected_footnote_ids": [388],
-      "commit": "c63d1d21db9c885b45f28df21cea123996421371",
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Removed author-level certainty about motive; retained FN388 and explicitly source-attributed Kurtubi/Ibn Kathir continuation."
+      "action_type": "REPEATED_CONCLUSION_CONSOLIDATION_WITH_WHITESPACE_REMEDIATION",
+      "resolved_location": "earlier citation-free conclusion removed; final synthesis now current paragraph 372 immediately before 4.3",
+      "affected_footnote_ids": [],
+      "commit": "8dcd3e9f12ffee82d648d247c0deaa96040d10ae",
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + REVISION_2_5/5_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Preserved FN384–388 source-backed evidence and 4.3 heading/bookmark; revision 2 also fixes the inherited visible run-boundary whitespace defect without changing prose or citation placement."
     }
   }
 }
