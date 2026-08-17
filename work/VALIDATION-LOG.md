@@ -171,3 +171,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, heading damage or style leakage.
 - Durable boundary: last F4-083; next F4-084.
+
+
+## F4-084 checkpoint — PASS
+- Final replay: `work/apply_f4_084.py`; candidate commit `7a7f5aa363b5729a86aecf188c21ba7f67747be0`; SHA-256 `459e8be1b0a4d294cb5ac5473d19073d68b879bd5069405eda2da02a8281f86d`.
+- F4-084 APPLIED: the `Kırâat sünnettir` / Ebû Amr evidence is retained but its inference is reduced to the report-approved claim that these reports indicate the centrality of rivâyet and telakki in qiraat transmission.
+- FN361–364 remain in their original order; Kastallânî and Dânî source-backed continuation remains untouched.
+- F4-083 P351/P352 reframe remains intact. Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 3/3 pages inspected; PASS. No clipping, overlap, footnote overflow, or style propagation.
+- Durable boundary: last F4-084; next F4-085.

@@ -2,17 +2,17 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `8049212a4afb00d5c9c2b5ae6c36fc098519e6e2` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `7ee1b0ab66f38e3499d28de3e271e108ac36983b` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-083`
-- Next item: `F4-084`
-- DO-NOT-REPEAT: `F4-001`–`F4-083`
+- Last completed item: `F4-084`
+- Next item: `F4-085`
+- DO-NOT-REPEAT: `F4-001`–`F4-084`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-083.docx`
-- Current working SHA-256: `d4adb180cd58a6d74d1557a6c14fe2bc2b1fc42018c7b4bcffaf2029e2993127`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-084.docx`
+- Current working SHA-256: `459e8be1b0a4d294cb5ac5473d19073d68b879bd5069405eda2da02a8281f86d`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
@@ -22,23 +22,23 @@
 - Protected OOXML: baseline-identical
 
 ## Latest structural state
-- F4-073–082 remain intact and validated from prior durable checkpoints.
-- F4-083: 4.1 now distinguishes transmitted qiraat from rasm as a written compatibility/evaluation criterion; repeated historical material is reduced without dropping FN365–367.
-- F4-084 `Kırâat sünnettir` evidence-language correction remains intentionally unresolved for its own sequential application.
+- F4-073–083 remain intact and validated from prior durable checkpoints.
+- F4-084: P350 evidence language is now bounded to rivâyet/telakki centrality while FN361–364 and later Kastallânî/Dânî discussion are preserved.
+- F4-085 4.1→4.2 status-transition correction is next.
 - Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application.
 
 ## Evidence
-- Replay: `work/apply_f4_083.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-083.docx`
-- Candidate commit: `812d3189861607d4a2822108d77c45fb48b719eb`
-- SHA: `work/runtime/F4-083-SHA256.txt`
-- Postflight: `work/runtime/F4-083-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-083-TECHNICAL-VALIDATION.txt`
-- QA PDF: `work/runtime/F4-083-QA.pdf`
-- Human visual review: `work/F4-083-VISUAL-QA.md` — 4/4 PASS
+- Replay: `work/apply_f4_084.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-084.docx`
+- Candidate commit: `7a7f5aa363b5729a86aecf188c21ba7f67747be0`
+- SHA: `work/runtime/F4-084-SHA256.txt`
+- Postflight: `work/runtime/F4-084-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-084-TECHNICAL-VALIDATION.txt`
+- QA PDF: `work/runtime/F4-084-QA.pdf`
+- Human visual review: `work/F4-084-VISUAL-QA.md` — 3/3 PASS
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Apply F4-084 to the current F4-083 binary. In P350, retain the source-backed `Kırâat sünnettir` and Ebû Amr evidence but replace the over-strong historical inference with the report-approved bounded statement that these reports indicate the centrality of rivâyet and telakki in qiraat transmission. Preserve FN361–364 and do not disturb the F4-083 P351/P352 reframe. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-083`.
+Apply F4-085 to the current F4-084 binary. At the 4.1→4.2 boundary, explicitly distinguish the normative role of the Uthmanic mushaf tradition from the historical evidentiary value of personal Companion codices using the Fourth Report wording. Preserve the 4.2 heading/bookmark and surrounding citations, then run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-084`.
