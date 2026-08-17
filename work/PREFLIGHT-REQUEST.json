@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-097.docx",
-  "start": 0,
-  "end": 410,
-  "output": "work/runtime/F4-098-NAME-USAGE-PREFLIGHT.txt",
-  "purpose": "map all prior/current uses of Mehdevi, Ibn Muaz al-Juhani, Sahavi and Abu Amr through the F4-098 4.5 block so first-use versus repeat-use date corrections are deterministic"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-099.docx",
+  "start": 410,
+  "end": 455,
+  "output": "work/runtime/F4-100-PREFLIGHT.txt",
+  "purpose": "map the current 4.6 end, 4.7 heading and opening paragraphs before F4-100; identify the exact no-dot/no-vowel intentional-qiraat-preservation claim and preserve all associated footnotes/RTL/source structure without pre-applying F4-101+"
 }
