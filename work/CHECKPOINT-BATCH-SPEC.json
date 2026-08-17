@@ -1,40 +1,39 @@
 {
-  "last_f4": 111,
-  "next_f4": 112,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-111.docx",
-  "sha256": "4c9eba6d4ca9e65dc7148921c8331a21f4768ecc3aed65c9c0deda0ff98166c9",
+  "last_f4": 112,
+  "next_f4": 113,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-112.docx",
+  "sha256": "58e23edd3cdbffbacaf8a2e14fc2dff5ea5357dd76b15cda30c4d31820e12e9a",
   "body_paragraphs": 676,
-  "technical_file": "work/runtime/F4-111-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-111-VISUAL-QA.md",
-  "visual_pages": 19,
+  "technical_file": "work/runtime/F4-112-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-112-VISUAL-QA.md",
+  "visual_pages": 3,
   "holds": "none",
-  "validation_marker": "## F4-111 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_111.py`; candidate SHA-256 `4c9eba6d4ca9e65dc7148921c8331a21f4768ecc3aed65c9c0deda0ff98166c9`.\n- F4-111 APPLIED: normalized 4 eligible main-text `Kur’ân`/`Kur'an` occurrences to house-style `Kur’an` and 6 curated specific-name contexts to `İmam Mushaf`; bibliography and footnotes were excluded.\n- Direct quotations and italic bibliographic work titles retain their original spelling. In particular Mervân’s quotation at P64 retains lower-case `imam mushafa`, while narrative specific-name usages are normalized.\n- Deterministic second replay reports ALREADY_SATISFIED and is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Three bounded representative visual slices: P20–29 4/4 PASS; P62–85 8/8 PASS; P397–411 7/7 PASS; total 19/19 pages PASS.\n- Durable boundary: last F4-111; next F4-112.",
+  "validation_marker": "## F4-112 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_112.py`; candidate SHA-256 `58e23edd3cdbffbacaf8a2e14fc2dff5ea5357dd76b15cda30c4d31820e12e9a`.\n- F4-112 APPLIED: removed only the surviving editorial/work-note tails from genuine footnotes 32, 41 and 105; bibliographic citation content and all footnote IDs/body references are preserved.\n- Deterministic second replay is byte-identical. Footnote-aware technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; only authorized target footnote text differs, target footnote OOXML structure unchanged.\n- Visual QA used a P0–P118 prefix render to preserve the true footnote-reference sequence after bounded-slice rendering was found unsuitable for high-numbered footnotes. Real pages carrying FN32, FN41 and FN105 were inspected; all 3/3 target pages PASS.\n- Durable boundary: last F4-112; next F4-113.",
   "structural_state": [
-    "F4-073–110 remain intact and validated from prior durable checkpoints.",
-    "F4-111: main-text house style now uses `Kur’an` and curated specific-name `İmam Mushaf` without altering bibliography, direct quotations, italic work titles or footnotes.",
-    "Current body paragraph count remains 676; all 469 footnote identities, 520 fields, bookmarks and protected OOXML remain preserved.",
-    "F4-112+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh."
+    "F4-073–111 remain intact and validated from prior durable checkpoints.",
+    "F4-112: genuine footnotes 32, 41 and 105 now contain only their bibliographic citation text; editor/work notes are removed.",
+    "Current body paragraph count remains 676; all 469 footnote identities/references, 520 fields, bookmarks, hyperlinks and body XML structure remain preserved.",
+    "F4-113+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh."
   ],
   "evidence": [
-    "Preflight: `work/runtime/F4-111-PREFLIGHT.txt`",
-    "Replay: `work/apply_f4_111.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-111.docx`",
-    "SHA: `work/runtime/F4-111-SHA256.txt`",
-    "Postflight: `work/runtime/F4-111-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-111-TECHNICAL-VALIDATION.txt`",
-    "Human visual review: `work/F4-111-VISUAL-QA.md` — 19/19 representative pages PASS"
+    "Replay: `work/apply_f4_112.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-112.docx`",
+    "SHA: `work/runtime/F4-112-SHA256.txt`",
+    "Postflight: `work/runtime/F4-112-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-112-TECHNICAL-VALIDATION.txt`",
+    "Human visual review: `work/F4-112-VISUAL-QA.md` — 3/3 real target pages PASS using prefix render"
   ],
-  "next_action": "Apply only F4-112 to current F4-111. Remove the surviving editorial/work notes from genuine footnotes 32, 41 and 105 while preserving the bibliographic citation content and the footnote IDs/references. Because `word/footnotes.xml` must change for this accepted item, use a footnote-specific validation that proves only the targeted footnote text changed and all 469 IDs/reference identities, fields, body XML structure and all other protected parts remain intact. Do not pre-apply F4-113+. Run deterministic replay and footnote-aware visual/technical QA. Do not repeat `F4-001`–`F4-111`.",
+  "next_action": "Apply only F4-113 to current F4-112. Inventory author-name article variants and sura-name article variants in genuine footnotes before editing. Normalize author-name house-style forms such as `ez-Zürkânî`, `es-Suyûtî`, `ed-Dânî` to `Zürkânî`, `Suyûtî`, `Dânî` only where they function as author names; do not mechanically strip articles from sura names, work titles or other lexical contexts. Establish and apply one internally consistent sura-name article convention without altering bibliographic titles. Use footnote-specific validation and identity-preserving visual QA. Do not pre-apply F4-114+ or repeat `F4-001`–`F4-112`.",
   "updates": {
-    "F4-111": {
+    "F4-112": {
       "status": "APPLIED",
-      "section": "Ana metin geneli",
-      "action_type": "MAIN_TEXT_HOUSE_STYLE_QURAN_IMAM_MUSHAF_NORMALIZATION",
-      "resolved_location": "main text P0–456; bibliography boundary P457",
-      "affected_footnote_ids": [],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 19/19_REPRESENTATIVE_VISUAL_QA_PASS",
-      "notes": "4 Quran spellings + 6 curated Imam Mushaf contexts normalized; bibliography/footnotes/direct quotations/italic titles preserved."
+      "section": "Genuine footnotes 32, 41 and 105",
+      "action_type": "TARGETED_EDITORIAL_WORK_NOTE_REMOVAL",
+      "resolved_location": "word/footnotes.xml IDs 32,41,105",
+      "affected_footnote_ids": [32, 41, 105],
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 3/3_TRUE_ID_PREFIX_VISUAL_QA_PASS",
+      "notes": "Only stale editor/work-note tails removed; bibliography text, footnote structures and all body references preserved."
     }
   }
 }
