@@ -1,5 +1,5 @@
 DOCX=artifacts/checkpoints/manuscript-working-f4-062.docx
-SHA256=59d96f18db6c8a1493c90aa5a48af3575a6ac3a7ddee9f913cf5bd50dcc145ad
+SHA256=200f55000bf5dbe6e350466c79b4ffa15973bf06d92cb4a66ea91848252b77f3
 BODY_PARAGRAPHS=686
 P228	FN=[]	RTL=0	BOOK=0	Kırâatlerde otoritenin bu çok katmanlı yapısı, sözlü aktarımın müşterek mushaf yazısıyla nasıl ilişkilendiği sorusunu gündeme getirir. Bu ilişki, yedi harf ile Osmânî mushaf meselesinde daha belirgin hâle gelmektedir.
 P229	FN=[]	RTL=0	BOOK=2	Osmânî Mushaf ve Yedi Harf Meselesi
