@@ -321,3 +321,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render P403–409: 3/3 pages inspected; PASS.
 - Durable boundary: last F4-099; next F4-100.
+
+
+## F4-100 checkpoint — PASS
+- Final replay: `work/apply_f4_100.py`; candidate SHA-256 `6949b4cf0af1e4fc087bf6d4313e22a445e49ba5341ab596c19a027ae0c5da8a`.
+- F4-100 APPLIED: at the 4.7 opening, the claim that early mushafs lacked dots/vowels fundamentally in order to preserve multiple qiraat was replaced with the report-approved historically cautious formulation. Early script is now described as later acquiring dots, vowels and auxiliary signs while the basic rasm structure remained; the initial absence of such signs is attributed to the writing system of the period and is not reduced to a single conscious qiraat-preservation purpose.
+- Only the first two causal sentences of current P426 were replaced; the later zapt/rivayat/geographical-distribution discussion in the same paragraph remains intact.
+- Deterministic replay is byte-identical after the helper-path repair. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render P423–429: 3/3 pages inspected; PASS. The pre-existing later Huzai work note remains outside this item and pending.
+- Durable boundary: last F4-100; next F4-101.
