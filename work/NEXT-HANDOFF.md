@@ -2,17 +2,17 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `c876c78ccd2913dccaf9aef896c5cf1a93e8018f` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `b3223a23562193c5772d8a19305e12bb4bb393df` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-105`
-- Next item: `F4-106`
-- DO-NOT-REPEAT: `F4-001`–`F4-105`
+- Last completed item: `F4-106`
+- Next item: `F4-107`
+- DO-NOT-REPEAT: `F4-001`–`F4-106`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-105.docx`
-- Current working SHA-256: `640fdbf06ee48de553d7341b88592cff5ead107010ccef15e2278f684f36b118`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-106.docx`
+- Current working SHA-256: `cace4c42e6f82b75c31b6533fb732892aa2d916baf8ec7abf6168730d6e15f38`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
@@ -22,22 +22,21 @@
 - Protected OOXML: baseline-identical
 
 ## Latest structural state
-- F4-073–104 remain intact and validated from prior durable checkpoints.
-- F4-105: qiraat spread/standardization is now framed as multicausal; print increases written visibility/use without being the sole explanatory cause.
-- Current body paragraph count remains 677; P438+ Türkiye chronology and all protected OOXML remain preserved.
-- F4-106+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required.
+- F4-073–105 remain intact and validated from prior durable checkpoints.
+- F4-106: the Meclis is now the grammatical subject and the institutional-control claim is limited to supported scope.
+- Current body paragraph count remains 677; FN467 and all protected OOXML remain preserved.
+- F4-107+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh.
 
 ## Evidence
-- Replay: `work/apply_f4_105.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-105.docx`
-- SHA: `work/runtime/F4-105-SHA256.txt`
-- Postflight: `work/runtime/F4-105-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-105-TECHNICAL-VALIDATION.txt`
-- QA PDF: `work/runtime/F4-105-QA.pdf`
-- Human visual review: `work/F4-105-VISUAL-QA.md` — 3/3 PASS
+- Replay: `work/apply_f4_106.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-106.docx`
+- SHA: `work/runtime/F4-106-SHA256.txt`
+- Postflight: `work/runtime/F4-106-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-106-TECHNICAL-VALIDATION.txt`
+- Human visual review: `work/F4-106-VISUAL-QA.md` — 3/3 PASS
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Read and apply only F4-106 to the current F4-105 binary. Repair the 1889 Teftis-i Mesahif-i Serife Meclisi sentence so the Meclis is the grammatical subject and the claim is limited to supported institutional inspection/control of mushaf publication. Map genuine FN467 to the retained proposition before editing; do not pre-apply F4-107+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-105`.
+Apply only F4-107 to current F4-106. Keep 4.7 in the order early print chronology → regional/qiraat-rivayah printings → Ottoman/Türkiye control and publication experience → one final conclusion. Remove the premature pre-Türkiye conclusion and replace the repeated Türkiye ending with the report-approved single multicausal final paragraph. Preserve the 1873 decision/permission versus 1874 actual-printing distinction and all genuine citations; do not pre-apply F4-108+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-106`.

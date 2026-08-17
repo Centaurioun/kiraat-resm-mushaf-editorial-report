@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `c876c78ccd2913dccaf9aef896c5cf1a93e8018f` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `b3223a23562193c5772d8a19305e12bb4bb393df` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -12,16 +12,16 @@
 
 ## State machine
 - Current phase: `FOURTH_APPLY`
-- Last fully completed Fourth Report item: `F4-105`
-- Next Fourth Report item: `F4-106`
+- Last fully completed Fourth Report item: `F4-106`
+- Next Fourth Report item: `F4-107`
 - Last fully completed Fifth Report item: none
 - Next Fifth Report item: `F5-001` (do not start until Fourth Report validation passes)
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-105.docx`
-- Current working DOCX SHA-256: `640fdbf06ee48de553d7341b88592cff5ead107010ccef15e2278f684f36b118`
-- Last known good commit basis: `c876c78ccd2913dccaf9aef896c5cf1a93e8018f`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-105.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-106.docx`
+- Current working DOCX SHA-256: `cace4c42e6f82b75c31b6533fb732892aa2d916baf8ec7abf6168730d6e15f38`
+- Last known good commit basis: `b3223a23562193c5772d8a19305e12bb4bb393df`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-106.docx`
 - Current body paragraph count: 677
 
 ## Integrity
@@ -34,17 +34,17 @@
 - Protected OOXML parts: baseline-identical
 
 ## Structural-edit state
-- F4-073–104 remain intact and validated from prior durable checkpoints.
-- F4-105: qiraat spread/standardization is now framed as multicausal; print increases written visibility/use without being the sole explanatory cause.
-- Current body paragraph count remains 677; P438+ Türkiye chronology and all protected OOXML remain preserved.
-- F4-106+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required.
+- F4-073–105 remain intact and validated from prior durable checkpoints.
+- F4-106: the Meclis is now the grammatical subject and the institutional-control claim is limited to supported scope.
+- Current body paragraph count remains 677; FN467 and all protected OOXML remain preserved.
+- F4-107+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Last validation result: **PASS**.
 - Deterministic replay/idempotency: PASS.
-- Technical validation: PASS (`work/runtime/F4-105-TECHNICAL-VALIDATION.txt`).
-- Bounded visual QA: PASS, 3/3 pages inspected (`work/F4-105-VISUAL-QA.md`).
+- Technical validation: PASS (`work/runtime/F4-106-TECHNICAL-VALIDATION.txt`).
+- Bounded visual QA: PASS, 3/3 pages inspected (`work/F4-106-VISUAL-QA.md`).
 
 ## Exact next action
-Read and apply only F4-106 to the current F4-105 binary. Repair the 1889 Teftis-i Mesahif-i Serife Meclisi sentence so the Meclis is the grammatical subject and the claim is limited to supported institutional inspection/control of mushaf publication. Map genuine FN467 to the retained proposition before editing; do not pre-apply F4-107+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-105`.
+Apply only F4-107 to current F4-106. Keep 4.7 in the order early print chronology → regional/qiraat-rivayah printings → Ottoman/Türkiye control and publication experience → one final conclusion. Remove the premature pre-Türkiye conclusion and replace the repeated Türkiye ending with the report-approved single multicausal final paragraph. Preserve the 1873 decision/permission versus 1874 actual-printing distinction and all genuine citations; do not pre-apply F4-108+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-106`.

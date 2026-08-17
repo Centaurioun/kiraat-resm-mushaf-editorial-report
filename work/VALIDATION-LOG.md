@@ -375,3 +375,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render P434–440: 3/3 pages inspected; PASS. Existing stale TOC display in the isolated slice is expected and final field refresh remains deferred.
 - Durable boundary: last F4-105; next F4-106.
+
+
+## F4-106 checkpoint — PASS
+- Final replay: `work/apply_f4_106.py`; candidate SHA-256 `cace4c42e6f82b75c31b6533fb732892aa2d916baf8ec7abf6168730d6e15f38`.
+- F4-106 APPLIED: repaired the 1889 Teftîş-i Mesâhif-i Şerîfe Meclisi grammar and narrowed the claim to institutional tashih/idarî denetim. Genuine FN467 remains on the same paragraph and proposition.
+- P438, P440 and P441 remain unchanged for F4-107.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render P437–441: 3/3 pages inspected; PASS.
+- Durable boundary: last F4-106; next F4-107.
