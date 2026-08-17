@@ -283,3 +283,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, run-boundary spacing defect or style propagation.
 - Durable boundary: last F4-095; next F4-096.
+
+
+## F4-096 checkpoint — PASS
+- Final replay: `work/apply_f4_096.py`; candidate SHA-256 `67791838653b64426378747d1fd4f4a304afe7d38e2c13cf0b7da60972117e41`.
+- F4-096 APPLIED: the citation-free 4.4 waqf introduction now distinguishes meaning, nahw and rivayat as primary waqf/ibtida considerations while limiting rasm to relevant written cues such as wasl-fasl and word boundaries.
+- Source-backed FN413–416 examples, including RTL/Arabic material and Hamza/hemza details, remain intact; the bookmark-backed 4.5 heading remains unchanged.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, heading damage, blank-page regression or style propagation.
+- Durable boundary: last F4-096; next F4-097.
