@@ -20,16 +20,16 @@
 {"id":"F4-020","report":"F4","item_number":20,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","affected_footnote_ids":[43,44,45]}
 {"id":"F4-021","report":"F4","item_number":21,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","affected_footnote_ids":[34,35,36,37]}
 {"id":"F4-022","report":"F4","item_number":22,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","affected_footnote_ids":[44]}
-{"id":"F4-023","report":"F4","item_number":23,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4","notes":"Direct Mervân→yedi harf/arza causal claim replaced with source-level distinction."}
-{"id":"F4-024","report":"F4","item_number":24,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4","affected_footnote_ids":[49],"notes":"Footnote 49 placed on the arza explanatory-approach proposition."}
+{"id":"F4-023","report":"F4","item_number":23,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4","notes":"Direct Mervan-yedi harf/arza causal claim replaced with source-level distinction."}
+{"id":"F4-024","report":"F4","item_number":24,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4","affected_footnote_ids":[49],"notes":"Footnote 49 retained on arza explanatory-view proposition."}
 {"id":"F4-025","report":"F4","item_number":25,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4"}
-{"id":"F4-026","report":"F4","item_number":26,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4","affected_footnote_ids":[51,66],"notes":"First Taberî body occurrence corrected to ö. 310/923; work note removed; footnote 66 placed on concrete reading-variation proposition."}
+{"id":"F4-026","report":"F4","item_number":26,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4","affected_footnote_ids":[51,66],"notes":"First body Taberi corrected to 310/923; work note removed; footnote 66 retained on concrete reading-variation evidence."}
 {"id":"F4-027","report":"F4","item_number":27,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4","affected_footnote_ids":[63]}
-{"id":"F4-028","report":"F4","item_number":28,"status":"PENDING"}
-{"id":"F4-029","report":"F4","item_number":29,"status":"PENDING"}
-{"id":"F4-030","report":"F4","item_number":30,"status":"PENDING"}
-{"id":"F4-031","report":"F4","item_number":31,"status":"PENDING"}
-{"id":"F4-032","report":"F4","item_number":32,"status":"PENDING"}
+{"id":"F4-028","report":"F4","item_number":28,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d","notes":"Second Hulasa closure replaced by direct transition into mushaf-count section."}
+{"id":"F4-029","report":"F4","item_number":29,"status":"STRUCTURALLY_APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d","affected_footnote_ids":[88],"notes":"Cautious multi-rivayet synthesis applied; footnote 88 retained only on Kevseri view; three uncited six-copy certainty/repetition paragraphs removed."}
+{"id":"F4-030","report":"F4","item_number":30,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d","affected_footnote_ids":[85,86],"notes":"Ebu Same corrected to 665/1267; Ahvazi death date omitted per report."}
+{"id":"F4-031","report":"F4","item_number":31,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d","affected_footnote_ids":[87],"notes":"Amr b. Kays unknown death marker removed."}
+{"id":"F4-032","report":"F4","item_number":32,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d","affected_footnote_ids":[94,95],"notes":"Contemporary-literature opening corrected incl. Hamidullah 2002; final common-six-copy synthesis replaced by explicit non-convergence statement while notes 94/95 remain intact."}
 {"id":"F4-033","report":"F4","item_number":33,"status":"PENDING"}
 {"id":"F4-034","report":"F4","item_number":34,"status":"PENDING"}
 {"id":"F4-035","report":"F4","item_number":35,"status":"PENDING"}
