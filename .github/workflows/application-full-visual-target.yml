@@ -1,0 +1,90 @@
+name: application-full-visual-target
+
+on:
+  push:
+    branches:
+      - editorial/apply-fourth-fifth-reports
+    paths:
+      - 'work/FULL-VISUAL-TARGET-REQUEST.json'
+      - '.github/workflows/application-full-visual-target.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  visual:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/apply-fourth-fifth-reports
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate request and candidate SHA
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json, hashlib
+          from pathlib import Path
+          r=json.loads(Path('work/FULL-VISUAL-TARGET-REQUEST.json').read_text(encoding='utf-8'))
+          p=Path(r['docx']); got=hashlib.sha256(p.read_bytes()).hexdigest()
+          assert got==r['sha256'],(got,r['sha256'])
+          assert r.get('targets'), 'targets required'
+          PY
+      - name: Render complete candidate and locate target pages
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y libreoffice-writer poppler-utils >/dev/null
+          rm -rf /tmp/fullqa qa-pages
+          mkdir -p /tmp/fullqa qa-pages work/runtime
+          docx=$(python -c "import json;print(json.load(open('work/FULL-VISUAL-TARGET-REQUEST.json'))['docx'])")
+          libreoffice --headless --convert-to pdf --outdir /tmp/fullqa "$docx" >/dev/null
+          pdf=$(ls /tmp/fullqa/*.pdf | head -1)
+          pdftotext -layout "$pdf" /tmp/fullqa/full.txt
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          r=json.loads(Path('work/FULL-VISUAL-TARGET-REQUEST.json').read_text(encoding='utf-8'))
+          pages=Path('/tmp/fullqa/full.txt').read_text(encoding='utf-8',errors='replace').split('\f')
+          hits={}
+          selected=set()
+          radius=int(r.get('neighbor_radius',0))
+          for target in r['targets']:
+              needle=target['needle']
+              found=[i+1 for i,p in enumerate(pages) if needle in p]
+              if not found:
+                  raise SystemExit(f'target not found in rendered PDF: {needle!r}')
+              hits[target.get('label',needle)]=found
+              for pg in found:
+                  for q in range(max(1,pg-radius),min(len(pages),pg+radius)+1):selected.add(q)
+          out=['PASS',f'total_pdf_pages={len(pages)}']
+          for k,v in hits.items():out.append(f'{k}={v}')
+          out.append('selected_pages='+','.join(map(str,sorted(selected))))
+          evidence=Path(r['page_map_file']); evidence.parent.mkdir(parents=True,exist_ok=True); evidence.write_text('\n'.join(out)+'\n',encoding='utf-8')
+          Path('/tmp/fullqa/pages.txt').write_text('\n'.join(map(str,sorted(selected)))+'\n',encoding='utf-8')
+          PY
+          while read -r pg; do
+            [ -z "$pg" ] && continue
+            pdftoppm -png -r 120 -f "$pg" -l "$pg" -singlefile "$pdf" "qa-pages/page-${pg}" >/dev/null
+          done < /tmp/fullqa/pages.txt
+          pdfinfo "$pdf" | grep '^Pages:' | tee qa-pages/PAGE-COUNT.txt
+          cp "$(python -c "import json;print(json.load(open('work/FULL-VISUAL-TARGET-REQUEST.json'))['page_map_file'])")" qa-pages/TARGET-PAGE-MAP.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: application-full-target-qa-pages
+          path: qa-pages/
+          retention-days: 7
+          if-no-files-found: error
+      - name: Commit page-map evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          p=$(python -c "import json;print(json.load(open('work/FULL-VISUAL-TARGET-REQUEST.json'))['page_map_file'])")
+          git add "$p"
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'checkpoint(qa): persist full-document target page map [skip ci]'
+          git push origin HEAD:editorial/apply-fourth-fifth-reports
