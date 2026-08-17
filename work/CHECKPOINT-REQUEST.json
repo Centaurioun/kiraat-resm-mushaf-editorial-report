@@ -1,12 +1,12 @@
 {
-  "checkpoint": "F4-082",
+  "checkpoint": "F4-083",
   "revision": 1,
   "script": "work/checkpoint_report_batch.py",
-  "last_f4": 82,
-  "next_f4": 83,
-  "candidate_sha256": "299bed4bcf3fa1b479ec1ff1b6ee1baa0f7aa4210dd47f789cdf1f35cc81bbad",
+  "last_f4": 83,
+  "next_f4": 84,
+  "candidate_sha256": "d4adb180cd58a6d74d1557a6c14fe2bc2b1fc42018c7b4bcffaf2029e2993127",
   "technical_validation": "PASS",
   "visual_qa_pages": 4,
   "visual_qa_result": "PASS",
-  "validation_marker": "## F4-082 checkpoint — PASS"
+  "validation_marker": "## F4-083 checkpoint — PASS"
 }
