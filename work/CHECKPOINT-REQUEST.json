@@ -1,0 +1,8 @@
+{
+  "checkpoint": "F4-052",
+  "candidate_sha256": "f94870a3b0b8a06acdb39cf104e78c3715f0c734068ee6dfc312795c863eabe4",
+  "technical_validation": "PASS",
+  "visual_qa_pages": 12,
+  "visual_qa_result": "PASS",
+  "next_item": "F4-053"
+}
