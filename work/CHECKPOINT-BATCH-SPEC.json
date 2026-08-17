@@ -1,41 +1,41 @@
 {
-  "last_f4": 101,
-  "next_f4": 102,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-101.docx",
-  "sha256": "b2acdf0116b7b6efa23ddb1661ab6cc8ecd9528ebfb470b44c7a0c2585b2a3a7",
+  "last_f4": 102,
+  "next_f4": 103,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-102.docx",
+  "sha256": "38561f498d0abacc3dacea2bb35b92aa1ed4abe67d8b767657ea80e759ff69e8",
   "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-101-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-101-VISUAL-QA.md",
-  "visual_pages": 5,
+  "technical_file": "work/runtime/F4-102-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-102-VISUAL-QA.md",
+  "visual_pages": 4,
   "holds": "none",
-  "validation_marker": "## F4-101 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_101.py`; candidate SHA-256 `b2acdf0116b7b6efa23ddb1661ab6cc8ecd9528ebfb470b44c7a0c2585b2a3a7`.\n- F4-101 APPLIED: preserved the source-backed Dânî/Ebû Dâvud/modern-publication evidence in P416–420, replaced the first citation-free repeated conclusion with the report-approved three-sentence synthesis, and removed the redundant second conclusion.\n- The bookmark-backed 4.7 heading now follows the single synthesis directly. Body paragraphs decrease from 678 to 677.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P416–425: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, heading orphaning, RTL corruption, blank-page regression, abnormal spacing or style propagation.\n- Durable boundary: last F4-101; next F4-102.",
+  "validation_marker": "## F4-102 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_102.py`; candidate SHA-256 `38561f498d0abacc3dacea2bb35b92aa1ed4abe67d8b767657ea80e759ff69e8`.\n- F4-102 APPLIED: 4.7 now opens directly with the report-approved print/resm focus. The repeated calligraphy/copying lead-in was compressed while preserving unique source-backed historical propositions.\n- Genuine FN454 and FN455 were proposition-safely retained on the compact historical-background sentences; preflight resolves them from the candidate OOXML, and `word/footnotes.xml` remains baseline-identical. F4-100 P425 and the later F4-103 Saint Petersburg target remain unchanged.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P422–431: 4/4 pages inspected; layout PASS. The isolated QA slice copies all 469 footnotes while retaining sparse high w:id references, so LibreOffice-rendered slice footnote text is not authoritative for footnote-content identity; `work/F4-102-VISUAL-QA.md` records this renderer caveat. Candidate OOXML/preflight and protected-part invariants are authoritative for citation mapping.\n- Durable boundary: last F4-102; next F4-103.",
   "structural_state": [
-    "F4-073–100 remain intact and validated from prior durable checkpoints.",
-    "F4-101: repeated 4.6 conclusions are consolidated into one report-approved synthesis while source-backed evidence remains intact.",
-    "Current body paragraph count is 677; bookmark-backed 4.7 heading remains preserved.",
-    "F4-102+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required."
+    "F4-073–101 remain intact and validated from prior durable checkpoints.",
+    "F4-102: 4.7 begins with the print/resm problem; unique pre-print historical evidence is compressed rather than silently discarded.",
+    "Current body paragraph count remains 677; FN454/FN455 identities and all protected OOXML remain preserved.",
+    "F4-103+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required."
   ],
   "evidence": [
-    "Preflight: `work/runtime/F4-101-PREFLIGHT.txt`",
-    "Replay: `work/apply_f4_101.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-101.docx`",
-    "SHA: `work/runtime/F4-101-SHA256.txt`",
-    "Postflight: `work/runtime/F4-101-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-101-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-101-QA.pdf`",
-    "Human visual review: `work/F4-101-VISUAL-QA.md` — 5/5 PASS"
+    "Preflight: `work/runtime/F4-102-PREFLIGHT.txt`",
+    "Replay: `work/apply_f4_102.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-102.docx`",
+    "SHA: `work/runtime/F4-102-SHA256.txt`",
+    "Postflight: `work/runtime/F4-102-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-102-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-102-QA.pdf`",
+    "Human visual review: `work/F4-102-VISUAL-QA.md` — 4/4 layout PASS with isolated-slice footnote-render caveat"
   ],
-  "next_action": "Read and apply only F4-102 to the current F4-101 binary. Refocus the opening of 4.7 on the actual subject of printed mushafs using the report-approved formulation, trimming repeated calligraphy/copying history while preserving source-backed material that remains necessary. Do not pre-apply F4-103+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-101`.",
+  "next_action": "Read and apply only F4-103 to the current F4-102 binary. Correct the 1201/1787 Saint Petersburg statement by removing the unsupported `Mevlây Osman (?)` attribution and using only the report-authorized safe core naming II. Katerina's order. Establish the genuine attached footnote mapping/support before preserving or relocating any reference. Do not pre-apply F4-104+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-102`.",
   "updates": {
-    "F4-101": {
+    "F4-102": {
       "status": "APPLIED",
-      "section": "4.6 final synthesis",
-      "action_type": "REPEATED_CONCLUSIONS_CONSOLIDATION",
-      "resolved_location": "current paragraph 421; former paragraph 422 removed; 4.7 heading shifted to current paragraph 422",
-      "affected_footnote_ids": [],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 5/5_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Preserved P416–420 source evidence, replaced the first citation-free conclusion with the report-approved synthesis, and removed the redundant second conclusion."
+      "section": "4.7 opening",
+      "action_type": "PRINT_FOCUSED_OPENING_WITH_CITATION_SAFE_HISTORY_COMPRESSION",
+      "resolved_location": "current paragraphs 423–424 immediately after bookmark-backed 4.7 heading at paragraph 422",
+      "affected_footnote_ids": [454, 455],
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_LAYOUT_QA_PASS + GENUINE_FOOTNOTE_PREFLIGHT_MAPPING",
+      "notes": "Direct print/resm opener inserted; unique historical propositions compressed. Visual-slice footnote text is non-authoritative because the slice retains all 469 footnotes with sparse high IDs; candidate OOXML/preflight confirms genuine FN454/FN455 mapping and protected footnotes.xml is baseline-identical."
     }
   }
 }
