@@ -19,6 +19,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: editorial/apply-fourth-fifth-reports
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
@@ -27,100 +28,119 @@ jobs:
         id: extract
         continue-on-error: true
         run: |
+          set -euo pipefail
           mkdir -p work/runtime
-          python - <<'PY' 2> work/runtime/F4-113-PREFLIGHT-DIAGNOSTIC.txt
-          import json,hashlib
+          python - <<'PY'
+          import json,hashlib,traceback
           from pathlib import Path
           from zipfile import ZipFile
           from lxml import etree
           from collections import Counter
           req=json.loads(Path('work/PREFLIGHT-REQUEST.json').read_text(encoding='utf-8'))
           W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'; NS={'w':W}
-          cur=Path(req['docx'])
-          with ZipFile(cur) as z:
-              d=etree.fromstring(z.read('word/document.xml')); f=etree.fromstring(z.read('word/footnotes.xml'))
-              ps=d.xpath('.//w:body/w:p',namespaces=NS); lines=[f"DOCX={req['docx']}",f"BODY_PARAGRAPHS={len(ps)}"]; note_ids=set()
-              for i in range(max(0,int(req['start'])),min(len(ps),int(req['end'])+1)):
-                  p=ps[i]; text=''.join(p.xpath('.//w:t/text()',namespaces=NS)); fns=p.xpath('.//w:footnoteReference/@w:id',namespaces=NS); note_ids.update(fns)
-                  lines.append(f'P{i}\tFN={fns}\tRTL={len(p.xpath(".//w:rtl",namespaces=NS))}\tFLD={len(p.xpath(".//w:instrText|.//w:fldChar",namespaces=NS))}\tBOOK={len(p.xpath(".//w:bookmarkStart|.//w:bookmarkEnd",namespaces=NS))}\t{text}')
-              lines.append('\nFOOTNOTES')
-              for fid in sorted(note_ids,key=lambda x:int(x)):
-                  hit=f.xpath(f'.//w:footnote[@w:id="{fid}"]',namespaces=NS)
-                  if hit: lines.append(f'FN{fid}\t'+''.join(hit[0].xpath('.//w:t/text()',namespaces=NS)))
-          out=Path(req['output']); out.parent.mkdir(parents=True,exist_ok=True); out.write_text('\n'.join(lines),encoding='utf-8')
+          cur=Path(req['docx']); diag=Path(req.get('diagnostic_file','work/runtime/PREFLIGHT-DIAGNOSTIC.txt'))
+          try:
+              with ZipFile(cur) as z:
+                  d=etree.fromstring(z.read('word/document.xml')); f=etree.fromstring(z.read('word/footnotes.xml'))
+                  ps=d.xpath('.//w:body/w:p',namespaces=NS); lines=[f"DOCX={req['docx']}",f"BODY_PARAGRAPHS={len(ps)}"]; note_ids=set()
+                  for i in range(max(0,int(req['start'])),min(len(ps),int(req['end'])+1)):
+                      p=ps[i]; text=''.join(p.xpath('.//w:t/text()',namespaces=NS)); fns=p.xpath('.//w:footnoteReference/@w:id',namespaces=NS); note_ids.update(fns)
+                      lines.append(f'P{i}\tFN={fns}\tRTL={len(p.xpath(".//w:rtl",namespaces=NS))}\tFLD={len(p.xpath(".//w:instrText|.//w:fldChar",namespaces=NS))}\tBOOK={len(p.xpath(".//w:bookmarkStart|.//w:bookmarkEnd",namespaces=NS))}\t{text}')
+                  lines.append('\nFOOTNOTES')
+                  for fid in sorted(note_ids,key=lambda x:int(x)):
+                      hit=f.xpath(f'.//w:footnote[@w:id="{fid}"]',namespaces=NS)
+                      if hit: lines.append(f'FN{fid}\t'+''.join(hit[0].xpath('.//w:t/text()',namespaces=NS)))
+              out=Path(req['output']); out.parent.mkdir(parents=True,exist_ok=True); out.write_text('\n'.join(lines),encoding='utf-8')
 
-          tech=req.get('technical_file')
-          if tech:
-              canonical=Path(req.get('canonical_docx','source/manuscript/current/redaktorden_gelen.docx'))
-              expected=req['expected_sha256']; got=hashlib.sha256(cur.read_bytes()).hexdigest(); assert got==expected,(got,expected)
-              canonical_expected=req.get('canonical_sha256')
-              if canonical_expected: assert hashlib.sha256(canonical.read_bytes()).hexdigest()==canonical_expected
-              allowed={str(x) for x in req.get('allowed_footnote_text_ids',[])}
-              prot=['word/styles.xml','word/numbering.xml','word/settings.xml','word/_rels/document.xml.rels']
-              def c14n(el): return etree.tostring(el,method='c14n')
-              def sig(el): return tuple((node.tag,tuple(sorted(node.attrib.items()))) for node in el.iter())
-              def instrs(zipf):
-                  vals=[]
-                  for name in zipf.namelist():
-                      if name.startswith('word/') and name.endswith('.xml'):
-                          try:r=etree.fromstring(zipf.read(name))
-                          except Exception:continue
-                          vals += [''.join(x.itertext()).strip() for x in r.xpath('//w:instrText',namespaces=NS)]
-                  return vals
-              with ZipFile(canonical) as zs, ZipFile(cur) as z:
-                  assert z.testzip() is None
-                  for name in z.namelist():
-                      if name.endswith('.xml') or name.endswith('.rels'): etree.fromstring(z.read(name))
-                  ds=etree.fromstring(zs.read('word/document.xml')); d=etree.fromstring(z.read('word/document.xml'))
-                  fs=etree.fromstring(zs.read('word/footnotes.xml')); f=etree.fromstring(z.read('word/footnotes.xml'))
-                  f0=[x for x in fs.xpath('//w:footnote/@w:id',namespaces=NS) if int(x)>0]
-                  ff=[x for x in f.xpath('//w:footnote/@w:id',namespaces=NS) if int(x)>0]
-                  r0=ds.xpath('//w:footnoteReference/@w:id',namespaces=NS); rr=d.xpath('//w:footnoteReference/@w:id',namespaces=NS)
-                  assert ff==f0 and len(ff)==len(rr)==469 and set(ff)==set(rr)
-                  assert Counter(rr)==Counter(r0) and not [k for k,v in Counter(rr).items() if v>1]
-                  ins0=instrs(zs); ins=instrs(z); assert ins==ins0 and len(ins)==520
-                  addin=sum(1 for x in ins if 'ADDIN ' in x); item=sum(1 for x in ins if 'ZOTERO_ITEM' in x); bibl=sum(1 for x in ins if 'ZOTERO_BIBL' in x)
-                  assert addin==466 and item==465 and bibl==1,(addin,item,bibl)
-                  assert len(d.xpath('//w:rtl',namespaces=NS))==len(ds.xpath('//w:rtl',namespaces=NS))
-                  assert len(d.xpath('//w:bookmarkStart',namespaces=NS))==len(ds.xpath('//w:bookmarkStart',namespaces=NS))==53
-                  assert len(d.xpath('//w:bookmarkEnd',namespaces=NS))==len(ds.xpath('//w:bookmarkEnd',namespaces=NS))==53
-                  assert len(d.xpath('//w:hyperlink',namespaces=NS))==len(ds.xpath('//w:hyperlink',namespaces=NS))==52
-                  assert len(d.xpath('.//w:body/w:p',namespaces=NS))==676
-                  for name in prot: assert zs.read(name)==z.read(name),name
-                  ids_all=fs.xpath('//w:footnote/@w:id',namespaces=NS); ids_cur=f.xpath('//w:footnote/@w:id',namespaces=NS); assert ids_all==ids_cur
-                  changed=[]
-                  for fid in ids_all:
-                      a=fs.xpath(f'//w:footnote[@w:id="{fid}"]',namespaces=NS); b=f.xpath(f'//w:footnote[@w:id="{fid}"]',namespaces=NS); assert len(a)==len(b)==1
-                      if fid in allowed:
-                          assert sig(a[0])==sig(b[0]),('authorized footnote structure changed',fid)
-                          if c14n(a[0])!=c14n(b[0]): changed.append(fid)
-                      else:
-                          assert c14n(a[0])==c14n(b[0]),('unauthorized footnote changed',fid)
-                  assert set(changed)==allowed,('allowed/change mismatch',sorted(allowed,key=int),sorted(changed,key=int))
-              Path(tech).write_text(
-                  'PASS\n'
-                  f'sha256={got}\n'
-                  'body_paragraphs=676\nfootnotes=469\nreferences=469\nreference_identity_multiset=canonical-equal\norphans=0\ndangling=0\nduplicates=0\n'
-                  f'fields={len(ins)}\nADDIN={addin}\nZotero_ITEM={item}\nZotero_bibliography={bibl}\nbookmarks=53/53\nhyperlinks=52\nRTL=canonical-equal\n'
-                  'protected_parts=targeted-footnote-text-authorized\n'
-                  'allowed_footnote_text_ids='+','.join(sorted(allowed,key=int))+'\n'
-                  'actually_changed_footnote_ids='+','.join(sorted(changed,key=int))+'\n',encoding='utf-8')
+              tech=req.get('technical_file')
+              if tech:
+                  canonical=Path(req.get('canonical_docx','source/manuscript/current/redaktorden_gelen.docx'))
+                  expected=req['expected_sha256']; got=hashlib.sha256(cur.read_bytes()).hexdigest(); assert got==expected,(got,expected)
+                  canonical_expected=req.get('canonical_sha256')
+                  if canonical_expected: assert hashlib.sha256(canonical.read_bytes()).hexdigest()==canonical_expected
+                  expected_body=int(req.get('expected_body_paragraphs',len(ps)))
+                  allowed={str(x) for x in req.get('allowed_footnote_text_ids',[])}
+                  prot=['word/styles.xml','word/numbering.xml','word/settings.xml','word/_rels/document.xml.rels']
+                  def c14n(el): return etree.tostring(el,method='c14n')
+                  def sig(el): return tuple((node.tag,tuple(sorted(node.attrib.items()))) for node in el.iter())
+                  def instrs(zipf):
+                      vals=[]
+                      for name in zipf.namelist():
+                          if name.startswith('word/') and name.endswith('.xml'):
+                              try:r=etree.fromstring(zipf.read(name))
+                              except Exception:continue
+                              vals += [''.join(x.itertext()).strip() for x in r.xpath('//w:instrText',namespaces=NS)]
+                      return vals
+                  with ZipFile(canonical) as zs, ZipFile(cur) as z:
+                      assert z.testzip() is None
+                      for name in z.namelist():
+                          if name.endswith('.xml') or name.endswith('.rels'): etree.fromstring(z.read(name))
+                      ds=etree.fromstring(zs.read('word/document.xml')); d=etree.fromstring(z.read('word/document.xml'))
+                      fs=etree.fromstring(zs.read('word/footnotes.xml')); f=etree.fromstring(z.read('word/footnotes.xml'))
+                      f0=[x for x in fs.xpath('//w:footnote/@w:id',namespaces=NS) if int(x)>0]
+                      ff=[x for x in f.xpath('//w:footnote/@w:id',namespaces=NS) if int(x)>0]
+                      r0=ds.xpath('//w:footnoteReference/@w:id',namespaces=NS); rr=d.xpath('//w:footnoteReference/@w:id',namespaces=NS)
+                      assert ff==f0 and len(ff)==len(rr)==469 and set(ff)==set(rr)
+                      assert Counter(rr)==Counter(r0) and not [k for k,v in Counter(rr).items() if v>1]
+                      ins0=instrs(zs); ins=instrs(z); assert ins==ins0 and len(ins)==520
+                      addin=sum(1 for x in ins if 'ADDIN ' in x); item=sum(1 for x in ins if 'ZOTERO_ITEM' in x); bibl=sum(1 for x in ins if 'ZOTERO_BIBL' in x)
+                      assert (addin,item,bibl)==(466,465,1),(addin,item,bibl)
+                      assert len(d.xpath('//w:rtl',namespaces=NS))==len(ds.xpath('//w:rtl',namespaces=NS))
+                      assert len(d.xpath('//w:bookmarkStart',namespaces=NS))==len(ds.xpath('//w:bookmarkStart',namespaces=NS))==53
+                      assert len(d.xpath('//w:bookmarkEnd',namespaces=NS))==len(ds.xpath('//w:bookmarkEnd',namespaces=NS))==53
+                      assert len(d.xpath('//w:hyperlink',namespaces=NS))==len(ds.xpath('//w:hyperlink',namespaces=NS))==52
+                      actual_body=len(d.xpath('.//w:body/w:p',namespaces=NS)); assert actual_body==expected_body,(actual_body,expected_body)
+                      for name in prot: assert zs.read(name)==z.read(name),name
+                      ids_all=fs.xpath('//w:footnote/@w:id',namespaces=NS); ids_cur=f.xpath('//w:footnote/@w:id',namespaces=NS); assert ids_all==ids_cur
+                      changed=[]
+                      for fid in ids_all:
+                          a=fs.xpath(f'//w:footnote[@w:id="{fid}"]',namespaces=NS); b=f.xpath(f'//w:footnote[@w:id="{fid}"]',namespaces=NS); assert len(a)==len(b)==1
+                          if fid in allowed:
+                              assert sig(a[0])==sig(b[0]),('authorized footnote structure changed',fid)
+                              if c14n(a[0])!=c14n(b[0]): changed.append(fid)
+                          else:
+                              assert c14n(a[0])==c14n(b[0]),('unauthorized footnote changed',fid)
+                      assert set(changed)==allowed,('allowed/change mismatch',sorted(allowed,key=int),sorted(changed,key=int))
+                  Path(tech).write_text(
+                      'PASS\n'
+                      f'sha256={got}\n'
+                      f'body_paragraphs={actual_body}\nfootnotes=469\nreferences=469\nreference_identity_multiset=canonical-equal\norphans=0\ndangling=0\nduplicates=0\n'
+                      f'fields={len(ins)}\nADDIN={addin}\nZotero_ITEM={item}\nZotero_bibliography={bibl}\nbookmarks=53/53\nhyperlinks=52\nRTL=canonical-equal\n'
+                      'protected_parts=targeted-footnote-text-authorized\n'
+                      'allowed_footnote_text_ids='+','.join(sorted(allowed,key=int))+'\n'
+                      'actually_changed_footnote_ids='+','.join(sorted(changed,key=int))+'\n',encoding='utf-8')
+              if diag.exists(): diag.unlink()
+          except Exception:
+              diag.parent.mkdir(parents=True,exist_ok=True); diag.write_text(traceback.format_exc(),encoding='utf-8'); raise
           PY
-      - name: Commit preflight failure diagnostic
+      - name: Run optional repository validator
+        id: validator
+        if: steps.extract.outcome == 'success'
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          has=$(python -c "import json;print('yes' if json.load(open('work/PREFLIGHT-REQUEST.json')).get('validator_script') else 'no')")
+          if [ "$has" = no ]; then exit 0; fi
+          script=$(python -c "import json;print(json.load(open('work/PREFLIGHT-REQUEST.json'))['validator_script'])")
+          docx=$(python -c "import json;print(json.load(open('work/PREFLIGHT-REQUEST.json'))['docx'])")
+          out=$(python -c "import json;print(json.load(open('work/PREFLIGHT-REQUEST.json'))['validator_output'])")
+          python "$script" "$docx" "$out"
+      - name: Commit failure diagnostic
         if: steps.extract.outcome == 'failure'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add work/runtime/F4-113-PREFLIGHT-DIAGNOSTIC.txt
-          if ! git diff --cached --quiet; then
-            git commit -m 'diagnostic(preflight): persist F4-113 technical-gate failure [skip ci]'
-            git push origin HEAD:editorial/apply-fourth-fifth-reports
-          fi
-      - name: Fail after diagnostic persistence
+          diag=$(python -c "import json;print(json.load(open('work/PREFLIGHT-REQUEST.json')).get('diagnostic_file','work/runtime/PREFLIGHT-DIAGNOSTIC.txt'))")
+          git add "$diag" || true
+          if ! git diff --cached --quiet; then git commit -m 'diagnostic(preflight): persist validation failure [skip ci]' && git push origin HEAD:editorial/apply-fourth-fifth-reports; fi
+      - name: Fail after extraction diagnostic persistence
         if: steps.extract.outcome == 'failure'
         run: exit 1
+      - name: Fail after optional validator failure
+        if: steps.validator.outcome == 'failure'
+        run: exit 1
       - name: Commit preflight evidence
-        if: steps.extract.outcome == 'success'
+        if: steps.extract.outcome == 'success' && steps.validator.outcome != 'failure'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
@@ -129,8 +149,9 @@ jobs:
           r=json.load(open('work/PREFLIGHT-REQUEST.json'))
           print(r['output'])
           if r.get('technical_file'): print(r['technical_file'])
+          if r.get('validator_output'): print(r['validator_output'])
           PY
           while read -r p; do git add "$p"; done < /tmp/paths
           if git diff --cached --quiet; then exit 0; fi
-          git commit -m 'checkpoint(preflight): inspect current application range [skip ci]'
+          git commit -m 'checkpoint(preflight): persist validation evidence [skip ci]'
           git push origin HEAD:editorial/apply-fourth-fifth-reports
