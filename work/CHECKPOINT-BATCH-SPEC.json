@@ -1,42 +1,42 @@
 {
-  "last_f4": 85,
-  "next_f4": 86,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-085.docx",
-  "sha256": "d48b31281dc7e8ddde3b30856e2ce1d6edcfc4b079de2c87c63d0b54fdac0af1",
-  "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-085-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-085-VISUAL-QA.md",
-  "visual_pages": 4,
+  "last_f4": 86,
+  "next_f4": 87,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-086.docx",
+  "sha256": "2d7e6dc15e60c4b85db6de9459cc5bdd24f41da98f77577d17871e68d477826c",
+  "body_paragraphs": 678,
+  "technical_file": "work/runtime/F4-086-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-086-VISUAL-QA.md",
+  "visual_pages": 5,
   "holds": "none",
-  "validation_marker": "## F4-085 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_085.py`; candidate commit `aa3b05436d460bb9d412fcecd488c4609fef407b`; SHA-256 `d48b31281dc7e8ddde3b30856e2ce1d6edcfc4b079de2c87c63d0b54fdac0af1`.\n- F4-085 APPLIED: the former 4.1 summary was replaced with the report-approved transition distinguishing the normative common Uthmanic mushaf tradition from the historical evidentiary value of personal Companion codices.\n- The transition is citation-free and immediately precedes the bookmark-bearing 4.2 heading; heading/bookmark structures remain unchanged.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. FN373–378 and Arabic examples remain stable; visible red editor note belongs to pending F4-087.\n- Durable boundary: last F4-085; next F4-086.",
+  "validation_marker": "## F4-086 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_086.py`; candidate commit `0ac7c7dc0c2b6c0e07ceab8987c8aed0e4b23896`; SHA-256 `2d7e6dc15e60c4b85db6de9459cc5bdd24f41da98f77577d17871e68d477826c`.\n- F4-086 STRUCTURALLY_APPLIED: a citation-free category frame was inserted after the FN375 general introduction and before the FN376 explanatory/tafsiri example, explicitly distinguishing reading reports, explanatory/tafsiri expressions, word-order/writing differences, and disputed records.\n- Source-specific example paragraphs, FN375–383 and Arabic/RTL runs were not relocated or collapsed. The normative criterion is stated as the Uthmanic written framework together with sound transmission.\n- F4-087 open editor note and F4-088 active-agent conclusions were intentionally left for their own sequential items.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical; RTL inventory canonical-equal.\n- Bounded render: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, Arabic corruption, heading damage or style propagation.\n- Durable boundary: last F4-086; next F4-087.",
   "structural_state": [
-    "F4-073–084 remain intact and validated from prior durable checkpoints.",
-    "F4-085: explicit normative-status transition now separates common Uthmanic mushaf authority from the historical evidentiary role of personal Companion codices; 4.2 bookmark heading preserved.",
-    "F4-086 category differentiation in 4.2 is next; F4-087 open editor note remains intentionally unresolved.",
+    "F4-073–085 remain intact and validated from prior durable checkpoints.",
+    "F4-086: 4.2 now carries an explicit category-differentiation synthesis without displacing source-specific examples or citations.",
+    "F4-087 open editor note remains next; F4-088 active-agent wording remains pending.",
     "Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_085.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-085.docx`",
-    "Candidate commit: `aa3b05436d460bb9d412fcecd488c4609fef407b`",
-    "SHA: `work/runtime/F4-085-SHA256.txt`",
-    "Postflight: `work/runtime/F4-085-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-085-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-085-QA.pdf`",
-    "Human visual review: `work/F4-085-VISUAL-QA.md` — 4/4 PASS"
+    "Replay: `work/apply_f4_086.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-086.docx`",
+    "Candidate commit: `0ac7c7dc0c2b6c0e07ceab8987c8aed0e4b23896`",
+    "SHA: `work/runtime/F4-086-SHA256.txt`",
+    "Postflight: `work/runtime/F4-086-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-086-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-086-QA.pdf`",
+    "Human visual review: `work/F4-086-VISUAL-QA.md` — 5/5 PASS"
   ],
-  "next_action": "Apply F4-086 to the current F4-085 binary. Reframe the 4.2 Companion-codex discussion so attributed differences are not collapsed into a single mensuh/tefsiri category. Preserve source-specific evidence, Arabic runs, and footnote identities; distinguish reading reports, explanatory/tafsiri expressions, word-order/writing differences, and disputed records, while keeping the Uthmanic written framework plus sound transmission as the normative criterion. Do not resolve unrelated F4-088/089 claims prematurely. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-085`.",
+  "next_action": "Apply F4-087 to the current F4-086 binary by removing only the explicit parenthetical editor note embedded in the FN377–378 paragraph and restoring normal spacing before `Bunun en meşhur örneklerinden biri...`. Preserve Arabic runs, FN377–378 and all surrounding text. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-086`.",
   "updates": {
-    "F4-085": {
-      "status": "APPLIED",
-      "section": "4.1 → 4.2",
-      "action_type": "NORMATIVE_STATUS_TRANSITION_REPLACEMENT",
-      "resolved_location": "current paragraph 359 immediately before 4.2 heading",
+    "F4-086": {
+      "status": "STRUCTURALLY_APPLIED",
+      "section": "4.2",
+      "action_type": "CATEGORY_DIFFERENTIATION_SYNTHESIS_INSERTION",
+      "resolved_location": "new current paragraph 362 between FN375 and FN376 source-specific paragraphs",
       "affected_footnote_ids": [],
-      "commit": "aa3b05436d460bb9d412fcecd488c4609fef407b",
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Repetitive/active-role 4.1 conclusion replaced with report-approved distinction between common Uthmanic normative authority and personal Companion-codex historical evidence; 4.2 bookmark heading preserved."
+      "commit": "0ac7c7dc0c2b6c0e07ceab8987c8aed0e4b23896",
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 5/5_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Report-approved category distinction added as citation-free synthesis; source-specific Companion-codex examples, Arabic runs and FN375–383 remain in place."
     }
   }
 }
