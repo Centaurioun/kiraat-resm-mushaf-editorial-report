@@ -15,11 +15,11 @@
 {"id":"F4-015","report":"F4","item_number":15,"status":"STRUCTURALLY_APPLIED","affected_footnote_ids":[28,29,30],"resolved_location":"former three-paragraph preservation-model cluster consolidated to body paragraph 55","commit":"d533b450b20729130e850d7cbf37256a8e192306","notes":"Two-model certainty replaced with cautious synthesis; notes 28-30 retained on the sentence summarizing both source families."}
 {"id":"F4-016","report":"F4","item_number":16,"status":"APPLIED","affected_footnote_ids":[24,25,26],"resolved_location":"same Medine paragraph as F4-014","commit":"d533b450b20729130e850d7cbf37256a8e192306","notes":"Over-strong evidentiary wording weakened to 'aktarıldığına işaret etmektedir'; citations preserved."}
 {"id":"F4-017","report":"F4","item_number":17,"status":"APPLIED","resolved_location":"1.3 opening body paragraph 57","commit":"d533b450b20729130e850d7cbf37256a8e192306","notes":"Repeated 1.2/1.3 opening frame replaced with direct Ebû Bekir cem transition. Technical/idempotency/19-page bounded visual QA PASS."}
-{"id":"F4-018","report":"F4","item_number":18,"status":"PENDING"}
-{"id":"F4-019","report":"F4","item_number":19,"status":"PENDING"}
-{"id":"F4-020","report":"F4","item_number":20,"status":"PENDING"}
-{"id":"F4-021","report":"F4","item_number":21,"status":"PENDING"}
-{"id":"F4-022","report":"F4","item_number":22,"status":"PENDING"}
+{"id":"F4-018","report":"F4","item_number":18,"status":"APPLIED","affected_footnote_ids":[31,32],"resolved_location":"body paragraph 58","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","notes":"Cem distinction rewritten per Fourth Report; footnote 31 follows the nüzûl-era written-record proposition and footnote 32 follows the Ebû Bekir formal-derleme proposition. Byte-idempotent; QA PASS."}
+{"id":"F4-019","report":"F4","item_number":19,"status":"APPLIED","affected_footnote_ids":[35],"resolved_location":"body paragraph 60","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","notes":"Hârice corrected from daughter to son as Hârice b. Zeyd (ö. 100/718-19); surrounding note inventory 34-37 preserved."}
+{"id":"F4-020","report":"F4","item_number":20,"status":"APPLIED","affected_footnote_ids":[43,44,45],"resolved_location":"body paragraph 64","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","notes":"Ebû Bekir-era material standardized as suhuf; surrounding source notes preserved."}
+{"id":"F4-021","report":"F4","item_number":21,"status":"APPLIED","affected_footnote_ids":[34,35,36,37],"resolved_location":"body paragraph 60","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","notes":"Broken Zeyd b. Sâbit sentence replaced with report-approved formulation; surrounding note inventory unchanged."}
+{"id":"F4-022","report":"F4","item_number":22,"status":"APPLIED","affected_footnote_ids":[44],"resolved_location":"body paragraph 64","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","notes":"Mervân b. Hakem death date corrected to 65/685 and terminology corrected to sahifeler; note 44 remains attached. Technical/idempotency/21-page bounded visual QA PASS."}
 {"id":"F4-023","report":"F4","item_number":23,"status":"PENDING"}
 {"id":"F4-024","report":"F4","item_number":24,"status":"PENDING"}
 {"id":"F4-025","report":"F4","item_number":25,"status":"PENDING"}
