@@ -1,11 +1,11 @@
 {
-  "checkpoint": "F4-083",
+  "checkpoint": "F4-084",
   "revision": 1,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-083.docx",
-  "sha256": "d4adb180cd58a6d74d1557a6c14fe2bc2b1fc42018c7b4bcffaf2029e2993127",
-  "start": 347,
-  "end": 355,
-  "technical_file": "work/runtime/F4-083-TECHNICAL-VALIDATION.txt",
-  "range_file": "work/runtime/F4-083-QA-RANGE.txt",
-  "pdf_file": "work/runtime/F4-083-QA.pdf"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-084.docx",
+  "sha256": "459e8be1b0a4d294cb5ac5473d19073d68b879bd5069405eda2da02a8281f86d",
+  "start": 349,
+  "end": 353,
+  "technical_file": "work/runtime/F4-084-TECHNICAL-VALIDATION.txt",
+  "range_file": "work/runtime/F4-084-QA-RANGE.txt",
+  "pdf_file": "work/runtime/F4-084-QA.pdf"
 }
