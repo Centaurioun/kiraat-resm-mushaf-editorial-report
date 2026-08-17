@@ -1,0 +1,100 @@
+name: application-visual-batch
+
+on:
+  push:
+    branches:
+      - editorial/apply-fourth-fifth-reports
+    paths:
+      - 'work/VISUAL-BATCH-REQUEST.json'
+
+permissions:
+  contents: write
+
+jobs:
+  visual:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/apply-fourth-fifth-reports
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install lxml
+      - name: Validate candidate and build QA slice
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/qa work/runtime qa-pages
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          from zipfile import ZipFile
+          from lxml import etree
+          from collections import Counter
+          from copy import deepcopy
+          req=json.loads(Path('work/VISUAL-BATCH-REQUEST.json').read_text(encoding='utf-8'))
+          W='http://schemas.openxmlformats.org/wordprocessingml/2006/main';NS={'w':W}
+          src=Path('source/manuscript/current/redaktorden_gelen.docx');cur=Path(req['docx']);got=hashlib.sha256(cur.read_bytes()).hexdigest();assert got==req['sha256'],(got,req['sha256'])
+          prot=['word/footnotes.xml','word/styles.xml','word/numbering.xml','word/settings.xml','word/_rels/document.xml.rels']
+          with ZipFile(src) as zs,ZipFile(cur) as z:
+              assert z.testzip() is None
+              for n in z.namelist():
+                  if n.endswith('.xml') or n.endswith('.rels'):etree.fromstring(z.read(n))
+              ds=etree.fromstring(zs.read('word/document.xml'));d=etree.fromstring(z.read('word/document.xml'));fs=etree.fromstring(zs.read('word/footnotes.xml'));f=etree.fromstring(z.read('word/footnotes.xml'))
+              f0=[x for x in fs.xpath('//w:footnote/@w:id',namespaces=NS) if int(x)>0];ff=[x for x in f.xpath('//w:footnote/@w:id',namespaces=NS) if int(x)>0];r0=ds.xpath('//w:footnoteReference/@w:id',namespaces=NS);rr=d.xpath('//w:footnoteReference/@w:id',namespaces=NS)
+              assert ff==f0 and rr==r0 and len(ff)==len(rr)==469 and set(ff)==set(rr) and not [k for k,v in Counter(rr).items() if v>1]
+              def instrs(zipf):
+                  out=[]
+                  for n in zipf.namelist():
+                      if n.startswith('word/') and n.endswith('.xml'):
+                          try:r=etree.fromstring(zipf.read(n));out += [''.join(x.itertext()).strip() for x in r.xpath('//w:instrText',namespaces=NS)]
+                          except:pass
+                  return out
+              assert instrs(z)==instrs(zs) and len(instrs(z))==520
+              assert len(d.xpath('//w:rtl',namespaces=NS))==len(ds.xpath('//w:rtl',namespaces=NS))
+              assert len(d.xpath('//w:bookmarkStart',namespaces=NS))==len(ds.xpath('//w:bookmarkStart',namespaces=NS)) and len(d.xpath('//w:bookmarkEnd',namespaces=NS))==len(ds.xpath('//w:bookmarkEnd',namespaces=NS))
+              assert len(d.xpath('//w:hyperlink',namespaces=NS))==len(ds.xpath('//w:hyperlink',namespaces=NS))
+              for n in prot:assert zs.read(n)==z.read(n),n
+              ps=d.xpath('.//w:body/w:p',namespaces=NS);lines=[f'DOCX={cur}',f'SHA256={got}',f'BODY_PARAGRAPHS={len(ps)}']
+              for i in range(max(0,int(req['start'])),min(len(ps),int(req['end'])+1)):
+                  p=ps[i];text=''.join(p.xpath('.//w:t/text()',namespaces=NS));fns=p.xpath('.//w:footnoteReference/@w:id',namespaces=NS);lines.append(f'P{i}\tFN={fns}\tRTL={len(p.xpath(".//w:rtl",namespaces=NS))}\tBOOK={len(p.xpath(".//w:bookmarkStart|.//w:bookmarkEnd",namespaces=NS))}\t{text}')
+              qa=deepcopy(d);body=qa.find('.//w:body',namespaces=NS);qps=body.xpath('./w:p',namespaces=NS)
+              for i,p in list(enumerate(qps)):
+                  if i<int(req['start']) or i>int(req['end']):body.remove(p)
+              xml=etree.tostring(qa,xml_declaration=True,encoding='UTF-8',standalone='yes')
+              with ZipFile('/tmp/qa/slice.docx','w') as zout:
+                  for info in z.infolist():zout.writestr(info,xml if info.filename=='word/document.xml' else z.read(info.filename))
+          Path(req['technical_file']).write_text('PASS\nsha256='+got+'\nfootnotes=469\nreferences=469\norphans=0\ndangling=0\nduplicates=0\nfields=520\nprotected_parts=baseline-identical\n',encoding='utf-8')
+          Path(req['range_file']).write_text('\n'.join(lines),encoding='utf-8')
+          PY
+      - name: Render and rasterize all bounded QA pages
+        run: |
+          set -euo pipefail
+          if ! command -v libreoffice >/dev/null 2>&1; then sudo apt-get update -qq && sudo apt-get install -y libreoffice-writer poppler-utils >/dev/null; fi
+          libreoffice --headless --convert-to pdf --outdir /tmp/qa /tmp/qa/slice.docx >/dev/null
+          pdf=$(ls /tmp/qa/*.pdf | head -1)
+          out=$(python -c "import json;print(json.load(open('work/VISUAL-BATCH-REQUEST.json'))['pdf_file'])")
+          mkdir -p "$(dirname "$out")"; cp "$pdf" "$out"
+          pdfinfo "$pdf" | grep '^Pages:' | tee qa-pages/PAGE-COUNT.txt
+          pdftoppm -png -r 120 "$pdf" qa-pages/page >/dev/null
+      - uses: actions/upload-artifact@v4
+        with:
+          name: application-bounded-qa-pages
+          path: qa-pages/
+          retention-days: 7
+      - name: Commit QA evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          python - <<'PY' > /tmp/paths
+          import json
+          r=json.load(open('work/VISUAL-BATCH-REQUEST.json'))
+          print(r['technical_file']);print(r['range_file']);print(r['pdf_file'])
+          PY
+          while read -r p; do git add "$p"; done < /tmp/paths
+          if git diff --cached --quiet; then exit 0; fi
+          c=$(python -c "import json;print(json.load(open('work/VISUAL-BATCH-REQUEST.json'))['checkpoint'])")
+          git commit -m "checkpoint(qa): render ${c} affected range [skip ci]"
+          git push origin HEAD:editorial/apply-fourth-fifth-reports
