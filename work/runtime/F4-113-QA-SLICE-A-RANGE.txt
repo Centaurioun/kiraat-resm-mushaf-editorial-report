@@ -2,6 +2,7 @@ DOCX=artifacts/checkpoints/manuscript-working-f4-113.docx
 SHA256=e4287570d99f9d3c20f96752497787e6d97f6a07047555ecbe5c05e5c69bdac1
 BODY_PARAGRAPHS=676
 REFERENCE_ORDER_CHANGED=True
+RUN_ID=32079868743
 ALLOWED_FOOTNOTE_TEXT_IDS=['105', '2', '271', '272', '273', '274', '28', '292', '32', '342', '344', '345', '346', '377', '380', '381', '407', '409', '41', '411', '414', '421', '423', '424', '425', '426', '427', '428', '431', '50', '66']
 P50	FN=[]	RTL=0	BOOK=2	Erken Dönemde Kur’an’ın Yazı ile İlişkisi
 P51	FN=['19', '20', '21']	RTL=0	BOOK=0	Vahyin inişiyle birlikte yazı, sözlü aktarımı tamamlayan daha düzenli bir kayıt aracı hâline gelmiştir. Hz. Peygamber'in vahiy kâtiplerini görevlendirmesi ve inen âyetleri yazdırması, özellikle Medine döneminde yazılı kaydın daha belirgin bir uygulamaya dönüştüğünü göstermektedir. Bununla birlikte Kur’an'ın aktarımında ezber, tilâvet ve yazı birlikte işleyen unsurlar olarak varlığını sürdürmüştür.
