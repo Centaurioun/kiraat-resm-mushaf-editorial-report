@@ -1,40 +1,40 @@
 {
-  "last_f4": 94,
-  "next_f4": 95,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-094.docx",
-  "sha256": "523fcf36cae029c4761e254a378beda7f378499ed8a0b13bcf0371cd83079894",
+  "last_f4": 95,
+  "next_f4": 96,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-095.docx",
+  "sha256": "00eae3a5b7299a0522979562d73e1d4bbe52ff7c205ee59c37f09ba3b4b817ea",
   "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-094-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-094-VISUAL-QA.md",
+  "technical_file": "work/runtime/F4-095-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-095-VISUAL-QA.md",
   "visual_pages": 4,
   "holds": "none",
-  "validation_marker": "## F4-094 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_094.py`; candidate SHA-256 `523fcf36cae029c4761e254a378beda7f378499ed8a0b13bcf0371cd83079894`.\n- F4-094 APPLIED: the bookmark-backed 4.4 heading was corrected from the grammatically problematic `Tercîhî, Tevcîhi ... Etkisi` formulation to `Resm-i Osmânî'nin Kırâatlerin Tercihi, Tevcîhi ve Vakıf Uygulamalarıyla İlişkisi`, avoiding one-way causal overstatement.\n- The two heading bookmarks remain preserved; the F4-093 transition and FN400+ source-backed opening material remain intact.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. The heading wraps cleanly over two lines with no clipping, overlap, orphaning, footnote overflow or style propagation.\n- Durable boundary: last F4-094; next F4-095.",
+  "validation_marker": "## F4-095 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_095.py`; candidate SHA-256 `00eae3a5b7299a0522979562d73e1d4bbe52ff7c205ee59c37f09ba3b4b817ea`.\n- F4-095 APPLIED: the FN401 paragraph now states that qiraat-imam readings are transmitted within received teaching/rivayat traditions and that preference language does not imply independent creation of new readings.\n- The source-backed Makki three-factor discussion is retained, while rasm conformity is framed as one criterion alongside rivayat, language and general acceptance rather than an independent single determinant.\n- FN401 remains attached to the rewritten paragraph; FN402–403 and later F4-096 material remain untouched.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, run-boundary spacing defect or style propagation.\n- Durable boundary: last F4-095; next F4-096.",
   "structural_state": [
-    "F4-073–093 remain intact and validated from prior durable checkpoints.",
-    "F4-094: the bookmark-backed 4.4 heading now uses the report-approved relationship wording rather than one-way causal 'effect' language.",
-    "FN400+ 4.4 opening material remains source-backed and unchanged; F4-095 is next.",
+    "F4-073–094 remain intact and validated from prior durable checkpoints.",
+    "F4-095: the FN401 imam-preference paragraph now foregrounds received rivayat/teaching and multi-factor evaluation rather than independent selector agency.",
+    "FN402–403 and later 4.4 material remain untouched; F4-096 is next.",
     "Derived TOC field has not been recalculated; final Word field/TOC refresh remains required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_094.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-094.docx`",
-    "SHA: `work/runtime/F4-094-SHA256.txt`",
-    "Postflight: `work/runtime/F4-094-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-094-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-094-QA.pdf`",
-    "Human visual review: `work/F4-094-VISUAL-QA.md` — 4/4 PASS"
+    "Replay: `work/apply_f4_095.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-095.docx`",
+    "SHA: `work/runtime/F4-095-SHA256.txt`",
+    "Postflight: `work/runtime/F4-095-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-095-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-095-QA.pdf`",
+    "Human visual review: `work/F4-095-VISUAL-QA.md` — 4/4 PASS"
   ],
-  "next_action": "Read and apply only F4-095 to the current F4-094 binary. Preserve the F4-094 bookmark-backed heading and all source-backed material except where F4-095 explicitly narrows the portrayal of qiraat imams as selectors. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-094`.",
+  "next_action": "Read and apply only F4-096 to the current F4-095 binary. Distinguish meaning/nahw/rivayat-based waqf from rasm-related written cues such as wasl-fasl and word boundaries; preserve source-backed examples and do not pre-apply F4-097+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-095`.",
   "updates": {
-    "F4-094": {
+    "F4-095": {
       "status": "APPLIED",
-      "section": "4.4 heading",
-      "action_type": "BOOKMARK_PRESERVING_HEADING_CAUSALITY_CORRECTION",
-      "resolved_location": "current paragraph 382",
-      "affected_footnote_ids": [],
+      "section": "4.4",
+      "action_type": "IMAM_PREFERENCE_AGENCY_REFRAME",
+      "resolved_location": "current paragraph 384",
+      "affected_footnote_ids": [401],
       "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Changed only the bookmark-backed heading text; preserved both bookmarks and FN400+ opening material."
+      "notes": "Reframed imam preference as received rivayat/teaching-based evaluation; retained Makki's three-factor source detail and FN401."
     }
   }
 }
