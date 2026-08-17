@@ -1,42 +1,42 @@
 {
-  "last_f4": 83,
-  "next_f4": 84,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-083.docx",
-  "sha256": "d4adb180cd58a6d74d1557a6c14fe2bc2b1fc42018c7b4bcffaf2029e2993127",
+  "last_f4": 84,
+  "next_f4": 85,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-084.docx",
+  "sha256": "459e8be1b0a4d294cb5ac5473d19073d68b879bd5069405eda2da02a8281f86d",
   "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-083-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-083-VISUAL-QA.md",
-  "visual_pages": 4,
+  "technical_file": "work/runtime/F4-084-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-084-VISUAL-QA.md",
+  "visual_pages": 3,
   "holds": "none",
-  "validation_marker": "## F4-083 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_083.py`; candidate commit `812d3189861607d4a2822108d77c45fb48b719eb`; SHA-256 `d4adb180cd58a6d74d1557a6c14fe2bc2b1fc42018c7b4bcffaf2029e2993127`.\n- F4-083 APPLIED: repeated cem/istinsah history in P351 was reduced to the argument-essential reminder while FN365 was preserved.\n- P352 no longer assigns autonomous selecting/producing agency to rasm; mushaf-line compatibility is framed as an evaluative criterion within transmitted qiraat. FN366–367 remain on the source-backed acceptance-criterion discussion.\n- F4-084 evidence language in P350 was intentionally left untouched for the next sequential item.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, heading damage or style leakage.\n- Durable boundary: last F4-083; next F4-084.",
+  "validation_marker": "## F4-084 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_084.py`; candidate commit `7a7f5aa363b5729a86aecf188c21ba7f67747be0`; SHA-256 `459e8be1b0a4d294cb5ac5473d19073d68b879bd5069405eda2da02a8281f86d`.\n- F4-084 APPLIED: the `Kırâat sünnettir` / Ebû Amr evidence is retained but its inference is reduced to the report-approved claim that these reports indicate the centrality of rivâyet and telakki in qiraat transmission.\n- FN361–364 remain in their original order; Kastallânî and Dânî source-backed continuation remains untouched.\n- F4-083 P351/P352 reframe remains intact. Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 3/3 pages inspected; PASS. No clipping, overlap, footnote overflow, or style propagation.\n- Durable boundary: last F4-084; next F4-085.",
   "structural_state": [
-    "F4-073–082 remain intact and validated from prior durable checkpoints.",
-    "F4-083: 4.1 now distinguishes transmitted qiraat from rasm as a written compatibility/evaluation criterion; repeated historical material is reduced without dropping FN365–367.",
-    "F4-084 `Kırâat sünnettir` evidence-language correction remains intentionally unresolved for its own sequential application.",
+    "F4-073–083 remain intact and validated from prior durable checkpoints.",
+    "F4-084: P350 evidence language is now bounded to rivâyet/telakki centrality while FN361–364 and later Kastallânî/Dânî discussion are preserved.",
+    "F4-085 4.1→4.2 status-transition correction is next.",
     "Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_083.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-083.docx`",
-    "Candidate commit: `812d3189861607d4a2822108d77c45fb48b719eb`",
-    "SHA: `work/runtime/F4-083-SHA256.txt`",
-    "Postflight: `work/runtime/F4-083-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-083-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-083-QA.pdf`",
-    "Human visual review: `work/F4-083-VISUAL-QA.md` — 4/4 PASS"
+    "Replay: `work/apply_f4_084.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-084.docx`",
+    "Candidate commit: `7a7f5aa363b5729a86aecf188c21ba7f67747be0`",
+    "SHA: `work/runtime/F4-084-SHA256.txt`",
+    "Postflight: `work/runtime/F4-084-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-084-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-084-QA.pdf`",
+    "Human visual review: `work/F4-084-VISUAL-QA.md` — 3/3 PASS"
   ],
-  "next_action": "Apply F4-084 to the current F4-083 binary. In P350, retain the source-backed `Kırâat sünnettir` and Ebû Amr evidence but replace the over-strong historical inference with the report-approved bounded statement that these reports indicate the centrality of rivâyet and telakki in qiraat transmission. Preserve FN361–364 and do not disturb the F4-083 P351/P352 reframe. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-083`.",
+  "next_action": "Apply F4-085 to the current F4-084 binary. At the 4.1→4.2 boundary, explicitly distinguish the normative role of the Uthmanic mushaf tradition from the historical evidentiary value of personal Companion codices using the Fourth Report wording. Preserve the 4.2 heading/bookmark and surrounding citations, then run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-084`.",
   "updates": {
-    "F4-083": {
+    "F4-084": {
       "status": "APPLIED",
       "section": "4.1",
-      "action_type": "ACTIVE_AGENT_REFRAME_AND_HISTORY_REDUCTION_WITH_CITATION_PRESERVATION",
-      "resolved_location": "current paragraphs 351–352",
-      "affected_footnote_ids": [365,366,367],
-      "commit": "812d3189861607d4a2822108d77c45fb48b719eb",
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
-      "notes": "P351 repeated history reduced with FN365 preserved. P352 active-agent/selective-rasm framing replaced while FN366–367 remain on the source-backed acceptance-criterion discussion. F4-084 P350 intentionally untouched."
+      "action_type": "EVIDENCE_LANGUAGE_REDUCTION_WITH_FOOTNOTE_PRESERVATION",
+      "resolved_location": "current paragraph 350",
+      "affected_footnote_ids": [361,362,363,364],
+      "commit": "7a7f5aa363b5729a86aecf188c21ba7f67747be0",
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 3/3_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Over-strong inference from the `Kırâat sünnettir` and Ebû Amr reports reduced to an evidentially bounded statement; FN361–364 and later source-backed continuation preserved."
     }
   }
 }
