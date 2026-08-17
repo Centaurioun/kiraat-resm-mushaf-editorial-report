@@ -2,17 +2,17 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `f9061ac5bdf59bdee0fb1b63f30ce8360d56e301` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `a1a1d224abbb83bd2650b28319c566ead4bc1f83` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-081`
-- Next item: `F4-082`
-- DO-NOT-REPEAT: `F4-001`–`F4-081`
+- Last completed item: `F4-082`
+- Next item: `F4-083`
+- DO-NOT-REPEAT: `F4-001`–`F4-082`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-081.docx`
-- Current working SHA-256: `707ca2de808935a2bec9a57dd7a2a335180b5ac76fe4e3eb1dece308658bed63`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-082.docx`
+- Current working SHA-256: `299bed4bcf3fa1b479ec1ff1b6ee1baa0f7aa4210dd47f789cdf1f35cc81bbad`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
@@ -22,23 +22,23 @@
 - Protected OOXML: baseline-identical
 
 ## Latest structural state
-- F4-073–080 remain intact and validated from prior durable checkpoints.
-- F4-081: modern-orthography claim now distinguishes possible loss/change of rasm-based graphic visibility from the continued existence/transmission of qiraat through telakki, eda and riwaya; no citation remapping was needed.
-- F4-082 Third-to-Fourth Section transition remains intentionally unresolved for its own sequential application.
+- F4-073–081 remain intact and validated from prior durable checkpoints.
+- F4-082: explicit transition now links the separated historical/normative rasm discussion to the Fourth Section's concrete qiraat-use questions, using an existing safe empty paragraph and preserving all heading/bookmark structures.
+- Fourth Section content remains otherwise unchanged; F4-083 is the next substantive opening correction.
 - Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application.
 
 ## Evidence
-- Replay: `work/apply_f4_081.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-081.docx`
-- Candidate commit: `731f245b2a57abb181aa7b1f685ff665d172026c`
-- SHA: `work/runtime/F4-081-SHA256.txt`
-- Postflight: `work/runtime/F4-081-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-081-TECHNICAL-VALIDATION.txt`
-- QA PDF: `work/runtime/F4-081-QA.pdf`
-- Human visual review: `work/F4-081-VISUAL-QA.md` — 4/4 PASS
+- Replay: `work/apply_f4_082.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-082.docx`
+- Candidate commit: `ed3719283c97f7fff7e00a46803369c9525955af`
+- SHA: `work/runtime/F4-082-SHA256.txt`
+- Postflight: `work/runtime/F4-082-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-082-TECHNICAL-VALIDATION.txt`
+- QA PDF: `work/runtime/F4-082-QA.pdf`
+- Human visual review: `work/F4-082-VISUAL-QA.md` — 4/4 PASS
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Apply F4-082 to the current F4-081 binary. Add the report-approved transition immediately before the Fourth Section boundary: `Resm-i Osmânî'ye bağlılığın tarihsel ve normatif gerekçeleri bu şekilde ayrıştırıldıktan sonra, resmin kırâat ilmindeki somut kullanım alanlarına dönmek gerekir. Dördüncü bölüm, resmin kırâat rivâyetlerinin tespiti ve tahdidi, sahâbe mushafları, şâz okuyuşlar, tercih, tevcîh ve sonraki mushaf neşriyle ilişkisini bu açıdan ele almaktadır.` Preserve the Fourth Section heading/bookmark structures and all citation identities; run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-081`.
+Apply F4-083 to the current F4-082 binary. Reframe the opening of Fourth Section 4.1 so rasm is not described as an autonomous source/agent producing or selecting qiraat. Use the report-approved formulation: `Resm-i Osmânî, kırâat rivâyetlerini meydana getiren bağımsız bir kaynak değildir. Bununla birlikte rivâyetle nakledilen okuyuşların müşterek mushaf yazısıyla bağdaşma durumunu göstermesi bakımından tespit ve tahditte kullanılan önemli verilerden biridir. Okuyuşun varlığı ve edâsı rivâyet yoluyla bilinir; resm ise bu okuyuşun Osmânî mushafların yazılı çerçevesi içindeki konumunu değerlendirmeye katkı sağlar.` Preserve source-backed evidence and footnotes; reduce only unnecessary repeated cem/istinsah history where report-approved. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-082`.

@@ -152,3 +152,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL artifact or style propagation. Final-page whitespace is bounded-slice termination, not a new blank manuscript page.
 - Durable boundary: last F4-081; next F4-082.
+
+
+## F4-082 checkpoint — PASS
+- Final replay: `work/apply_f4_082.py`; candidate commit `ed3719283c97f7fff7e00a46803369c9525955af`; SHA-256 `299bed4bcf3fa1b479ec1ff1b6ee1baa0f7aa4210dd47f789cdf1f35cc81bbad`.
+- F4-082 APPLIED: the report-approved Third-to-Fourth transition was placed in an existing safe empty paragraph immediately before the Fourth Section boundary; no paragraph was inserted and body count remains 677.
+- `DÖRDÜNCÜ BÖLÜM`, the Fourth Section main title and 4.1 heading retain their bookmark structures; citation identity/order is unchanged.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 4/4 pages inspected; PASS. Existing Fourth Section new-page behavior remains intact; no new blank page or section break was introduced.
+- Durable boundary: last F4-082; next F4-083.
