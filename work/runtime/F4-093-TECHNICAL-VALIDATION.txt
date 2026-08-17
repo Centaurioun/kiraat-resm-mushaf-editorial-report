@@ -1,0 +1,11 @@
+PASS
+sha256=3a2c3f5b16a889de359ed59c859a2eeff4d9610b76b92c7af023858e8a9a5a06
+footnotes=469
+references=469
+reference_identity_multiset=canonical-equal
+reference_order_change=allowed-for-accepted-structural-moves
+orphans=0
+dangling=0
+duplicates=0
+fields=520
+protected_parts=baseline-identical
