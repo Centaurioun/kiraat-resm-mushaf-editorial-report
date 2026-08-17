@@ -1,5 +1,5 @@
 DOCX=artifacts/checkpoints/manuscript-working-f4-110.docx
-SHA256=003b2b197d447861291443ab0004a08685ac218dd2b90944c6da5d7bb54f83fb
+SHA256=60ef742cb135ed85970542cffc00c8d0d368f488cbf2d6f93fed102b2c1c4bec
 BODY_PARAGRAPHS=676
 REFERENCE_ORDER_CHANGED=True
 P452	FN=[]	RTL=0	BOOK=0	Aynı ihtiyat, mushaf yazımının anlam ve hikmet boyutuna ilişkin yorumlarda da korunmalıdır. Hazif, ziyâde, ibdâl, vasl, fasl ve benzeri her yazım özelliğine zorunlu olarak gizli bir mana, belagat sırrı veya mucizevi işaret yüklemek, kaynakların taşıyabileceğinden daha geniş sonuçlara yol açabilir. Bazı yazım biçimlerinin kırâat ve mana ilişkisini açıklayan bir değeri bulunsa da erken Arap yazısının özellikleri, dönemsel imlâ teamülleri, şehir mushaflarına ilişkin rivâyetler ve dilsel gerekçeler öncelikle değerlendirilmelidir. Tarihsel-filolojik açıklamalar ile işârî yahut hikmet merkezli yorumlar aynı delil düzeyinde sunulmamalıdır.
