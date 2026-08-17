@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `b3223a23562193c5772d8a19305e12bb4bb393df` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `1587ac6953d000742fe1c275a10cea835881ebde` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -12,17 +12,17 @@
 
 ## State machine
 - Current phase: `FOURTH_APPLY`
-- Last fully completed Fourth Report item: `F4-106`
-- Next Fourth Report item: `F4-107`
+- Last fully completed Fourth Report item: `F4-107`
+- Next Fourth Report item: `F4-108`
 - Last fully completed Fifth Report item: none
 - Next Fifth Report item: `F5-001` (do not start until Fourth Report validation passes)
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-106.docx`
-- Current working DOCX SHA-256: `cace4c42e6f82b75c31b6533fb732892aa2d916baf8ec7abf6168730d6e15f38`
-- Last known good commit basis: `b3223a23562193c5772d8a19305e12bb4bb393df`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-106.docx`
-- Current body paragraph count: 677
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-107.docx`
+- Current working DOCX SHA-256: `a9edfb112efc69f95d99f400197d0f66ad47e977142dee8555d83cdc93233186`
+- Last known good commit basis: `1587ac6953d000742fe1c275a10cea835881ebde`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-107.docx`
+- Current body paragraph count: 676
 
 ## Integrity
 - Genuine footnotes/references: 469/469
@@ -34,17 +34,17 @@
 - Protected OOXML parts: baseline-identical
 
 ## Structural-edit state
-- F4-073–105 remain intact and validated from prior durable checkpoints.
-- F4-106: the Meclis is now the grammatical subject and the institutional-control claim is limited to supported scope.
-- Current body paragraph count remains 677; FN467 and all protected OOXML remain preserved.
-- F4-107+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh.
+- F4-073–106 remain intact and validated from prior durable checkpoints.
+- F4-107: 4.7 now has one final multicausal conclusion after the Türkiye material; the premature pre-Türkiye conclusion is removed.
+- Current body paragraph count is 676; FN467–469 identities and all protected OOXML remain preserved.
+- F4-108+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Last validation result: **PASS**.
 - Deterministic replay/idempotency: PASS.
-- Technical validation: PASS (`work/runtime/F4-106-TECHNICAL-VALIDATION.txt`).
-- Bounded visual QA: PASS, 3/3 pages inspected (`work/F4-106-VISUAL-QA.md`).
+- Technical validation: PASS (`work/runtime/F4-107-TECHNICAL-VALIDATION.txt`).
+- Bounded visual QA: PASS, 6/6 pages inspected (`work/F4-107-VISUAL-QA.md`).
 
 ## Exact next action
-Apply only F4-107 to current F4-106. Keep 4.7 in the order early print chronology → regional/qiraat-rivayah printings → Ottoman/Türkiye control and publication experience → one final conclusion. Remove the premature pre-Türkiye conclusion and replace the repeated Türkiye ending with the report-approved single multicausal final paragraph. Preserve the 1873 decision/permission versus 1874 actual-printing distinction and all genuine citations; do not pre-apply F4-108+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-106`.
+Apply only F4-108 to current F4-107. In the Sonuç section, consolidate the repeated restatement of the main thesis into the report-approved two-focus conclusion text: qiraat transmission is fundamentally oral/riwayah-based while rasm-i Osmani is a complementary compatibility criterion, and oral transmission plus common written mushaf frame operate together without graphical possibility independently establishing authenticity. Preserve any unique nonrepetitive historical/result propositions outside the repeated blocks and do not pre-apply F4-109+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-107`.

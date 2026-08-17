@@ -384,3 +384,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render P437–441: 3/3 pages inspected; PASS.
 - Durable boundary: last F4-106; next F4-107.
+
+
+## F4-107 checkpoint — PASS
+- Final replay: `work/apply_f4_107.py`; candidate SHA-256 `a9edfb112efc69f95d99f400197d0f66ad47e977142dee8555d83cdc93233186`.
+- F4-107 APPLIED: removed the citation-free pre-Türkiye intermediate conclusion so 4.7 now proceeds directly from printed-mushaf chronology into the Ottoman/Türkiye control and publication experience.
+- Replaced only the repeated `Özetle...` Türkiye ending inside the FN469-bearing final paragraph with the report-approved single multicausal final conclusion. The source-backed Diyanet/imlâ propositions and FN469 remain in place.
+- The 1873 decision/permission versus 1874 actual-printing distinction remains unchanged. Body paragraphs 677→676 solely because the former citation-free intermediate conclusion paragraph was removed.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render P430–442: 6/6 pages inspected; PASS. The final 4.7 conclusion ends normally and `Sonuç` begins on the following page using the pre-existing page/section break.
+- Durable boundary: last F4-107; next F4-108.
