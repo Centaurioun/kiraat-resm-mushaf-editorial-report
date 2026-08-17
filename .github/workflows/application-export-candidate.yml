@@ -1,0 +1,37 @@
+name: application-export-candidate
+
+on:
+  push:
+    branches:
+      - editorial/apply-fourth-fifth-reports
+    paths:
+      - 'work/EXPORT-CANDIDATE-REQUEST.json'
+      - '.github/workflows/application-export-candidate.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/apply-fourth-fifth-reports
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify candidate SHA
+        run: |
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          r=json.loads(Path('work/EXPORT-CANDIDATE-REQUEST.json').read_text(encoding='utf-8'))
+          p=Path(r['docx']); assert hashlib.sha256(p.read_bytes()).hexdigest()==r['sha256']
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: application-candidate-docx
+          path: artifacts/checkpoints/manuscript-working-f4-112.docx
+          retention-days: 2
+          if-no-files-found: error
