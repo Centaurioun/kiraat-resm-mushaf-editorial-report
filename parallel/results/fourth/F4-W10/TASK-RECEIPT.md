@@ -16,18 +16,20 @@
 5. `parallel/INTEGRATION-PROTOCOL.md`
 6. root `AGENTS.md`
 
-No external bibliography research was used. All citation/edition decisions below are based on repository evidence.
+No external bibliography research was used. Citation/edition analysis is repository-evidence-only.
 
-## Frozen dependency
+## Mandatory baseline gate
 
-`parallel/baselines/F4-047-BASELINE.json` identifies the required logical F4-047 DOCX SHA-256 as:
+`parallel/WORKER-CONTRACT.md` requires every Fourth worker to reconstruct logical F4-047 from the canonical source plus the existing replay pipeline and verify SHA-256:
 
 `6621390d51f78d73fabf615f2c224dfb36b22c37cefc81e8e6cb568e20105fb7`
 
-The repository's F4-047 validation record reports the expected inventory: 469 genuine footnotes, 469 footnote references, 520 fields, 465 Zotero item fields, 1 Zotero bibliography field, 365 RTL markers, 53/53 bookmark start/end IDs, 52 hyperlinks, 10 sections, no comments/revisions, and valid ZIP/XML structure.
+If that reconstruction cannot be reproduced, the contract requires the worker to stop and record `DEPENDENCY_BLOCKED`.
+
+The repository contains the canonical/bootstrap DOCX as a 406,091-byte GitHub blob and durable F4-047 replay/validation records, but this ChatGPT runtime could not materialize the binary blob into the local execution container. Therefore the mandatory reconstruction and SHA verification could **not** be performed by W10.
 
 ## Worker disposition
 
-`READY_FOR_INTEGRATION`
+`DEPENDENCY_BLOCKED`
 
-The replay is deterministic, fail-closed, baseline-SHA-aware, and synthetically tested for idempotency. This runtime could not materialize the 406,091-byte GitHub DOCX into the local execution container, so **no claim is made that the worker replay itself was executed against the real F4-047 binary here**. The replay therefore carries an explicit exact-SHA worker-proof gate plus full integration-time validation requirements. Content/citation ambiguity is resolved; binary replay and visual QA remain mandatory integration gates.
+No assigned item is claimed applied, validated, visually QA-passed, or ready for integration. The citation map and candidate replay artifact are preserved only as bounded preparatory evidence for a later rerun in an environment that can materialize the DOCX and satisfy the baseline gate.
