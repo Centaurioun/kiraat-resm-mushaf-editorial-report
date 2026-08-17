@@ -1,0 +1,5 @@
+{
+  "request": "recover_f4_047_and_inventory_f4_048_052",
+  "expected_input_sha256": "6621390d51f78d73fabf615f2c224dfb36b22c37cefc81e8e6cb568e20105fb7",
+  "next_item": "F4-048"
+}
