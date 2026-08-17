@@ -35,3 +35,20 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - No clipping, overlap, footnote overflow, abnormal whitespace, unintended style propagation or edit-caused pagination defect.
 - Full-document direct render again exceeded the bounded execution window; this matches the pre-existing renderer limitation and does not waive final all-page acceptance.
 - Result: **PASS — F4-043–047 CHECKPOINT VALIDATED**.
+
+## F4-048–052 checkpoint — PASS
+- Application replay: `work/apply_f4_048_052.py` (commit `38d21ce2e2e83828e395d7d1c75048d7b1f9e483`).
+- First runner execution: F4-048 APPLIED; F4-049 STRUCTURALLY_APPLIED; F4-050 STRUCTURALLY_APPLIED; F4-051 APPLIED; F4-052 APPLIED.
+- Second runner execution: all five `ALREADY_SATISFIED`; candidate byte-identical.
+- Candidate DOCX: `artifacts/checkpoints/manuscript-working-f4-052.docx`.
+- Candidate SHA-256: `f94870a3b0b8a06acdb39cf104e78c3715f0c734068ee6dfc312795c863eabe4`.
+- ZIP/XML integrity: PASS.
+- Genuine footnotes/references: 469/469; orphan=0; dangling=0; duplicate=0; ID/reference order preserved.
+- Word fields: 520; Zotero 465 item + 1 bibliography; field instructions baseline-identical.
+- Bookmarks 53/53; hyperlinks 52; protected OOXML parts baseline-identical.
+- Arabic/RTL: structural inventory equal to canonical source; F4-048 Arabic runs preserved rather than regenerated.
+- Bounded render: `work/runtime/F4-052-QA.pdf`, 12 pages.
+- Visual QA: 12/12 pages inspected; PASS. No clipping, overlap, footnote overflow, heading damage, Arabic-direction defect, or batch-induced style propagation.
+- Visible pre-existing red editorial/style markings are deferred to their later Fourth/Fifth items; not introduced by F4-048–052.
+- Evidence: `work/runtime/F4-052-TECHNICAL-VALIDATION.txt`, `work/runtime/F4-052-POSTFLIGHT.txt`, `work/F4-052-VISUAL-QA.md`.
+- Durable boundary after this checkpoint: last `F4-052`; next `F4-053`.
