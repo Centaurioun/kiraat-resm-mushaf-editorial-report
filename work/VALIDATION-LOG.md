@@ -82,3 +82,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Corrected bounded render: 9 pages, 9/9 visually inspected, PASS. No clipping, overlap, footnote overflow, heading damage, Arabic/RTL damage or batch-induced style propagation remains.
 - Pre-existing red editorial/Fifth targets remain for their designated later items.
 - Durable boundary: last F4-062; next F4-063.
+
+
+## F4-063–067 checkpoint — PASS
+- Replay: `work/apply_f4_063_067.py`; candidate commit `185d2358cb5d1e4a4ccc38a485f0e63f5c065cf8`.
+- Candidate SHA-256: `83ce4b2a4d1291d3d2defc47052230d634438e5e1d8a000231fcca9c1d138171`.
+- First replay: F4-063–067 APPLIED; second replay: all already satisfied; byte-identical.
+- Technical gate: ZIP/XML PASS; 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; Zotero 465+1; canonical-equal RTL/bookmarks/hyperlinks; protected OOXML baseline-identical.
+- Long F4-065 Arabic/city-mushaf paragraph retained 70 RTL runs and FNs241–245; Arabic text was not regenerated.
+- Bounded render: 7 pages; 7/7 visually inspected; PASS. No clipping, overlap, footnote overflow, heading damage, RTL defect, or batch-induced style propagation.
+- Durable boundary: last F4-067; next F4-068.
