@@ -189,3 +189,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 4/4 pages inspected; PASS. FN373–378 and Arabic examples remain stable; visible red editor note belongs to pending F4-087.
 - Durable boundary: last F4-085; next F4-086.
+
+
+## F4-086 checkpoint — PASS
+- Final replay: `work/apply_f4_086.py`; candidate commit `0ac7c7dc0c2b6c0e07ceab8987c8aed0e4b23896`; SHA-256 `2d7e6dc15e60c4b85db6de9459cc5bdd24f41da98f77577d17871e68d477826c`.
+- F4-086 STRUCTURALLY_APPLIED: a citation-free category frame was inserted after the FN375 general introduction and before the FN376 explanatory/tafsiri example, explicitly distinguishing reading reports, explanatory/tafsiri expressions, word-order/writing differences, and disputed records.
+- Source-specific example paragraphs, FN375–383 and Arabic/RTL runs were not relocated or collapsed. The normative criterion is stated as the Uthmanic written framework together with sound transmission.
+- F4-087 open editor note and F4-088 active-agent conclusions were intentionally left for their own sequential items.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical; RTL inventory canonical-equal.
+- Bounded render: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, Arabic corruption, heading damage or style propagation.
+- Durable boundary: last F4-086; next F4-087.
