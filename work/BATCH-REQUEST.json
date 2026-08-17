@@ -1,8 +1,9 @@
 {
   "checkpoint": "F4-078",
+  "revision": 2,
   "input_docx": "artifacts/checkpoints/manuscript-working-f4-077.docx",
   "input_sha256": "9b8eea35a108e9cefe160e5d7f4975f9adbc278d2a6883cd016a3b67fa46a56c",
-  "script": "work/apply_f4_078.py",
+  "script": "work/apply_f4_078_v2.py",
   "output_docx": "artifacts/checkpoints/manuscript-working-f4-078.docx",
   "sha_file": "work/runtime/F4-078-SHA256.txt",
   "postflight_file": "work/runtime/F4-078-POSTFLIGHT.txt",
