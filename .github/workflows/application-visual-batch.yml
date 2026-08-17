@@ -44,7 +44,8 @@ jobs:
                   if n.endswith('.xml') or n.endswith('.rels'):etree.fromstring(z.read(n))
               ds=etree.fromstring(zs.read('word/document.xml'));d=etree.fromstring(z.read('word/document.xml'));fs=etree.fromstring(zs.read('word/footnotes.xml'));f=etree.fromstring(z.read('word/footnotes.xml'))
               f0=[x for x in fs.xpath('//w:footnote/@w:id',namespaces=NS) if int(x)>0];ff=[x for x in f.xpath('//w:footnote/@w:id',namespaces=NS) if int(x)>0];r0=ds.xpath('//w:footnoteReference/@w:id',namespaces=NS);rr=d.xpath('//w:footnoteReference/@w:id',namespaces=NS)
-              assert ff==f0 and rr==r0 and len(ff)==len(rr)==469 and set(ff)==set(rr) and not [k for k,v in Counter(rr).items() if v>1]
+              # Structural paragraph moves may legitimately change body-reference order. Preserve exact note identities/text and exact reference multiplicity instead.
+              assert ff==f0 and len(ff)==len(rr)==469 and set(ff)==set(rr) and Counter(rr)==Counter(r0) and not [k for k,v in Counter(rr).items() if v>1]
               def instrs(zipf):
                   out=[]
                   for n in zipf.namelist():
@@ -57,7 +58,7 @@ jobs:
               assert len(d.xpath('//w:bookmarkStart',namespaces=NS))==len(ds.xpath('//w:bookmarkStart',namespaces=NS)) and len(d.xpath('//w:bookmarkEnd',namespaces=NS))==len(ds.xpath('//w:bookmarkEnd',namespaces=NS))
               assert len(d.xpath('//w:hyperlink',namespaces=NS))==len(ds.xpath('//w:hyperlink',namespaces=NS))
               for n in prot:assert zs.read(n)==z.read(n),n
-              ps=d.xpath('.//w:body/w:p',namespaces=NS);lines=[f'DOCX={cur}',f'SHA256={got}',f'BODY_PARAGRAPHS={len(ps)}']
+              ps=d.xpath('.//w:body/w:p',namespaces=NS);lines=[f'DOCX={cur}',f'SHA256={got}',f'BODY_PARAGRAPHS={len(ps)}',f'REFERENCE_ORDER_CHANGED={rr!=r0}']
               for i in range(max(0,int(req['start'])),min(len(ps),int(req['end'])+1)):
                   p=ps[i];text=''.join(p.xpath('.//w:t/text()',namespaces=NS));fns=p.xpath('.//w:footnoteReference/@w:id',namespaces=NS);lines.append(f'P{i}\tFN={fns}\tRTL={len(p.xpath(".//w:rtl",namespaces=NS))}\tBOOK={len(p.xpath(".//w:bookmarkStart|.//w:bookmarkEnd",namespaces=NS))}\t{text}')
               qa=deepcopy(d);body=qa.find('.//w:body',namespaces=NS);qps=body.xpath('./w:p',namespaces=NS)
@@ -66,7 +67,7 @@ jobs:
               xml=etree.tostring(qa,xml_declaration=True,encoding='UTF-8',standalone='yes')
               with ZipFile('/tmp/qa/slice.docx','w') as zout:
                   for info in z.infolist():zout.writestr(info,xml if info.filename=='word/document.xml' else z.read(info.filename))
-          Path(req['technical_file']).write_text('PASS\nsha256='+got+'\nfootnotes=469\nreferences=469\norphans=0\ndangling=0\nduplicates=0\nfields=520\nprotected_parts=baseline-identical\n',encoding='utf-8')
+          Path(req['technical_file']).write_text('PASS\nsha256='+got+'\nfootnotes=469\nreferences=469\nreference_identity_multiset=canonical-equal\nreference_order_change=allowed-for-accepted-structural-moves\norphans=0\ndangling=0\nduplicates=0\nfields=520\nprotected_parts=baseline-identical\n',encoding='utf-8')
           Path(req['range_file']).write_text('\n'.join(lines),encoding='utf-8')
           PY
       - name: Render and rasterize all bounded QA pages
