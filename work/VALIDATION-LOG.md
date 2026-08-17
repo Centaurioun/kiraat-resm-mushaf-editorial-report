@@ -422,3 +422,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render P452–458: 5/5 pages inspected; PASS.
 - Durable boundary: last F4-110; next F4-111.
+
+
+## F4-111 checkpoint — PASS
+- Final replay: `work/apply_f4_111.py`; candidate SHA-256 `4c9eba6d4ca9e65dc7148921c8331a21f4768ecc3aed65c9c0deda0ff98166c9`.
+- F4-111 APPLIED: normalized 4 eligible main-text `Kur’ân`/`Kur'an` occurrences to house-style `Kur’an` and 6 curated specific-name contexts to `İmam Mushaf`; bibliography and footnotes were excluded.
+- Direct quotations and italic bibliographic work titles retain their original spelling. In particular Mervân’s quotation at P64 retains lower-case `imam mushafa`, while narrative specific-name usages are normalized.
+- Deterministic second replay reports ALREADY_SATISFIED and is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Three bounded representative visual slices: P20–29 4/4 PASS; P62–85 8/8 PASS; P397–411 7/7 PASS; total 19/19 pages PASS.
+- Durable boundary: last F4-111; next F4-112.
