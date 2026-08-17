@@ -245,3 +245,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, heading damage, run-boundary spacing defect or style propagation.
 - Durable boundary: last F4-091; next F4-092.
+
+
+## F4-092 checkpoint — PASS
+- Final replay: `work/apply_f4_092.py`; candidate commit `82395162a0958f8340fe36837c00a86db94ca310`; SHA-256 `0c6d7393e9eac0054ef8c9de7e27cc6dc257a741e54587df0f260c4512ce0d6f`.
+- F4-092 APPLIED: the FN392–393 paragraph now distinguishes rasm-nonconforming, shadh, ahad/tafsiri and alleged-mansukh categories rather than collapsing them into one historical/usuli line.
+- The source-specific Ibn Taymiyya / Ibn al-Jazari middle discussion and FN392–393 are preserved; the concluding claim is narrowed so rasm conformity is one important criterion considered with isnad, language and scholarly acceptance.
+- P377/FN394 and later F4-093+ material remain untouched.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, run-boundary spacing defect or style propagation. The short fifth page is the natural bounded-slice ending, not a blank-page regression.
+- Durable boundary: last F4-092; next F4-093.

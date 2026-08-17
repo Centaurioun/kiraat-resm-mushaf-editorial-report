@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `bfc768dcd8af60dcee52ed2944e7720ef1c2e1f2` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `ed58d62f363213647d63bdf8a262b440bf25bbf2` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -12,16 +12,16 @@
 
 ## State machine
 - Current phase: `FOURTH_APPLY`
-- Last fully completed Fourth Report item: `F4-091`
-- Next Fourth Report item: `F4-092`
+- Last fully completed Fourth Report item: `F4-092`
+- Next Fourth Report item: `F4-093`
 - Last fully completed Fifth Report item: none
 - Next Fifth Report item: `F5-001` (do not start until Fourth Report validation passes)
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-091.docx`
-- Current working DOCX SHA-256: `85fe7159297c0d7ca2c477a871af1655571e14fd7b68f44abe7040b7994bb222`
-- Last known good commit basis: `bfc768dcd8af60dcee52ed2944e7720ef1c2e1f2`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-091.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-092.docx`
+- Current working DOCX SHA-256: `0c6d7393e9eac0054ef8c9de7e27cc6dc257a741e54587df0f260c4512ce0d6f`
+- Last known good commit basis: `ed58d62f363213647d63bdf8a262b440bf25bbf2`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-092.docx`
 - Current body paragraph count: 677
 
 ## Integrity
@@ -34,17 +34,17 @@
 - Protected OOXML parts: baseline-identical
 
 ## Structural-edit state
-- F4-073–090 remain intact and validated from prior durable checkpoints.
-- F4-091: the Ibn Shanbudh case is no longer reduced to rasm nonconformity alone; FN391 remains attached to the bounded case summary.
-- F4-092 begins in the following FN392–393 paragraph and remains pending.
+- F4-073–091 remain intact and validated from prior durable checkpoints.
+- F4-092: the FN392–393 paragraph now differentiates acceptance/status categories while preserving source-specific evidence.
+- P377/FN394 remains the next untouched boundary; F4-093 is pending.
 - Derived TOC field has not been recalculated; final Word field/TOC refresh remains required after editorial application.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Last validation result: **PASS**.
 - Deterministic replay/idempotency: PASS.
-- Technical validation: PASS (`work/runtime/F4-091-TECHNICAL-VALIDATION.txt`).
-- Bounded visual QA: PASS, 4/4 pages inspected (`work/F4-091-VISUAL-QA.md`).
+- Technical validation: PASS (`work/runtime/F4-092-TECHNICAL-VALIDATION.txt`).
+- Bounded visual QA: PASS, 5/5 pages inspected (`work/F4-092-VISUAL-QA.md`).
 
 ## Exact next action
-Read and apply only F4-092 to the current F4-091 binary. Preserve the F4-091 Ibn Shanbudh paragraph/FN391 and do not collapse later F4-093+ material. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-091`.
+Read and apply only F4-093 to the current F4-092 binary. Preserve P376/FN392–393 and all source-backed 4.3 material; do not pre-apply F4-094+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-092`.
