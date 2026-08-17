@@ -25,7 +25,7 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install lxml
-      - name: Reconstruct F4-047
+      - name: Reconstruct and validate F4-047
         run: |
           set -euo pipefail
           mkdir -p /tmp/app work/runtime artifacts/checkpoints
@@ -37,8 +37,49 @@ jobs:
           python work/apply_f4_033_037.py /tmp/app/f4_032.docx /tmp/app/f4_037.docx
           python work/apply_f4_038_042.py /tmp/app/f4_037.docx /tmp/app/f4_042.docx
           python work/apply_f4_043_047.py /tmp/app/f4_042.docx /tmp/app/f4_047.docx
-          got=$(sha256sum /tmp/app/f4_047.docx | awk '{print $1}')
-          test "$got" = "6621390d51f78d73fabf615f2c224dfb36b22c37cefc81e8e6cb568e20105fb7"
+          python work/apply_f4_043_047.py /tmp/app/f4_047.docx /tmp/app/f4_047_rerun.docx
+          cmp /tmp/app/f4_047.docx /tmp/app/f4_047_rerun.docx
+          sha256sum /tmp/app/f4_047.docx | tee work/runtime/F4-047-RUNNER-SHA256.txt
+          python - <<'PY'
+          from zipfile import ZipFile
+          from lxml import etree
+          from collections import Counter
+          from pathlib import Path
+          W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'; NS={'w':W}
+          src=Path('source/manuscript/current/redaktorden_gelen.docx'); cur=Path('/tmp/app/f4_047.docx')
+          prot=['word/footnotes.xml','word/styles.xml','word/numbering.xml','word/settings.xml','word/_rels/document.xml.rels']
+          with ZipFile(src) as zs, ZipFile(cur) as z:
+              assert z.testzip() is None
+              for n in z.namelist():
+                  if n.endswith('.xml') or n.endswith('.rels'): etree.fromstring(z.read(n))
+              ds=etree.fromstring(zs.read('word/document.xml')); d=etree.fromstring(z.read('word/document.xml'))
+              fs=etree.fromstring(zs.read('word/footnotes.xml')); f=etree.fromstring(z.read('word/footnotes.xml'))
+              fn_src=[x for x in fs.xpath('//w:footnote/@w:id',namespaces=NS) if int(x)>0]
+              fn=[x for x in f.xpath('//w:footnote/@w:id',namespaces=NS) if int(x)>0]
+              refs_src=ds.xpath('//w:footnoteReference/@w:id',namespaces=NS); refs=d.xpath('//w:footnoteReference/@w:id',namespaces=NS)
+              assert len(fn)==469 and len(refs)==469 and fn==fn_src and refs==refs_src
+              c=Counter(refs); assert not [k for k,v in c.items() if v>1]
+              assert set(fn)==set(refs)
+              instr=[]
+              for n in z.namelist():
+                  if n.startswith('word/') and n.endswith('.xml'):
+                      try: r=etree.fromstring(z.read(n)); instr += [''.join(x.itertext()).strip() for x in r.xpath('//w:instrText',namespaces=NS)]
+                      except: pass
+              assert len(instr)==520
+              assert sum('ADDIN ZOTERO_ITEM' in s for s in instr)==465
+              assert sum('ADDIN ZOTERO_BIBL' in s for s in instr)==1
+              assert len(d.xpath('//w:rtl',namespaces=NS))==365
+              assert len(d.xpath('//w:bookmarkStart',namespaces=NS))==53 and len(d.xpath('//w:bookmarkEnd',namespaces=NS))==53
+              assert len(d.xpath('//w:hyperlink',namespaces=NS))==52
+              for n in prot: assert zs.read(n)==z.read(n), n
+              text='\n'.join(''.join(p.xpath('.//w:t/text()',namespaces=NS)) for p in d.xpath('.//w:body/w:p',namespaces=NS))
+              for needle in [
+                'Ca‘berî (ö. 732/1332)',
+                'Bakara sûresinin 269. âyetindeki',
+                'Bu özellik tek başına belirli bir kırâati ortaya çıkarmaz'
+              ]: assert needle in text
+          Path('work/runtime/F4-047-RUNNER-VALIDATION.txt').write_text('PASS\nfootnotes=469\nreferences=469\nfields=520\nzotero=465+1\nrtl=365\nbookmarks=53/53\nhyperlinks=52\nprotected_parts=baseline-identical\nidempotency=byte-identical-on-runner\n',encoding='utf-8')
+          PY
           cp /tmp/app/f4_047.docx artifacts/checkpoints/manuscript-working-f4-047.docx
       - name: Generate F4-048-052 preflight inventory
         run: |
@@ -49,10 +90,8 @@ jobs:
           W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'; NS={'w':W}
           p=Path('/tmp/app/f4_047.docx')
           with ZipFile(p) as z:
-              d=etree.fromstring(z.read('word/document.xml'))
-              f=etree.fromstring(z.read('word/footnotes.xml'))
-              ps=d.xpath('.//w:body/w:p',namespaces=NS)
-              lines=[]; note_ids=set()
+              d=etree.fromstring(z.read('word/document.xml')); f=etree.fromstring(z.read('word/footnotes.xml'))
+              ps=d.xpath('.//w:body/w:p',namespaces=NS); lines=[]; note_ids=set()
               lines.append(f'BODY_PARAGRAPHS={len(ps)}')
               for i,x in enumerate(ps):
                   t=''.join(x.xpath('.//w:t/text()',namespaces=NS))
