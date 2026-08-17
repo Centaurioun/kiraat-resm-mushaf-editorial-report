@@ -28,7 +28,7 @@ jobs:
           set -euo pipefail
           mkdir -p /tmp/qa work/runtime qa-pages
           python - <<'PY'
-          import json,hashlib
+          import json,hashlib,os
           from pathlib import Path
           from zipfile import ZipFile
           from lxml import etree
@@ -57,9 +57,6 @@ jobs:
               assert len(d.xpath('//w:rtl',namespaces=NS))==len(ds.xpath('//w:rtl',namespaces=NS))
               assert len(d.xpath('//w:bookmarkStart',namespaces=NS))==len(ds.xpath('//w:bookmarkStart',namespaces=NS)) and len(d.xpath('//w:bookmarkEnd',namespaces=NS))==len(ds.xpath('//w:bookmarkEnd',namespaces=NS))
               assert len(d.xpath('//w:hyperlink',namespaces=NS))==len(ds.xpath('//w:hyperlink',namespaces=NS))
-              # Fail closed. Normally every protected part is byte-identical. For an explicitly authorized
-              # footnote-text item, only the named genuine footnotes may differ; all other footnotes,
-              # including separator records, must remain canonically identical and target structure must match.
               for n in prot:
                   if n!='word/footnotes.xml' or not allowed_fn:
                       assert zs.read(n)==z.read(n),n
@@ -76,7 +73,7 @@ jobs:
                           if c14n(a[0])!=c14n(b[0]):changed.append(fid)
                       else:assert c14n(a[0])==c14n(b[0]),('unauthorized footnote changed',fid)
                   assert set(changed)==allowed_fn,('authorized footnote change set mismatch',changed,sorted(allowed_fn))
-              ps=d.xpath('.//w:body/w:p',namespaces=NS);lines=[f'DOCX={cur}',f'SHA256={got}',f'BODY_PARAGRAPHS={len(ps)}',f'REFERENCE_ORDER_CHANGED={rr!=r0}',f'ALLOWED_FOOTNOTE_TEXT_IDS={sorted(allowed_fn)}']
+              ps=d.xpath('.//w:body/w:p',namespaces=NS);lines=[f'DOCX={cur}',f'SHA256={got}',f'BODY_PARAGRAPHS={len(ps)}',f'REFERENCE_ORDER_CHANGED={rr!=r0}',f'RUN_ID={os.environ.get("GITHUB_RUN_ID","")}',f'ALLOWED_FOOTNOTE_TEXT_IDS={sorted(allowed_fn)}']
               for i in range(max(0,int(req['start'])),min(len(ps),int(req['end'])+1)):
                   p=ps[i];text=''.join(p.xpath('.//w:t/text()',namespaces=NS));fns=p.xpath('.//w:footnoteReference/@w:id',namespaces=NS);lines.append(f'P{i}\tFN={fns}\tRTL={len(p.xpath(".//w:rtl",namespaces=NS))}\tBOOK={len(p.xpath(".//w:bookmarkStart|.//w:bookmarkEnd",namespaces=NS))}\t{text}')
               for fid in sorted(allowed_fn,key=int):
