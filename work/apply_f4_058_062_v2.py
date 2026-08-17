@@ -6,6 +6,7 @@ import shutil,sys
 import apply_f4_058_062 as base
 
 W=base.W; NS=base.NS
+helper=base.base
 
 def remove_inherited_italics(p):
     changed=False
@@ -31,13 +32,12 @@ def apply(src:Path,out:Path):
             'Bununla birlikte kırâat imamlarının otoritesi ve öğretim geleneklerinin yerleşmesi yalnız mushaf yazısıyla açıklanamaz;',
             "Resm-i Osmânî’nin kırâat rivâyetiyle ilişkisi genel ilkeler düzeyinde bu şekilde belirlendikten sonra,"
         ]
-        touched=[]
         for anchor in anchors:
-            hits=[p for p in ps if base.norm(base.txt(p)).startswith(base.norm(anchor))]
+            hits=[p for p in ps if helper.norm(helper.txt(p)).startswith(helper.norm(anchor))]
             if len(hits)!=1:
                 raise RuntimeError(f'expected one style-repair target for {anchor[:70]!r}, got {len(hits)}')
             if remove_inherited_italics(hits[0]):
-                changed=True; touched.append(anchor[:40])
+                changed=True
         if changed:
             xml=etree.tostring(doc,xml_declaration=True,encoding='UTF-8',standalone='yes')
             with ZipFile(out,'w') as zout:
@@ -46,12 +46,11 @@ def apply(src:Path,out:Path):
         else:
             shutil.copyfile(tmp,out)
     tmp.unlink(missing_ok=True)
-    base.base.validate(src,out)
-    # Verify target paragraphs contain no direct italic run properties.
+    helper.validate(src,out)
     with ZipFile(out) as z:
         d=etree.fromstring(z.read('word/document.xml')); ps=d.xpath('.//w:body/w:p',namespaces=NS)
         for anchor in anchors:
-            hits=[p for p in ps if base.norm(base.txt(p)).startswith(base.norm(anchor))]
+            hits=[p for p in ps if helper.norm(helper.txt(p)).startswith(helper.norm(anchor))]
             assert len(hits)==1
             assert not hits[0].xpath('./w:r/w:rPr/w:i|./w:r/w:rPr/w:iCs',namespaces=NS)
     return rows+[('STYLE-REPAIR','F4-060/F4-062','APPLIED' if changed else 'ALREADY_SATISFIED')]
