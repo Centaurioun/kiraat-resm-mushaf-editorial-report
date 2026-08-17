@@ -2,17 +2,17 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `7ee1b0ab66f38e3499d28de3e271e108ac36983b` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `625e5d7ee602bc3861c271558052126a2f18be0e` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-084`
-- Next item: `F4-085`
-- DO-NOT-REPEAT: `F4-001`–`F4-084`
+- Last completed item: `F4-085`
+- Next item: `F4-086`
+- DO-NOT-REPEAT: `F4-001`–`F4-085`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-084.docx`
-- Current working SHA-256: `459e8be1b0a4d294cb5ac5473d19073d68b879bd5069405eda2da02a8281f86d`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-085.docx`
+- Current working SHA-256: `d48b31281dc7e8ddde3b30856e2ce1d6edcfc4b079de2c87c63d0b54fdac0af1`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
@@ -22,23 +22,23 @@
 - Protected OOXML: baseline-identical
 
 ## Latest structural state
-- F4-073–083 remain intact and validated from prior durable checkpoints.
-- F4-084: P350 evidence language is now bounded to rivâyet/telakki centrality while FN361–364 and later Kastallânî/Dânî discussion are preserved.
-- F4-085 4.1→4.2 status-transition correction is next.
+- F4-073–084 remain intact and validated from prior durable checkpoints.
+- F4-085: explicit normative-status transition now separates common Uthmanic mushaf authority from the historical evidentiary role of personal Companion codices; 4.2 bookmark heading preserved.
+- F4-086 category differentiation in 4.2 is next; F4-087 open editor note remains intentionally unresolved.
 - Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application.
 
 ## Evidence
-- Replay: `work/apply_f4_084.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-084.docx`
-- Candidate commit: `7a7f5aa363b5729a86aecf188c21ba7f67747be0`
-- SHA: `work/runtime/F4-084-SHA256.txt`
-- Postflight: `work/runtime/F4-084-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-084-TECHNICAL-VALIDATION.txt`
-- QA PDF: `work/runtime/F4-084-QA.pdf`
-- Human visual review: `work/F4-084-VISUAL-QA.md` — 3/3 PASS
+- Replay: `work/apply_f4_085.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-085.docx`
+- Candidate commit: `aa3b05436d460bb9d412fcecd488c4609fef407b`
+- SHA: `work/runtime/F4-085-SHA256.txt`
+- Postflight: `work/runtime/F4-085-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-085-TECHNICAL-VALIDATION.txt`
+- QA PDF: `work/runtime/F4-085-QA.pdf`
+- Human visual review: `work/F4-085-VISUAL-QA.md` — 4/4 PASS
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Apply F4-085 to the current F4-084 binary. At the 4.1→4.2 boundary, explicitly distinguish the normative role of the Uthmanic mushaf tradition from the historical evidentiary value of personal Companion codices using the Fourth Report wording. Preserve the 4.2 heading/bookmark and surrounding citations, then run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-084`.
+Apply F4-086 to the current F4-085 binary. Reframe the 4.2 Companion-codex discussion so attributed differences are not collapsed into a single mensuh/tefsiri category. Preserve source-specific evidence, Arabic runs, and footnote identities; distinguish reading reports, explanatory/tafsiri expressions, word-order/writing differences, and disputed records, while keeping the Uthmanic written framework plus sound transmission as the normative criterion. Do not resolve unrelated F4-088/089 claims prematurely. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-085`.

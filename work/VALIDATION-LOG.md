@@ -180,3 +180,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - F4-083 P351/P352 reframe remains intact. Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 3/3 pages inspected; PASS. No clipping, overlap, footnote overflow, or style propagation.
 - Durable boundary: last F4-084; next F4-085.
+
+
+## F4-085 checkpoint — PASS
+- Final replay: `work/apply_f4_085.py`; candidate commit `aa3b05436d460bb9d412fcecd488c4609fef407b`; SHA-256 `d48b31281dc7e8ddde3b30856e2ce1d6edcfc4b079de2c87c63d0b54fdac0af1`.
+- F4-085 APPLIED: the former 4.1 summary was replaced with the report-approved transition distinguishing the normative common Uthmanic mushaf tradition from the historical evidentiary value of personal Companion codices.
+- The transition is citation-free and immediately precedes the bookmark-bearing 4.2 heading; heading/bookmark structures remain unchanged.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 4/4 pages inspected; PASS. FN373–378 and Arabic examples remain stable; visible red editor note belongs to pending F4-087.
+- Durable boundary: last F4-085; next F4-086.
