@@ -1,12 +1,12 @@
 {
-  "checkpoint": "F4-098",
+  "checkpoint": "F4-099",
   "revision": 1,
-  "input_docx": "artifacts/checkpoints/manuscript-working-f4-097.docx",
-  "input_sha256": "9f76e4b8a98a70a8af42a73b261945378c5bd423d94903b4ac20a94b2880f5da",
-  "script": "work/apply_f4_098.py",
-  "output_docx": "artifacts/checkpoints/manuscript-working-f4-098.docx",
-  "sha_file": "work/runtime/F4-098-SHA256.txt",
-  "postflight_file": "work/runtime/F4-098-POSTFLIGHT.txt",
-  "postflight_start": 190,
-  "postflight_end": 405
+  "input_docx": "artifacts/checkpoints/manuscript-working-f4-098.docx",
+  "input_sha256": "30c5f9140dfbf9425e860563e9c297e3ba3d6b154a74c8d7f5b7236d1df20bc0",
+  "script": "work/apply_f4_099.py",
+  "output_docx": "artifacts/checkpoints/manuscript-working-f4-099.docx",
+  "sha_file": "work/runtime/F4-099-SHA256.txt",
+  "postflight_file": "work/runtime/F4-099-POSTFLIGHT.txt",
+  "postflight_start": 402,
+  "postflight_end": 409
 }
