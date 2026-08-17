@@ -1,42 +1,42 @@
 {
-  "last_f4": 80,
-  "next_f4": 81,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-080.docx",
-  "sha256": "26a91412247c513c0c607994547c5fdd56492c67bb0d9bc05ce7107e7f022851",
+  "last_f4": 81,
+  "next_f4": 82,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-081.docx",
+  "sha256": "707ca2de808935a2bec9a57dd7a2a335180b5ac76fe4e3eb1dece308658bed63",
   "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-080-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-080-VISUAL-QA.md",
-  "visual_pages": 3,
+  "technical_file": "work/runtime/F4-081-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-081-VISUAL-QA.md",
+  "visual_pages": 4,
   "holds": "none",
-  "validation_marker": "## F4-080 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_080.py`; candidate commit `eacf658a35c4075bf0ac92fed7a7475c60204449`; SHA-256 `26a91412247c513c0c607994547c5fdd56492c67bb0d9bc05ce7107e7f022851`.\n- F4-080 APPLIED: the unsupported counterfactual that fully phonetic writing would weaken mushafaha or cause eda forms to disappear was replaced with the report-approved evidentially bounded statement about telakki, mushafaha, isnad and the written framework.\n- FN340 is preserved on the replacement paragraph. Deterministic second replay is byte-identical.\n- Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 3/3 pages inspected; PASS. No clipping, overlap, style leakage, footnote overflow or transition damage.\n- Durable boundary: last F4-080; next F4-081.",
+  "validation_marker": "## F4-081 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_081.py`; candidate commit `731f245b2a57abb181aa7b1f685ff665d172026c`; SHA-256 `707ca2de808935a2bec9a57dd7a2a335180b5ac76fe4e3eb1dece308658bed63`.\n- F4-081 APPLIED: the claim that changing orthography would cause qiraat variants themselves to disappear was replaced with the report-approved distinction between loss/change of graphic visibility within the Uthmanic rasm and the independent transmission basis of readings through telakki, eda and riwaya.\n- Target paragraph was citation-free and structurally plain; FN352 remains on the preceding filological paragraph. No footnote remapping was required.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL artifact or style propagation. Final-page whitespace is bounded-slice termination, not a new blank manuscript page.\n- Durable boundary: last F4-081; next F4-082.",
   "structural_state": [
-    "F4-073–079 remain intact and validated from prior durable checkpoints.",
-    "F4-080: counterfactual mushafaha/eda-loss claim replaced by a bounded statement that eda details are transmitted through telakki, mushafaha and isnad while mushaf writing supplies the shared written framework; FN340 preserved.",
-    "F4-081 qiraat-loss claim remains intentionally unresolved for its own sequential application.",
+    "F4-073–080 remain intact and validated from prior durable checkpoints.",
+    "F4-081: modern-orthography claim now distinguishes possible loss/change of rasm-based graphic visibility from the continued existence/transmission of qiraat through telakki, eda and riwaya; no citation remapping was needed.",
+    "F4-082 Third-to-Fourth Section transition remains intentionally unresolved for its own sequential application.",
     "Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_080.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-080.docx`",
-    "Candidate commit: `eacf658a35c4075bf0ac92fed7a7475c60204449`",
-    "SHA: `work/runtime/F4-080-SHA256.txt`",
-    "Postflight: `work/runtime/F4-080-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-080-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-080-QA.pdf`",
-    "Human visual review: `work/F4-080-VISUAL-QA.md` — 3/3 PASS"
+    "Replay: `work/apply_f4_081.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-081.docx`",
+    "Candidate commit: `731f245b2a57abb181aa7b1f685ff665d172026c`",
+    "SHA: `work/runtime/F4-081-SHA256.txt`",
+    "Postflight: `work/runtime/F4-081-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-081-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-081-QA.pdf`",
+    "Human visual review: `work/F4-081-VISUAL-QA.md` — 4/4 PASS"
   ],
-  "next_action": "Apply F4-081 to the current F4-080 binary. Replace the claim that moving to modern orthography would cause qiraat variants themselves to be lost with the report-approved distinction: `Modern imlâya göre yazım, bazı kırâat vecihlerinin resm-i Osmânî içindeki ihtimalî uygunluğunu görünür kılan tarihsel yazım özelliklerini ortadan kaldırabilir veya farklılaştırabilir. Bununla birlikte kırâatlerin varlığı yalnız bu grafik imkâna bağlı değildir; okuyuşların asıl aktarım zemini telakki, edâ ve rivâyet geleneğidir.` Preserve the paragraph's existing footnote mapping, run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-080`.",
+  "next_action": "Apply F4-082 to the current F4-081 binary. Add the report-approved transition immediately before the Fourth Section boundary: `Resm-i Osmânî'ye bağlılığın tarihsel ve normatif gerekçeleri bu şekilde ayrıştırıldıktan sonra, resmin kırâat ilmindeki somut kullanım alanlarına dönmek gerekir. Dördüncü bölüm, resmin kırâat rivâyetlerinin tespiti ve tahdidi, sahâbe mushafları, şâz okuyuşlar, tercih, tevcîh ve sonraki mushaf neşriyle ilişkisini bu açıdan ele almaktadır.` Preserve the Fourth Section heading/bookmark structures and all citation identities; run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-081`.",
   "updates": {
-    "F4-080": {
+    "F4-081": {
       "status": "APPLIED",
       "section": "consolidated 3.7",
-      "action_type": "COUNTERFACTUAL_CAUSAL_CLAIM_REPLACEMENT",
-      "resolved_location": "current paragraph 320 within consolidated 3.7",
-      "affected_footnote_ids": [340],
-      "commit": "eacf658a35c4075bf0ac92fed7a7475c60204449",
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 3/3_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Counterfactual causal scenario removed and replaced with the report-approved bounded statement. FN340 preserved on the replacement paragraph; no structural or citation regressions."
+      "action_type": "GRAPHIC_VISIBILITY_VS_TRANSMISSION_DISTINCTION",
+      "resolved_location": "current paragraph 335 within consolidated 3.7",
+      "affected_footnote_ids": [],
+      "commit": "731f245b2a57abb181aa7b1f685ff665d172026c",
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Unsupported qiraat-loss causal claim replaced with report-approved distinction between graphic visibility in rasm and oral/transmitted existence of readings. Target was citation-free; FN352 remains on preceding paragraph."
     }
   }
 }
