@@ -1,41 +1,40 @@
 {
-  "last_f4": 104,
-  "next_f4": 105,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-104.docx",
-  "sha256": "641e964820181acf70d8c7e5af7608e1347e7e4faecb2a1a19bfb7628710ee13",
+  "last_f4": 105,
+  "next_f4": 106,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-105.docx",
+  "sha256": "640fdbf06ee48de553d7341b88592cff5ead107010ccef15e2278f684f36b118",
   "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-104-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-104-VISUAL-QA.md",
-  "visual_pages": 4,
+  "technical_file": "work/runtime/F4-105-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-105-VISUAL-QA.md",
+  "visual_pages": 3,
   "holds": "none",
-  "validation_marker": "## F4-104 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_104.py`; candidate SHA-256 `641e964820181acf70d8c7e5af7608e1347e7e4faecb2a1a19bfb7628710ee13`.\n- F4-104 APPLIED: after F4-101 had already removed the old `three aims` paragraph, the surviving citation-free over-single-cause synthesis in current P413 was replaced with the report-approved multicausal standardization paragraph.\n- Resm-i Osmani adherence is now one important factor among printing technology, tashih/control boards, qiraat/writing expertise, educational institutions and official publication policies. Source-backed P410–412 and P414–416 remain unchanged; F4-105 P437 remains untouched.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P410–416: 4/4 pages inspected; PASS.\n- Durable boundary: last F4-104; next F4-105.",
+  "validation_marker": "## F4-105 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_105.py`; candidate SHA-256 `640fdbf06ee48de553d7341b88592cff5ead107010ccef15e2278f684f36b118`.\n- F4-105 APPLIED: replaced the citation-free 4.7 closure that portrayed printed mushafs as active drivers of qiraat spread/standardization with the report-approved multicausal formulation. Printed mushafs are now said to increase written visibility and use, while regional spread also depends on teaching traditions, regional qiraat preferences, official publication policies and educational institutions.\n- Source-backed P434–436 and the Türkiye chronology beginning at P438 remain unchanged.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P434–440: 3/3 pages inspected; PASS. Existing stale TOC display in the isolated slice is expected and final field refresh remains deferred.\n- Durable boundary: last F4-105; next F4-106.",
   "structural_state": [
-    "F4-073–103 remain intact and validated from prior durable checkpoints.",
-    "F4-104: modern mushaf standardization is framed as multicausal rather than as the direct natural result of one rasm theory.",
-    "Current body paragraph count remains 677; protected OOXML and all footnote identities remain preserved.",
-    "F4-105+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required."
+    "F4-073–104 remain intact and validated from prior durable checkpoints.",
+    "F4-105: qiraat spread/standardization is now framed as multicausal; print increases written visibility/use without being the sole explanatory cause.",
+    "Current body paragraph count remains 677; P438+ Türkiye chronology and all protected OOXML remain preserved.",
+    "F4-106+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required."
   ],
   "evidence": [
-    "Preflight: `work/runtime/F4-104-PREFLIGHT.txt`",
-    "Replay: `work/apply_f4_104.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-104.docx`",
-    "SHA: `work/runtime/F4-104-SHA256.txt`",
-    "Postflight: `work/runtime/F4-104-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-104-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-104-QA.pdf`",
-    "Human visual review: `work/F4-104-VISUAL-QA.md` — 4/4 PASS"
+    "Replay: `work/apply_f4_105.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-105.docx`",
+    "SHA: `work/runtime/F4-105-SHA256.txt`",
+    "Postflight: `work/runtime/F4-105-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-105-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-105-QA.pdf`",
+    "Human visual review: `work/F4-105-VISUAL-QA.md` — 3/3 PASS"
   ],
-  "next_action": "Read and apply only F4-105 to the current F4-104 binary. Replace the current 4.7 closure that presents printed mushafs as actively causing qiraat spread/standardization with the report-approved multicausal formulation: printed mushafs increase written visibility/use, while regional spread also depends on teaching traditions, regional qiraat preferences, official publication policy and educational institutions. Preserve surrounding source-backed chronology and do not pre-apply F4-106+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-104`.",
+  "next_action": "Read and apply only F4-106 to the current F4-105 binary. Repair the 1889 Teftis-i Mesahif-i Serife Meclisi sentence so the Meclis is the grammatical subject and the claim is limited to supported institutional inspection/control of mushaf publication. Map genuine FN467 to the retained proposition before editing; do not pre-apply F4-107+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-105`.",
   "updates": {
-    "F4-104": {
+    "F4-105": {
       "status": "APPLIED",
-      "section": "4.6 modern-standardization synthesis",
-      "action_type": "MULTICAUSAL_STANDARDIZATION_REFRAME",
-      "resolved_location": "current paragraph 413",
+      "section": "4.7 qiraat-spread synthesis before Türkiye chronology",
+      "action_type": "MULTICAUSAL_QIRAAT_SPREAD_CLOSURE",
+      "resolved_location": "current paragraph 437",
       "affected_footnote_ids": [],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Did not reintroduce the F4-101-removed three-aims paragraph; replaced only the surviving single-cause synthesis."
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 3/3_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Replaced the entire citation-free active-causation closure; surrounding source-backed chronology remains unchanged."
     }
   }
 }
