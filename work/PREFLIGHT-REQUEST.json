@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-084.docx",
-  "start": 353,
-  "end": 372,
-  "output": "work/runtime/F4-085-PREFLIGHT.txt",
-  "purpose": "current 4.1 end to 4.2 heading and opening inventory before F4-085 transition"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-085.docx",
+  "start": 360,
+  "end": 400,
+  "output": "work/runtime/F4-086-PREFLIGHT.txt",
+  "purpose": "full current 4.2 Companion-codex category and citation inventory before F4-086 high-risk rewrite"
 }
