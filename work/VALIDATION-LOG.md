@@ -357,3 +357,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render P427–432: 3/3 pages inspected; PASS.
 - Durable boundary: last F4-103; next F4-104.
+
+
+## F4-104 checkpoint — PASS
+- Final replay: `work/apply_f4_104.py`; candidate SHA-256 `641e964820181acf70d8c7e5af7608e1347e7e4faecb2a1a19bfb7628710ee13`.
+- F4-104 APPLIED: after F4-101 had already removed the old `three aims` paragraph, the surviving citation-free over-single-cause synthesis in current P413 was replaced with the report-approved multicausal standardization paragraph.
+- Resm-i Osmani adherence is now one important factor among printing technology, tashih/control boards, qiraat/writing expertise, educational institutions and official publication policies. Source-backed P410–412 and P414–416 remain unchanged; F4-105 P437 remains untouched.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render P410–416: 4/4 pages inspected; PASS.
+- Durable boundary: last F4-104; next F4-105.

@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `e7d7942a508bd151f851e68a8f78e2b77cf0e22e` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `7fb10d31754be6f3fc1e43806084a61476f707ba` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -12,16 +12,16 @@
 
 ## State machine
 - Current phase: `FOURTH_APPLY`
-- Last fully completed Fourth Report item: `F4-103`
-- Next Fourth Report item: `F4-104`
+- Last fully completed Fourth Report item: `F4-104`
+- Next Fourth Report item: `F4-105`
 - Last fully completed Fifth Report item: none
 - Next Fifth Report item: `F5-001` (do not start until Fourth Report validation passes)
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-103.docx`
-- Current working DOCX SHA-256: `31e7ab7f74f1a3370c102ccd63336bedccda664a0e6674a4dbd30193d2bf58b2`
-- Last known good commit basis: `e7d7942a508bd151f851e68a8f78e2b77cf0e22e`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-103.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-104.docx`
+- Current working DOCX SHA-256: `641e964820181acf70d8c7e5af7608e1347e7e4faecb2a1a19bfb7628710ee13`
+- Last known good commit basis: `7fb10d31754be6f3fc1e43806084a61476f707ba`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-104.docx`
 - Current body paragraph count: 677
 
 ## Integrity
@@ -34,17 +34,17 @@
 - Protected OOXML parts: baseline-identical
 
 ## Structural-edit state
-- F4-073–102 remain intact and validated from prior durable checkpoints.
-- F4-103: the Saint Petersburg 1787 sentence now uses only the report-authorized II. Katerina attribution and no uncertain personal name.
-- Current body paragraph count remains 677; all surrounding chronology and protected OOXML remain preserved.
-- F4-104+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required.
+- F4-073–103 remain intact and validated from prior durable checkpoints.
+- F4-104: modern mushaf standardization is framed as multicausal rather than as the direct natural result of one rasm theory.
+- Current body paragraph count remains 677; protected OOXML and all footnote identities remain preserved.
+- F4-105+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Last validation result: **PASS**.
 - Deterministic replay/idempotency: PASS.
-- Technical validation: PASS (`work/runtime/F4-103-TECHNICAL-VALIDATION.txt`).
-- Bounded visual QA: PASS, 3/3 pages inspected (`work/F4-103-VISUAL-QA.md`).
+- Technical validation: PASS (`work/runtime/F4-104-TECHNICAL-VALIDATION.txt`).
+- Bounded visual QA: PASS, 4/4 pages inspected (`work/F4-104-VISUAL-QA.md`).
 
 ## Exact next action
-Read and apply only F4-104 to the current F4-103 binary. Identify the surviving modern-standardization single-cause synthesis after F4-101 consolidation and replace only the still-active over-single-cause formulation with the report-approved multicausal paragraph naming resm-i Osmani adherence, printing technology, correction/control boards, qiraat/writing expertise, educational institutions and official publication policies. Preserve source-backed evidence and do not pre-apply F4-105+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-103`.
+Read and apply only F4-105 to the current F4-104 binary. Replace the current 4.7 closure that presents printed mushafs as actively causing qiraat spread/standardization with the report-approved multicausal formulation: printed mushafs increase written visibility/use, while regional spread also depends on teaching traditions, regional qiraat preferences, official publication policy and educational institutions. Preserve surrounding source-backed chronology and do not pre-apply F4-106+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-104`.

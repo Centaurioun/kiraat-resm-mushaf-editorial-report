@@ -2,17 +2,17 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `e7d7942a508bd151f851e68a8f78e2b77cf0e22e` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `7fb10d31754be6f3fc1e43806084a61476f707ba` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-103`
-- Next item: `F4-104`
-- DO-NOT-REPEAT: `F4-001`–`F4-103`
+- Last completed item: `F4-104`
+- Next item: `F4-105`
+- DO-NOT-REPEAT: `F4-001`–`F4-104`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-103.docx`
-- Current working SHA-256: `31e7ab7f74f1a3370c102ccd63336bedccda664a0e6674a4dbd30193d2bf58b2`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-104.docx`
+- Current working SHA-256: `641e964820181acf70d8c7e5af7608e1347e7e4faecb2a1a19bfb7628710ee13`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
@@ -22,22 +22,23 @@
 - Protected OOXML: baseline-identical
 
 ## Latest structural state
-- F4-073–102 remain intact and validated from prior durable checkpoints.
-- F4-103: the Saint Petersburg 1787 sentence now uses only the report-authorized II. Katerina attribution and no uncertain personal name.
-- Current body paragraph count remains 677; all surrounding chronology and protected OOXML remain preserved.
-- F4-104+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required.
+- F4-073–103 remain intact and validated from prior durable checkpoints.
+- F4-104: modern mushaf standardization is framed as multicausal rather than as the direct natural result of one rasm theory.
+- Current body paragraph count remains 677; protected OOXML and all footnote identities remain preserved.
+- F4-105+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required.
 
 ## Evidence
-- Replay: `work/apply_f4_103.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-103.docx`
-- SHA: `work/runtime/F4-103-SHA256.txt`
-- Postflight: `work/runtime/F4-103-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-103-TECHNICAL-VALIDATION.txt`
-- QA PDF: `work/runtime/F4-103-QA.pdf`
-- Human visual review: `work/F4-103-VISUAL-QA.md` — 3/3 PASS
+- Preflight: `work/runtime/F4-104-PREFLIGHT.txt`
+- Replay: `work/apply_f4_104.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-104.docx`
+- SHA: `work/runtime/F4-104-SHA256.txt`
+- Postflight: `work/runtime/F4-104-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-104-TECHNICAL-VALIDATION.txt`
+- QA PDF: `work/runtime/F4-104-QA.pdf`
+- Human visual review: `work/F4-104-VISUAL-QA.md` — 4/4 PASS
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Read and apply only F4-104 to the current F4-103 binary. Identify the surviving modern-standardization single-cause synthesis after F4-101 consolidation and replace only the still-active over-single-cause formulation with the report-approved multicausal paragraph naming resm-i Osmani adherence, printing technology, correction/control boards, qiraat/writing expertise, educational institutions and official publication policies. Preserve source-backed evidence and do not pre-apply F4-105+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-103`.
+Read and apply only F4-105 to the current F4-104 binary. Replace the current 4.7 closure that presents printed mushafs as actively causing qiraat spread/standardization with the report-approved multicausal formulation: printed mushafs increase written visibility/use, while regional spread also depends on teaching traditions, regional qiraat preferences, official publication policy and educational institutions. Preserve surrounding source-backed chronology and do not pre-apply F4-106+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-104`.
