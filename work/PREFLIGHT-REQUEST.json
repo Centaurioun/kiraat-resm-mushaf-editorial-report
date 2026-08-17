@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-095.docx",
-  "start": 386,
-  "end": 398,
-  "output": "work/runtime/F4-096-PREFLIGHT.txt",
-  "purpose": "map current 4.4 waqf block, footnote/RTL structure and 4.5 heading boundary before F4-096 causal-scope correction"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-096.docx",
+  "start": 396,
+  "end": 410,
+  "output": "work/runtime/F4-097-PREFLIGHT.txt",
+  "purpose": "map both 4.5 constitutive-source/kurucu-zemin claims, associated footnotes, and the F4-098 editor-note boundary before F4-097 complementary-evidence reframe"
 }
