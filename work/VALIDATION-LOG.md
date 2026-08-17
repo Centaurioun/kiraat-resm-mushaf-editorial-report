@@ -348,3 +348,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render P422–431: 4/4 pages inspected; layout PASS. The isolated QA slice copies all 469 footnotes while retaining sparse high w:id references, so LibreOffice-rendered slice footnote text is not authoritative for footnote-content identity; `work/F4-102-VISUAL-QA.md` records this renderer caveat. Candidate OOXML/preflight and protected-part invariants are authoritative for citation mapping.
 - Durable boundary: last F4-102; next F4-103.
+
+
+## F4-103 checkpoint — PASS
+- Final replay: `work/apply_f4_103.py`; candidate SHA-256 `31e7ab7f74f1a3370c102ccd63336bedccda664a0e6674a4dbd30193d2bf58b2`.
+- F4-103 APPLIED: only the citation-free 1201/1787 Saint Petersburg sentence in current P429 was replaced with the report-authorized safe core naming II. Katerina's order; the uncertain `Mevlây Osman (?)` attribution was removed.
+- Hinkelmann/Marracci chronology before the sentence and P430/FN460, P431/FN461, P432/FN462 after it remain unchanged.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render P427–432: 3/3 pages inspected; PASS.
+- Durable boundary: last F4-103; next F4-104.

@@ -2,17 +2,17 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `6e5fe666e32638957b2937d74fa1f63519d290d1` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `e7d7942a508bd151f851e68a8f78e2b77cf0e22e` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-102`
-- Next item: `F4-103`
-- DO-NOT-REPEAT: `F4-001`–`F4-102`
+- Last completed item: `F4-103`
+- Next item: `F4-104`
+- DO-NOT-REPEAT: `F4-001`–`F4-103`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-102.docx`
-- Current working SHA-256: `38561f498d0abacc3dacea2bb35b92aa1ed4abe67d8b767657ea80e759ff69e8`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-103.docx`
+- Current working SHA-256: `31e7ab7f74f1a3370c102ccd63336bedccda664a0e6674a4dbd30193d2bf58b2`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
@@ -22,23 +22,22 @@
 - Protected OOXML: baseline-identical
 
 ## Latest structural state
-- F4-073–101 remain intact and validated from prior durable checkpoints.
-- F4-102: 4.7 begins with the print/resm problem; unique pre-print historical evidence is compressed rather than silently discarded.
-- Current body paragraph count remains 677; FN454/FN455 identities and all protected OOXML remain preserved.
-- F4-103+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required.
+- F4-073–102 remain intact and validated from prior durable checkpoints.
+- F4-103: the Saint Petersburg 1787 sentence now uses only the report-authorized II. Katerina attribution and no uncertain personal name.
+- Current body paragraph count remains 677; all surrounding chronology and protected OOXML remain preserved.
+- F4-104+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required.
 
 ## Evidence
-- Preflight: `work/runtime/F4-102-PREFLIGHT.txt`
-- Replay: `work/apply_f4_102.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-102.docx`
-- SHA: `work/runtime/F4-102-SHA256.txt`
-- Postflight: `work/runtime/F4-102-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-102-TECHNICAL-VALIDATION.txt`
-- QA PDF: `work/runtime/F4-102-QA.pdf`
-- Human visual review: `work/F4-102-VISUAL-QA.md` — 4/4 layout PASS with isolated-slice footnote-render caveat
+- Replay: `work/apply_f4_103.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-103.docx`
+- SHA: `work/runtime/F4-103-SHA256.txt`
+- Postflight: `work/runtime/F4-103-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-103-TECHNICAL-VALIDATION.txt`
+- QA PDF: `work/runtime/F4-103-QA.pdf`
+- Human visual review: `work/F4-103-VISUAL-QA.md` — 3/3 PASS
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Read and apply only F4-103 to the current F4-102 binary. Correct the 1201/1787 Saint Petersburg statement by removing the unsupported `Mevlây Osman (?)` attribution and using only the report-authorized safe core naming II. Katerina's order. Establish the genuine attached footnote mapping/support before preserving or relocating any reference. Do not pre-apply F4-104+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-102`.
+Read and apply only F4-104 to the current F4-103 binary. Identify the surviving modern-standardization single-cause synthesis after F4-101 consolidation and replace only the still-active over-single-cause formulation with the report-approved multicausal paragraph naming resm-i Osmani adherence, printing technology, correction/control boards, qiraat/writing expertise, educational institutions and official publication policies. Preserve source-backed evidence and do not pre-apply F4-105+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-103`.
