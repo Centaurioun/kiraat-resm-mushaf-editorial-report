@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-107.docx",
-  "start": 442,
-  "end": 462,
-  "output": "work/runtime/F4-108-PREFLIGHT.txt",
-  "purpose": "map the current Sonuc section after durable F4-107; identify the repeated main-thesis blocks targeted by Fourth Report F4-108, preserve unique historical/result propositions, record any attached genuine footnote IDs or protected structure, and do not pre-apply F4-109+"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-110.docx",
+  "start": 0,
+  "end": 675,
+  "output": "work/runtime/F4-111-PREFLIGHT.txt",
+  "purpose": "inventory all main-body occurrences of Kur’an/Kur'’an/Kur’ân variants and Imam Mushaf capitalization variants after durable F4-110; distinguish body prose from bibliography, field-bearing paragraphs and probable direct quotations before F4-111 normalization; do not modify the manuscript or pre-apply F4-112+"
 }
