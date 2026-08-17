@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `4a43d0c24cac51c6f5b927829057b362c9e55b61` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `f755fa1188cdb034947f006f9f247a2876f169cb` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -12,16 +12,16 @@
 
 ## State machine
 - Current phase: `FOURTH_APPLY`
-- Last fully completed Fourth Report item: `F4-094`
-- Next Fourth Report item: `F4-095`
+- Last fully completed Fourth Report item: `F4-095`
+- Next Fourth Report item: `F4-096`
 - Last fully completed Fifth Report item: none
 - Next Fifth Report item: `F5-001` (do not start until Fourth Report validation passes)
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-094.docx`
-- Current working DOCX SHA-256: `523fcf36cae029c4761e254a378beda7f378499ed8a0b13bcf0371cd83079894`
-- Last known good commit basis: `4a43d0c24cac51c6f5b927829057b362c9e55b61`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-094.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-095.docx`
+- Current working DOCX SHA-256: `00eae3a5b7299a0522979562d73e1d4bbe52ff7c205ee59c37f09ba3b4b817ea`
+- Last known good commit basis: `f755fa1188cdb034947f006f9f247a2876f169cb`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-095.docx`
 - Current body paragraph count: 677
 
 ## Integrity
@@ -34,17 +34,17 @@
 - Protected OOXML parts: baseline-identical
 
 ## Structural-edit state
-- F4-073–093 remain intact and validated from prior durable checkpoints.
-- F4-094: the bookmark-backed 4.4 heading now uses the report-approved relationship wording rather than one-way causal 'effect' language.
-- FN400+ 4.4 opening material remains source-backed and unchanged; F4-095 is next.
+- F4-073–094 remain intact and validated from prior durable checkpoints.
+- F4-095: the FN401 imam-preference paragraph now foregrounds received rivayat/teaching and multi-factor evaluation rather than independent selector agency.
+- FN402–403 and later 4.4 material remain untouched; F4-096 is next.
 - Derived TOC field has not been recalculated; final Word field/TOC refresh remains required after editorial application.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Last validation result: **PASS**.
 - Deterministic replay/idempotency: PASS.
-- Technical validation: PASS (`work/runtime/F4-094-TECHNICAL-VALIDATION.txt`).
-- Bounded visual QA: PASS, 4/4 pages inspected (`work/F4-094-VISUAL-QA.md`).
+- Technical validation: PASS (`work/runtime/F4-095-TECHNICAL-VALIDATION.txt`).
+- Bounded visual QA: PASS, 4/4 pages inspected (`work/F4-095-VISUAL-QA.md`).
 
 ## Exact next action
-Read and apply only F4-095 to the current F4-094 binary. Preserve the F4-094 bookmark-backed heading and all source-backed material except where F4-095 explicitly narrows the portrayal of qiraat imams as selectors. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-094`.
+Read and apply only F4-096 to the current F4-095 binary. Distinguish meaning/nahw/rivayat-based waqf from rasm-related written cues such as wasl-fasl and word boundaries; preserve source-backed examples and do not pre-apply F4-097+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-095`.

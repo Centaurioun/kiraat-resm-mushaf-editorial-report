@@ -273,3 +273,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 4/4 pages inspected; PASS. The heading wraps cleanly over two lines with no clipping, overlap, orphaning, footnote overflow or style propagation.
 - Durable boundary: last F4-094; next F4-095.
+
+
+## F4-095 checkpoint — PASS
+- Final replay: `work/apply_f4_095.py`; candidate SHA-256 `00eae3a5b7299a0522979562d73e1d4bbe52ff7c205ee59c37f09ba3b4b817ea`.
+- F4-095 APPLIED: the FN401 paragraph now states that qiraat-imam readings are transmitted within received teaching/rivayat traditions and that preference language does not imply independent creation of new readings.
+- The source-backed Makki three-factor discussion is retained, while rasm conformity is framed as one criterion alongside rivayat, language and general acceptance rather than an independent single determinant.
+- FN401 remains attached to the rewritten paragraph; FN402–403 and later F4-096 material remain untouched.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, run-boundary spacing defect or style propagation.
+- Durable boundary: last F4-095; next F4-096.
