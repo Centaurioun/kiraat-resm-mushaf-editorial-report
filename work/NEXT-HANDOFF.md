@@ -2,17 +2,17 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `08e3aab8d124d9b0c213bc9fef6a6e1bc001f1ca` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `f7597ed4f0aa33fe338666b17e7e7841e7a601ed` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-077`
-- Next item: `F4-078`
-- DO-NOT-REPEAT: `F4-001`–`F4-077`
+- Last completed item: `F4-078`
+- Next item: `F4-079`
+- DO-NOT-REPEAT: `F4-001`–`F4-078`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-077.docx`
-- Current working SHA-256: `9b8eea35a108e9cefe160e5d7f4975f9adbc278d2a6883cd016a3b67fa46a56c`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-078.docx`
+- Current working SHA-256: `131913a4e602ec88fa0582ebe1cd40cfe8f9c1e9461c5692d12d4c4b36465e6f`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
@@ -22,23 +22,23 @@
 - Protected OOXML: baseline-identical
 
 ## Latest structural state
-- F4-073: 3.5 heading reframed to vasl/fasl language and interpretation; Arabic `أم` RTL runs preserved; duplicate second conclusion removed; FNs281–289 retained.
-- F4-074: 3.6 reordered into normativity, historical-origin/tevkîf, language/nahw, hikmet/i‘câz, Ibn Haldun criticism/response, and later binding-status views; source-backed paragraphs and FNs290–310 preserved.
-- F4-075: Ibn Haldun criticism and later response consolidated with semantic citation placement; FN307 follows Ibn Haldun claim and FN306 follows response literature.
-- F4-076: old mixed conclusion replaced by explicit three-level distinction between historical origin, binding status, and later interpretive meanings.
-- F4-077: three-view binding/general-orthography classification moved from old 3.7 into 3.6 with FNs319–324; stale old classification synthesis removed.
+- F4-073–077 remain intact and validated from the prior durable checkpoint.
+- F4-078: old 3.7–3.12 architecture consolidated beneath one main heading, `Resm-i Osmânî’ye Bağlılığın Gerekçeleri ve Sınırları`; former 3.8–3.12 headings are bookmark-preserving normal-body transition sentences.
+- F4-078: unique source-backed paragraphs and all citation identities are retained; only citation-free repetitive/defensive conclusions were removed.
+- F4-078: F4-079 unverified Israel/Africa narrative, F4-080 counterfactual mushafaha claim, and F4-081 qirāʾa-loss claim remain intentionally unresolved for sequential application.
+- Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application.
 
 ## Evidence
-- Replay: `work/apply_f4_073_077_v3.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-077.docx`
-- SHA: `work/runtime/F4-077-SHA256.txt`
-- Postflight: `work/runtime/F4-077-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-077-TECHNICAL-VALIDATION.txt`
-- QA PDF: `work/runtime/F4-077-QA.pdf`
-- Human visual review: `work/F4-077-VISUAL-QA.md` — corrected render 14/14 PASS
+- Replay: `work/apply_f4_078_v2.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-078.docx`
+- SHA: `work/runtime/F4-078-SHA256.txt`
+- Postflight: `work/runtime/F4-078-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-078-TECHNICAL-VALIDATION.txt`
+- QA PDF: `work/runtime/F4-078-QA.pdf`
+- Human visual review: `work/F4-078-VISUAL-QA.md` — repaired full-span 17-page adjudication PASS
 
 ## Open HOLDs
 none
 
 ## Exact next action
-F4-078 is a major high-risk structural consolidation of current 3.7–3.12. Before editing, perform a full current-binary preflight of the entire cluster, inventory every paragraph, heading, footnote, field, Arabic/RTL run and downstream F4/F5 overlap, then implement the report-approved consolidation as one independently validated structural unit. Do not repeat `F4-001`–`F4-077`.
+Apply F4-079 to the current F4-078 binary. Replace the unverified Israel/Africa tampered-mushaf narrative with the report-approved limited attribution and explicit verification caveat, remove the unsupported motive attribution, preserve all 469 footnote references by semantically reanchoring FNs341–347 rather than deleting them, then run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-078`.

@@ -114,3 +114,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Initial 14-page visual QA was rejected for two missing rendered spaces across run boundaries. v3 adds only `xml:space=preserve` to affected whitespace-bearing text nodes.
 - Corrected 14-page render: 14/14 visually inspected; PASS. Both spacing defects are resolved. No clipping, overlap, footnote overflow, heading damage, RTL defect, or batch-induced style propagation remains.
 - Durable boundary: last F4-077; next F4-078.
+
+
+## F4-078 checkpoint — PASS
+- Final replay: `work/apply_f4_078_v2.py`; candidate SHA-256 `131913a4e602ec88fa0582ebe1cd40cfe8f9c1e9461c5692d12d4c4b36465e6f`.
+- F4-078 STRUCTURALLY_APPLIED: current 3.7–3.12 consolidated under `Resm-i Osmânî’ye Bağlılığın Gerekçeleri ve Sınırları`; five former subsection headings demoted to bookmark-preserving transition prose; unique sourced material retained.
+- Eight citation-free repetitive/defensive conclusion paragraphs removed. F4-079/F4-080/F4-081 target claims intentionally remain for their own report items.
+- Second replay: byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical; bookmarks 53/53; hyperlinks 52; RTL canonical-equal.
+- Initial 17-page visual QA rejected because five demoted headings retained direct run-level bold formatting. v2 removes only direct run formatting from those five transition paragraphs. Repaired render adjudicated across all 17 pages (9 changed pages reinspected directly; 8 pages pixel-identical to already inspected first render): PASS.
+- Word TOC remains a stale derived field and must be refreshed in final Word field-refresh phase; field structures were not rewritten during citation-safe application.
+- Durable boundary: last F4-078; next F4-079.
