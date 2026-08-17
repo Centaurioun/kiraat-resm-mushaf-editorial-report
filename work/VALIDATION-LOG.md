@@ -226,3 +226,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, run-boundary spacing defect or style propagation.
 - Durable boundary: last F4-089; next F4-090.
+
+
+## F4-090 checkpoint — PASS
+- Final replay: `work/apply_f4_090.py`, revision 2; candidate commit `8dcd3e9f12ffee82d648d247c0deaa96040d10ae`; SHA-256 `4f6218852a35d1775610e19f199158677540870a4f3ea27974aabbcc7050d5e1`.
+- F4-090 STRUCTURALLY_APPLIED: the earlier citation-free repeated 4.2 conclusion was removed, while the final citation-free conclusion immediately before 4.3 was replaced with the report-approved three-sentence synthesis distinguishing historical witness from normative text authority.
+- Source-backed FN384–388 paragraphs remain in sequence and the 4.3 heading/bookmark was not moved or rewritten. Body paragraph count changed only as expected, 678 -> 677.
+- Revision 1 visual QA exposed an inherited run-whitespace defect from the F4-089 paragraph. Revision 2 was regenerated from the F4-089 input and deterministically fixed the OOXML whitespace-preservation property; the corrected `değerlendirilmelidir. Kurtubî’nin` spacing is visually confirmed. Revision 1 is superseded and must not be used.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render revision 2: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, Arabic/RTL corruption, heading damage, blank-page regression or style propagation.
+- Durable boundary: last F4-090; next F4-091.
