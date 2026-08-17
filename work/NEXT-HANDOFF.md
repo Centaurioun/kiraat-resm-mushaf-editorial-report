@@ -3,7 +3,8 @@
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
 - Branch/checkpoint HEAD: `SELF` — resolve as the current branch HEAD containing this handoff
-- Checkpoint parent HEAD: `90f473c52b404507eb0ccbb5928d65ccfa179f34`
+- Validated F4-006 checkpoint commit: `a0679975bcaf2121eafd397255e6e649daccdbb7`
+- F4-007/F4-008 preflight evidence commit: `4f4d6e664ad49590c6ca72b23e8fe1396751946a`
 - Phase: `FOURTH_APPLY`
 
 - Last completed: `F4-006`
@@ -35,10 +36,15 @@
 - ZIP/XML: **PASS/PASS**
 
 - Completed structural changes: F4-006 Giriş scope/method/contribution/chapter-plan consolidation; six repetitive/superseded paragraphs removed; three unique source-backed intervening paragraphs preserved exactly; downstream paragraph indices must not be reused from the pre-F4-006 structure.
-- Open HOLDs: none
+- Open HOLDs: none at the durable completed boundary.
 
 - Validation: F4-006 replay idempotency **PASS, byte-identical**; bounded current paragraphs 0–59 render = **14 pages**, visually inspected **14/14**, PASS.
 - Full final all-page visual QA remains mandatory at `FINAL_VALIDATE`.
 
+## Preflight immediately ahead
+- Read `work/PREFLIGHT-F4-007-008.md` before applying F4-007/F4-008.
+- F4-007 target is uniquely resolved, contains no footnote/field/bookmark/RTL protected structures, and overlaps F5-014. Fourth Report replacement must be applied first; Fifth must not later restore the removed negative research-question sentence.
+- F4-008 target contains genuine footnote references **15 and 16**. Footnote 16 is specifically attached to the unique `bismikellâhümme` proposition, while F4-008's proposed replacement omits that proposition. Do not append footnote 16 to a generic replacement sentence. If no scientifically valid surviving destination is established, record `FOOTNOTE_PLACEMENT_CONFLICT` rather than guessing or deleting the note.
+
 - DO-NOT-REPEAT: bootstrap and `F4-001–006`.
-- Exact next action: read F4-007 from authoritative `final/fourth-report-v2.md`; locate its target semantically in the CURRENT F4-006 DOCX, inspect nearby footnotes/fields and downstream F5 overlap, apply only the accepted transition replacement if unique and safe, then proceed through the next bounded low-risk unit with validation/checkpoint no later than five items.
+- Exact next action: apply F4-007 from the CURRENT F4-006 state only after updating the deterministic replay path and ledger in a checkpoint-safe way; then confront F4-008's documented footnote-placement issue explicitly before changing its paragraph.
