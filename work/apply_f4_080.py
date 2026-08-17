@@ -48,7 +48,7 @@ def apply(src:Path,out:Path):
         d=etree.fromstring(zin.read('word/document.xml'))
         body=d.find('.//w:body',namespaces=NS)
         ps=body.xpath('./w:p',namespaces=NS)
-        _,p=h.find(ps,OLD)
+        _,p=h.find(ps,OLD,starts=False)
         rewrite_preserve_fn(p,NEW,340)
         xml=etree.tostring(d,xml_declaration=True,encoding='UTF-8',standalone='yes')
         with ZipFile(out,'w') as zout:
