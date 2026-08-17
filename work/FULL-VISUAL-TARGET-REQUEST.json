@@ -1,0 +1,12 @@
+{
+  "checkpoint": "F4-112-FULL",
+  "docx": "artifacts/checkpoints/manuscript-working-f4-112.docx",
+  "sha256": "58e23edd3cdbffbacaf8a2e14fc2dff5ea5357dd76b15cda30c4d31820e12e9a",
+  "neighbor_radius": 0,
+  "page_map_file": "work/runtime/F4-112-FULL-TARGET-PAGES.txt",
+  "targets": [
+    {"label": "FN32", "needle": "İbn Sa’d, et-Tabakâtü’l-kübrâ, 3/355."},
+    {"label": "FN41", "needle": "Mukaddimetân fî ulûmi’l-Kur’ân, thk. Arthur Jeffery"},
+    {"label": "FN105", "needle": "Kastallânî, Letâifu’l-işârât li fünûni’l-kırâât"}
+  ]
+}
