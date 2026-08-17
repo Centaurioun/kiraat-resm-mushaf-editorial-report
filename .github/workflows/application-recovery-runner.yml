@@ -1,0 +1,85 @@
+name: application-recovery-runner
+
+on:
+  push:
+    branches:
+      - editorial/apply-fourth-fifth-reports
+    paths:
+      - 'work/ACTION-REQUEST.json'
+      - 'work/apply_f4_048_052.py'
+      - '.github/workflows/application-recovery-runner.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/apply-fourth-fifth-reports
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install lxml
+      - name: Reconstruct F4-047
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/app work/runtime artifacts/checkpoints
+          python work/apply_docx_edits.py source/manuscript/current/redaktorden_gelen.docx /tmp/app/f4_011.docx
+          python work/apply_f4_012_017.py /tmp/app/f4_011.docx /tmp/app/f4_017.docx
+          python work/apply_f4_018_022.py /tmp/app/f4_017.docx /tmp/app/f4_022.docx
+          python work/apply_f4_023_027.py /tmp/app/f4_022.docx /tmp/app/f4_027.docx
+          python work/apply_f4_028_032.py /tmp/app/f4_027.docx /tmp/app/f4_032.docx
+          python work/apply_f4_033_037.py /tmp/app/f4_032.docx /tmp/app/f4_037.docx
+          python work/apply_f4_038_042.py /tmp/app/f4_037.docx /tmp/app/f4_042.docx
+          python work/apply_f4_043_047.py /tmp/app/f4_042.docx /tmp/app/f4_047.docx
+          got=$(sha256sum /tmp/app/f4_047.docx | awk '{print $1}')
+          test "$got" = "6621390d51f78d73fabf615f2c224dfb36b22c37cefc81e8e6cb568e20105fb7"
+          cp /tmp/app/f4_047.docx artifacts/checkpoints/manuscript-working-f4-047.docx
+      - name: Generate F4-048-052 preflight inventory
+        run: |
+          python - <<'PY'
+          from zipfile import ZipFile
+          from lxml import etree
+          from pathlib import Path
+          W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'; NS={'w':W}
+          p=Path('/tmp/app/f4_047.docx')
+          with ZipFile(p) as z:
+              d=etree.fromstring(z.read('word/document.xml'))
+              f=etree.fromstring(z.read('word/footnotes.xml'))
+              ps=d.xpath('.//w:body/w:p',namespaces=NS)
+              lines=[]; note_ids=set()
+              lines.append(f'BODY_PARAGRAPHS={len(ps)}')
+              for i,x in enumerate(ps):
+                  t=''.join(x.xpath('.//w:t/text()',namespaces=NS))
+                  if 180 <= i <= 245 or any(k in t for k in ['وَوَص','وَأَوْص','Bakara 2/85','İbn Mücâhid','İbnü’l-Cezerî','İbnü\'l-Cezerî','Zerkeşî','KIRÂATLERİN RİVÂYET MANTIĞI','Kırâat ilmi bağımsız bir disiplin']):
+                      fn=x.xpath('.//w:footnoteReference/@w:id',namespaces=NS); note_ids.update(fn)
+                      lines.append(f'P{i}\tFN={fn}\tRTL={len(x.xpath(".//w:rtl",namespaces=NS))}\tFLD={len(x.xpath(".//w:instrText|.//w:fldChar",namespaces=NS))}\tBOOK={len(x.xpath(".//w:bookmarkStart|.//w:bookmarkEnd",namespaces=NS))}\t{t}')
+              lines.append('\nFOOTNOTES')
+              for fid in sorted(note_ids,key=lambda s:int(s)):
+                  e=f.xpath(f'.//w:footnote[@w:id="{fid}"]',namespaces=NS)
+                  if e: lines.append(f'FN{fid}\t'+''.join(e[0].xpath('.//w:t/text()',namespaces=NS)))
+          Path('work/runtime/F4-048-052-PREFLIGHT.txt').write_text('\n'.join(lines),encoding='utf-8')
+          PY
+      - name: Optional apply F4-048-052
+        run: |
+          if [ -f work/apply_f4_048_052.py ]; then
+            python work/apply_f4_048_052.py /tmp/app/f4_047.docx /tmp/app/f4_052.docx
+            python work/apply_f4_048_052.py /tmp/app/f4_052.docx /tmp/app/f4_052_rerun.docx
+            cmp /tmp/app/f4_052.docx /tmp/app/f4_052_rerun.docx
+            cp /tmp/app/f4_052.docx artifacts/checkpoints/manuscript-working-f4-052.docx
+            sha256sum /tmp/app/f4_052.docx > work/runtime/F4-052-SHA256.txt
+          fi
+      - name: Commit recovery outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add work/runtime artifacts/checkpoints/manuscript-working-f4-047.docx
+          if [ -f artifacts/checkpoints/manuscript-working-f4-052.docx ]; then git add artifacts/checkpoints/manuscript-working-f4-052.docx; fi
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'checkpoint(runtime): recover current application state [skip ci]'
+          git push origin HEAD:editorial/apply-fourth-fifth-reports
