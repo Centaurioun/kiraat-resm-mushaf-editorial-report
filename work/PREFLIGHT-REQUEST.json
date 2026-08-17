@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-092.docx",
-  "start": 378,
-  "end": 395,
-  "output": "work/runtime/F4-093-PREFLIGHT.txt",
-  "purpose": "map current 4.3 closing synthesis and 4.4 heading/bookmark boundary before F4-093 conceptual transition rewrite"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-095.docx",
+  "start": 386,
+  "end": 398,
+  "output": "work/runtime/F4-096-PREFLIGHT.txt",
+  "purpose": "map current 4.4 waqf block, footnote/RTL structure and 4.5 heading boundary before F4-096 causal-scope correction"
 }
