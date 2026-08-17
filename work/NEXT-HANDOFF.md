@@ -2,17 +2,17 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `d95d5b4068e6c45f8ed0283905bffa7a4b6384ea` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `bfc768dcd8af60dcee52ed2944e7720ef1c2e1f2` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-090`
-- Next item: `F4-091`
-- DO-NOT-REPEAT: `F4-001`–`F4-090`
+- Last completed item: `F4-091`
+- Next item: `F4-092`
+- DO-NOT-REPEAT: `F4-001`–`F4-091`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-090.docx`
-- Current working SHA-256: `4f6218852a35d1775610e19f199158677540870a4f3ea27974aabbcc7050d5e1`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-091.docx`
+- Current working SHA-256: `85fe7159297c0d7ca2c477a871af1655571e14fd7b68f44abe7040b7994bb222`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
@@ -22,23 +22,23 @@
 - Protected OOXML: baseline-identical
 
 ## Latest structural state
-- F4-073–089 remain intact and validated from prior durable checkpoints.
-- F4-090: repeated citation-free 4.2 conclusions are consolidated into one bounded synthesis immediately before 4.3; FN384–388 evidence paragraphs remain intact.
-- The inherited F4-089 run-boundary whitespace rendering defect is remediated in the F4-090 revision 2 deterministic replay.
-- F4-091 is next; derived TOC field has not been recalculated and final Word field/TOC refresh remains required after editorial application.
+- F4-073–090 remain intact and validated from prior durable checkpoints.
+- F4-091: the Ibn Shanbudh case is no longer reduced to rasm nonconformity alone; FN391 remains attached to the bounded case summary.
+- F4-092 begins in the following FN392–393 paragraph and remains pending.
+- Derived TOC field has not been recalculated; final Word field/TOC refresh remains required after editorial application.
 
 ## Evidence
-- Replay: `work/apply_f4_090.py` revision 2
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-090.docx`
-- Candidate commit: `8dcd3e9f12ffee82d648d247c0deaa96040d10ae`
-- SHA: `work/runtime/F4-090-SHA256.txt`
-- Postflight: `work/runtime/F4-090-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-090-TECHNICAL-VALIDATION.txt`
-- QA PDF: `work/runtime/F4-090-QA.pdf`
-- Human visual review: `work/F4-090-VISUAL-QA.md` — revision 2, 5/5 PASS
+- Replay: `work/apply_f4_091.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-091.docx`
+- Candidate commit: `99a3565ce4b027b8a27dfc94c6197967d081b3b9`
+- SHA: `work/runtime/F4-091-SHA256.txt`
+- Postflight: `work/runtime/F4-091-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-091-TECHNICAL-VALIDATION.txt`
+- QA PDF: `work/runtime/F4-091-QA.pdf`
+- Human visual review: `work/F4-091-VISUAL-QA.md` — 4/4 PASS
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Read F4-091 from the locked Fourth Report and apply only that item to the current F4-090 revision 2 binary. Preserve the completed F4-090 consolidation, FN384–388 sequence and the 4.3 heading/bookmark. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-090`.
+Read and apply only F4-092 to the current F4-091 binary. Preserve the F4-091 Ibn Shanbudh paragraph/FN391 and do not collapse later F4-093+ material. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-091`.
