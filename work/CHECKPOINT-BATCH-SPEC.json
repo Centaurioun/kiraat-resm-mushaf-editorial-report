@@ -1,40 +1,41 @@
 {
-  "last_f4": 99,
-  "next_f4": 100,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-099.docx",
-  "sha256": "3c3a18fdd19dff05f2bb7e3a03979bc5eb0769085a36b7b2e1c4a61a81d4f8c0",
+  "last_f4": 100,
+  "next_f4": 101,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-100.docx",
+  "sha256": "6949b4cf0af1e4fc087bf6d4313e22a445e49ba5341ab596c19a027ae0c5da8a",
   "body_paragraphs": 678,
-  "technical_file": "work/runtime/F4-099-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-099-VISUAL-QA.md",
+  "technical_file": "work/runtime/F4-100-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-100-VISUAL-QA.md",
   "visual_pages": 3,
   "holds": "none",
-  "validation_marker": "## F4-099 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_099.py`; candidate SHA-256 `3c3a18fdd19dff05f2bb7e3a03979bc5eb0769085a36b7b2e1c4a61a81d4f8c0`.\n- F4-099 APPLIED: inserted the report-approved two-sentence historical bridge between the existing 4.5 closing synthesis and the bookmark-backed 4.6 heading, linking classical rasm literature to later mushaf copying and print-publication practice.\n- Existing 4.5 source-backed content and the 4.6 heading/FN438+ material remain unchanged. The insertion adds exactly one normal body paragraph, increasing body paragraphs from 677 to 678.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P403–409: 3/3 pages inspected; PASS.\n- Durable boundary: last F4-099; next F4-100.",
+  "validation_marker": "## F4-100 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_100.py`; candidate SHA-256 `6949b4cf0af1e4fc087bf6d4313e22a445e49ba5341ab596c19a027ae0c5da8a`.\n- F4-100 APPLIED: at the 4.7 opening, the claim that early mushafs lacked dots/vowels fundamentally in order to preserve multiple qiraat was replaced with the report-approved historically cautious formulation. Early script is now described as later acquiring dots, vowels and auxiliary signs while the basic rasm structure remained; the initial absence of such signs is attributed to the writing system of the period and is not reduced to a single conscious qiraat-preservation purpose.\n- Only the first two causal sentences of current P426 were replaced; the later zapt/rivayat/geographical-distribution discussion in the same paragraph remains intact.\n- Deterministic replay is byte-identical after the helper-path repair. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P423–429: 3/3 pages inspected; PASS. The pre-existing later Huzai work note remains outside this item and pending.\n- Durable boundary: last F4-100; next F4-101.",
   "structural_state": [
-    "F4-073–098 remain intact and validated from prior durable checkpoints.",
-    "F4-099: a single report-approved historical transition paragraph now bridges classical rasm transmission and the modern print-mushaf section.",
-    "The bookmark-backed 4.6 heading and FN438+ source material remain preserved; F4-100+ has not been pre-applied.",
-    "Derived TOC field has not been recalculated; final Word field/TOC refresh remains required after editorial application."
+    "F4-073–099 remain intact and validated from prior durable checkpoints.",
+    "F4-100: early no-dot/no-vowel state is framed historically rather than as a single intentional mechanism for keeping multiple qiraat open.",
+    "Current body paragraph count remains 678; 4.7 heading and FN454+ source material remain preserved.",
+    "F4-101+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_099.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-099.docx`",
-    "SHA: `work/runtime/F4-099-SHA256.txt`",
-    "Postflight: `work/runtime/F4-099-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-099-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-099-QA.pdf`",
-    "Human visual review: `work/F4-099-VISUAL-QA.md` — 3/3 PASS"
+    "Preflight: `work/runtime/F4-100-PREFLIGHT.txt`",
+    "Replay: `work/apply_f4_100.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-100.docx`",
+    "SHA: `work/runtime/F4-100-SHA256.txt`",
+    "Postflight: `work/runtime/F4-100-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-100-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-100-QA.pdf`",
+    "Human visual review: `work/F4-100-VISUAL-QA.md` — 3/3 PASS"
   ],
-  "next_action": "Read and apply only F4-100 to the current F4-099 binary. At the 4.7 opening, replace the claim that the absence of dotting/vocalization in early mushafs was fundamentally a conscious mechanism for preserving multiple qiraat with the report-approved historically cautious formulation. Preserve all affected footnotes/RTL/source material and do not pre-apply F4-101+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-099`.",
+  "next_action": "Read and apply only F4-101 to the current F4-100 binary. In 4.6, consolidate the repeated concluding statements about Dani, Abu Dawud and modern mushaf publication using the report-approved synthesis, while preserving the underlying source-backed evidence and not pre-applying F4-102+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-100`.",
   "updates": {
-    "F4-099": {
+    "F4-100": {
       "status": "APPLIED",
-      "section": "4.5 → 4.6 transition",
-      "action_type": "HISTORICAL_TRANSITION_INSERTION",
-      "resolved_location": "current paragraph 405, immediately before bookmark-backed 4.6 heading at paragraph 406",
+      "section": "4.7 opening",
+      "action_type": "EARLY_SCRIPT_CAUSAL_SCOPE_REFRAME",
+      "resolved_location": "current paragraph 426",
       "affected_footnote_ids": [],
       "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 3/3_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Inserted exactly one citation-free report-approved bridge paragraph without altering the source-backed 4.5 close or 4.6/FN438+ content."
+      "notes": "Replaced only the two problematic opening causal sentences; retained the remainder of P426 and all surrounding source material."
     }
   }
 }
