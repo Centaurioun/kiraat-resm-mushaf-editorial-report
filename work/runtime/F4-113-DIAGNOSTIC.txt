@@ -1,0 +1,11 @@
+SCRIPT=work/apply_f4_113.py
+INPUT=artifacts/checkpoints/manuscript-working-f4-112.docx
+EXPECTED_SHA256=249337542baa6ad19b9ce0e4065c1ec5c85dc3a4efaee9ac4c4b9b5e7e107641
+ACTUAL_SHA256=58e23edd3cdbffbacaf8a2e14fc2dff5ea5357dd76b15cda30c4d31820e12e9a
+PY_COMPILE_RC=0
+RUN_RC=999
+REPLAY_RC=999
+BYTE_IDENTICAL_REPLAY=NA
+--- COMPILE LOG ---
+--- RUN LOG ---
+--- REPLAY LOG ---
