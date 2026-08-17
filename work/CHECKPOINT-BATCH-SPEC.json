@@ -1,42 +1,42 @@
 {
-  "last_f4": 87,
-  "next_f4": 88,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-087.docx",
-  "sha256": "cedcc233e5e3ce9150f3ebbd66b199075517dcac4a7d771a455a03db5e16a3ce",
+  "last_f4": 88,
+  "next_f4": 89,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-088.docx",
+  "sha256": "92d3f7222c33e04fe4c737bd6bce3087e811d02e4f11e78755f95c857e4eb362",
   "body_paragraphs": 678,
-  "technical_file": "work/runtime/F4-087-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-087-VISUAL-QA.md",
+  "technical_file": "work/runtime/F4-088-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-088-VISUAL-QA.md",
   "visual_pages": 4,
   "holds": "none",
-  "validation_marker": "## F4-087 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_087.py`; candidate commit `a49959ebcc7cf55aece1874636838e083da536af`; SHA-256 `cedcc233e5e3ce9150f3ebbd66b199075517dcac4a7d771a455a03db5e16a3ce`.\n- F4-087 APPLIED: the explicit parenthetical editor/work note embedded in the FN377–378 paragraph was removed and ordinary spacing before `Bunun en meşhur örneklerinden biri...` was restored.\n- FN377–378, the Arabic Bakara 2/238 runs and all surrounding source-backed text remain in the same paragraph; F4-088 active-agent wording remains intentionally untouched.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, Arabic/RTL corruption or F4-087-induced style propagation.\n- Durable boundary: last F4-087; next F4-088.",
+  "validation_marker": "## F4-088 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_088.py`; candidate commit `bb9c5bff1d7681a2e9565f2b448d5cab57cc2bba`; SHA-256 `92d3f7222c33e04fe4c737bd6bce3087e811d02e4f11e78755f95c857e4eb362`.\n- F4-088 APPLIED: the active-agent sentence assigning selective/curatorial authority to `Osmânî resm` was replaced with the report-approved distinction between the historical Uthmanic recension/common mushaf acceptance process and rasm as a written evaluative criterion.\n- The target paragraph remains citation-free and structurally unchanged; neighboring source-backed FN380–387 and RTL material remain intact. F4-089 Ibn Masud intent language remains intentionally pending.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow or style propagation.\n- Durable boundary: last F4-088; next F4-089.",
   "structural_state": [
-    "F4-073–086 remain intact and validated from prior durable checkpoints.",
-    "F4-087: the open inline editor note in the FN377–378 paragraph has been removed without moving citations or Arabic runs.",
-    "F4-088 active-agent/curatorial-authority wording in 4.2 is next; F4-089 Ibn Masud intent language remains pending.",
+    "F4-073–087 remain intact and validated from prior durable checkpoints.",
+    "F4-088: 4.2 now attributes normative delimitation to the historical recension/common-acceptance process rather than to rasm as an autonomous actor.",
+    "F4-089 Ibn Masud psychological-intent language is next; F4-090 repeated historical-witness/normative-authority conclusions remain pending.",
     "Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_087.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-087.docx`",
-    "Candidate commit: `a49959ebcc7cf55aece1874636838e083da536af`",
-    "SHA: `work/runtime/F4-087-SHA256.txt`",
-    "Postflight: `work/runtime/F4-087-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-087-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-087-QA.pdf`",
-    "Human visual review: `work/F4-087-VISUAL-QA.md` — 4/4 PASS"
+    "Replay: `work/apply_f4_088.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-088.docx`",
+    "Candidate commit: `bb9c5bff1d7681a2e9565f2b448d5cab57cc2bba`",
+    "SHA: `work/runtime/F4-088-SHA256.txt`",
+    "Postflight: `work/runtime/F4-088-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-088-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-088-QA.pdf`",
+    "Human visual review: `work/F4-088-VISUAL-QA.md` — 4/4 PASS"
   ],
-  "next_action": "Apply F4-088 to the current F4-087 binary. Replace the 4.2 sentence that makes `Osmânî resm` an active selecting/curatorial authority with the report-approved distinction: the Uthmanic recension and subsequent common mushaf acceptance form the determining historical framework, while rasm is one written criterion for evaluating whether transmitted material accords with the common mushaf. Preserve surrounding source-backed paragraphs and footnotes; do not resolve F4-089 prematurely. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-087`.",
+  "next_action": "Apply F4-089 to the current F4-088 binary. Replace the psychological-intent interpretation of Ibn Masud's objection with the report-approved bounded statement that the transmitted reports show objections related to the recension process and his codex, without assigning a definite psychological motive. Preserve the paragraph's source note and do not collapse F4-090 material prematurely. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-088`.",
   "updates": {
-    "F4-087": {
+    "F4-088": {
       "status": "APPLIED",
       "section": "4.2",
-      "action_type": "INLINE_EDITOR_NOTE_REMOVAL",
-      "resolved_location": "current paragraph 364",
-      "affected_footnote_ids": [377,378],
-      "commit": "a49959ebcc7cf55aece1874636838e083da536af",
+      "action_type": "HISTORICAL_ACTOR_REFRAME",
+      "resolved_location": "current paragraph 368",
+      "affected_footnote_ids": [],
+      "commit": "bb9c5bff1d7681a2e9565f2b448d5cab57cc2bba",
       "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Removed only the explicit editor/work note and restored ordinary sentence spacing; FN377–378 and Arabic runs stayed in place."
+      "notes": "Replaced autonomous-curatorial rasm wording with the report-approved historical-process plus written-criterion distinction."
     }
   }
 }
