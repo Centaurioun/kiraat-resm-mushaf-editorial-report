@@ -1,12 +1,12 @@
 {
-  "checkpoint": "F4-113-SLICE-B",
+  "checkpoint": "F4-113-SLICE-C",
   "revision": 1,
   "docx": "artifacts/checkpoints/manuscript-working-f4-113.docx",
   "sha256": "e4287570d99f9d3c20f96752497787e6d97f6a07047555ecbe5c05e5c69bdac1",
-  "start": 274,
-  "end": 280,
+  "start": 389,
+  "end": 401,
   "allowed_footnote_text_ids": [2,28,32,41,50,66,105,271,272,273,274,292,342,344,345,346,377,380,381,407,409,411,414,421,423,424,425,426,427,428,431],
   "technical_file": "work/runtime/F4-113-TECHNICAL-VALIDATION.txt",
-  "range_file": "work/runtime/F4-113-QA-SLICE-B-RANGE.txt",
-  "pdf_file": "work/runtime/F4-113-QA-SLICE-B.pdf"
+  "range_file": "work/runtime/F4-113-QA-SLICE-C-RANGE.txt",
+  "pdf_file": "work/runtime/F4-113-QA-SLICE-C.pdf"
 }
