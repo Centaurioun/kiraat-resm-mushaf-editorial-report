@@ -1,8 +1,8 @@
 {
   "checkpoint": "F4-113-SLICE-A",
-  "revision": 1,
+  "revision": 2,
   "docx": "artifacts/checkpoints/manuscript-working-f4-113.docx",
-  "sha256": "e4287570cfd9d61132c093d58cfa90e31f9aeccaf88ab4505b5f8a9aea9bdac1",
+  "sha256": "e4287570d99f9d3c20f96752497787e6d97f6a07047555ecbe5c05e5c69bdac1",
   "start": 50,
   "end": 75,
   "allowed_footnote_text_ids": [2,28,32,41,50,66,105,271,272,273,274,292,342,344,345,346,377,380,381,407,409,411,414,421,423,424,425,426,427,428,431],
