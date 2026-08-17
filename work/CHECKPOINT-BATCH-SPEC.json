@@ -1,42 +1,42 @@
 {
-  "last_f4": 82,
-  "next_f4": 83,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-082.docx",
-  "sha256": "299bed4bcf3fa1b479ec1ff1b6ee1baa0f7aa4210dd47f789cdf1f35cc81bbad",
+  "last_f4": 83,
+  "next_f4": 84,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-083.docx",
+  "sha256": "d4adb180cd58a6d74d1557a6c14fe2bc2b1fc42018c7b4bcffaf2029e2993127",
   "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-082-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-082-VISUAL-QA.md",
+  "technical_file": "work/runtime/F4-083-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-083-VISUAL-QA.md",
   "visual_pages": 4,
   "holds": "none",
-  "validation_marker": "## F4-082 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_082.py`; candidate commit `ed3719283c97f7fff7e00a46803369c9525955af`; SHA-256 `299bed4bcf3fa1b479ec1ff1b6ee1baa0f7aa4210dd47f789cdf1f35cc81bbad`.\n- F4-082 APPLIED: the report-approved Third-to-Fourth transition was placed in an existing safe empty paragraph immediately before the Fourth Section boundary; no paragraph was inserted and body count remains 677.\n- `DÖRDÜNCÜ BÖLÜM`, the Fourth Section main title and 4.1 heading retain their bookmark structures; citation identity/order is unchanged.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. Existing Fourth Section new-page behavior remains intact; no new blank page or section break was introduced.\n- Durable boundary: last F4-082; next F4-083.",
+  "validation_marker": "## F4-083 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_083.py`; candidate commit `812d3189861607d4a2822108d77c45fb48b719eb`; SHA-256 `d4adb180cd58a6d74d1557a6c14fe2bc2b1fc42018c7b4bcffaf2029e2993127`.\n- F4-083 APPLIED: repeated cem/istinsah history in P351 was reduced to the argument-essential reminder while FN365 was preserved.\n- P352 no longer assigns autonomous selecting/producing agency to rasm; mushaf-line compatibility is framed as an evaluative criterion within transmitted qiraat. FN366–367 remain on the source-backed acceptance-criterion discussion.\n- F4-084 evidence language in P350 was intentionally left untouched for the next sequential item.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, heading damage or style leakage.\n- Durable boundary: last F4-083; next F4-084.",
   "structural_state": [
-    "F4-073–081 remain intact and validated from prior durable checkpoints.",
-    "F4-082: explicit transition now links the separated historical/normative rasm discussion to the Fourth Section's concrete qiraat-use questions, using an existing safe empty paragraph and preserving all heading/bookmark structures.",
-    "Fourth Section content remains otherwise unchanged; F4-083 is the next substantive opening correction.",
+    "F4-073–082 remain intact and validated from prior durable checkpoints.",
+    "F4-083: 4.1 now distinguishes transmitted qiraat from rasm as a written compatibility/evaluation criterion; repeated historical material is reduced without dropping FN365–367.",
+    "F4-084 `Kırâat sünnettir` evidence-language correction remains intentionally unresolved for its own sequential application.",
     "Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_082.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-082.docx`",
-    "Candidate commit: `ed3719283c97f7fff7e00a46803369c9525955af`",
-    "SHA: `work/runtime/F4-082-SHA256.txt`",
-    "Postflight: `work/runtime/F4-082-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-082-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-082-QA.pdf`",
-    "Human visual review: `work/F4-082-VISUAL-QA.md` — 4/4 PASS"
+    "Replay: `work/apply_f4_083.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-083.docx`",
+    "Candidate commit: `812d3189861607d4a2822108d77c45fb48b719eb`",
+    "SHA: `work/runtime/F4-083-SHA256.txt`",
+    "Postflight: `work/runtime/F4-083-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-083-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-083-QA.pdf`",
+    "Human visual review: `work/F4-083-VISUAL-QA.md` — 4/4 PASS"
   ],
-  "next_action": "Apply F4-083 to the current F4-082 binary. Reframe the opening of Fourth Section 4.1 so rasm is not described as an autonomous source/agent producing or selecting qiraat. Use the report-approved formulation: `Resm-i Osmânî, kırâat rivâyetlerini meydana getiren bağımsız bir kaynak değildir. Bununla birlikte rivâyetle nakledilen okuyuşların müşterek mushaf yazısıyla bağdaşma durumunu göstermesi bakımından tespit ve tahditte kullanılan önemli verilerden biridir. Okuyuşun varlığı ve edâsı rivâyet yoluyla bilinir; resm ise bu okuyuşun Osmânî mushafların yazılı çerçevesi içindeki konumunu değerlendirmeye katkı sağlar.` Preserve source-backed evidence and footnotes; reduce only unnecessary repeated cem/istinsah history where report-approved. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-082`.",
+  "next_action": "Apply F4-084 to the current F4-083 binary. In P350, retain the source-backed `Kırâat sünnettir` and Ebû Amr evidence but replace the over-strong historical inference with the report-approved bounded statement that these reports indicate the centrality of rivâyet and telakki in qiraat transmission. Preserve FN361–364 and do not disturb the F4-083 P351/P352 reframe. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-083`.",
   "updates": {
-    "F4-082": {
+    "F4-083": {
       "status": "APPLIED",
-      "section": "3.7 → Fourth Section transition",
-      "action_type": "BOOKMARK_PRESERVING_TRANSITION_IN_EXISTING_EMPTY_PARAGRAPH",
-      "resolved_location": "current paragraph 346 immediately before DÖRDÜNCÜ BÖLÜM",
-      "affected_footnote_ids": [],
-      "commit": "ed3719283c97f7fff7e00a46803369c9525955af",
+      "section": "4.1",
+      "action_type": "ACTIVE_AGENT_REFRAME_AND_HISTORY_REDUCTION_WITH_CITATION_PRESERVATION",
+      "resolved_location": "current paragraphs 351–352",
+      "affected_footnote_ids": [365,366,367],
+      "commit": "812d3189861607d4a2822108d77c45fb48b719eb",
       "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Transition inserted by reusing an existing empty safe paragraph. Body count unchanged; Fourth Section heading/main-title/4.1 bookmarks preserved; no new section break or blank page."
+      "notes": "P351 repeated history reduced with FN365 preserved. P352 active-agent/selective-rasm framing replaced while FN366–367 remain on the source-backed acceptance-criterion discussion. F4-084 P350 intentionally untouched."
     }
   }
 }
