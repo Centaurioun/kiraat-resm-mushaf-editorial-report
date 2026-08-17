@@ -6,7 +6,7 @@
   "purpose": "F4-113 independent technical validation and representative post-application inventory. Read-only; no manuscript modification.",
   "canonical_docx": "source/manuscript/current/redaktorden_gelen.docx",
   "canonical_sha256": "d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2618b058c54",
-  "expected_sha256": "e4287570cfd9d61132c093d58cfa90e31f9aeccaf88ab4505b5f8a9aea9bdac1",
+  "expected_sha256": "e4287570d99f9d3c20f96752497787e6d97f6a07047555ecbe5c05e5c69bdac1",
   "technical_file": "work/runtime/F4-113-TECHNICAL-VALIDATION.txt",
   "allowed_footnote_text_ids": [2,28,32,41,50,66,105,271,272,273,274,292,342,344,345,346,377,380,381,407,409,411,414,421,423,424,425,426,427,428,431]
 }
