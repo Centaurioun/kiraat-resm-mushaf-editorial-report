@@ -366,3 +366,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render P410–416: 4/4 pages inspected; PASS.
 - Durable boundary: last F4-104; next F4-105.
+
+
+## F4-105 checkpoint — PASS
+- Final replay: `work/apply_f4_105.py`; candidate SHA-256 `640fdbf06ee48de553d7341b88592cff5ead107010ccef15e2278f684f36b118`.
+- F4-105 APPLIED: replaced the citation-free 4.7 closure that portrayed printed mushafs as active drivers of qiraat spread/standardization with the report-approved multicausal formulation. Printed mushafs are now said to increase written visibility and use, while regional spread also depends on teaching traditions, regional qiraat preferences, official publication policies and educational institutions.
+- Source-backed P434–436 and the Türkiye chronology beginning at P438 remain unchanged.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render P434–440: 3/3 pages inspected; PASS. Existing stale TOC display in the isolated slice is expected and final field refresh remains deferred.
+- Durable boundary: last F4-105; next F4-106.
