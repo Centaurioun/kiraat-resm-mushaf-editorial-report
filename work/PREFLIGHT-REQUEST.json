@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-114.docx",
+  "docx": "artifacts/checkpoints/manuscript-working-f4-115.docx",
   "start": 0,
-  "end": 675,
-  "output": "work/runtime/F4-115-PREFLIGHT.txt",
-  "purpose": "F4-115 read-only full-manuscript inventory. Reconfirm exact current footnote evidence for FN2, FN8, FN109 and FN373 and match those citations to bibliography records for İbn Ebû Dâvud Kitâbu'l-mesâhif, Ebû Dâvud Süleymân b. Necâh Muhtasaru't-tebyîn, and İbn Kuteybe Te'vîlu muhtelifi'l-hadîs. Do not modify the DOCX or pre-apply F4-116."
+  "end": 673,
+  "output": "work/runtime/F4-116-PREFLIGHT.txt",
+  "purpose": "F4-116 read-only full-manuscript inventory. Identify every genuine footnote citation to Ebû Şâme / el-Murşidu'l-vecîz, including full and shortened forms, and compare volume/page patterns against the two bibliography editions: Tayyar Altıkulaç 1975 (2 vols.) and Velîd Müsâid et-Tabatabâî 1993. Determine whether any current citation demonstrably requires the 1975 edition. Do not modify the DOCX and do not enter Fifth Report work."
 }
