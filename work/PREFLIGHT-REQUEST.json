@@ -1,7 +1,16 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-115.docx",
+  "docx": "artifacts/checkpoints/manuscript-working-f4-116.docx",
   "start": 0,
   "end": 673,
-  "output": "work/runtime/F4-116-PREFLIGHT.txt",
-  "purpose": "F4-116 read-only full-manuscript inventory. Identify every genuine footnote citation to Ebû Şâme / el-Murşidu'l-vecîz, including full and shortened forms, and compare volume/page patterns against the two bibliography editions: Tayyar Altıkulaç 1975 (2 vols.) and Velîd Müsâid et-Tabatabâî 1993. Determine whether any current citation demonstrably requires the 1975 edition. Do not modify the DOCX and do not enter Fifth Report work."
+  "output": "work/runtime/FOURTH-VALIDATE-PREFLIGHT.txt",
+  "purpose": "FOURTH_VALIDATE comprehensive read-only gate on the durable F4-116 binary. Verify all structural invariants, F4/F5 ledger boundary, recent Fourth corrections/retentions, and residual defects before any Fifth Report application.",
+  "canonical_docx": "source/manuscript/current/redaktorden_gelen.docx",
+  "canonical_sha256": "d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2618b058c54",
+  "expected_sha256": "73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf",
+  "expected_body_paragraphs": 674,
+  "technical_file": "work/runtime/FOURTH-VALIDATE-TECHNICAL.txt",
+  "allowed_footnote_text_ids": [2,28,32,41,50,66,105,271,272,273,274,292,342,344,345,346,377,380,381,407,409,411,414,421,423,424,425,426,427,428,431],
+  "validator_script": "work/validate_fourth.py",
+  "validator_output": "work/runtime/FOURTH-VALIDATE-READONLY.txt",
+  "diagnostic_file": "work/runtime/FOURTH-VALIDATE-PREFLIGHT-DIAGNOSTIC.txt"
 }
