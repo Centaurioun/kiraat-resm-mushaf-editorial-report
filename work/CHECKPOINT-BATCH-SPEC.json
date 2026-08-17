@@ -1,42 +1,42 @@
 {
-  "last_f4": 91,
-  "next_f4": 92,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-091.docx",
-  "sha256": "85fe7159297c0d7ca2c477a871af1655571e14fd7b68f44abe7040b7994bb222",
+  "last_f4": 92,
+  "next_f4": 93,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-092.docx",
+  "sha256": "0c6d7393e9eac0054ef8c9de7e27cc6dc257a741e54587df0f260c4512ce0d6f",
   "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-091-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-091-VISUAL-QA.md",
-  "visual_pages": 4,
+  "technical_file": "work/runtime/F4-092-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-092-VISUAL-QA.md",
+  "visual_pages": 5,
   "holds": "none",
-  "validation_marker": "## F4-091 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_091.py`; candidate commit `99a3565ce4b027b8a27dfc94c6197967d081b3b9`; SHA-256 `85fe7159297c0d7ca2c477a871af1655571e14fd7b68f44abe7040b7994bb222`.\n- F4-091 APPLIED: the Ibn Shanbudh example is now framed through public recitation, transmission, common mushaf tradition and period acceptance criteria rather than as a one-factor rasm-only causation.\n- FN391 remains on the rewritten Ibn Shanbudh paragraph; the following FN392–393 paragraph is untouched and reserved for F4-092.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, heading damage, run-boundary spacing defect or style propagation.\n- Durable boundary: last F4-091; next F4-092.",
+  "validation_marker": "## F4-092 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_092.py`; candidate commit `82395162a0958f8340fe36837c00a86db94ca310`; SHA-256 `0c6d7393e9eac0054ef8c9de7e27cc6dc257a741e54587df0f260c4512ce0d6f`.\n- F4-092 APPLIED: the FN392–393 paragraph now distinguishes rasm-nonconforming, shadh, ahad/tafsiri and alleged-mansukh categories rather than collapsing them into one historical/usuli line.\n- The source-specific Ibn Taymiyya / Ibn al-Jazari middle discussion and FN392–393 are preserved; the concluding claim is narrowed so rasm conformity is one important criterion considered with isnad, language and scholarly acceptance.\n- P377/FN394 and later F4-093+ material remain untouched.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, run-boundary spacing defect or style propagation. The short fifth page is the natural bounded-slice ending, not a blank-page regression.\n- Durable boundary: last F4-092; next F4-093.",
   "structural_state": [
-    "F4-073–090 remain intact and validated from prior durable checkpoints.",
-    "F4-091: the Ibn Shanbudh case is no longer reduced to rasm nonconformity alone; FN391 remains attached to the bounded case summary.",
-    "F4-092 begins in the following FN392–393 paragraph and remains pending.",
+    "F4-073–091 remain intact and validated from prior durable checkpoints.",
+    "F4-092: the FN392–393 paragraph now differentiates acceptance/status categories while preserving source-specific evidence.",
+    "P377/FN394 remains the next untouched boundary; F4-093 is pending.",
     "Derived TOC field has not been recalculated; final Word field/TOC refresh remains required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_091.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-091.docx`",
-    "Candidate commit: `99a3565ce4b027b8a27dfc94c6197967d081b3b9`",
-    "SHA: `work/runtime/F4-091-SHA256.txt`",
-    "Postflight: `work/runtime/F4-091-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-091-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-091-QA.pdf`",
-    "Human visual review: `work/F4-091-VISUAL-QA.md` — 4/4 PASS"
+    "Replay: `work/apply_f4_092.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-092.docx`",
+    "Candidate commit: `82395162a0958f8340fe36837c00a86db94ca310`",
+    "SHA: `work/runtime/F4-092-SHA256.txt`",
+    "Postflight: `work/runtime/F4-092-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-092-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-092-QA.pdf`",
+    "Human visual review: `work/F4-092-VISUAL-QA.md` — 5/5 PASS"
   ],
-  "next_action": "Read and apply only F4-092 to the current F4-091 binary. Preserve the F4-091 Ibn Shanbudh paragraph/FN391 and do not collapse later F4-093+ material. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-091`.",
+  "next_action": "Read and apply only F4-093 to the current F4-092 binary. Preserve P376/FN392–393 and all source-backed 4.3 material; do not pre-apply F4-094+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-092`.",
   "updates": {
-    "F4-091": {
+    "F4-092": {
       "status": "APPLIED",
       "section": "4.3",
-      "action_type": "MULTI_CRITERIA_HISTORICAL_REFRAME",
-      "resolved_location": "current paragraph 375",
-      "affected_footnote_ids": [391],
-      "commit": "99a3565ce4b027b8a27dfc94c6197967d081b3b9",
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Reframed the Ibn Shanbudh example without one-factor rasm causation; FN391 preserved. F4-092 starts in the next FN392–393 paragraph."
+      "action_type": "CATEGORY_DIFFERENTIATION_WITH_SOURCE_PRESERVATION",
+      "resolved_location": "current paragraph 376",
+      "affected_footnote_ids": [392,393],
+      "commit": "82395162a0958f8340fe36837c00a86db94ca310",
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 5/5_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Differentiated shadh/ahad/tafsiri/alleged-mansukh categories; retained FN392–393 and source-specific middle discussion."
     }
   }
 }
