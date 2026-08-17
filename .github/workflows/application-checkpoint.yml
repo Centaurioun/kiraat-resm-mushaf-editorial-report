@@ -13,6 +13,7 @@ permissions:
 
 jobs:
   checkpoint:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -25,24 +26,32 @@ jobs:
       - name: Apply checkpoint metadata
         run: |
           set -euo pipefail
-          python work/checkpoint_f4_052.py
+          script=$(python -c "import json;print(json.load(open('work/CHECKPOINT-REQUEST.json'))['script'])")
+          python "$script"
           python - <<'PY'
           import json
           from pathlib import Path
+          req=json.loads(Path('work/CHECKPOINT-REQUEST.json').read_text(encoding='utf-8'))
           rows=[json.loads(x) for x in Path('work/application-ledger.jsonl').read_text(encoding='utf-8').splitlines() if x.strip()]
           assert len(rows)==210
           m={(r.get('id') or f"{r['report']}-{int(r['item_number']):03d}"):r for r in rows}
-          assert all(m[f'F4-{n:03d}']['status']!='PENDING' for n in range(1,53))
-          assert m['F4-053']['status']=='PENDING'
-          assert 'Last fully completed Fourth Report item: `F4-052`' in Path('work/APPLICATION-STATE.md').read_text(encoding='utf-8')
-          assert 'Next Fourth Report item: `F4-053`' in Path('work/APPLICATION-STATE.md').read_text(encoding='utf-8')
-          assert 'F4-048–052 checkpoint — PASS' in Path('work/VALIDATION-LOG.md').read_text(encoding='utf-8')
-          assert 'DO-NOT-REPEAT: `F4-001`–`F4-052`' in Path('work/NEXT-HANDOFF.md').read_text(encoding='utf-8')
+          last=int(req['last_f4']); nxt=int(req['next_f4'])
+          assert all(m[f'F4-{n:03d}']['status']!='PENDING' for n in range(1,last+1))
+          assert m[f'F4-{nxt:03d}']['status']=='PENDING'
+          state=Path('work/APPLICATION-STATE.md').read_text(encoding='utf-8')
+          handoff=Path('work/NEXT-HANDOFF.md').read_text(encoding='utf-8')
+          log=Path('work/VALIDATION-LOG.md').read_text(encoding='utf-8')
+          assert f'Last fully completed Fourth Report item: `F4-{last:03d}`' in state
+          assert f'Next Fourth Report item: `F4-{nxt:03d}`' in state
+          assert req['validation_marker'] in log
+          assert f'DO-NOT-REPEAT: `F4-001`–`F4-{last:03d}`' in handoff
           PY
       - name: Commit checkpoint
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add work/application-ledger.jsonl work/APPLICATION-STATE.md work/VALIDATION-LOG.md work/NEXT-HANDOFF.md
-          git commit -m 'checkpoint(application): complete F4-048-052 [skip ci]'
+          if git diff --cached --quiet; then exit 0; fi
+          checkpoint=$(python -c "import json;print(json.load(open('work/CHECKPOINT-REQUEST.json'))['checkpoint'])")
+          git commit -m "checkpoint(application): complete ${checkpoint} [skip ci]"
           git push origin HEAD:editorial/apply-fourth-fifth-reports
