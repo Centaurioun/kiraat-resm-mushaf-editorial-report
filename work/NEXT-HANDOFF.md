@@ -4,39 +4,33 @@
 - Branch: `editorial/apply-fourth-fifth-reports`
 - Branch/checkpoint HEAD: `SELF`
 - Phase: `FOURTH_APPLY`
-- Last completed: `F4-017`
-- Next: `F4-018`
-- DO-NOT-REPEAT: bootstrap and `F4-001–017`.
+- Last completed: `F4-022`
+- Next: `F4-023`
+- DO-NOT-REPEAT: bootstrap and `F4-001–022`.
 
-## Recovery pipeline
-1. Canonical `source/manuscript/current/redaktorden_gelen.docx` → `work/apply_docx_edits.py` through F4-011 (`86f99b2186711a7d94159d9c1b7413b0248a0c5c`).
-2. Result → `work/apply_f4_012_017.py` through F4-017 (`d533b450b20729130e850d7cbf37256a8e192306`).
-- Current reproducible SHA-256: `9b983dcebda782bf1b5bbb69134dde43b0b45b5119ae63d5aa4f2379ec57885a`.
-- Current body paragraphs: **700**.
-- Ledger through F4-017: `154d696611e3b97fc92595982fa240097f89e7fe`.
-- State commit: `f0eac152eed4d3762fb3023e42c5e0ded9a58f84`.
-- Validation commit: `f3c9116afed8929607b8c18b7fb58a167dab301a`.
+## Current deterministic recovery pipeline
+1. Canonical source → `work/apply_docx_edits.py` through F4-011 (`86f99b2186711a7d94159d9c1b7413b0248a0c5c`).
+2. → `work/apply_f4_012_017.py` through F4-017 (`d533b450b20729130e850d7cbf37256a8e192306`).
+3. → `work/apply_f4_018_022.py` through F4-022 (`7d32131a8681b3334cb405a68f79c2494b8db5e7`).
+- Current logical DOCX SHA-256: `209b3a6e7719f44b7e9ed2b1a25b2992d00cdc7b6afa7e580fccd6f5d81c36f1`.
+- Body paragraphs: **700**.
+- Ledger: `10bcd454d33399979e83c7d6ee90dfad34fe191f`.
+- State: `8db52f2f25150a4def49e8ff626d8f6101403649`.
+- Validation: `2d6022eb1e7ec05f420d8ec199610ebbd22652ef`.
 
-## Integrity
-- Footnotes/references **469/469**; orphan/dangling/duplicate **0/0/0**; footnotes.xml unchanged.
-- Fields **520/520**; Zotero **465 item + 1 bibliography**.
-- Protected core OOXML unchanged except document.xml; ZIP/XML PASS.
-- Replay idempotency PASS.
-- First 80 current body paragraphs → 19 QA pages; 19/19 visually inspected; durable-pipeline render pixel-identical to independent validation render.
+## Integrity at checkpoint
+- Footnotes/references 469/469; orphan/dangling/duplicate 0/0/0; footnotes.xml unchanged.
+- Fields 520/520; Zotero 465 item + 1 bibliography.
+- Protected OOXML unchanged except document.xml; ZIP/XML PASS.
+- F4-018–022 replay byte-idempotent.
+- 21-page bounded render inspected; PASS.
 - Open HOLDs: none.
 
-## Citation decisions already locked
-- F4-008: footnotes 15 and 16 preserved on their specific source-backed propositions.
-- F4-012: notes 19–21 preserved on the consolidated 1.2 opening.
-- F4-015: notes 28–30 preserved on the cautious synthesis of both source families.
-- Do not undo these semantic citation placements.
+## Exact next group
+- F4-023: replace the unsupported direct Mervân→yedi harf/arza-i âhire causal claim with the report's source-level distinction.
+- F4-024: weaken arza-i âhire from a certain historical mechanism to a later explanatory view. Current target has genuine footnote **49**; inspect its text before choosing placement.
+- F4-025: restore written-memory complementarity in Ebû Bekir cem.
+- F4-026: reduce dramatic kırâat-conflict claims and resolve the Taberî work note/date rule. Current conflict paragraph has genuine footnote **66**; inspect its text before placement. Search earlier current text for prior `Taberî` occurrence before deciding whether to keep a death date.
+- F4-027: repair `tam baş senede` without inventing a duration.
 
-## Fifth overlap locks
-- F5-014 may not restore the negative research-question paragraph removed by F4-007.
-- F5-015 may only improve wording of the F4-011 synthesis without changing its scientific frame.
-
-## Exact next action
-Apply F4-018 from the CURRENT F4-017 state:
-> Hz. Peygamber döneminde `cem` ifadesi bazı rivâyetlerde Kur’an'ın ezberlenmesi anlamında kullanılmakla birlikte vahyin çeşitli yazı malzemelerine kaydedildiği de bilinmektedir. Hz. Ebû Bekir dönemindeki cem faaliyetinin ayırt edici yönü, dağınık yazılı malzemenin ve hafızadaki aktarımın resmî bir derleme süreci içinde bir araya getirilmesidir.
-
-Then continue F4-019 onward sequentially. F4-019 corrects Hârice b. Zeyd from daughter to son; F4-020 standardizes Ebû Bekir material to `suhuf`; F4-021 repairs the broken Zeyd b. Sâbit sentence; F4-022 corrects Mervân b. Hakem's death date and terminology. Re-locate all targets from CURRENT DOCX and preserve surrounding genuine notes.
+After this five-item group, validate and checkpoint before F4-028 onward.
