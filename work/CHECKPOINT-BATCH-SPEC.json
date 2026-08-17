@@ -1,44 +1,42 @@
 {
-  "last_f4": 113,
-  "next_f4": 114,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-113.docx",
-  "sha256": "e4287570d99f9d3c20f96752497787e6d97f6a07047555ecbe5c05e5c69bdac1",
+  "last_f4": 114,
+  "next_f4": 115,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-114.docx",
+  "sha256": "419bc27be6a259d03f42ed7da7f7bbf0b1f64c9af3ab6ed78393f6aa9a96ca56",
   "body_paragraphs": 676,
-  "technical_file": "work/runtime/F4-113-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-113-VISUAL-QA.md",
-  "visual_pages": 19,
+  "technical_file": "work/runtime/F4-114-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-114-VISUAL-QA.md",
+  "visual_pages": 4,
   "holds": "none",
-  "protected_parts_status": "baseline-identical except explicitly authorized footnote-text changes in `word/footnotes.xml`; target footnote structure unchanged",
-  "validation_marker": "## F4-113 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_113.py`; candidate SHA-256 `e4287570d99f9d3c20f96752497787e6d97f6a07047555ecbe5c05e5c69bdac1`.\n- F4-113 APPLIED: normalized author-name article variants conservatively (`ed-Dânî` → `Dânî`, `ez-Zürkânî` → `Zürkânî`, `es-Suyûtî` → `Suyûtî`) and adopted articleless sura names only in explicit verified Qur'anic verse-reference contexts. Bibliographic work titles such as `el-Mukni‘` and `el-İtkân` remain untouched.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; canonical-to-candidate changed-footnote set exactly equals the authorized 31-ID set (including inherited F4-112 FN32/FN41/FN105); target footnote OOXML structure unchanged.\n- Human visual QA: three representative slices (P50–75, P274–280, P389–401), workflow runs 32079868743 / 32080087101 / 32080209568; all 19/19 rasterized pages manually inspected and PASS. Bounded-render high-footnote renumbering limitation is explicitly documented; original footnote identity is established by the structural gate and full-candidate postflight.\n- Durable boundary: last F4-113; next F4-114.",
+  "protected_parts_status": "baseline-identical except explicitly authorized footnote-text changes inherited from F4-112/F4-113; F4-114 changes only bibliography result text in `word/document.xml`",
+  "validation_marker": "## F4-114 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_114.py`; candidate SHA-256 `419bc27be6a259d03f42ed7da7f7bbf0b1f64c9af3ab6ed78393f6aa9a96ca56`.\n- F4-114 APPLIED: removed the malformed Kahraman DOI URL from P578 and repaired Maşalı P599 to `https://doi.org/10.56361/usul.173700`. The DOI text was not inside `w:hyperlink`, so hyperlink objects/relationships remained unchanged.\n- Deterministic second replay is ALREADY_SATISFIED and byte-identical. Application validator permits only P578/P599 changes from durable F4-113; all non-document package parts are byte-identical, 520 fields and Zotero/ADDIN inventory remain intact.\n- Human visual QA P570–P605: workflow run 32080808433 / artifact 9305055721; 4/4 rasterized pages manually inspected and PASS. Bibliography line flow, italics and adjacent records remain clean.\n- Durable boundary: last F4-114; next F4-115.",
   "structural_state": [
-    "F4-073–112 remain intact and validated from prior durable checkpoints.",
-    "F4-113: genuine footnote text house style now uses `Dânî`, `Zürkânî`, `Suyûtî` for the targeted author-name variants and an articleless sura-name convention in explicit verified Qur'anic verse references.",
-    "Bibliographic work titles and unrelated article-bearing lexical contexts are preserved; no F4-114 transliteration work has been pre-applied.",
+    "F4-073–113 remain intact and validated from prior durable checkpoints.",
+    "F4-114: Kahraman bibliography record no longer carries the malformed DOI URL; Maşalı bibliography DOI is `https://doi.org/10.56361/usul.173700` with one DOI prefix.",
+    "F4-114 changed only visible bibliography result text at P578 and P599; Word/Zotero field instructions and hyperlink structures remain preserved.",
     "Current body paragraph count remains 676; all 469 footnote identities/references, 520 fields, Zotero/ADDIN fields, bookmarks, hyperlinks and RTL structural inventory remain preserved."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_113.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-113.docx`",
-    "SHA: `work/runtime/F4-113-SHA256.txt`",
-    "Preflight: `work/runtime/F4-113-PREFLIGHT.txt`",
-    "Postflight: `work/runtime/F4-113-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-113-TECHNICAL-VALIDATION.txt`",
-    "Human visual review: `work/F4-113-VISUAL-QA.md` — 19/19 pages PASS across three representative slices",
-    "Visual Slice A: run 32079868743 / artifact 9304743549 / 8 pages",
-    "Visual Slice B: run 32080087101 / artifact 9304818453 / 4 pages",
-    "Visual Slice C: run 32080209568 / artifact 9304867454 / 7 pages"
+    "Replay: `work/apply_f4_114.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-114.docx`",
+    "SHA: `work/runtime/F4-114-SHA256.txt`",
+    "Preflight: `work/runtime/F4-114-PREFLIGHT.txt`",
+    "Postflight: `work/runtime/F4-114-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-114-TECHNICAL-VALIDATION.txt`",
+    "Human visual review: `work/F4-114-VISUAL-QA.md` — 4/4 pages PASS",
+    "Visual workflow: run 32080808433 / artifact 9305055721"
   ],
-  "next_action": "Fetch the exact F4-114 item from `final/fourth-report-v2.md`, resolve it against the current durable F4-113 binary, run a read-only preflight, and apply only F4-114 if unambiguous. Do not pre-apply F4-115+ or repeat `F4-001`–`F4-113`.",
+  "next_action": "Apply only F4-115 against the current durable F4-114 binary. First verify the exact report-prescribed edition-use decisions against current footnote and bibliography evidence: keep İbn Ebû Dâvud 2002 and remove unused 2006; retain both Süleymân b. Necâh 2000 and 1999 because both are cited; keep İbn Kuteybe en-Neccâr record and remove unused 1999 el-Asfar record. Do not pre-apply F4-116 or repeat `F4-001`–`F4-114`.",
   "updates": {
-    "F4-113": {
+    "F4-114": {
       "status": "APPLIED",
-      "section": "Genuine footnotes — author-name and sura-name article/transliteration house style",
-      "action_type": "TARGETED_FOOTNOTE_ARTICLE_HOUSE_STYLE_NORMALIZATION",
-      "resolved_location": "word/footnotes.xml; context-verified author-name variants and Qur'anic sura+chapter/verse references only",
-      "affected_footnote_ids": [2,28,50,66,271,272,273,274,292,342,344,345,346,377,380,381,407,409,411,414,421,423,424,425,426,427,428,431],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 19/19_REPRESENTATIVE_VISUAL_QA_PASS",
-      "notes": "Work-title articles and unrelated lexical contexts preserved; bounded-render high-number footnote remapping documented, with true identity established structurally."
+      "section": "Kaynakça — Kahraman and Maşalı DOI records",
+      "action_type": "TARGETED_BIBLIOGRAPHY_DOI_REPAIR",
+      "resolved_location": "word/document.xml P578 and P599 bibliography result text",
+      "affected_body_paragraphs": [578,599],
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_VISUAL_QA_PASS",
+      "notes": "Kahraman malformed DOI removed; Maşalı DOI single-prefix corrected; field instructions/hyperlinks preserved."
     }
   }
 }
