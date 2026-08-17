@@ -2,49 +2,35 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `24295006949899d5c186ef69328de7ad21ea3e7c` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `3bc45e9f9813a5868806ec97c0b3e34db6399e94` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-057`
-- Next item: `F4-058`
-- DO-NOT-REPEAT: `F4-001`–`F4-057`
+- Last completed item: `F4-062`
+- Next item: `F4-063`
+- DO-NOT-REPEAT: `F4-001`–`F4-062`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-057.docx`
-- Current working SHA-256: `b77bc0066b22c9e66b250c53ff456045abde1f5410cb11ad98d77f3fb69d7810`
-- Last known good commit basis: `24295006949899d5c186ef69328de7ad21ea3e7c`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-057.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-062.docx`
+- Current working SHA-256: `200f55000bf5dbe6e350466c79b4ffa15973bf06d92cb4a66ea91848252b77f3`
+- Last known good DOCX: same path above
 
 ## Integrity snapshot
-- Footnotes: 469/469
-- Body references: 469/469
-- Orphans/dangling/duplicates: 0/0/0
-- Word fields: 520/520; ADDIN 466/466
-- Zotero: 465 item + 1 bibliography preserved
-- Bookmarks: 53/53; hyperlinks: 52
-- RTL inventory: canonical-equal
-- Protected OOXML parts: baseline-identical
+- Footnotes/references: 469/469; orphans/dangling/duplicates: 0/0/0
+- Word fields: 520; ADDIN: 466; Zotero: 465 item + 1 bibliography
+- Bookmarks: 53/53; hyperlinks: 52; RTL inventory canonical-equal
+- Protected OOXML: baseline-identical
 
-## Latest completed work
-- F4-053: direct 2.1→2.2 transition.
-- F4-054: oral transmission remains primary; written mushaf record framed as complementary; FN204 preserved.
-- F4-055: Âsım attribution corrected to a transmission/identification formulation; FN207 preserved.
-- F4-056: rivâyet, sened and authority structurally differentiated; source-backed continuations and FNs 198–201/206/214 preserved.
-- F4-057: direct transition into seven-harf/Osmânî mushaf issue.
-- Rendering repair: inherited F4-052 leading-space run now has `xml:space="preserve"`; final 9/9 bounded visual QA PASS.
-
-## Evidence
-- Replay: `work/apply_f4_053_057_v3.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-057.docx`
-- SHA: `work/runtime/F4-057-SHA256.txt`
-- Postflight: `work/runtime/F4-057-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-057-TECHNICAL-VALIDATION.txt`
-- QA PDF: `work/runtime/F4-057-QA.pdf`
-- Human visual record: `work/F4-057-VISUAL-QA.md` (9/9 PASS after repair)
+## Latest evidence
+- Replay: `work/apply_f4_058_062_v2.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-062.docx`
+- Technical: `work/runtime/F4-062-TECHNICAL-VALIDATION.txt`
+- Postflight: `work/runtime/F4-062-POSTFLIGHT.txt`
+- QA PDF: `work/runtime/F4-062-QA.pdf`
+- Human QA: `work/F4-062-VISUAL-QA.md` — corrected render 9/9 PASS
 
 ## Open HOLDs
 None.
 
 ## Exact next action
-Read and apply `F4-058` against the current F4-057 checkpoint. Re-locate current 2.3–2.4 targets; do not restore stale pre-F4-057 prose. Inventory footnotes/fields/RTL and Fourth/Fifth overlaps before modifying them.
+Read and apply `F4-063` against the current F4-062 binary. Re-locate 3.1 from current structure; inspect citations, Arabic/RTL and later Fourth/Fifth overlaps before editing. Do not restore stale pre-F4-062 prose.

@@ -68,3 +68,17 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - No new clipping, overlap, footnote overflow, blank page, heading damage, RTL damage or style propagation.
 - Pre-existing red Fifth-style targets and the later red footnote editorial note remain for their designated report items.
 - Durable boundary: last F4-057; next F4-058.
+
+
+## F4-058–062 checkpoint — PASS
+- Final replay: `work/apply_f4_058_062_v2.py` over durable F4-057 input.
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-062.docx`.
+- SHA-256: `200f55000bf5dbe6e350466c79b4ffa15973bf06d92cb4a66ea91848252b77f3`.
+- F4-058 STRUCTURALLY_APPLIED; F4-059 STRUCTURALLY_APPLIED; F4-060 APPLIED; F4-061 APPLIED; F4-062 APPLIED.
+- Corrected second replay: all five report items and style repair already satisfied; byte-identical.
+- ZIP/XML PASS; footnotes/references 469/469; orphan/dangling/duplicate 0/0/0.
+- Word fields 520; Zotero 465+1; RTL/bookmark/hyperlink inventories canonical-equal; protected OOXML baseline-identical.
+- Initial visual QA rejected inherited italics on F4-060 and F4-062 new paragraphs. v2 replay removed only direct italic run properties from those two targets.
+- Corrected bounded render: 9 pages, 9/9 visually inspected, PASS. No clipping, overlap, footnote overflow, heading damage, Arabic/RTL damage or batch-induced style propagation remains.
+- Pre-existing red editorial/Fifth targets remain for their designated later items.
+- Durable boundary: last F4-062; next F4-063.
