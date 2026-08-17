@@ -464,3 +464,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is ALREADY_SATISFIED and byte-identical. All non-document package parts are byte-identical to durable F4-114; 520 field instructions, ADDIN/Zotero field inventory, 469 footnote references, bookmarks, hyperlinks and RTL inventory are preserved.
 - Human visual QA P495–P615: workflow run 32081290071 / artifact 9305200072; 9/9 rasterized pages manually inspected and PASS.
 - Durable boundary: last F4-115; next F4-116.
+
+
+## F4-116 checkpoint — VERIFIED_NO_CHANGE / PASS
+- Final replay: `work/apply_f4_116.py`; output `manuscript-working-f4-116.docx` is byte-identical to durable F4-115 with SHA-256 `73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf`; body paragraphs remain 674.
+- F4-116 VERIFIED_NO_CHANGE: FN86 explicitly proves use of the 1993 Velîd Müsâid et-Tabatabâî edition. FN394 cites p. 144; independent inspection of printed p. 144 of the Tayyar Altıkulaç 1975 scan directly matches the distinctive P377 claim, proving genuine use of the 1975 edition. Therefore both Ebû Şâme bibliography records are retained.
+- Edition adjudication evidence: `work/F4-116-EDITION-ADJUDICATION.md`. The manuscript's `1/x` short forms were not treated as edition identifiers.
+- Technical workflow PASS: 469/469 footnotes/references, 0 orphan/dangling/duplicate, 520 fields, inherited authorized footnote-text change set only.
+- Human visual QA P500–P507: workflow run 32082193276 / artifact 9305471951; 2/2 rasterized pages manually inspected and PASS; both retained Ebû Şâme records are visible and layout-stable.
+- A separate metadata discrepancy discovered during adjudication is carried into FOURTH_VALIDATE: the 1975 bibliography record currently says `2 Cilt`, while independent catalogue records describe the Altıkulaç 1975 edition as one volume. This was not silently expanded into F4-116.
+- Fourth Report application boundary: F4-001–F4-116 complete. Next phase: FOURTH_VALIDATE; Fifth Report application remains blocked until validation passes.
