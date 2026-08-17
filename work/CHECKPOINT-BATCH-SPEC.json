@@ -1,42 +1,42 @@
 {
-  "last_f4": 86,
-  "next_f4": 87,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-086.docx",
-  "sha256": "2d7e6dc15e60c4b85db6de9459cc5bdd24f41da98f77577d17871e68d477826c",
+  "last_f4": 87,
+  "next_f4": 88,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-087.docx",
+  "sha256": "cedcc233e5e3ce9150f3ebbd66b199075517dcac4a7d771a455a03db5e16a3ce",
   "body_paragraphs": 678,
-  "technical_file": "work/runtime/F4-086-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-086-VISUAL-QA.md",
-  "visual_pages": 5,
+  "technical_file": "work/runtime/F4-087-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-087-VISUAL-QA.md",
+  "visual_pages": 4,
   "holds": "none",
-  "validation_marker": "## F4-086 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_086.py`; candidate commit `0ac7c7dc0c2b6c0e07ceab8987c8aed0e4b23896`; SHA-256 `2d7e6dc15e60c4b85db6de9459cc5bdd24f41da98f77577d17871e68d477826c`.\n- F4-086 STRUCTURALLY_APPLIED: a citation-free category frame was inserted after the FN375 general introduction and before the FN376 explanatory/tafsiri example, explicitly distinguishing reading reports, explanatory/tafsiri expressions, word-order/writing differences, and disputed records.\n- Source-specific example paragraphs, FN375–383 and Arabic/RTL runs were not relocated or collapsed. The normative criterion is stated as the Uthmanic written framework together with sound transmission.\n- F4-087 open editor note and F4-088 active-agent conclusions were intentionally left for their own sequential items.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical; RTL inventory canonical-equal.\n- Bounded render: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, Arabic corruption, heading damage or style propagation.\n- Durable boundary: last F4-086; next F4-087.",
+  "validation_marker": "## F4-087 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_087.py`; candidate commit `a49959ebcc7cf55aece1874636838e083da536af`; SHA-256 `cedcc233e5e3ce9150f3ebbd66b199075517dcac4a7d771a455a03db5e16a3ce`.\n- F4-087 APPLIED: the explicit parenthetical editor/work note embedded in the FN377–378 paragraph was removed and ordinary spacing before `Bunun en meşhur örneklerinden biri...` was restored.\n- FN377–378, the Arabic Bakara 2/238 runs and all surrounding source-backed text remain in the same paragraph; F4-088 active-agent wording remains intentionally untouched.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, Arabic/RTL corruption or F4-087-induced style propagation.\n- Durable boundary: last F4-087; next F4-088.",
   "structural_state": [
-    "F4-073–085 remain intact and validated from prior durable checkpoints.",
-    "F4-086: 4.2 now carries an explicit category-differentiation synthesis without displacing source-specific examples or citations.",
-    "F4-087 open editor note remains next; F4-088 active-agent wording remains pending.",
+    "F4-073–086 remain intact and validated from prior durable checkpoints.",
+    "F4-087: the open inline editor note in the FN377–378 paragraph has been removed without moving citations or Arabic runs.",
+    "F4-088 active-agent/curatorial-authority wording in 4.2 is next; F4-089 Ibn Masud intent language remains pending.",
     "Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_086.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-086.docx`",
-    "Candidate commit: `0ac7c7dc0c2b6c0e07ceab8987c8aed0e4b23896`",
-    "SHA: `work/runtime/F4-086-SHA256.txt`",
-    "Postflight: `work/runtime/F4-086-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-086-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-086-QA.pdf`",
-    "Human visual review: `work/F4-086-VISUAL-QA.md` — 5/5 PASS"
+    "Replay: `work/apply_f4_087.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-087.docx`",
+    "Candidate commit: `a49959ebcc7cf55aece1874636838e083da536af`",
+    "SHA: `work/runtime/F4-087-SHA256.txt`",
+    "Postflight: `work/runtime/F4-087-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-087-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-087-QA.pdf`",
+    "Human visual review: `work/F4-087-VISUAL-QA.md` — 4/4 PASS"
   ],
-  "next_action": "Apply F4-087 to the current F4-086 binary by removing only the explicit parenthetical editor note embedded in the FN377–378 paragraph and restoring normal spacing before `Bunun en meşhur örneklerinden biri...`. Preserve Arabic runs, FN377–378 and all surrounding text. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-086`.",
+  "next_action": "Apply F4-088 to the current F4-087 binary. Replace the 4.2 sentence that makes `Osmânî resm` an active selecting/curatorial authority with the report-approved distinction: the Uthmanic recension and subsequent common mushaf acceptance form the determining historical framework, while rasm is one written criterion for evaluating whether transmitted material accords with the common mushaf. Preserve surrounding source-backed paragraphs and footnotes; do not resolve F4-089 prematurely. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-087`.",
   "updates": {
-    "F4-086": {
-      "status": "STRUCTURALLY_APPLIED",
+    "F4-087": {
+      "status": "APPLIED",
       "section": "4.2",
-      "action_type": "CATEGORY_DIFFERENTIATION_SYNTHESIS_INSERTION",
-      "resolved_location": "new current paragraph 362 between FN375 and FN376 source-specific paragraphs",
-      "affected_footnote_ids": [],
-      "commit": "0ac7c7dc0c2b6c0e07ceab8987c8aed0e4b23896",
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 5/5_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Report-approved category distinction added as citation-free synthesis; source-specific Companion-codex examples, Arabic runs and FN375–383 remain in place."
+      "action_type": "INLINE_EDITOR_NOTE_REMOVAL",
+      "resolved_location": "current paragraph 364",
+      "affected_footnote_ids": [377,378],
+      "commit": "a49959ebcc7cf55aece1874636838e083da536af",
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Removed only the explicit editor/work note and restored ordinary sentence spacing; FN377–378 and Arabic runs stayed in place."
     }
   }
 }
