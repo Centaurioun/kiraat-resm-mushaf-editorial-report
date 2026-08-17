@@ -35,25 +35,37 @@ Replay commit `46a5014e1c87bce2bceda20278481055975ccb39`; reconstructed SHA `405
 - Ledger recording commit: `90f473c52b404507eb0ccbb5928d65ccfa179f34`.
 - Pre-F4-006 verified input SHA-256: `567f7847958364b27d68c45c073481c9d7e6030bba561d7d0dc011d8c0cf6355` — exact match to F4-001–005 state.
 - F4-006 output SHA-256: `33743240d3bd6e1f5eda2efabf8ef5dfa66cbec9a5f655923206563ab605bb93`.
-- Replay on F4-006 output: F4-001–006 all already satisfied; rerun output SHA identical (`33743240d3bd6e1f5eda2efabf8ef5dfa66cbec9a5f655923206563ab605bb93`). **IDEMPOTENCY PASS**.
+- Replay on F4-006 output: F4-001–006 all already satisfied; rerun output SHA identical. **IDEMPOTENCY PASS**.
 - Body paragraphs: **711 baseline → 705 current**.
 - Accepted three F4-006 replacement paragraphs each occur exactly once.
 - Removed only six true repetition/superseded detailed-plan paragraphs from the former contiguous Giriş cluster.
-- Preserved unique paragraphs beginning `Çalışmanın son halkasında...`, `Yöntem bakımından kitap...`, and `Araştırmanın kaynak zemini...`; normalized text hashes are exactly unchanged versus F4-005.
-- Genuine footnotes/references: **469/469**; exact ID/reference sets unchanged.
-- Orphans/dangling/duplicates: **0/0/0**.
-- Footnote 7 remains in the preserved `Çalışmanın son halkasında...` paragraph and retains its semantic attachment.
-- `word/footnotes.xml`: byte-hash unchanged from canonical baseline.
-- Word field instructions: **520/520**; TOC 1; PAGEREF 52; REF 0; PAGE 1; ADDIN 466.
-- Zotero item fields: **465**; bibliography field: **1**; aggregate field-instruction hash unchanged.
-- `word/styles.xml`, `word/numbering.xml`, `word/settings.xml`, `word/_rels/document.xml.rels`: exact baseline hashes; only expected `word/document.xml` changed among protected core parts.
-- ZIP/package integrity: **PASS**.
-- XML parse integrity: **PASS**.
-- Canonical source rechecked: SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2618b058c54`; Git blob `afb77260a59c4eabf5664dd1919c03fc68cc5196` unchanged.
-- Fourth Report blob on application branch equals source-commit blob: `e880124fb0bdb72afb29cf10927e2dd15bae0676`.
-- Fifth Report blob on application branch equals source-commit blob: `b2e184bf45c13fb548cd13ee2e4f829a52b4bb69`.
-- Bounded QA-only slice: CURRENT body paragraphs 0–59 rendered successfully as **14 pages**.
-- Visual inspection: **14/14 pages inspected**. F4-006 consolidation appears clean on pages 8–9; footnote 7 marker and note text render normally; no clipping, overlap, footnote overflow, unexpected font changes or structural pagination defect caused by this edit. Existing red editorial markings elsewhere in the source are not F4-006 defects and remain for later accepted report items.
-- Full-document PDF export remains a baseline renderer issue shared by the untouched source; final all-page visual acceptance remains mandatory.
-- Edited binary persistence: current GitHub connector has no local-file parameter for binary DOCX upload; no false binary-persistence claim is made. Deterministic replay, exact output hash, ledger, state and validation evidence are durable.
-- Result: **PASS — F4-006 STRUCTURAL CHECKPOINT VALIDATED**.
+- Preserved unique paragraphs beginning `Çalışmanın son halkasında...`, `Yöntem bakımından kitap...`, and `Araştırmanın kaynak zemini...`; normalized text hashes exactly unchanged versus F4-005.
+- Genuine footnotes/references: **469/469**; exact ID/reference sets unchanged; orphans/dangling/duplicates **0/0/0**.
+- Footnote 7 remains in the preserved source-backed paragraph; `word/footnotes.xml` unchanged.
+- Word fields: **520/520**; TOC 1; PAGEREF 52; REF 0; PAGE 1; ADDIN 466; Zotero 465 item + 1 bibliography.
+- Protected core OOXML unchanged except expected `word/document.xml`; ZIP/XML **PASS/PASS**.
+- Bounded QA-only slice rendered as **14 pages**; inspected **14/14**. Result **PASS — F4-006 STRUCTURAL CHECKPOINT VALIDATED**.
+
+## F4-007–011 checkpoint — 2026-08-17
+- Deterministic replay/application commit: `86f99b2186711a7d94159d9c1b7413b0248a0c5c`.
+- Ledger recording commit: `ed22ec36a0e94c04f58cc956f08a5d113f25443c`.
+- Verified input state through F4-006 SHA-256: `33743240d3bd6e1f5eda2efabf8ef5dfa66cbec9a5f655923206563ab605bb93`.
+- Output SHA-256 through F4-011: `577badf47a383f0fed2324efc5e984c1dec7ca258998b328a858360f8805a2fd`.
+- Replay on the F4-011 output is byte-identical; output SHA remains `577badf47a383f0fed2324efc5e984c1dec7ca258998b328a858360f8805a2fd`. **IDEMPOTENCY PASS**.
+- Body paragraph count: **705 → 704** in this batch; baseline remains 711.
+- F4-007: Giriş closing paragraph replaced with the accepted transition into Birinci Bölüm. No protected structure affected. F5-014 overlap recorded; Fifth must not restore the removed negative research-question paragraph.
+- F4-008: prior footnote-placement preflight risk resolved semantically rather than by mechanical relocation. The revised evidence-level paragraph retains the source-backed Abdülmuttalib/Me’mûn proposition with footnote **15**, and the `bismikellâhümme` proposition with footnote **16**. Neither citation was attached to unsupported generic prose.
+- F4-009: `otaya koymaktadır` corrected to `ortaya koymaktadır`; the awkward first mini-synthesis no longer survives because F4-011 correctly removes the redundant conclusion.
+- F4-010: malformed Varaka b. Nevfel sentence repaired; existing footnote refs 12 and 13 remain on their original supported clauses.
+- F4-011: two 1.1 concluding syntheses consolidated to one accepted synthesis; one true redundant paragraph removed. F5-015 overlap recorded.
+- Genuine footnotes/references: **469/469**; exact ID/reference sets unchanged; orphans/dangling/duplicates **0/0/0**.
+- `word/footnotes.xml`: byte-hash exact baseline match.
+- Word field instructions: **520/520**; field inventory exact baseline match (TOC 1; PAGEREF 52; REF 0; PAGE 1; ADDIN 466).
+- Zotero fields: **465 item + 1 bibliography**, unchanged.
+- `word/styles.xml`, `word/numbering.xml`, `word/settings.xml`, `word/_rels/document.xml.rels`: exact baseline hashes; expected content changes confined to `word/document.xml` among protected core parts.
+- All XML parts parse; ZIP/package integrity **PASS**.
+- Canonical source SHA-256 rechecked and remains `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2618b058c54`.
+- Bounded QA-only slice: first 65 current body paragraphs rendered as **15 pages**. All **15/15** pages visually inspected.
+- First visual pass detected an inherited red run style on the newly inserted F4-011 synthesis. Replay code was corrected to choose a normal, non-red source run; affected pages were re-rendered and re-inspected. Final render shows normal black text.
+- Final visual result: no clipping, overlap, footnote overflow, abnormal whitespace, unintended color/font propagation or pagination defect caused by F4-007–011. Existing unrelated red editorial markings elsewhere remain source content for later report items.
+- Result: **PASS — F4-007–011 CHECKPOINT VALIDATED**.
