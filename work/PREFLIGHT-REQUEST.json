@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-096.docx",
-  "start": 396,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-097.docx",
+  "start": 0,
   "end": 410,
-  "output": "work/runtime/F4-097-PREFLIGHT.txt",
-  "purpose": "map both 4.5 constitutive-source/kurucu-zemin claims, associated footnotes, and the F4-098 editor-note boundary before F4-097 complementary-evidence reframe"
+  "output": "work/runtime/F4-098-NAME-USAGE-PREFLIGHT.txt",
+  "purpose": "map all prior/current uses of Mehdevi, Ibn Muaz al-Juhani, Sahavi and Abu Amr through the F4-098 4.5 block so first-use versus repeat-use date corrections are deterministic"
 }
