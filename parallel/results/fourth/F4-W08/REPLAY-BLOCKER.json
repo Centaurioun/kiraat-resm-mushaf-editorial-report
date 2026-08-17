@@ -1,0 +1,15 @@
+{
+  "task": "F4-W08",
+  "scope": ["F4-100", "F4-101", "F4-102", "F4-103", "F4-104", "F4-105", "F4-106", "F4-107"],
+  "worker_branch": "worker/f4/w08-100-107",
+  "required_baseline": {
+    "logical_state": "F4-047",
+    "sha256": "6621390d51f78d73fabf615f2c224dfb36b22c37cefc81e8e6cb568e20105fb7",
+    "checkpoint_commit": "c473b24d3f6f24508c761805218bbaa29686b47c"
+  },
+  "gate_result": "DEPENDENCY_BLOCKED",
+  "operations_executed": 0,
+  "reason": "Binary canonical DOCX / reconstructed F4-047 DOCX could not be materialized into the execution runtime; mandatory baseline SHA, DOCX structure, genuine footnotes and visual QA therefore could not be independently verified.",
+  "safe_behavior": "FAIL_CLOSED",
+  "canonical_state_modified": false
+}
