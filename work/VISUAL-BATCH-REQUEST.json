@@ -1,8 +1,8 @@
 {
   "checkpoint": "F4-110",
-  "revision": 1,
+  "revision": 3,
   "docx": "artifacts/checkpoints/manuscript-working-f4-110.docx",
-  "sha256": "003b2b197d447861291443ab0004a08685ac218dd2b90944c6da5d7bb54f83fb",
+  "sha256": "60ef742cb135ed85970542cffc00c8d0d368f488cbf2d6f93fed102b2c1c4bec",
   "start": 452,
   "end": 458,
   "technical_file": "work/runtime/F4-110-TECHNICAL-VALIDATION.txt",
