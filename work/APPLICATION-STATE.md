@@ -11,19 +11,20 @@
 
 ## State machine
 - Phase: `FOURTH_APPLY`
-- Last fully completed Fourth item: `F4-017`
-- Next Fourth item: `F4-018`
+- Last fully completed Fourth item: `F4-022`
+- Next Fourth item: `F4-023`
 - Fifth Report: blocked until Fourth completion; next `F5-001`.
-- DO-NOT-REPEAT: bootstrap and `F4-001–017`.
+- DO-NOT-REPEAT: bootstrap and `F4-001–022`.
 
 ## Deterministic recovery pipeline
-1. Canonical source → `work/apply_docx_edits.py` (F4-001–011), replay commit `86f99b2186711a7d94159d9c1b7413b0248a0c5c`.
-2. Output → `work/apply_f4_012_017.py` (F4-012–017), replay commit `d533b450b20729130e850d7cbf37256a8e192306`.
-- Current reproducible logical DOCX SHA-256: `9b983dcebda782bf1b5bbb69134dde43b0b45b5119ae63d5aa4f2379ec57885a`.
+1. Canonical source → `work/apply_docx_edits.py` through F4-011 (`86f99b2186711a7d94159d9c1b7413b0248a0c5c`).
+2. Output → `work/apply_f4_012_017.py` through F4-017 (`d533b450b20729130e850d7cbf37256a8e192306`).
+3. Output → `work/apply_f4_018_022.py` through F4-022 (`7d32131a8681b3334cb405a68f79c2494b8db5e7`).
+- Current reproducible logical DOCX SHA-256: `209b3a6e7719f44b7e9ed2b1a25b2992d00cdc7b6afa7e580fccd6f5d81c36f1`.
 - Current body paragraphs: **700** (baseline 711).
-- Batch replay idempotency: **PASS, byte-identical**.
-- Ledger through F4-017: commit `154d696611e3b97fc92595982fa240097f89e7fe`.
-- Edited binary is not falsely claimed persisted; connector lacks local binary DOCX upload. Durable recovery is canonical source + replay pipeline + exact hashes + ledger + validation.
+- Current stage replay idempotency: **PASS, byte-identical**.
+- Ledger through F4-022: commit `10bcd454d33399979e83c7d6ee90dfad34fe191f`, content SHA `fea2a58c97569bd2bd34bdc6dcdd0cb571eab4e7`.
+- Edited binary is not falsely claimed persisted; connector lacks local binary DOCX upload. Durable recovery remains canonical source + replay stages + exact hashes + ledger + validation.
 
 ## Integrity
 - Genuine footnotes/references: **469/469**; exact ID/reference sets unchanged.
@@ -33,21 +34,20 @@
 - Zotero: **465 item + 1 bibliography**, unchanged.
 - Protected core OOXML unchanged except expected `word/document.xml`; ZIP/XML **PASS/PASS**.
 
-## F4-012–017 result
-- F4-012: STRUCTURALLY_APPLIED — three repetitive 1.2 opening paragraphs consolidated; notes 19–21 retained in ascending order on supported surviving synthesis.
-- F4-013: APPLIED — terminal period restored; notes 22–23 untouched.
-- F4-014: APPLIED — second/third reasons merged and explicit editor note removed; notes 24–26 preserved.
-- F4-015: STRUCTURALLY_APPLIED — two-model certainty replaced with cautious synthesis; notes 28–30 preserved on the sentence summarizing both source families.
-- F4-016: APPLIED — evidentiary certainty weakened to report-approved wording.
-- F4-017: APPLIED — 1.3 now opens directly with the Ebû Bekir cem transition.
+## F4-018–022 result
+- F4-018: APPLIED — cem distinction rewritten; notes 31 and 32 preserved at their supported propositions.
+- F4-019: APPLIED — Hârice corrected from daughter to son, `Hârice b. Zeyd (ö. 100/718-19)`; note 35 preserved.
+- F4-020: APPLIED — Ebû Bekir-era material standardized as `suhuf`; paragraph notes 43/44/45 unchanged.
+- F4-021: APPLIED — malformed Zeyd b. Sâbit sentence replaced with report-approved wording; note inventory 34–37 unchanged.
+- F4-022: APPLIED — Mervân b. Hakem death date corrected to `65/685`, terminology corrected to `sahifeler`, note 44 retained.
 - Open HOLDs: none.
 
 ## Visual QA
-- First 80 current body paragraphs rendered as **19 pages**; **19/19 inspected**.
-- The durable two-script pipeline render is pixel-identical page-for-page to the independently produced F4-017 validation render (19/19 SHA matches).
-- No clipping, overlap, footnote overflow, unintended style propagation, or pagination defect caused by F4-012–017.
-- Existing red editorial text outside this batch remains source content for later report items.
+- QA-only first 90 body paragraphs rendered as **21 pages**.
+- Pages 13–21 inspected; key affected pages 13–15 additionally inspected at full resolution.
+- No clipping, overlap, footnote overflow, unintended style/color propagation, or edit-caused pagination defect.
+- Existing red editorial notes/markings outside these report items remain source content for later items.
 - Final full-document all-page QA remains mandatory.
 
-- Last validation: **PASS — F4-012–017 technical + citation semantics + byte-idempotency + 19/19 bounded visual QA**.
-- Exact next action: apply `F4-018` from CURRENT F4-017 state, then continue sequentially.
+- Last validation: **PASS — F4-018–022 technical + citation preservation + byte-idempotency + 21-page bounded visual QA**.
+- Exact next action: apply `F4-023` from CURRENT F4-022 state, then proceed sequentially.
