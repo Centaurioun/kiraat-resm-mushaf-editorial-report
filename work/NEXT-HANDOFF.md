@@ -3,48 +3,46 @@
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
 - Branch/checkpoint HEAD: `SELF` — resolve as the current branch HEAD containing this handoff
-- Validated F4-006 checkpoint commit: `a0679975bcaf2121eafd397255e6e649daccdbb7`
-- F4-007/F4-008 preflight evidence commit: `4f4d6e664ad49590c6ca72b23e8fe1396751946a`
+- Replay/application commit through F4-011: `86f99b2186711a7d94159d9c1b7413b0248a0c5c`
+- Ledger commit through F4-011: `ed22ec36a0e94c04f58cc956f08a5d113f25443c`
+- State update commit: `97afa03b3813c2a36026acbbcce7d851a1cfc613`
+- Validation update commit: `a05b52d2c85554abf8ca01d497cf2376598242f7`
 - Phase: `FOURTH_APPLY`
 
-- Last completed: `F4-006`
-- Next: `F4-007`
+- Last completed: `F4-011`
+- Next: `F4-012`
+- DO-NOT-REPEAT: bootstrap and `F4-001–011`.
 
-- Current logical DOCX: deterministic replay output of `work/apply_docx_edits.py` from canonical source
-- Current working SHA-256: `33743240d3bd6e1f5eda2efabf8ef5dfa66cbec9a5f655923206563ab605bb93`
-- Current body paragraph count: **705**
-- Last known good reproducible commit: `dd41275b91dfaa7dffce0cb43e7b5e823db73756`
-- Last known good logical DOCX SHA-256: `33743240d3bd6e1f5eda2efabf8ef5dfa66cbec9a5f655923206563ab605bb93`
-- Last persisted DOCX binary: `artifacts/checkpoints/manuscript-working-bootstrap.docx` at commit `026fe5d382d51a6c31b489a89498946d545587f4`
-- Binary note: edited DOCX binary is not claimed as GitHub-persisted because the current connector does not accept a local binary file parameter. Recovery is deterministic from canonical source + `work/apply_docx_edits.py` and verified by exact SHA.
+## Current reproducible manuscript state
+- Current logical DOCX: deterministic replay output of `work/apply_docx_edits.py` from canonical source.
+- Current working SHA-256: `577badf47a383f0fed2324efc5e984c1dec7ca258998b328a858360f8805a2fd`
+- Current body paragraph count: **704**
+- Replay idempotency: **PASS, byte-identical**.
+- Last known good reproducible replay commit: `86f99b2186711a7d94159d9c1b7413b0248a0c5c`
+- Last persisted DOCX binary remains the canonical bootstrap at `artifacts/checkpoints/manuscript-working-bootstrap.docx`, commit `026fe5d382d51a6c31b489a89498946d545587f4`. Edited binary is not falsely claimed persisted; deterministic replay + hashes + ledger + logs are the durable recovery route.
 
+## Integrity at checkpoint
 - Source SHA-256: `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2618b058c54`
-- Fourth Report: 116 items, blob `e880124fb0bdb72afb29cf10927e2dd15bae0676` unchanged
-- Fifth Report: 94 items, blob `b2e184bf45c13fb548cd13ee2e4f829a52b4bb69` unchanged
+- Fourth Report: 116 items, blob `e880124fb0bdb72afb29cf10927e2dd15bae0676`
+- Fifth Report: 94 items, blob `b2e184bf45c13fb548cd13ee2e4f829a52b4bb69`
+- Footnotes/references: **469/469**; orphans/dangling/duplicates **0/0/0**.
+- `word/footnotes.xml`: unchanged from baseline.
+- Word fields: **520/520**; TOC 1; PAGEREF 52; REF 0; PAGE 1; ADDIN 466.
+- Zotero: **465 item + 1 bibliography**, unchanged.
+- Protected core OOXML unchanged except expected `word/document.xml`; ZIP/XML **PASS/PASS**.
+- Bounded visual QA through F4-011: first 65 current body paragraphs → **15 pages**, inspected **15/15**, final PASS after correcting one inherited red run on the F4-011 replacement.
 
-- Footnotes baseline/current: **469/469**
-- Body references baseline/current: **469/469**
-- Orphans: **0**
-- Dangling references: **0**
-- Duplicate references: **0**
-- Footnote 7: retained with preserved F4-006 source-backed paragraph
+## Important resolved / overlap notes
+- F4-008 prior footnote conflict is resolved safely: footnote 15 remains on the Abdülmuttalib/Me’mûn proposition; footnote 16 remains on the `bismikellâhümme` proposition. Do not re-open this unless source evidence changes.
+- F4-007 overlaps F5-014. Fourth Report structural/scientific result wins; Fifth must not restore the removed negative research-question paragraph.
+- F4-011 overlaps F5-015. Fifth may later improve style only if the scientific meaning of the Fourth Report synthesis remains intact.
+- Open HOLDs: none at this checkpoint.
 
-- Word fields baseline/current: **520/520**
-- TOC 1; PAGEREF 52; REF 0; PAGE 1; ADDIN 466
-- Zotero: **465 item + 1 bibliography**, unchanged
-- Protected OOXML unchanged except expected `word/document.xml`
-- ZIP/XML: **PASS/PASS**
+## Exact next action — F4-012
+F4-012 concerns the opening of `1.2. Erken Dönemde Kur'an'ın Yazı ile İlişkisi` and proposes the consolidated paragraph:
 
-- Completed structural changes: F4-006 Giriş scope/method/contribution/chapter-plan consolidation; six repetitive/superseded paragraphs removed; three unique source-backed intervening paragraphs preserved exactly; downstream paragraph indices must not be reused from the pre-F4-006 structure.
-- Open HOLDs: none at the durable completed boundary.
+> Vahyin inişiyle birlikte yazı, sözlü aktarımı tamamlayan daha düzenli bir kayıt aracı hâline gelmiştir. Hz. Peygamber'in vahiy kâtiplerini görevlendirmesi ve inen âyetleri yazdırması, özellikle Medine döneminde yazılı kaydın daha belirgin bir uygulamaya dönüştüğünü göstermektedir. Bununla birlikte Kur’an'ın aktarımında ezber, tilâvet ve yazı birlikte işleyen unsurlar olarak varlığını sürdürmüştür.
 
-- Validation: F4-006 replay idempotency **PASS, byte-identical**; bounded current paragraphs 0–59 render = **14 pages**, visually inspected **14/14**, PASS.
-- Full final all-page visual QA remains mandatory at `FINAL_VALIDATE`.
+The current opening spans multiple source paragraphs and carries genuine footnotes **19, 20 and 21**. Before structural consolidation, re-locate those paragraphs from the CURRENT F4-011 DOCX and inspect each note's supported proposition. Preserve valid citation destinations explicitly; if any note has no scientifically valid surviving proposition, use `FOOTNOTE_PLACEMENT_CONFLICT` rather than deleting or guessing.
 
-## Preflight immediately ahead
-- Read `work/PREFLIGHT-F4-007-008.md` before applying F4-007/F4-008.
-- F4-007 target is uniquely resolved, contains no footnote/field/bookmark/RTL protected structures, and overlaps F5-014. Fourth Report replacement must be applied first; Fifth must not later restore the removed negative research-question sentence.
-- F4-008 target contains genuine footnote references **15 and 16**. Footnote 16 is specifically attached to the unique `bismikellâhümme` proposition, while F4-008's proposed replacement omits that proposition. Do not append footnote 16 to a generic replacement sentence. If no scientifically valid surviving destination is established, record `FOOTNOTE_PLACEMENT_CONFLICT` rather than guessing or deleting the note.
-
-- DO-NOT-REPEAT: bootstrap and `F4-001–006`.
-- Exact next action: apply F4-007 from the CURRENT F4-006 state only after updating the deterministic replay path and ledger in a checkpoint-safe way; then confront F4-008's documented footnote-placement issue explicitly before changing its paragraph.
+After F4-012, continue sequentially through the complete Fourth Report, then apply Fifth Report with Fourth-precedence rules, and finish with full-document final technical + all-page visual acceptance.
