@@ -1,39 +1,40 @@
 {
-  "last_f4": 110,
-  "next_f4": 111,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-110.docx",
-  "sha256": "fcdca872a3efc36b96e9f9d600fd23ba73b45a4fec4857ea5434df2b6dd1c807",
+  "last_f4": 111,
+  "next_f4": 112,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-111.docx",
+  "sha256": "4c9eba6d4ca9e65dc7148921c8331a21f4768ecc3aed65c9c0deda0ff98166c9",
   "body_paragraphs": 676,
-  "technical_file": "work/runtime/F4-110-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-110-VISUAL-QA.md",
-  "visual_pages": 5,
+  "technical_file": "work/runtime/F4-111-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-111-VISUAL-QA.md",
+  "visual_pages": 19,
   "holds": "none",
-  "validation_marker": "## F4-110 checkpoint — PASS",
-  "validation_block": "- Accepted replay: `work/apply_f4_110.py`, revision 4; candidate SHA-256 `fcdca872a3efc36b96e9f9d600fd23ba73b45a4fec4857ea5434df2b6dd1c807`. Revisions 1–3 were explicitly rejected from durable state because bounded rendering placed the future-research paragraph with the bibliography.\n- F4-110 APPLIED: retained the unique ilmî-contribution core, separated the report-approved final judgment and future-research recommendation into distinct paragraphs, and kept `Kaynakça` as the bibliography boundary.\n- Layout repair: existing bookmark-backed `Kaynakça` heading now carries explicit `pageBreakBefore` so the future-research paragraph remains part of Sonuç and bibliography begins on the following page. Heading text/bookmarks remain intact.\n- Body paragraphs 675→676 because one additional future-research paragraph was created.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P452–458: 5/5 pages inspected; PASS.\n- Durable boundary: last F4-110; next F4-111.",
+  "validation_marker": "## F4-111 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_111.py`; candidate SHA-256 `4c9eba6d4ca9e65dc7148921c8331a21f4768ecc3aed65c9c0deda0ff98166c9`.\n- F4-111 APPLIED: normalized 4 eligible main-text `Kur’ân`/`Kur'an` occurrences to house-style `Kur’an` and 6 curated specific-name contexts to `İmam Mushaf`; bibliography and footnotes were excluded.\n- Direct quotations and italic bibliographic work titles retain their original spelling. In particular Mervân’s quotation at P64 retains lower-case `imam mushafa`, while narrative specific-name usages are normalized.\n- Deterministic second replay reports ALREADY_SATISFIED and is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Three bounded representative visual slices: P20–29 4/4 PASS; P62–85 8/8 PASS; P397–411 7/7 PASS; total 19/19 pages PASS.\n- Durable boundary: last F4-111; next F4-112.",
   "structural_state": [
-    "F4-073–109 remain intact and validated from prior durable checkpoints.",
-    "F4-110: Sonuç now ends with retained ilmî contribution, separate final judgment, separate future-research paragraph, followed by Kaynakça on a new page.",
-    "Current body paragraph count is 676; all 469 footnote identities, 520 fields, bookmarks and protected OOXML remain preserved.",
-    "F4-111+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh."
+    "F4-073–110 remain intact and validated from prior durable checkpoints.",
+    "F4-111: main-text house style now uses `Kur’an` and curated specific-name `İmam Mushaf` without altering bibliography, direct quotations, italic work titles or footnotes.",
+    "Current body paragraph count remains 676; all 469 footnote identities, 520 fields, bookmarks and protected OOXML remain preserved.",
+    "F4-112+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_110.py` revision 4",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-110.docx`",
-    "SHA: `work/runtime/F4-110-SHA256.txt`",
-    "Postflight: `work/runtime/F4-110-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-110-TECHNICAL-VALIDATION.txt`",
-    "Human visual review: `work/F4-110-VISUAL-QA.md` — 5/5 PASS"
+    "Preflight: `work/runtime/F4-111-PREFLIGHT.txt`",
+    "Replay: `work/apply_f4_111.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-111.docx`",
+    "SHA: `work/runtime/F4-111-SHA256.txt`",
+    "Postflight: `work/runtime/F4-111-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-111-TECHNICAL-VALIDATION.txt`",
+    "Human visual review: `work/F4-111-VISUAL-QA.md` — 19/19 representative pages PASS"
   ],
-  "next_action": "Apply only F4-111 to current F4-110. Perform the report-required global main-text normalization of `Kur’an` and the specific-name form `İmam Mushaf`, while preserving bibliographic titles and direct quotations where original spelling must remain. Use a preflight inventory first so broad replacement does not touch fields, bibliography, quotations, Arabic/RTL runs or protected citation structures. Do not pre-apply F4-112+. Run deterministic replay, technical validation and bounded/global QA appropriate to the scope. Do not repeat `F4-001`–`F4-110`.",
+  "next_action": "Apply only F4-112 to current F4-111. Remove the surviving editorial/work notes from genuine footnotes 32, 41 and 105 while preserving the bibliographic citation content and the footnote IDs/references. Because `word/footnotes.xml` must change for this accepted item, use a footnote-specific validation that proves only the targeted footnote text changed and all 469 IDs/reference identities, fields, body XML structure and all other protected parts remain intact. Do not pre-apply F4-113+. Run deterministic replay and footnote-aware visual/technical QA. Do not repeat `F4-001`–`F4-111`.",
   "updates": {
-    "F4-110": {
+    "F4-111": {
       "status": "APPLIED",
-      "section": "Sonuç final closure",
-      "action_type": "FINAL_JUDGMENT_FUTURE_RESEARCH_SEPARATION_AND_BIB_PAGE_BOUNDARY",
-      "resolved_location": "current P454–457",
+      "section": "Ana metin geneli",
+      "action_type": "MAIN_TEXT_HOUSE_STYLE_QURAN_IMAM_MUSHAF_NORMALIZATION",
+      "resolved_location": "main text P0–456; bibliography boundary P457",
       "affected_footnote_ids": [],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 5/5_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Only revision 4 accepted. Kaynakça heading retains bookmarks and receives explicit pageBreakBefore for clean bibliography separation."
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 19/19_REPRESENTATIVE_VISUAL_QA_PASS",
+      "notes": "4 Quran spellings + 6 curated Imam Mushaf contexts normalized; bibliography/footnotes/direct quotations/italic titles preserved."
     }
   }
 }
