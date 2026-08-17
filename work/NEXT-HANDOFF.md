@@ -2,12 +2,12 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current phase: `BOOTSTRAP`
+- Current phase: `FOURTH_APPLY`
 - Last completed item: none
 - Next item: `F4-001`
 - Current working DOCX: `artifacts/checkpoints/manuscript-working-bootstrap.docx`
-- Last known good commit: `b7633f23aa67d26e77da50f56ba4f24e2b1b1518` (bootstrap checkpoint binding pending)
-- Last known good DOCX: `source/manuscript/current/redaktorden_gelen.docx`
+- Last known good commit: `026fe5d382d51a6c31b489a89498946d545587f4`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-bootstrap.docx`
 - Footnote baseline/current: **469 / 469**
 - Body references baseline/current: **469 / 469**
 - Orphans: **0**
@@ -16,5 +16,5 @@
 - Zotero: 465 item fields + 1 bibliography field, preserved
 - Completed structural changes: none
 - Open HOLDs: none
-- DO-NOT-REPEAT range: canonical-source verification and bootstrap technical inventory
-- Exact next action: create/push bootstrap checkpoint; immediately bind last-known-good state to the bootstrap commit; then locate `F4-001` in the CURRENT working DOCX and apply only if the anchor resolves uniquely and safely.
+- DO-NOT-REPEAT range: branch/source verification, canonical-source byte identity, bootstrap inventory, ledger initialization, bootstrap persistence checkpoint
+- Exact next action: locate `F4-001` in the CURRENT DOCX and apply the authoritative Fourth Report replacement only after unique safe anchor resolution; then proceed in order through at most five low-risk items before checkpoint validation.

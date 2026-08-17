@@ -25,3 +25,12 @@
 - Result: **PASS**
 
 No manuscript content was changed during bootstrap.
+
+## Bootstrap persistence checkpoint — 2026-08-17
+- Commit: `026fe5d382d51a6c31b489a89498946d545587f4`
+- Branch push: **PASS**
+- Ledger boundary verification: `F4-116` followed by `F5-001`; terminal item `F5-094` present.
+- Recovery DOCX: `artifacts/checkpoints/manuscript-working-bootstrap.docx`
+- Recovery DOCX blob equals canonical source blob: **PASS**
+- State transition: `BOOTSTRAP` → `FOURTH_APPLY`
+- Result: **PASS**

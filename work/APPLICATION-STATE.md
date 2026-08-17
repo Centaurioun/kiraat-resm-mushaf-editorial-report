@@ -15,7 +15,7 @@
 - Fifth Report parsed item count: **94** (items 1–94 present; 95 absent)
 
 ## State machine
-- Current phase: `BOOTSTRAP`
+- Current phase: `FOURTH_APPLY`
 - Last fully completed Fourth Report item: none
 - Next Fourth Report item: `F4-001`
 - Last fully completed Fifth Report item: none
@@ -24,8 +24,8 @@
 ## Working document / recovery
 - Current working DOCX: `artifacts/checkpoints/manuscript-working-bootstrap.docx`
 - Current working DOCX SHA-256: `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2618b058c54`
-- Last known good commit: `b7633f23aa67d26e77da50f56ba4f24e2b1b1518` (to be rebound to the bootstrap checkpoint immediately after that checkpoint is committed)
-- Last known good DOCX: `source/manuscript/current/redaktorden_gelen.docx`
+- Last known good commit: `026fe5d382d51a6c31b489a89498946d545587f4`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-bootstrap.docx`
 
 ## Footnote state
 - Baseline genuine footnote count: **469**
@@ -60,5 +60,5 @@
 ## Editing state
 - Current structural-edit state: none; no manuscript text has been modified.
 - Open HOLD items: none
-- Last validation result: **PASS — bootstrap baseline**
-- Exact next action: commit/push bootstrap checkpoint, bind `last_known_good_commit` to that checkpoint, set phase to `FOURTH_APPLY`, then locate and apply `F4-001` against the current working DOCX.
+- Last validation result: **PASS — bootstrap checkpoint `026fe5d382d51a6c31b489a89498946d545587f4`**
+- Exact next action: locate and apply `F4-001` against the CURRENT working DOCX; continue sequentially through at most five low-risk items before validation/checkpoint, stopping earlier for any high-risk or conflict condition.
