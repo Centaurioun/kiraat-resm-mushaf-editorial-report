@@ -1,0 +1,9 @@
+PASS
+sha256=5c77048b0fc6b6fd91b06c1e37c48098f5ef99d66e8b8285cd3c56e4c614876a
+footnotes=469
+references=469
+orphans=0
+dangling=0
+duplicates=0
+fields=520
+protected_parts=baseline-identical
