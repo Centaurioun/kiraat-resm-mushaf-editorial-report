@@ -161,3 +161,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 4/4 pages inspected; PASS. Existing Fourth Section new-page behavior remains intact; no new blank page or section break was introduced.
 - Durable boundary: last F4-082; next F4-083.
+
+
+## F4-083 checkpoint — PASS
+- Final replay: `work/apply_f4_083.py`; candidate commit `812d3189861607d4a2822108d77c45fb48b719eb`; SHA-256 `d4adb180cd58a6d74d1557a6c14fe2bc2b1fc42018c7b4bcffaf2029e2993127`.
+- F4-083 APPLIED: repeated cem/istinsah history in P351 was reduced to the argument-essential reminder while FN365 was preserved.
+- P352 no longer assigns autonomous selecting/producing agency to rasm; mushaf-line compatibility is framed as an evaluative criterion within transmitted qiraat. FN366–367 remain on the source-backed acceptance-criterion discussion.
+- F4-084 evidence language in P350 was intentionally left untouched for the next sequential item.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, heading damage or style leakage.
+- Durable boundary: last F4-083; next F4-084.
