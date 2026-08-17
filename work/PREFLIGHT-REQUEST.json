@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-067.docx",
-  "start": 265,
-  "end": 330,
-  "output": "work/runtime/F4-068-072-PREFLIGHT.txt",
-  "purpose": "current 3.3-3.4 footnote/field/RTL inventory before F4-068-072"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-072.docx",
+  "start": 278,
+  "end": 370,
+  "output": "work/runtime/F4-073-077-PREFLIGHT.txt",
+  "purpose": "current 3.5-3.7 footnote/field/RTL inventory before F4-073-077"
 }
