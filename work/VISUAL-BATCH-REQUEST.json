@@ -1,12 +1,12 @@
 {
-  "checkpoint": "F4-115-QA",
+  "checkpoint": "F4-116-QA",
   "revision": 1,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-115.docx",
+  "docx": "artifacts/checkpoints/manuscript-working-f4-116.docx",
   "sha256": "73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf",
-  "start": 495,
-  "end": 615,
+  "start": 500,
+  "end": 507,
   "allowed_footnote_text_ids": [2,28,32,41,50,66,105,271,272,273,274,292,342,344,345,346,377,380,381,407,409,411,414,421,423,424,425,426,427,428,431],
-  "technical_file": "work/runtime/F4-115-TECHNICAL-VALIDATION.txt",
-  "range_file": "work/runtime/F4-115-QA-RANGE.txt",
-  "pdf_file": "work/runtime/F4-115-QA.pdf"
+  "technical_file": "work/runtime/F4-116-TECHNICAL-VALIDATION.txt",
+  "range_file": "work/runtime/F4-116-QA-RANGE.txt",
+  "pdf_file": "work/runtime/F4-116-QA.pdf"
 }
