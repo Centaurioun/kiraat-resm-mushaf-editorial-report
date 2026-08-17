@@ -1,44 +1,40 @@
 {
-  "last_f4": 98,
-  "next_f4": 99,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-098.docx",
-  "sha256": "30c5f9140dfbf9425e860563e9c297e3ba3d6b154a74c8d7f5b7236d1df20bc0",
-  "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-098-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-098-VISUAL-QA.md",
-  "visual_pages": 12,
+  "last_f4": 99,
+  "next_f4": 100,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-099.docx",
+  "sha256": "3c3a18fdd19dff05f2bb7e3a03979bc5eb0769085a36b7b2e1c4a61a81d4f8c0",
+  "body_paragraphs": 678,
+  "technical_file": "work/runtime/F4-099-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-099-VISUAL-QA.md",
+  "visual_pages": 3,
   "holds": "none",
-  "validation_marker": "## F4-098 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_098.py`; candidate SHA-256 `30c5f9140dfbf9425e860563e9c297e3ba3d6b154a74c8d7f5b7236d1df20bc0`.\n- F4-098 APPLIED: first-use biographical dates were normalized according to the report: Sehavi at P195 `(ö. 643/1245)` and Mehdevi at P352 `(ö. 440/1048-49 [?])`; repeat-use dates/work notes were removed in 4.5. Ibn Muaz al-Juhani is corrected to `(ö. 442/1050)` and the Ebu Amr work-note fragment was removed while retaining the existing death date.\n- The overgeneralized universal-hikma authorial conclusion in the FN418–419 paragraph was replaced with the report-approved qualified framing that attributes meaning/hikma explanations to sources and avoids assigning one conscious purpose to every rasm feature.\n- All affected source structure remains intact, including FN417–437 and dense Arabic/RTL runs. Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Because the item touched three distant regions, bounded visual QA used three renders: P192–198 3/3 PASS; P349–355 4/4 PASS; P396–403 5/5 PASS; aggregate 12/12 pages PASS.\n- Pre-existing red editorial material outside the F4-098 target remains pending for later report items and is not a batch regression.\n- Durable boundary: last F4-098; next F4-099.",
+  "validation_marker": "## F4-099 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_099.py`; candidate SHA-256 `3c3a18fdd19dff05f2bb7e3a03979bc5eb0769085a36b7b2e1c4a61a81d4f8c0`.\n- F4-099 APPLIED: inserted the report-approved two-sentence historical bridge between the existing 4.5 closing synthesis and the bookmark-backed 4.6 heading, linking classical rasm literature to later mushaf copying and print-publication practice.\n- Existing 4.5 source-backed content and the 4.6 heading/FN438+ material remain unchanged. The insertion adds exactly one normal body paragraph, increasing body paragraphs from 677 to 678.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P403–409: 3/3 pages inspected; PASS.\n- Durable boundary: last F4-099; next F4-100.",
   "structural_state": [
-    "F4-073–097 remain intact and validated from prior durable checkpoints.",
-    "F4-098: targeted 4.5 work-note/death-date cleanup and source-attributed hikma framing are applied; first-use date normalization was also applied at the proven earlier body occurrences.",
-    "FN417–437, RTL/Arabic structure, the bookmark-backed 4.5/4.6 boundaries and later report material remain preserved.",
-    "F4-099 historical transition from classical rasm transmission into modern print-mushaf standardization is next and has not been pre-applied.",
+    "F4-073–098 remain intact and validated from prior durable checkpoints.",
+    "F4-099: a single report-approved historical transition paragraph now bridges classical rasm transmission and the modern print-mushaf section.",
+    "The bookmark-backed 4.6 heading and FN438+ source material remain preserved; F4-100+ has not been pre-applied.",
     "Derived TOC field has not been recalculated; final Word field/TOC refresh remains required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_098.py`",
-    "First-use mapping: `work/runtime/F4-098-NAME-USAGE-PREFLIGHT.txt`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-098.docx`",
-    "SHA: `work/runtime/F4-098-SHA256.txt`",
-    "Postflight: `work/runtime/F4-098-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-098-TECHNICAL-VALIDATION.txt`",
-    "QA A: `work/runtime/F4-098-A-QA.pdf` — 3/3 PASS",
-    "QA B: `work/runtime/F4-098-B-QA.pdf` — 4/4 PASS",
-    "QA C: `work/runtime/F4-098-C-QA.pdf` — 5/5 PASS",
-    "Human aggregate visual review: `work/F4-098-VISUAL-QA.md` — 12/12 PASS"
+    "Replay: `work/apply_f4_099.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-099.docx`",
+    "SHA: `work/runtime/F4-099-SHA256.txt`",
+    "Postflight: `work/runtime/F4-099-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-099-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-099-QA.pdf`",
+    "Human visual review: `work/F4-099-VISUAL-QA.md` — 3/3 PASS"
   ],
-  "next_action": "Read and apply only F4-099 to the current F4-098 binary. Add the report-required historical transition from classical rasm transmission/discussion into the modern print-mushaf standardization section without altering source-backed 4.5 content or pre-applying F4-100+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-098`.",
+  "next_action": "Read and apply only F4-100 to the current F4-099 binary. At the 4.7 opening, replace the claim that the absence of dotting/vocalization in early mushafs was fundamentally a conscious mechanism for preserving multiple qiraat with the report-approved historically cautious formulation. Preserve all affected footnotes/RTL/source material and do not pre-apply F4-101+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-099`.",
   "updates": {
-    "F4-098": {
+    "F4-099": {
       "status": "APPLIED",
-      "section": "4.5 + proven first-use locations",
-      "action_type": "WORK_NOTE_DATE_CLEANUP_AND_HIKMA_ATTRIBUTION_SCOPE",
-      "resolved_location": "current paragraphs 195, 352, 397–399, 401–402",
-      "affected_footnote_ids": [187,188,189,366,367,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 12/12_MULTI_RANGE_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Applied report-directed first-use dates, removed later work-note/date clutter, fixed Ibn Muaz date, and replaced the universal-hikma authorial generalization while preserving source/RTL structure."
+      "section": "4.5 → 4.6 transition",
+      "action_type": "HISTORICAL_TRANSITION_INSERTION",
+      "resolved_location": "current paragraph 405, immediately before bookmark-backed 4.6 heading at paragraph 406",
+      "affected_footnote_ids": [],
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 3/3_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Inserted exactly one citation-free report-approved bridge paragraph without altering the source-backed 4.5 close or 4.6/FN438+ content."
     }
   }
 }
