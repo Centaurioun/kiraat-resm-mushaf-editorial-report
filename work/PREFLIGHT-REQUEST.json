@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-113.docx",
-  "start": 450,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-114.docx",
+  "start": 0,
   "end": 675,
-  "output": "work/runtime/F4-114-PREFLIGHT.txt",
-  "purpose": "F4-114 read-only inspection of bibliography DOI targets in the current durable F4-113 binary. Locate malformed Kahraman and Maşalı DOI strings and inspect their paragraph/field/run context. Do not modify the DOCX or pre-apply F4-115+."
+  "output": "work/runtime/F4-115-PREFLIGHT.txt",
+  "purpose": "F4-115 read-only full-manuscript inventory. Reconfirm exact current footnote evidence for FN2, FN8, FN109 and FN373 and match those citations to bibliography records for İbn Ebû Dâvud Kitâbu'l-mesâhif, Ebû Dâvud Süleymân b. Necâh Muhtasaru't-tebyîn, and İbn Kuteybe Te'vîlu muhtelifi'l-hadîs. Do not modify the DOCX or pre-apply F4-116."
 }
