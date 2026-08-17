@@ -24,24 +24,53 @@ jobs:
           python-version: '3.11'
       - run: pip install lxml
       - name: Apply requested deterministic batch twice
+        id: deterministic
+        continue-on-error: true
         run: |
           set -euo pipefail
           mkdir -p /tmp/app work/runtime artifacts/checkpoints
           python - <<'PY'
-          import json,hashlib,subprocess,sys
+          import json,hashlib,subprocess,sys,traceback
           from pathlib import Path
           req=json.loads(Path('work/BATCH-REQUEST.json').read_text(encoding='utf-8'))
-          inp=Path(req['input_docx']); got=hashlib.sha256(inp.read_bytes()).hexdigest()
-          if got != req['input_sha256']: raise SystemExit(f'input SHA mismatch: {got} != {req["input_sha256"]}')
-          out=Path('/tmp/app/out.docx'); rer=Path('/tmp/app/rerun.docx')
-          subprocess.run([sys.executable,req['script'],str(inp),str(out)],check=True)
-          subprocess.run([sys.executable,req['script'],str(out),str(rer)],check=True)
-          if out.read_bytes()!=rer.read_bytes(): raise SystemExit('idempotency failure: second replay differs')
-          sha=hashlib.sha256(out.read_bytes()).hexdigest()
-          dest=Path(req['output_docx']); dest.parent.mkdir(parents=True,exist_ok=True); dest.write_bytes(out.read_bytes())
-          sha_file=Path(req['sha_file']); sha_file.parent.mkdir(parents=True,exist_ok=True); sha_file.write_text(sha+'\n',encoding='utf-8')
+          diag=Path('work/runtime')/f"{req['checkpoint']}-BATCH-DIAGNOSTIC.txt"
+          try:
+              inp=Path(req['input_docx']); got=hashlib.sha256(inp.read_bytes()).hexdigest()
+              if got != req['input_sha256']: raise RuntimeError(f'input SHA mismatch: {got} != {req["input_sha256"]}')
+              out=Path('/tmp/app/out.docx'); rer=Path('/tmp/app/rerun.docx')
+              first=subprocess.run([sys.executable,req['script'],str(inp),str(out)],capture_output=True,text=True)
+              if first.returncode:
+                  raise RuntimeError('FIRST_REPLAY_FAILED\nSTDOUT:\n'+first.stdout+'\nSTDERR:\n'+first.stderr)
+              second=subprocess.run([sys.executable,req['script'],str(out),str(rer)],capture_output=True,text=True)
+              if second.returncode:
+                  raise RuntimeError('SECOND_REPLAY_FAILED\nSTDOUT:\n'+second.stdout+'\nSTDERR:\n'+second.stderr)
+              if out.read_bytes()!=rer.read_bytes(): raise RuntimeError('idempotency failure: second replay differs')
+              sha=hashlib.sha256(out.read_bytes()).hexdigest()
+              dest=Path(req['output_docx']); dest.parent.mkdir(parents=True,exist_ok=True); dest.write_bytes(out.read_bytes())
+              sha_file=Path(req['sha_file']); sha_file.parent.mkdir(parents=True,exist_ok=True); sha_file.write_text(sha+'\n',encoding='utf-8')
+              if diag.exists(): diag.unlink()
+          except Exception:
+              diag.parent.mkdir(parents=True,exist_ok=True)
+              diag.write_text(traceback.format_exc(),encoding='utf-8')
+              raise
           PY
+      - name: Commit batch failure diagnostic
+        if: steps.deterministic.outcome == 'failure'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          checkpoint=$(python -c "import json;print(json.load(open('work/BATCH-REQUEST.json'))['checkpoint'])")
+          diag="work/runtime/${checkpoint}-BATCH-DIAGNOSTIC.txt"
+          if [ -f "$diag" ]; then
+            git add "$diag"
+            git commit -m "diagnostic(runtime): persist ${checkpoint} batch failure [skip ci]" || true
+            git push origin HEAD:editorial/apply-fourth-fifth-reports
+          fi
+      - name: Fail after diagnostic persistence
+        if: steps.deterministic.outcome == 'failure'
+        run: exit 1
       - name: Write current-range postflight
+        if: steps.deterministic.outcome == 'success'
         run: |
           python - <<'PY'
           import json
@@ -64,6 +93,7 @@ jobs:
           out=Path(req['postflight_file']); out.parent.mkdir(parents=True,exist_ok=True); out.write_text('\n'.join(lines),encoding='utf-8')
           PY
       - name: Commit candidate and evidence
+        if: steps.deterministic.outcome == 'success'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
