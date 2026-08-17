@@ -1,39 +1,40 @@
 {
-  "last_f4": 106,
-  "next_f4": 107,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-106.docx",
-  "sha256": "cace4c42e6f82b75c31b6533fb732892aa2d916baf8ec7abf6168730d6e15f38",
-  "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-106-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-106-VISUAL-QA.md",
-  "visual_pages": 3,
+  "last_f4": 107,
+  "next_f4": 108,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-107.docx",
+  "sha256": "a9edfb112efc69f95d99f400197d0f66ad47e977142dee8555d83cdc93233186",
+  "body_paragraphs": 676,
+  "technical_file": "work/runtime/F4-107-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-107-VISUAL-QA.md",
+  "visual_pages": 6,
   "holds": "none",
-  "validation_marker": "## F4-106 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_106.py`; candidate SHA-256 `cace4c42e6f82b75c31b6533fb732892aa2d916baf8ec7abf6168730d6e15f38`.\n- F4-106 APPLIED: repaired the 1889 Teftîş-i Mesâhif-i Şerîfe Meclisi grammar and narrowed the claim to institutional tashih/idarî denetim. Genuine FN467 remains on the same paragraph and proposition.\n- P438, P440 and P441 remain unchanged for F4-107.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P437–441: 3/3 pages inspected; PASS.\n- Durable boundary: last F4-106; next F4-107.",
+  "validation_marker": "## F4-107 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_107.py`; candidate SHA-256 `a9edfb112efc69f95d99f400197d0f66ad47e977142dee8555d83cdc93233186`.\n- F4-107 APPLIED: removed the citation-free pre-Türkiye intermediate conclusion so 4.7 now proceeds directly from printed-mushaf chronology into the Ottoman/Türkiye control and publication experience.\n- Replaced only the repeated `Özetle...` Türkiye ending inside the FN469-bearing final paragraph with the report-approved single multicausal final conclusion. The source-backed Diyanet/imlâ propositions and FN469 remain in place.\n- The 1873 decision/permission versus 1874 actual-printing distinction remains unchanged. Body paragraphs 677→676 solely because the former citation-free intermediate conclusion paragraph was removed.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P430–442: 6/6 pages inspected; PASS. The final 4.7 conclusion ends normally and `Sonuç` begins on the following page using the pre-existing page/section break.\n- Durable boundary: last F4-107; next F4-108.",
   "structural_state": [
-    "F4-073–105 remain intact and validated from prior durable checkpoints.",
-    "F4-106: the Meclis is now the grammatical subject and the institutional-control claim is limited to supported scope.",
-    "Current body paragraph count remains 677; FN467 and all protected OOXML remain preserved.",
-    "F4-107+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh."
+    "F4-073–106 remain intact and validated from prior durable checkpoints.",
+    "F4-107: 4.7 now has one final multicausal conclusion after the Türkiye material; the premature pre-Türkiye conclusion is removed.",
+    "Current body paragraph count is 676; FN467–469 identities and all protected OOXML remain preserved.",
+    "F4-108+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_106.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-106.docx`",
-    "SHA: `work/runtime/F4-106-SHA256.txt`",
-    "Postflight: `work/runtime/F4-106-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-106-TECHNICAL-VALIDATION.txt`",
-    "Human visual review: `work/F4-106-VISUAL-QA.md` — 3/3 PASS"
+    "Replay: `work/apply_f4_107.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-107.docx`",
+    "SHA: `work/runtime/F4-107-SHA256.txt`",
+    "Postflight: `work/runtime/F4-107-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-107-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-107-QA.pdf`",
+    "Human visual review: `work/F4-107-VISUAL-QA.md` — 6/6 PASS"
   ],
-  "next_action": "Apply only F4-107 to current F4-106. Keep 4.7 in the order early print chronology → regional/qiraat-rivayah printings → Ottoman/Türkiye control and publication experience → one final conclusion. Remove the premature pre-Türkiye conclusion and replace the repeated Türkiye ending with the report-approved single multicausal final paragraph. Preserve the 1873 decision/permission versus 1874 actual-printing distinction and all genuine citations; do not pre-apply F4-108+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-106`.",
+  "next_action": "Apply only F4-108 to current F4-107. In the Sonuç section, consolidate the repeated restatement of the main thesis into the report-approved two-focus conclusion text: qiraat transmission is fundamentally oral/riwayah-based while rasm-i Osmani is a complementary compatibility criterion, and oral transmission plus common written mushaf frame operate together without graphical possibility independently establishing authenticity. Preserve any unique nonrepetitive historical/result propositions outside the repeated blocks and do not pre-apply F4-109+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-107`.",
   "updates": {
-    "F4-106": {
+    "F4-107": {
       "status": "APPLIED",
-      "section": "4.7 Ottoman inspection paragraph",
-      "action_type": "TEFTIS_MECLISI_SUBJECT_AND_SCOPE_REPAIR",
-      "resolved_location": "current paragraph 439",
-      "affected_footnote_ids": [467],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 3/3_BOUNDED_VISUAL_QA_PASS",
-      "notes": "FN467 preserved in place; only grammar/scope text changed."
+      "section": "4.7 final ordering and conclusion",
+      "action_type": "SINGLE_FINAL_CONCLUSION_REORDER",
+      "resolved_location": "former current paragraph 437 removed; final Türkiye paragraph now current P440",
+      "affected_footnote_ids": [469],
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 6/6_BOUNDED_VISUAL_QA_PASS",
+      "notes": "FN469 retained on the source-backed Türkiye/imlâ paragraph. One citation-free intermediate conclusion removed; final multicausal conclusion moved to section end."
     }
   }
 }
