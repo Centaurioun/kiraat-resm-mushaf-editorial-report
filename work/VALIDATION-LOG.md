@@ -217,3 +217,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow or style propagation.
 - Durable boundary: last F4-088; next F4-089.
+
+
+## F4-089 checkpoint — PASS
+- Final replay: `work/apply_f4_089.py`; candidate commit `c63d1d21db9c885b45f28df21cea123996421371`; SHA-256 `740d2d4960e9d6918baf808cba1d290c88e86caaa43f4395f5335b4746e210be`.
+- F4-089 APPLIED: the author-level psychological interpretation of Ibn Masud's objection was replaced with the report-approved bounded statement that the transmitted reports indicate objections related to the recension process and his codex without assigning a definite motive.
+- FN388 and the following explicitly source-attributed Kurtubi/Ibn Kathir discussion remain in the same paragraph. F4-090 repeated 4.2 conclusions remain intentionally pending.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, run-boundary spacing defect or style propagation.
+- Durable boundary: last F4-089; next F4-090.
