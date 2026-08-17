@@ -1,50 +1,50 @@
 {"id":"F4-001","report":"F4","item_number":1,"status":"VERIFIED","commit":"46a5014e1c87bce2bceda20278481055975ccb39"}
 {"id":"F4-002","report":"F4","item_number":2,"status":"VERIFIED","commit":"46a5014e1c87bce2bceda20278481055975ccb39"}
-{"id":"F4-003","report":"F4","item_number":3,"status":"VERIFIED","commit":"46a5014e1c87bce2bceda20278481055975ccb39","affected_footnote_ids":[2]}
-{"id":"F4-004","report":"F4","item_number":4,"status":"VERIFIED","commit":"8ba3fe378240d3d42e0c62b0cc7e9936c907bdf8","affected_footnote_ids":[3]}
+{"id":"F4-003","report":"F4","item_number":3,"status":"VERIFIED","commit":"46a5014e1c87bce2bceda20278481055975ccb39"}
+{"id":"F4-004","report":"F4","item_number":4,"status":"VERIFIED","commit":"8ba3fe378240d3d42e0c62b0cc7e9936c907bdf8"}
 {"id":"F4-005","report":"F4","item_number":5,"status":"VERIFIED","commit":"8ba3fe378240d3d42e0c62b0cc7e9936c907bdf8"}
-{"id":"F4-006","report":"F4","item_number":6,"status":"STRUCTURALLY_APPLIED","commit":"dd41275b91dfaa7dffce0cb43e7b5e823db73756","affected_footnote_ids":[7]}
-{"id":"F4-007","report":"F4","item_number":7,"status":"APPLIED","commit":"86f99b2186711a7d94159d9c1b7413b0248a0c5c","overlapping_items":["F5-014"]}
-{"id":"F4-008","report":"F4","item_number":8,"status":"APPLIED","commit":"86f99b2186711a7d94159d9c1b7413b0248a0c5c","affected_footnote_ids":[15,16]}
+{"id":"F4-006","report":"F4","item_number":6,"status":"STRUCTURALLY_APPLIED","commit":"dd41275b91dfaa7dffce0cb43e7b5e823db73756"}
+{"id":"F4-007","report":"F4","item_number":7,"status":"APPLIED","commit":"86f99b2186711a7d94159d9c1b7413b0248a0c5c"}
+{"id":"F4-008","report":"F4","item_number":8,"status":"APPLIED","commit":"86f99b2186711a7d94159d9c1b7413b0248a0c5c"}
 {"id":"F4-009","report":"F4","item_number":9,"status":"APPLIED","commit":"86f99b2186711a7d94159d9c1b7413b0248a0c5c"}
-{"id":"F4-010","report":"F4","item_number":10,"status":"APPLIED","commit":"86f99b2186711a7d94159d9c1b7413b0248a0c5c","affected_footnote_ids":[12,13]}
-{"id":"F4-011","report":"F4","item_number":11,"status":"STRUCTURALLY_APPLIED","commit":"86f99b2186711a7d94159d9c1b7413b0248a0c5c","overlapping_items":["F5-015"]}
-{"id":"F4-012","report":"F4","item_number":12,"status":"STRUCTURALLY_APPLIED","commit":"d533b450b20729130e850d7cbf37256a8e192306","affected_footnote_ids":[19,20,21]}
-{"id":"F4-013","report":"F4","item_number":13,"status":"APPLIED","commit":"d533b450b20729130e850d7cbf37256a8e192306","affected_footnote_ids":[22,23]}
-{"id":"F4-014","report":"F4","item_number":14,"status":"APPLIED","commit":"d533b450b20729130e850d7cbf37256a8e192306","affected_footnote_ids":[24,25,26]}
-{"id":"F4-015","report":"F4","item_number":15,"status":"STRUCTURALLY_APPLIED","commit":"d533b450b20729130e850d7cbf37256a8e192306","affected_footnote_ids":[28,29,30]}
-{"id":"F4-016","report":"F4","item_number":16,"status":"APPLIED","commit":"d533b450b20729130e850d7cbf37256a8e192306","affected_footnote_ids":[24,25,26]}
+{"id":"F4-010","report":"F4","item_number":10,"status":"APPLIED","commit":"86f99b2186711a7d94159d9c1b7413b0248a0c5c"}
+{"id":"F4-011","report":"F4","item_number":11,"status":"STRUCTURALLY_APPLIED","commit":"86f99b2186711a7d94159d9c1b7413b0248a0c5c"}
+{"id":"F4-012","report":"F4","item_number":12,"status":"STRUCTURALLY_APPLIED","commit":"d533b450b20729130e850d7cbf37256a8e192306"}
+{"id":"F4-013","report":"F4","item_number":13,"status":"APPLIED","commit":"d533b450b20729130e850d7cbf37256a8e192306"}
+{"id":"F4-014","report":"F4","item_number":14,"status":"APPLIED","commit":"d533b450b20729130e850d7cbf37256a8e192306"}
+{"id":"F4-015","report":"F4","item_number":15,"status":"STRUCTURALLY_APPLIED","commit":"d533b450b20729130e850d7cbf37256a8e192306"}
+{"id":"F4-016","report":"F4","item_number":16,"status":"APPLIED","commit":"d533b450b20729130e850d7cbf37256a8e192306"}
 {"id":"F4-017","report":"F4","item_number":17,"status":"APPLIED","commit":"d533b450b20729130e850d7cbf37256a8e192306"}
-{"id":"F4-018","report":"F4","item_number":18,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","affected_footnote_ids":[31,32]}
-{"id":"F4-019","report":"F4","item_number":19,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","affected_footnote_ids":[35]}
-{"id":"F4-020","report":"F4","item_number":20,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","affected_footnote_ids":[43,44,45]}
-{"id":"F4-021","report":"F4","item_number":21,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","affected_footnote_ids":[34,35,36,37]}
-{"id":"F4-022","report":"F4","item_number":22,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7","affected_footnote_ids":[44]}
+{"id":"F4-018","report":"F4","item_number":18,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7"}
+{"id":"F4-019","report":"F4","item_number":19,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7"}
+{"id":"F4-020","report":"F4","item_number":20,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7"}
+{"id":"F4-021","report":"F4","item_number":21,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7"}
+{"id":"F4-022","report":"F4","item_number":22,"status":"APPLIED","commit":"7d32131a8681b3334cb405a68f79c2494b8db5e7"}
 {"id":"F4-023","report":"F4","item_number":23,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4"}
-{"id":"F4-024","report":"F4","item_number":24,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4","affected_footnote_ids":[49]}
+{"id":"F4-024","report":"F4","item_number":24,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4"}
 {"id":"F4-025","report":"F4","item_number":25,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4"}
-{"id":"F4-026","report":"F4","item_number":26,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4","affected_footnote_ids":[51,66]}
-{"id":"F4-027","report":"F4","item_number":27,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4","affected_footnote_ids":[63]}
+{"id":"F4-026","report":"F4","item_number":26,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4"}
+{"id":"F4-027","report":"F4","item_number":27,"status":"APPLIED","commit":"a7e987b2ae84ada927b082974f5d90f4896d43d4"}
 {"id":"F4-028","report":"F4","item_number":28,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d"}
-{"id":"F4-029","report":"F4","item_number":29,"status":"STRUCTURALLY_APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d","affected_footnote_ids":[88]}
-{"id":"F4-030","report":"F4","item_number":30,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d","affected_footnote_ids":[85,86]}
-{"id":"F4-031","report":"F4","item_number":31,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d","affected_footnote_ids":[87]}
-{"id":"F4-032","report":"F4","item_number":32,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d","affected_footnote_ids":[94,95]}
+{"id":"F4-029","report":"F4","item_number":29,"status":"STRUCTURALLY_APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d"}
+{"id":"F4-030","report":"F4","item_number":30,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d"}
+{"id":"F4-031","report":"F4","item_number":31,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d"}
+{"id":"F4-032","report":"F4","item_number":32,"status":"APPLIED","commit":"30bf55f09fa02d4b805d6695c149061f2b24031d"}
 {"id":"F4-033","report":"F4","item_number":33,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e"}
 {"id":"F4-034","report":"F4","item_number":34,"status":"STRUCTURALLY_APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e"}
-{"id":"F4-035","report":"F4","item_number":35,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e","affected_footnote_ids":[101,102,103]}
-{"id":"F4-036","report":"F4","item_number":36,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e","affected_footnote_ids":[100]}
-{"id":"F4-037","report":"F4","item_number":37,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e","affected_footnote_ids":[105,127],"notes":"FN105 footnote-internal editor note deferred to F4-112."}
-{"id":"F4-038","report":"F4","item_number":38,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16","affected_footnote_ids":[108],"notes":"Ebû Ubeyde early-resm paragraph restrained; source citation retained."}
-{"id":"F4-039","report":"F4","item_number":39,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16","affected_footnote_ids":[110,111,112],"notes":"Dânî and Ebû Dâvud repetitions replaced by report-approved concise formulations; intervening unique Dânî/kırâat paragraph preserved."}
-{"id":"F4-040","report":"F4","item_number":40,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16","affected_footnote_ids":[113,114,115],"notes":"Kıyasî-imlâ vs transmitted mushaf-writing distinction applied; intentional-design overclaim removed."}
-{"id":"F4-041","report":"F4","item_number":41,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16","affected_footnote_ids":[119],"notes":"Motzki/Sinai evidence now limited to oral-written transmission context; not presented as direct proof of the book's whole thesis. Report scope did not authorize deleting the separate Déroche paragraph."}
-{"id":"F4-042","report":"F4","item_number":42,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16","notes":"Distinct historical-origin/tevkîf question from later normative binding force by inserting report-approved paragraph after protected 1.8 heading."}
-{"id":"F4-043","report":"F4","item_number":43,"status":"PENDING"}
-{"id":"F4-044","report":"F4","item_number":44,"status":"PENDING"}
-{"id":"F4-045","report":"F4","item_number":45,"status":"PENDING"}
-{"id":"F4-046","report":"F4","item_number":46,"status":"PENDING"}
-{"id":"F4-047","report":"F4","item_number":47,"status":"PENDING"}
+{"id":"F4-035","report":"F4","item_number":35,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e"}
+{"id":"F4-036","report":"F4","item_number":36,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e"}
+{"id":"F4-037","report":"F4","item_number":37,"status":"APPLIED","commit":"58d891d493331863b9f8fdfb0436267a97d33f4e"}
+{"id":"F4-038","report":"F4","item_number":38,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16"}
+{"id":"F4-039","report":"F4","item_number":39,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16"}
+{"id":"F4-040","report":"F4","item_number":40,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16"}
+{"id":"F4-041","report":"F4","item_number":41,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16"}
+{"id":"F4-042","report":"F4","item_number":42,"status":"APPLIED","commit":"89f8263a3fb90454727660654d103e6e2c132c16"}
+{"id":"F4-043","report":"F4","item_number":43,"status":"APPLIED","affected_footnote_ids":[142],"replay":"work/apply_f4_043_047.py","notes":"Direct conscious-design inference removed; compatibility/caution distinction applied."}
+{"id":"F4-044","report":"F4","item_number":44,"status":"APPLIED","affected_footnote_ids":[145,151],"replay":"work/apply_f4_043_047.py","notes":"Hazf definition corrected and repeated conclusion shortened; note 151 remains on preceding source-specific examples."}
+{"id":"F4-045","report":"F4","item_number":45,"status":"APPLIED","affected_footnote_ids":[158,159,160,161,162,163],"replay":"work/apply_f4_043_047.py","notes":"Ca‘berî corrected to 732/1332; note 161 remains after the Ca‘berî sentence."}
+{"id":"F4-046","report":"F4","item_number":46,"status":"APPLIED","affected_footnote_ids":[166,167,168],"replay":"work/apply_f4_043_047.py","notes":"Hemze causal overclaim replaced; source notes preserved."}
+{"id":"F4-047","report":"F4","item_number":47,"status":"APPLIED","affected_footnote_ids":[169,170,171,172],"replay":"work/apply_f4_043_047.py","notes":"Bakara corrected to 2/269; Arabic RTL runs reused; unsupported phonetic-necessity claim removed; note 172 retained only on limited meaning-centred interpretation statement."}
 {"id":"F4-048","report":"F4","item_number":48,"status":"PENDING"}
 {"id":"F4-049","report":"F4","item_number":49,"status":"PENDING"}
 {"id":"F4-050","report":"F4","item_number":50,"status":"PENDING"}
