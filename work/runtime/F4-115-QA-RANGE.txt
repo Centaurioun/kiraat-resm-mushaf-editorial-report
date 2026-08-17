@@ -1,0 +1,158 @@
+DOCX=artifacts/checkpoints/manuscript-working-f4-115.docx
+SHA256=73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf
+BODY_PARAGRAPHS=674
+REFERENCE_ORDER_CHANGED=True
+RUN_ID=32081290071
+ALLOWED_FOOTNOTE_TEXT_IDS=['105', '2', '271', '272', '273', '274', '28', '292', '32', '342', '344', '345', '346', '377', '380', '381', '407', '409', '41', '411', '414', '421', '423', '424', '425', '426', '427', '428', '431', '50', '66']
+P495	FN=[]	RTL=0	BOOK=0	Dânî, Ebû Amr b. Osman. el-Mukni’ fî ma’rifeti mesâhif ehli’l-emsâr. thk. Nûratu binti Hasan b. Fahd el-Humeyyed. Suudi Arabistan: Dâru’t-Tedmûriyye, 2010.
+P496	FN=[]	RTL=0	BOOK=0	Dânî, Ebû Amr b. Osman. el-Muktefâ fi’l-vakfi ve’l-ibtidâ. thk. Cemâluddîn Muhammed Şeref. Tanta: Dâru’s-Sahâbeti li’t-Türâs, 2006.
+P497	FN=[]	RTL=0	BOOK=0	Dânî, Ebû Amr b. Osman. et-Teysîr fi’l-kirââti’s-seb’. thk. Hâtem Sâlih ed-Dâmın. B.A.E: Mektebetü’s-Sahâbeti, 2007.
+P498	FN=[]	RTL=0	BOOK=0	Demirci, Muhsin. Kur’ân Tarihi. İstanbul: M.Ü. İlahiyat Fakültesi Vakfı Yayınları, 2015.
+P499	FN=[]	RTL=0	BOOK=0	Deroche, Francois. The One and the Many: The Early History of the Qur’an. çev. Malcolm DeBevoise. Yale University Press, 2022.
+P500	FN=[]	RTL=0	BOOK=0	Dîb, Velîd Mukbil es-Seyyid Ali. el-Maktû’ ve’l-mavsûl beyne resmi’l-mushafi ve’l-edâi’l-luğaviyyi mushafu’l-Medîneti’n-nebeviyyeti enmûzecen, ts.
+P501	FN=[]	RTL=0	BOOK=0	Durmuş, İsmail. “Hemze”. Türkiye Diyanet Vakfı İslam Ansiklopedisi. 17/190-193. İstanbul: TDV Yayınları, 1998.
+P502	FN=[]	RTL=0	BOOK=0	Ebû Dâvud, Süleymân b. Necâh. Muhtasaru’t-tebyîn li hecâi’t-tenzîl. thk. Ahmed b. Muhammed b. Muammer Şarşâl. 5 Cilt. Riyad: Mecmeu’l-Melik Fehd li’t-Tibâati’l-Mushafi’ş-Şerîf, 2000.
+P503	FN=[]	RTL=0	BOOK=0	Ebû Hayyân, Muhammed b. Yûsuf. el-Bahru’l-muhît. thk. Adil Ahmed Abdülmevcûd - Ali Muhammed Muavvaz. 8 Cilt. Beyrut: Dâru’l-Kütübi’l-İlmiyye, 1993.
+P504	FN=[]	RTL=0	BOOK=0	Ebû Şâme, Şihâbuddîn Abdurrahmân b. İsmâîl. el-Murşidu’l-vecîz ilâ ulûmin tetaallaku bi’l-kitâbi’l-azîz. thk. Tayyar Altıkulaç. 2 Cilt. Beyrut: Dâr Sadr, 1975.
+P505	FN=[]	RTL=0	BOOK=0	Ebû Şâme, Şihâbuddîn Abdurrahmân İsmâîl. el-Murşidu’l-vecîz ilâ ulûmin tetaallaku bi’l-kitâbi’l-Azîz. thk. Velîd Müsâid et-Tabatabâî. Kuveyt: Mektebetü’l-İmâm ez-Zehebî, 1993.
+P506	FN=[]	RTL=0	BOOK=0	Ebû Şehbe, Muhammed Muhammed. el-Medhal li dirâseti’l-Kur’âni’l-Kerîm. Riyad: Dâru’l-Livâ’, 1987.
+P507	FN=[]	RTL=0	BOOK=0	Ebu’l-Futûh, Muhammed Huseyn. İbn Haldûn ve resmu’l-mushafi’l-Osmânî. Beyrut: Mektebetu Lübnân, 1992.
+P508	FN=[]	RTL=0	BOOK=0	Enbârî, Ebû Bekir Muḥammed b. el-Ḳāsım el-. Îzâhu’l-vakf ve’l-ibtidâ fî kitâbillâhi Azze ve Cell. thk. Muḥyiddîn ʿAbdurraḥmân Ramazan. Dımaşk: Maṭbûʿâtü Mecmaʿi’l-Luġati’l-ʿArabiyye, 1971.
+P509	FN=[]	RTL=0	BOOK=0	Enderâbî, Ebû Abdullah Ahmed b. Ömer el-. el-Îdâh fi’l-kırâât. thk. Hâlid Hasan Ebu’l-Cûd. 4 Cilt. Mısır: Dâru’l-Lu’lu’ li’n-Neşri ve’t-Tevzî’, 2020.
+P510	FN=[]	RTL=0	BOOK=0	Endülüsî, İbn Muâz el-Cühenî. Kitâbu’l-bedî’ fî ma’rifeti mâ rusime fî mushafi Osman. thk. Ğânim Kaddûrî el-Hamed. Dâr Ammâr, ts.
+P511	FN=[]	RTL=0	BOOK=0	Endülüsî, İbn Vesîk. el-Câmi’u limâ yuhtâcu ileyhi min resmi’l-mushaf. thk. Ğânim Kaddûrî el-Hamed. Ürdün: Dâr Ammâr, 2009.
+P512	FN=[]	RTL=0	BOOK=0	Ensârî, İbn Hişâm el-. Muğni’l-lebîb an kutubi’l-eârîb. thk. Abdullatîf Muhammed el-Hatîb. 7 Cilt. Kuveyt: Selseletu’t-Turâsiyye, 2000.
+P513	FN=[]	RTL=0	BOOK=0	Farâhidî, Abdurrahmân Halil b. Ahmed. Kitâbu’l-ayn. thk. Mehdî Mahzûmî - İbrahim es-Sâmirâî. 9 Cilt. Mektebetu’l-Hilâl, 2007.
+P514	FN=[]	RTL=0	BOOK=0	Ferac, Mubârek Muhammed el-. “Nazariyyet İ’câzu’r-Resmi’l-Osmânî fi’l-Kur’âni’l-Kerîm”. Mecelletu’l-Elektroniyyetu’ş-Şâmile Muteaddidete’t-Tahassusât 38 (2021), 1-20.
+P515	FN=[]	RTL=0	BOOK=0	Fermavî, Abdulhay Hüseyn. Resmu’l-mushaf ve naktuhu. Cidde: el-Mektebetu’l-Mekkiyye, 2004.
+P516	FN=[]	RTL=0	BOOK=0	Ferrâ’, Ebû Zekeriyyâ Yahyâ b. Ziyâd. Meâni’l-Kur’ân. 3 Cilt. Beyrut: Âlemu’l-Kutub, ts.
+P517	FN=[]	RTL=0	BOOK=0	Ferrâ, Ebû Zekeriyyâ Yahyâ b. Ziyâd el-. Meâni’l-Kur’ân. thk. Ahmed Yûsuf Necâtî. 3 Cilt. Beyrut: Âlemu’l-Kutub, 1983.
+P518	FN=[]	RTL=0	BOOK=0	Fırat, Yavuz. “Kıraat İlmi ve Tarikler”. Erciyes Üniversitesi İlahiyat Fakültesi Dergisi 29/2 (2011), 37-55.
+P519	FN=[]	RTL=0	BOOK=0	Goldziher, Ignaz. Klasik Arap Literatürü. çev. Azmi Yüksel - Rahmi Er. Ankara: İmaj Yayınları, 1993.
+P520	FN=[]	RTL=0	BOOK=0	Gökkır, Necmettin. Tanzimattan Günümüze Din-Devlet İlişkileri ve Siyaset Bağlamında Mushaf Basımı. İstanbul: Marmara Üniversitesi İlâhiyat Fakültesi Vakfı Yayınları, 2015.
+P521	FN=[]	RTL=0	BOOK=0	Ğazlân, Abdülvahab Abdülmecîd. el-Beyân fî mebâhis min ulûmi’l-Kur’ân. Matbaatu Dâru’t-Te’lîf, 1965.
+P522	FN=[]	RTL=0	BOOK=0	Haccâc, Ebu’l-Huseyn Müslim b. Sahîh Müslim. thk. Muhammed Fuâd Abdulbâkî. 6 Cilt. Beyrut: Dâru’l-Kütübi’l-İlmiyye, 1991.
+P523	FN=[]	RTL=0	BOOK=0	Halebî, Ebu’l-Abbâs Ahmed b. Yûsuf b. Muhammed es-Semîn el-. el-İkdu’n-nadîd fî şerhi’l-kasîd. thk. Eymen Ruşdî Suveyd. 7 Cilt. Cidde: Dâr Nûru’l-Mektebât li’n-Neşri ve’t-Tevzî’, 2001.
+P524	FN=[]	RTL=0	BOOK=0	Halebî, Ebu’t-Tayyib Abdülvâhid Ali. Kitâbu’l-ibdâl. thk. İzzeddîn et-Tenûhî. 2 Cilt. Dımaşk, 1961.
+P525	FN=[]	RTL=0	BOOK=0	Hamed, Ğânim Kaddûrî el-. en-Nukûşu’l-Kur’âniyyetu’l-mubekkiratu. Medine: Mektebtü’l-Melik Fehd el-Vataniyye, 2021.
+P526	FN=[]	RTL=0	BOOK=0	Hamed, Ğânim Kaddûrî el-. Resmü’l-mushaf dirâsetün lügaviyyetün târîhiyyetün. Ürdün: Dâr Ammâr li’n-Neşri ve’t-Tevzî’, 1982.
+P527	FN=[]	RTL=0	BOOK=0	Hamevî, Ahmed b. Ömer b. Muhammed Ebi’r-Rızâ el-. el-Kavâidu ve’l-işârât fî usûli’l-Kırâât. thk. Abdülkerîm b. Muhammed el-Hasen Bekkâr. Dımaşk: Dâru’l-Kalem, 1986.
+P528	FN=[]	RTL=0	BOOK=0	Hamîdullah, Muhammed. Kur’ân-ı Kerîm Tarihi. çev. Salih Tuğ. İstanbul: İfav Yayınları, 1993.
+P529	FN=[]	RTL=0	BOOK=0	Hamîdullah, Muhammed. Le Saınt Coran (Fransızca Kur’an-ı Kerim Meali). İstanbul: Beyan Yayınları, 2012.
+P530	FN=[]	RTL=0	BOOK=0	Hanay, Necattin. “Kıraât-ı Aşere’nin İmam, Râvî ve Tarîklerine Dair Manzum Bir Eser İncelemesi”. Recep Tayyip Erdoğan Üniversitesi İlahiyat Fakültesi Dergisi 1 (2012), 261-287.
+P531	FN=[]	RTL=0	BOOK=0	Hanbel, Ahmed b. Müsned. thk. Muhammed Abdülkâdir Atâ. 13 Cilt. Lübnan: Dâru’l-Kütübi’l-‘İlmiyye, 2008.
+P532	FN=[]	RTL=0	BOOK=0	Harrâz, Muhammed b. Muhammed eş-Şerîşi el-. Delîlu’l-hayrân alâ mevridi’z-zam’ân. thk. İbrahim Ahmed el-Mârginî. Kuveyt: Vizâretu’l-Evkâf ve’ş-Şuûni’l-İslâmiyye, 2011.
+P533	FN=[]	RTL=0	BOOK=0	Hatîb el-Bağdâdî, Ebû Bekir Ahmed b. Ali b. Sâbit. Takyîdu’l-ilm. thk. Saîd Abdülğaffâr Ali. Kâhire: Dâru’l-İstikâme, 2008.
+P534	FN=[]	RTL=0	BOOK=0	Hayyât, Abdülazîz İzzet el-. “Resmu’l-mushaf ve’l-kitâbeti bi ğayri’l-hatti’l-Osmânî”. el-Mecelletu’l-Ürdûniyyeti fi’d-Dirâsâti’l-İslâmiyye 2 (2006), 19-26.
+P535	FN=[]	RTL=0	BOOK=0	Herevî, Ebu Ubeyde el-Kâsım b. Sellâm el-. Fedâilü’l-Kur’ân. thk. Mervân Atiyye vd. Beyrut: Dâr İbn Kesîr, ts.
+P536	FN=[]	RTL=0	BOOK=0	Heysemî, Ebu’l-Hasen Ali b. Ebû Bekir b. Süleymân el-. Mecmau’z-zevâid ve menbau’l-fevâid. thk. Huseyn Selîm Esed ed-Dârânî. 23 Cilt. Cidde: Dâru’l-Minhâc, 2015.
+P537	FN=[]	RTL=0	BOOK=0	Horasânî, Ebû Osmân Saîd b. Mansûr b. Şu’be el-. Sünen Saîd b. Mansûr. thk. Sa’d b. Abdullah b. Abdülazîz Âl Humeyyed. 5 Cilt. Riyad: Dâru’s-Sumey’î li’n-Neşri ve’t-Tevzî’, 1993.
+P538	FN=[]	RTL=0	BOOK=0	Husarî, Sâtı’ el-. Dirâsâtun an mukaddimeti İbn Haldûn. Birleşik Krallık: Müessesetü Hindâvî, 2021.
+P539	FN=[]	RTL=0	BOOK=0	Huseynî, Muhammed b. Ali b. Halef el-. el-Kevâkibu’d-durriyye. Mısır: Matbaatu Mustafa el-Bâbî el-Halebî, 1925.
+P540	FN=[]	RTL=0	BOOK=0	Huzelî, Ebu’l-Kâsım Yûsuf b. Ali b. Cebârete el-. el-Kâmil fi’l-kırâât. thk. Ebû İbrahim Amr b. Abdullah. 2 Cilt. Dâr li’l-Kütüb, 2014.
+P541	FN=[]	RTL=0	BOOK=0	İbn Abdilberr, Ebû Amr Yûsuf b. Abdullah b. Muhammed. el-İstîâb fî ma’rifeti’l-ashâb. thk. Ali Muhammed el-Becâvî. 4 Cilt. Beyrut: Dâru’l-Cîyl, ts.
+P542	FN=[]	RTL=0	BOOK=0	İbn Abdilberr, Ebû Ömer Cemâlüddîn Yûsuf b. Abdillâh b. Muhammed. et-Temhîd limâ fi’l-muvatta’ mine’l-me’ânî ve’l-esânîd. thk. Muhammed el-Felâh. 26 Cilt, 1980.
+P543	FN=[]	RTL=0	BOOK=0	İbn Âşır, Abdülvâhid. Fethu’l-mennân el-mervî bi mevridi’z-zam’ân. thk. Abdülkerîm bû Ğazâle. 4 Cilt. Mısır: Dâr İbni’l-Hafsî, 2016.
+P544	FN=[]	RTL=0	BOOK=0	İbn Atiyye, Ebû Muhammed Abdulhak. el-Muharreru’l-vecîz fî tefsîri’l-kitâbi’l-azîz. thk. Heyet. 10 Cilt. Katar: Vizâretü’l-Evkâf ve’ş-Şuûnü’l-İslâmiyye, 2015.
+P545	FN=[]	RTL=0	BOOK=0	İbn Cemâa, Bedreddîn Muhammed b. İbrahim b. Sa’dillah. Tezkiratu’s-sâmi’ ve’l-mutekellim fî edebi’l-âlim ve’l-muteallim. thk. Muhammed Mehdî el-Acemî. Beyrut: Dâru’l-Beşâiri’l-İslâmiyye, 2008.
+P546	FN=[]	RTL=0	BOOK=0	İbn Dureyd, Ebû Bekir Muhammed el-Hasen. Cemheretü’l-luğa. 4 Cilt. Bağdat: Mektebetü’l-Müsennâ, 1970.
+P547	FN=[]	RTL=0	BOOK=0	İbn Ebû Dâvud, Ebû Bekir Abdullah b. Süleymân b. el-Eş’as. Kitâbu’l-mesâhif. thk. Muhibbüddîn Abdussubhân Vâiz. 2 Cilt. Beyrut: Dâru’l-Beşâiri’l-İslâmiyye, 2002.
+P548	FN=[]	RTL=0	BOOK=0	İbn Fâris, Ebu’l-Hasen Ahmed. Mekâyîsu’l-luğa. thk. Abdullah Muhammed Hârûn. 6 Cilt. Dâru’l-Fikr, 1979.
+P549	FN=[]	RTL=0	BOOK=0	İbn Fâris, Ebu’l-Huseyn Ahmed b. Zekeriyyâ. es-Sâhıbî fî fıkhı’l-luğa. thk. es-Seyyid Ahmed Sakar. Kâhire: Matbaatu Îsâ el-Bâbî el-Halebî ve Şurakâuh, ts.
+P550	FN=[]	RTL=0	BOOK=0	İbn Hacer, Ahmed b. Ali. Fethu’l-bârî bi şerh sahîhu’l-Buhârî. thk. Abdülazîz b. Abdullah b. Bâz - Abdurrahmân b. Nâsır el-Berrâk. 17 Cilt. Riyad: Dâr Tîba, 2005.
+P551	FN=[]	RTL=0	BOOK=0	İbn Haldûn, Abdurrahmân b. Muhammed b. Muhammed. Mukaddimetu İbn Haldûn. thk. Abdullah Muhammed ed-Dervîş. 2 Cilt. Dımaşk: Dâru’l-Belhî, 2004.
+P552	FN=[]	RTL=0	BOOK=0	İbn Hâleveyh. el-Huccetu fi’l-kırââti’s-seb’. thk. Abdul’âl Sâlim Makram. Beyrut: Dâru’ş-Şurûk, 1979.
+P553	FN=[]	RTL=0	BOOK=0	İbn Hişâm. es-Sîretü’n-nebeviyye. 4 Cilt. Dâru’l-Kitâbi’l-Arabî, 1990.
+P554	FN=[]	RTL=0	BOOK=0	İbn Kesîr, Ebu’l-Fîdâ İsmâîl b. Ömer. Tefsîru’l-Kur’âni’l-Azîm. 5 Cilt. Beyrut: Dâr İbn Hazm, 2000.
+P555	FN=[]	RTL=0	BOOK=0	İbn Kesîr, İmâduddîn Ebi’l-Fidâ İsmâîl b. Ömer. el-Bidâye ve’n-nihâye. thk. Abdullah b. Abdülmuhsin et-Türkî. 21 Cilt. Mısır: Merkezi’l-Buhûsi ve’d-Dirâsâti’l-Arabiyyeti ve’l-İslâmiyyeti bi Dâr Hacer, 1998.
+P556	FN=[]	RTL=0	BOOK=0	İbn Kuteybe, Ebû Muhammed Abdullah b. Muslim. Te’vîlu muhtelifu’l-hadîs. thk. Muhammed Zuhrî en-Neccâr. Mektebetü’l-Küllîyât el-Ezheriyye, ts.
+P557	FN=[]	RTL=0	BOOK=0	İbn Kuteybe, Ebû Muhammed Abdullah b. Müslim. Te’vîlu müşkili’l-Kur’ân. thk. es-Seyyid Ahmed Sakar. el-Mektebetü’l-İlmiyye, ts.
+P558	FN=[]	RTL=0	BOOK=0	İbn Manzûr, Ebu’l-Fadl Cemâluddîn. Lisânu’l-Arab. thk. Abdullah Ali el-Kebîr vd. 7 Cilt. Kâhire: Dâru’l-Meârif, ts.
+P559	FN=[]	RTL=0	BOOK=0	İbn Mücâhid. Kitâbu’s-seb’a fi’l-kırâât. thk. Şavkî Dayf. Mısır: Dâru’l-Meârif, 1982.
+P560	FN=[]	RTL=0	BOOK=0	İbn Sa’d. et-Tabakâtü’l-kübrâ. 9 Cilt. Beyrut: Dâr Sadr, ts.
+P561	FN=[]	RTL=0	BOOK=0	İbn Sa’d, Muhammed. et-Tabakâtu’l-kübrâ. thk. Ali Muhammed Ömer. 11 Cilt. Kâhire: Mektebetü’l-Hâncî, 2001.
+P562	FN=[]	RTL=0	BOOK=0	İbn Teymiyye, Takiyyuddîn Ahmed. Mecmû’u’l-fetâvâ. thk. Âmir el-Cezzâr - Enver el-Bezzâr. 40 Cilt. Mansûra: Dâru’l-Vefâ’ li’t-Tibâati ve’n-Neşri ve’t-Tevzî’, 2005.
+P563	FN=[]	RTL=0	BOOK=0	İbn Zencele, Ebû Zur’ata Abdurrahmân b. Muhammed. Huccetu’l-kırâât. thk. Saîd el-Efğânî. Beyrut: Müessesetü’r-Risâle, 1996.
+P564	FN=[]	RTL=0	BOOK=0	İbnu’l-Hâcib, Bedriddîn İbn Cemâa. Şerhu kâfiyetu ibnu’l-Hâcib. thk. Muhammed Muhammed Dâvud. Kâhire: Dâru’l-Menâr, 2000.
+P565	FN=[]	RTL=0	BOOK=0	İbnu’l-Kâsıh, Ebu’l-Bikâ’ Ali b. Osmân b. Muhammed. Şerhu talhîsu’l-fevâid ve takrîbu’l-mutebâid alâ akîletü etrâbi’l-kasâid fî ilm er-resm. thk. Abdülfettâh el-Kâdî. Kâhire: Mektebetü Mustafa el-Bâbî el-Halebî, 1949.
+P566	FN=[]	RTL=0	BOOK=0	İbnü’l-Cezerî, Şemsuddîn Muhammed b. Muhammed. en-Neşr fi’l-kırââti’l-aşr. thk. Ali Muhammed ed-Dabbâ’. 2 Cilt. Beyrut: Dâru’l-Kütübi’l-‘İlmiyye, ts.
+P567	FN=[]	RTL=0	BOOK=0	İbnü’l-Cezerî, Şemsuddîn Muhammed b. Muhammed. Takrîbu’n-neşr fi’l-kırââti’l-aşr. thk. Âdil İbrahim Muhammed Rifâî. 2 Cilt. Medine: Mecmeu’l-Melik Fehd li Tibâati’l-Mushafi’ş-Şerîf, 2011.
+P568	FN=[]	RTL=0	BOOK=0	İbnü’l-Cezerî, Şemsüddîn Muhammed b. Muhammed. Muncidu’l-mukriîn ve murşidu’t-tâlibîn. thk. Nâsır Muhammedî Muhammed Câd. Kâhire: Dâru’l-Âfâki’l-Arabiyye, 2010.
+P569	FN=[]	RTL=0	BOOK=0	İbnü’l-Cezerî, Şemsüddin Muhammed b. Muhammed b. Muhammed b. Alî b. Yûsuf. el-Beyân fî hatti mushaf Osmân. thk. Ğânim Kaddûrî el-Hamed. Dımaşk: Dâru’l-Gavsânî, 2017.
+P570	FN=[]	RTL=0	BOOK=0	İbnü’l-Cezerî, Şemsüddin Muhammed b. Muhammed b. Muhammed b. Alî b. Yûsuf. Gâyetu’n-nihâye fî tabakâti’l-kurrâ’. thk. C Bercestreasser. 2 Cilt. Beyrut: Dâru’l-Kütübi’l-İlmiyye, 2006.
+P571	FN=[]	RTL=0	BOOK=0	İbnü’n-Nedîm. el-Fihrist. Beyrut: Dâru’l-Ma’rife, ts.
+P572	FN=[]	RTL=0	BOOK=0	İsmâîl, Şa'bân Muhammed. Resmu’l-mushaf ve dabtuhû beyne’t-tevkîfî ve’l-ıstılâhâti’l-hadîse. Kâhire: Dâru’s-Selâm, 2002.
+P573	FN=[]	RTL=0	BOOK=0	Kâdî, Abdülfettâh el-. el-Budûru’z-zâhira fi’l-kırââti’l-aşri’l-mütevâtira. Mekke: Mektebetu Enes b. Mâlik, 2002.
+P574	FN=[]	RTL=0	BOOK=0	Kâdî, Abdülfettâh el-. Târîhu’l-mushafi’ş-şerîf. Kâhire: Mektebetu’l-Cundî, ts.
+P575	FN=[]	RTL=0	BOOK=0	Kâdî İyâz, Ebu’l-Fadl İyâd b. Mûsa. eş-Şifâ bi ta’rîfi hukûku’l-Mustafâ. thk. Âmir el-Cezzâr. 2 Cilt. Kâhire: Dâru’l-Hadîs, 2004.
+P576	FN=[]	RTL=0	BOOK=0	Kahraman, Ferruh. “Yazının İcadı ve Kur’ân’da Yazı ile İlgili Kelimelerin Tahlili”. Osman Gazi Üniversitesi İlahiyat Fakültesi Dergisi 8/1 (2021), 11-36.
+P577	FN=[]	RTL=0	BOOK=0	Kannûcî, Sıddîk b. Hasen el-. Ebcedu’l-ulûm el-veşiyyi’l-merkûm fî beyân ahvâli’l-ulûm. thk. Abdulcebbâr Zekkâr. 5 Cilt. Dımaşk: Vizâretu’s-Sekâfeti ve’l-İrşâdu’l-Kavmî, 1978.
+P578	FN=[]	RTL=0	BOOK=0	Karaçam, İsmail. Kıraat İlminin Kur’ân Tefsirindeki Yeri ve Mütevatir Kıraatların Yorum Farklılıklarına Etkisi. İstanbul: M. Ü. İlahiyat Fakültesi Vakfı Yayınları, 2024.
+P579	FN=[]	RTL=0	BOOK=0	Kârî, Abdülazîz b. Abdülfettâh el-. Hadîsu’l-ahrufi’s-seb’ati. Beyrut: Müessesetü’r-Risâle, 2002.
+P580	FN=[]	RTL=0	BOOK=0	Kastallânî, Ebu’l-Abbâs Ahmed b. Muhammed b. Ebû Bekir. Letâifu’l-işârât li fünûni’l-kırâât. thk. Heyet. 9 Cilt. Medine: Merkezu’d-Dirâsâti’l-Kur’âniyye, 2013.
+P581	FN=[]	RTL=0	BOOK=0	Kastallânî, Ebu’l-Abbâs Ahmed b. Muhammed el-. İrşâdü’s-sâri li şerhi sahîhi’l-Buhârî. 19 Cilt. Beyrut: Dâr İbn Hazm, 2021.
+P582	FN=[]	RTL=0	BOOK=0	Kattân, Mennâ’ Halîl el-. Mebâhis fî ulûmi’l-Kur’ân. Kâhire: Mektebetu Vehbe, ts.
+P583	FN=[]	RTL=0	BOOK=0	Kaysî, Mekkî b. Ebû Tâlib el-. el-İbâne an maâni’l-kırâât. thk. Abdülfettâh İsmâîl Şelebî. Kâhire: Dâr Nahdatu Mısır li’t-Tab’i ve’n-Neşr, ts.
+P584	FN=[]	RTL=0	BOOK=0	Kesîr, Ebü’l-Fidâ’ İmâdüddîn İsmâîl b. Şihâbiddîn Ömer b. Feżâʾilü’l-Ḳurʾân. thk. Ebû İshâk el-Huveynî el-Eserî. Mektebetu İbn Teymiyye, 1995.
+P585	FN=[]	RTL=0	BOOK=0	Kevserî, Muhammed Zâhid el-. Makâlâtü’l-Kevserî. ed. Tevfik Şa’bân. Kâhire: el-Mektebetü’t-Tevfîkiyye, ts.
+P586	FN=[]	RTL=0	BOOK=0	Kılıç, Mustafa. Kıraat-Tefsir İlişkisi Zemahşerî Örneği. İstanbul: M.Ü. İlahiyat Fakültesi Vakfı Yayınları, 2015.
+P587	FN=[]	RTL=0	BOOK=0	Kurdî, Muhammed Tâhir b. Abdülkâdir el-. Târîhu’l-hatti’l-Arabî ve âdâbihi. Mektebetu’l-Hilâl, 1939.
+P588	FN=[]	RTL=0	BOOK=0	Kurdî, Muhammed Tâhir b. Abdülkâdir el-. Târîhu’l-Kur’ân ve ğarâibu resmihî ve hukmihî. thk. Ahmed Îsâ el-Ma’sarâvî. Riyad: Edvâe’s-Selef, 2009.
+P589	FN=[]	RTL=0	BOOK=0	Kurtubî, Ebû Abdullah Muhammed b. Ahmed b. Ebû Bekir. el-Câmiu li ahkâmi’l-Kur’ân. thk. Abdullah b. Abdulmuhsin et-Turkî - Muhammed Rıdvân Arkûsî. 24 Cilt. Beyrut: Müessesetü’r-Risâle, 2006.
+P590	FN=[]	RTL=0	BOOK=0	Kuşeyrî, Ebü’l-Hüseyn Müslim b. el-Haccâc b. Müslim el-. Sahîh Müslim. 3 Cilt. Riyad: Dâru’l-Efkâri’d-Düveliyye, 1998.
+P591	FN=[]	RTL=0	BOOK=0	Mahlûf, Haseneyn Muhammed. el-Kur’ânu’l-Kerîm bi’r-resmi’l-Osmânî. Mekke: Mektebetü Abdülmecîd Mirzâ, ts.
+P592	FN=[]	RTL=0	BOOK=0	Mansûr, Abdulkâdir. Mevsûatu ulûmi’l-Kur’ân. Halep: Dâru’l-Kalem el-Arabî, 2002.
+P593	FN=[]	RTL=0	BOOK=0	Mârginî, İbrahim b. Ahmed el-. Delîlu’l-hayrân alâ mevridu’z-zam’ân. thk. Abdülazîz b. Fâzıl el-Ğazzî. Kuveyt: Merkezu’l-Kırââti’l-Kur’âniyye, 2011.
+P594	FN=[]	RTL=0	BOOK=0	Marsafî, Abdülfettâh es-Seyyid Acemî. Hidâyetu’l-kârî ilâ tecvîd kelâmu’l-bârî. Medine: Mektebetu Tîba, ts.
+P595	FN=[]	RTL=0	BOOK=0	Maşalı, M. Emin. “Kur’ân Vahyinin Kitaplaşması ve Kıraatler. Vahiy Zincirinin Son Halkası Kur’ân Vahyi”. Kur’ân Çalışmaları Sempozyumu, 227-267. İstanbul: Kur’ân Çalışmaları Vakfı, 2017.
+P596	FN=[]	RTL=0	BOOK=0	Maşalı, Mehmet Emin. Kur’ân’ın Metin Yapısı. Ankara: Otto Yayınları, 2015.
+P597	FN=[]	RTL=0	BOOK=0	Maşalı, Mehmet Emin. “İbn Haldûn’un Gözüyle Mushaf İmlası”. Usul İslam Araştırmaları Dergisi 22/22 (2016), 8-24. https://doi.org/10.56361/usul.173700
+P598	FN=[]	RTL=0	BOOK=0	Mecâlî, Muhammed Hâzâr el-. “Mâ ihtelefe resmuhû mine’l-kelimâti’l-Kur’âniyyeti fi’l-mesâhifi’l-Osmâniyye”. Mecelletü’ş-Şerîati ve’d-Dirâsâti’l-İslâmiyyeti bi Câmiati’l-Kuveyt 56 (2004), 89-163.
+P599	FN=[]	RTL=0	BOOK=0	Mehdevî, Ebu’l-Abbâs Ahmed b. Ammâr el-. Hicâu mesâhifi’l-emsâr. thk. Hâtim Sâlih ed-Dâmın. Kâhire: Dâr İbnü’l-Cevzî, 2009.
+P600	FN=[]	RTL=0	BOOK=0	Mehdevî, Ebu’l-Abbâs Ahmed b. Ammâr el-. Şerhu’l-hidâye. thk. Hâzim Saîd Haydar. 2 Cilt. Riyad: Mektebetü’r-Rüşd, 1994.
+P601	FN=[]	RTL=0	BOOK=0	Merâğî, Ahmed Mustafa el-. Tefsîru’l-Merâğî. 30 Cilt. Mısır: Mustafa el-Bâbi el-Halebî, 1946.
+P602	FN=[]	RTL=0	BOOK=0	Merrâkuşî, Ebû Abdullah Muhammed b. Muhammed Abdülmelik el-Ensârî el-Evsî el-. ez-Zeyl ve’t-tekmile li kitâbi’l-mevsûl ve’s-sila. thk. İhsân Abbâs. Beyrut: Dâru’s-Sekâfe, 1973.
+P603	FN=[]	RTL=0	BOOK=0	Merrâkuşî, Ebu’l-Abbâs Ahmed el-Bennâ’. Ünvânu’d-delîl min mersûm hatti’t-tenzîl. thk. Hind Şelebî. Beyrut: Dâru’l-Ğarbi’l-İslâmî, 1990.
+P604	FN=[]	RTL=0	BOOK=0	Mezînî, Abdurrahmân b. Süleymân el-. el-Mesâhifu’l-mahtûta fi’l-karni’l-hâdî aşere el-Hicrî. Medine, ts.
+P605	FN=[]	RTL=0	BOOK=0	Motzki, Harald. “The Collection of the Qur’an A Reconsideration of Western Views in Light of Recent Methodological Developments”, Der Islam 1-34.
+P606	FN=[]	RTL=0	BOOK=0	Muhaysin, Muhammed Muhammed. el-Fethu’r-Rabbânî fî alâkati’l-kırâât bi’r-resmi’l-Osmânî. Riyad: Câmiatu’l-İmâm Muhammed b. Suûd, 1994.
+P607	FN=[]	RTL=0	BOOK=0	Mustafa, Muhammed Saîd. “Mevkifi’l-ulamâ’ min asli’r-resmi’l-Osmânî ve hukmu’l-iltizâm bihi”. Mecelletu’l-Bâhis fî Ulûmi’l-İnsâniyye ve’l-İctimâiyye 35 (2018), 533-550.
+P608	FN=[]	RTL=0	BOOK=0	Nebhânî, Muhammed Fârûk. el-Medhal ilâ ulûmi’l-Kur’âni’l-Kerîm. Halep: Dâr Âlemu’l-Kur’ân, 2005.
+P609	FN=[]	RTL=0	BOOK=0	Necâh, Ebû Dâvud Süleymân b. Muhtasaru’t-tebyîn li hecâi’t-tenzîl. thk. Ahmed b. Ahmed Muammer Şarşâl. 2 Cilt. Medine: Mecmau’l-Melik Fahd li’t-Tibâati ve’n-Neşr, 1999.
+P610	FN=[]	RTL=0	BOOK=0	Nemîrî, Ebû Zeyd Ömer b. Şebbe en-. Târîhu’l-Medînetü’l-Münevvera. thk. Fehîm Muhammed Şeltût. 3 Cilt, ts.
+P611	FN=[]	RTL=0	BOOK=0	Neysâbûrî, Nizâmuddîn el-Hasen b. Muhammed b. Huseyn en-. Tefsîru ğarâibu’l-Kur’ân ve reğâibu’l-furkân. thk. Zekeriyyâ Umeyrân. 6 Cilt. Beyrut: Dâru’l-Kütübi’l-İlmiyye, 1996.
+P612	FN=[]	RTL=0	BOOK=0	Öğmüş, Harun. “Resm-i Mushaf Bağlamında Kur’an ve Kıraat Ayrımı (Harekenin Tekâmülüne Kadarki Süreç Çerçevesinde Bir Değerlendirme)”. Necmettin Erbakan Üniversitesi İlahiyat Fakültesi Dergisi 39 (2015), 9-28.
+P613	FN=[]	RTL=0	BOOK=0	Ömerî, İbn Fadlullah Şehâbuddîn Ahmed b. Yahyâ el-. Mesâliku’l-ebsâr fî memâliki’l-emsâr. thk. Mehdî en-Necm. 27 Cilt. Beyrut: Dâru’l-Kütübi’l-‘İlmiyye, 2004.
+P614	FN=[]	RTL=0	BOOK=0	Özsoy, Ömer. Kur’ân’ın Metinleşme Tarihi: Bir Giriş Denemesi. Ankara, 2002.
+P615	FN=[]	RTL=0	BOOK=0	Polat, Ayşe. “Osmanlı’da Matbu İslam’ın Onay ve Denetimi: Tedkîk-i Mesahif ve Müellefât-ı Şer’iyye Meclisi”. FSM İlmî Araştırmalar İnsan ve Toplum Bilimleri Dergisi 11 (2018), 88-120.
+FN2	 Ebû Bekir Abdullah b. Süleymân b. el-Eş‘as İbn Ebû Dâvud, Kitâbu’l-mesâhif, thk. Muhibbüddîn Abdüssübhân Vâiz (Beyrut: Dâru’l-Beşâiri’l-İslâmiyye, 2002), 1/19-20; Ebû Amr b. Osman Dânî, el-Mukni‘ fî ma‘rifeti mesâhif ehli’l-emsâr, thk. Nûra bint Hasan b. Fehd el-Humeyyed (Suudi Arabistan: Dâru’t-Tedmûriyye, 2010), 14.
+FN28	 Muhammed Abdülazîm Zürkânî, Menâhilu'l-'irfân fî 'ulûmi'l-Kur'ân, thk. Feyyâz Ahmed ez-Zemerli    (Beyrut: Dâru’l-Kütübi'l-'Arabi, 1995), 1/140.
+FN32	 İbn Sa’d, et-Tabakâtü’l-kübrâ, 3/355.
+FN41	 Mukaddimetân fî ulûmi’l-Kur’ân, thk. Arthur Jeffery (Mektebetü’l-Hâncî, 1954), 25.
+FN50	 Celâleddîn Abdurrahmân Suyûtî, Târîhu’l-hulefâ’, thk. Muhammed Ğassân Nasûh Azkûl el-Hüseynî (Katar: Vizâretü’l-Evkâf ve’ş-Şuûnü’l-İslâmiyye, 2013), 153.
+FN66	 Örneğin فَسْعَوإلَى ذِكْرِ اللَّهِ âyetinin (Cum’â 62/9), فَمْضُو إلَى ذِكْرِ اللَّهْ şeklinde, إنْ كَانَتْ إلاَّ صَيحَةً وَاحِدَةً âyetinin (Yâsîn 36/29) إنْ كَانَتْ إلَّازَيْفَةً وَاحِدَةً tarzında okunması gibi. Kur’ân’ı Kerim Meali (Ankara: Diyanet İşleri Başkanlığı, 2010).
+FN105	 Ebu’l-Abbâs Ahmed b. Muhammed b. Ebû Bekir Kastallânî, Letâifu’l-işârât li fünûni’l-kırâât, thk. Heyet (Medine: Merkezu’d-Dirâsâti’l-Kur’âniyye, 2013), 1/84.
+FN271	 İsrâ 17/11. 
+FN272	 Şûrâ 42/24.
+FN273	 Kamer 54/6.
+FN274	 Alak 96/18.
+FN292	 Zâriyât 51/47.
+FN342	 Bakara 2/113.
+FN344	 Mâide 5/38.
+FN345	 Mümtehine 60/8. 
+FN346	 Mümtehine 60/9.
+FN377	 Bakara 2/238.
+FN380	 Bakara 2/226.
+FN381	 Nûr 24/33.
+FN407	 Şuarâ’ 26/176.
+FN409	 Bakara 2/116.
+FN411	 Bakara 2/58.
+FN414	 Mutaffifîn 83/14.
+FN421	 Zuhruf 43/68.
+FN423	 Kehf 18/94. 
+FN424	 Bakara 2/251.
+FN425	 Bakara 2/247.
+FN426	 Kasas 28/86.
+FN427	 Kasas 28/6.
+FN428	 Bakara 2/102.
+FN431	 Mü’min 40/18.
