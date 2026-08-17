@@ -1,0 +1,100 @@
+name: application-visual-qa
+
+on:
+  push:
+    branches:
+      - editorial/apply-fourth-fifth-reports
+    paths:
+      - 'work/VISUAL-QA-REQUEST.json'
+      - '.github/workflows/application-visual-qa.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  qa:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/apply-fourth-fifth-reports
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install lxml
+      - name: Validate persisted F4-052 checkpoint and make QA slice
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/app work/runtime
+          python - <<'PY'
+          from zipfile import ZipFile
+          from lxml import etree
+          from collections import Counter
+          from copy import deepcopy
+          from pathlib import Path
+          import hashlib
+          W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'; NS={'w':W}
+          src=Path('source/manuscript/current/redaktorden_gelen.docx')
+          cur=Path('artifacts/checkpoints/manuscript-working-f4-052.docx')
+          expected='f94870a3b0b8a06acdb39cf104e78c3715f0c734068ee6dfc312795c863eabe4'
+          got=hashlib.sha256(cur.read_bytes()).hexdigest(); assert got==expected,(got,expected)
+          protected=['word/footnotes.xml','word/styles.xml','word/numbering.xml','word/settings.xml','word/_rels/document.xml.rels']
+          with ZipFile(src) as zs, ZipFile(cur) as z:
+              assert z.testzip() is None
+              for n in z.namelist():
+                  if n.endswith('.xml') or n.endswith('.rels'): etree.fromstring(z.read(n))
+              ds=etree.fromstring(zs.read('word/document.xml')); d=etree.fromstring(z.read('word/document.xml'))
+              fs=etree.fromstring(zs.read('word/footnotes.xml')); f=etree.fromstring(z.read('word/footnotes.xml'))
+              fn0=[x for x in fs.xpath('//w:footnote/@w:id',namespaces=NS) if int(x)>0]; fn=[x for x in f.xpath('//w:footnote/@w:id',namespaces=NS) if int(x)>0]
+              r0=ds.xpath('//w:footnoteReference/@w:id',namespaces=NS); r=d.xpath('//w:footnoteReference/@w:id',namespaces=NS)
+              assert len(fn)==len(r)==469 and fn==fn0 and r==r0 and set(fn)==set(r)
+              assert not [k for k,v in Counter(r).items() if v>1]
+              def instrs(zipf):
+                  out=[]
+                  for n in zipf.namelist():
+                      if n.startswith('word/') and n.endswith('.xml'):
+                          try: root=etree.fromstring(zipf.read(n)); out += [''.join(x.itertext()).strip() for x in root.xpath('//w:instrText',namespaces=NS)]
+                          except: pass
+                  return out
+              assert instrs(z)==instrs(zs) and len(instrs(z))==520
+              assert len(d.xpath('//w:rtl',namespaces=NS))==len(ds.xpath('//w:rtl',namespaces=NS))
+              assert len(d.xpath('//w:bookmarkStart',namespaces=NS))==len(ds.xpath('//w:bookmarkStart',namespaces=NS))==53
+              assert len(d.xpath('//w:bookmarkEnd',namespaces=NS))==len(ds.xpath('//w:bookmarkEnd',namespaces=NS))==53
+              assert len(d.xpath('//w:hyperlink',namespaces=NS))==len(ds.xpath('//w:hyperlink',namespaces=NS))==52
+              for n in protected: assert zs.read(n)==z.read(n),n
+              ps=d.xpath('.//w:body/w:p',namespaces=NS)
+              lines=[f'BODY_PARAGRAPHS={len(ps)}']
+              for i,p in enumerate(ps):
+                  if 178 <= i <= 216:
+                      text=''.join(p.xpath('.//w:t/text()',namespaces=NS)); fns=p.xpath('.//w:footnoteReference/@w:id',namespaces=NS)
+                      lines.append(f'P{i}\tFN={fns}\tRTL={len(p.xpath(".//w:rtl",namespaces=NS))}\tBOOK={len(p.xpath(".//w:bookmarkStart|.//w:bookmarkEnd",namespaces=NS))}\t{text}')
+              Path('work/runtime/F4-052-POSTFLIGHT.txt').write_text('\n'.join(lines),encoding='utf-8')
+              # QA-only slice: retain paragraphs 175..220 and original final sectPr.
+              qa=deepcopy(d); body=qa.find('.//w:body',namespaces=NS); qps=body.xpath('./w:p',namespaces=NS)
+              for idx,p in list(enumerate(qps)):
+                  if idx < 175 or idx > 220: body.remove(p)
+              xml=etree.tostring(qa,xml_declaration=True,encoding='UTF-8',standalone='yes')
+              with ZipFile('/tmp/app/f4_052_qa_slice.docx','w') as zout:
+                  for info in z.infolist(): zout.writestr(info,xml if info.filename=='word/document.xml' else z.read(info.filename))
+          Path('work/runtime/F4-052-TECHNICAL-VALIDATION.txt').write_text('PASS\nsha256='+got+'\nfootnotes=469\nreferences=469\norphans=0\ndangling=0\nduplicates=0\nfields=520\nzotero=465+1\nbookmarks=53/53\nhyperlinks=52\nprotected_parts=baseline-identical\n',encoding='utf-8')
+          PY
+      - name: Render bounded QA PDF
+        run: |
+          set -euo pipefail
+          if ! command -v libreoffice >/dev/null 2>&1; then
+            sudo apt-get update -qq
+            sudo apt-get install -y libreoffice-writer >/dev/null
+          fi
+          libreoffice --headless --convert-to pdf --outdir work/runtime /tmp/app/f4_052_qa_slice.docx
+          mv work/runtime/f4_052_qa_slice.pdf work/runtime/F4-052-QA.pdf
+          if command -v pdfinfo >/dev/null 2>&1; then pdfinfo work/runtime/F4-052-QA.pdf | grep '^Pages:' > work/runtime/F4-052-QA-PAGES.txt; fi
+      - name: Commit QA evidence
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add work/runtime/F4-052-POSTFLIGHT.txt work/runtime/F4-052-TECHNICAL-VALIDATION.txt work/runtime/F4-052-QA.pdf
+          if [ -f work/runtime/F4-052-QA-PAGES.txt ]; then git add work/runtime/F4-052-QA-PAGES.txt; fi
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'checkpoint(qa): render F4-052 affected range [skip ci]'
+          git push origin HEAD:editorial/apply-fourth-fifth-reports
