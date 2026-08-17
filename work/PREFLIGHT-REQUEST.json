@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-090.docx",
-  "start": 372,
-  "end": 392,
-  "output": "work/runtime/F4-091-PREFLIGHT.txt",
-  "purpose": "map current 4.3 Ibn Shanbudh paragraph, surrounding citation structure and heading boundary before F4-091 scoped rewrite"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-092.docx",
+  "start": 378,
+  "end": 395,
+  "output": "work/runtime/F4-093-PREFLIGHT.txt",
+  "purpose": "map current 4.3 closing synthesis and 4.4 heading/bookmark boundary before F4-093 conceptual transition rewrite"
 }
