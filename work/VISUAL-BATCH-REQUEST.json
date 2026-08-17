@@ -1,8 +1,8 @@
 {
   "checkpoint": "F4-090",
-  "revision": 1,
+  "revision": 2,
   "docx": "artifacts/checkpoints/manuscript-working-f4-090.docx",
-  "sha256": "a2cc0c1cd8aefc13adf6aee42ef610331bcd238586399126828f0a2577c0ec21",
+  "sha256": "4f6218852a35d1775610e19f199158677540870a4f3ea27974aabbcc7050d5e1",
   "start": 364,
   "end": 374,
   "technical_file": "work/runtime/F4-090-TECHNICAL-VALIDATION.txt",
