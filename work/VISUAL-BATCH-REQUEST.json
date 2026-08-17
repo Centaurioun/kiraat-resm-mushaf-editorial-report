@@ -1,0 +1,10 @@
+{
+  "checkpoint": "F4-057",
+  "docx": "artifacts/checkpoints/manuscript-working-f4-057.docx",
+  "sha256": "95f54c235d47eacf95c70c02157968e2b9380333440e73380b18dd58ade0f271",
+  "start": 203,
+  "end": 235,
+  "technical_file": "work/runtime/F4-057-TECHNICAL-VALIDATION.txt",
+  "range_file": "work/runtime/F4-057-QA-RANGE.txt",
+  "pdf_file": "work/runtime/F4-057-QA.pdf"
+}
