@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-100.docx",
-  "start": 414,
-  "end": 424,
-  "output": "work/runtime/F4-101-PREFLIGHT.txt",
-  "purpose": "map the current 4.6 final Dani/Abu Dawud/modern-publication evidence and repeated citation-free conclusions before F4-101; verify that source-backed P416-420 remain preservable while redundant conclusion paragraphs can be consolidated without pre-applying F4-102+"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-101.docx",
+  "start": 422,
+  "end": 431,
+  "output": "work/runtime/F4-102-PREFLIGHT.txt",
+  "purpose": "map current 4.7 opening P422 onward and exact FN454/FN455 association before F4-102; determine a citation-safe compression of repeated calligraphy/copying history into the report-approved print-focused opener without dropping or misrepresenting footnote references and without pre-applying F4-103+"
 }
