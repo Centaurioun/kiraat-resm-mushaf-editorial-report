@@ -439,3 +439,11 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Footnote-aware technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; only authorized target footnote text differs, target footnote OOXML structure unchanged.
 - Visual QA used a P0–P118 prefix render to preserve the true footnote-reference sequence after bounded-slice rendering was found unsuitable for high-numbered footnotes. Real pages carrying FN32, FN41 and FN105 were inspected; all 3/3 target pages PASS.
 - Durable boundary: last F4-112; next F4-113.
+
+
+## F4-113 checkpoint — PASS
+- Final replay: `work/apply_f4_113.py`; candidate SHA-256 `e4287570d99f9d3c20f96752497787e6d97f6a07047555ecbe5c05e5c69bdac1`.
+- F4-113 APPLIED: normalized author-name article variants conservatively (`ed-Dânî` → `Dânî`, `ez-Zürkânî` → `Zürkânî`, `es-Suyûtî` → `Suyûtî`) and adopted articleless sura names only in explicit verified Qur'anic verse-reference contexts. Bibliographic work titles such as `el-Mukni‘` and `el-İtkân` remain untouched.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; canonical-to-candidate changed-footnote set exactly equals the authorized 31-ID set (including inherited F4-112 FN32/FN41/FN105); target footnote OOXML structure unchanged.
+- Human visual QA: three representative slices (P50–75, P274–280, P389–401), workflow runs 32079868743 / 32080087101 / 32080209568; all 19/19 rasterized pages manually inspected and PASS. Bounded-render high-footnote renumbering limitation is explicitly documented; original footnote identity is established by the structural gate and full-candidate postflight.
+- Durable boundary: last F4-113; next F4-114.

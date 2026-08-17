@@ -2,41 +2,45 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `7be56d5640002fca2594b06c891a8ec46cab1c18` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `0694386d412e3ffc7eb3276ab5fc013eb1aa2eba` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-112`
-- Next item: `F4-113`
-- DO-NOT-REPEAT: `F4-001`–`F4-112`
+- Last completed item: `F4-113`
+- Next item: `F4-114`
+- DO-NOT-REPEAT: `F4-001`–`F4-113`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-112.docx`
-- Current working SHA-256: `58e23edd3cdbffbacaf8a2e14fc2dff5ea5357dd76b15cda30c4d31820e12e9a`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-113.docx`
+- Current working SHA-256: `e4287570d99f9d3c20f96752497787e6d97f6a07047555ecbe5c05e5c69bdac1`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
 - Footnotes/references: 469/469; orphans/dangling/duplicates: 0/0/0
 - Word fields: 520; ADDIN: 466; Zotero: 465 item + 1 bibliography
 - Bookmarks: 53/53; hyperlinks: 52; RTL inventory canonical-equal
-- Protected OOXML: baseline-identical
+- Protected OOXML: baseline-identical except explicitly authorized footnote-text changes in `word/footnotes.xml`; target footnote structure unchanged
 
 ## Latest structural state
-- F4-073–111 remain intact and validated from prior durable checkpoints.
-- F4-112: genuine footnotes 32, 41 and 105 now contain only their bibliographic citation text; editor/work notes are removed.
-- Current body paragraph count remains 676; all 469 footnote identities/references, 520 fields, bookmarks, hyperlinks and body XML structure remain preserved.
-- F4-113+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh.
+- F4-073–112 remain intact and validated from prior durable checkpoints.
+- F4-113: genuine footnote text house style now uses `Dânî`, `Zürkânî`, `Suyûtî` for the targeted author-name variants and an articleless sura-name convention in explicit verified Qur'anic verse references.
+- Bibliographic work titles and unrelated article-bearing lexical contexts are preserved; no F4-114 transliteration work has been pre-applied.
+- Current body paragraph count remains 676; all 469 footnote identities/references, 520 fields, Zotero/ADDIN fields, bookmarks, hyperlinks and RTL structural inventory remain preserved.
 
 ## Evidence
-- Replay: `work/apply_f4_112.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-112.docx`
-- SHA: `work/runtime/F4-112-SHA256.txt`
-- Postflight: `work/runtime/F4-112-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-112-TECHNICAL-VALIDATION.txt`
-- Human visual review: `work/F4-112-VISUAL-QA.md` — 3/3 real target pages PASS using prefix render
+- Replay: `work/apply_f4_113.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-113.docx`
+- SHA: `work/runtime/F4-113-SHA256.txt`
+- Preflight: `work/runtime/F4-113-PREFLIGHT.txt`
+- Postflight: `work/runtime/F4-113-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-113-TECHNICAL-VALIDATION.txt`
+- Human visual review: `work/F4-113-VISUAL-QA.md` — 19/19 pages PASS across three representative slices
+- Visual Slice A: run 32079868743 / artifact 9304743549 / 8 pages
+- Visual Slice B: run 32080087101 / artifact 9304818453 / 4 pages
+- Visual Slice C: run 32080209568 / artifact 9304867454 / 7 pages
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Apply only F4-113 to current F4-112. Inventory author-name article variants and sura-name article variants in genuine footnotes before editing. Normalize author-name house-style forms such as `ez-Zürkânî`, `es-Suyûtî`, `ed-Dânî` to `Zürkânî`, `Suyûtî`, `Dânî` only where they function as author names; do not mechanically strip articles from sura names, work titles or other lexical contexts. Establish and apply one internally consistent sura-name article convention without altering bibliographic titles. Use footnote-specific validation and identity-preserving visual QA. Do not pre-apply F4-114+ or repeat `F4-001`–`F4-112`.
+Fetch the exact F4-114 item from `final/fourth-report-v2.md`, resolve it against the current durable F4-113 binary, run a read-only preflight, and apply only F4-114 if unambiguous. Do not pre-apply F4-115+ or repeat `F4-001`–`F4-113`.
