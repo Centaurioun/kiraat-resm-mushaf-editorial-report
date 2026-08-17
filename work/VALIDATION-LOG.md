@@ -103,3 +103,14 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Bounded render: 7 pages; 7/7 visually inspected; PASS.
 - Intermediate QA TOC display retained the pre-edit 3.4 heading because LibreOffice did not recalculate the preserved Word TOC field; actual body heading is correct and field recalculation remains a final acceptance task.
 - Durable boundary: last F4-072; next F4-073.
+
+
+## F4-073–077 checkpoint — PASS
+- Final replay: `work/apply_f4_073_077_v3.py`; final candidate commit `b07eda97513611171eb74de05452bbfd48792605`.
+- Candidate SHA-256: `9b8eea35a108e9cefe160e5d7f4975f9adbc278d2a6883cd016a3b67fa46a56c`.
+- F4-073 STRUCTURALLY_APPLIED; F4-074 STRUCTURALLY_APPLIED; F4-075 STRUCTURALLY_APPLIED; F4-076 APPLIED; F4-077 STRUCTURALLY_APPLIED.
+- Second replay: all accepted changes and whitespace-preserve repair already satisfied; byte-identical.
+- Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; reference identity/multiplicity canonical-equal; body reference order changed only because accepted source-backed paragraphs were moved; 520 fields; protected OOXML baseline-identical.
+- Initial 14-page visual QA was rejected for two missing rendered spaces across run boundaries. v3 adds only `xml:space=preserve` to affected whitespace-bearing text nodes.
+- Corrected 14-page render: 14/14 visually inspected; PASS. Both spacing defects are resolved. No clipping, overlap, footnote overflow, heading damage, RTL defect, or batch-induced style propagation remains.
+- Durable boundary: last F4-077; next F4-078.
