@@ -27,22 +27,30 @@ def set_text_preserve_ppr(p,text):
     safe_plain(p,'paragraph')
     rp=h.first_rpr(p); h.clear(p); h.add(p,text,rp)
 
-def neutralize_pagination(p):
+def force_pagination_off(p):
     ppr=p.find(f'{{{W}}}pPr')
-    if ppr is None:return
+    if ppr is None:
+        ppr=etree.Element(f'{{{W}}}pPr'); p.insert(0,ppr)
     for tag in PAGINATION_TAGS:
-        for el in list(ppr.findall(f'{{{W}}}{tag}')): ppr.remove(el)
+        el=ppr.find(f'{{{W}}}{tag}')
+        if el is None:
+            el=etree.SubElement(ppr,f'{{{W}}}{tag}')
+        el.set(f'{{{W}}}val','0')
 
-def has_forced_pagination(p):
+def pagination_explicitly_off(p):
     ppr=p.find(f'{{{W}}}pPr')
     if ppr is None:return False
-    return any(ppr.find(f'{{{W}}}{tag}') is not None for tag in PAGINATION_TAGS)
+    for tag in PAGINATION_TAGS:
+        el=ppr.find(f'{{{W}}}{tag}')
+        if el is None:return False
+        if el.get(f'{{{W}}}val') not in ('0','false','off'):return False
+    return True
 
-def new_para_like(ref,text,neutral_pagination=False):
+def new_para_like(ref,text,force_off=False):
     p=etree.Element(f'{{{W}}}p')
     ppr=ref.find(f'{{{W}}}pPr')
     if ppr is not None:p.append(deepcopy(ppr))
-    if neutral_pagination: neutralize_pagination(p)
+    if force_off: force_pagination_off(p)
     rp=h.first_rpr(ref); h.add(p,text,rp)
     return p
 
@@ -61,7 +69,7 @@ def complete(path:Path):
     ct=h.norm(h.txt(contrib[0]))
     if h.norm(KEEP2) not in ct or h.norm(OLD_RESEARCH) in ct:return False
     fi=ps.index(finals[0]); fu=ps.index(future[0]); bi=bib[0]
-    return fi < fu < bi and not has_forced_pagination(future[0])
+    return fi < fu < bi and pagination_explicitly_off(future[0])
 
 def apply(src:Path,out:Path):
     if complete(src):
@@ -82,16 +90,16 @@ def apply(src:Path,out:Path):
         if h.norm(h.txt(prev))=='' and not any(h.spec(prev)[k] for k in ['fn','instr','fld','hyper','rtl','book']):
             set_text_preserve_ppr(prev,FINAL); pfinal=prev
         else:
-            pfinal=new_para_like(pc,FINAL,neutral_pagination=True); body.insert(body.index(pb),pfinal)
-        # Future-research paragraph must remain part of Sonuç, not be forced to stay with Kaynakça.
-        pnew=new_para_like(pc,FUTURE,neutral_pagination=True)
+            pfinal=new_para_like(pc,FINAL,force_off=True); body.insert(body.index(pb),pfinal)
+        # Explicitly override inherited pagination so the research paragraph stays in Sonuç rather than following Kaynakça.
+        pnew=new_para_like(pc,FUTURE,force_off=True)
         body.insert(body.index(pb),pnew)
         xml=etree.tostring(d,xml_declaration=True,encoding='UTF-8',standalone='yes')
         with ZipFile(out,'w') as zout:
             for info in zin.infolist(): zout.writestr(info,xml if info.filename=='word/document.xml' else zin.read(info.filename))
     f78.validate_structural(src,out)
     if not complete(out): raise RuntimeError('F4-110 postconditions incomplete')
-    return [('F4-110','Sonuc_end','APPLIED_FINAL_JUDGMENT_AND_FUTURE_RESEARCH_SEPARATION_PAGINATION_NEUTRAL')]
+    return [('F4-110','Sonuc_end','APPLIED_FINAL_JUDGMENT_AND_FUTURE_RESEARCH_SEPARATION_EXPLICIT_PAGINATION_OFF')]
 
 if __name__=='__main__':
     for r in apply(Path(sys.argv[1]),Path(sys.argv[2])): print('\t'.join(map(str,r)))
