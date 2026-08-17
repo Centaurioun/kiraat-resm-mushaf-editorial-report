@@ -339,3 +339,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render P416–425: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, heading orphaning, RTL corruption, blank-page regression, abnormal spacing or style propagation.
 - Durable boundary: last F4-101; next F4-102.
+
+
+## F4-102 checkpoint — PASS
+- Final replay: `work/apply_f4_102.py`; candidate SHA-256 `38561f498d0abacc3dacea2bb35b92aa1ed4abe67d8b767657ea80e759ff69e8`.
+- F4-102 APPLIED: 4.7 now opens directly with the report-approved print/resm focus. The repeated calligraphy/copying lead-in was compressed while preserving unique source-backed historical propositions.
+- Genuine FN454 and FN455 were proposition-safely retained on the compact historical-background sentences; preflight resolves them from the candidate OOXML, and `word/footnotes.xml` remains baseline-identical. F4-100 P425 and the later F4-103 Saint Petersburg target remain unchanged.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render P422–431: 4/4 pages inspected; layout PASS. The isolated QA slice copies all 469 footnotes while retaining sparse high w:id references, so LibreOffice-rendered slice footnote text is not authoritative for footnote-content identity; `work/F4-102-VISUAL-QA.md` records this renderer caveat. Candidate OOXML/preflight and protected-part invariants are authoritative for citation mapping.
+- Durable boundary: last F4-102; next F4-103.
