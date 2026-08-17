@@ -1,5 +1,5 @@
 DOCX=artifacts/checkpoints/manuscript-working-f4-078.docx
-SHA256=1003dc1ed9138186d3af10f7e56bbffdddde09a6158fcf1e3a46a9af0f3c75a2
+SHA256=131913a4e602ec88fa0582ebe1cd40cfe8f9c1e9461c5692d12d4c4b36465e6f
 BODY_PARAGRAPHS=678
 REFERENCE_ORDER_CHANGED=True
 P295	FN=['307', '306']	RTL=0	BOOK=0	İbn Haldûn, mushaf yazımındaki bazı farklılıkları erken Arap yazısının tarihsel şartlarıyla açıklamakta ve bunlara zorunlu biçimde özel hikmetler yüklenmesine itiraz etmektedir. Sonraki resm literatüründe bu görüşe, resmin sahâbe uygulamasıyla nakledilmesi, mushaf geleneğindeki süreklilik ve bağlayıcılık düşüncesi üzerinden çeşitli cevaplar verilmiştir. Bu cevaplar, resme bağlılığın normatif gerekçelerini açıklamak bakımından önemlidir; ancak erken yazım biçimlerinin tarihsel sebebini tek başına belirleyen kanıtlar olarak değerlendirilmemelidir.
