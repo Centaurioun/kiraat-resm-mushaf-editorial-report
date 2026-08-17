@@ -4,9 +4,9 @@
 - Branch: `editorial/apply-fourth-fifth-reports`
 - Branch/checkpoint HEAD: `SELF`
 - Phase: `FOURTH_APPLY`
-- Last completed: `F4-042`
-- Next: `F4-043`
-- DO-NOT-REPEAT: bootstrap and `F4-001–042`.
+- Last completed: `F4-047`
+- Next: `F4-048`
+- DO-NOT-REPEAT: bootstrap and `F4-001–047`.
 
 ## Current recovery pipeline
 1. `work/apply_docx_edits.py` → F4-011 (`86f99b2186711a7d94159d9c1b7413b0248a0c5c`).
@@ -16,29 +16,25 @@
 5. `work/apply_f4_028_032.py` → F4-032 (`30bf55f09fa02d4b805d6695c149061f2b24031d`).
 6. `work/apply_f4_033_037.py` → F4-037 (`58d891d493331863b9f8fdfb0436267a97d33f4e`).
 7. `work/apply_f4_038_042.py` → F4-042 (`89f8263a3fb90454727660654d103e6e2c132c16`).
-- Current logical DOCX SHA-256: `e23e7c57a52b5ef6f95c3f36ea2ab614274464bff6e65803198c5c868cb1181c`.
+8. `work/apply_f4_043_047.py` → F4-047; durable spec `work/F4-043-047-REPLAY-SPEC.md`.
+- Current logical DOCX SHA-256: `6621390d51f78d73fabf615f2c224dfb36b22c37cefc81e8e6cb568e20105fb7`.
 - Body paragraphs: **696**.
-- Ledger: `5969a0c676c80dadb1963c4245127d617c101f99`.
-- State: `8350292c73badb344a2aef1ed5c83943454c8921`.
-- Validation: `1d0c77ca5ec84bfa4f82bd6a552251278f540be5`.
+- Ledger through F4-047: `86ebf507741218a7b2f38c3008f2eac97c825c53`.
+- State through F4-047: `d1bb29620e02f36a3568b4f9e07ad182015404b4`.
+- Validation through F4-047: `ac1bce766dd2ab36c1f69889c3a7c76f302b6c9d`.
 
 ## Integrity
 - Footnotes/references 469/469; orphan/dangling/duplicate 0/0/0.
-- Fields 520/520; Zotero 465+1; RTL 365/365; bookmarks 53/53; hyperlinks 52.
+- Fields 520/520; Zotero 465+1; RTL 365/365; bookmarks 53/53; hyperlinks 52; sections 10.
 - Protected OOXML baseline-identical except expected document.xml changes; ZIP/XML PASS.
-- Latest replay byte-idempotent; 35-page bounded visual QA PASS.
+- Latest replay byte-idempotent; 38-page bounded visual QA PASS.
 - Open HOLDs: none.
 
 ## Locked decisions
-- F4-041 is complete within its explicit report scope: Motzki/Sinai evidence was restrained; the separate Déroche paragraph was not silently deleted.
-- F4-042 inserted a distinction paragraph after the protected 1.8 heading; do not merge it back into the historical-origin discussion.
+- F4-044: note 151 remains on preceding source-specific hazf examples, not on the new concise synthesis.
+- F4-047: note 172 remains only on the limited statement that some sources offer meaning-centred explanations; it does not support a phonetic-necessity claim or the corrected examples themselves.
+- Existing Arabic/RTL example runs were reused and must remain protected.
 - All earlier citation and Fourth-vs-Fifth precedence locks remain active.
 
-## Exact next group
-- F4-043: replace the over-strong `bilinçli uyum` claim with the report's compatibility-with-transmitted-readings distinction.
-- F4-044: replace the hazf definition/causal overclaim; also shorten the repeated `Sonuç olarak...` hazf synthesis identified by the report, while preserving genuine citations and Arabic runs.
-- F4-045: replace the Ca‘berî ibdâl statement with the report-approved restrained formulation.
-- F4-046: replace the hemze historical-cause paragraph with the report-approved early-writing/edâ formulation; do not add the optional external source unless independently needed.
-- F4-047: correct the ziyâde examples, especially Bakara 2/269, and remove unsupported `fonetik zorunluluk` reasoning while preserving Arabic/RTL runs.
-
-After these five, validate and checkpoint before F4-048.
+## Exact next action
+Read the authoritative Fourth Report item `F4-048`, re-locate it from the CURRENT F4-047 logical DOCX, inspect affected citations/Arabic/OOXML, apply it safely, and continue sequentially in groups of at most five low-risk items or immediate checkpoint after any high-risk structural/citation change.
