@@ -1,0 +1,12 @@
+PASS
+sha256=58e23edd3cdbffbacaf8a2e14fc2dff5ea5357dd76b15cda30c4d31820e12e9a
+footnotes=469
+references=469
+reference_identity_multiset=canonical-equal
+reference_order_change=allowed-for-accepted-structural-moves
+orphans=0
+dangling=0
+duplicates=0
+fields=520
+protected_parts=targeted-footnote-text-authorized
+allowed_footnote_text_ids=32,41,105
