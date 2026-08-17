@@ -1,0 +1,35 @@
+name: application-visual-pages
+
+on:
+  push:
+    branches:
+      - editorial/apply-fourth-fifth-reports
+    paths:
+      - 'work/VISUAL-PAGES-REQUEST.json'
+      - '.github/workflows/application-visual-pages.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  pages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/apply-fourth-fifth-reports
+      - name: Convert QA PDF to PNG pages
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils >/dev/null
+          mkdir -p qa-pages
+          pdfinfo work/runtime/F4-052-QA.pdf | grep '^Pages:' | tee qa-pages/PAGE-COUNT.txt
+          pdftoppm -png -r 120 work/runtime/F4-052-QA.pdf qa-pages/page >/dev/null
+          ls -lh qa-pages
+      - uses: actions/upload-artifact@v4
+        with:
+          name: f4-052-qa-pages
+          path: qa-pages/
+          if-no-files-found: error
+          retention-days: 7
