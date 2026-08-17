@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-110.docx",
+  "docx": "artifacts/checkpoints/manuscript-working-f4-112.docx",
   "start": 0,
   "end": 675,
-  "output": "work/runtime/F4-111-PREFLIGHT.txt",
-  "purpose": "inventory all main-body occurrences of Kur’an/Kur'’an/Kur’ân variants and Imam Mushaf capitalization variants after durable F4-110; distinguish body prose from bibliography, field-bearing paragraphs and probable direct quotations before F4-111 normalization; do not modify the manuscript or pre-apply F4-112+"
+  "output": "work/runtime/F4-113-PREFLIGHT.txt",
+  "purpose": "F4-113 read-only inventory across all genuine footnotes referenced by the current durable F4-112 manuscript. Identify author-name article variants (including ez-Zürkânî, es-Suyûtî, ed-Dânî and comparable author-name forms) separately from sura-name article variants (for example Bakara/el-Bakara). Do not modify manuscript text, bibliographic work titles, quotations, or pre-apply F4-114+. Evidence must support a context-sensitive footnote-only normalization plan."
 }
