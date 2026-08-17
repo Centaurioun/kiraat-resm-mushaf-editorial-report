@@ -124,3 +124,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Initial 17-page visual QA rejected because five demoted headings retained direct run-level bold formatting. v2 removes only direct run formatting from those five transition paragraphs. Repaired render adjudicated across all 17 pages (9 changed pages reinspected directly; 8 pages pixel-identical to already inspected first render): PASS.
 - Word TOC remains a stale derived field and must be refreshed in final Word field-refresh phase; field structures were not rewritten during citation-safe application.
 - Durable boundary: last F4-078; next F4-079.
+
+
+## F4-079 checkpoint — PASS
+- Final replay: `work/apply_f4_079_v2.py`; candidate commit `85196bc9947a2b8398017a7c50da4d9d152ad37a`; SHA-256 `6c373c2173180bc54d97baf7264f267fc3d25f56383f795f95d8d37378774e16`.
+- F4-079 APPLIED: the Israel/Africa tampered-mushaf narrative is no longer presented as verified historical fact. The report-approved limited attribution and an explicit verification caveat replace the detailed asserted narrative. Unsupported perpetrator-intent attribution was removed.
+- Citation-safe mapping preserved FN341–347 as sources for what the relevant resm literature reports, rather than as independent verification of the historical allegations. Footnote identity/multiplicity remains canonical-equal.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical; RTL inventory canonical-equal.
+- First visual render was rejected because old Arabic-example paragraphs leaked numbering/centering into the new caveat prose. RTL-safe v2 removes only stale paragraph list/alignment/bidi formatting without copying paragraph-mark RTL or changing RTL counts.
+- Corrected bounded render: 4/4 pages inspected; PASS. No residual list numbering/centering, no blank RTL artifacts, no footnote overflow, clipping or style propagation.
+- Durable boundary: last F4-079; next F4-080.

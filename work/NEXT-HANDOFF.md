@@ -2,17 +2,17 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `f7597ed4f0aa33fe338666b17e7e7841e7a601ed` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `a5aed14ab1f98721c2e1ee61477263795f652df7` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-078`
-- Next item: `F4-079`
-- DO-NOT-REPEAT: `F4-001`–`F4-078`
+- Last completed item: `F4-079`
+- Next item: `F4-080`
+- DO-NOT-REPEAT: `F4-001`–`F4-079`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-078.docx`
-- Current working SHA-256: `131913a4e602ec88fa0582ebe1cd40cfe8f9c1e9461c5692d12d4c4b36465e6f`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-079.docx`
+- Current working SHA-256: `6c373c2173180bc54d97baf7264f267fc3d25f56383f795f95d8d37378774e16`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
@@ -22,23 +22,24 @@
 - Protected OOXML: baseline-identical
 
 ## Latest structural state
-- F4-073–077 remain intact and validated from the prior durable checkpoint.
-- F4-078: old 3.7–3.12 architecture consolidated beneath one main heading, `Resm-i Osmânî’ye Bağlılığın Gerekçeleri ve Sınırları`; former 3.8–3.12 headings are bookmark-preserving normal-body transition sentences.
-- F4-078: unique source-backed paragraphs and all citation identities are retained; only citation-free repetitive/defensive conclusions were removed.
-- F4-078: F4-079 unverified Israel/Africa narrative, F4-080 counterfactual mushafaha claim, and F4-081 qirāʾa-loss claim remain intentionally unresolved for sequential application.
+- F4-073–078 remain intact and validated from prior durable checkpoints.
+- F4-079: unverified Israel/Africa tampered-mushaf material is retained only as a caveated report of claims in the cited resm sources; it is not used as independently verified historical evidence.
+- F4-079: unsupported perpetrator-intent attribution removed; FN341–347 preserved and semantically reanchored to the limited source-attribution statements.
+- F4-080 counterfactual mushafaha claim and F4-081 qirāʾa-loss claim remain intentionally unresolved for sequential application.
 - Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application.
 
 ## Evidence
-- Replay: `work/apply_f4_078_v2.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-078.docx`
-- SHA: `work/runtime/F4-078-SHA256.txt`
-- Postflight: `work/runtime/F4-078-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-078-TECHNICAL-VALIDATION.txt`
-- QA PDF: `work/runtime/F4-078-QA.pdf`
-- Human visual review: `work/F4-078-VISUAL-QA.md` — repaired full-span 17-page adjudication PASS
+- Replay: `work/apply_f4_079_v2.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-079.docx`
+- Candidate commit: `85196bc9947a2b8398017a7c50da4d9d152ad37a`
+- SHA: `work/runtime/F4-079-SHA256.txt`
+- Postflight: `work/runtime/F4-079-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-079-TECHNICAL-VALIDATION.txt`
+- QA PDF: `work/runtime/F4-079-QA.pdf`
+- Human visual review: `work/F4-079-VISUAL-QA.md` — corrected 4/4 PASS
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Apply F4-079 to the current F4-078 binary. Replace the unverified Israel/Africa tampered-mushaf narrative with the report-approved limited attribution and explicit verification caveat, remove the unsupported motive attribution, preserve all 469 footnote references by semantically reanchoring FNs341–347 rather than deleting them, then run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-078`.
+Apply F4-080 to the current F4-079 binary. Replace the counterfactual claim that fully phonetic writing would have weakened mushafaha or caused eda forms to be neglected with the report-approved evidentially bounded statement: `Kur’an'ın edâya ilişkin ayrıntıları tarih boyunca yalnız yazıdan çıkarılmamış; telakki, müşâfehe ve isnad yoluyla aktarılmıştır. Mushaf yazısı bu sözlü öğretim geleneğinin yerine geçmemiş, rivâyet edilen okuyuşların müşterek yazılı çerçevesini sağlamıştır.` Preserve FN340 semantically, run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-079`.
