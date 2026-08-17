@@ -2,17 +2,17 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `524d765f930ee80cf63898767672149c7206aa4d` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `7be56d5640002fca2594b06c891a8ec46cab1c18` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-111`
-- Next item: `F4-112`
-- DO-NOT-REPEAT: `F4-001`–`F4-111`
+- Last completed item: `F4-112`
+- Next item: `F4-113`
+- DO-NOT-REPEAT: `F4-001`–`F4-112`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-111.docx`
-- Current working SHA-256: `4c9eba6d4ca9e65dc7148921c8331a21f4768ecc3aed65c9c0deda0ff98166c9`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-112.docx`
+- Current working SHA-256: `58e23edd3cdbffbacaf8a2e14fc2dff5ea5357dd76b15cda30c4d31820e12e9a`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
@@ -22,22 +22,21 @@
 - Protected OOXML: baseline-identical
 
 ## Latest structural state
-- F4-073–110 remain intact and validated from prior durable checkpoints.
-- F4-111: main-text house style now uses `Kur’an` and curated specific-name `İmam Mushaf` without altering bibliography, direct quotations, italic work titles or footnotes.
-- Current body paragraph count remains 676; all 469 footnote identities, 520 fields, bookmarks and protected OOXML remain preserved.
-- F4-112+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh.
+- F4-073–111 remain intact and validated from prior durable checkpoints.
+- F4-112: genuine footnotes 32, 41 and 105 now contain only their bibliographic citation text; editor/work notes are removed.
+- Current body paragraph count remains 676; all 469 footnote identities/references, 520 fields, bookmarks, hyperlinks and body XML structure remain preserved.
+- F4-113+ has not been pre-applied. Derived TOC field remains stale pending final Word refresh.
 
 ## Evidence
-- Preflight: `work/runtime/F4-111-PREFLIGHT.txt`
-- Replay: `work/apply_f4_111.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-111.docx`
-- SHA: `work/runtime/F4-111-SHA256.txt`
-- Postflight: `work/runtime/F4-111-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-111-TECHNICAL-VALIDATION.txt`
-- Human visual review: `work/F4-111-VISUAL-QA.md` — 19/19 representative pages PASS
+- Replay: `work/apply_f4_112.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-112.docx`
+- SHA: `work/runtime/F4-112-SHA256.txt`
+- Postflight: `work/runtime/F4-112-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-112-TECHNICAL-VALIDATION.txt`
+- Human visual review: `work/F4-112-VISUAL-QA.md` — 3/3 real target pages PASS using prefix render
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Apply only F4-112 to current F4-111. Remove the surviving editorial/work notes from genuine footnotes 32, 41 and 105 while preserving the bibliographic citation content and the footnote IDs/references. Because `word/footnotes.xml` must change for this accepted item, use a footnote-specific validation that proves only the targeted footnote text changed and all 469 IDs/reference identities, fields, body XML structure and all other protected parts remain intact. Do not pre-apply F4-113+. Run deterministic replay and footnote-aware visual/technical QA. Do not repeat `F4-001`–`F4-111`.
+Apply only F4-113 to current F4-112. Inventory author-name article variants and sura-name article variants in genuine footnotes before editing. Normalize author-name house-style forms such as `ez-Zürkânî`, `es-Suyûtî`, `ed-Dânî` to `Zürkânî`, `Suyûtî`, `Dânî` only where they function as author names; do not mechanically strip articles from sura names, work titles or other lexical contexts. Establish and apply one internally consistent sura-name article convention without altering bibliographic titles. Use footnote-specific validation and identity-preserving visual QA. Do not pre-apply F4-114+ or repeat `F4-001`–`F4-112`.

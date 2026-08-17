@@ -431,3 +431,11 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay reports ALREADY_SATISFIED and is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Three bounded representative visual slices: P20–29 4/4 PASS; P62–85 8/8 PASS; P397–411 7/7 PASS; total 19/19 pages PASS.
 - Durable boundary: last F4-111; next F4-112.
+
+
+## F4-112 checkpoint — PASS
+- Final replay: `work/apply_f4_112.py`; candidate SHA-256 `58e23edd3cdbffbacaf8a2e14fc2dff5ea5357dd76b15cda30c4d31820e12e9a`.
+- F4-112 APPLIED: removed only the surviving editorial/work-note tails from genuine footnotes 32, 41 and 105; bibliographic citation content and all footnote IDs/body references are preserved.
+- Deterministic second replay is byte-identical. Footnote-aware technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; only authorized target footnote text differs, target footnote OOXML structure unchanged.
+- Visual QA used a P0–P118 prefix render to preserve the true footnote-reference sequence after bounded-slice rendering was found unsuitable for high-numbered footnotes. Real pages carrying FN32, FN41 and FN105 were inspected; all 3/3 target pages PASS.
+- Durable boundary: last F4-112; next F4-113.
