@@ -1,7 +1,8 @@
 {
   "checkpoint": "F4-078",
+  "revision": 2,
   "docx": "artifacts/checkpoints/manuscript-working-f4-078.docx",
-  "sha256": "1003dc1ed9138186d3af10f7e56bbffdddde09a6158fcf1e3a46a9af0f3c75a2",
+  "sha256": "131913a4e602ec88fa0582ebe1cd40cfe8f9c1e9461c5692d12d4c4b36465e6f",
   "start": 295,
   "end": 350,
   "technical_file": "work/runtime/F4-078-TECHNICAL-VALIDATION.txt",
