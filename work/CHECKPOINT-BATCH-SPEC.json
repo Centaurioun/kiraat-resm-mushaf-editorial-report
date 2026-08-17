@@ -1,40 +1,41 @@
 {
-  "last_f4": 103,
-  "next_f4": 104,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-103.docx",
-  "sha256": "31e7ab7f74f1a3370c102ccd63336bedccda664a0e6674a4dbd30193d2bf58b2",
+  "last_f4": 104,
+  "next_f4": 105,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-104.docx",
+  "sha256": "641e964820181acf70d8c7e5af7608e1347e7e4faecb2a1a19bfb7628710ee13",
   "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-103-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-103-VISUAL-QA.md",
-  "visual_pages": 3,
+  "technical_file": "work/runtime/F4-104-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-104-VISUAL-QA.md",
+  "visual_pages": 4,
   "holds": "none",
-  "validation_marker": "## F4-103 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_103.py`; candidate SHA-256 `31e7ab7f74f1a3370c102ccd63336bedccda664a0e6674a4dbd30193d2bf58b2`.\n- F4-103 APPLIED: only the citation-free 1201/1787 Saint Petersburg sentence in current P429 was replaced with the report-authorized safe core naming II. Katerina's order; the uncertain `Mevlây Osman (?)` attribution was removed.\n- Hinkelmann/Marracci chronology before the sentence and P430/FN460, P431/FN461, P432/FN462 after it remain unchanged.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P427–432: 3/3 pages inspected; PASS.\n- Durable boundary: last F4-103; next F4-104.",
+  "validation_marker": "## F4-104 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_104.py`; candidate SHA-256 `641e964820181acf70d8c7e5af7608e1347e7e4faecb2a1a19bfb7628710ee13`.\n- F4-104 APPLIED: after F4-101 had already removed the old `three aims` paragraph, the surviving citation-free over-single-cause synthesis in current P413 was replaced with the report-approved multicausal standardization paragraph.\n- Resm-i Osmani adherence is now one important factor among printing technology, tashih/control boards, qiraat/writing expertise, educational institutions and official publication policies. Source-backed P410–412 and P414–416 remain unchanged; F4-105 P437 remains untouched.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render P410–416: 4/4 pages inspected; PASS.\n- Durable boundary: last F4-104; next F4-105.",
   "structural_state": [
-    "F4-073–102 remain intact and validated from prior durable checkpoints.",
-    "F4-103: the Saint Petersburg 1787 sentence now uses only the report-authorized II. Katerina attribution and no uncertain personal name.",
-    "Current body paragraph count remains 677; all surrounding chronology and protected OOXML remain preserved.",
-    "F4-104+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required."
+    "F4-073–103 remain intact and validated from prior durable checkpoints.",
+    "F4-104: modern mushaf standardization is framed as multicausal rather than as the direct natural result of one rasm theory.",
+    "Current body paragraph count remains 677; protected OOXML and all footnote identities remain preserved.",
+    "F4-105+ has not been pre-applied. Derived TOC field has not been recalculated; final Word field/TOC refresh remains required."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_103.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-103.docx`",
-    "SHA: `work/runtime/F4-103-SHA256.txt`",
-    "Postflight: `work/runtime/F4-103-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-103-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-103-QA.pdf`",
-    "Human visual review: `work/F4-103-VISUAL-QA.md` — 3/3 PASS"
+    "Preflight: `work/runtime/F4-104-PREFLIGHT.txt`",
+    "Replay: `work/apply_f4_104.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-104.docx`",
+    "SHA: `work/runtime/F4-104-SHA256.txt`",
+    "Postflight: `work/runtime/F4-104-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-104-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-104-QA.pdf`",
+    "Human visual review: `work/F4-104-VISUAL-QA.md` — 4/4 PASS"
   ],
-  "next_action": "Read and apply only F4-104 to the current F4-103 binary. Identify the surviving modern-standardization single-cause synthesis after F4-101 consolidation and replace only the still-active over-single-cause formulation with the report-approved multicausal paragraph naming resm-i Osmani adherence, printing technology, correction/control boards, qiraat/writing expertise, educational institutions and official publication policies. Preserve source-backed evidence and do not pre-apply F4-105+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-103`.",
+  "next_action": "Read and apply only F4-105 to the current F4-104 binary. Replace the current 4.7 closure that presents printed mushafs as actively causing qiraat spread/standardization with the report-approved multicausal formulation: printed mushafs increase written visibility/use, while regional spread also depends on teaching traditions, regional qiraat preferences, official publication policy and educational institutions. Preserve surrounding source-backed chronology and do not pre-apply F4-106+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-104`.",
   "updates": {
-    "F4-103": {
+    "F4-104": {
       "status": "APPLIED",
-      "section": "4.7 printed-mushaf chronology",
-      "action_type": "SAINT_PETERSBURG_SAFE_CORE_CORRECTION",
-      "resolved_location": "current paragraph 429",
+      "section": "4.6 modern-standardization synthesis",
+      "action_type": "MULTICAUSAL_STANDARDIZATION_REFRAME",
+      "resolved_location": "current paragraph 413",
       "affected_footnote_ids": [],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 3/3_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Changed only the citation-free Saint Petersburg sentence; removed uncertain `Mevlây Osman (?)` attribution and retained the report-approved II. Katerina/1201-1787 core."
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Did not reintroduce the F4-101-removed three-aims paragraph; replaced only the surviving single-cause synthesis."
     }
   }
 }
