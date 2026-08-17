@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `c7b334cfe07106ba243884ad0fd4f07aaa6eb564` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `1562e396962bce48ab2c81c6a3c1b8aad70a599e` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -12,17 +12,17 @@
 
 ## State machine
 - Current phase: `FOURTH_APPLY`
-- Last fully completed Fourth Report item: `F4-098`
-- Next Fourth Report item: `F4-099`
+- Last fully completed Fourth Report item: `F4-099`
+- Next Fourth Report item: `F4-100`
 - Last fully completed Fifth Report item: none
 - Next Fifth Report item: `F5-001` (do not start until Fourth Report validation passes)
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-098.docx`
-- Current working DOCX SHA-256: `30c5f9140dfbf9425e860563e9c297e3ba3d6b154a74c8d7f5b7236d1df20bc0`
-- Last known good commit basis: `c7b334cfe07106ba243884ad0fd4f07aaa6eb564`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-098.docx`
-- Current body paragraph count: 677
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-099.docx`
+- Current working DOCX SHA-256: `3c3a18fdd19dff05f2bb7e3a03979bc5eb0769085a36b7b2e1c4a61a81d4f8c0`
+- Last known good commit basis: `1562e396962bce48ab2c81c6a3c1b8aad70a599e`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-099.docx`
+- Current body paragraph count: 678
 
 ## Integrity
 - Genuine footnotes/references: 469/469
@@ -34,18 +34,17 @@
 - Protected OOXML parts: baseline-identical
 
 ## Structural-edit state
-- F4-073–097 remain intact and validated from prior durable checkpoints.
-- F4-098: targeted 4.5 work-note/death-date cleanup and source-attributed hikma framing are applied; first-use date normalization was also applied at the proven earlier body occurrences.
-- FN417–437, RTL/Arabic structure, the bookmark-backed 4.5/4.6 boundaries and later report material remain preserved.
-- F4-099 historical transition from classical rasm transmission into modern print-mushaf standardization is next and has not been pre-applied.
+- F4-073–098 remain intact and validated from prior durable checkpoints.
+- F4-099: a single report-approved historical transition paragraph now bridges classical rasm transmission and the modern print-mushaf section.
+- The bookmark-backed 4.6 heading and FN438+ source material remain preserved; F4-100+ has not been pre-applied.
 - Derived TOC field has not been recalculated; final Word field/TOC refresh remains required after editorial application.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Last validation result: **PASS**.
 - Deterministic replay/idempotency: PASS.
-- Technical validation: PASS (`work/runtime/F4-098-TECHNICAL-VALIDATION.txt`).
-- Bounded visual QA: PASS, 12/12 pages inspected (`work/F4-098-VISUAL-QA.md`).
+- Technical validation: PASS (`work/runtime/F4-099-TECHNICAL-VALIDATION.txt`).
+- Bounded visual QA: PASS, 3/3 pages inspected (`work/F4-099-VISUAL-QA.md`).
 
 ## Exact next action
-Read and apply only F4-099 to the current F4-098 binary. Add the report-required historical transition from classical rasm transmission/discussion into the modern print-mushaf standardization section without altering source-backed 4.5 content or pre-applying F4-100+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-098`.
+Read and apply only F4-100 to the current F4-099 binary. At the 4.7 opening, replace the claim that the absence of dotting/vocalization in early mushafs was fundamentally a conscious mechanism for preserving multiple qiraat with the report-approved historically cautious formulation. Preserve all affected footnotes/RTL/source material and do not pre-apply F4-101+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-099`.

@@ -312,3 +312,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Because the item touched three distant regions, bounded visual QA used three renders: P192–198 3/3 PASS; P349–355 4/4 PASS; P396–403 5/5 PASS; aggregate 12/12 pages PASS.
 - Pre-existing red editorial material outside the F4-098 target remains pending for later report items and is not a batch regression.
 - Durable boundary: last F4-098; next F4-099.
+
+
+## F4-099 checkpoint — PASS
+- Final replay: `work/apply_f4_099.py`; candidate SHA-256 `3c3a18fdd19dff05f2bb7e3a03979bc5eb0769085a36b7b2e1c4a61a81d4f8c0`.
+- F4-099 APPLIED: inserted the report-approved two-sentence historical bridge between the existing 4.5 closing synthesis and the bookmark-backed 4.6 heading, linking classical rasm literature to later mushaf copying and print-publication practice.
+- Existing 4.5 source-backed content and the 4.6 heading/FN438+ material remain unchanged. The insertion adds exactly one normal body paragraph, increasing body paragraphs from 677 to 678.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render P403–409: 3/3 pages inspected; PASS.
+- Durable boundary: last F4-099; next F4-100.
