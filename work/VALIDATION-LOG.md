@@ -255,3 +255,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, run-boundary spacing defect or style propagation. The short fifth page is the natural bounded-slice ending, not a blank-page regression.
 - Durable boundary: last F4-092; next F4-093.
+
+
+## F4-093 checkpoint — PASS
+- Final replay: `work/apply_f4_093.py`; candidate commit `77c2e6707cdbff9eb9e57b1715f09ec5aeb2de80`; SHA-256 `3a2c3f5b16a889de359ed59c859a2eeff4d9610b76b92c7af023858e8a9a5a06`.
+- F4-093 APPLIED: the citation-free 4.3 closing conclusion was replaced with a direct conceptual transition distinguishing acceptance status from preference, linguistic tawjih and waqf explanation.
+- The new transition sits immediately before the bookmark-backed 4.4 heading. Source-backed 4.3 material including FN395–399 and the 4.4 opening FN400+ paragraphs remain intact.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, heading damage, orphaned heading, run-boundary spacing defect or style propagation.
+- Durable boundary: last F4-093; next F4-094.

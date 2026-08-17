@@ -2,17 +2,17 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `ed58d62f363213647d63bdf8a262b440bf25bbf2` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `1465236630cd0299cd9aeb8dedbcf46751880ae4` plus this metadata checkpoint commit
 - Current phase: `FOURTH_APPLY`
 
 ## Resume boundary
-- Last completed item: `F4-092`
-- Next item: `F4-093`
-- DO-NOT-REPEAT: `F4-001`–`F4-092`
+- Last completed item: `F4-093`
+- Next item: `F4-094`
+- DO-NOT-REPEAT: `F4-001`–`F4-093`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-092.docx`
-- Current working SHA-256: `0c6d7393e9eac0054ef8c9de7e27cc6dc257a741e54587df0f260c4512ce0d6f`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-093.docx`
+- Current working SHA-256: `3a2c3f5b16a889de359ed59c859a2eeff4d9610b76b92c7af023858e8a9a5a06`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
@@ -22,23 +22,23 @@
 - Protected OOXML: baseline-identical
 
 ## Latest structural state
-- F4-073–091 remain intact and validated from prior durable checkpoints.
-- F4-092: the FN392–393 paragraph now differentiates acceptance/status categories while preserving source-specific evidence.
-- P377/FN394 remains the next untouched boundary; F4-093 is pending.
+- F4-073–092 remain intact and validated from prior durable checkpoints.
+- F4-093: 4.3 now closes with a direct conceptual bridge into preference/tawjih/waqf rather than another broad rasm-authority conclusion.
+- The bookmark-backed 4.4 heading and FN400+ opening material remain unchanged; F4-094 is next.
 - Derived TOC field has not been recalculated; final Word field/TOC refresh remains required after editorial application.
 
 ## Evidence
-- Replay: `work/apply_f4_092.py`
-- Candidate: `artifacts/checkpoints/manuscript-working-f4-092.docx`
-- Candidate commit: `82395162a0958f8340fe36837c00a86db94ca310`
-- SHA: `work/runtime/F4-092-SHA256.txt`
-- Postflight: `work/runtime/F4-092-POSTFLIGHT.txt`
-- Technical validation: `work/runtime/F4-092-TECHNICAL-VALIDATION.txt`
-- QA PDF: `work/runtime/F4-092-QA.pdf`
-- Human visual review: `work/F4-092-VISUAL-QA.md` — 5/5 PASS
+- Replay: `work/apply_f4_093.py`
+- Candidate: `artifacts/checkpoints/manuscript-working-f4-093.docx`
+- Candidate commit: `77c2e6707cdbff9eb9e57b1715f09ec5aeb2de80`
+- SHA: `work/runtime/F4-093-SHA256.txt`
+- Postflight: `work/runtime/F4-093-POSTFLIGHT.txt`
+- Technical validation: `work/runtime/F4-093-TECHNICAL-VALIDATION.txt`
+- QA PDF: `work/runtime/F4-093-QA.pdf`
+- Human visual review: `work/F4-093-VISUAL-QA.md` — 4/4 PASS
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Read and apply only F4-093 to the current F4-092 binary. Preserve P376/FN392–393 and all source-backed 4.3 material; do not pre-apply F4-094+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-092`.
+Read and apply only F4-094 to the current F4-093 binary. Preserve the F4-093 transition, bookmark-backed 4.4 heading and source-backed FN400+ material except where F4-094 explicitly requires a scoped heading/opening correction. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-093`.
