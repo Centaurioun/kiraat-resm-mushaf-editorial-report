@@ -1,0 +1,18 @@
+{
+  "wave": "FIFTH",
+  "required_baseline": "F4_VERIFIED_BASELINE",
+  "workers": [
+    {"id":"F5-W01","items":"F5-001–014","branch":"worker/f5/w01-001-014","model":"GPT-5.6 Medium"},
+    {"id":"F5-W02","items":"F5-015–024","branch":"worker/f5/w02-015-024","model":"GPT-5.6 Medium"},
+    {"id":"F5-W03","items":"F5-025–034","branch":"worker/f5/w03-025-034","model":"GPT-5.6 Medium"},
+    {"id":"F5-W04","items":"F5-035–042","branch":"worker/f5/w04-035-042","model":"GPT-5.6 Medium"},
+    {"id":"F5-W05","items":"F5-043–054","branch":"worker/f5/w05-043-054","model":"GPT-5.6 Medium"},
+    {"id":"F5-W06","items":"F5-055–061","branch":"worker/f5/w06-055-061","model":"GPT-5.6 Medium"},
+    {"id":"F5-W07","items":"F5-062–064","branch":"worker/f5/w07-062-064","model":"GPT-5.6 High"},
+    {"id":"F5-W08","items":"F5-065–070","branch":"worker/f5/w08-065-070","model":"GPT-5.6 Medium"},
+    {"id":"F5-W09","items":"F5-071–080","branch":"worker/f5/w09-071-080","model":"GPT-5.6 Medium"},
+    {"id":"F5-W10","items":"F5-081–085","branch":"worker/f5/w10-081-085","model":"GPT-5.6 Medium"}
+  ],
+  "integrator_reserved": ["F5-086–094"],
+  "coverage_check": "F5-001–094 exactly once across workers plus integrator-reserved items"
+}

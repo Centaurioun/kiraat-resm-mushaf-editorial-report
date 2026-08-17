@@ -1,0 +1,18 @@
+{
+  "wave": "FOURTH",
+  "required_baseline": "F4-047",
+  "workers": [
+    {"id":"F4-W01","items":"F4-048–056","branch":"worker/f4/w01-048-056","model":"GPT-5.6 Medium"},
+    {"id":"F4-W02","items":"F4-057–062","branch":"worker/f4/w02-057-062","model":"GPT-5.6 Medium"},
+    {"id":"F4-W03","items":"F4-063–069","branch":"worker/f4/w03-063-069","model":"GPT-5.6 Medium"},
+    {"id":"F4-W04","items":"F4-070–073","branch":"worker/f4/w04-070-073","model":"GPT-5.6 Medium"},
+    {"id":"F4-W05","items":"F4-074–082","branch":"worker/f4/w05-074-082","model":"GPT-5.6 High"},
+    {"id":"F4-W06","items":"F4-083–090","branch":"worker/f4/w06-083-090","model":"GPT-5.6 Medium"},
+    {"id":"F4-W07","items":"F4-091–099","branch":"worker/f4/w07-091-099","model":"GPT-5.6 Medium"},
+    {"id":"F4-W08","items":"F4-100–107","branch":"worker/f4/w08-100-107","model":"GPT-5.6 Medium"},
+    {"id":"F4-W09","items":"F4-108–110","branch":"worker/f4/w09-108-110","model":"GPT-5.6 Medium"},
+    {"id":"F4-W10","items":"F4-112,F4-114–116","branch":"worker/f4/w10-footnotes-bibliography","model":"GPT-5.6 High"}
+  ],
+  "integrator_reserved": ["F4-111","F4-113"],
+  "coverage_check": "F4-048–116 exactly once across workers plus integrator-reserved items"
+}

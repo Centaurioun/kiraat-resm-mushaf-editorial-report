@@ -1,0 +1,3 @@
+# TASK — FOURTH HIGH INTEGRATOR
+
+Use GPT-5.6 High. Read `parallel/INTEGRATION-PROTOCOL.md`, all ten F4 worker handoffs/results, the frozen baseline and Fourth Report. Create a dedicated F4 integration branch from checkpoint `c473b24d3f6f24508c761805218bbaa29686b47c`; reconstruct and hash-verify F4-047; replay accepted worker artifacts in report order; adjudicate AMBER cases; reject RED cases; apply integrator-reserved F4-111 and F4-113; update canonical ledger/state/log/handoff only on the integration lineage; perform technical validation and bounded/full QA required by risk. Do not declare Fourth verified: hand the complete integrated result to the independent auditor.
