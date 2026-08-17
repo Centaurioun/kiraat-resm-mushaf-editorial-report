@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-101.docx",
-  "start": 422,
-  "end": 431,
-  "output": "work/runtime/F4-102-PREFLIGHT.txt",
-  "purpose": "map current 4.7 opening P422 onward and exact FN454/FN455 association before F4-102; determine a citation-safe compression of repeated calligraphy/copying history into the report-approved print-focused opener without dropping or misrepresenting footnote references and without pre-applying F4-103+"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-103.docx",
+  "start": 405,
+  "end": 450,
+  "output": "work/runtime/F4-104-PREFLIGHT.txt",
+  "purpose": "map the surviving current 4.6/4.7 modern-standardization claims after F4-101 and F4-102; identify only the still-active over-single-cause formulation for F4-104, preserve source-backed evidence/footnotes, and do not reintroduce the removed three-aims paragraph or pre-apply F4-105+"
 }
