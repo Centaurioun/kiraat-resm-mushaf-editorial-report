@@ -8,7 +8,7 @@
 - Source manuscript path: `source/manuscript/current/redaktorden_gelen.docx`
 - Source manuscript SHA-256: `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2618b058c54`
 - Source manuscript Git blob SHA-1: `afb77260a59c4eabf5664dd1919c03fc68cc5196`
-- Canonical-source decision: only one DOCX candidate exists under `source/manuscript/current/`; the Library long-filename copy was independently confirmed byte-identical by Git blob SHA and size. Canonical source remains unmodified.
+- Canonical source remains unmodified.
 - Fourth Report path: `final/fourth-report-v2.md`
 - Fourth Report parsed item count: **116**
 - Fifth Report path: `final/fifth-report-locked.md`
@@ -16,45 +16,46 @@
 
 ## State machine
 - Current phase: `FOURTH_APPLY`
-- Last fully completed Fourth Report item: none (F4-001–003 are applied in the reproducible working state but not yet marked VERIFIED because render QA is pending)
-- Next Fourth Report item: `F4-004` only after F4-001–003 render QA and ledger checkpoint are closed
+- Last fully completed Fourth Report item: `F4-003`
+- Next Fourth Report item: `F4-004`
 - Last fully completed Fifth Report item: none
 - Next Fifth Report item: `F5-001` (blocked until Fourth Report validation passes)
 
 ## Working document / recovery
-- Current working DOCX: **not persisted as a Git binary at this interim recovery checkpoint**; reconstruct from `artifacts/checkpoints/manuscript-working-bootstrap.docx` by running `work/apply_docx_edits.py`.
-- Reconstructed working DOCX expected SHA-256: `40504b9d5b41ecae0ae9db64add341f37105e7bae1e8c0c164439ef3078fb5da`
-- Last known good commit with persisted DOCX: `026fe5d382d51a6c31b489a89498946d545587f4`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-bootstrap.docx`
-- Binary checkpoint limitation: the current GitHub connector exposes text/tree/blob APIs but no local-file upload path; the edited DOCX binary is therefore not falsely claimed as pushed. Reproducible replay code, hashes, and state are persisted instead.
+- Current logical working DOCX: reconstruct from `artifacts/checkpoints/manuscript-working-bootstrap.docx` with `work/apply_docx_edits.py`.
+- Reconstructed F4-001–003 SHA-256: `40504b9d5b41ecae0ae9db64add341f37105e7bae1e8c0c164439ef3078fb5da`
+- Last known good commit with persisted DOCX binary: `026fe5d382d51a6c31b489a89498946d545587f4`
+- Last known good DOCX binary: `artifacts/checkpoints/manuscript-working-bootstrap.docx`
+- Last known good reproducible application commit: `46a5014e1c87bce2bceda20278481055975ccb39`
+- Binary transport limitation: current GitHub connector does not expose a local-file upload route for the edited DOCX. No false binary-persistence claim is made; deterministic replay script, hashes, ledger, validation and handoff are persisted.
 
-## Footnote state after reconstructed F4-001–003
+## Footnote state after F4-001–003
 - Baseline/current genuine footnotes: **469 / 469**
 - Baseline/current body references: **469 / 469**
-- Genuine footnote ID set: unchanged 1–469
-- Footnote text hashes: **exactly unchanged**
+- Genuine footnote ID/reference sets: unchanged
+- Normalized footnote text hashes: unchanged
 - Orphan footnotes: **0**
 - Dangling references: **0**
-- Duplicate body references: **0**
-- F4-003 affected footnote: ID **2**, reference preserved at end of the rewritten historical paragraph.
+- Duplicate references: **0**
+- F4-003 affected footnote ID: **2**, reference remains attached to the rewritten historical paragraph.
 
-## Word / Zotero / OOXML state after reconstructed F4-001–003
+## Word / Zotero / OOXML state after F4-001–003
 - Word field instructions: **520 / 520**, exact instruction hashes unchanged
-- TOC: 1; PAGEREF: 52; PAGE: 1; ADDIN: 466
-- Zotero: 465 item fields + 1 bibliography field, unchanged
-- Bookmarks/hyperlinks/comments/tracked revisions/sections: unchanged
-- Arabic/RTL inventory: unchanged
+- TOC 1; PAGEREF 52; PAGE 1; ADDIN 466
+- Zotero item fields 465; bibliography field 1
+- Bookmarks/hyperlinks/comments/tracked revisions/sections unchanged
+- Arabic/RTL inventory unchanged
 - `word/document.xml`: expected changed part
 - `word/footnotes.xml`, `word/styles.xml`, `word/numbering.xml`, `word/settings.xml`, `word/_rels/document.xml.rels`: unchanged
 - ZIP/package integrity: **PASS**
 - XML parse integrity: **PASS**
 
-## Editing state
-- F4-001: authoritative Önsöz paragraph replacement applied.
-- F4-002: authoritative Önsöz closing paragraph replacement applied.
-- F4-003: authoritative Giriş historical paragraph replacement applied; footnote ID 2 preserved.
+## Editing / validation state
+- `F4-001`: `VERIFIED`
+- `F4-002`: `VERIFIED`
+- `F4-003`: `VERIFIED`
+- Visual QA: full-document PDF export hangs identically on untouched canonical source. A temporary QA-only paragraph slice (body paragraphs 0–59) from the validated current package rendered successfully to **12 pages**, and **12/12 pages were visually inspected**. No clipping, overlap, font anomaly or footnote-placement defect was found; footnote 2 is visible at the end of the new F4-003 paragraph and its footnote text flows normally.
 - Current structural-edit state: no heading/section movement or numbering change yet.
-- Open editorial HOLD items: none
-- Operational QA pending: DOCX render. The same headless LibreOffice conversion also hangs on the untouched canonical source, indicating an environment/baseline rendering issue rather than an edit-specific regression. Items are not marked VERIFIED until this gate is resolved or a documented equivalent visual QA path is completed.
-- Last validation result: **TECHNICAL PASS; RENDER QA PENDING**
-- Exact next action: reconstruct F4-001–003 with `work/apply_docx_edits.py`, complete render/visual QA, then update `application-ledger.jsonl` for F4-001–003 and checkpoint before applying F4-004.
+- Open HOLD items: none
+- Last validation result: **PASS — F4-001–003 technical + 12/12 relevant-slice visual QA**
+- Exact next action: apply `F4-004` against the CURRENT reconstructed document using a targeted in-paragraph replacement that preserves footnote 3 and all surrounding content; then apply `F4-005`, validate, checkpoint, and only then begin high-risk `F4-006` structural consolidation.

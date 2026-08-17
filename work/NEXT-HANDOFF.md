@@ -3,18 +3,17 @@
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
 - Current phase: `FOURTH_APPLY`
-- Applied but not yet VERIFIED: `F4-001`–`F4-003`
-- Ledger remains at PENDING for these three until render QA is closed; do not falsely mark them VERIFIED.
-- Next report item after closing that gate: `F4-004`
-- Current working DOCX: reconstruct from `artifacts/checkpoints/manuscript-working-bootstrap.docx` with `work/apply_docx_edits.py`
-- Expected reconstructed SHA-256: `40504b9d5b41ecae0ae9db64add341f37105e7bae1e8c0c164439ef3078fb5da`
-- Last known good commit with persisted binary: `026fe5d382d51a6c31b489a89498946d545587f4`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-bootstrap.docx`
-- Footnote baseline/current after reconstruction: **469 / 469**; references **469 / 469**; orphans 0; dangling 0; duplicate refs 0
-- F4-003 footnote ID 2 preserved at the rewritten historical paragraph
-- Word/Zotero state: 520 field instructions; ADDIN 466; Zotero 465 item + 1 bibliography; exact field instruction hashes unchanged
+- Last completed item: `F4-003`
+- Next item: `F4-004`
+- Current logical working DOCX: reconstruct from `artifacts/checkpoints/manuscript-working-bootstrap.docx` using `work/apply_docx_edits.py`
+- Reconstructed SHA-256 through F4-003: `40504b9d5b41ecae0ae9db64add341f37105e7bae1e8c0c164439ef3078fb5da`
+- Last persisted binary commit/DOCX: `026fe5d382d51a6c31b489a89498946d545587f4` / `artifacts/checkpoints/manuscript-working-bootstrap.docx`
+- Last reproducible edited-state commit: `46a5014e1c87bce2bceda20278481055975ccb39`
+- Footnote baseline/current: **469/469**; references **469/469**; orphans 0; dangling 0; duplicate refs 0
+- Word/Zotero: 520 field instructions; ADDIN 466; Zotero 465 item + 1 bibliography; exact instruction hashes unchanged
 - Completed structural changes: none
-- Open editorial HOLDs: none
-- Operational QA pending: render/visual review. Untouched canonical source exhibits the same LibreOffice conversion hang.
-- DO-NOT-REPEAT range: branch/source verification, canonical byte-identity, bootstrap inventory, ledger initialization, bootstrap persistence, F4-001–003 technical application
-- Exact next action: run `python work/apply_docx_edits.py <bootstrap-docx> <working-docx>`; confirm expected SHA; complete visual QA; update ledger F4-001–003; commit/push that validation checkpoint; only then apply F4-004.
+- Open HOLDs: none
+- F4-001–003: **VERIFIED** after technical validation and 12/12-page QA-slice visual inspection
+- Known rendering issue: untouched canonical source also hangs on full PDF export. Use QA-only paragraph slices for bounded edit validation; do not substitute slices for final manuscript. Full final all-page visual acceptance is still required.
+- DO-NOT-REPEAT range: source/branch/bootstrap, ledger initialization, F4-001–003 application and validation
+- Exact next action: reconstruct the current document; apply F4-004 as a targeted in-paragraph replacement preserving footnote 3 and all other prose; apply F4-005 as a targeted final-sentence replacement; validate technical state and visually inspect the affected QA slice; checkpoint before high-risk F4-006.
