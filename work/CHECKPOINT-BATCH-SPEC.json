@@ -1,42 +1,42 @@
 {
-  "last_f4": 88,
-  "next_f4": 89,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-088.docx",
-  "sha256": "92d3f7222c33e04fe4c737bd6bce3087e811d02e4f11e78755f95c857e4eb362",
+  "last_f4": 89,
+  "next_f4": 90,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-089.docx",
+  "sha256": "740d2d4960e9d6918baf808cba1d290c88e86caaa43f4395f5335b4746e210be",
   "body_paragraphs": 678,
-  "technical_file": "work/runtime/F4-088-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-088-VISUAL-QA.md",
+  "technical_file": "work/runtime/F4-089-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-089-VISUAL-QA.md",
   "visual_pages": 4,
   "holds": "none",
-  "validation_marker": "## F4-088 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_088.py`; candidate commit `bb9c5bff1d7681a2e9565f2b448d5cab57cc2bba`; SHA-256 `92d3f7222c33e04fe4c737bd6bce3087e811d02e4f11e78755f95c857e4eb362`.\n- F4-088 APPLIED: the active-agent sentence assigning selective/curatorial authority to `Osmânî resm` was replaced with the report-approved distinction between the historical Uthmanic recension/common mushaf acceptance process and rasm as a written evaluative criterion.\n- The target paragraph remains citation-free and structurally unchanged; neighboring source-backed FN380–387 and RTL material remain intact. F4-089 Ibn Masud intent language remains intentionally pending.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow or style propagation.\n- Durable boundary: last F4-088; next F4-089.",
+  "validation_marker": "## F4-089 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_089.py`; candidate commit `c63d1d21db9c885b45f28df21cea123996421371`; SHA-256 `740d2d4960e9d6918baf808cba1d290c88e86caaa43f4395f5335b4746e210be`.\n- F4-089 APPLIED: the author-level psychological interpretation of Ibn Masud's objection was replaced with the report-approved bounded statement that the transmitted reports indicate objections related to the recension process and his codex without assigning a definite motive.\n- FN388 and the following explicitly source-attributed Kurtubi/Ibn Kathir discussion remain in the same paragraph. F4-090 repeated 4.2 conclusions remain intentionally pending.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, run-boundary spacing defect or style propagation.\n- Durable boundary: last F4-089; next F4-090.",
   "structural_state": [
-    "F4-073–087 remain intact and validated from prior durable checkpoints.",
-    "F4-088: 4.2 now attributes normative delimitation to the historical recension/common-acceptance process rather than to rasm as an autonomous actor.",
-    "F4-089 Ibn Masud psychological-intent language is next; F4-090 repeated historical-witness/normative-authority conclusions remain pending.",
+    "F4-073–088 remain intact and validated from prior durable checkpoints.",
+    "F4-089: Ibn Masud discussion now avoids author-level certainty about psychological motive while preserving source-attributed later interpretations and FN388.",
+    "F4-090 repeated historical-witness/normative-authority conclusions in 4.2 are next and require structural consolidation.",
     "Derived TOC field has not been recalculated; final Word field/TOC refresh is required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_088.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-088.docx`",
-    "Candidate commit: `bb9c5bff1d7681a2e9565f2b448d5cab57cc2bba`",
-    "SHA: `work/runtime/F4-088-SHA256.txt`",
-    "Postflight: `work/runtime/F4-088-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-088-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-088-QA.pdf`",
-    "Human visual review: `work/F4-088-VISUAL-QA.md` — 4/4 PASS"
+    "Replay: `work/apply_f4_089.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-089.docx`",
+    "Candidate commit: `c63d1d21db9c885b45f28df21cea123996421371`",
+    "SHA: `work/runtime/F4-089-SHA256.txt`",
+    "Postflight: `work/runtime/F4-089-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-089-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-089-QA.pdf`",
+    "Human visual review: `work/F4-089-VISUAL-QA.md` — 4/4 PASS"
   ],
-  "next_action": "Apply F4-089 to the current F4-088 binary. Replace the psychological-intent interpretation of Ibn Masud's objection with the report-approved bounded statement that the transmitted reports show objections related to the recension process and his codex, without assigning a definite psychological motive. Preserve the paragraph's source note and do not collapse F4-090 material prematurely. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-088`.",
+  "next_action": "Apply F4-090 to the current F4-089 binary as a high-risk structural consolidation of repeated 4.2 historical-witness versus normative-authority conclusions. Preserve all unique source-backed paragraphs and footnotes, and use the report-approved three-sentence synthesis only where repeated citation-free conclusion material can be safely consolidated. Do not alter the 4.3 heading/bookmark. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-089`.",
   "updates": {
-    "F4-088": {
+    "F4-089": {
       "status": "APPLIED",
       "section": "4.2",
-      "action_type": "HISTORICAL_ACTOR_REFRAME",
-      "resolved_location": "current paragraph 368",
-      "affected_footnote_ids": [],
-      "commit": "bb9c5bff1d7681a2e9565f2b448d5cab57cc2bba",
+      "action_type": "PSYCHOLOGICAL_MOTIVE_REDUCTION",
+      "resolved_location": "current paragraph 372",
+      "affected_footnote_ids": [388],
+      "commit": "c63d1d21db9c885b45f28df21cea123996421371",
       "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Replaced autonomous-curatorial rasm wording with the report-approved historical-process plus written-criterion distinction."
+      "notes": "Removed author-level certainty about motive; retained FN388 and explicitly source-attributed Kurtubi/Ibn Kathir continuation."
     }
   }
 }
