@@ -1,41 +1,40 @@
 {
-  "last_f4": 96,
-  "next_f4": 97,
-  "docx": "artifacts/checkpoints/manuscript-working-f4-096.docx",
-  "sha256": "67791838653b64426378747d1fd4f4a304afe7d38e2c13cf0b7da60972117e41",
+  "last_f4": 97,
+  "next_f4": 98,
+  "docx": "artifacts/checkpoints/manuscript-working-f4-097.docx",
+  "sha256": "9f76e4b8a98a70a8af42a73b261945378c5bd423d94903b4ac20a94b2880f5da",
   "body_paragraphs": 677,
-  "technical_file": "work/runtime/F4-096-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-096-VISUAL-QA.md",
-  "visual_pages": 4,
+  "technical_file": "work/runtime/F4-097-TECHNICAL-VALIDATION.txt",
+  "visual_file": "work/F4-097-VISUAL-QA.md",
+  "visual_pages": 5,
   "holds": "none",
-  "validation_marker": "## F4-096 checkpoint — PASS",
-  "validation_block": "- Final replay: `work/apply_f4_096.py`; candidate SHA-256 `67791838653b64426378747d1fd4f4a304afe7d38e2c13cf0b7da60972117e41`.\n- F4-096 APPLIED: the citation-free 4.4 waqf introduction now distinguishes meaning, nahw and rivayat as primary waqf/ibtida considerations while limiting rasm to relevant written cues such as wasl-fasl and word boundaries.\n- Source-backed FN413–416 examples, including RTL/Arabic material and Hamza/hemza details, remain intact; the bookmark-backed 4.5 heading remains unchanged.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, heading damage, blank-page regression or style propagation.\n- Durable boundary: last F4-096; next F4-097.",
+  "validation_marker": "## F4-097 checkpoint — PASS",
+  "validation_block": "- Final replay: `work/apply_f4_097.py`; candidate SHA-256 `9f76e4b8a98a70a8af42a73b261945378c5bd423d94903b4ac20a94b2880f5da`.\n- F4-097 APPLIED: the FN417 opening claim now frames rasm reports as complementary evidence for written mushaf forms and their relationship to transmitted readings rather than a constitutive source of qiraat.\n- The citation-free 4.5 synthesis was replaced with the report-approved statement that rasm reports identify written forms/city-mushaf differences and do not replace the rivayat source of readings.\n- FN417 and all later source-backed material remain intact; visible Mehdevi/Ebu Amr/Ibn Muaz/Sehavi/Satibi work notes remain intentionally pending for later editorial correction.\n- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.\n- Bounded render: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, blank-page regression or style propagation.\n- Durable boundary: last F4-097; next F4-098.",
   "structural_state": [
-    "F4-073–095 remain intact and validated from prior durable checkpoints.",
-    "F4-096: the general waqf framing now separates meaning/nahw/rivayat from specific rasm-related written cues.",
-    "FN413–416 source-backed examples and the 4.5 heading remain unchanged; F4-097 is next.",
-    "The visible Mehdevi work note under 4.5 remains intentionally pending for F4-098.",
+    "F4-073–096 remain intact and validated from prior durable checkpoints.",
+    "F4-097: rasm reports are now treated as complementary written evidence rather than a constitutive qiraat source.",
+    "F4-098 editor-note/date/attribution corrections in 4.5 remain next and untouched.",
     "Derived TOC field has not been recalculated; final Word field/TOC refresh remains required after editorial application."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_096.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-096.docx`",
-    "SHA: `work/runtime/F4-096-SHA256.txt`",
-    "Postflight: `work/runtime/F4-096-POSTFLIGHT.txt`",
-    "Technical validation: `work/runtime/F4-096-TECHNICAL-VALIDATION.txt`",
-    "QA PDF: `work/runtime/F4-096-QA.pdf`",
-    "Human visual review: `work/F4-096-VISUAL-QA.md` — 4/4 PASS"
+    "Replay: `work/apply_f4_097.py`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f4-097.docx`",
+    "SHA: `work/runtime/F4-097-SHA256.txt`",
+    "Postflight: `work/runtime/F4-097-POSTFLIGHT.txt`",
+    "Technical validation: `work/runtime/F4-097-TECHNICAL-VALIDATION.txt`",
+    "QA PDF: `work/runtime/F4-097-QA.pdf`",
+    "Human visual review: `work/F4-097-VISUAL-QA.md` — 5/5 PASS"
   ],
-  "next_action": "Read and apply only F4-097 to the current F4-096 binary. Reframe rasm reports as complementary written evidence rather than a constitutive source of qiraat; preserve FN417+ source structure and leave the visible Mehdevi work note/date corrections for F4-098. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-096`.",
+  "next_action": "Read and apply only F4-098 to the current F4-097 binary. Remove visible work notes, correct first-use death dates exactly as the Fourth Report specifies, and attribute the universal-hikma claim to the relevant authors rather than the book voice. Preserve all affected footnotes/RTL/source material and do not pre-apply F4-099+. Run deterministic replay, technical validation and bounded visual QA. Do not repeat `F4-001`–`F4-097`.",
   "updates": {
-    "F4-096": {
+    "F4-097": {
       "status": "APPLIED",
-      "section": "4.4",
-      "action_type": "WAQF_CAUSAL_SCOPE_CORRECTION",
-      "resolved_location": "current paragraph 392",
-      "affected_footnote_ids": [],
-      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 4/4_BOUNDED_VISUAL_QA_PASS",
-      "notes": "Replaced only the citation-free general waqf paragraph; preserved FN413–416 source-backed examples and 4.5 boundary."
+      "section": "4.5",
+      "action_type": "COMPLEMENTARY_EVIDENCE_REFRAME",
+      "resolved_location": "current paragraphs 397 and 400",
+      "affected_footnote_ids": [417],
+      "verification": "TECHNICAL_PASS + IDEMPOTENCY_PASS + 5/5_BOUNDED_VISUAL_QA_PASS",
+      "notes": "Narrowed the FN417 constitutive-source sentence and replaced the citation-free synthesis; preserved later source-backed material and F4-098 work-note boundaries."
     }
   }
 }
