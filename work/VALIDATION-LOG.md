@@ -302,3 +302,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 5/5 pages inspected; PASS. No clipping, overlap, footnote overflow, RTL corruption, blank-page regression or style propagation.
 - Durable boundary: last F4-097; next F4-098.
+
+
+## F4-098 checkpoint — PASS
+- Final replay: `work/apply_f4_098.py`; candidate SHA-256 `30c5f9140dfbf9425e860563e9c297e3ba3d6b154a74c8d7f5b7236d1df20bc0`.
+- F4-098 APPLIED: first-use biographical dates were normalized according to the report: Sehavi at P195 `(ö. 643/1245)` and Mehdevi at P352 `(ö. 440/1048-49 [?])`; repeat-use dates/work notes were removed in 4.5. Ibn Muaz al-Juhani is corrected to `(ö. 442/1050)` and the Ebu Amr work-note fragment was removed while retaining the existing death date.
+- The overgeneralized universal-hikma authorial conclusion in the FN418–419 paragraph was replaced with the report-approved qualified framing that attributes meaning/hikma explanations to sources and avoids assigning one conscious purpose to every rasm feature.
+- All affected source structure remains intact, including FN417–437 and dense Arabic/RTL runs. Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Because the item touched three distant regions, bounded visual QA used three renders: P192–198 3/3 PASS; P349–355 4/4 PASS; P396–403 5/5 PASS; aggregate 12/12 pages PASS.
+- Pre-existing red editorial material outside the F4-098 target remains pending for later report items and is not a batch regression.
+- Durable boundary: last F4-098; next F4-099.
