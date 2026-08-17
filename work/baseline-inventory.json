@@ -1,0 +1,45 @@
+{
+  "path": "source/manuscript/current/redaktorden_gelen.docx",
+  "size_bytes": 406091,
+  "sha256": "d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2618b058c54",
+  "git_blob_sha1": "afb77260a59c4eabf5664dd1919c03fc68cc5196",
+  "zip_integrity": "PASS",
+  "xml_parse_integrity": "PASS",
+  "xml_parse_failures": [],
+  "footnotes": {
+    "genuine_count": 469,
+    "reference_count": 469,
+    "orphan_ids": [],
+    "dangling_reference_ids": [],
+    "duplicate_reference_ids": []
+  },
+  "footnote_id_range": [1, 469],
+  "footnote_text_hashes_aggregate_sha256": "06b8f0f9a709cf30288d11a0be9aa717c73fc6ff0c642b1e667a882c0666fbe1",
+  "fields": {
+    "instrText_count": 520,
+    "types": {"TOC": 1, "PAGEREF": 52, "ADDIN": 466, "PAGE": 1},
+    "zotero_item_count": 465,
+    "zotero_bibl_count": 1,
+    "toc_count": 1,
+    "pageref_count": 52,
+    "ref_count": 0,
+    "page_count": 1
+  },
+  "field_instruction_hashes_aggregate_sha256": "328c02a8bb773d27aba3128193f0cd6d1e9abbddac3408a149c07d53d3325c9f",
+  "bookmarks": {"start_count": 53, "end_count": 53},
+  "hyperlinks": {"element_count": 52},
+  "comments": {"part_present": false, "count": 0, "range_start_count": 0, "range_end_count": 0, "reference_count": 0},
+  "tracked_revisions": {"insertions": 0, "deletions": 0, "moves_from": 0, "moves_to": 0},
+  "structure": {"paragraph_count": 711, "table_count": 0, "section_properties_count": 10, "numbered_paragraph_count": 56, "style_def_count": 66, "numbering_abstract_count": 28, "numbering_num_count": 28, "header_parts": [], "footer_parts": ["word/footer1.xml"]},
+  "arabic_rtl": {"arabic_codepoint_count_body": 3052, "rtl_run_property_count": 306, "bidi_paragraph_property_count": 0, "rtl_text_run_count": 269},
+  "key_part_sha256": {
+    "word/document.xml": "7fdb8d2ce1d20ba4c4c1a11ed2961e3716bb3360a398f75d8519be59922a481d",
+    "word/footnotes.xml": "216134978ab8e34d94f788e793e76790f9e280d1f5a175bbb49d68eb873886cf",
+    "word/styles.xml": "e36d69984ae6cc7cb517d734ed0c70caa06def54bca1959cba82afe519863968",
+    "word/numbering.xml": "8123fbb05344cb8c747ee01ea6e8ebca8d7bfcc0188bc54851caa9d05d247ab2",
+    "word/settings.xml": "cdaf21e814a9f2ea033ca66b9bf2f2c075f083ad8f3d729014568dbbb09a5ac5",
+    "word/_rels/document.xml.rels": "d6ef3f1a37321593a56d6d8747866576636290108af212206cab85b29ff6bb31"
+  },
+  "present_related_parts": ["word/footer1.xml", "customXml/_rels/item1.xml.rels", "customXml/itemProps1.xml", "customXml/item1.xml"],
+  "verification_note": "Exact per-footnote and per-field comparison is reproducible from the immutable canonical source DOCX; aggregate hashes here provide persistent tamper-detection without duplicating large hash arrays."
+}
