@@ -1,12 +1,12 @@
 {
-  "checkpoint": "F4-112-B",
+  "checkpoint": "F4-112-PREFIX",
   "revision": 1,
   "docx": "artifacts/checkpoints/manuscript-working-f4-112.docx",
   "sha256": "58e23edd3cdbffbacaf8a2e14fc2dff5ea5357dd76b15cda30c4d31820e12e9a",
-  "start": 112,
+  "start": 0,
   "end": 118,
   "allowed_footnote_text_ids": [32, 41, 105],
   "technical_file": "work/runtime/F4-112-TECHNICAL-VALIDATION.txt",
-  "range_file": "work/runtime/F4-112-QA-B-RANGE.txt",
-  "pdf_file": "work/runtime/F4-112-QA-B.pdf"
+  "range_file": "work/runtime/F4-112-QA-PREFIX-RANGE.txt",
+  "pdf_file": "work/runtime/F4-112-QA-PREFIX.pdf"
 }
