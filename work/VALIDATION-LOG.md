@@ -208,3 +208,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
 - Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow, Arabic/RTL corruption or F4-087-induced style propagation.
 - Durable boundary: last F4-087; next F4-088.
+
+
+## F4-088 checkpoint — PASS
+- Final replay: `work/apply_f4_088.py`; candidate commit `bb9c5bff1d7681a2e9565f2b448d5cab57cc2bba`; SHA-256 `92d3f7222c33e04fe4c737bd6bce3087e811d02e4f11e78755f95c857e4eb362`.
+- F4-088 APPLIED: the active-agent sentence assigning selective/curatorial authority to `Osmânî resm` was replaced with the report-approved distinction between the historical Uthmanic recension/common mushaf acceptance process and rasm as a written evaluative criterion.
+- The target paragraph remains citation-free and structurally unchanged; neighboring source-backed FN380–387 and RTL material remain intact. F4-089 Ibn Masud intent language remains intentionally pending.
+- Deterministic second replay is byte-identical. Technical gate: 469/469 footnotes/references; 0 orphan/dangling/duplicate; 520 fields; protected OOXML baseline-identical.
+- Bounded render: 4/4 pages inspected; PASS. No clipping, overlap, footnote overflow or style propagation.
+- Durable boundary: last F4-088; next F4-089.
