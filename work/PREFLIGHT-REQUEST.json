@@ -1,7 +1,7 @@
 {
-  "docx": "artifacts/checkpoints/manuscript-working-f4-089.docx",
-  "start": 364,
-  "end": 374,
-  "output": "work/runtime/F4-090-PREFLIGHT.txt",
-  "purpose": "map current 4.2 citation-free repeated conclusions and source-backed FN383-388 paragraphs before F4-090 structural consolidation"
+  "docx": "artifacts/checkpoints/manuscript-working-f4-090.docx",
+  "start": 372,
+  "end": 392,
+  "output": "work/runtime/F4-091-PREFLIGHT.txt",
+  "purpose": "map current 4.3 Ibn Shanbudh paragraph, surrounding citation structure and heading boundary before F4-091 scoped rewrite"
 }
