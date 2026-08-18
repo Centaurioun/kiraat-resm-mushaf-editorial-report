@@ -1,0 +1,11 @@
+FIRST_REPLAY_STDOUT
+F5-001	VERIFIED_NO_CHANGE	BYTE_IDENTICAL
+RESOLVED_LOCATION	P19
+REASON	Fourth Report already replaced the negative same-process contrast with a positive, historically cautious distinction; Fifth wording would weaken the accepted `rivâyet edilmiştir` framing.
+
+SECOND_REPLAY_STDOUT
+F5-001	VERIFIED_NO_CHANGE	BYTE_IDENTICAL
+RESOLVED_LOCATION	P19
+REASON	Fourth Report already replaced the negative same-process contrast with a positive, historically cautious distinction; Fifth wording would weaken the accepted `rivâyet edilmiştir` framing.
+
+BYTE_IDENTICAL=PASS
