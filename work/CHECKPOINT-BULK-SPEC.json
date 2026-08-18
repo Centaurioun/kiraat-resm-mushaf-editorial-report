@@ -1,0 +1,40 @@
+{
+  "start_f5": 19,
+  "last_f5": 85,
+  "next_f5": 86,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-085.docx",
+  "sha256": "869aefdec0d5fe046176e09e690d0e7d928ab53566b641fa6ace912bda31160e",
+  "body_paragraphs": 674,
+  "technical_file": "work/runtime/F5-085-REPLAY.txt",
+  "visual_required": true,
+  "visual_pages": 127,
+  "visual_file": "work/F5-085-VISUAL-QA.md",
+  "holds": "none",
+  "protected_parts_status": "F5-019–085 changes only authorized word/document.xml body paragraph text; genuine footnote-reference identity/order, fields, Zotero instructions, bookmarks, hyperlinks, Arabic/RTL structural inventory and all non-document package parts remain preserved",
+  "validation_marker": "## F5-019–085 checkpoint — PASS",
+  "validation_block": "- F5-019 through F5-085 were adjudicated and executed sequentially against durable F5-018 under Fourth Report scientific precedence.\n- First replay applied the authorized subset and verified the remaining items as no-change; the second replay produced no paragraph changes; byte-idempotency PASS (`work/runtime/F5-085-REPLAY.txt`).\n- Candidate SHA `869aefdec0d5fe046176e09e690d0e7d928ab53566b641fa6ace912bda31160e`; body count 674.\n- Package integrity PASS: 469/469 genuine references; 0/0/0 orphan/dangling/duplicate; 520 fields; ADDIN 466; Zotero 465 item + 1 bibliography; bookmarks 53/53; hyperlinks 52; RTL structural inventory canonical-equal.\n- SHA-locked QA export run 32148785913 / artifact 9328860025 covered P60–P455. The range was split only for rendering after a monolithic LibreOffice render exceeded the execution window; every rendered page was manually inspected: 127/127 PASS (`work/F5-085-VISUAL-QA.md`).\n- F5-086–094 remain pending and were not pre-applied.",
+  "structural_state": [
+    "Fourth Report and Fifth items F5-001–085 remain accepted.",
+    "F5-019–085 were completed sequentially with source-limited epistemic language and the oral-transmission-first scientific framework preserved.",
+    "Current DOCX SHA `869aefdec0d5fe046176e09e690d0e7d928ab53566b641fa6ace912bda31160e`; body 674; deterministic replay and 127/127 visual QA PASS.",
+    "F5-086 is next; F5-086–094 remain PENDING."
+  ],
+  "evidence": [
+    "Deterministic runner: `work/apply_f5_019_085.py`",
+    "Replay: `work/runtime/F5-085-REPLAY.txt`",
+    "SHA: `work/runtime/F5-085-SHA256.txt`",
+    "Postflight: `work/runtime/F5-085-POSTFLIGHT.txt`",
+    "Accepted application batch: run 32148596188",
+    "Visual QA: `work/F5-085-VISUAL-QA.md` — SHA-locked export run 32148785913 / artifact 9328860025; 127/127 pages manually inspected PASS"
+  ],
+  "next_action": "Apply F5-086 through F5-094 global cleanup sequentially against the durable F5-085 binary, preserving direct quotations and Fourth Report scientific meaning.",
+  "verification_applied": "F5_019_085_BATCH_PASS + IDEMPOTENCY_PASS + PACKAGE_INTEGRITY_PASS + 127/127_HUMAN_VISUAL_PASS",
+  "verification_noop": "F5_019_085_BATCH_PASS + NO_ADDITIONAL_CHANGE_REQUIRED + IDEMPOTENCY_PASS + PACKAGE_INTEGRITY_PASS + 127/127_HUMAN_VISUAL_PASS",
+  "notes_applied": "Applied in locked item order with Fourth Report scientific precedence; global F5-086+ items were not pre-applied.",
+  "notes_noop": "Locked concern was already resolved by accepted Fourth/current wording or required no further byte change; adjudicated in locked sequence.",
+  "applied_paragraphs": {
+    "20": [62], "23": [74], "24": [84,85], "26": [109], "27": [117], "32": [124,129,135], "33": [134], "34": [156], "36": [152], "37": [163],
+    "40": [178], "41": [181], "42": [196], "43": [203], "44": [203], "45": [206], "48": [216], "49": [220], "54": [193], "56": [283], "58": [263], "59": [266],
+    "60": [279], "62": [290], "65": [350], "66": [350], "69": [369,377], "72": [385], "73": [393], "76": [412], "79": [425], "81": [444], "84": [451]
+  }
+}
