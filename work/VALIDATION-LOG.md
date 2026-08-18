@@ -485,3 +485,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Final technical gate `work/runtime/FOURTH-VALIDATE-FINAL-TECHNICAL.txt`: PASS on the final SHA.
 - Final human visual QA P500–P507: workflow run 32082945226 / artifact 9305697542; 2/2 rasterized pages manually inspected and PASS. The corrected 1975 record and retained 1993 record render naturally with no bibliography layout regression.
 - FOURTH_VALIDATE overall PASS. Fifth Report application is now authorized from the final validated Fourth binary; next item F5-001.
+
+
+## F5-001 checkpoint — VERIFIED_NO_CHANGE / PASS
+- Fifth target: replace a negative cem/istinsah contrast in the Giriş with a positive distinction.
+- Current P19 after Fourth Report + FOURTH_VALIDATE already states that the Hz. Ebû Bekir cem and Hz. Osman istinsah were `farklı tarihsel şartlarda gerçekleştirilen iki ayrı uygulama olarak rivâyet edilmiştir`, followed by an explicit source-plurality/caution sentence. The Fifth literal negative target is absent.
+- Fourth scientific/structural precedence therefore controls: replacing the accepted wording with the Fifth suggestion would add no correction and could weaken the historiographic safeguard carried by `rivâyet edilmiştir`.
+- `work/apply_f5_001.py` verified the resolved P19 state and absence of the old target, then carried the binary forward byte-identically twice. Output SHA remains `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`.
+- Structural inventory remains 674 body paragraphs, 469/469 genuine footnotes/references, 520 fields, ADDIN 466, Zotero ITEM 465 + bibliography 1, bookmarks 53/53, hyperlinks 52.
+- Human visual QA: NOT_REQUIRED_NO_BYTE_CHANGE because the F5-001 output is byte-for-byte the already globally validated Fourth binary.
+- Durable boundary: last F5-001; next F5-002.
