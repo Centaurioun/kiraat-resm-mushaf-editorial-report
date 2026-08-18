@@ -1,44 +1,42 @@
 {
-  "last_f5": 3,
-  "next_f5": 4,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-003.docx",
-  "sha256": "74b9ee919cdb4aa4a802c39f8ec51c8d18d6e56e91fd238f5f4c4d692c213d6f",
+  "last_f5": 4,
+  "next_f5": 5,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-004.docx",
+  "sha256": "12652112c6a9e28b4ef877cd6432c15f33d46fc5da432df3fe6d4eaa1f2f0fd5",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F5-003-REPLAY.txt",
+  "technical_file": "work/runtime/F5-004-REPLAY.txt",
   "visual_required": true,
   "visual_pages": 3,
-  "visual_file": "work/F5-003-VISUAL-QA.md",
+  "visual_file": "work/F5-004-VISUAL-QA.md",
   "holds": "none",
-  "protected_parts_status": "Fourth/F5-002 accepted package preserved except authorized Fifth visible-text edits in word/document.xml P22 and P23; F5-003 validation confirms only P23 changed relative to durable F5-002 and all non-document package parts remained byte-identical",
-  "validation_marker": "## F5-003 checkpoint — APPLIED / PASS",
-  "validation_block": "- Locked F5-003 target: the Giriş central thesis opened with the negative sentence `Kitabın hareket noktası, resm-i Osmânî’nin kırâatleri meydana getiren bağımsız bir kaynak olmadığıdır.`\n- Fourth-precedence adjudication found that the immediately following sentence already carried the same positive thesis in more precise terminology. To avoid duplication and preserve the longer Fourth-scientific paragraph, only the first two sentences were consolidated into: `Kırâatlerin aslî kaynağı, telakki ve müşâfehe yoluyla sürdürülen, edâ ve isnadla denetlenen rivâyet geleneğidir.`\n- All later P23 sentences were preserved unchanged for their own later Fifth targets.\n- Deterministic replay: first replay APPLIED P23 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-003-REPLAY.txt`).\n- Candidate SHA-256 `74b9ee919cdb4aa4a802c39f8ec51c8d18d6e56e91fd238f5f4c4d692c213d6f`; body remains 674. Application validator preserved 520 field instructions, ADDIN/Zotero inventory, 469 footnote-reference identities/order, bookmarks, hyperlinks, RTL inventory, and all non-document package parts.\n- SHA-locked QA export workflow run 32086004704 / artifact 9306721551 generated P21–P25. Local LibreOffice render produced 3 pages; all 3/3 were manually inspected and PASS (`work/F5-003-VISUAL-QA.md`).\n- Negative expressions still visible later in P23/P24/P25 are later Fifth targets and were intentionally not pre-applied.\n- Durable boundary after checkpoint: last F5-003; next F5-004.",
+  "protected_parts_status": "Accepted Fourth/F5-002/F5-003 package preserved except authorized Fifth visible-text edits in word/document.xml P22–P24; F5-004 validation confirms only P24 changed relative to durable F5-003 and all non-document package parts remained byte-identical",
+  "validation_marker": "## F5-004 checkpoint — APPLIED / PASS",
+  "validation_block": "- Locked F5-004 target was the negative term distinction `Bu sebeple her mushaf yazısı resm-i Osmânî olmadığı gibi, resm-i mushaf ile resm-i Osmânî de bütün bağlamlarda birbirinin yerine kullanılamaz.`\n- The immediately preceding Fourth-approved sentences already define both `resm-i mushaf` and `resm-i Osmânî`; repeating the full Fifth suggested definition would be redundant.\n- The target sentence alone was replaced with the positive non-duplicative sentence `Bu iki terim, kapsamları farklı olduğu için bağlama göre ayrı kullanılmalıdır.` Surrounding definitions and later P24 text were preserved.\n- Deterministic replay: first replay APPLIED P24 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-004-REPLAY.txt`).\n- Candidate SHA-256 `12652112c6a9e28b4ef877cd6432c15f33d46fc5da432df3fe6d4eaa1f2f0fd5`; body remains 674; all package/field/footnote/bookmark/hyperlink/RTL invariants passed.\n- SHA-locked QA export workflow run 32086369113 / artifact 9306836662 generated P22–P26. Local LibreOffice render produced 3 pages; all 3/3 were manually inspected and PASS (`work/F5-004-VISUAL-QA.md`).\n- Remaining negative constructions in P23/P25/P26 are later Fifth targets and were intentionally not pre-applied.\n- Durable boundary after checkpoint: last F5-004; next F5-005.",
   "structural_state": [
     "Fourth Report F4-001–116 and FOURTH_VALIDATE remain fully accepted.",
-    "F5-001 remains durable VERIFIED_NO_CHANGE; F5-002 remains durable APPLIED.",
-    "F5-003 is APPLIED at P23 by consolidating the first two sentences into one positive central-thesis sentence.",
-    "All later P23 scientific qualifications remain unchanged; later Fifth targets have not been pre-applied.",
-    "Current candidate SHA is `74b9ee919cdb4aa4a802c39f8ec51c8d18d6e56e91fd238f5f4c4d692c213d6f`; body paragraphs 674.",
-    "F5-004 remains PENDING."
+    "F5-001 VERIFIED_NO_CHANGE; F5-002–F5-004 APPLIED and accepted.",
+    "F5-004 replaces only the negative P24 term-distinction sentence with `Bu iki terim, kapsamları farklı olduğu için bağlama göre ayrı kullanılmalıdır.`",
+    "Current candidate SHA is `12652112c6a9e28b4ef877cd6432c15f33d46fc5da432df3fe6d4eaa1f2f0fd5`; body paragraphs 674.",
+    "F5-005 remains PENDING and has not been pre-applied."
   ],
   "evidence": [
-    "Adjudication: `work/F5-003-ADJUDICATION.md`",
-    "Replay script: `work/apply_f5_003.py`",
-    "Replay evidence: `work/runtime/F5-003-REPLAY.txt`",
-    "Candidate SHA: `work/runtime/F5-003-SHA256.txt`",
-    "Postflight: `work/runtime/F5-003-POSTFLIGHT.txt`",
-    "Human visual QA: `work/F5-003-VISUAL-QA.md` — 3/3 PASS",
-    "QA export workflow: run 32086004704 / artifact 9306721551"
+    "Adjudication: `work/F5-004-ADJUDICATION.md`",
+    "Replay script: `work/apply_f5_004.py`",
+    "Replay evidence: `work/runtime/F5-004-REPLAY.txt`",
+    "Candidate SHA: `work/runtime/F5-004-SHA256.txt`",
+    "Human visual QA: `work/F5-004-VISUAL-QA.md` — 3/3 PASS",
+    "QA export workflow: run 32086369113 / artifact 9306836662"
   ],
-  "next_action": "Fetch the exact F5-004 item from `final/fifth-report-locked.md`, resolve it against the durable F5-003 binary, and apply only F5-004 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-005+.",
+  "next_action": "Fetch the exact F5-005 item from `final/fifth-report-locked.md`, resolve it against the durable F5-004 binary, and apply only F5-005 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-006+.",
   "updates": {
-    "F5-003": {
+    "F5-004": {
       "status": "APPLIED",
-      "section": "Giriş — kitabın ana tezinin olumlu kurulması",
-      "action_type": "CONSOLIDATE_NEGATIVE_OPENING_AND_DUPLICATE_POSITIVE_SENTENCE",
-      "resolved_location": "word/document.xml P23",
-      "affected_body_paragraphs": [23],
-      "verification": "P23_ONLY_CHANGE + POSITIVE_THESIS_PRESENT + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
-      "notes": "First two sentences consolidated into one positive thesis sentence; later P23 content preserved for subsequent Fifth items."
+      "section": "Giriş — resm-i mushaf / resm-i Osmânî terim ayrımı",
+      "action_type": "TARGETED_POSITIVE_TERM_DISTINCTION_WITHOUT_DUPLICATING_DEFINITIONS",
+      "resolved_location": "word/document.xml P24",
+      "affected_body_paragraphs": [24],
+      "verification": "P24_ONLY_CHANGE + POSITIVE_TERM_DISTINCTION + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
+      "notes": "Negative sentence replaced by a concise positive distinction; existing Fourth definitions preserved."
     }
   }
 }
