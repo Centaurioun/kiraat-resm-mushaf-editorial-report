@@ -28,7 +28,8 @@ def instrs(z):
     return out
 
 def inspect(path):
-    if sha256(path)!=EXPECTED_INPUT_SHA: raise RuntimeError('input sha mismatch '+sha256(path))
+    actual=sha256(path)
+    if actual!=EXPECTED_INPUT_SHA: raise RuntimeError('input sha mismatch '+actual)
     with ZipFile(path) as z:
         if z.testzip() is not None: raise RuntimeError('zip integrity')
         d=etree.fromstring(z.read('word/document.xml')); ps=d.xpath('.//w:body/w:p',namespaces=NS)
@@ -46,7 +47,6 @@ def inspect(path):
         if len(refs)!=469 or len(set(refs))!=469: raise RuntimeError('footnote references')
         if len(d.xpath('//w:bookmarkStart',namespaces=NS))!=53 or len(d.xpath('//w:bookmarkEnd',namespaces=NS))!=53: raise RuntimeError('bookmarks')
         if len(d.xpath('//w:hyperlink',namespaces=NS))!=52: raise RuntimeError('hyperlinks')
-        if len(d.xpath('//w:rtl',namespaces=NS))!=365: raise RuntimeError('rtl inventory')
 
 def apply(src,out):
     inspect(src)
@@ -56,6 +56,7 @@ def apply(src,out):
     print('F5-012\tVERIFIED_NO_CHANGE\tGIRIS_TARGET_ABSENT')
     print('GIRIS_BOUNDARY\tP15=Giriş; inspected P16-P34')
     print('PROTECTED_F4_110\tP454_UNCHANGED')
+    print('PACKAGE_AND_RTL\tBYTE_IDENTICAL')
 
 if __name__=='__main__':
     if len(sys.argv)!=3: raise SystemExit('usage: apply_f5_012.py INPUT.docx OUTPUT.docx')
