@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `707d8493f743d613a6cb453cde1f13f9430fe1fe` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `ba694dc3a0331fef5ee8128bf5ad31e488648c94` plus this metadata checkpoint commit
 - Current phase: `FIFTH_APPLY`
 
 ## Resume boundary
