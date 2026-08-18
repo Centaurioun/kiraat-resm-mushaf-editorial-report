@@ -1,0 +1,9 @@
+FIRST_REPLAY_STDOUT
+F5-011	APPLIED	P30
+BEFORE	Yöntem bakımından kitap, tarihsel rivâyetlerin karşılaştırılması, klasik kaynakların içerik analizi, kavramsal ve filolojik çözümleme ile resm ve kırâat verilerinin mukayesesini birlikte kullanmaktadır. Aynı hadise hakkında farklı aktarımlar bulunduğunda rivâyetler yan yana değerlendirilmekte; erken nakil, klasik yorum, çağdaş değerlendirme ve yazarın çıkarımı birbirinden ayrılmaya çalışılmaktadır. Kaynakların izin vermediği noktalarda kesin tarihsel yeniden inşalardan kaçınılmakta; özellikle mushafların sayısı, bazı uygulamaların kronolojisi ve resm-i Osmânî’nin tevkîfîliği gibi ihtilaflı meselelerde ihtiyatlı bir dil benimsenmektedir. Yazım örnekleri yalnız şekil bakımından değil, bağdaştıkları veya dışladıkları kırâat ihtimalleri açısından ele alınmaktadır.
+AFTER	Yöntem bakımından kitap, tarihsel rivâyetlerin karşılaştırılması, klasik kaynakların içerik analizi, kavramsal ve filolojik çözümleme ile resm ve kırâat verilerinin mukayesesini birlikte kullanmaktadır. Aynı hadise hakkında farklı aktarımlar bulunduğunda rivâyetler yan yana değerlendirilmekte; erken nakil, klasik yorum, çağdaş değerlendirme ve yazarın çıkarımı birbirinden ayrılmaya çalışılmaktadır. Kaynakların izin vermediği noktalarda kesin tarihsel yeniden inşalardan kaçınılmakta; özellikle mushafların sayısı, bazı uygulamaların kronolojisi ve resm-i Osmânî’nin tevkîfîliği gibi ihtilaflı meselelerde ihtiyatlı bir dil benimsenmektedir. Yazım örnekleri, şekil özellikleriyle birlikte bağdaştıkları veya dışladıkları kırâat ihtimalleri açısından ele alınmaktadır.
+
+SECOND_REPLAY_STDOUT
+F5-011	ALREADY_SATISFIED	P30
+
+BYTE_IDENTICAL=PASS
