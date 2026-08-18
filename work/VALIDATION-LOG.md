@@ -495,3 +495,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Structural inventory remains 674 body paragraphs, 469/469 genuine footnotes/references, 520 fields, ADDIN 466, Zotero ITEM 465 + bibliography 1, bookmarks 53/53, hyperlinks 52.
 - Human visual QA: NOT_REQUIRED_NO_BYTE_CHANGE because the F5-001 output is byte-for-byte the already globally validated Fourth binary.
 - Durable boundary: last F5-001; next F5-002.
+
+
+## F5-002 checkpoint — VERIFIED_NO_CHANGE / PASS
+- Fifth target: remove unsupported motive/purpose attribution assigning preservation to cem and dispute-prevention to istinsah.
+- Current P19 already omits the unsupported motive attribution and instead states that the two processes were `farklı tarihsel şartlarda gerçekleştirilen iki ayrı uygulama olarak rivâyet edilmiştir`, followed by explicit source plurality and the instruction that the details should be evaluated cautiously.
+- Fourth scientific/structural precedence therefore controls: the Fifth stylistic rewrite would add no remaining correction and could weaken the accepted historical-methodological caution.
+- `work/apply_f5_002.py` verified that the old purpose-attribution target and its characteristic fragments are absent, that the accepted P19 form is present once at P19, and then carried the binary forward byte-identically twice.
+- Output SHA remains `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`; body 674; structural inventories unchanged.
+- Human visual QA: NOT_REQUIRED_NO_BYTE_CHANGE because F5-002 produces no byte change.
+- Durable boundary: last F5-002; next F5-003.

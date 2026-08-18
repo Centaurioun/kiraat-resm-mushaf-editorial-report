@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `e6451a7861ee49d3b587483b04b5155b94d224ab` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `4349a792509009134081ee873de41f5cf4e62fef` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -15,14 +15,14 @@
 - Last fully completed Fourth Report item: `F4-116`
 - Next Fourth Report item: none — Fourth Report application complete
 - Fourth Report global validation: PASS
-- Last fully completed Fifth Report item: `F5-001`
-- Next Fifth Report item: `F5-002`
+- Last fully completed Fifth Report item: `F5-002`
+- Next Fifth Report item: `F5-003`
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-001.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-002.docx`
 - Current working DOCX SHA-256: `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`
-- Last known good commit basis: `e6451a7861ee49d3b587483b04b5155b94d224ab`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-001.docx`
+- Last known good commit basis: `4349a792509009134081ee873de41f5cf4e62fef`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-002.docx`
 - Current body paragraph count: 674
 
 ## Integrity
@@ -32,19 +32,20 @@
 - Zotero: 465 item + 1 bibliography preserved
 - Bookmarks: 53/53; hyperlinks: 52
 - Arabic/RTL structural inventory: canonical-equal
-- Protected OOXML parts: identical to the globally validated Fourth binary for F5-001; F5-001 is byte-identical VERIFIED_NO_CHANGE
+- Protected OOXML parts: identical to the globally validated Fourth binary for F5-002; F5-001 and F5-002 are byte-identical VERIFIED_NO_CHANGE
 
 ## Structural-edit state
 - Fourth Report F4-001–116 and FOURTH_VALIDATE remain fully accepted.
-- F5-001 is VERIFIED_NO_CHANGE: the current Giriş already satisfies the positive cem/istinsah distinction with stronger historical caution than the Fifth suggested rewrite.
-- Current binary is byte-identical to the globally validated Fourth binary; SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`, body 674.
-- F5-002 remains PENDING and has not been pre-applied.
+- F5-001 and F5-002 are VERIFIED_NO_CHANGE under Fourth scientific precedence.
+- F5-002 confirms that unsupported purpose attribution for cem/istinsah has already been removed from P19 and replaced by historically cautious reported-process language.
+- Current binary remains byte-identical to the globally validated Fourth binary; SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`, body 674.
+- F5-003 remains PENDING and has not been pre-applied.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Fourth Report global validation: **PASS** (`work/runtime/FOURTH-VALIDATE-FINAL.txt`).
-- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-001-REPLAY.txt`).
+- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-002-REPLAY.txt`).
 - Latest Fifth item human visual QA: **NOT_REQUIRED_NO_BYTE_CHANGE** — deterministic output is byte-identical to the already validated input binary.
 
 ## Exact next action
-Fetch the exact F5-002 item from `final/fifth-report-locked.md`, resolve it against the durable F5-001 binary, and apply only F5-002 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-003+.
+Fetch the exact F5-003 item from `final/fifth-report-locked.md`, resolve it against the durable F5-002 binary, and apply only F5-003 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-004+.
