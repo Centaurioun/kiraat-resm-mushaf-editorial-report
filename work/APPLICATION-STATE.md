@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `848b646b1ce49d4fe69cbf2ec7f7928d8deda941` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `148f810943cbaabb99b7b828400e7888e2aae812` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -20,7 +20,7 @@
 ## Current working state
 - Current working DOCX: `artifacts/checkpoints/manuscript-working-fourth-validated.docx`
 - Current working DOCX SHA-256: `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`
-- Last known good commit basis: `848b646b1ce49d4fe69cbf2ec7f7928d8deda941`
+- Last known good commit basis: `148f810943cbaabb99b7b828400e7888e2aae812`
 - Last known good DOCX: `artifacts/checkpoints/manuscript-working-fourth-validated.docx`
 - Current body paragraph count: 674
 
