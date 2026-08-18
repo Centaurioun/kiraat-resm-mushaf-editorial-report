@@ -1,12 +1,12 @@
 {
-  "checkpoint": "F5-011",
+  "checkpoint": "F5-012",
   "revision": 1,
   "script": "work/checkpoint_fifth.py",
-  "last_f5": 11,
-  "next_f5": 12,
+  "last_f5": 12,
+  "next_f5": 13,
   "candidate_sha256": "c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19",
   "technical_validation": "PASS",
-  "visual_qa_pages": 3,
-  "visual_qa_result": "PASS",
-  "validation_marker": "## F5-011 checkpoint — APPLIED / PASS"
+  "visual_qa_pages": 0,
+  "visual_qa_result": "NOT_REQUIRED_NO_BYTE_CHANGE",
+  "validation_marker": "## F5-012 checkpoint — VERIFIED_NO_CHANGE / PASS"
 }
