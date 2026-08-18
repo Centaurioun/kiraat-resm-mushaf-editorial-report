@@ -679,3 +679,16 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - SHA-locked bounded QA export run 32132335848 / artifact 9322647363 covered P51–P55. The exported slice rendered to 4 pages with `/home/oai/skills/docx/render_docx.py`; all 4/4 pages were manually inspected and PASS (`work/F5-017-VISUAL-QA.md`).
 - P53 footnote placement, quotation spacing, and `yer alır. Ancak...` transition rendered cleanly. The slice's preserved TOC page and trailing footnote-only page are bounded-export derivatives, not edit-induced candidate defects.
 - Durable boundary after checkpoint: last F5-017; next F5-018.
+
+
+## F5-018 checkpoint — APPLIED / PASS
+- Locked F5-018 targeted the 1.2 meta-discourse and negative contrast beginning `Yazılı vahiy metinlerinin Hz. Peygamber döneminde bir araya getirilmemiş olmasının... özellikle vurgulamamız gerekmektedir.`
+- Current durable F5-017 resolved that target uniquely at P54. P54 carried genuine FN27 at the paragraph end; FN27 cites Zerkeşî, `el-Burhân`, 2/238.
+- No accepted Fourth item had already removed the F5-018 meta-discourse. Fourth 1.2 constraints were preserved by keeping source-limited wording and leaving accepted P53/P55 architecture untouched.
+- Only P54 was rewritten, using the Fifth positive two-sentence structure with an explicit attribution chain: `Hz. Peygamber döneminde vahiy metinleri farklı malzemeler üzerinde yazılı olarak bulunuyor, ancak iki kapak arasında tek bir derleme hâlinde toplanmış değildi. Zerkeşî’nin Hâris el-Muhâsibî’den aktardığı değerlendirmede de Kur’an’ın nüzûl döneminde yazıya geçirildiği ve kayıtların farklı malzemeler üzerinde dağınık biçimde bulunduğu belirtilir.`
+- FN27 remains at P54 paragraph end. P53 and P55 are byte-unchanged. The F5-019 anchor at P58 remains untouched; no F5-019+ text was pre-applied.
+- Deterministic replay: first replay `APPLIED P54`; second replay `ALREADY_SATISFIED P54`; byte-idempotency PASS (`work/runtime/F5-018-REPLAY.txt`). Only P54 changed in document.xml; package/integrity invariants PASS.
+- Candidate `artifacts/checkpoints/manuscript-working-f5-018.docx` SHA `ffd4c4e8fabd7bd157cd21251f18da065e5466ecce357b63efe80361a18e4543`; body 674.
+- SHA-locked bounded QA export run 32145711242 / artifact 9327677225 covered P52–P56. The slice rendered to 3 pages with `/home/oai/skills/docx/render_docx.py`; all 3/3 pages were manually inspected and PASS (`work/F5-018-VISUAL-QA.md`).
+- P54 paragraph spacing, note-marker placement and neighboring transition rendered cleanly; no clipping, overlap, style leakage or edit-induced pagination defect was observed.
+- Durable boundary after checkpoint: last F5-018; next F5-019.
