@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "<stdin>", line 11, in <module>
+RuntimeError: FIRST_REPLAY_FAILED
+STDOUT:
+
+STDERR:
+Traceback (most recent call last):
+  File "/home/runner/work/kiraat-resm-mushaf-editorial-report/kiraat-resm-mushaf-editorial-report/work/apply_f5_002.py", line 96, in <module>
+    if __name__=='__main__': apply(Path(sys.argv[1]),Path(sys.argv[2]))
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/kiraat-resm-mushaf-editorial-report/kiraat-resm-mushaf-editorial-report/work/apply_f5_002.py", line 53, in apply
+    if not before.startswith(OLD+EXPECTED_REST): raise RuntimeError('P22 no longer matches exact F5-002 target plus accepted Fourth context')
+                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: P22 no longer matches exact F5-002 target plus accepted Fourth context
+
