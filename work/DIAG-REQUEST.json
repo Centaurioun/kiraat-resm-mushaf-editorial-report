@@ -1,5 +1,5 @@
 {
-  "revision": 6,
+  "revision": 7,
   "script": "work/inspect_f5_remaining.py",
   "input_docx": "artifacts/checkpoints/manuscript-working-f5-018.docx",
   "input_sha256": "ffd4c4e8fabd7bd157cd21251f18da065e5466ecce357b63efe80361a18e4543",
