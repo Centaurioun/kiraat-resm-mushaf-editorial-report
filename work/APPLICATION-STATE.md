@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `4349a792509009134081ee873de41f5cf4e62fef` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `e95f2fbd39da80d681801aba5e7071d338b6291f` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -20,8 +20,8 @@
 
 ## Current working state
 - Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-002.docx`
-- Current working DOCX SHA-256: `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`
-- Last known good commit basis: `4349a792509009134081ee873de41f5cf4e62fef`
+- Current working DOCX SHA-256: `94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be`
+- Last known good commit basis: `e95f2fbd39da80d681801aba5e7071d338b6291f`
 - Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-002.docx`
 - Current body paragraph count: 674
 
@@ -32,20 +32,22 @@
 - Zotero: 465 item + 1 bibliography preserved
 - Bookmarks: 53/53; hyperlinks: 52
 - Arabic/RTL structural inventory: canonical-equal
-- Protected OOXML parts: identical to the globally validated Fourth binary for F5-002; F5-001 and F5-002 are byte-identical VERIFIED_NO_CHANGE
+- Protected OOXML parts: Fourth-validated package preserved except the authorized F5-002 visible-text edit in word/document.xml P22; application validation confirms all non-document package parts unchanged and structural inventories preserved
 
 ## Structural-edit state
 - Fourth Report F4-001–116 and FOURTH_VALIDATE remain fully accepted.
-- F5-001 and F5-002 are VERIFIED_NO_CHANGE under Fourth scientific precedence.
-- F5-002 confirms that unsupported purpose attribution for cem/istinsah has already been removed from P19 and replaced by historically cautious reported-process language.
-- Current binary remains byte-identical to the globally validated Fourth binary; SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`, body 674.
+- F5-001 remains durable VERIFIED_NO_CHANGE.
+- F5-002 is APPLIED at P22: `Araştırma soruları birbirine bağlıdır.`
+- The complete Fourth-scientific continuation of P22 remains unchanged; F5-002 did not broaden causation or alter later sentences.
+- Authoritative F5-002 candidate SHA is `94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be`; body paragraphs 674.
+- Earlier misbound F5-002 no-op metadata is superseded by the correction note and this authoritative checkpoint.
 - F5-003 remains PENDING and has not been pre-applied.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Fourth Report global validation: **PASS** (`work/runtime/FOURTH-VALIDATE-FINAL.txt`).
-- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-002-REPLAY.txt`).
-- Latest Fifth item human visual QA: **NOT_REQUIRED_NO_BYTE_CHANGE** — deterministic output is byte-identical to the already validated input binary.
+- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-002-AUTH-REBUILD-REPLAY.txt`).
+- Latest Fifth item human visual QA: **PASS**, 3/3 pages inspected (`work/F5-002-AUTH-VISUAL-QA.md`).
 
 ## Exact next action
 Fetch the exact F5-003 item from `final/fifth-report-locked.md`, resolve it against the durable F5-002 binary, and apply only F5-003 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-004+.

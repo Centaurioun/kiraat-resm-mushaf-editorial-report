@@ -505,3 +505,15 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Output SHA remains `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`; body 674; structural inventories unchanged.
 - Human visual QA: NOT_REQUIRED_NO_BYTE_CHANGE because F5-002 produces no byte change.
 - Durable boundary: last F5-002; next F5-003.
+
+
+## F5-002 authoritative checkpoint — APPLIED / PASS
+- An audit found that an earlier F5-002 no-op checkpoint had been bound to the wrong Fifth Report issue. That misbinding produced no manuscript byte change and is superseded by `work/F5-002-CORRECTION-NOTE.md`.
+- Actual locked F5-002 target: Giriş P22, `Bu sorular birbirinden bağımsız değildir.`
+- Accepted Fourth-compatible correction: `Araştırma soruları birbirine bağlıdır.` Only the first sentence changes; the complete accepted Fourth-scientific remainder of P22 is preserved.
+- Deterministic authoritative rebuild: workflow run 32085188815 after guard correction. First replay APPLIED at P22 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-002-AUTH-REBUILD-REPLAY.txt`).
+- Authoritative candidate SHA-256: `94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be`; body remains 674.
+- Application validator within `work/apply_f5_002.py` confirms only body P22 changes; all non-`word/document.xml` package parts remain byte-identical to F5-001; field sequence 520, ADDIN 466, Zotero ITEM 465 + bibliography 1, 469 footnote-reference identities/order, bookmarks 53/53, hyperlinks 52, RTL inventory unchanged.
+- SHA-locked QA export workflow run 32085611811 / artifact 9306592869 generated P20–P24 slice from the same candidate. Local LibreOffice render produced 3 pages; all 3/3 were inspected manually and PASS (`work/F5-002-AUTH-VISUAL-QA.md`).
+- The red `değil` visible in P23 is a pre-existing F5-003 target and was intentionally not changed during F5-002.
+- Durable boundary after this checkpoint: last F5-002; next F5-003.
