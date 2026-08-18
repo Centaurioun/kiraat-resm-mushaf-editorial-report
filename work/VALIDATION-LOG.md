@@ -630,3 +630,14 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Candidate `artifacts/checkpoints/manuscript-working-f5-013.docx` SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`, exactly equal to durable F5-012; body 674 and structural/package invariants PASS.
 - Human visual QA is not required because no manuscript bytes changed.
 - Durable boundary after checkpoint: last F5-013; next F5-014.
+
+
+## F5-014 checkpoint — VERIFIED_NO_CHANGE / PASS
+- Locked F5-014 targeted the negative superiority question in the Giriş closing: `Bu yapı içinde araştırmanın temel sorusu, yazı ile sözlü rivâyetten hangisinin üstün olduğu değildir.`
+- Fail-closed inspection of durable F5-013 verified the complete current Introduction boundary: P15 is `Giriş`, P16–P37 were inspected, and P38 is `BİRİNCİ BÖLÜM`. The locked superiority-comparison sentence is absent.
+- Current P32 is a distinct Fourth-approved scientific thesis: it preserves the oral/rivâyet basis while framing resm-i Osmânî as a complementary measure governing the relation of transmitted readings to the common mushaf writing. P33 gives the four-part book architecture and P34 transitions into the First Chapter.
+- Replacing P32 with the Fifth generic relationship question would remove Fourth scientific specificity; inserting the suggested sentence would recreate redundant material no longer present. F5-014 is therefore `VERIFIED_NO_CHANGE`.
+- Deterministic replay: first replay `VERIFIED_NO_CHANGE / NEGATIVE_SUPERIORITY_QUESTION_ABSENT`; second replay same; P32 Fourth thesis and P33–P34 closing architecture preserved; complete package byte identity PASS (`work/runtime/F5-014-REPLAY.txt`).
+- Candidate `artifacts/checkpoints/manuscript-working-f5-014.docx` SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`, exactly equal to durable F5-013; body 674 and structural/package invariants PASS.
+- Human visual QA is not required because no manuscript bytes changed.
+- Durable boundary after checkpoint: last F5-014; next F5-015.
