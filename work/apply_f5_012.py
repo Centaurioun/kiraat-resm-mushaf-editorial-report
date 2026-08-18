@@ -40,7 +40,9 @@ def replace_range(p,start,end,new):
 
 def locate(ps,needle):
     hits=[i for i,p in enumerate(ps) if needle in text(p)]
-    if len(hits)!=1: raise RuntimeError(f'unique target failure for {needle!r}: {hits}')
+    if len(hits)!=1:
+        candidates=[(i,text(p)) for i,p in enumerate(ps) if ('literatür' in text(p).lower() or 'katkı' in text(p).lower())]
+        raise RuntimeError(f'unique target failure for {needle!r}: {hits}; candidates={candidates!r}')
     return hits[0]
 
 def satisfied(d):
