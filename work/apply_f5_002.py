@@ -7,7 +7,7 @@ import shutil, sys
 W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'; NS={'w':W}
 OLD='Bu sorular birbirinden bağımsız değildir.'
 NEW='Araştırma soruları birbirine bağlıdır.'
-EXPECTED_REST=' Osmânî mushafların ortak başvuru metni hâline gelme süreci, resm-i Osmânî’nin kabul ölçüsü hâline gelişinden ayrı anlaşılamaz. Kırâatin rivâyet mantığı da yalnız resm üzerinden değerlendirilemez.'
+EXPECTED_REST=' Osmânî mushafların ortak başvuru metni hâline gelme süreci açıklanmadan resm-i Osmânî’ye uygunluğun kabul ölçüsü oluşu anlaşılamaz. Kırâatin rivâyet mantığı ortaya konulmadan da bu ölçünün sınırlandırıcı işlevi doğru biçimde değerlendirilemez. Şehir mushaflarına ait rivâyetler yalnız erken dönem yazı tarihine, çağdaş baskılar da yalnız matbaa tarihine ait veriler değildir. İlki sahih okuyuşların farklı yazılı biçimler içinde nasıl korunduğunu, ikincisi resm ve zapt tercihlerinin kırâatlerin dolaşımını nasıl etkileyebildiğini göstermektedir. Araştırma, tarihsel teşekkül ile sonraki ilmî kabul ve uygulamalar arasındaki bağı bu meseleler üzerinden incelemektedir.'
 
 
 def text(el): return ''.join(el.xpath('.//w:t/text()',namespaces=NS))
@@ -64,7 +64,7 @@ def apply(src,out):
     print('F5-002\tAPPLIED\tP22')
     print('BEFORE\t'+before)
     print('AFTER\t'+after)
-    print('SCOPE\tOnly the negative first sentence was converted to positive form; accepted Fourth scientific follow-up preserved.')
+    print('SCOPE\tOnly the negative first sentence was converted to positive form; accepted Fourth scientific follow-up preserved byte-for-byte at text level.')
 
 def validate(src,out,expect_change):
     with ZipFile(src) as za, ZipFile(out) as zb:
@@ -79,7 +79,7 @@ def validate(src,out,expect_change):
         changed=[i for i,(a,b) in enumerate(zip(pa,pb)) if c14n(a)!=c14n(b)]
         expected=[22] if expect_change else []
         if changed!=expected: raise RuntimeError(f'changed paragraphs {changed} != expected {expected}')
-        if expect_change and sig(pa[22])!=sig(pb[22]): raise RuntimeError('P22 structure changed')
+        if expect_change and sig(pa[22])!=sig(pb[22]): raise RuntimeError('P22 OOXML structure changed')
         if not satisfied(db): raise RuntimeError('F5-002 corrected-state postcondition failed')
         ia=instrs(za); ib=instrs(zb)
         if ia!=ib or len(ib)!=520: raise RuntimeError('field instruction inventory changed')
