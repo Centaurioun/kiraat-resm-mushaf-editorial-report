@@ -1,43 +1,41 @@
 {
-  "last_f5": 7,
-  "next_f5": 8,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-007.docx",
-  "sha256": "81ea83b68eb3ee24061c522aad07f96507e4b0ff00847a5f140a8dbe66d60c80",
+  "last_f5": 8,
+  "next_f5": 9,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-008.docx",
+  "sha256": "99b579b4c1ea369fbf4f27705d42a1f632d06f5e67bc177dd09363c765a07b32",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F5-007-REPLAY.txt",
+  "technical_file": "work/runtime/F5-008-REPLAY.txt",
   "visual_required": true,
   "visual_pages": 3,
-  "visual_file": "work/F5-007-VISUAL-QA.md",
+  "visual_file": "work/F5-008-VISUAL-QA.md",
   "holds": "none",
-  "protected_parts_status": "Accepted prior package preserved except authorized Fifth P25 text consolidation and one xml:space=preserve attribute on the existing Telakki text run required to preserve the visible sentence-boundary whitespace; all non-document package parts remained byte-identical",
-  "validation_marker": "## F5-007 checkpoint — APPLIED / PASS after visual remediation",
-  "validation_block": "- Locked F5-007 targeted the negative kırâat/rivâyet/tarîk hierarchy sentence. The adjacent `Vecih ise...` sentence would duplicate the Fifth positive hierarchy, so both were consolidated into one positive hierarchy sentence while preserving the preceding İbnü’l-Cezerî definition and all text from `Telakki...` onward.\n- First deterministic candidate SHA `0a019bad3d75933734a29e99bd89028c5ba25d258b6d0322c9bdf28d8f4d17d4` passed structural checks but FAILED human visual QA: LibreOffice rendered `işaret eder.Telakki` because the following run's leading space lacked `xml:space=preserve`. This rejected candidate is documented in `work/F5-007-VISUAL-QA-FAIL-R1.md` and was never checkpointed.\n- R2 replay explicitly preserves the `Telakki` run boundary whitespace and validates that no structural difference beyond this xml:space attribute and the authorized P25 text edit occurs. First replay APPLIED; second replay ALREADY_SATISFIED; byte-idempotency PASS.\n- Accepted R2 candidate SHA `81ea83b68eb3ee24061c522aad07f96507e4b0ff00847a5f140a8dbe66d60c80`; body 674; all field/footnote/bookmark/hyperlink/RTL and non-document package invariants passed.\n- R2 SHA-locked QA export workflow run 32087726229 / artifact 9307270173 rendered P24–P27. All 3/3 pages were manually inspected and PASS; the boundary now visibly reads `işaret eder. Telakki`.\n- Durable boundary after checkpoint: last F5-007; next F5-008.",
+  "protected_parts_status": "Accepted prior package preserved except authorized Fifth visible-text edits; F5-008 validation confirms only P26 changed relative to durable F5-007 and all non-document package parts remained byte-identical",
+  "validation_marker": "## F5-008 checkpoint — APPLIED / PASS",
+  "validation_block": "- Locked F5-008 targeted the negative opening `Resm-i Osmânî’ye uygunluk, her durumda harflerin okuyuşu birebir göstermesi anlamına gelmez.`\n- It was replaced only with `Resm-i Osmânî’ye uygunluk gerçek veya ihtimalî biçimde gerçekleşebilir.` The following Fourth-approved explanations of real and ihtimalî conformity were preserved, as was the later F5-009 target.\n- Deterministic replay: first replay APPLIED P26 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-008-REPLAY.txt`).\n- Candidate SHA `99b579b4c1ea369fbf4f27705d42a1f632d06f5e67bc177dd09363c765a07b32`; body 674; all structural/package invariants passed.\n- SHA-locked QA export workflow run 32088102115 / artifact 9307385656 generated P25–P28; all 3/3 rendered pages were manually inspected and PASS (`work/F5-008-VISUAL-QA.md`).\n- Durable boundary: last F5-008; next F5-009.",
   "structural_state": [
     "Fourth Report and prior Fifth items remain accepted.",
-    "F5-007 is APPLIED at P25 using the remediated R2 candidate; the first visually defective candidate is explicitly rejected.",
-    "P25 now gives the kırâat/rivâyet/tarîk/vecih hierarchy positively and preserves the İbnü’l-Cezerî and Telakki/edâ context.",
-    "Current SHA is `81ea83b68eb3ee24061c522aad07f96507e4b0ff00847a5f140a8dbe66d60c80`; body 674.",
-    "F5-008 remains PENDING."
+    "F5-008 is APPLIED at P26 by replacing only the negative conformity opening with a positive real/ihtimalî formulation.",
+    "Current SHA `99b579b4c1ea369fbf4f27705d42a1f632d06f5e67bc177dd09363c765a07b32`; body 674.",
+    "F5-009 remains PENDING and its negative category sentence is still present."
   ],
   "evidence": [
-    "Adjudication: `work/F5-007-ADJUDICATION.md`",
-    "Rejected visual QA: `work/F5-007-VISUAL-QA-FAIL-R1.md`",
-    "Remediated replay script: `work/apply_f5_007.py`",
-    "R2 replay: `work/runtime/F5-007-REPLAY.txt`",
-    "R2 SHA: `work/runtime/F5-007-SHA256.txt`",
-    "R2 human visual QA: `work/F5-007-VISUAL-QA.md` — 3/3 PASS",
-    "R2 QA export workflow: run 32087726229 / artifact 9307270173"
+    "Adjudication: `work/F5-008-ADJUDICATION.md`",
+    "Replay script: `work/apply_f5_008.py`",
+    "Replay: `work/runtime/F5-008-REPLAY.txt`",
+    "SHA: `work/runtime/F5-008-SHA256.txt`",
+    "Human visual QA: `work/F5-008-VISUAL-QA.md` — 3/3 PASS",
+    "QA export: run 32088102115 / artifact 9307385656"
   ],
-  "next_action": "Fetch the exact F5-008 item from `final/fifth-report-locked.md`, resolve it against the durable F5-007 binary, and apply only F5-008 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-009+.",
+  "next_action": "Fetch and apply only F5-009 against the durable F5-008 binary. Preserve Fourth scientific meaning and do not pre-apply F5-010+.",
   "updates": {
-    "F5-007": {
+    "F5-008": {
       "status": "APPLIED",
-      "section": "Giriş — kırâat/rivâyet/tarîk/vecih hiyerarşisi",
-      "action_type": "CONSOLIDATE_NEGATIVE_HIERARCHY_AND_DUPLICATE_VECIH_DEFINITION_WITH_WHITESPACE_REMEDIATION",
-      "resolved_location": "word/document.xml P25",
-      "affected_body_paragraphs": [25],
-      "verification": "P25_ONLY_CHANGE + POSITIVE_HIERARCHY + IDEMPOTENCY_PASS + STRUCTURAL_PASS + FIRST_VISUAL_FAIL_REJECTED + R2_3/3_HUMAN_VISUAL_PASS",
-      "notes": "R1 candidate rejected for run-boundary whitespace loss; R2 sets xml:space=preserve on the existing Telakki run and passes visual QA."
+      "section": "Giriş — resm-i Osmânî'ye uygunluğun olumlu tanımı",
+      "action_type": "TARGETED_POSITIVE_REAL_OR_PROBABILISTIC_CONFORMITY_OPENING",
+      "resolved_location": "word/document.xml P26",
+      "affected_body_paragraphs": [26],
+      "verification": "P26_ONLY_CHANGE + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
+      "notes": "Only the negative opening was replaced; real/ihtimalî explanations and F5-009+ text remain unchanged."
     }
   }
 }
