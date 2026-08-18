@@ -587,3 +587,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Candidate SHA `ff35f3803f24f68dff43f2ce9569c39a275c03acfa518614803e48530d696dbd`; body 674; all structural/package invariants passed.
 - SHA-locked QA export workflow run 32090746409 / artifact 9308227484 generated P25–P28; all 3/3 rendered pages were manually inspected and PASS (`work/F5-009-VISUAL-QA.md`).
 - Durable boundary after checkpoint: last F5-009; next F5-010.
+
+
+## F5-010 checkpoint — APPLIED / PASS
+- Locked F5-010 targeted the indirect negative sentence separating later mushaf-geleneği binding force from the claim that every writing detail is directly divinely determined.
+- The target alone was replaced with the positive Fourth-compatible formulation: `Resm-i Osmânî’nin sonraki mushaf geleneğindeki bağlayıcılığı ile bütün yazım ayrıntılarının tevkîfî olduğu görüşü ayrı meselelerdir.`
+- The preceding historical/normative distinction and the following source-based tevkîfî/ictihâdî discussion, Bâkıllânî attribution, other scholarly views, and methodological caution were preserved unchanged.
+- Deterministic replay: first replay APPLIED P27 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-010-REPLAY.txt`).
+- Candidate SHA `bff8720ab193200c649ef68856a648d74d82d6d40974b9022e3cebd6f5c2d61c`; body 674; all structural/package invariants passed.
+- SHA-locked QA export workflow run 32091158371 / artifact 9308356793 generated P26–P29; all 3/3 rendered pages were manually inspected and PASS (`work/F5-010-VISUAL-QA.md`).
+- Durable boundary after checkpoint: last F5-010; next F5-011.
