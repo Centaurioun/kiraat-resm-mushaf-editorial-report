@@ -539,3 +539,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - SHA-locked QA export workflow run 32086369113 / artifact 9306836662 generated P22–P26. Local LibreOffice render produced 3 pages; all 3/3 were manually inspected and PASS (`work/F5-004-VISUAL-QA.md`).
 - Remaining negative constructions in P23/P25/P26 are later Fifth targets and were intentionally not pre-applied.
 - Durable boundary after checkpoint: last F5-004; next F5-005.
+
+
+## F5-005 checkpoint — VERIFIED_NO_CHANGE / PASS
+- Locked F5-005 targeted the earlier negative city-mushaf contrast `... ortak mushaf otoritesinin bulunmadığını değil ...`.
+- That negative target is already absent in durable F5-004. Current P24 positively states that limited city-mushaf differences show that differing writing transmissions `bulunabildiğini` within a common mushaf authority.
+- The Fifth suggested categorical `bulunduğunu` wording would strengthen the accepted Fourth modal caution without a necessary stylistic gain, so Fourth scientific precedence controls.
+- `work/apply_f5_005.py` verifies the old negative target is absent, the current cautious sentence is present once at P24, and all structural inventories remain valid.
+- Both deterministic replays are VERIFIED_NO_CHANGE / BYTE_IDENTICAL; output SHA remains `12652112c6a9e28b4ef877cd6432c15f33d46fc5da432df3fe6d4eaa1f2f0fd5`.
+- Human visual QA: NOT_REQUIRED_NO_BYTE_CHANGE.
+- Durable boundary after checkpoint: last F5-005; next F5-006.
