@@ -1,0 +1,10 @@
+FIRST_REPLAY_STDOUT
+F5-003	APPLIED	P23
+BEFORE	Kitabın hareket noktası, resm-i Osmânî’nin kırâatleri meydana getiren bağımsız bir kaynak olmadığıdır. Çalışmada kırâatin aslî dayanağı, telakki ve müşâfehe yoluyla sürdürülen, edâ ve isnadla denetlenen rivâyet geleneği olarak kabul edilmektedir. Resm-i Osmânî ise bu sözlü aktarımın yerine geçen bağımsız bir kaynak değil, rivâyetle sabit okuyuşların müşterek mushaf yazısıyla ilişkisini gösteren tamamlayıcı bir ölçüdür. Mushaf hattı bu canlı aktarımın yerine geçmez; yazının bir okuyuşa teorik olarak imkân vermesi, o okuyuşun sahih kırâat olarak sabit olduğunu göstermez. Buna karşılık güvenilir biçimde nakledilen her okuyuş da ortak mushaf otoritesinden bağımsız olarak aynı konuma yerleştirilemez. Klasik kırâat usûlünde rivâyetin güvenilirliği, Arap dilinde bir veche sahip olması ve resm-i Osmânî’ye uygunluk, birbirine indirgenemeyen fakat birlikte işleyen ölçülerdir. Resm-i Osmânî’ye uygunluk, bu bütün içinde okuyuşu üreten değil, rivâyetle gelen okuyuşun ortak mushaf geleneğindeki kabul alanını belirleyen bir ölçüdür.
+AFTER	Kırâatlerin aslî kaynağı, telakki ve müşâfehe yoluyla sürdürülen, edâ ve isnadla denetlenen rivâyet geleneğidir. Resm-i Osmânî ise bu sözlü aktarımın yerine geçen bağımsız bir kaynak değil, rivâyetle sabit okuyuşların müşterek mushaf yazısıyla ilişkisini gösteren tamamlayıcı bir ölçüdür. Mushaf hattı bu canlı aktarımın yerine geçmez; yazının bir okuyuşa teorik olarak imkân vermesi, o okuyuşun sahih kırâat olarak sabit olduğunu göstermez. Buna karşılık güvenilir biçimde nakledilen her okuyuş da ortak mushaf otoritesinden bağımsız olarak aynı konuma yerleştirilemez. Klasik kırâat usûlünde rivâyetin güvenilirliği, Arap dilinde bir veche sahip olması ve resm-i Osmânî’ye uygunluk, birbirine indirgenemeyen fakat birlikte işleyen ölçülerdir. Resm-i Osmânî’ye uygunluk, bu bütün içinde okuyuşu üreten değil, rivâyetle gelen okuyuşun ortak mushaf geleneğindeki kabul alanını belirleyen bir ölçüdür.
+SCOPE	Only the first two sentences were consolidated into one positive thesis sentence; all later P23 text preserved.
+
+SECOND_REPLAY_STDOUT
+F5-003	ALREADY_SATISFIED
+
+BYTE_IDENTICAL=PASS
