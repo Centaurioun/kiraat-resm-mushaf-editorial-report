@@ -1,41 +1,41 @@
 {
-  "last_f5": 14,
-  "next_f5": 15,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-014.docx",
+  "last_f5": 15,
+  "next_f5": 16,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-015.docx",
   "sha256": "c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F5-014-REPLAY.txt",
+  "technical_file": "work/runtime/F5-015-REPLAY.txt",
   "visual_required": false,
   "visual_pages": 0,
   "holds": "none",
-  "protected_parts_status": "F5-014 is a Fourth-precedence VERIFIED_NO_CHANGE item; manuscript-working-f5-014.docx is byte-identical to durable F5-013, so the complete OOXML package including RTL structures remains unchanged",
-  "validation_marker": "## F5-014 checkpoint — VERIFIED_NO_CHANGE / PASS",
-  "validation_block": "- Locked F5-014 targeted the negative superiority question in the Giriş closing: `Bu yapı içinde araştırmanın temel sorusu, yazı ile sözlü rivâyetten hangisinin üstün olduğu değildir.`\n- Fail-closed inspection of durable F5-013 verified the complete current Introduction boundary: P15 is `Giriş`, P16–P37 were inspected, and P38 is `BİRİNCİ BÖLÜM`. The locked superiority-comparison sentence is absent.\n- Current P32 is a distinct Fourth-approved scientific thesis: it preserves the oral/rivâyet basis while framing resm-i Osmânî as a complementary measure governing the relation of transmitted readings to the common mushaf writing. P33 gives the four-part book architecture and P34 transitions into the First Chapter.\n- Replacing P32 with the Fifth generic relationship question would remove Fourth scientific specificity; inserting the suggested sentence would recreate redundant material no longer present. F5-014 is therefore `VERIFIED_NO_CHANGE`.\n- Deterministic replay: first replay `VERIFIED_NO_CHANGE / NEGATIVE_SUPERIORITY_QUESTION_ABSENT`; second replay same; P32 Fourth thesis and P33–P34 closing architecture preserved; complete package byte identity PASS (`work/runtime/F5-014-REPLAY.txt`).\n- Candidate `artifacts/checkpoints/manuscript-working-f5-014.docx` SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`, exactly equal to durable F5-013; body 674 and structural/package invariants PASS.\n- Human visual QA is not required because no manuscript bytes changed.\n- Durable boundary after checkpoint: last F5-014; next F5-015.",
+  "protected_parts_status": "F5-015 is a Fourth-precedence VERIFIED_NO_CHANGE item; manuscript-working-f5-015.docx is byte-identical to durable F5-014, so the complete OOXML package including RTL structures remains unchanged",
+  "validation_marker": "## F5-015 checkpoint — VERIFIED_NO_CHANGE / PASS",
+  "validation_block": "- Locked F5-015 targeted the 1.1 negative mini-conclusion beginning `Bütün bu veriler bir arada değerlendirildiğinde İslâm öncesi Arap toplumunda yazının hiç bilinmediğini söylemek mümkün değildir.` and proposed a new three-sentence positive formulation.\n- Fourth Report F4-011 had already adjudicated the same 1.1 closing as a duplicate-conclusion problem and required one consolidated synthesis.\n- Fail-closed inspection of durable F5-014 resolved that accepted F4-011 synthesis uniquely at P49. The locked Fifth negative target is absent and the Fifth proposal is not pre-applied.\n- P49 retains the more specific Fourth formulation: writing was not wholly unknown but had not become a society-wide regular system; written use existed in administrative, commercial and cultural circles while oral transmission retained weight; revelation then gave writing a more regular recording function.\n- Replacing P49 with the Fifth proposal would weaken the Fourth-approved scientific distinctions, so F5-015 is `VERIFIED_NO_CHANGE`.\n- Deterministic replay: first and second replay both `VERIFIED_NO_CHANGE / F4_011_SYNTHESIS_ALREADY_RESOLVES_TARGET / P49`; complete package byte identity PASS (`work/runtime/F5-015-REPLAY.txt`).\n- Candidate `artifacts/checkpoints/manuscript-working-f5-015.docx` SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`, exactly equal to durable F5-014; body 674 and structural/package invariants PASS.\n- Human visual QA is not required because no manuscript bytes changed.\n- Durable boundary after checkpoint: last F5-015; next F5-016.",
   "structural_state": [
     "Fourth Report and prior Fifth items remain accepted.",
-    "F5-014 is VERIFIED_NO_CHANGE: the targeted negative superiority question is absent from the complete current Giriş P16–P37; P32 Fourth scientific thesis and P33–P34 closing architecture remain intact.",
-    "Current DOCX is byte-identical to F5-013; SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`; body 674.",
-    "F5-015 remains PENDING; no F5-015+ text has been applied."
+    "F5-015 is VERIFIED_NO_CHANGE: accepted F4-011 already consolidates the 1.1 closing at P49; the locked Fifth negative target is absent and the scientifically richer Fourth synthesis remains intact.",
+    "Current DOCX is byte-identical to F5-014; SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`; body 674.",
+    "F5-016 remains PENDING; no F5-016+ text has been applied."
   ],
   "evidence": [
-    "Adjudication: `work/F5-014-ADJUDICATION.md`",
-    "No-op verifier: `work/apply_f5_014.py`",
-    "Replay: `work/runtime/F5-014-REPLAY.txt`",
-    "SHA: `work/runtime/F5-014-SHA256.txt`",
-    "Postflight: `work/runtime/F5-014-POSTFLIGHT.txt`",
-    "Accepted no-op batch: run 32121999651",
-    "Visual QA: not required — candidate is byte-identical to already validated F5-013 binary"
+    "Adjudication: `work/F5-015-ADJUDICATION.md`",
+    "No-op verifier: `work/apply_f5_015.py`",
+    "Replay: `work/runtime/F5-015-REPLAY.txt`",
+    "SHA: `work/runtime/F5-015-SHA256.txt`",
+    "Postflight: `work/runtime/F5-015-POSTFLIGHT.txt`",
+    "Accepted no-op batch: run 32122505891",
+    "Visual QA: not required — candidate is byte-identical to already validated F5-014 binary"
   ],
-  "next_action": "Fetch and apply only F5-015 against the durable F5-014 binary. Preserve Fourth scientific meaning and do not pre-apply F5-016+.",
+  "next_action": "Fetch and apply only F5-016 against the durable F5-015 binary. Preserve Fourth scientific meaning and do not pre-apply F5-017+.",
   "updates": {
-    "F5-014": {
+    "F5-015": {
       "status": "VERIFIED_NO_CHANGE",
-      "section": "Giriş — kapanıştaki negatif üstünlük sorusunun giderilmesi",
+      "section": "1.1 — yazının kullanımına ilişkin tek Fourth sentezinin korunması",
       "action_type": "FOURTH_PRECEDENCE_RESOLVED_NOOP",
-      "resolved_location": "Giriş P16–P37 inspected; locked superiority target absent; P32 Fourth thesis and P33–P34 closing architecture preserved",
+      "resolved_location": "word/document.xml P49; accepted F4-011 synthesis present; locked F5-015 target absent",
       "affected_body_paragraphs": [],
-      "verification": "GIRIS_FULL_BOUNDARY_INSPECTION_PASS + NEGATIVE_SUPERIORITY_TARGET_ABSENT + P32_FOURTH_THESIS_PRESERVED + P33_P34_CLOSING_PRESERVED + BYTE_IDENTICAL_REPLAY_PASS",
-      "notes": "No manuscript bytes changed. The Fifth-targeted superiority contrast is absent after Fourth restructuring; the scientifically richer P32 closing thesis was retained. F5-015+ remains untouched."
+      "verification": "F4_011_SYNTHESIS_UNIQUE_P49 + F5_015_NEGATIVE_TARGET_ABSENT + FIFTH_PROPOSAL_NOT_PREAPPLIED + BYTE_IDENTICAL_REPLAY_PASS",
+      "notes": "No manuscript bytes changed. F4-011 already replaced the duplicate 1.1 conclusions with a scientifically richer single synthesis; F5-016+ remains untouched."
     }
   }
 }
