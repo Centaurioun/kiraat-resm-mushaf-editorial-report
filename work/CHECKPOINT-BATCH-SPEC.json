@@ -1,43 +1,44 @@
 {
-  "last_f5": 16,
-  "next_f5": 17,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-016.docx",
-  "sha256": "cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da",
+  "last_f5": 17,
+  "next_f5": 18,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-017.docx",
+  "sha256": "554f4b806c66681e55fcba093764d25bca9e9926ea0f296e7f0b027391b45437",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F5-016-REPLAY.txt",
+  "technical_file": "work/runtime/F5-017-REPLAY.txt",
   "visual_required": true,
-  "visual_pages": 3,
-  "visual_file": "work/F5-016-VISUAL-QA.md",
+  "visual_pages": 4,
+  "visual_file": "work/F5-017-VISUAL-QA.md",
   "holds": "none",
-  "protected_parts_status": "F5-016 changes only word/document.xml body paragraph P45 text; FN14 identity/order, the P45 caution sentence, all other body paragraphs, fields, Zotero instructions, bookmarks, hyperlinks and RTL structural inventory remain preserved",
-  "validation_marker": "## F5-016 checkpoint — APPLIED / PASS",
-  "validation_block": "- Locked F5-016 targeted the repeated `Nitekim` example opening in 1.1: `Tarihe dair eserlerde İslâm öncesi Mekke'de yazının kullanıldığına dair başka örneklere de rastlanmaktadır. Nitekim Hz. Peygamber'in dedelerinden Kusay b. Kilâb'ın (ö. 480) Mekke'nin yönetimiyle ilgili Huzâa ile Beni Bekr arasındaki mücadelede kendisine destek çıkması amacıyla anne bir kardeşi Razâh b. Rebîa'ya bir mektup yazıp gönderdiği rivâyet edilmektedir.`\n- Current durable F5-015 resolved that target uniquely at P45. No accepted Fourth item had rewritten this opening; F4-011 concerns the later P49 synthesis.\n- Only the first two P45 sentences were replaced with the Fifth positive form, normalized to manuscript typography: `Tarih kaynaklarında İslâm öncesi Mekke’de yazının kullanımına ilişkin başka örnekler de aktarılır. Kusay b. Kilâb’ın Razâh b. Rebîa’ya bir mektup gönderdiğine dair rivâyet bunlardan biridir.`\n- The following caution sentence `Bu rivâyet doğru kabul edildiğinde yazının miladi altıncı yüzyılın başlarında bilindiği söylenebilir.` remains unchanged. Genuine footnote reference 14 remains attached to P45 with identity/order preserved.\n- Deterministic replay: first replay `APPLIED P45`; second replay `ALREADY_SATISFIED P45`; byte-idempotency PASS (`work/runtime/F5-016-REPLAY.txt`). Only P45 changed in document.xml; package/integrity invariants PASS.\n- Candidate `artifacts/checkpoints/manuscript-working-f5-016.docx` SHA `cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da`; body 674.\n- SHA-locked bounded QA export run 32123704569 / artifact 9319511593 covered P43–P47. The exported slice rendered to 3 pages with `/home/oai/skills/docx/render_docx.py`; all 3/3 pages were manually inspected and PASS (`work/F5-016-VISUAL-QA.md`).\n- No clipping, overlap, abnormal whitespace, paragraph-style leakage, footnote overflow, missing text, or edit-induced pagination defect was observed.\n- Durable boundary after checkpoint: last F5-016; next F5-017.",
+  "protected_parts_status": "F5-017 changes only word/document.xml body paragraph P53 text; FN24/FN25/FN26 identity and order, the Fourth-approved caution/derivation continuation from `Ancak Hz. Peygamber hayatta iken...`, all other body paragraphs, fields, Zotero instructions, bookmarks, hyperlinks and RTL structural inventory remain preserved",
+  "validation_marker": "## F5-017 checkpoint — APPLIED / PASS",
+  "validation_block": "- Locked F5-017 targeted the three-stage repetition in 1.2: the Medine practice was first summarized as `çok daha sistemli ve titiz`, then reintroduced with `Nitekim`, then concluded a second time as a regular practice.\n- Current durable F5-016 resolved the target uniquely at P53. P53 carried genuine footnote references 24, 25 and 26 in that order.\n- Fourth Report constraints were preserved: F4-012 had already shortened the general 1.2 opening, while F4-016 deliberately limited the Medine conclusion to what the rivâyet material reports. F5-017 therefore retained source-limited wording rather than asserting an independently verified historical fact.\n- Only P53 was changed. Its opening is now: `Medine dönemine ilişkin rivâyetlerde Hz. Peygamber’in vahiy geldiğinde kâtiplerden birini çağırdığı ve âyetleri yazdırdığı aktarılır. Zeyd b. Sâbit’in (ö. 45/665), “Allah Rasûlü’ne vahiy geldiğinde derhâl beni çağırır, ben de onu yazıya geçirirdim.” şeklindeki ifadesi bu uygulamanın örneklerinden biridir. Rivâyetlerde Medine dönemindeki vahiy kaydı düzenli bir uygulama olarak yer alır.`\n- Zeyd b. Sâbit's existing death date was retained; FN24 remains after the first Medine-report sentence and FN25 remains after the Zeyd quotation. FN26 and every sentence from `Ancak Hz. Peygamber hayatta iken...` onward remain intact.\n- P54, including the locked F5-018 target `özellikle vurgulamamız gerekmektedir`, remains untouched; no F5-018+ text was pre-applied.\n- Deterministic replay: first replay `APPLIED P53`; second replay `ALREADY_SATISFIED P53`; byte-idempotency PASS (`work/runtime/F5-017-REPLAY.txt`). Only P53 changed in document.xml; package/integrity invariants PASS.\n- Candidate `artifacts/checkpoints/manuscript-working-f5-017.docx` SHA `554f4b806c66681e55fcba093764d25bca9e9926ea0f296e7f0b027391b45437`; body 674.\n- SHA-locked bounded QA export run 32132335848 / artifact 9322647363 covered P51–P55. The exported slice rendered to 4 pages with `/home/oai/skills/docx/render_docx.py`; all 4/4 pages were manually inspected and PASS (`work/F5-017-VISUAL-QA.md`).\n- P53 footnote placement, quotation spacing, and `yer alır. Ancak...` transition rendered cleanly. The slice's preserved TOC page and trailing footnote-only page are bounded-export derivatives, not edit-induced candidate defects.\n- Durable boundary after checkpoint: last F5-017; next F5-018.",
   "structural_state": [
     "Fourth Report and prior Fifth items remain accepted.",
-    "F5-016 is APPLIED: only P45 first two sentences were simplified to remove repetitive `Nitekim` rhythm while retaining the event as a rivâyet.",
-    "P45 caution sentence and genuine FN14 remain preserved; no other body paragraph changed.",
-    "Current DOCX SHA `cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da`; body 674; technical and 3/3 human visual QA PASS.",
-    "F5-017 remains PENDING; no F5-017+ text has been applied."
+    "F5-017 is APPLIED: the repeated five-sentence Medine evidence sequence at P53 was consolidated to three source-limited sentences while retaining the Zeyd quotation and Fourth scientific caution.",
+    "FN24/FN25/FN26 remain in order; the P53 `Ancak...` continuation is intact; no body paragraph other than P53 changed.",
+    "Current DOCX SHA `554f4b806c66681e55fcba093764d25bca9e9926ea0f296e7f0b027391b45437`; body 674; technical and 4/4 human visual QA PASS.",
+    "F5-018 remains PENDING at P54; no F5-018+ text has been applied."
   ],
   "evidence": [
-    "Adjudication: `work/F5-016-ADJUDICATION.md`",
-    "Deterministic runner: `work/apply_f5_016.py`",
-    "Replay: `work/runtime/F5-016-REPLAY.txt`",
-    "SHA: `work/runtime/F5-016-SHA256.txt`",
-    "Postflight: `work/runtime/F5-016-POSTFLIGHT.txt`",
-    "Accepted application batch: run 32123602991",
-    "Visual QA: `work/F5-016-VISUAL-QA.md` — SHA-locked export run 32123704569 / artifact 9319511593; 3/3 pages manually inspected PASS"
+    "Adjudication: `work/F5-017-ADJUDICATION.md`",
+    "Current-state diagnostic: `work/runtime/F5-017-INSPECT.txt`",
+    "Deterministic runner: `work/apply_f5_017.py`",
+    "Replay: `work/runtime/F5-017-REPLAY.txt`",
+    "SHA: `work/runtime/F5-017-SHA256.txt`",
+    "Postflight: `work/runtime/F5-017-POSTFLIGHT.txt`",
+    "Accepted application batch: run 32132187746",
+    "Visual QA: `work/F5-017-VISUAL-QA.md` — SHA-locked export run 32132335848 / artifact 9322647363; 4/4 pages manually inspected PASS"
   ],
-  "next_action": "Fetch and apply only F5-017 against the durable F5-016 binary. Preserve Fourth scientific meaning and do not pre-apply F5-018+.",
+  "next_action": "Fetch and apply only F5-018 against the durable F5-017 binary. Preserve Fourth scientific meaning and do not pre-apply F5-019+.",
   "updates": {
-    "F5-016": {
+    "F5-017": {
       "status": "APPLIED",
-      "section": "1.1 — `Nitekim` ile örnek açma alışkanlığının giderilmesi",
-      "action_type": "TARGETED_POSITIVE_EXAMPLE_OPENING_REWRITE",
-      "resolved_location": "word/document.xml P45",
-      "affected_body_paragraphs": [45],
-      "verification": "P45_ONLY_CHANGE + FN14_PRESERVED + CAUTION_SENTENCE_PRESERVED + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
-      "notes": "Only the first two P45 sentences were rewritten to the locked Fifth form. The following historicity caution remains unchanged; F5-017+ remains untouched."
+      "section": "1.2 — vahyin yazımıyla ilgili üç aşamalı tekrarın konsolidasyonu",
+      "action_type": "TARGETED_THREE_STAGE_REPETITION_CONSOLIDATION",
+      "resolved_location": "word/document.xml P53",
+      "affected_body_paragraphs": [53],
+      "verification": "P53_ONLY_CHANGE + FN24_FN25_FN26_PRESERVED + FOURTH_CAUTION_PRESERVED + F5_018_TARGET_UNTOUCHED + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 4/4_HUMAN_VISUAL_PASS",
+      "notes": "Consolidated only the repeated Medine evidence sequence. Retained Zeyd b. Sâbit's death date, source-limited epistemic framing, all three genuine footnotes and the later Fourth-approved explanation. F5-018+ remains untouched."
     }
   }
 }
