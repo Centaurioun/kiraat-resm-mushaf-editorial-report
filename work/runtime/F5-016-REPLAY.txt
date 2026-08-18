@@ -1,0 +1,9 @@
+FIRST_REPLAY_STDOUT
+F5-016	APPLIED	P45
+BEFORE	Tarihe dair eserlerde İslâm öncesi Mekke’de yazının kullanıldığına dair başka örneklere de rastlanmaktadır. Nitekim Hz. Peygamber’in dedelerinden Kusay b. Kilâb’ın (ö. 480) Mekke’nin yönetimiyle ilgili Huzâa ile Beni Bekr arasındaki mücadelede kendisine destek çıkması amacıyla anne bir kardeşi Razâh b. Rebîa’ya bir mektup yazıp gönderdiği rivâyet edilmektedir. Bu rivâyet doğru kabul edildiğinde yazının miladi altıncı yüzyılın başlarında bilindiği söylenebilir.
+AFTER	Tarih kaynaklarında İslâm öncesi Mekke’de yazının kullanımına ilişkin başka örnekler de aktarılır. Kusay b. Kilâb’ın Razâh b. Rebîa’ya bir mektup gönderdiğine dair rivâyet bunlardan biridir. Bu rivâyet doğru kabul edildiğinde yazının miladi altıncı yüzyılın başlarında bilindiği söylenebilir.
+
+SECOND_REPLAY_STDOUT
+F5-016	ALREADY_SATISFIED	P45
+
+BYTE_IDENTICAL=PASS
