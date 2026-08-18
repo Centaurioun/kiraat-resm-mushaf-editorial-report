@@ -2,38 +2,44 @@
   "last_f5": 2,
   "next_f5": 3,
   "docx": "artifacts/checkpoints/manuscript-working-f5-002.docx",
-  "sha256": "c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95",
+  "sha256": "94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F5-002-REPLAY.txt",
-  "visual_required": false,
+  "technical_file": "work/runtime/F5-002-AUTH-REBUILD-REPLAY.txt",
+  "visual_required": true,
+  "visual_pages": 3,
+  "visual_file": "work/F5-002-AUTH-VISUAL-QA.md",
   "holds": "none",
-  "protected_parts_status": "identical to the globally validated Fourth binary for F5-002; F5-001 and F5-002 are byte-identical VERIFIED_NO_CHANGE",
-  "validation_marker": "## F5-002 checkpoint — VERIFIED_NO_CHANGE / PASS",
-  "validation_block": "- Fifth target: remove unsupported motive/purpose attribution assigning preservation to cem and dispute-prevention to istinsah.\n- Current P19 already omits the unsupported motive attribution and instead states that the two processes were `farklı tarihsel şartlarda gerçekleştirilen iki ayrı uygulama olarak rivâyet edilmiştir`, followed by explicit source plurality and the instruction that the details should be evaluated cautiously.\n- Fourth scientific/structural precedence therefore controls: the Fifth stylistic rewrite would add no remaining correction and could weaken the accepted historical-methodological caution.\n- `work/apply_f5_002.py` verified that the old purpose-attribution target and its characteristic fragments are absent, that the accepted P19 form is present once at P19, and then carried the binary forward byte-identically twice.\n- Output SHA remains `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`; body 674; structural inventories unchanged.\n- Human visual QA: NOT_REQUIRED_NO_BYTE_CHANGE because F5-002 produces no byte change.\n- Durable boundary: last F5-002; next F5-003.",
+  "protected_parts_status": "Fourth-validated package preserved except the authorized F5-002 visible-text edit in word/document.xml P22; application validation confirms all non-document package parts unchanged and structural inventories preserved",
+  "validation_marker": "## F5-002 authoritative checkpoint — APPLIED / PASS",
+  "validation_block": "- An audit found that an earlier F5-002 no-op checkpoint had been bound to the wrong Fifth Report issue. That misbinding produced no manuscript byte change and is superseded by `work/F5-002-CORRECTION-NOTE.md`.\n- Actual locked F5-002 target: Giriş P22, `Bu sorular birbirinden bağımsız değildir.`\n- Accepted Fourth-compatible correction: `Araştırma soruları birbirine bağlıdır.` Only the first sentence changes; the complete accepted Fourth-scientific remainder of P22 is preserved.\n- Deterministic authoritative rebuild: workflow run 32085188815 after guard correction. First replay APPLIED at P22 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-002-AUTH-REBUILD-REPLAY.txt`).\n- Authoritative candidate SHA-256: `94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be`; body remains 674.\n- Application validator within `work/apply_f5_002.py` confirms only body P22 changes; all non-`word/document.xml` package parts remain byte-identical to F5-001; field sequence 520, ADDIN 466, Zotero ITEM 465 + bibliography 1, 469 footnote-reference identities/order, bookmarks 53/53, hyperlinks 52, RTL inventory unchanged.\n- SHA-locked QA export workflow run 32085611811 / artifact 9306592869 generated P20–P24 slice from the same candidate. Local LibreOffice render produced 3 pages; all 3/3 were inspected manually and PASS (`work/F5-002-AUTH-VISUAL-QA.md`).\n- The red `değil` visible in P23 is a pre-existing F5-003 target and was intentionally not changed during F5-002.\n- Durable boundary after this checkpoint: last F5-002; next F5-003.",
   "structural_state": [
     "Fourth Report F4-001–116 and FOURTH_VALIDATE remain fully accepted.",
-    "F5-001 and F5-002 are VERIFIED_NO_CHANGE under Fourth scientific precedence.",
-    "F5-002 confirms that unsupported purpose attribution for cem/istinsah has already been removed from P19 and replaced by historically cautious reported-process language.",
-    "Current binary remains byte-identical to the globally validated Fourth binary; SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`, body 674.",
+    "F5-001 remains durable VERIFIED_NO_CHANGE.",
+    "F5-002 is APPLIED at P22: `Araştırma soruları birbirine bağlıdır.`",
+    "The complete Fourth-scientific continuation of P22 remains unchanged; F5-002 did not broaden causation or alter later sentences.",
+    "Authoritative F5-002 candidate SHA is `94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be`; body paragraphs 674.",
+    "Earlier misbound F5-002 no-op metadata is superseded by the correction note and this authoritative checkpoint.",
     "F5-003 remains PENDING and has not been pre-applied."
   ],
   "evidence": [
-    "Replay: `work/apply_f5_002.py`",
-    "Replay evidence: `work/runtime/F5-002-REPLAY.txt` — two byte-identical VERIFIED_NO_CHANGE passes",
-    "Adjudication: `work/F5-002-ADJUDICATION.md`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f5-002.docx`",
-    "Candidate SHA: `work/runtime/F5-002-SHA256.txt`"
+    "Correction audit: `work/F5-002-CORRECTION-NOTE.md`",
+    "Replay script: `work/apply_f5_002.py`",
+    "Authoritative replay: `work/runtime/F5-002-AUTH-REBUILD-REPLAY.txt`",
+    "Candidate SHA: `work/runtime/F5-002-AUTH-REBUILD-SHA256.txt`",
+    "Postflight: `work/runtime/F5-002-AUTH-REBUILD-POSTFLIGHT.txt`",
+    "Human visual QA: `work/F5-002-AUTH-VISUAL-QA.md` — 3/3 pages PASS",
+    "QA export workflow: run 32085611811 / artifact 9306592869"
   ],
   "next_action": "Fetch the exact F5-003 item from `final/fifth-report-locked.md`, resolve it against the durable F5-002 binary, and apply only F5-003 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-004+.",
   "updates": {
     "F5-002": {
-      "status": "VERIFIED_NO_CHANGE",
-      "section": "Giriş — cem/istinsah unsupported motive attribution",
-      "action_type": "FOURTH_PRECEDENCE_RESOLVED_NOOP",
-      "resolved_location": "word/document.xml P19",
-      "affected_body_paragraphs": [],
-      "verification": "UNSUPPORTED_PURPOSE_TARGET_ABSENT + CAUTIOUS_CURRENT_FORM_PRESENT + BYTE_IDENTICAL_REPLAY_PASS",
-      "notes": "No new manuscript edit; visual QA not required for byte-identical no-op."
+      "status": "APPLIED",
+      "section": "Giriş — araştırma sorularının olumlu ilişkilendirilmesi",
+      "action_type": "TARGETED_POSITIVE_SENTENCE_REWRITE_WITH_FOURTH_PRECEDENCE",
+      "resolved_location": "word/document.xml P22",
+      "affected_body_paragraphs": [22],
+      "verification": "ACTUAL_ITEM_IDENTITY_PASS + P22_ONLY_CHANGE + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
+      "notes": "Earlier no-op F5-002 metadata was misbound to another issue and is superseded. Actual F5-002 changes only the P22 opening sentence while preserving the accepted Fourth-scientific remainder."
     }
   }
 }
