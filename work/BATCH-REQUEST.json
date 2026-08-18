@@ -1,13 +1,13 @@
 {
-  "checkpoint": "F5-002-AUTH-REBUILD",
+  "checkpoint": "F5-003",
   "revision": 1,
-  "input_docx": "artifacts/checkpoints/manuscript-working-f5-001.docx",
-  "input_sha256": "c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95",
-  "script": "work/apply_f5_002.py",
-  "output_docx": "artifacts/checkpoints/manuscript-working-f5-002.docx",
-  "sha_file": "work/runtime/F5-002-AUTH-REBUILD-SHA256.txt",
-  "postflight_file": "work/runtime/F5-002-AUTH-REBUILD-POSTFLIGHT.txt",
-  "postflight_start": 20,
-  "postflight_end": 24,
-  "replay_file": "work/runtime/F5-002-AUTH-REBUILD-REPLAY.txt"
+  "input_docx": "artifacts/checkpoints/manuscript-working-f5-002.docx",
+  "input_sha256": "94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be",
+  "script": "work/apply_f5_003.py",
+  "output_docx": "artifacts/checkpoints/manuscript-working-f5-003.docx",
+  "sha_file": "work/runtime/F5-003-SHA256.txt",
+  "postflight_file": "work/runtime/F5-003-POSTFLIGHT.txt",
+  "postflight_start": 21,
+  "postflight_end": 25,
+  "replay_file": "work/runtime/F5-003-REPLAY.txt"
 }
