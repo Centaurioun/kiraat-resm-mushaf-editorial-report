@@ -1,0 +1,9 @@
+FIRST_REPLAY_STDOUT
+F5-018	APPLIED	P54
+BEFORE	Yazılı vahiy metinlerinin Hz. Peygamber döneminde bir araya getirilmemiş olmasının, vahyin o dönemde yazıya geçirilmediği anlamına gelmediğini, bilakis yazılan metinlerin dağınık hâlde bulunduğuna ve bir araya toplanmadığına delalet ettiğini özellikle vurgulamamız gerekmektedir. Nitekim Hâris el-Muhâsibî’nin (ö. 243/857) de belirttiği üzere, Kur’an’ın yazıya geçirilmesi nüzûl sonrasında ortaya çıkmış bir mesele değildir. Çünkü Hz. Peygamber, ilk andan itibaren vahyin yazılmasını emretmiş; ancak bu yazım faaliyeti, dönemin imkânları doğrultusunda taş, kemik, hurma dalları ve deri gibi farklı yazı malzemeleri üzerine ve dağınık bir biçimde yapılmıştır.
+AFTER	Hz. Peygamber döneminde vahiy metinleri farklı malzemeler üzerinde yazılı olarak bulunuyor, ancak iki kapak arasında tek bir derleme hâlinde toplanmış değildi. Zerkeşî’nin Hâris el-Muhâsibî’den aktardığı değerlendirmede de Kur’an’ın nüzûl döneminde yazıya geçirildiği ve kayıtların farklı malzemeler üzerinde dağınık biçimde bulunduğu belirtilir.
+
+SECOND_REPLAY_STDOUT
+F5-018	ALREADY_SATISFIED	P54
+
+BYTE_IDENTICAL=PASS
