@@ -1,0 +1,11 @@
+FIRST_REPLAY_STDOUT
+F5-005	VERIFIED_NO_CHANGE	BYTE_IDENTICAL
+RESOLVED_LOCATION	P24
+REASON	Negative target is already absent; current positive `bulunabildiğini` formulation preserves Fourth caution and should not be strengthened to categorical `bulunduğunu`.
+
+SECOND_REPLAY_STDOUT
+F5-005	VERIFIED_NO_CHANGE	BYTE_IDENTICAL
+RESOLVED_LOCATION	P24
+REASON	Negative target is already absent; current positive `bulunabildiğini` formulation preserves Fourth caution and should not be strengthened to categorical `bulunduğunu`.
+
+BYTE_IDENTICAL=PASS
