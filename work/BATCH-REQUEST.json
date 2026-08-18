@@ -1,13 +1,16 @@
 {
-  "checkpoint": "F5-094-NEGATIVE-AUDIT",
+  "checkpoint": "FINAL-FIELD-REFRESH",
   "revision": 1,
   "input_docx": "artifacts/checkpoints/manuscript-working-f5-094.docx",
   "input_sha256": "81f97403c0cfcf151260ab7018077145ba260c4fe4f30ca5fe2d3b501d093571",
-  "script": "work/inspect_f5_094_negatives.py",
-  "output_docx": "artifacts/checkpoints/manuscript-working-f5-094-negative-audit-copy.docx",
-  "sha_file": "work/runtime/F5-094-NEGATIVE-AUDIT-SHA256.txt",
-  "postflight_file": "work/runtime/F5-094-NEGATIVE-AUDIT-POSTFLIGHT.txt",
+  "script": "work/finalize_refresh_fields.py",
+  "output_docx": "artifacts/finalization/manuscript-field-refreshed.docx",
+  "sha_file": "work/runtime/FINAL-FIELD-REFRESH-SHA256.txt",
+  "postflight_file": "work/runtime/FINAL-FIELD-REFRESH-POSTFLIGHT.txt",
   "postflight_start": 0,
-  "postflight_end": 0,
-  "replay_file": "work/runtime/F5-094-NEGATIVE-AUDIT-REPLAY.txt"
+  "postflight_end": 12,
+  "replay_file": "work/runtime/FINAL-FIELD-REFRESH-REPLAY.txt",
+  "validator_script": "work/validate_field_refresh.py",
+  "validator_input": "artifacts/finalization/manuscript-field-refreshed.docx",
+  "validator_file": "work/runtime/FINAL-FIELD-REFRESH-VALIDATION.txt"
 }
