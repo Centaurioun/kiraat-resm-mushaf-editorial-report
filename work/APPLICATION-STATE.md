@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `85f0eba2709d71c0cc3715ee445f31161c095851` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `0278d61ab78b98d960fc00213c38a2426727634e` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -15,14 +15,14 @@
 - Last fully completed Fourth Report item: `F4-116`
 - Next Fourth Report item: none — Fourth Report application complete
 - Fourth Report global validation: PASS
-- Last fully completed Fifth Report item: `F5-008`
-- Next Fifth Report item: `F5-009`
+- Last fully completed Fifth Report item: `F5-009`
+- Next Fifth Report item: `F5-010`
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-008.docx`
-- Current working DOCX SHA-256: `99b579b4c1ea369fbf4f27705d42a1f632d06f5e67bc177dd09363c765a07b32`
-- Last known good commit basis: `85f0eba2709d71c0cc3715ee445f31161c095851`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-008.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-009.docx`
+- Current working DOCX SHA-256: `ff35f3803f24f68dff43f2ce9569c39a275c03acfa518614803e48530d696dbd`
+- Last known good commit basis: `0278d61ab78b98d960fc00213c38a2426727634e`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-009.docx`
 - Current body paragraph count: 674
 
 ## Integrity
@@ -32,19 +32,19 @@
 - Zotero: 465 item + 1 bibliography preserved
 - Bookmarks: 53/53; hyperlinks: 52
 - Arabic/RTL structural inventory: canonical-equal
-- Protected OOXML parts: Accepted prior package preserved except authorized Fifth visible-text edits; F5-008 validation confirms only P26 changed relative to durable F5-007 and all non-document package parts remained byte-identical
+- Protected OOXML parts: Accepted prior package preserved except authorized Fifth visible-text edits; F5-009 validation confirms only P26 changed relative to durable F5-008 and all non-document package parts remained byte-identical
 
 ## Structural-edit state
 - Fourth Report and prior Fifth items remain accepted.
-- F5-008 is APPLIED at P26 by replacing only the negative conformity opening with a positive real/ihtimalî formulation.
-- Current SHA `99b579b4c1ea369fbf4f27705d42a1f632d06f5e67bc177dd09363c765a07b32`; body 674.
-- F5-009 remains PENDING and its negative category sentence is still present.
+- F5-009 is APPLIED at P26 by consolidating the category discussion into two positive sentences while preserving the Fourth-approved explanatory dimensions.
+- Current SHA `ff35f3803f24f68dff43f2ce9569c39a275c03acfa518614803e48530d696dbd`; body 674.
+- F5-010 remains PENDING; no F5-010+ text has been applied.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Fourth Report global validation: **PASS** (`work/runtime/FOURTH-VALIDATE-FINAL.txt`).
-- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-008-REPLAY.txt`).
-- Latest Fifth item human visual QA: **PASS**, 3/3 pages inspected (`work/F5-008-VISUAL-QA.md`).
+- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-009-REPLAY.txt`).
+- Latest Fifth item human visual QA: **PASS**, 3/3 pages inspected (`work/F5-009-VISUAL-QA.md`).
 
 ## Exact next action
-Fetch and apply only F5-009 against the durable F5-008 binary. Preserve Fourth scientific meaning and do not pre-apply F5-010+.
+Fetch and apply only F5-010 against the durable F5-009 binary. Preserve Fourth scientific meaning and do not pre-apply F5-011+.

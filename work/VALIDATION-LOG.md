@@ -577,3 +577,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Candidate SHA `99b579b4c1ea369fbf4f27705d42a1f632d06f5e67bc177dd09363c765a07b32`; body 674; all structural/package invariants passed.
 - SHA-locked QA export workflow run 32088102115 / artifact 9307385656 generated P25–P28; all 3/3 rendered pages were manually inspected and PASS (`work/F5-008-VISUAL-QA.md`).
 - Durable boundary: last F5-008; next F5-009.
+
+
+## F5-009 checkpoint — APPLIED / PASS
+- Locked F5-009 targeted the negative sahih/meşhur/âhâd/şâz category opening and the negative shādh-status contrast in P26.
+- Under Fourth-over-Fifth precedence, the existing explanatory dimensions (naklin güvenilirliği, yaygınlığı, kabulü ve genel tilâvet alanındaki konumu) were preserved while the three-sentence negative/positive/negative block was consolidated into two positive sentences.
+- Accepted wording: `Sahih, meşhur, âhâd ve şâz nitelemeleri, naklin güvenilirliği, yaygınlığı, kabulü ve genel tilâvet alanındaki konumuyla ilgili farklı değerlendirme boyutlarını ifade eder. Şâz bir rivâyetin tefsîrî veya dilsel bilgi değeri ile bağlayıcı kırâat statüsü ayrı ayrı değerlendirilmelidir.`
+- Deterministic replay: first replay APPLIED P26 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-009-REPLAY.txt`).
+- Candidate SHA `ff35f3803f24f68dff43f2ce9569c39a275c03acfa518614803e48530d696dbd`; body 674; all structural/package invariants passed.
+- SHA-locked QA export workflow run 32090746409 / artifact 9308227484 generated P25–P28; all 3/3 rendered pages were manually inspected and PASS (`work/F5-009-VISUAL-QA.md`).
+- Durable boundary after checkpoint: last F5-009; next F5-010.
