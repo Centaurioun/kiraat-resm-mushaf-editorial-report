@@ -12,6 +12,7 @@
 - Word open-time refresh flag: `w:updateFields=true`.
 - Protected narrative/body text: unchanged; body paragraphs 674.
 - Footnote references: 469/469; ADDIN/Zotero fields: 466; bookmarks: 53/53.
-- Focused visual QA: PASS, 6/6 pages (`work/FINAL-FIELD-REFRESH-VISUAL-QA.md`).
+- Focused field-refresh visual QA: PASS, 6/6 pages (`work/FINAL-FIELD-REFRESH-VISUAL-QA.md`).
 - Independent in-memory index/page cross-check: PASS, 46/46 (`work/runtime/FINAL-FIELD-REFRESH-LO-CROSSCHECK.txt`).
-- Next finalization task: full-document acceptance/layout QA on the field-refreshed candidate.
+- Subsequent full-document acceptance/layout QA: **COMPLETED / PASS, 112/112 pages** (`work/FINALIZATION-ITEM2-ACCEPTANCE-QA.md`).
+- Current finalization next task: item 3, editorial/red-mark cleanup. Candidate bytes remain unchanged since field refresh.
