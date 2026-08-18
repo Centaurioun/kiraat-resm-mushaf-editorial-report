@@ -641,3 +641,15 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Candidate `artifacts/checkpoints/manuscript-working-f5-014.docx` SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`, exactly equal to durable F5-013; body 674 and structural/package invariants PASS.
 - Human visual QA is not required because no manuscript bytes changed.
 - Durable boundary after checkpoint: last F5-014; next F5-015.
+
+
+## F5-015 checkpoint — VERIFIED_NO_CHANGE / PASS
+- Locked F5-015 targeted the 1.1 negative mini-conclusion beginning `Bütün bu veriler bir arada değerlendirildiğinde İslâm öncesi Arap toplumunda yazının hiç bilinmediğini söylemek mümkün değildir.` and proposed a new three-sentence positive formulation.
+- Fourth Report F4-011 had already adjudicated the same 1.1 closing as a duplicate-conclusion problem and required one consolidated synthesis.
+- Fail-closed inspection of durable F5-014 resolved that accepted F4-011 synthesis uniquely at P49. The locked Fifth negative target is absent and the Fifth proposal is not pre-applied.
+- P49 retains the more specific Fourth formulation: writing was not wholly unknown but had not become a society-wide regular system; written use existed in administrative, commercial and cultural circles while oral transmission retained weight; revelation then gave writing a more regular recording function.
+- Replacing P49 with the Fifth proposal would weaken the Fourth-approved scientific distinctions, so F5-015 is `VERIFIED_NO_CHANGE`.
+- Deterministic replay: first and second replay both `VERIFIED_NO_CHANGE / F4_011_SYNTHESIS_ALREADY_RESOLVES_TARGET / P49`; complete package byte identity PASS (`work/runtime/F5-015-REPLAY.txt`).
+- Candidate `artifacts/checkpoints/manuscript-working-f5-015.docx` SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`, exactly equal to durable F5-014; body 674 and structural/package invariants PASS.
+- Human visual QA is not required because no manuscript bytes changed.
+- Durable boundary after checkpoint: last F5-015; next F5-016.
