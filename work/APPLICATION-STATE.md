@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `1c52b620e01be8ad17a0309ca4a0665152f19ff3` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `3a914e1f362f34b7b267b49688c01bd59f2ad9d2` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -15,14 +15,14 @@
 - Last fully completed Fourth Report item: `F4-116`
 - Next Fourth Report item: none — Fourth Report application complete
 - Fourth Report global validation: PASS
-- Last fully completed Fifth Report item: `F5-005`
-- Next Fifth Report item: `F5-006`
+- Last fully completed Fifth Report item: `F5-006`
+- Next Fifth Report item: `F5-007`
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-005.docx`
-- Current working DOCX SHA-256: `12652112c6a9e28b4ef877cd6432c15f33d46fc5da432df3fe6d4eaa1f2f0fd5`
-- Last known good commit basis: `1c52b620e01be8ad17a0309ca4a0665152f19ff3`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-005.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-006.docx`
+- Current working DOCX SHA-256: `91a36064fdded4aa1ca72302ceb2d690f2a945fb921eb5ddc5f5e3b5efc1f092`
+- Last known good commit basis: `3a914e1f362f34b7b267b49688c01bd59f2ad9d2`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-006.docx`
 - Current body paragraph count: 674
 
 ## Integrity
@@ -32,20 +32,20 @@
 - Zotero: 465 item + 1 bibliography preserved
 - Bookmarks: 53/53; hyperlinks: 52
 - Arabic/RTL structural inventory: canonical-equal
-- Protected OOXML parts: byte-identical to durable F5-004 for F5-005; no package part changed
+- Protected OOXML parts: Accepted prior package preserved except authorized Fifth visible-text edits in word/document.xml P22–P25; F5-006 validation confirms only P25 changed relative to durable F5-005 and all non-document package parts remained byte-identical
 
 ## Structural-edit state
-- Fourth Report F4-001–116 and FOURTH_VALIDATE remain fully accepted.
-- F5-001 and F5-005 are VERIFIED_NO_CHANGE; F5-002–F5-004 remain durable APPLIED.
-- F5-005 preserves the positive cautious `bulunabildiğini` city-mushaf formulation already established by Fourth work.
-- Current binary is byte-identical to F5-004; SHA `12652112c6a9e28b4ef877cd6432c15f33d46fc5da432df3fe6d4eaa1f2f0fd5`, body 674.
-- F5-006 remains PENDING.
+- Fourth Report and prior Fifth items remain accepted.
+- F5-006 is APPLIED at P25 by deleting only the redundant negative opening sentence.
+- P25 now begins with the source-based İbnü’l-Cezerî positive definition; F5-007 and later text remain untouched.
+- Current candidate SHA is `91a36064fdded4aa1ca72302ceb2d690f2a945fb921eb5ddc5f5e3b5efc1f092`; body paragraphs 674.
+- F5-007 remains PENDING.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Fourth Report global validation: **PASS** (`work/runtime/FOURTH-VALIDATE-FINAL.txt`).
-- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-005-REPLAY.txt`).
-- Latest Fifth item human visual QA: **NOT_REQUIRED_NO_BYTE_CHANGE** — deterministic output is byte-identical to the already validated input binary.
+- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-006-REPLAY.txt`).
+- Latest Fifth item human visual QA: **PASS**, 3/3 pages inspected (`work/F5-006-VISUAL-QA.md`).
 
 ## Exact next action
-Fetch the exact F5-006 item from `final/fifth-report-locked.md`, resolve it against the durable F5-005 binary, and apply only F5-006 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-007+.
+Fetch the exact F5-007 item from `final/fifth-report-locked.md`, resolve it against the durable F5-006 binary, and apply only F5-007 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-008+.

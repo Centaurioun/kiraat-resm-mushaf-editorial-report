@@ -2,43 +2,46 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `1c52b620e01be8ad17a0309ca4a0665152f19ff3` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `3a914e1f362f34b7b267b49688c01bd59f2ad9d2` plus this metadata checkpoint commit
 - Current phase: `FIFTH_APPLY`
 
 ## Resume boundary
 - Last completed Fourth item: `F4-116`
-- Last completed Fifth item: `F5-005`
-- Next Fifth item: `F5-006`
+- Last completed Fifth item: `F5-006`
+- Next Fifth item: `F5-007`
 - DO-NOT-REPEAT Fourth: `F4-001`–`F4-116`
-- DO-NOT-REPEAT Fifth: `F5-001`–`F5-005`
+- DO-NOT-REPEAT Fifth: `F5-001`–`F5-006`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-005.docx`
-- Current working SHA-256: `12652112c6a9e28b4ef877cd6432c15f33d46fc5da432df3fe6d4eaa1f2f0fd5`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-006.docx`
+- Current working SHA-256: `91a36064fdded4aa1ca72302ceb2d690f2a945fb921eb5ddc5f5e3b5efc1f092`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
 - Footnotes/references: 469/469; orphans/dangling/duplicates: 0/0/0
 - Word fields: 520; ADDIN: 466; Zotero: 465 item + 1 bibliography
 - Bookmarks: 53/53; hyperlinks: 52; RTL inventory canonical-equal
-- Protected OOXML: byte-identical to durable F5-004 for F5-005; no package part changed
-- Latest Fifth visual status: NOT_REQUIRED_NO_BYTE_CHANGE
+- Protected OOXML: Accepted prior package preserved except authorized Fifth visible-text edits in word/document.xml P22–P25; F5-006 validation confirms only P25 changed relative to durable F5-005 and all non-document package parts remained byte-identical
+- Latest Fifth visual status: PASS
 
 ## Latest state
-- Fourth Report F4-001–116 and FOURTH_VALIDATE remain fully accepted.
-- F5-001 and F5-005 are VERIFIED_NO_CHANGE; F5-002–F5-004 remain durable APPLIED.
-- F5-005 preserves the positive cautious `bulunabildiğini` city-mushaf formulation already established by Fourth work.
-- Current binary is byte-identical to F5-004; SHA `12652112c6a9e28b4ef877cd6432c15f33d46fc5da432df3fe6d4eaa1f2f0fd5`, body 674.
-- F5-006 remains PENDING.
+- Fourth Report and prior Fifth items remain accepted.
+- F5-006 is APPLIED at P25 by deleting only the redundant negative opening sentence.
+- P25 now begins with the source-based İbnü’l-Cezerî positive definition; F5-007 and later text remain untouched.
+- Current candidate SHA is `91a36064fdded4aa1ca72302ceb2d690f2a945fb921eb5ddc5f5e3b5efc1f092`; body paragraphs 674.
+- F5-007 remains PENDING.
 
 ## Evidence
-- Adjudication: `work/F5-005-ADJUDICATION.md`
-- Replay script: `work/apply_f5_005.py`
-- Replay evidence: `work/runtime/F5-005-REPLAY.txt`
-- Candidate SHA: `work/runtime/F5-005-SHA256.txt`
+- Adjudication: `work/F5-006-ADJUDICATION.md`
+- Replay script: `work/apply_f5_006.py`
+- Replay evidence: `work/runtime/F5-006-REPLAY.txt`
+- Candidate SHA: `work/runtime/F5-006-SHA256.txt`
+- Postflight: `work/runtime/F5-006-POSTFLIGHT.txt`
+- Human visual QA: `work/F5-006-VISUAL-QA.md` — 3/3 PASS
+- QA export workflow: run 32087050595 / artifact 9307054073
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Fetch the exact F5-006 item from `final/fifth-report-locked.md`, resolve it against the durable F5-005 binary, and apply only F5-006 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-007+.
+Fetch the exact F5-007 item from `final/fifth-report-locked.md`, resolve it against the durable F5-006 binary, and apply only F5-007 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-008+.

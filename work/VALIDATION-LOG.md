@@ -549,3 +549,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Both deterministic replays are VERIFIED_NO_CHANGE / BYTE_IDENTICAL; output SHA remains `12652112c6a9e28b4ef877cd6432c15f33d46fc5da432df3fe6d4eaa1f2f0fd5`.
 - Human visual QA: NOT_REQUIRED_NO_BYTE_CHANGE.
 - Durable boundary after checkpoint: last F5-005; next F5-006.
+
+
+## F5-006 checkpoint — APPLIED / PASS
+- Locked F5-006 targeted the negative definition `Kırâat, dil bakımından mümkün olan her seslendirme anlamına gelmez.`
+- The immediately following İbnü’l-Cezerî sentence already gives a more precise, source-based positive definition. To avoid duplication, only the negative opening sentence was removed and the existing İbnü’l-Cezerî sentence became the paragraph opening.
+- The next sentence `Bir kırâat imamına nispet edilen ... aynı düzeyde değildir.` is F5-007 and was preserved exactly.
+- Deterministic replay: first replay APPLIED P25 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-006-REPLAY.txt`).
+- Candidate SHA-256 `91a36064fdded4aa1ca72302ceb2d690f2a945fb921eb5ddc5f5e3b5efc1f092`; body remains 674; package/field/footnote/bookmark/hyperlink/RTL invariants passed.
+- SHA-locked QA export workflow run 32087050595 / artifact 9307054073 generated P24–P27. Canonical DOCX render produced 3 pages; all 3/3 were manually inspected and PASS (`work/F5-006-VISUAL-QA.md`).
+- Durable boundary after checkpoint: last F5-006; next F5-007.
