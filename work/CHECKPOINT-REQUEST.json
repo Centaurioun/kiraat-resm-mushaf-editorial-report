@@ -1,10 +1,12 @@
 {
-  "checkpoint": "F5-002-AUTHORITATIVE-RECONCILIATION",
-  "revision": 1,
-  "script": "work/repair_f5_002_checkpoint.py",
+  "checkpoint": "F5-002",
+  "revision": 3,
+  "script": "work/checkpoint_fifth.py",
   "last_f5": 2,
   "next_f5": 3,
+  "candidate_sha256": "94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be",
   "technical_validation": "PASS",
+  "visual_qa_pages": 3,
   "visual_qa_result": "PASS",
-  "validation_marker": "## F5-002 authoritative metadata reconciliation — APPLIED / PASS"
+  "validation_marker": "## F5-002 authoritative checkpoint — APPLIED / PASS"
 }
