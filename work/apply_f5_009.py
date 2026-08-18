@@ -54,14 +54,14 @@ def satisfied(d):
 
 def apply(src,out):
     actual_sha=sha256(src)
-    if actual_sha!=EXPECTED_INPUT_SHA:
-        raise RuntimeError('input sha mismatch '+actual_sha)
     with ZipFile(src,'r') as zin:
         original={i.filename:zin.read(i.filename) for i in zin.infolist()}
         d=etree.fromstring(original['word/document.xml']); ps=d.xpath('.//w:body/w:p',namespaces=NS)
         if len(ps)!=674: raise RuntimeError('body count')
         if satisfied(d):
             shutil.copyfile(src,out); validate(src,out,False); print('F5-009\tALREADY_SATISFIED'); return
+        if actual_sha!=EXPECTED_INPUT_SHA:
+            raise RuntimeError('input sha mismatch '+actual_sha)
         p=ps[26]; before=text(p)
         if before!=OLD: raise RuntimeError('P26 precondition mismatch')
         bs=sig(p)
