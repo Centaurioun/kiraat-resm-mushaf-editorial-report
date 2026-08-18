@@ -1,0 +1,42 @@
+DOCX=artifacts/checkpoints/manuscript-working-f5-002.docx
+SHA256=94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be
+BODY_PARAGRAPHS=674
+REFERENCE_ORDER_CHANGED=True
+RUN_ID=32085277269
+ALLOWED_FOOTNOTE_TEXT_IDS=['105', '2', '271', '272', '273', '274', '28', '292', '32', '342', '344', '345', '346', '377', '380', '381', '407', '409', '41', '411', '414', '421', '423', '424', '425', '426', '427', '428', '431', '50', '66']
+P20	FN=[]	RTL=0	BOOK=0	Bu tarihsel ayrım, yedi harf ruhsatı ile Osmânî mushafların ilişkisini değerlendirirken de önemlidir. Yedi harf, mahiyeti hakkında farklı görüşler bulunan ve sonraki kırâat tasnifleriyle doğrudan özdeşleştirilemeyecek bir ruhsat alanını ifade eder. Osmânî istinsahın bu alanla ilişkisi, bütün teorik okuyuş ihtimallerinin mushaflara geçirilmesi şeklinde açıklanamaz. Asıl mesele, rivâyet yoluyla bilinen ve Osmânî mushafların yazımıyla bağdaşan okuyuşların hangi sınırlar içinde korunabildiğidir. Bu nedenle kitap, yedi harfe dair bütün görüşleri çözme iddiası taşımamakta; konuyu resm-i Osmânî’nin teşekkülü ve kırâat çeşitliliğinin ortak mushaf metniyle ilişkisi bakımından ele almaktadır.
+P21	FN=[]	RTL=0	BOOK=0	Araştırmanın temel amacı, resm-i mushaf’ın kırâat rivâyetleri üzerindeki etkisini tarihsel oluşum, bağlayıcılık ve fiilî uygulamalar bakımından birlikte incelemektir. Bu amaçla Osmânî mushafların yazımının nasıl ortak ölçü hâline geldiği, kırâatlerin rivâyetini hangi yönlerden mümkün kıldığı veya sınırladığı, gerçek ve ihtimalî uygunluğun ne ifade ettiği ve resm-i Osmânî’ye uygunluğun sahihlik ölçüleri arasında nasıl bir yer tuttuğu araştırılmaktadır. Ayrıca bu yazımla açıkça bağdaşmayan, nakil yaygınlığı sınırlı veya genel tilâvet kabulünün dışında değerlendirilen rivâyetlerin hangi ölçülerle ele alındığı ve şehir mushaflarına nispet edilen yazım farklılıklarının kırâat ihtilaflarının tespitinde nasıl kullanıldığı incelenmektedir. Resm verilerinin tercîh, tevcîh, vakıf ve edâ uygulamalarındaki kullanımı ile klasik resm geleneğinin çağdaş basılı mushaflara ve belirli kırâat rivâyetlerinin yaygınlaşmasına etkisi de araştırmanın diğer boyutlarını oluşturmaktadır.
+P22	FN=[]	RTL=0	BOOK=0	Araştırma soruları birbirine bağlıdır. Osmânî mushafların ortak başvuru metni hâline gelme süreci açıklanmadan resm-i Osmânî’ye uygunluğun kabul ölçüsü oluşu anlaşılamaz. Kırâatin rivâyet mantığı ortaya konulmadan da bu ölçünün sınırlandırıcı işlevi doğru biçimde değerlendirilemez. Şehir mushaflarına ait rivâyetler yalnız erken dönem yazı tarihine, çağdaş baskılar da yalnız matbaa tarihine ait veriler değildir. İlki sahih okuyuşların farklı yazılı biçimler içinde nasıl korunduğunu, ikincisi resm ve zapt tercihlerinin kırâatlerin dolaşımını nasıl etkileyebildiğini göstermektedir. Araştırma, tarihsel teşekkül ile sonraki ilmî kabul ve uygulamalar arasındaki bağı bu meseleler üzerinden incelemektedir.
+P23	FN=['3']	RTL=0	BOOK=0	Kitabın hareket noktası, resm-i Osmânî’nin kırâatleri meydana getiren bağımsız bir kaynak olmadığıdır. Çalışmada kırâatin aslî dayanağı, telakki ve müşâfehe yoluyla sürdürülen, edâ ve isnadla denetlenen rivâyet geleneği olarak kabul edilmektedir. Resm-i Osmânî ise bu sözlü aktarımın yerine geçen bağımsız bir kaynak değil, rivâyetle sabit okuyuşların müşterek mushaf yazısıyla ilişkisini gösteren tamamlayıcı bir ölçüdür. Mushaf hattı bu canlı aktarımın yerine geçmez; yazının bir okuyuşa teorik olarak imkân vermesi, o okuyuşun sahih kırâat olarak sabit olduğunu göstermez. Buna karşılık güvenilir biçimde nakledilen her okuyuş da ortak mushaf otoritesinden bağımsız olarak aynı konuma yerleştirilemez. Klasik kırâat usûlünde rivâyetin güvenilirliği, Arap dilinde bir veche sahip olması ve resm-i Osmânî’ye uygunluk, birbirine indirgenemeyen fakat birlikte işleyen ölçülerdir. Resm-i Osmânî’ye uygunluk, bu bütün içinde okuyuşu üreten değil, rivâyetle gelen okuyuşun ortak mushaf geleneğindeki kabul alanını belirleyen bir ölçüdür.
+P24	FN=[]	RTL=0	BOOK=0	Bu yaklaşım, çalışmada kullanılan kavramlar arasında bazı ayrımların korunmasını gerektirmektedir. Resm, en genel anlamıyla lafzın harflerle temsil edilen yazılı biçimini; resm-i mushaf, Kur’an kelimelerinin mushaflardaki yazım özelliklerini konu edinen alanı ifade eder. Resm-i Osmânî ise Hz. Osman döneminde çoğaltılan mushaflara nispet edilen ve sonraki resm literatüründe rivâyet yoluyla takip edilen yazım geleneğidir. Bu sebeple her mushaf yazısı resm-i Osmânî olmadığı gibi, resm-i mushaf ile resm-i Osmânî de bütün bağlamlarda birbirinin yerine kullanılamaz. Mushaf, Kur’an metninin yazılı olarak bir araya getirildiği nüshadır. İmam Mushaf ise Osmânî istinsah bağlamında örnek ve ortak başvuru niteliği atfedilen nüshayı belirtir. Şehir mushafları arasında nakledilen sınırlı yazım farklılıkları, müşterek mushaf otoritesi içinde farklı yazım rivâyetlerinin bulunabildiğini göstermektedir.
+FN2	 Ebû Bekir Abdullah b. Süleymân b. el-Eş‘as İbn Ebû Dâvud, Kitâbu’l-mesâhif, thk. Muhibbüddîn Abdüssübhân Vâiz (Beyrut: Dâru’l-Beşâiri’l-İslâmiyye, 2002), 1/19-20; Ebû Amr b. Osman Dânî, el-Mukni‘ fî ma‘rifeti mesâhif ehli’l-emsâr, thk. Nûra bint Hasan b. Fehd el-Humeyyed (Suudi Arabistan: Dâru’t-Tedmûriyye, 2010), 14.
+FN28	 Muhammed Abdülazîm Zürkânî, Menâhilu'l-'irfân fî 'ulûmi'l-Kur'ân, thk. Feyyâz Ahmed ez-Zemerli    (Beyrut: Dâru’l-Kütübi'l-'Arabi, 1995), 1/140.
+FN32	 İbn Sa’d, et-Tabakâtü’l-kübrâ, 3/355.
+FN41	 Mukaddimetân fî ulûmi’l-Kur’ân, thk. Arthur Jeffery (Mektebetü’l-Hâncî, 1954), 25.
+FN50	 Celâleddîn Abdurrahmân Suyûtî, Târîhu’l-hulefâ’, thk. Muhammed Ğassân Nasûh Azkûl el-Hüseynî (Katar: Vizâretü’l-Evkâf ve’ş-Şuûnü’l-İslâmiyye, 2013), 153.
+FN66	 Örneğin فَسْعَوإلَى ذِكْرِ اللَّهِ âyetinin (Cum’â 62/9), فَمْضُو إلَى ذِكْرِ اللَّهْ şeklinde, إنْ كَانَتْ إلاَّ صَيحَةً وَاحِدَةً âyetinin (Yâsîn 36/29) إنْ كَانَتْ إلَّازَيْفَةً وَاحِدَةً tarzında okunması gibi. Kur’ân’ı Kerim Meali (Ankara: Diyanet İşleri Başkanlığı, 2010).
+FN105	 Ebu’l-Abbâs Ahmed b. Muhammed b. Ebû Bekir Kastallânî, Letâifu’l-işârât li fünûni’l-kırâât, thk. Heyet (Medine: Merkezu’d-Dirâsâti’l-Kur’âniyye, 2013), 1/84.
+FN271	 İsrâ 17/11. 
+FN272	 Şûrâ 42/24.
+FN273	 Kamer 54/6.
+FN274	 Alak 96/18.
+FN292	 Zâriyât 51/47.
+FN342	 Bakara 2/113.
+FN344	 Mâide 5/38.
+FN345	 Mümtehine 60/8. 
+FN346	 Mümtehine 60/9.
+FN377	 Bakara 2/238.
+FN380	 Bakara 2/226.
+FN381	 Nûr 24/33.
+FN407	 Şuarâ’ 26/176.
+FN409	 Bakara 2/116.
+FN411	 Bakara 2/58.
+FN414	 Mutaffifîn 83/14.
+FN421	 Zuhruf 43/68.
+FN423	 Kehf 18/94. 
+FN424	 Bakara 2/251.
+FN425	 Bakara 2/247.
+FN426	 Kasas 28/86.
+FN427	 Kasas 28/6.
+FN428	 Bakara 2/102.
+FN431	 Mü’min 40/18.
