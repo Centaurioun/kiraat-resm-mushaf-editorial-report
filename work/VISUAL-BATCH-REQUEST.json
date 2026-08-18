@@ -1,6 +1,6 @@
 {
   "checkpoint": "FOURTH-VALIDATE-FINAL-QA",
-  "revision": 1,
+  "revision": 2,
   "docx": "artifacts/checkpoints/manuscript-working-fourth-validated.docx",
   "sha256": "c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95",
   "start": 500,
