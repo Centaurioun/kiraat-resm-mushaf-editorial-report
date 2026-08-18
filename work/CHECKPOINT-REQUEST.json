@@ -1,12 +1,12 @@
 {
-  "checkpoint": "F5-016",
+  "checkpoint": "F5-017",
   "revision": 1,
   "script": "work/checkpoint_fifth.py",
-  "last_f5": 16,
-  "next_f5": 17,
-  "candidate_sha256": "cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da",
+  "last_f5": 17,
+  "next_f5": 18,
+  "candidate_sha256": "554f4b806c66681e55fcba093764d25bca9e9926ea0f296e7f0b027391b45437",
   "technical_validation": "PASS",
-  "visual_qa_pages": 3,
+  "visual_qa_pages": 4,
   "visual_qa_result": "PASS",
-  "validation_marker": "## F5-016 checkpoint — APPLIED / PASS"
+  "validation_marker": "## F5-017 checkpoint — APPLIED / PASS"
 }
