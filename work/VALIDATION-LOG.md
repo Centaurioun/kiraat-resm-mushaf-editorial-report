@@ -474,3 +474,14 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Human visual QA P500–P507: workflow run 32082193276 / artifact 9305471951; 2/2 rasterized pages manually inspected and PASS; both retained Ebû Şâme records are visible and layout-stable.
 - A separate metadata discrepancy discovered during adjudication is carried into FOURTH_VALIDATE: the 1975 bibliography record currently says `2 Cilt`, while independent catalogue records describe the Altıkulaç 1975 edition as one volume. This was not silently expanded into F4-116.
 - Fourth Report application boundary: F4-001–F4-116 complete. Next phase: FOURTH_VALIDATE; Fifth Report application remains blocked until validation passes.
+
+
+## FOURTH_VALIDATE — PASS
+- Durable Fourth input before global validation: `manuscript-working-f4-116.docx`, SHA `73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf`, body 674.
+- Read-only global gate `work/runtime/FOURTH-VALIDATE-READONLY.txt`: 210 ledger rows; F4 items 116 complete; all 94 F5 items still PENDING; 469/469 footnotes/references; 520 fields; ADDIN 466; Zotero ITEM 465 + bibliography 1; bookmarks 53/53; hyperlinks 52; fatal errors 0. Exactly one residual defect was identified: FV-001 at P504, where the Ebû Şâme 1975 / Tayyar Altıkulaç bibliography record incorrectly stated `2 Cilt`.
+- Independent catalogue evidence consistently identifies the 1975 Dâr Sadr / Tayyar Altıkulaç edition as a single-volume publication. FV-001 was remediated conservatively by removing only the visible result-text token ` 2 Cilt.`; F4-116's evidence-backed decision to retain both the 1975 and 1993 Ebû Şâme editions remains unchanged.
+- Remediation replay `work/apply_fourth_validate_fv001.py`: first replay changes P504 only; second replay `ALREADY_SATISFIED`; byte-identical idempotency PASS. Final candidate SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`; body remains 674.
+- Final global validator `work/runtime/FOURTH-VALIDATE-FINAL.txt`: PASS; fatal 0; residual defects 0; all F4/F5 ledger and OOXML invariants PASS.
+- Final technical gate `work/runtime/FOURTH-VALIDATE-FINAL-TECHNICAL.txt`: PASS on the final SHA.
+- Final human visual QA P500–P507: workflow run 32082945226 / artifact 9305697542; 2/2 rasterized pages manually inspected and PASS. The corrected 1975 record and retained 1993 record render naturally with no bibliography layout regression.
+- FOURTH_VALIDATE overall PASS. Fifth Report application is now authorized from the final validated Fourth binary; next item F5-001.

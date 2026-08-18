@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `a63775e557a9ee98e1f85f8553e9df30239f40b1` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `848b646b1ce49d4fe69cbf2ec7f7928d8deda941` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -11,17 +11,17 @@
 - Fifth Report: `final/fifth-report-locked.md` — 94 items
 
 ## State machine
-- Current phase: `FOURTH_VALIDATE`
+- Current phase: `FIFTH_APPLY`
 - Last fully completed Fourth Report item: `F4-116`
 - Next Fourth Report item: none — Fourth Report application complete
 - Last fully completed Fifth Report item: none
-- Next Fifth Report item: `F5-001` (do not start until Fourth Report validation passes)
+- Next Fifth Report item: `F5-001` — ready to begin from the validated Fourth Report binary
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f4-116.docx`
-- Current working DOCX SHA-256: `73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf`
-- Last known good commit basis: `a63775e557a9ee98e1f85f8553e9df30239f40b1`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f4-116.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-fourth-validated.docx`
+- Current working DOCX SHA-256: `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`
+- Last known good commit basis: `848b646b1ce49d4fe69cbf2ec7f7928d8deda941`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-fourth-validated.docx`
 - Current body paragraph count: 674
 
 ## Integrity
@@ -31,21 +31,21 @@
 - Zotero: 465 item + 1 bibliography preserved
 - Bookmarks: 53/53; hyperlinks: 52
 - Arabic/RTL structural inventory: canonical-equal
-- Protected OOXML parts: baseline-identical except explicitly authorized footnote-text changes inherited from F4-112/F4-113; F4-114/F4-115 modify only bibliography result content/paragraphs in `word/document.xml`; F4-116 is byte-identical to F4-115
+- Protected OOXML parts: baseline-identical except explicitly authorized footnote-text changes from F4-112/F4-113; accepted Fourth bibliography/body result-text edits remain in `word/document.xml`; FOURTH_VALIDATE remediation changes only P504 visible bibliography result text and preserves field instructions/relationships
 
 ## Structural-edit state
-- F4-001–116 are now item-level complete; F4-116 is VERIFIED_NO_CHANGE rather than a manuscript edit.
-- F4-116 preserves both Ebû Şâme `el-Murşidu’l-vecîz` bibliography records because current evidence proves real use of both the 1975 Altıkulaç and 1993 Tabatabâî editions.
-- F4-116 candidate is byte-identical to F4-115; current body paragraph count remains 674.
-- All 469 footnote identities/references, 520 fields, Zotero/ADDIN fields, bookmarks, hyperlinks and RTL structural inventory remain preserved.
-- FOURTH_VALIDATE follow-up: adjudicate/correct the 1975 Ebû Şâme bibliography metadata `2 Cilt` discrepancy if confirmed; do not treat it as already resolved by F4-116.
+- F4-001–116 are item-level complete and globally validated.
+- FOURTH_VALIDATE resolved one residual bibliography metadata defect: the Ebû Şâme 1975 / Tayyar Altıkulaç record no longer incorrectly states `2 Cilt`; both 1975 and 1993 records remain because both are genuinely used.
+- Final validated Fourth binary: `artifacts/checkpoints/manuscript-working-fourth-validated.docx`, SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`, body paragraphs 674.
+- All 469 footnote identities/references, 520 field instructions, ADDIN/Zotero field inventory, 53/53 bookmarks, 52 hyperlinks and canonical-equal RTL inventory remain preserved.
+- All 94 Fifth Report ledger items remain PENDING at the phase transition; F5-001 is the next exact item.
 
 ## Holds / validation
 - Open HOLD items: none.
-- Last item-level validation result: **PASS**.
+- Fourth Report global validation: **PASS** (`work/runtime/FOURTH-VALIDATE-FINAL.txt`).
 - Deterministic replay/idempotency: PASS.
-- Technical validation: PASS (`work/runtime/F4-116-TECHNICAL-VALIDATION.txt`).
-- Bounded visual QA: PASS, 2/2 pages inspected (`work/F4-116-VISUAL-QA.md`).
+- Technical validation: PASS (`work/runtime/FOURTH-VALIDATE-FINAL-TECHNICAL.txt`).
+- Human visual QA: PASS, 2/2 pages inspected (`work/FOURTH-VALIDATE-VISUAL-QA.md`).
 
 ## Exact next action
-Enter FOURTH_VALIDATE on the durable F4-116 binary. First run a comprehensive read-only structural and ledger validation across all F4-001–116, verify no Fourth Report item remains PENDING/HOLD, and inspect residual bibliography/report inconsistencies. Explicitly re-check the Ebû Şâme 1975 record's `2 Cilt` metadata against authoritative edition evidence and correct it only if the discrepancy is confirmed within validation scope. Do not start F5-001 until FOURTH_VALIDATE passes and any validation defects are resolved.
+Begin FIFTH_APPLY from the final validated Fourth binary. Fetch the exact F5-001 item from `final/fifth-report-locked.md`, resolve it against `artifacts/checkpoints/manuscript-working-fourth-validated.docx`, run a read-only preflight, and apply only F5-001 if unambiguous. Do not repeat F4-001–116 and do not pre-apply F5-002+.
