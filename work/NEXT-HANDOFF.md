@@ -2,47 +2,49 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `62d18f4ca98a991f3298505e979b231d4ea74c49` plus this metadata checkpoint commit
-- Current phase: `FIFTH_APPLY`
+- Current phase: `FINALIZATION`
 
 ## Resume boundary
-- Last completed Fourth item: `F4-116`
-- Last completed Fifth item: `F5-094`
-- Next Fifth item: none — Fifth Report item application complete
-- DO-NOT-REPEAT Fourth: `F4-001`–`F4-116`
-- DO-NOT-REPEAT Fifth: `F5-001`–`F5-094`
+- Fourth Report: F4-001–F4-116 complete — DO NOT REPEAT.
+- Fifth Report: F5-001–F5-094 complete — DO NOT REPEAT.
+- Finalization item 1, Word field refresh: **COMPLETED / PASS**.
+- Next task: finalization item 2, full-document acceptance/layout QA.
 
-## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-094.docx`
-- Current working SHA-256: `81f97403c0cfcf151260ab7018077145ba260c4fe4f30ca5fe2d3b501d093571`
-- Last known good DOCX: same path above
+## Accepted editorial baseline
+- `artifacts/checkpoints/manuscript-working-f5-094.docx`
+- SHA-256: `81f97403c0cfcf151260ab7018077145ba260c4fe4f30ca5fe2d3b501d093571`
 
-## Integrity snapshot
-- Footnotes/references: 469/469; orphans/dangling/duplicates: 0/0/0
-- Word fields: 520; ADDIN: 466; Zotero: 465 item + 1 bibliography
-- Bookmarks: 53/53; hyperlinks: 52; RTL inventory canonical-equal
-- Protected OOXML: F5-086–094 global cleanup changes only word/document.xml body text under quote-aware rules; 469 genuine footnote references, field/Zotero instructions, bookmarks, hyperlinks, non-document OOXML parts and Arabic/RTL structural inventory remain preserved; direct source quotations including audited negative quotations at P298/P302 are protected
-- Latest Fifth visual status: PASS
+## Current finalization candidate
+- `artifacts/finalization/manuscript-field-refreshed.docx`
+- SHA-256: `a5ee8d96fe870086a54da1b6feb95749e443907b97f8e8bfa5b16cae199814c5`
+- Body paragraphs: 674; accepted narrative/body text preserved.
+- Footnote references: 469/469; orphan/dangling/duplicate 0/0/0.
+- Zotero/ADDIN: 466 preserved.
+- TOC: 1; PAGEREF: 46; PAGE: 1.
+- Bookmarks: 53/53.
+- TOC hyperlinks: 46; six obsolete generated TOC entries were intentionally removed.
+- Word field recalculation on open: `w:updateFields=true`.
+- Only `word/document.xml` and `word/settings.xml` differ as part of the field-refresh operation.
 
-## Latest state
-- Fourth Report F4-001–116 and Fifth Report F5-001–094 are fully completed and accepted.
-- F5-086–094 global cleanup reduced formulaic author framing while preserving the oral-transmission-first scientific framework, source-limited epistemic language, and scientifically necessary distinctions.
-- Direct source quotations are protected; the audited negative quotations at P298 and P302 remain text-identical.
-- Current DOCX SHA `81f97403c0cfcf151260ab7018077145ba260c4fe4f30ca5fe2d3b501d093571`; body 674; deterministic replay, final global audit, package integrity, and 120/120 human visual QA PASS.
-- No Fifth Report item remains pending.
+## Field-refresh evidence
+- Plan/scope: `work/FIELD-REFRESH-PLAN.md`, `work/FIELD-REFRESH-SCOPE.md`
+- Deterministic runner: `work/finalize_refresh_fields.py`
+- Validator: `work/validate_field_refresh.py`
+- Replay: `work/runtime/FINAL-FIELD-REFRESH-REPLAY.txt`
+- SHA: `work/runtime/FINAL-FIELD-REFRESH-SHA256.txt`
+- Structural validation: `work/runtime/FINAL-FIELD-REFRESH-VALIDATION.txt`
+- Postflight: `work/runtime/FINAL-FIELD-REFRESH-POSTFLIGHT.txt`
+- Application workflow: run `32188919967`
+- Focused QA export: run `32189159596`, artifact `9343561312`
+- Focused visual QA: `work/FINAL-FIELD-REFRESH-VISUAL-QA.md` — 6/6 pages PASS
+- Independent in-memory TOC/page cross-check: `work/runtime/FINAL-FIELD-REFRESH-LO-CROSSCHECK.txt` — 46/46 PASS
+- Field-refresh status: `work/FIELD-REFRESH-STATUS.md`
 
-## Evidence
-- Global runner: `work/apply_f5_086_094.py`
-- Replay: `work/runtime/F5-094-REPLAY.txt`
-- SHA: `work/runtime/F5-094-SHA256.txt`
-- Postflight: `work/runtime/F5-094-POSTFLIGHT.txt`
-- Accepted global application batch: run 32152482940
-- Final global audit: `work/runtime/F5-094-GLOBAL-AUDIT-REPLAY.txt` — run 32152750341
-- Global adjudication: `work/F5-086-094-GLOBAL-ADJUDICATION.md`
-- Final visual QA: `work/F5-094-VISUAL-QA.md` — SHA-locked export run 32153308279 / artifact 9330624295; 120/120 pages manually inspected PASS
+## Important engine note
+A full LibreOffice DOCX save was tested and rejected because it rewrote protected OOXML structure. LibreOffice was used only in memory to independently recompute the content index/page cache. The accepted candidate is the surgical OOXML refresh. Microsoft Word is not available in this runtime; `w:updateFields=true` instructs Word to recalculate fields when the candidate is opened there.
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Fifth Report item application is complete. Preserve the durable F5-094 binary for subsequent final manuscript acceptance/field-refresh/publishing checks; do not reopen Fifth items without a new adjudicated issue.
+On the user's next `devam et`, execute **only finalization item 2**: render and inspect the complete `manuscript-field-refreshed.docx` candidate for final acceptance/layout QA. Record all pages inspected and any layout/format defects. Do not start item 3 (editorial/red-mark cleanup) or item 4 (publishing-file freeze) yet.
