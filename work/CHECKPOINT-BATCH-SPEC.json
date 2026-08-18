@@ -1,41 +1,42 @@
 {
-  "last_f5": 15,
-  "next_f5": 16,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-015.docx",
-  "sha256": "c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19",
+  "last_f5": 16,
+  "next_f5": 17,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-016.docx",
+  "sha256": "cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F5-015-REPLAY.txt",
-  "visual_required": false,
-  "visual_pages": 0,
+  "technical_file": "work/runtime/F5-016-REPLAY.txt",
+  "visual_required": true,
+  "visual_pages": 3,
   "holds": "none",
-  "protected_parts_status": "F5-015 is a Fourth-precedence VERIFIED_NO_CHANGE item; manuscript-working-f5-015.docx is byte-identical to durable F5-014, so the complete OOXML package including RTL structures remains unchanged",
-  "validation_marker": "## F5-015 checkpoint — VERIFIED_NO_CHANGE / PASS",
-  "validation_block": "- Locked F5-015 targeted the 1.1 negative mini-conclusion beginning `Bütün bu veriler bir arada değerlendirildiğinde İslâm öncesi Arap toplumunda yazının hiç bilinmediğini söylemek mümkün değildir.` and proposed a new three-sentence positive formulation.\n- Fourth Report F4-011 had already adjudicated the same 1.1 closing as a duplicate-conclusion problem and required one consolidated synthesis.\n- Fail-closed inspection of durable F5-014 resolved that accepted F4-011 synthesis uniquely at P49. The locked Fifth negative target is absent and the Fifth proposal is not pre-applied.\n- P49 retains the more specific Fourth formulation: writing was not wholly unknown but had not become a society-wide regular system; written use existed in administrative, commercial and cultural circles while oral transmission retained weight; revelation then gave writing a more regular recording function.\n- Replacing P49 with the Fifth proposal would weaken the Fourth-approved scientific distinctions, so F5-015 is `VERIFIED_NO_CHANGE`.\n- Deterministic replay: first and second replay both `VERIFIED_NO_CHANGE / F4_011_SYNTHESIS_ALREADY_RESOLVES_TARGET / P49`; complete package byte identity PASS (`work/runtime/F5-015-REPLAY.txt`).\n- Candidate `artifacts/checkpoints/manuscript-working-f5-015.docx` SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`, exactly equal to durable F5-014; body 674 and structural/package invariants PASS.\n- Human visual QA is not required because no manuscript bytes changed.\n- Durable boundary after checkpoint: last F5-015; next F5-016.",
+  "protected_parts_status": "F5-016 changes only word/document.xml body paragraph P45 text; FN14 identity/order, the P45 caution sentence, all other body paragraphs, fields, Zotero instructions, bookmarks, hyperlinks and RTL structural inventory remain preserved",
+  "validation_marker": "## F5-016 checkpoint — APPLIED / PASS",
+  "validation_block": "- Locked F5-016 targeted the repeated `Nitekim` example opening in 1.1: `Tarihe dair eserlerde İslâm öncesi Mekke'de yazının kullanıldığına dair başka örneklere de rastlanmaktadır. Nitekim Hz. Peygamber'in dedelerinden Kusay b. Kilâb'ın (ö. 480) Mekke'nin yönetimiyle ilgili Huzâa ile Beni Bekr arasındaki mücadelede kendisine destek çıkması amacıyla anne bir kardeşi Razâh b. Rebîa'ya bir mektup yazıp gönderdiği rivâyet edilmektedir.`\n- Current durable F5-015 resolved that target uniquely at P45. No accepted Fourth item had rewritten this opening; F4-011 concerns the later P49 synthesis.\n- Only the first two P45 sentences were replaced with the Fifth positive form, normalized to manuscript typography: `Tarih kaynaklarında İslâm öncesi Mekke’de yazının kullanımına ilişkin başka örnekler de aktarılır. Kusay b. Kilâb’ın Razâh b. Rebîa’ya bir mektup gönderdiğine dair rivâyet bunlardan biridir.`\n- The following caution sentence `Bu rivâyet doğru kabul edildiğinde yazının miladi altıncı yüzyılın başlarında bilindiği söylenebilir.` remains unchanged. Genuine footnote reference 14 remains attached to P45 with identity/order preserved.\n- Deterministic replay: first replay `APPLIED P45`; second replay `ALREADY_SATISFIED P45`; byte-idempotency PASS (`work/runtime/F5-016-REPLAY.txt`). Only P45 changed in document.xml; package/integrity invariants PASS.\n- Candidate `artifacts/checkpoints/manuscript-working-f5-016.docx` SHA `cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da`; body 674.\n- SHA-locked bounded QA export run 32123704569 / artifact 9319511593 covered P43–P47. The exported slice rendered to 3 pages with `/home/oai/skills/docx/render_docx.py`; all 3/3 pages were manually inspected and PASS (`work/F5-016-VISUAL-QA.md`).\n- No clipping, overlap, abnormal whitespace, paragraph-style leakage, footnote overflow, missing text, or edit-induced pagination defect was observed.\n- Durable boundary after checkpoint: last F5-016; next F5-017.",
   "structural_state": [
     "Fourth Report and prior Fifth items remain accepted.",
-    "F5-015 is VERIFIED_NO_CHANGE: accepted F4-011 already consolidates the 1.1 closing at P49; the locked Fifth negative target is absent and the scientifically richer Fourth synthesis remains intact.",
-    "Current DOCX is byte-identical to F5-014; SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`; body 674.",
-    "F5-016 remains PENDING; no F5-016+ text has been applied."
+    "F5-016 is APPLIED: only P45 first two sentences were simplified to remove repetitive `Nitekim` rhythm while retaining the event as a rivâyet.",
+    "P45 caution sentence and genuine FN14 remain preserved; no other body paragraph changed.",
+    "Current DOCX SHA `cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da`; body 674; technical and 3/3 human visual QA PASS.",
+    "F5-017 remains PENDING; no F5-017+ text has been applied."
   ],
   "evidence": [
-    "Adjudication: `work/F5-015-ADJUDICATION.md`",
-    "No-op verifier: `work/apply_f5_015.py`",
-    "Replay: `work/runtime/F5-015-REPLAY.txt`",
-    "SHA: `work/runtime/F5-015-SHA256.txt`",
-    "Postflight: `work/runtime/F5-015-POSTFLIGHT.txt`",
-    "Accepted no-op batch: run 32122505891",
-    "Visual QA: not required — candidate is byte-identical to already validated F5-014 binary"
+    "Adjudication: `work/F5-016-ADJUDICATION.md`",
+    "Deterministic runner: `work/apply_f5_016.py`",
+    "Replay: `work/runtime/F5-016-REPLAY.txt`",
+    "SHA: `work/runtime/F5-016-SHA256.txt`",
+    "Postflight: `work/runtime/F5-016-POSTFLIGHT.txt`",
+    "Accepted application batch: run 32123602991",
+    "Visual QA: `work/F5-016-VISUAL-QA.md` — SHA-locked export run 32123704569 / artifact 9319511593; 3/3 pages manually inspected PASS"
   ],
-  "next_action": "Fetch and apply only F5-016 against the durable F5-015 binary. Preserve Fourth scientific meaning and do not pre-apply F5-017+.",
+  "next_action": "Fetch and apply only F5-017 against the durable F5-016 binary. Preserve Fourth scientific meaning and do not pre-apply F5-018+.",
   "updates": {
-    "F5-015": {
-      "status": "VERIFIED_NO_CHANGE",
-      "section": "1.1 — yazının kullanımına ilişkin tek Fourth sentezinin korunması",
-      "action_type": "FOURTH_PRECEDENCE_RESOLVED_NOOP",
-      "resolved_location": "word/document.xml P49; accepted F4-011 synthesis present; locked F5-015 target absent",
-      "affected_body_paragraphs": [],
-      "verification": "F4_011_SYNTHESIS_UNIQUE_P49 + F5_015_NEGATIVE_TARGET_ABSENT + FIFTH_PROPOSAL_NOT_PREAPPLIED + BYTE_IDENTICAL_REPLAY_PASS",
-      "notes": "No manuscript bytes changed. F4-011 already replaced the duplicate 1.1 conclusions with a scientifically richer single synthesis; F5-016+ remains untouched."
+    "F5-016": {
+      "status": "APPLIED",
+      "section": "1.1 — `Nitekim` ile örnek açma alışkanlığının giderilmesi",
+      "action_type": "TARGETED_POSITIVE_EXAMPLE_OPENING_REWRITE",
+      "resolved_location": "word/document.xml P45",
+      "affected_body_paragraphs": [45],
+      "verification": "P45_ONLY_CHANGE + FN14_PRESERVED + CAUTION_SENTENCE_PRESERVED + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
+      "notes": "Only the first two P45 sentences were rewritten to the locked Fifth form. The following historicity caution remains unchanged; F5-017+ remains untouched."
     }
   }
 }
