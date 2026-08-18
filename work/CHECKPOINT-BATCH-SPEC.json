@@ -1,44 +1,44 @@
 {
-  "last_f5": 17,
-  "next_f5": 18,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-017.docx",
-  "sha256": "554f4b806c66681e55fcba093764d25bca9e9926ea0f296e7f0b027391b45437",
+  "last_f5": 18,
+  "next_f5": 19,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-018.docx",
+  "sha256": "ffd4c4e8fabd7bd157cd21251f18da065e5466ecce357b63efe80361a18e4543",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F5-017-REPLAY.txt",
+  "technical_file": "work/runtime/F5-018-REPLAY.txt",
   "visual_required": true,
-  "visual_pages": 4,
-  "visual_file": "work/F5-017-VISUAL-QA.md",
+  "visual_pages": 3,
+  "visual_file": "work/F5-018-VISUAL-QA.md",
   "holds": "none",
-  "protected_parts_status": "F5-017 changes only word/document.xml body paragraph P53 text; FN24/FN25/FN26 identity and order, the Fourth-approved caution/derivation continuation from `Ancak Hz. Peygamber hayatta iken...`, all other body paragraphs, fields, Zotero instructions, bookmarks, hyperlinks and RTL structural inventory remain preserved",
-  "validation_marker": "## F5-017 checkpoint — APPLIED / PASS",
-  "validation_block": "- Locked F5-017 targeted the three-stage repetition in 1.2: the Medine practice was first summarized as `çok daha sistemli ve titiz`, then reintroduced with `Nitekim`, then concluded a second time as a regular practice.\n- Current durable F5-016 resolved the target uniquely at P53. P53 carried genuine footnote references 24, 25 and 26 in that order.\n- Fourth Report constraints were preserved: F4-012 had already shortened the general 1.2 opening, while F4-016 deliberately limited the Medine conclusion to what the rivâyet material reports. F5-017 therefore retained source-limited wording rather than asserting an independently verified historical fact.\n- Only P53 was changed. Its opening is now: `Medine dönemine ilişkin rivâyetlerde Hz. Peygamber’in vahiy geldiğinde kâtiplerden birini çağırdığı ve âyetleri yazdırdığı aktarılır. Zeyd b. Sâbit’in (ö. 45/665), “Allah Rasûlü’ne vahiy geldiğinde derhâl beni çağırır, ben de onu yazıya geçirirdim.” şeklindeki ifadesi bu uygulamanın örneklerinden biridir. Rivâyetlerde Medine dönemindeki vahiy kaydı düzenli bir uygulama olarak yer alır.`\n- Zeyd b. Sâbit's existing death date was retained; FN24 remains after the first Medine-report sentence and FN25 remains after the Zeyd quotation. FN26 and every sentence from `Ancak Hz. Peygamber hayatta iken...` onward remain intact.\n- P54, including the locked F5-018 target `özellikle vurgulamamız gerekmektedir`, remains untouched; no F5-018+ text was pre-applied.\n- Deterministic replay: first replay `APPLIED P53`; second replay `ALREADY_SATISFIED P53`; byte-idempotency PASS (`work/runtime/F5-017-REPLAY.txt`). Only P53 changed in document.xml; package/integrity invariants PASS.\n- Candidate `artifacts/checkpoints/manuscript-working-f5-017.docx` SHA `554f4b806c66681e55fcba093764d25bca9e9926ea0f296e7f0b027391b45437`; body 674.\n- SHA-locked bounded QA export run 32132335848 / artifact 9322647363 covered P51–P55. The exported slice rendered to 4 pages with `/home/oai/skills/docx/render_docx.py`; all 4/4 pages were manually inspected and PASS (`work/F5-017-VISUAL-QA.md`).\n- P53 footnote placement, quotation spacing, and `yer alır. Ancak...` transition rendered cleanly. The slice's preserved TOC page and trailing footnote-only page are bounded-export derivatives, not edit-induced candidate defects.\n- Durable boundary after checkpoint: last F5-017; next F5-018.",
+  "protected_parts_status": "F5-018 changes only word/document.xml body paragraph P54 text; genuine FN27 identity/order and paragraph-end placement, accepted neighboring P53/P55 text, all other body paragraphs, fields, Zotero instructions, bookmarks, hyperlinks and RTL structural inventory remain preserved",
+  "validation_marker": "## F5-018 checkpoint — APPLIED / PASS",
+  "validation_block": "- Locked F5-018 targeted the 1.2 meta-discourse and negative contrast beginning `Yazılı vahiy metinlerinin Hz. Peygamber döneminde bir araya getirilmemiş olmasının... özellikle vurgulamamız gerekmektedir.`\n- Current durable F5-017 resolved that target uniquely at P54. P54 carried genuine FN27 at the paragraph end; FN27 cites Zerkeşî, `el-Burhân`, 2/238.\n- No accepted Fourth item had already removed the F5-018 meta-discourse. Fourth 1.2 constraints were preserved by keeping source-limited wording and leaving accepted P53/P55 architecture untouched.\n- Only P54 was rewritten, using the Fifth positive two-sentence structure with an explicit attribution chain: `Hz. Peygamber döneminde vahiy metinleri farklı malzemeler üzerinde yazılı olarak bulunuyor, ancak iki kapak arasında tek bir derleme hâlinde toplanmış değildi. Zerkeşî’nin Hâris el-Muhâsibî’den aktardığı değerlendirmede de Kur’an’ın nüzûl döneminde yazıya geçirildiği ve kayıtların farklı malzemeler üzerinde dağınık biçimde bulunduğu belirtilir.`\n- FN27 remains at P54 paragraph end. P53 and P55 are byte-unchanged. The F5-019 anchor at P58 remains untouched; no F5-019+ text was pre-applied.\n- Deterministic replay: first replay `APPLIED P54`; second replay `ALREADY_SATISFIED P54`; byte-idempotency PASS (`work/runtime/F5-018-REPLAY.txt`). Only P54 changed in document.xml; package/integrity invariants PASS.\n- Candidate `artifacts/checkpoints/manuscript-working-f5-018.docx` SHA `ffd4c4e8fabd7bd157cd21251f18da065e5466ecce357b63efe80361a18e4543`; body 674.\n- SHA-locked bounded QA export run 32145711242 / artifact 9327677225 covered P52–P56. The slice rendered to 3 pages with `/home/oai/skills/docx/render_docx.py`; all 3/3 pages were manually inspected and PASS (`work/F5-018-VISUAL-QA.md`).\n- P54 paragraph spacing, note-marker placement and neighboring transition rendered cleanly; no clipping, overlap, style leakage or edit-induced pagination defect was observed.\n- Durable boundary after checkpoint: last F5-018; next F5-019.",
   "structural_state": [
     "Fourth Report and prior Fifth items remain accepted.",
-    "F5-017 is APPLIED: the repeated five-sentence Medine evidence sequence at P53 was consolidated to three source-limited sentences while retaining the Zeyd quotation and Fourth scientific caution.",
-    "FN24/FN25/FN26 remain in order; the P53 `Ancak...` continuation is intact; no body paragraph other than P53 changed.",
-    "Current DOCX SHA `554f4b806c66681e55fcba093764d25bca9e9926ea0f296e7f0b027391b45437`; body 674; technical and 4/4 human visual QA PASS.",
-    "F5-018 remains PENDING at P54; no F5-018+ text has been applied."
+    "F5-018 is APPLIED: P54 meta-discourse and negative contrast were replaced by a positive two-sentence formulation with explicit Zerkeşî→Muhâsibî attribution chain.",
+    "Genuine FN27 remains at P54 paragraph end; P53/P55 and the pending F5-019 anchor remain untouched.",
+    "Current DOCX SHA `ffd4c4e8fabd7bd157cd21251f18da065e5466ecce357b63efe80361a18e4543`; body 674; technical and 3/3 human visual QA PASS.",
+    "F5-019 remains PENDING; no F5-019+ text has been applied."
   ],
   "evidence": [
-    "Adjudication: `work/F5-017-ADJUDICATION.md`",
-    "Current-state diagnostic: `work/runtime/F5-017-INSPECT.txt`",
-    "Deterministic runner: `work/apply_f5_017.py`",
-    "Replay: `work/runtime/F5-017-REPLAY.txt`",
-    "SHA: `work/runtime/F5-017-SHA256.txt`",
-    "Postflight: `work/runtime/F5-017-POSTFLIGHT.txt`",
-    "Accepted application batch: run 32132187746",
-    "Visual QA: `work/F5-017-VISUAL-QA.md` — SHA-locked export run 32132335848 / artifact 9322647363; 4/4 pages manually inspected PASS"
+    "Adjudication: `work/F5-018-ADJUDICATION.md`",
+    "Current-state diagnostic: `work/runtime/F5-018-INSPECT.txt`",
+    "Deterministic runner: `work/apply_f5_018.py`",
+    "Replay: `work/runtime/F5-018-REPLAY.txt`",
+    "SHA: `work/runtime/F5-018-SHA256.txt`",
+    "Postflight: `work/runtime/F5-018-POSTFLIGHT.txt`",
+    "Accepted application batch: run 32145561012",
+    "Visual QA: `work/F5-018-VISUAL-QA.md` — SHA-locked export run 32145711242 / artifact 9327677225; 3/3 pages manually inspected PASS"
   ],
-  "next_action": "Fetch and apply only F5-018 against the durable F5-017 binary. Preserve Fourth scientific meaning and do not pre-apply F5-019+.",
+  "next_action": "Fetch and apply only F5-019 against the durable F5-018 binary. Preserve Fourth scientific meaning and do not pre-apply F5-020+.",
   "updates": {
-    "F5-017": {
+    "F5-018": {
       "status": "APPLIED",
-      "section": "1.2 — vahyin yazımıyla ilgili üç aşamalı tekrarın konsolidasyonu",
-      "action_type": "TARGETED_THREE_STAGE_REPETITION_CONSOLIDATION",
-      "resolved_location": "word/document.xml P53",
-      "affected_body_paragraphs": [53],
-      "verification": "P53_ONLY_CHANGE + FN24_FN25_FN26_PRESERVED + FOURTH_CAUTION_PRESERVED + F5_018_TARGET_UNTOUCHED + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 4/4_HUMAN_VISUAL_PASS",
-      "notes": "Consolidated only the repeated Medine evidence sequence. Retained Zeyd b. Sâbit's death date, source-limited epistemic framing, all three genuine footnotes and the later Fourth-approved explanation. F5-018+ remains untouched."
+      "section": "1.2 — `özellikle vurgulamamız gerekmektedir` meta-anlatımının giderilmesi",
+      "action_type": "TARGETED_POSITIVE_META_DISCOURSE_REWRITE",
+      "resolved_location": "word/document.xml P54",
+      "affected_body_paragraphs": [54],
+      "verification": "P54_ONLY_CHANGE + FN27_PRESERVED + SOURCE_CHAIN_EXPLICIT + P53_P55_PRESERVED + F5_019_TARGET_UNTOUCHED + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
+      "notes": "Replaced only P54 with the positive two-sentence formulation, making Zerkeşî's transmission of Muhâsibî explicit. F5-019+ remains untouched."
     }
   }
 }
