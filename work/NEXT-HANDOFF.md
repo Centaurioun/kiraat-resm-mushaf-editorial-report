@@ -8,7 +8,8 @@
 - Fourth Report: F4-001–F4-116 complete — DO NOT REPEAT.
 - Fifth Report: F5-001–F5-094 complete — DO NOT REPEAT.
 - Finalization item 1, Word field refresh: **COMPLETED / PASS**.
-- Next task: finalization item 2, full-document acceptance/layout QA.
+- Finalization item 2, full-document acceptance/layout QA: **COMPLETED / PASS**.
+- Next task: finalization item 3, editorial/red-mark cleanup.
 
 ## Accepted editorial baseline
 - `artifacts/checkpoints/manuscript-working-f5-094.docx`
@@ -17,34 +18,30 @@
 ## Current finalization candidate
 - `artifacts/finalization/manuscript-field-refreshed.docx`
 - SHA-256: `a5ee8d96fe870086a54da1b6feb95749e443907b97f8e8bfa5b16cae199814c5`
+- Candidate bytes did not change during item 2.
 - Body paragraphs: 674; accepted narrative/body text preserved.
 - Footnote references: 469/469; orphan/dangling/duplicate 0/0/0.
 - Zotero/ADDIN: 466 preserved.
 - TOC: 1; PAGEREF: 46; PAGE: 1.
 - Bookmarks: 53/53.
-- TOC hyperlinks: 46; six obsolete generated TOC entries were intentionally removed.
+- TOC hyperlinks: 46.
 - Word field recalculation on open: `w:updateFields=true`.
-- Only `word/document.xml` and `word/settings.xml` differ as part of the field-refresh operation.
 
-## Field-refresh evidence
-- Plan/scope: `work/FIELD-REFRESH-PLAN.md`, `work/FIELD-REFRESH-SCOPE.md`
-- Deterministic runner: `work/finalize_refresh_fields.py`
-- Validator: `work/validate_field_refresh.py`
-- Replay: `work/runtime/FINAL-FIELD-REFRESH-REPLAY.txt`
-- SHA: `work/runtime/FINAL-FIELD-REFRESH-SHA256.txt`
-- Structural validation: `work/runtime/FINAL-FIELD-REFRESH-VALIDATION.txt`
-- Postflight: `work/runtime/FINAL-FIELD-REFRESH-POSTFLIGHT.txt`
-- Application workflow: run `32188919967`
-- Focused QA export: run `32189159596`, artifact `9343561312`
-- Focused visual QA: `work/FINAL-FIELD-REFRESH-VISUAL-QA.md` — 6/6 pages PASS
-- Independent in-memory TOC/page cross-check: `work/runtime/FINAL-FIELD-REFRESH-LO-CROSSCHECK.txt` — 46/46 PASS
-- Field-refresh status: `work/FIELD-REFRESH-STATUS.md`
+## Item 2 evidence
+- Full SHA-locked QA export: run `32189159596`, artifact `9343561312`, P0–P673.
+- Complete rendered manuscript: 112 pages.
+- Human visual inspection: **112/112 PASS**.
+- Visual acceptance report: `work/FINALIZATION-ITEM2-ACCEPTANCE-QA.md`.
+- Render receipt: `work/runtime/FINALIZATION-ITEM2-RENDER.txt`.
+- No clipping, overlap, missing text/glyphs, footnote overflow, heading/page-number damage, Arabic/RTL rendering defect, unexpected blank page, destructive pagination defect, or TOC-layout break found.
+- The relatively sparse final Conclusion page is intentional content flow rather than a pagination defect.
+- Pre-existing red-font editorial markings remain on multiple narrative pages; they are the designated scope of item 3 and were not altered during layout QA.
 
-## Important engine note
-A full LibreOffice DOCX save was tested and rejected because it rewrote protected OOXML structure. LibreOffice was used only in memory to independently recompute the content index/page cache. The accepted candidate is the surgical OOXML refresh. Microsoft Word is not available in this runtime; `w:updateFields=true` instructs Word to recalculate fields when the candidate is opened there.
+## Engine note
+Microsoft Word is not available in this runtime. The accepted field-refreshed candidate remains the surgical OOXML version; LibreOffice is used for rendering/QA only. `w:updateFields=true` instructs Word to recalculate derived fields when opened in Word.
 
 ## Open HOLDs
 none
 
 ## Exact next action
-On the user's next `devam et`, execute **only finalization item 2**: render and inspect the complete `manuscript-field-refreshed.docx` candidate for final acceptance/layout QA. Record all pages inspected and any layout/format defects. Do not start item 3 (editorial/red-mark cleanup) or item 4 (publishing-file freeze) yet.
+On the user's next `devam et`, execute **only finalization item 3**: inventory every remaining red-font/editorial marking, distinguish intentional semantic emphasis from unresolved editorial markup, apply only justified cleanup to the current candidate, and perform deterministic structural and visual revalidation. Do not start item 4 (publishing-file freeze) until item 3 is complete.
