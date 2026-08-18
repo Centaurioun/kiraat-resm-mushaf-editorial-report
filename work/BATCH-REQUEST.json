@@ -1,6 +1,6 @@
 {
   "checkpoint": "F5-011",
-  "revision": 1,
+  "revision": 2,
   "input_docx": "artifacts/checkpoints/manuscript-working-f5-010.docx",
   "input_sha256": "bff8720ab193200c649ef68856a648d74d82d6d40974b9022e3cebd6f5c2d61c",
   "script": "work/apply_f5_011.py",
