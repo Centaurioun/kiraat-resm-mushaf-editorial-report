@@ -1,0 +1,5 @@
+DOCX=artifacts/checkpoints/manuscript-working-f5-018-target-audit-copy.docx
+BODY_PARAGRAPHS=674
+P0	FN=[]	RTL=0	FLD=0	BOOK=0	KIRÂATLERİN RİVAYETİNDE
+
+FOOTNOTES
