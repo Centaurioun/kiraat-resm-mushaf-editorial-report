@@ -701,3 +701,14 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Package integrity PASS: 469/469 genuine references; 0/0/0 orphan/dangling/duplicate; 520 fields; ADDIN 466; Zotero 465 item + 1 bibliography; bookmarks 53/53; hyperlinks 52; RTL structural inventory canonical-equal.
 - SHA-locked QA export run 32148785913 / artifact 9328860025 covered P60–P455. The range was split only for rendering after a monolithic LibreOffice render exceeded the execution window; every rendered page was manually inspected: 127/127 PASS (`work/F5-085-VISUAL-QA.md`).
 - F5-086–094 remain pending and were not pre-applied.
+
+
+## F5-086–094 final checkpoint — PASS
+- Global Fifth items F5-086–094 were applied sequentially after durable F5-085. Fourth Report scientific precedence and direct-source wording were enforced throughout.
+- Deterministic replay: first pass applied F5-086–094; second pass produced no paragraph changes; byte-idempotency PASS (`work/runtime/F5-094-REPLAY.txt`).
+- Final candidate: `artifacts/checkpoints/manuscript-working-f5-094.docx`; SHA `81f97403c0cfcf151260ab7018077145ba260c4fe4f30ca5fe2d3b501d093571`; body 674.
+- Final global audit (`work/runtime/F5-094-GLOBAL-AUDIT-REPLAY.txt`) reports zero occurrences of the targeted high-frequency formulas `Sonuç olarak`, `Netice itibarıyla`, `Hülasa`, `Bu bağlamda`, `Bu çerçevede`, `göstermektedir`, `ortaya koymaktadır`, `açıkça ortaya koymaktadır`, `anlaşılmaktadır`, `Nitekim`, `Dolayısıyla`, `Böylece`, `Bu noktada`, `Bu yönüyle`, `Diğer bir ifadeyle`, `Başka bir ifadeyle`, `dikkat çekici`, `önem arz etmektedir`, and `vurgulamak gerekir` within P0–P456. The sole `Bütün bu veriler` occurrence is the Fourth-approved F4-011 P49 synthesis. Functional `Bununla birlikte` and scientifically necessary negative distinctions were retained by adjudication (`work/F5-086-094-GLOBAL-ADJUDICATION.md`).
+- Direct negative source quotations at P298 and P302 are text-preserved; F5-094 quote guard PASS.
+- Package integrity PASS: 469/469 references; orphan/dangling/duplicate 0/0/0; 520 fields; ADDIN 466; Zotero 465 item + 1 bibliography; bookmarks 53/53; hyperlinks 52; RTL canonical-equal.
+- SHA-locked final QA export run 32153308279 / artifact 9330624295 covered P0–P456. The QA-only export was split into nine bounded render slices; every rendered page was manually inspected: 120/120 PASS (`work/F5-094-VISUAL-QA.md`).
+- Fifth Report item application is complete through F5-094; no Fifth item remains pending.

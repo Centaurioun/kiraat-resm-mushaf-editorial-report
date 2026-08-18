@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `ba694dc3a0331fef5ee8128bf5ad31e488648c94` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `ddb2d30e63db5ccfe38907978d7fab62c318d359` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -15,14 +15,14 @@
 - Last fully completed Fourth Report item: `F4-116`
 - Next Fourth Report item: none — Fourth Report application complete
 - Fourth Report global validation: PASS
-- Last fully completed Fifth Report item: `F5-085`
-- Next Fifth Report item: `F5-086`
+- Last fully completed Fifth Report item: `F5-094`
+- Next Fifth Report item: none — Fifth Report item application complete
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-085.docx`
-- Current working DOCX SHA-256: `869aefdec0d5fe046176e09e690d0e7d928ab53566b641fa6ace912bda31160e`
-- Last known good commit basis: `ba694dc3a0331fef5ee8128bf5ad31e488648c94`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-085.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-094.docx`
+- Current working DOCX SHA-256: `81f97403c0cfcf151260ab7018077145ba260c4fe4f30ca5fe2d3b501d093571`
+- Last known good commit basis: `ddb2d30e63db5ccfe38907978d7fab62c318d359`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-094.docx`
 - Current body paragraph count: 674
 
 ## Integrity
@@ -32,19 +32,20 @@
 - Zotero: 465 item + 1 bibliography preserved
 - Bookmarks: 53/53; hyperlinks: 52
 - Arabic/RTL structural inventory: canonical-equal
-- Protected OOXML parts: F5-019–085 changes only authorized word/document.xml body paragraph text; genuine footnote-reference identity/order, fields, Zotero instructions, bookmarks, hyperlinks, Arabic/RTL structural inventory and all non-document package parts remain preserved
+- Protected OOXML parts: F5-086–094 global cleanup changes only word/document.xml body text under quote-aware rules; 469 genuine footnote references, field/Zotero instructions, bookmarks, hyperlinks, non-document OOXML parts and Arabic/RTL structural inventory remain preserved; direct source quotations including audited negative quotations at P298/P302 are protected
 
 ## Structural-edit state
-- Fourth Report and Fifth items F5-001–085 remain accepted.
-- F5-019–085 were completed sequentially with source-limited epistemic language and the oral-transmission-first scientific framework preserved.
-- Current DOCX SHA `869aefdec0d5fe046176e09e690d0e7d928ab53566b641fa6ace912bda31160e`; body 674; deterministic replay and 127/127 visual QA PASS.
-- F5-086 is next; F5-086–094 remain PENDING.
+- Fourth Report F4-001–116 and Fifth Report F5-001–094 are fully completed and accepted.
+- F5-086–094 global cleanup reduced formulaic author framing while preserving the oral-transmission-first scientific framework, source-limited epistemic language, and scientifically necessary distinctions.
+- Direct source quotations are protected; the audited negative quotations at P298 and P302 remain text-identical.
+- Current DOCX SHA `81f97403c0cfcf151260ab7018077145ba260c4fe4f30ca5fe2d3b501d093571`; body 674; deterministic replay, final global audit, package integrity, and 120/120 human visual QA PASS.
+- No Fifth Report item remains pending.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Fourth Report global validation: **PASS** (`work/runtime/FOURTH-VALIDATE-FINAL.txt`).
-- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-085-REPLAY.txt`).
-- Latest Fifth item human visual QA: **PASS**, 127/127 pages inspected (`work/F5-085-VISUAL-QA.md`).
+- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-094-REPLAY.txt`).
+- Latest Fifth item human visual QA: **PASS**, 120/120 pages inspected (`work/F5-094-VISUAL-QA.md`).
 
 ## Exact next action
-Apply F5-086 through F5-094 global cleanup sequentially against the durable F5-085 binary, preserving direct quotations and Fourth Report scientific meaning.
+Fifth Report item application is complete. Preserve the durable F5-094 binary for subsequent final manuscript acceptance/field-refresh/publishing checks; do not reopen Fifth items without a new adjudicated issue.
