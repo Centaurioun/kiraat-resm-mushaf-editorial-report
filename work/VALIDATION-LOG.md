@@ -517,3 +517,14 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - SHA-locked QA export workflow run 32085611811 / artifact 9306592869 generated P20–P24 slice from the same candidate. Local LibreOffice render produced 3 pages; all 3/3 were inspected manually and PASS (`work/F5-002-AUTH-VISUAL-QA.md`).
 - The red `değil` visible in P23 is a pre-existing F5-003 target and was intentionally not changed during F5-002.
 - Durable boundary after this checkpoint: last F5-002; next F5-003.
+
+
+## F5-003 checkpoint — APPLIED / PASS
+- Locked F5-003 target: the Giriş central thesis opened with the negative sentence `Kitabın hareket noktası, resm-i Osmânî’nin kırâatleri meydana getiren bağımsız bir kaynak olmadığıdır.`
+- Fourth-precedence adjudication found that the immediately following sentence already carried the same positive thesis in more precise terminology. To avoid duplication and preserve the longer Fourth-scientific paragraph, only the first two sentences were consolidated into: `Kırâatlerin aslî kaynağı, telakki ve müşâfehe yoluyla sürdürülen, edâ ve isnadla denetlenen rivâyet geleneğidir.`
+- All later P23 sentences were preserved unchanged for their own later Fifth targets.
+- Deterministic replay: first replay APPLIED P23 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-003-REPLAY.txt`).
+- Candidate SHA-256 `74b9ee919cdb4aa4a802c39f8ec51c8d18d6e56e91fd238f5f4c4d692c213d6f`; body remains 674. Application validator preserved 520 field instructions, ADDIN/Zotero inventory, 469 footnote-reference identities/order, bookmarks, hyperlinks, RTL inventory, and all non-document package parts.
+- SHA-locked QA export workflow run 32086004704 / artifact 9306721551 generated P21–P25. Local LibreOffice render produced 3 pages; all 3/3 were manually inspected and PASS (`work/F5-003-VISUAL-QA.md`).
+- Negative expressions still visible later in P23/P24/P25 are later Fifth targets and were intentionally not pre-applied.
+- Durable boundary after checkpoint: last F5-003; next F5-004.
