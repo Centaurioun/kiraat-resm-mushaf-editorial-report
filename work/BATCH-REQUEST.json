@@ -1,6 +1,6 @@
 {
   "checkpoint": "FINALIZATION-ITEM4-PUBLISHING-FREEZE",
-  "revision": 1,
+  "revision": 2,
   "input_docx": "artifacts/finalization/manuscript-editorial-marks-cleaned.docx",
   "input_sha256": "67fc2e5e047957c2dd7ece5f065e612e1b51a331c9894bbb9d20d9b5b49e09f4",
   "script": "work/finalize_freeze_publishing_delivery.py",
