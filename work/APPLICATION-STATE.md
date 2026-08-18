@@ -28,25 +28,30 @@
 - Method: surgical OOXML refresh of generated TOC cache plus `w:updateFields=true`; no LibreOffice-saved round-trip accepted.
 - Six obsolete generated TOC entries were removed; 46 current TOC entries remain.
 - Updated cached TOC page values were independently recomputed in memory and match 46/46.
-- Deterministic replay: first pass applied; second pass already satisfied; byte-idempotency PASS (`work/runtime/FINAL-FIELD-REFRESH-REPLAY.txt`).
-- Structural validator: PASS (`work/runtime/FINAL-FIELD-REFRESH-VALIDATION.txt`).
-- Focused field/front-matter visual QA: PASS, 6/6 pages (`work/FINAL-FIELD-REFRESH-VISUAL-QA.md`).
-- Microsoft Word is not available in the execution runtime; the candidate therefore carries `w:updateFields=true` so Word can recalculate fields against Word pagination when opened.
+- Deterministic replay/idempotency and structural validation: PASS.
 
-## Field-refreshed candidate integrity
+### Item 2 — Full-document acceptance/layout QA: **COMPLETED / PASS**
+- Candidate remained byte-identical to the accepted item-1 candidate: SHA `a5ee8d96fe870086a54da1b6feb95749e443907b97f8e8bfa5b16cae199814c5`.
+- Full SHA-locked QA export: run `32189159596`, artifact `9343561312`, P0–P673.
+- Complete render: 112 pages; every page inspected, **112/112 PASS** (`work/FINALIZATION-ITEM2-ACCEPTANCE-QA.md`).
+- No clipping, overlap, missing text/glyphs, footnote overflow, heading/page-number damage, Arabic/RTL rendering defect, unexpected blank page, destructive pagination defect, or TOC-layout break was found.
+- The sparse final Conclusion page is valid content flow, not a blank-page defect.
+- Pre-existing red-font editorial markings remain visible on a number of narrative pages. They are not item-2 layout failures and are reserved for finalization item 3.
+
+## Current candidate integrity
 - Body paragraphs: 674; accepted narrative/body-text hash preserved.
 - Genuine footnote references: 469/469; orphan/dangling/duplicate: 0/0/0.
 - Zotero/ADDIN fields: 466 preserved.
-- Derived fields after stale-TOC removal: TOC 1; PAGEREF 46; PAGE 1.
+- Derived fields: TOC 1; PAGEREF 46; PAGE 1.
 - Bookmarks: 53/53 preserved.
-- Generated TOC hyperlinks: 46; the reduction from 52 is intentional because six obsolete TOC entries were removed after earlier accepted structural edits.
-- `word/document.xml` and `word/settings.xml` are the only package parts changed by field refresh; protected narrative text and other package parts remain preserved.
+- Generated TOC hyperlinks: 46; six obsolete generated TOC entries were intentionally removed during item 1.
 - Word open-time refresh: `w:updateFields=true`.
 
 ## Prior validation retained
 - Fourth Report global validation: PASS (`work/runtime/FOURTH-VALIDATE-FINAL.txt`).
 - Fifth Report final technical validation: PASS (`work/runtime/F5-094-REPLAY.txt`).
 - Fifth Report pre-finalization full narrative visual QA: PASS, 120/120 pages (`work/F5-094-VISUAL-QA.md`).
+- Finalization item 2 full-document layout QA: PASS, 112/112 pages (`work/FINALIZATION-ITEM2-ACCEPTANCE-QA.md`).
 
 ## Exact next action
-Perform **finalization item 2 only**: full-document acceptance/layout QA against `artifacts/finalization/manuscript-field-refreshed.docx` SHA `a5ee8d96fe870086a54da1b6feb95749e443907b97f8e8bfa5b16cae199814c5`. Inspect the complete rendered manuscript and record any layout/format defects. Do not begin editorial-mark cleanup or final publishing-file freeze until item 2 is completed.
+Perform **finalization item 3 only**: identify, adjudicate, and clean the remaining editorial/red-font markings in `artifacts/finalization/manuscript-field-refreshed.docx` SHA `a5ee8d96fe870086a54da1b6feb95749e443907b97f8e8bfa5b16cae199814c5`, preserving accepted scientific text unless a marking itself encodes an unresolved editorial instruction. Do not begin final publishing-file freeze (item 4) until item 3 is completed and revalidated.
