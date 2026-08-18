@@ -1,4 +1,4 @@
-DOCX=artifacts/checkpoints/manuscript-working-fourth-validated.docx
+DOCX=artifacts/checkpoints/manuscript-working-f5-001-preflight.docx
 BODY_PARAGRAPHS=674
 P0	FN=[]	RTL=0	FLD=0	BOOK=0	KIRÂATLERİN RİVAYETİNDE
 P1	FN=[]	RTL=0	FLD=0	BOOK=0	RESM-İ MUSHAF’IN ETKİSİ
