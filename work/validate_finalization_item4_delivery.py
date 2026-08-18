@@ -22,24 +22,31 @@ def main():
         f=etree.fromstring(z.read('word/footnotes.xml'))
         s=etree.fromstring(z.read('word/settings.xml'))
         body=d.xpath('.//w:body/w:p',namespaces=NS); assert len(body)==674
-        bh=hashlib.sha256('\n'.join(txt(x) for x in body).encode()).hexdigest(); assert bh==BODY_HASH
-        real=[x for x in f.xpath('.//w:footnote',namespaces=NS) if int(x.get(f'{{{W}}}id'))>=0]
-        fh=hashlib.sha256('\n'.join(txt(x) for x in real).encode()).hexdigest(); assert fh==FOOTNOTE_HASH
+        bh=hashlib.sha256('\n'.join(txt(x) for x in body).encode()).hexdigest(); assert bh==BODY_HASH,(bh,BODY_HASH)
+        frows=[]
+        for fn in f.xpath('.//w:footnote',namespaces=NS):
+            fid=fn.get(f'{{{W}}}id')
+            if fid is None or int(fid)<0: continue
+            frows.append((int(fid),''.join(fn.xpath('.//w:t/text()',namespaces=NS))))
+        frows.sort()
+        fh=hashlib.sha256('\n'.join(f'{i}\t{t}' for i,t in frows).encode()).hexdigest(); assert fh==FOOTNOTE_HASH,(fh,FOOTNOTE_HASH)
         refs=d.xpath('.//w:footnoteReference/@w:id',namespaces=NS); assert len(refs)==469 and len(set(refs))==469
         assert len(d.xpath('.//w:bookmarkStart',namespaces=NS))==53
         assert len(d.xpath('.//w:bookmarkEnd',namespaces=NS))==53
         assert len(d.xpath('.//w:hyperlink',namespaces=NS))==46
         assert len(d.xpath('.//w:ins|.//w:del|.//w:moveFrom|.//w:moveTo',namespaces=NS))==0
-        comments=[n for n in names if n.startswith('word/comments') and n.endswith('.xml')]; assert not comments
-        reds=0
-        instr=[]
+        assert len(d.xpath('.//w:commentRangeStart|.//w:commentReference',namespaces=NS))==0
+        reds=0; instr=[]; comment_count=0
         for n in names:
             if n.startswith('word/') and n.endswith('.xml'):
                 try:r=etree.fromstring(z.read(n))
                 except Exception: continue
                 reds += len(r.xpath('.//w:color[translate(@w:val,"abcdef","ABCDEF")="FF0000"]',namespaces=NS))
                 instr += [x.strip() for x in r.xpath('.//w:instrText/text()',namespaces=NS)]
-        assert reds==0
+                if n.startswith('word/comments'):
+                    comment_count += len(r.xpath('.//w:comment',namespaces=NS))
+        assert reds==0,reds
+        assert comment_count==0,comment_count
         c=Counter(x.split()[0] for x in instr if x.split())
         assert c['ADDIN']==466 and c['TOC']==1 and c['PAGEREF']==46 and c['PAGE']==1,c
         vals=s.xpath('./w:updateFields/@w:val',namespaces=NS); assert vals and vals[-1].lower() in ('true','1','on')
@@ -58,14 +65,9 @@ def main():
         'FOOTNOTE_REFERENCES=469/469',
         'ORPHAN_DANGLING_DUPLICATE=0/0/0',
         'ADDIN_ZOTERO=466',
-        'TOC=1',
-        'PAGEREF=46',
-        'PAGE=1',
-        'BOOKMARKS=53/53',
-        'HYPERLINKS=46',
-        'DIRECT_RED_FF0000=0',
-        'TRACKED_CHANGES=0',
-        'COMMENTS=0',
+        'TOC=1','PAGEREF=46','PAGE=1',
+        'BOOKMARKS=53/53','HYPERLINKS=46',
+        'DIRECT_RED_FF0000=0','TRACKED_CHANGES=0','COMMENTS=0',
         'WORD_UPDATE_FIELDS_ON_OPEN=true',
         'VISUAL_QA_INHERITED_FROM_BYTE_IDENTICAL_ITEM3_CANDIDATE=112/112_PASS',
         'FINAL_DELIVERY_STATUS=READY_FOR_HANDOFF'
