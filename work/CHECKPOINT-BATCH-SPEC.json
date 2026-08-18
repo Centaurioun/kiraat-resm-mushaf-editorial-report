@@ -1,39 +1,39 @@
 {
-  "last_f5": 1,
-  "next_f5": 2,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-001.docx",
+  "last_f5": 2,
+  "next_f5": 3,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-002.docx",
   "sha256": "c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F5-001-REPLAY.txt",
+  "technical_file": "work/runtime/F5-002-REPLAY.txt",
   "visual_required": false,
   "holds": "none",
-  "protected_parts_status": "identical to the globally validated Fourth binary for F5-001; F5-001 is byte-identical VERIFIED_NO_CHANGE",
-  "validation_marker": "## F5-001 checkpoint — VERIFIED_NO_CHANGE / PASS",
-  "validation_block": "- Fifth target: replace a negative cem/istinsah contrast in the Giriş with a positive distinction.\n- Current P19 after Fourth Report + FOURTH_VALIDATE already states that the Hz. Ebû Bekir cem and Hz. Osman istinsah were `farklı tarihsel şartlarda gerçekleştirilen iki ayrı uygulama olarak rivâyet edilmiştir`, followed by an explicit source-plurality/caution sentence. The Fifth literal negative target is absent.\n- Fourth scientific/structural precedence therefore controls: replacing the accepted wording with the Fifth suggestion would add no correction and could weaken the historiographic safeguard carried by `rivâyet edilmiştir`.\n- `work/apply_f5_001.py` verified the resolved P19 state and absence of the old target, then carried the binary forward byte-identically twice. Output SHA remains `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`.\n- Structural inventory remains 674 body paragraphs, 469/469 genuine footnotes/references, 520 fields, ADDIN 466, Zotero ITEM 465 + bibliography 1, bookmarks 53/53, hyperlinks 52.\n- Human visual QA: NOT_REQUIRED_NO_BYTE_CHANGE because the F5-001 output is byte-for-byte the already globally validated Fourth binary.\n- Durable boundary: last F5-001; next F5-002.",
+  "protected_parts_status": "identical to the globally validated Fourth binary for F5-002; F5-001 and F5-002 are byte-identical VERIFIED_NO_CHANGE",
+  "validation_marker": "## F5-002 checkpoint — VERIFIED_NO_CHANGE / PASS",
+  "validation_block": "- Fifth target: remove unsupported motive/purpose attribution assigning preservation to cem and dispute-prevention to istinsah.\n- Current P19 already omits the unsupported motive attribution and instead states that the two processes were `farklı tarihsel şartlarda gerçekleştirilen iki ayrı uygulama olarak rivâyet edilmiştir`, followed by explicit source plurality and the instruction that the details should be evaluated cautiously.\n- Fourth scientific/structural precedence therefore controls: the Fifth stylistic rewrite would add no remaining correction and could weaken the accepted historical-methodological caution.\n- `work/apply_f5_002.py` verified that the old purpose-attribution target and its characteristic fragments are absent, that the accepted P19 form is present once at P19, and then carried the binary forward byte-identically twice.\n- Output SHA remains `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`; body 674; structural inventories unchanged.\n- Human visual QA: NOT_REQUIRED_NO_BYTE_CHANGE because F5-002 produces no byte change.\n- Durable boundary: last F5-002; next F5-003.",
   "structural_state": [
     "Fourth Report F4-001–116 and FOURTH_VALIDATE remain fully accepted.",
-    "F5-001 is VERIFIED_NO_CHANGE: the current Giriş already satisfies the positive cem/istinsah distinction with stronger historical caution than the Fifth suggested rewrite.",
-    "Current binary is byte-identical to the globally validated Fourth binary; SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`, body 674.",
-    "F5-002 remains PENDING and has not been pre-applied."
+    "F5-001 and F5-002 are VERIFIED_NO_CHANGE under Fourth scientific precedence.",
+    "F5-002 confirms that unsupported purpose attribution for cem/istinsah has already been removed from P19 and replaced by historically cautious reported-process language.",
+    "Current binary remains byte-identical to the globally validated Fourth binary; SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`, body 674.",
+    "F5-003 remains PENDING and has not been pre-applied."
   ],
   "evidence": [
-    "F5-001 preflight/postflight: `work/runtime/F5-001-PREFLIGHT.txt` and `work/runtime/F5-001-POSTFLIGHT.txt`",
-    "Replay: `work/apply_f5_001.py`",
-    "Replay evidence: `work/runtime/F5-001-REPLAY.txt` — two byte-identical VERIFIED_NO_CHANGE passes",
-    "Adjudication: `work/F5-001-ADJUDICATION.md`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f5-001.docx`",
-    "Candidate SHA: `work/runtime/F5-001-SHA256.txt`"
+    "Replay: `work/apply_f5_002.py`",
+    "Replay evidence: `work/runtime/F5-002-REPLAY.txt` — two byte-identical VERIFIED_NO_CHANGE passes",
+    "Adjudication: `work/F5-002-ADJUDICATION.md`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f5-002.docx`",
+    "Candidate SHA: `work/runtime/F5-002-SHA256.txt`"
   ],
-  "next_action": "Fetch the exact F5-002 item from `final/fifth-report-locked.md`, resolve it against the durable F5-001 binary, and apply only F5-002 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-003+.",
+  "next_action": "Fetch the exact F5-003 item from `final/fifth-report-locked.md`, resolve it against the durable F5-002 binary, and apply only F5-003 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-004+.",
   "updates": {
-    "F5-001": {
+    "F5-002": {
       "status": "VERIFIED_NO_CHANGE",
-      "section": "Giriş — cem/istinsah process distinction",
+      "section": "Giriş — cem/istinsah unsupported motive attribution",
       "action_type": "FOURTH_PRECEDENCE_RESOLVED_NOOP",
       "resolved_location": "word/document.xml P19",
       "affected_body_paragraphs": [],
-      "verification": "LITERAL_TARGET_ABSENT + CURRENT_POSITIVE_DISTINCTION_PRESENT + BYTE_IDENTICAL_REPLAY_PASS",
-      "notes": "Fourth-resolved `rivâyet edilmiştir` formulation retained; no new byte change; visual QA not required for byte-identical no-op."
+      "verification": "UNSUPPORTED_PURPOSE_TARGET_ABSENT + CAUTIOUS_CURRENT_FORM_PRESENT + BYTE_IDENTICAL_REPLAY_PASS",
+      "notes": "No new manuscript edit; visual QA not required for byte-identical no-op."
     }
   }
 }
