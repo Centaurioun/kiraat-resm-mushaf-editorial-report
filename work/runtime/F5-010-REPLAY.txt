@@ -1,0 +1,9 @@
+FIRST_REPLAY_STDOUT
+F5-010	APPLIED	P27
+BEFORE	Tarihsel oluşum ile normatif bağlayıcılık arasındaki ayrım da araştırmanın kavramsal sınırlarından biridir. Resm-i Osmânî’nin sonraki mushaf geleneğinde bağlayıcı kabul edilmesi, bütün yazım ayrıntılarının doğrudan vahiy tarafından belirlendiğinin tartışmasız biçimde kabul edildiği anlamına gelmez. Klasik kaynaklarda bu yazım geleneğinin tevkîfî veya ictihâdî oluşu hakkında farklı görüşler bulunmaktadır. Bâkıllânî, belirli bir yazım kalıbının doğrudan Hz. Peygamber tarafından bağlayıcı biçimde tayin edildiğini gösteren açık bir naklin bulunmadığına dikkat çekerken, başka âlimler sahâbe uygulaması, ümmetin kabulü, ihtiyat ve tarihsel devamlılık üzerinden resm-i Osmânî’ye bağlılığı savunmuşlardır. Bu nedenle çalışma, söz konusu yazım geleneğinin bağlayıcılığını yalnız tevkîfîlik iddiasına dayandırmamakta; tarihsel teşekkül, sahâbe uygulaması ve sonraki ilmî kabulü ayrı düzlemlerde değerlendirmektedir.
+AFTER	Tarihsel oluşum ile normatif bağlayıcılık arasındaki ayrım da araştırmanın kavramsal sınırlarından biridir. Resm-i Osmânî’nin sonraki mushaf geleneğindeki bağlayıcılığı ile bütün yazım ayrıntılarının tevkîfî olduğu görüşü ayrı meselelerdir. Klasik kaynaklarda bu yazım geleneğinin tevkîfî veya ictihâdî oluşu hakkında farklı görüşler bulunmaktadır. Bâkıllânî, belirli bir yazım kalıbının doğrudan Hz. Peygamber tarafından bağlayıcı biçimde tayin edildiğini gösteren açık bir naklin bulunmadığına dikkat çekerken, başka âlimler sahâbe uygulaması, ümmetin kabulü, ihtiyat ve tarihsel devamlılık üzerinden resm-i Osmânî’ye bağlılığı savunmuşlardır. Bu nedenle çalışma, söz konusu yazım geleneğinin bağlayıcılığını yalnız tevkîfîlik iddiasına dayandırmamakta; tarihsel teşekkül, sahâbe uygulaması ve sonraki ilmî kabulü ayrı düzlemlerde değerlendirmektedir.
+
+SECOND_REPLAY_STDOUT
+F5-010	ALREADY_SATISFIED
+
+BYTE_IDENTICAL=PASS
