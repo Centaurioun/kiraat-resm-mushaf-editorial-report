@@ -1,0 +1,43 @@
+name: final-delivery-export
+
+on:
+  pull_request:
+    branches:
+      - editorial/apply-fourth-fifth-reports
+    paths:
+      - 'work/FINAL-DELIVERY-EXPORT-REQUEST.json'
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/apply-fourth-fifth-reports
+          fetch-depth: 0
+      - name: Validate exact delivery bytes
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          from zipfile import ZipFile
+          r=json.loads(Path('work/FINAL-DELIVERY-EXPORT-REQUEST.json').read_text(encoding='utf-8'))
+          p=Path(r['docx'])
+          got=hashlib.sha256(p.read_bytes()).hexdigest()
+          assert got==r['sha256'],(got,r['sha256'])
+          with ZipFile(p) as z: assert z.testzip() is None
+          print('FINAL_DELIVERY_EXPORT_SHA256='+got)
+          print('FINAL_DELIVERY_EXPORT_SIZE='+str(p.stat().st_size))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: final-publishing-delivery
+          path: |
+            artifacts/delivery/kiraatlerin-rivayetinde-resm-i-mushafin-etkisi-final.docx
+            artifacts/delivery/kiraatlerin-rivayetinde-resm-i-mushafin-etkisi-final.sha256
+            artifacts/delivery/FINAL-DELIVERY-RECEIPT.txt
+          retention-days: 30
