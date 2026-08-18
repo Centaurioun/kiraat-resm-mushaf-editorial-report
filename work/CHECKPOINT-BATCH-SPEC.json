@@ -1,45 +1,44 @@
 {
-  "last_f5": 2,
-  "next_f5": 3,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-002.docx",
-  "sha256": "94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be",
+  "last_f5": 3,
+  "next_f5": 4,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-003.docx",
+  "sha256": "74b9ee919cdb4aa4a802c39f8ec51c8d18d6e56e91fd238f5f4c4d692c213d6f",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F5-002-AUTH-REBUILD-REPLAY.txt",
+  "technical_file": "work/runtime/F5-003-REPLAY.txt",
   "visual_required": true,
   "visual_pages": 3,
-  "visual_file": "work/F5-002-AUTH-VISUAL-QA.md",
+  "visual_file": "work/F5-003-VISUAL-QA.md",
   "holds": "none",
-  "protected_parts_status": "Fourth-validated package preserved except the authorized F5-002 visible-text edit in word/document.xml P22; application validation confirms all non-document package parts unchanged and structural inventories preserved",
-  "validation_marker": "## F5-002 authoritative checkpoint — APPLIED / PASS",
-  "validation_block": "- An audit found that an earlier F5-002 no-op checkpoint had been bound to the wrong Fifth Report issue. That misbinding produced no manuscript byte change and is superseded by `work/F5-002-CORRECTION-NOTE.md`.\n- Actual locked F5-002 target: Giriş P22, `Bu sorular birbirinden bağımsız değildir.`\n- Accepted Fourth-compatible correction: `Araştırma soruları birbirine bağlıdır.` Only the first sentence changes; the complete accepted Fourth-scientific remainder of P22 is preserved.\n- Deterministic authoritative rebuild: workflow run 32085188815 after guard correction. First replay APPLIED at P22 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-002-AUTH-REBUILD-REPLAY.txt`).\n- Authoritative candidate SHA-256: `94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be`; body remains 674.\n- Application validator within `work/apply_f5_002.py` confirms only body P22 changes; all non-`word/document.xml` package parts remain byte-identical to F5-001; field sequence 520, ADDIN 466, Zotero ITEM 465 + bibliography 1, 469 footnote-reference identities/order, bookmarks 53/53, hyperlinks 52, RTL inventory unchanged.\n- SHA-locked QA export workflow run 32085611811 / artifact 9306592869 generated P20–P24 slice from the same candidate. Local LibreOffice render produced 3 pages; all 3/3 were inspected manually and PASS (`work/F5-002-AUTH-VISUAL-QA.md`).\n- The red `değil` visible in P23 is a pre-existing F5-003 target and was intentionally not changed during F5-002.\n- Durable boundary after this checkpoint: last F5-002; next F5-003.",
+  "protected_parts_status": "Fourth/F5-002 accepted package preserved except authorized Fifth visible-text edits in word/document.xml P22 and P23; F5-003 validation confirms only P23 changed relative to durable F5-002 and all non-document package parts remained byte-identical",
+  "validation_marker": "## F5-003 checkpoint — APPLIED / PASS",
+  "validation_block": "- Locked F5-003 target: the Giriş central thesis opened with the negative sentence `Kitabın hareket noktası, resm-i Osmânî’nin kırâatleri meydana getiren bağımsız bir kaynak olmadığıdır.`\n- Fourth-precedence adjudication found that the immediately following sentence already carried the same positive thesis in more precise terminology. To avoid duplication and preserve the longer Fourth-scientific paragraph, only the first two sentences were consolidated into: `Kırâatlerin aslî kaynağı, telakki ve müşâfehe yoluyla sürdürülen, edâ ve isnadla denetlenen rivâyet geleneğidir.`\n- All later P23 sentences were preserved unchanged for their own later Fifth targets.\n- Deterministic replay: first replay APPLIED P23 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-003-REPLAY.txt`).\n- Candidate SHA-256 `74b9ee919cdb4aa4a802c39f8ec51c8d18d6e56e91fd238f5f4c4d692c213d6f`; body remains 674. Application validator preserved 520 field instructions, ADDIN/Zotero inventory, 469 footnote-reference identities/order, bookmarks, hyperlinks, RTL inventory, and all non-document package parts.\n- SHA-locked QA export workflow run 32086004704 / artifact 9306721551 generated P21–P25. Local LibreOffice render produced 3 pages; all 3/3 were manually inspected and PASS (`work/F5-003-VISUAL-QA.md`).\n- Negative expressions still visible later in P23/P24/P25 are later Fifth targets and were intentionally not pre-applied.\n- Durable boundary after checkpoint: last F5-003; next F5-004.",
   "structural_state": [
     "Fourth Report F4-001–116 and FOURTH_VALIDATE remain fully accepted.",
-    "F5-001 remains durable VERIFIED_NO_CHANGE.",
-    "F5-002 is APPLIED at P22: `Araştırma soruları birbirine bağlıdır.`",
-    "The complete Fourth-scientific continuation of P22 remains unchanged; F5-002 did not broaden causation or alter later sentences.",
-    "Authoritative F5-002 candidate SHA is `94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be`; body paragraphs 674.",
-    "Earlier misbound F5-002 no-op metadata is superseded by the correction note and this authoritative checkpoint.",
-    "F5-003 remains PENDING and has not been pre-applied."
+    "F5-001 remains durable VERIFIED_NO_CHANGE; F5-002 remains durable APPLIED.",
+    "F5-003 is APPLIED at P23 by consolidating the first two sentences into one positive central-thesis sentence.",
+    "All later P23 scientific qualifications remain unchanged; later Fifth targets have not been pre-applied.",
+    "Current candidate SHA is `74b9ee919cdb4aa4a802c39f8ec51c8d18d6e56e91fd238f5f4c4d692c213d6f`; body paragraphs 674.",
+    "F5-004 remains PENDING."
   ],
   "evidence": [
-    "Correction audit: `work/F5-002-CORRECTION-NOTE.md`",
-    "Replay script: `work/apply_f5_002.py`",
-    "Authoritative replay: `work/runtime/F5-002-AUTH-REBUILD-REPLAY.txt`",
-    "Candidate SHA: `work/runtime/F5-002-AUTH-REBUILD-SHA256.txt`",
-    "Postflight: `work/runtime/F5-002-AUTH-REBUILD-POSTFLIGHT.txt`",
-    "Human visual QA: `work/F5-002-AUTH-VISUAL-QA.md` — 3/3 pages PASS",
-    "QA export workflow: run 32085611811 / artifact 9306592869"
+    "Adjudication: `work/F5-003-ADJUDICATION.md`",
+    "Replay script: `work/apply_f5_003.py`",
+    "Replay evidence: `work/runtime/F5-003-REPLAY.txt`",
+    "Candidate SHA: `work/runtime/F5-003-SHA256.txt`",
+    "Postflight: `work/runtime/F5-003-POSTFLIGHT.txt`",
+    "Human visual QA: `work/F5-003-VISUAL-QA.md` — 3/3 PASS",
+    "QA export workflow: run 32086004704 / artifact 9306721551"
   ],
-  "next_action": "Fetch the exact F5-003 item from `final/fifth-report-locked.md`, resolve it against the durable F5-002 binary, and apply only F5-003 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-004+.",
+  "next_action": "Fetch the exact F5-004 item from `final/fifth-report-locked.md`, resolve it against the durable F5-003 binary, and apply only F5-004 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-005+.",
   "updates": {
-    "F5-002": {
+    "F5-003": {
       "status": "APPLIED",
-      "section": "Giriş — araştırma sorularının olumlu ilişkilendirilmesi",
-      "action_type": "TARGETED_POSITIVE_SENTENCE_REWRITE_WITH_FOURTH_PRECEDENCE",
-      "resolved_location": "word/document.xml P22",
-      "affected_body_paragraphs": [22],
-      "verification": "ACTUAL_ITEM_IDENTITY_PASS + P22_ONLY_CHANGE + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
-      "notes": "Earlier no-op F5-002 metadata was misbound to another issue and is superseded. Actual F5-002 changes only the P22 opening sentence while preserving the accepted Fourth-scientific remainder."
+      "section": "Giriş — kitabın ana tezinin olumlu kurulması",
+      "action_type": "CONSOLIDATE_NEGATIVE_OPENING_AND_DUPLICATE_POSITIVE_SENTENCE",
+      "resolved_location": "word/document.xml P23",
+      "affected_body_paragraphs": [23],
+      "verification": "P23_ONLY_CHANGE + POSITIVE_THESIS_PRESENT + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
+      "notes": "First two sentences consolidated into one positive thesis sentence; later P23 content preserved for subsequent Fifth items."
     }
   }
 }
