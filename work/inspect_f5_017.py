@@ -8,7 +8,7 @@ W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'; NS={'w':W}
 EXPECTED='cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da'
 
 def sha256(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
-def text(p): return ''.join(p.xpath('.//w:t/text()',namespaces=NS))
+def all_text(el): return ''.join(el.xpath('.//w:t/text()',namespaces=NS))
 
 def main(src,out):
     got=sha256(src)
@@ -20,13 +20,13 @@ def main(src,out):
         if len(ps)!=674: raise RuntimeError(f'body count {len(ps)}')
         p=ps[53]
         print(f'SHA256={got}')
-        print('P53_TEXT='+text(p))
+        print('P53_TEXT='+all_text(p))
         print('P53_FNS='+repr(p.xpath('.//w:footnoteReference/@w:id',namespaces=NS)))
-        print('P53_SEQUENCE_BEGIN')
-        for j,n in enumerate(p.xpath('.//*[self::w:t or self::w:footnoteReference]',namespaces=NS)):
-            if n.tag==f'{{{W}}}t': print(f'{j:02d}\tTEXT\t{n.text or ""}')
-            else: print(f'{j:02d}\tFN\t{n.get(f"{{{W}}}id")}')
-        print('P53_SEQUENCE_END')
+        fnroot=etree.fromstring(z.read('word/footnotes.xml'))
+        for fid in ('24','25','26'):
+            hits=fnroot.xpath(f'//w:footnote[@w:id="{fid}"]',namespaces=NS)
+            if len(hits)!=1: raise RuntimeError(f'FN{fid} count {len(hits)}')
+            print(f'FN{fid}\t{all_text(hits[0])}')
     shutil.copyfile(src,out)
     if sha256(out)!=got: raise RuntimeError('inspection copy not byte-identical')
     print('BYTE_IDENTICAL_COPY=PASS')
