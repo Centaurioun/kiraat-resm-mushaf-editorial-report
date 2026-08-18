@@ -1,0 +1,9 @@
+FIRST_REPLAY_STDOUT
+F5-008	APPLIED	P26
+BEFORE	Resm-i Osmânî’ye uygunluk, her durumda harflerin okuyuşu birebir göstermesi anlamına gelmez. Gerçek uygunlukta okuyuş, mushafın yazılı yapısı tarafından doğrudan karşılanır. İhtimalî uygunlukta ise yazım, okuyuşu açıkça göstermese de onunla bağdaşır ve onu dışlamaz. Bu durum, bir yazı iskeletinin sahih rivâyetle sabit birden fazla okuyuşa imkân verebilmesini açıklar. Ancak bu imkân rivâyetin yerine konulamaz; yazımla bağdaşan ihtimallerden hangisinin kırâat olduğu telakki ve isnadla belirlenir. Sahih, meşhur, âhâd ve şâz nitelemeleri de tek bir ölçünün farklı dereceleri değildir. Bunlar naklin güvenilirliği, yaygınlığı, kabulü ve genel tilâvet alanındaki konumuyla ilgili farklı değerlendirme boyutlarını ifade eder. Şâz bir rivâyetin tefsîrî veya dilsel değeri bulunabilmesi, onun bağlayıcı bir kırâat kabul edilmesiyle aynı mesele değildir.
+AFTER	Resm-i Osmânî’ye uygunluk gerçek veya ihtimalî biçimde gerçekleşebilir. Gerçek uygunlukta okuyuş, mushafın yazılı yapısı tarafından doğrudan karşılanır. İhtimalî uygunlukta ise yazım, okuyuşu açıkça göstermese de onunla bağdaşır ve onu dışlamaz. Bu durum, bir yazı iskeletinin sahih rivâyetle sabit birden fazla okuyuşa imkân verebilmesini açıklar. Ancak bu imkân rivâyetin yerine konulamaz; yazımla bağdaşan ihtimallerden hangisinin kırâat olduğu telakki ve isnadla belirlenir. Sahih, meşhur, âhâd ve şâz nitelemeleri de tek bir ölçünün farklı dereceleri değildir. Bunlar naklin güvenilirliği, yaygınlığı, kabulü ve genel tilâvet alanındaki konumuyla ilgili farklı değerlendirme boyutlarını ifade eder. Şâz bir rivâyetin tefsîrî veya dilsel değeri bulunabilmesi, onun bağlayıcı bir kırâat kabul edilmesiyle aynı mesele değildir.
+
+SECOND_REPLAY_STDOUT
+F5-008	ALREADY_SATISFIED
+
+BYTE_IDENTICAL=PASS
