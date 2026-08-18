@@ -1,0 +1,10 @@
+FIRST_REPLAY_STDOUT
+F5-004	APPLIED	P24
+BEFORE	Bu yaklaşım, çalışmada kullanılan kavramlar arasında bazı ayrımların korunmasını gerektirmektedir. Resm, en genel anlamıyla lafzın harflerle temsil edilen yazılı biçimini; resm-i mushaf, Kur’an kelimelerinin mushaflardaki yazım özelliklerini konu edinen alanı ifade eder. Resm-i Osmânî ise Hz. Osman döneminde çoğaltılan mushaflara nispet edilen ve sonraki resm literatüründe rivâyet yoluyla takip edilen yazım geleneğidir. Bu sebeple her mushaf yazısı resm-i Osmânî olmadığı gibi, resm-i mushaf ile resm-i Osmânî de bütün bağlamlarda birbirinin yerine kullanılamaz. Mushaf, Kur’an metninin yazılı olarak bir araya getirildiği nüshadır. İmam Mushaf ise Osmânî istinsah bağlamında örnek ve ortak başvuru niteliği atfedilen nüshayı belirtir. Şehir mushafları arasında nakledilen sınırlı yazım farklılıkları, müşterek mushaf otoritesi içinde farklı yazım rivâyetlerinin bulunabildiğini göstermektedir.
+AFTER	Bu yaklaşım, çalışmada kullanılan kavramlar arasında bazı ayrımların korunmasını gerektirmektedir. Resm, en genel anlamıyla lafzın harflerle temsil edilen yazılı biçimini; resm-i mushaf, Kur’an kelimelerinin mushaflardaki yazım özelliklerini konu edinen alanı ifade eder. Resm-i Osmânî ise Hz. Osman döneminde çoğaltılan mushaflara nispet edilen ve sonraki resm literatüründe rivâyet yoluyla takip edilen yazım geleneğidir. Bu iki terim, kapsamları farklı olduğu için bağlama göre ayrı kullanılmalıdır. Mushaf, Kur’an metninin yazılı olarak bir araya getirildiği nüshadır. İmam Mushaf ise Osmânî istinsah bağlamında örnek ve ortak başvuru niteliği atfedilen nüshayı belirtir. Şehir mushafları arasında nakledilen sınırlı yazım farklılıkları, müşterek mushaf otoritesi içinde farklı yazım rivâyetlerinin bulunabildiğini göstermektedir.
+SCOPE	Only the exact negative term-distinction sentence was replaced; surrounding definitions and later P24 text preserved.
+
+SECOND_REPLAY_STDOUT
+F5-004	ALREADY_SATISFIED
+
+BYTE_IDENTICAL=PASS
