@@ -528,3 +528,14 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - SHA-locked QA export workflow run 32086004704 / artifact 9306721551 generated P21–P25. Local LibreOffice render produced 3 pages; all 3/3 were manually inspected and PASS (`work/F5-003-VISUAL-QA.md`).
 - Negative expressions still visible later in P23/P24/P25 are later Fifth targets and were intentionally not pre-applied.
 - Durable boundary after checkpoint: last F5-003; next F5-004.
+
+
+## F5-004 checkpoint — APPLIED / PASS
+- Locked F5-004 target was the negative term distinction `Bu sebeple her mushaf yazısı resm-i Osmânî olmadığı gibi, resm-i mushaf ile resm-i Osmânî de bütün bağlamlarda birbirinin yerine kullanılamaz.`
+- The immediately preceding Fourth-approved sentences already define both `resm-i mushaf` and `resm-i Osmânî`; repeating the full Fifth suggested definition would be redundant.
+- The target sentence alone was replaced with the positive non-duplicative sentence `Bu iki terim, kapsamları farklı olduğu için bağlama göre ayrı kullanılmalıdır.` Surrounding definitions and later P24 text were preserved.
+- Deterministic replay: first replay APPLIED P24 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-004-REPLAY.txt`).
+- Candidate SHA-256 `12652112c6a9e28b4ef877cd6432c15f33d46fc5da432df3fe6d4eaa1f2f0fd5`; body remains 674; all package/field/footnote/bookmark/hyperlink/RTL invariants passed.
+- SHA-locked QA export workflow run 32086369113 / artifact 9306836662 generated P22–P26. Local LibreOffice render produced 3 pages; all 3/3 were manually inspected and PASS (`work/F5-004-VISUAL-QA.md`).
+- Remaining negative constructions in P23/P25/P26 are later Fifth targets and were intentionally not pre-applied.
+- Durable boundary after checkpoint: last F5-004; next F5-005.
