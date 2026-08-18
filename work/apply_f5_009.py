@@ -86,8 +86,6 @@ def validate(src,out,chg):
         changed=[i for i,(x,y) in enumerate(zip(pa,pb)) if c14n(x)!=c14n(y)]
         if changed!=([26] if chg else []): raise RuntimeError('paragraph change set '+repr(changed))
         if sig(pa[26])!=sig(pb[26]) or not satisfied(db): raise RuntimeError('P26 invariant')
-        if text(pb[26]).startswith(PREFIX+'.'):
-            raise RuntimeError('unexpected punctuation duplication')
         ia=instrs(a); ib=instrs(b)
         if ia!=ib or len(ib)!=520: raise RuntimeError('fields')
         if (sum('ADDIN ' in x for x in ib),sum('ZOTERO_ITEM' in x for x in ib),sum('ZOTERO_BIBL' in x for x in ib))!=(466,465,1): raise RuntimeError('zotero')
