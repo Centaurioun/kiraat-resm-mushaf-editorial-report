@@ -1,0 +1,17 @@
+DOCX=artifacts/delivery/kiraatlerin-rivayetinde-resm-i-mushafin-etkisi-final.docx
+BODY_PARAGRAPHS=674
+P0	FN=[]	RTL=0	FLD=0	BOOK=0	KIRÂATLERİN RİVAYETİNDE
+P1	FN=[]	RTL=0	FLD=0	BOOK=0	RESM-İ MUSHAF’IN ETKİSİ
+P2	FN=[]	RTL=0	FLD=0	BOOK=0	Muazzam Yener
+P3	FN=[]	RTL=0	FLD=0	BOOK=0	Dr. Öğr. Üyesi
+P4	FN=[]	RTL=0	FLD=0	BOOK=0	Kahramanmaraş Sütçü İmam Üniversitesi
+P5	FN=[]	RTL=0	FLD=0	BOOK=0	İlahiyat Fakültesi, Temel İslâm Bilimleri Bölümü
+P6	FN=[]	RTL=0	FLD=0	BOOK=0	
+P7	FN=[]	RTL=0	FLD=0	BOOK=0	
+P8	FN=[]	RTL=0	FLD=0	BOOK=0	
+P9	FN=[]	RTL=0	FLD=0	BOOK=2	Önsöz
+P10	FN=[]	RTL=0	FLD=0	BOOK=0	Kur’an’ın korunması ve sonraki nesillere aktarılması, İslâm ilimleri geleneğinin merkezî meselelerinden biridir. Bu aktarım yalnız yazılı metnin muhafazasıyla veya yalnız hafıza ve sözlü öğretimle gerçekleşmemiştir. Vahyin yazıya geçirilmesi, ezberlenmesi, okunması ve ehil kimselerden öğrenilmesi birbirini tamamlayan bir bütün oluşturmuştur. Mushaf metni ile kırâat geleneği arasındaki ilişki de bu bütünün birbirinden ayrı düşünülemeyecek iki yönüdür.
+P11	FN=[]	RTL=0	FLD=0	BOOK=0	Bu kitabın çıkış noktası, resm-i mushaf’ın çoğu zaman hazif, ziyâde, ibdâl, vasl ve fasl gibi yazım özelliklerinden oluşan teknik bir alan olarak ele alınmasıdır. Resm ilminin bu yönü şüphesiz önemlidir. Bununla birlikte mushaf yazısının, kırâat rivâyetlerinin aktarılması, değerlendirilmesi ve sonraki nesillere ulaştırılmasıyla ilişkisi dikkate alınmadığında meselenin önemli bir boyutu eksik kalmaktadır. Kırâatler yalnız imam, râvi ve tarîklere nispet edilen okuyuş farklılıkları üzerinden incelendiğinde de bu rivâyetlerin ortak mushaf metniyle kurduğu bağ yeterince açıklanamayabilmektedir.
+P12	FN=[]	RTL=0	FLD=0	BOOK=0	Resm-i Osmânî'ye uygunluk, kırâat usûlünde okuyuşların değerlendirilmesinde dikkate alınan temel ölçülerden biridir. Bununla birlikte kırâatlerin aslî aktarım zemini telakki, müşâfehe, edâ ve isnada dayanan rivâyet geleneğidir. Bu kitap, sözlü aktarım ile mushaf yazısı arasındaki ilişkiyi, resm-i Osmânî'nin kırâatlerin rivâyeti ve kabulündeki işlevi bakımından incelemektedir.
+
+FOOTNOTES
