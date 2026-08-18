@@ -1,8 +1,8 @@
 {
-  "checkpoint": "F5-094-FULL-DOCX-EXPORT",
+  "checkpoint": "FINAL-FIELD-REFRESH-QA",
   "revision": 1,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-094.docx",
-  "sha256": "81f97403c0cfcf151260ab7018077145ba260c4fe4f30ca5fe2d3b501d093571",
+  "docx": "artifacts/finalization/manuscript-field-refreshed.docx",
+  "sha256": "a5ee8d96fe870086a54da1b6feb95749e443907b97f8e8bfa5b16cae199814c5",
   "start": 0,
   "end": 673
 }
