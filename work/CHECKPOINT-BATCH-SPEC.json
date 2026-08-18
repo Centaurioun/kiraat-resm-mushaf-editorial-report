@@ -1,42 +1,42 @@
 {
-  "last_f5": 9,
-  "next_f5": 10,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-009.docx",
-  "sha256": "ff35f3803f24f68dff43f2ce9569c39a275c03acfa518614803e48530d696dbd",
+  "last_f5": 10,
+  "next_f5": 11,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-010.docx",
+  "sha256": "bff8720ab193200c649ef68856a648d74d82d6d40974b9022e3cebd6f5c2d61c",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F5-009-REPLAY.txt",
+  "technical_file": "work/runtime/F5-010-REPLAY.txt",
   "visual_required": true,
   "visual_pages": 3,
-  "visual_file": "work/F5-009-VISUAL-QA.md",
+  "visual_file": "work/F5-010-VISUAL-QA.md",
   "holds": "none",
-  "protected_parts_status": "Accepted prior package preserved except authorized Fifth visible-text edits; F5-009 validation confirms only P26 changed relative to durable F5-008 and all non-document package parts remained byte-identical",
-  "validation_marker": "## F5-009 checkpoint — APPLIED / PASS",
-  "validation_block": "- Locked F5-009 targeted the negative sahih/meşhur/âhâd/şâz category opening and the negative shādh-status contrast in P26.\n- Under Fourth-over-Fifth precedence, the existing explanatory dimensions (naklin güvenilirliği, yaygınlığı, kabulü ve genel tilâvet alanındaki konumu) were preserved while the three-sentence negative/positive/negative block was consolidated into two positive sentences.\n- Accepted wording: `Sahih, meşhur, âhâd ve şâz nitelemeleri, naklin güvenilirliği, yaygınlığı, kabulü ve genel tilâvet alanındaki konumuyla ilgili farklı değerlendirme boyutlarını ifade eder. Şâz bir rivâyetin tefsîrî veya dilsel bilgi değeri ile bağlayıcı kırâat statüsü ayrı ayrı değerlendirilmelidir.`\n- Deterministic replay: first replay APPLIED P26 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-009-REPLAY.txt`).\n- Candidate SHA `ff35f3803f24f68dff43f2ce9569c39a275c03acfa518614803e48530d696dbd`; body 674; all structural/package invariants passed.\n- SHA-locked QA export workflow run 32090746409 / artifact 9308227484 generated P25–P28; all 3/3 rendered pages were manually inspected and PASS (`work/F5-009-VISUAL-QA.md`).\n- Durable boundary after checkpoint: last F5-009; next F5-010.",
+  "protected_parts_status": "Accepted prior package preserved except authorized Fifth visible-text edits; F5-010 validation confirms only P27 changed relative to durable F5-009 and all non-document package parts remained byte-identical",
+  "validation_marker": "## F5-010 checkpoint — APPLIED / PASS",
+  "validation_block": "- Locked F5-010 targeted the indirect negative sentence separating later mushaf-geleneği binding force from the claim that every writing detail is directly divinely determined.\n- The target alone was replaced with the positive Fourth-compatible formulation: `Resm-i Osmânî’nin sonraki mushaf geleneğindeki bağlayıcılığı ile bütün yazım ayrıntılarının tevkîfî olduğu görüşü ayrı meselelerdir.`\n- The preceding historical/normative distinction and the following source-based tevkîfî/ictihâdî discussion, Bâkıllânî attribution, other scholarly views, and methodological caution were preserved unchanged.\n- Deterministic replay: first replay APPLIED P27 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-010-REPLAY.txt`).\n- Candidate SHA `bff8720ab193200c649ef68856a648d74d82d6d40974b9022e3cebd6f5c2d61c`; body 674; all structural/package invariants passed.\n- SHA-locked QA export workflow run 32091158371 / artifact 9308356793 generated P26–P29; all 3/3 rendered pages were manually inspected and PASS (`work/F5-010-VISUAL-QA.md`).\n- Durable boundary after checkpoint: last F5-010; next F5-011.",
   "structural_state": [
     "Fourth Report and prior Fifth items remain accepted.",
-    "F5-009 is APPLIED at P26 by consolidating the category discussion into two positive sentences while preserving the Fourth-approved explanatory dimensions.",
-    "Current SHA `ff35f3803f24f68dff43f2ce9569c39a275c03acfa518614803e48530d696dbd`; body 674.",
-    "F5-010 remains PENDING; no F5-010+ text has been applied."
+    "F5-010 is APPLIED at P27 by replacing only the indirect negative binding/tevkîfî sentence with a direct positive distinction.",
+    "Current SHA `bff8720ab193200c649ef68856a648d74d82d6d40974b9022e3cebd6f5c2d61c`; body 674.",
+    "F5-011 remains PENDING; no F5-011+ text has been applied."
   ],
   "evidence": [
-    "Adjudication: `work/F5-009-ADJUDICATION.md`",
-    "Replay script: `work/apply_f5_009.py`",
-    "Replay: `work/runtime/F5-009-REPLAY.txt`",
-    "SHA: `work/runtime/F5-009-SHA256.txt`",
-    "Postflight: `work/runtime/F5-009-POSTFLIGHT.txt`",
-    "Human visual QA: `work/F5-009-VISUAL-QA.md` — 3/3 PASS",
-    "QA export: run 32090746409 / artifact 9308227484"
+    "Adjudication: `work/F5-010-ADJUDICATION.md`",
+    "Replay script: `work/apply_f5_010.py`",
+    "Replay: `work/runtime/F5-010-REPLAY.txt`",
+    "SHA: `work/runtime/F5-010-SHA256.txt`",
+    "Postflight: `work/runtime/F5-010-POSTFLIGHT.txt`",
+    "Human visual QA: `work/F5-010-VISUAL-QA.md` — 3/3 PASS",
+    "QA export: run 32091158371 / artifact 9308356793"
   ],
-  "next_action": "Fetch and apply only F5-010 against the durable F5-009 binary. Preserve Fourth scientific meaning and do not pre-apply F5-011+.",
+  "next_action": "Fetch and apply only F5-011 against the durable F5-010 binary. Preserve Fourth scientific meaning and do not pre-apply F5-012+.",
   "updates": {
-    "F5-009": {
+    "F5-010": {
       "status": "APPLIED",
-      "section": "Giriş — sahih/meşhur/âhâd/şâz kategorilerinin olumlu tanımı",
-      "action_type": "CONSOLIDATE_CATEGORY_BLOCK_TO_POSITIVE_DIMENSIONS_AND_STATUS_DISTINCTION",
-      "resolved_location": "word/document.xml P26",
-      "affected_body_paragraphs": [26],
-      "verification": "P26_ONLY_CHANGE + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
-      "notes": "Preserved the Fourth-approved explanatory dimensions while replacing the negative category/status framing with two positive sentences; F5-010+ text remains untouched."
+      "section": "Giriş — bağlayıcılık ile tevkîfîliğin ayrılması",
+      "action_type": "TARGETED_POSITIVE_BINDING_VS_TAWQIFI_DISTINCTION",
+      "resolved_location": "word/document.xml P27",
+      "affected_body_paragraphs": [27],
+      "verification": "P27_ONLY_CHANGE + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
+      "notes": "Replaced only the indirect negative binding/tevkîfî sentence with a direct positive distinction; all following source-based qualifications remain unchanged and F5-011+ remains untouched."
     }
   }
 }
