@@ -30,6 +30,11 @@ next_label=f'`F5-{next_f5:03d}`' if next_f5 is not None else 'none — Fifth Rep
 struct='\n'.join('- '+x for x in s.get('structural_state',[]))
 evidence='\n'.join('- '+x for x in s.get('evidence',[]))
 protected=s.get('protected_parts_status','Fourth-validated baseline preserved except explicitly authorized changes')
+visual_required=bool(s.get('visual_required',True))
+if visual_required:
+    visual_line=f'- Latest Fifth item human visual QA: **PASS**, {s["visual_pages"]}/{s["visual_pages"]} pages inspected (`{s["visual_file"]}`).'
+else:
+    visual_line='- Latest Fifth item human visual QA: **NOT_REQUIRED_NO_BYTE_CHANGE** — deterministic output is byte-identical to the already validated input binary.'
 STATE.write_text(f'''# APPLICATION STATE
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
@@ -73,7 +78,7 @@ STATE.write_text(f'''# APPLICATION STATE
 - Open HOLD items: {s.get('holds','none')}.
 - Fourth Report global validation: **PASS** (`work/runtime/FOURTH-VALIDATE-FINAL.txt`).
 - Latest Fifth item technical validation: **PASS** (`{s['technical_file']}`).
-- Latest Fifth item human visual QA: **PASS**, {s['visual_pages']}/{s['visual_pages']} pages inspected (`{s['visual_file']}`).
+{visual_line}
 
 ## Exact next action
 {s['next_action']}
@@ -107,6 +112,7 @@ HANDOFF.write_text(f'''# NEXT HANDOFF
 - Word fields: 520; ADDIN: 466; Zotero: 465 item + 1 bibliography
 - Bookmarks: 53/53; hyperlinks: 52; RTL inventory canonical-equal
 - Protected OOXML: {protected}
+- Latest Fifth visual status: {'PASS' if visual_required else 'NOT_REQUIRED_NO_BYTE_CHANGE'}
 
 ## Latest state
 {struct}
