@@ -1,0 +1,59 @@
+name: application-qa-export
+
+on:
+  pull_request:
+    branches:
+      - editorial/apply-fourth-fifth-reports
+    paths:
+      - 'work/QA-EXPORT-REQUEST.json'
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: editorial/apply-fourth-fifth-reports
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install lxml
+      - name: Validate SHA and build bounded QA DOCX
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/qa qa-export
+          python - <<'PY'
+          import json,hashlib
+          from pathlib import Path
+          from zipfile import ZipFile
+          from lxml import etree
+          from copy import deepcopy
+          req=json.loads(Path('work/QA-EXPORT-REQUEST.json').read_text(encoding='utf-8'))
+          cur=Path(req['docx']); got=hashlib.sha256(cur.read_bytes()).hexdigest()
+          assert got==req['sha256'],(got,req['sha256'])
+          W='http://schemas.openxmlformats.org/wordprocessingml/2006/main';NS={'w':W}
+          with ZipFile(cur) as z:
+              assert z.testzip() is None
+              d=etree.fromstring(z.read('word/document.xml'))
+              ps=d.xpath('.//w:body/w:p',namespaces=NS)
+              assert len(ps)==674,len(ps)
+              lines=[f'SHA256={got}',f'BODY_PARAGRAPHS={len(ps)}',f'RANGE={req["start"]}-{req["end"]}']
+              for i in range(int(req['start']),int(req['end'])+1):
+                  p=ps[i]; text=''.join(p.xpath('.//w:t/text()',namespaces=NS)); lines.append(f'P{i}\t{text}')
+              qa=deepcopy(d);body=qa.find('.//w:body',namespaces=NS);qps=body.xpath('./w:p',namespaces=NS)
+              for i,p in list(enumerate(qps)):
+                  if i<int(req['start']) or i>int(req['end']): body.remove(p)
+              xml=etree.tostring(qa,xml_declaration=True,encoding='UTF-8',standalone='yes')
+              with ZipFile('qa-export/slice.docx','w') as zout:
+                  for info in z.infolist(): zout.writestr(info,xml if info.filename=='word/document.xml' else z.read(info.filename))
+          Path('qa-export/manifest.txt').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: application-qa-export
+          path: qa-export/
+          retention-days: 7
