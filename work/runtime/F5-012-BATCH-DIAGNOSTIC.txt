@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "<stdin>", line 11, in <module>
+RuntimeError: FIRST_REPLAY_FAILED
+STDOUT:
+
+STDERR:
+Traceback (most recent call last):
+  File "/home/runner/work/kiraat-resm-mushaf-editorial-report/kiraat-resm-mushaf-editorial-report/work/apply_f5_012.py", line 100, in <module>
+    apply(Path(sys.argv[1]),Path(sys.argv[2]))
+  File "/home/runner/work/kiraat-resm-mushaf-editorial-report/kiraat-resm-mushaf-editorial-report/work/apply_f5_012.py", line 65, in apply
+    idx=locate(ps,OLD); p=ps[idx]; before=text(p)
+        ^^^^^^^^^^^^^^
+  File "/home/runner/work/kiraat-resm-mushaf-editorial-report/kiraat-resm-mushaf-editorial-report/work/apply_f5_012.py", line 43, in locate
+    if len(hits)!=1: raise RuntimeError(f'unique target failure for {needle!r}: {hits}')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: unique target failure for 'Kitabın literatüre sağlamayı hedeflediği katkı, resm ilmi ile kırâat ilmini bütünüyle yeni kavramlarla açıklamak değil, çoğu zaman ayrı başlıklar altında incelenen meseleleri ortak bir problem etrafında buluşturmaktır.': []
+
