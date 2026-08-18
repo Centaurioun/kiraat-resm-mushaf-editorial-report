@@ -1,16 +1,13 @@
 {
-  "checkpoint": "FOURTH-VALIDATE-FV001",
+  "checkpoint": "F5-001-PREFLIGHT-NOOP",
   "revision": 1,
-  "input_docx": "artifacts/checkpoints/manuscript-working-f4-116.docx",
-  "input_sha256": "73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf",
+  "input_docx": "artifacts/checkpoints/manuscript-working-fourth-validated.docx",
+  "input_sha256": "c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95",
   "script": "work/apply_fourth_validate_fv001.py",
-  "output_docx": "artifacts/checkpoints/manuscript-working-fourth-validated.docx",
-  "sha_file": "work/runtime/FOURTH-VALIDATE-FINAL-SHA256.txt",
-  "postflight_file": "work/runtime/FOURTH-VALIDATE-FINAL-POSTFLIGHT.txt",
-  "postflight_start": 500,
-  "postflight_end": 507,
-  "replay_file": "work/runtime/FOURTH-VALIDATE-FV001-REPLAY.txt",
-  "validator_script": "work/validate_fourth.py",
-  "validator_input": "artifacts/checkpoints/manuscript-working-fourth-validated.docx",
-  "validator_file": "work/runtime/FOURTH-VALIDATE-FINAL.txt"
+  "output_docx": "artifacts/checkpoints/manuscript-working-f5-001-preflight.docx",
+  "sha_file": "work/runtime/F5-001-PREFLIGHT-SHA256.txt",
+  "postflight_file": "work/runtime/F5-001-PREFLIGHT.txt",
+  "postflight_start": 0,
+  "postflight_end": 80,
+  "replay_file": "work/runtime/F5-001-PREFLIGHT-REPLAY.txt"
 }
