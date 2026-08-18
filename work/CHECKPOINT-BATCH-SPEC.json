@@ -1,46 +1,39 @@
 {
   "last_f4": 116,
   "next_f4": null,
-  "phase": "FOURTH_VALIDATE",
-  "next_stage": "FOURTH_VALIDATE",
-  "docx": "artifacts/checkpoints/manuscript-working-f4-116.docx",
-  "sha256": "73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf",
+  "phase": "FIFTH_APPLY",
+  "next_stage": "F5-001",
+  "docx": "artifacts/checkpoints/manuscript-working-fourth-validated.docx",
+  "sha256": "c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F4-116-TECHNICAL-VALIDATION.txt",
-  "visual_file": "work/F4-116-VISUAL-QA.md",
+  "technical_file": "work/runtime/FOURTH-VALIDATE-FINAL-TECHNICAL.txt",
+  "visual_file": "work/FOURTH-VALIDATE-VISUAL-QA.md",
   "visual_pages": 2,
+  "global_validation_file": "work/runtime/FOURTH-VALIDATE-FINAL.txt",
+  "global_validation_status": "PASS",
   "holds": "none",
-  "protected_parts_status": "baseline-identical except explicitly authorized footnote-text changes inherited from F4-112/F4-113; F4-114/F4-115 modify only bibliography result content/paragraphs in `word/document.xml`; F4-116 is byte-identical to F4-115",
-  "validation_marker": "## F4-116 checkpoint — VERIFIED_NO_CHANGE / PASS",
-  "validation_block": "- Final replay: `work/apply_f4_116.py`; output `manuscript-working-f4-116.docx` is byte-identical to durable F4-115 with SHA-256 `73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf`; body paragraphs remain 674.\n- F4-116 VERIFIED_NO_CHANGE: FN86 explicitly proves use of the 1993 Velîd Müsâid et-Tabatabâî edition. FN394 cites p. 144; independent inspection of printed p. 144 of the Tayyar Altıkulaç 1975 scan directly matches the distinctive P377 claim, proving genuine use of the 1975 edition. Therefore both Ebû Şâme bibliography records are retained.\n- Edition adjudication evidence: `work/F4-116-EDITION-ADJUDICATION.md`. The manuscript's `1/x` short forms were not treated as edition identifiers.\n- Technical workflow PASS: 469/469 footnotes/references, 0 orphan/dangling/duplicate, 520 fields, inherited authorized footnote-text change set only.\n- Human visual QA P500–P507: workflow run 32082193276 / artifact 9305471951; 2/2 rasterized pages manually inspected and PASS; both retained Ebû Şâme records are visible and layout-stable.\n- A separate metadata discrepancy discovered during adjudication is carried into FOURTH_VALIDATE: the 1975 bibliography record currently says `2 Cilt`, while independent catalogue records describe the Altıkulaç 1975 edition as one volume. This was not silently expanded into F4-116.\n- Fourth Report application boundary: F4-001–F4-116 complete. Next phase: FOURTH_VALIDATE; Fifth Report application remains blocked until validation passes.",
+  "protected_parts_status": "baseline-identical except explicitly authorized footnote-text changes from F4-112/F4-113; accepted Fourth bibliography/body result-text edits remain in `word/document.xml`; FOURTH_VALIDATE remediation changes only P504 visible bibliography result text and preserves field instructions/relationships",
+  "validation_marker": "## FOURTH_VALIDATE — PASS",
+  "validation_block": "- Durable Fourth input before global validation: `manuscript-working-f4-116.docx`, SHA `73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf`, body 674.\n- Read-only global gate `work/runtime/FOURTH-VALIDATE-READONLY.txt`: 210 ledger rows; F4 items 116 complete; all 94 F5 items still PENDING; 469/469 footnotes/references; 520 fields; ADDIN 466; Zotero ITEM 465 + bibliography 1; bookmarks 53/53; hyperlinks 52; fatal errors 0. Exactly one residual defect was identified: FV-001 at P504, where the Ebû Şâme 1975 / Tayyar Altıkulaç bibliography record incorrectly stated `2 Cilt`.\n- Independent catalogue evidence consistently identifies the 1975 Dâr Sadr / Tayyar Altıkulaç edition as a single-volume publication. FV-001 was remediated conservatively by removing only the visible result-text token ` 2 Cilt.`; F4-116's evidence-backed decision to retain both the 1975 and 1993 Ebû Şâme editions remains unchanged.\n- Remediation replay `work/apply_fourth_validate_fv001.py`: first replay changes P504 only; second replay `ALREADY_SATISFIED`; byte-identical idempotency PASS. Final candidate SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`; body remains 674.\n- Final global validator `work/runtime/FOURTH-VALIDATE-FINAL.txt`: PASS; fatal 0; residual defects 0; all F4/F5 ledger and OOXML invariants PASS.\n- Final technical gate `work/runtime/FOURTH-VALIDATE-FINAL-TECHNICAL.txt`: PASS on the final SHA.\n- Final human visual QA P500–P507: workflow run 32082945226 / artifact 9305697542; 2/2 rasterized pages manually inspected and PASS. The corrected 1975 record and retained 1993 record render naturally with no bibliography layout regression.\n- FOURTH_VALIDATE overall PASS. Fifth Report application is now authorized from the final validated Fourth binary; next item F5-001.",
   "structural_state": [
-    "F4-001–116 are now item-level complete; F4-116 is VERIFIED_NO_CHANGE rather than a manuscript edit.",
-    "F4-116 preserves both Ebû Şâme `el-Murşidu’l-vecîz` bibliography records because current evidence proves real use of both the 1975 Altıkulaç and 1993 Tabatabâî editions.",
-    "F4-116 candidate is byte-identical to F4-115; current body paragraph count remains 674.",
-    "All 469 footnote identities/references, 520 fields, Zotero/ADDIN fields, bookmarks, hyperlinks and RTL structural inventory remain preserved.",
-    "FOURTH_VALIDATE follow-up: adjudicate/correct the 1975 Ebû Şâme bibliography metadata `2 Cilt` discrepancy if confirmed; do not treat it as already resolved by F4-116."
+    "F4-001–116 are item-level complete and globally validated.",
+    "FOURTH_VALIDATE resolved one residual bibliography metadata defect: the Ebû Şâme 1975 / Tayyar Altıkulaç record no longer incorrectly states `2 Cilt`; both 1975 and 1993 records remain because both are genuinely used.",
+    "Final validated Fourth binary: `artifacts/checkpoints/manuscript-working-fourth-validated.docx`, SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`, body paragraphs 674.",
+    "All 469 footnote identities/references, 520 field instructions, ADDIN/Zotero field inventory, 53/53 bookmarks, 52 hyperlinks and canonical-equal RTL inventory remain preserved.",
+    "All 94 Fifth Report ledger items remain PENDING at the phase transition; F5-001 is the next exact item."
   ],
   "evidence": [
-    "Replay: `work/apply_f4_116.py`",
-    "Candidate: `artifacts/checkpoints/manuscript-working-f4-116.docx` — byte-identical to F4-115",
-    "SHA: `work/runtime/F4-116-SHA256.txt`",
-    "Preflight: `work/runtime/F4-116-PREFLIGHT.txt`",
-    "Postflight: `work/runtime/F4-116-POSTFLIGHT.txt`",
-    "Edition adjudication: `work/F4-116-EDITION-ADJUDICATION.md`",
-    "Technical validation: `work/runtime/F4-116-TECHNICAL-VALIDATION.txt`",
-    "Human visual review: `work/F4-116-VISUAL-QA.md` — 2/2 pages PASS",
-    "Visual workflow: run 32082193276 / artifact 9305471951"
+    "Read-only validator: `work/runtime/FOURTH-VALIDATE-READONLY.txt` — fatal 0, residual defect 1 (FV-001)",
+    "Read-only replay: `work/runtime/FOURTH-VALIDATE-READONLY-REPLAY.txt` — byte-identical PASS",
+    "Remediation replay: `work/runtime/FOURTH-VALIDATE-FV001-REPLAY.txt` — P504-only change, second replay ALREADY_SATISFIED",
+    "Final candidate: `artifacts/checkpoints/manuscript-working-fourth-validated.docx`",
+    "Final SHA: `work/runtime/FOURTH-VALIDATE-FINAL-SHA256.txt`",
+    "Final postflight: `work/runtime/FOURTH-VALIDATE-FINAL-POSTFLIGHT.txt`",
+    "Final global validator: `work/runtime/FOURTH-VALIDATE-FINAL.txt` — PASS, residual defects 0",
+    "Final technical gate: `work/runtime/FOURTH-VALIDATE-FINAL-TECHNICAL.txt` — PASS",
+    "Final human visual QA: `work/FOURTH-VALIDATE-VISUAL-QA.md` — 2/2 pages PASS",
+    "Final visual workflow: run 32082945226 / artifact 9305697542"
   ],
-  "next_action": "Enter FOURTH_VALIDATE on the durable F4-116 binary. First run a comprehensive read-only structural and ledger validation across all F4-001–116, verify no Fourth Report item remains PENDING/HOLD, and inspect residual bibliography/report inconsistencies. Explicitly re-check the Ebû Şâme 1975 record's `2 Cilt` metadata against authoritative edition evidence and correct it only if the discrepancy is confirmed within validation scope. Do not start F5-001 until FOURTH_VALIDATE passes and any validation defects are resolved.",
-  "updates": {
-    "F4-116": {
-      "status": "VERIFIED_NO_CHANGE",
-      "section": "Kaynakça ve Ebû Şâme dipnotları — duplicate-edition use adjudication",
-      "action_type": "EVIDENCE_MATCHED_DUAL_EDITION_RETENTION_NOOP",
-      "resolved_location": "word/footnotes.xml FN86/FN394 and word/document.xml bibliography P504/P505; no manuscript bytes changed",
-      "affected_body_paragraphs": [],
-      "verification": "1993_EXPLICIT_CITATION_PASS + 1975_PAGE_CONTENT_MATCH_PASS + BYTE_IDENTICAL_IDEMPOTENCY_PASS + TECHNICAL_PASS + 2/2_VISUAL_QA_PASS",
-      "notes": "Both Ebû Şâme editions retained because both are genuinely used. 1975 `2 Cilt` bibliography metadata discrepancy carried forward to FOURTH_VALIDATE as a separate validation issue."
-    }
-  }
+  "next_action": "Begin FIFTH_APPLY from the final validated Fourth binary. Fetch the exact F5-001 item from `final/fifth-report-locked.md`, resolve it against `artifacts/checkpoints/manuscript-working-fourth-validated.docx`, run a read-only preflight, and apply only F5-001 if unambiguous. Do not repeat F4-001–116 and do not pre-apply F5-002+.",
+  "updates": {}
 }
