@@ -6,6 +6,11 @@ on:
       - editorial/apply-fourth-fifth-reports
     paths:
       - 'work/VISUAL-BATCH-REQUEST.json'
+  pull_request:
+    branches:
+      - editorial/apply-fourth-fifth-reports
+    paths:
+      - 'work/VISUAL-BATCH-REQUEST.json'
 
 permissions:
   contents: write
