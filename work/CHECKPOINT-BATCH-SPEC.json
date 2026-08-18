@@ -1,42 +1,42 @@
 {
-  "last_f5": 10,
-  "next_f5": 11,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-010.docx",
-  "sha256": "bff8720ab193200c649ef68856a648d74d82d6d40974b9022e3cebd6f5c2d61c",
+  "last_f5": 11,
+  "next_f5": 12,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-011.docx",
+  "sha256": "c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F5-010-REPLAY.txt",
+  "technical_file": "work/runtime/F5-011-REPLAY.txt",
   "visual_required": true,
   "visual_pages": 3,
-  "visual_file": "work/F5-010-VISUAL-QA.md",
+  "visual_file": "work/F5-011-VISUAL-QA.md",
   "holds": "none",
-  "protected_parts_status": "Accepted prior package preserved except authorized Fifth visible-text edits; F5-010 validation confirms only P27 changed relative to durable F5-009 and all non-document package parts remained byte-identical",
-  "validation_marker": "## F5-010 checkpoint — APPLIED / PASS",
-  "validation_block": "- Locked F5-010 targeted the indirect negative sentence separating later mushaf-geleneği binding force from the claim that every writing detail is directly divinely determined.\n- The target alone was replaced with the positive Fourth-compatible formulation: `Resm-i Osmânî’nin sonraki mushaf geleneğindeki bağlayıcılığı ile bütün yazım ayrıntılarının tevkîfî olduğu görüşü ayrı meselelerdir.`\n- The preceding historical/normative distinction and the following source-based tevkîfî/ictihâdî discussion, Bâkıllânî attribution, other scholarly views, and methodological caution were preserved unchanged.\n- Deterministic replay: first replay APPLIED P27 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-010-REPLAY.txt`).\n- Candidate SHA `bff8720ab193200c649ef68856a648d74d82d6d40974b9022e3cebd6f5c2d61c`; body 674; all structural/package invariants passed.\n- SHA-locked QA export workflow run 32091158371 / artifact 9308356793 generated P26–P29; all 3/3 rendered pages were manually inspected and PASS (`work/F5-010-VISUAL-QA.md`).\n- Durable boundary after checkpoint: last F5-010; next F5-011.",
+  "protected_parts_status": "Accepted prior package preserved except authorized Fifth visible-text edits; F5-011 validation confirms only P30 changed relative to durable F5-010 and all non-document package parts remained byte-identical",
+  "validation_marker": "## F5-011 checkpoint — APPLIED / PASS",
+  "validation_block": "- Locked F5-011 targeted the `yalnız ... değil` contrast in the Giriş method paragraph: `Yazım örnekleri yalnız şekil bakımından değil, bağdaştıkları veya dışladıkları kırâat ihtimalleri açısından ele alınmaktadır.`\n- The target alone was replaced with the locked positive formulation: `Yazım örnekleri, şekil özellikleriyle birlikte bağdaştıkları veya dışladıkları kırâat ihtimalleri açısından ele alınmaktadır.`\n- The change preserves both Fourth-approved analytical dimensions (writing/form features and compatible/excluded qirāʾāt possibilities) and does not alter the preceding methodological cautions or following source-ground discussion.\n- Deterministic replay resolved the unique target at P30: first replay APPLIED P30 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-011-REPLAY.txt`).\n- Candidate SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`; body 674; all structural/package invariants passed.\n- SHA-locked QA export workflow run 32091656503 / artifact 9308514933 generated P29–P32; all 3/3 rendered pages were manually inspected and PASS (`work/F5-011-VISUAL-QA.md`).\n- Durable boundary after checkpoint: last F5-011; next F5-012.",
   "structural_state": [
     "Fourth Report and prior Fifth items remain accepted.",
-    "F5-010 is APPLIED at P27 by replacing only the indirect negative binding/tevkîfî sentence with a direct positive distinction.",
-    "Current SHA `bff8720ab193200c649ef68856a648d74d82d6d40974b9022e3cebd6f5c2d61c`; body 674.",
-    "F5-011 remains PENDING; no F5-011+ text has been applied."
+    "F5-011 is APPLIED at P30 by replacing only the `yalnız ... değil` writing-example contrast with the locked positive `şekil özellikleriyle birlikte` formulation.",
+    "Current SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`; body 674.",
+    "F5-012 remains PENDING; no F5-012+ text has been applied."
   ],
   "evidence": [
-    "Adjudication: `work/F5-010-ADJUDICATION.md`",
-    "Replay script: `work/apply_f5_010.py`",
-    "Replay: `work/runtime/F5-010-REPLAY.txt`",
-    "SHA: `work/runtime/F5-010-SHA256.txt`",
-    "Postflight: `work/runtime/F5-010-POSTFLIGHT.txt`",
-    "Human visual QA: `work/F5-010-VISUAL-QA.md` — 3/3 PASS",
-    "QA export: run 32091158371 / artifact 9308356793"
+    "Adjudication: `work/F5-011-ADJUDICATION.md`",
+    "Replay script: `work/apply_f5_011.py`",
+    "Replay: `work/runtime/F5-011-REPLAY.txt`",
+    "SHA: `work/runtime/F5-011-SHA256.txt`",
+    "Postflight: `work/runtime/F5-011-POSTFLIGHT.txt`",
+    "Human visual QA: `work/F5-011-VISUAL-QA.md` — 3/3 PASS",
+    "QA export: run 32091656503 / artifact 9308514933"
   ],
-  "next_action": "Fetch and apply only F5-011 against the durable F5-010 binary. Preserve Fourth scientific meaning and do not pre-apply F5-012+.",
+  "next_action": "Fetch and apply only F5-012 against the durable F5-011 binary. Preserve Fourth scientific meaning and do not pre-apply F5-013+.",
   "updates": {
-    "F5-010": {
+    "F5-011": {
       "status": "APPLIED",
-      "section": "Giriş — bağlayıcılık ile tevkîfîliğin ayrılması",
-      "action_type": "TARGETED_POSITIVE_BINDING_VS_TAWQIFI_DISTINCTION",
-      "resolved_location": "word/document.xml P27",
-      "affected_body_paragraphs": [27],
-      "verification": "P27_ONLY_CHANGE + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
-      "notes": "Replaced only the indirect negative binding/tevkîfî sentence with a direct positive distinction; all following source-based qualifications remain unchanged and F5-011+ remains untouched."
+      "section": "Giriş — yazım örneklerinin olumlu birlikte-değerlendirme formülasyonu",
+      "action_type": "TARGETED_POSITIVE_WRITING_EXAMPLE_ANALYTIC_SCOPE",
+      "resolved_location": "word/document.xml P30",
+      "affected_body_paragraphs": [30],
+      "verification": "P30_ONLY_CHANGE + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
+      "notes": "Replaced only the `yalnız ... değil` contrast with the locked positive formulation; preceding methodological content and F5-012+ text remain untouched."
     }
   }
 }
