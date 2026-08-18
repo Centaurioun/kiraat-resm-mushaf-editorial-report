@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `1d450126043f9673d8723c05e1d1314be8b8e9e2` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `d66650b08986bd4d401925fd19414f4a2b2bd5ae` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -15,14 +15,14 @@
 - Last fully completed Fourth Report item: `F4-116`
 - Next Fourth Report item: none — Fourth Report application complete
 - Fourth Report global validation: PASS
-- Last fully completed Fifth Report item: `F5-007`
-- Next Fifth Report item: `F5-008`
+- Last fully completed Fifth Report item: `F5-008`
+- Next Fifth Report item: `F5-009`
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-007.docx`
-- Current working DOCX SHA-256: `81ea83b68eb3ee24061c522aad07f96507e4b0ff00847a5f140a8dbe66d60c80`
-- Last known good commit basis: `1d450126043f9673d8723c05e1d1314be8b8e9e2`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-007.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-008.docx`
+- Current working DOCX SHA-256: `99b579b4c1ea369fbf4f27705d42a1f632d06f5e67bc177dd09363c765a07b32`
+- Last known good commit basis: `d66650b08986bd4d401925fd19414f4a2b2bd5ae`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-008.docx`
 - Current body paragraph count: 674
 
 ## Integrity
@@ -32,20 +32,19 @@
 - Zotero: 465 item + 1 bibliography preserved
 - Bookmarks: 53/53; hyperlinks: 52
 - Arabic/RTL structural inventory: canonical-equal
-- Protected OOXML parts: Accepted prior package preserved except authorized Fifth P25 text consolidation and one xml:space=preserve attribute on the existing Telakki text run required to preserve the visible sentence-boundary whitespace; all non-document package parts remained byte-identical
+- Protected OOXML parts: Accepted prior package preserved except authorized Fifth visible-text edits; F5-008 validation confirms only P26 changed relative to durable F5-007 and all non-document package parts remained byte-identical
 
 ## Structural-edit state
 - Fourth Report and prior Fifth items remain accepted.
-- F5-007 is APPLIED at P25 using the remediated R2 candidate; the first visually defective candidate is explicitly rejected.
-- P25 now gives the kırâat/rivâyet/tarîk/vecih hierarchy positively and preserves the İbnü’l-Cezerî and Telakki/edâ context.
-- Current SHA is `81ea83b68eb3ee24061c522aad07f96507e4b0ff00847a5f140a8dbe66d60c80`; body 674.
-- F5-008 remains PENDING.
+- F5-008 is APPLIED at P26 by replacing only the negative conformity opening with a positive real/ihtimalî formulation.
+- Current SHA `99b579b4c1ea369fbf4f27705d42a1f632d06f5e67bc177dd09363c765a07b32`; body 674.
+- F5-009 remains PENDING and its negative category sentence is still present.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Fourth Report global validation: **PASS** (`work/runtime/FOURTH-VALIDATE-FINAL.txt`).
-- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-007-REPLAY.txt`).
-- Latest Fifth item human visual QA: **PASS**, 3/3 pages inspected (`work/F5-007-VISUAL-QA.md`).
+- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-008-REPLAY.txt`).
+- Latest Fifth item human visual QA: **PASS**, 3/3 pages inspected (`work/F5-008-VISUAL-QA.md`).
 
 ## Exact next action
-Fetch the exact F5-008 item from `final/fifth-report-locked.md`, resolve it against the durable F5-007 binary, and apply only F5-008 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-009+.
+Fetch and apply only F5-009 against the durable F5-008 binary. Preserve Fourth scientific meaning and do not pre-apply F5-010+.

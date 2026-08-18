@@ -568,3 +568,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Accepted R2 candidate SHA `81ea83b68eb3ee24061c522aad07f96507e4b0ff00847a5f140a8dbe66d60c80`; body 674; all field/footnote/bookmark/hyperlink/RTL and non-document package invariants passed.
 - R2 SHA-locked QA export workflow run 32087726229 / artifact 9307270173 rendered P24–P27. All 3/3 pages were manually inspected and PASS; the boundary now visibly reads `işaret eder. Telakki`.
 - Durable boundary after checkpoint: last F5-007; next F5-008.
+
+
+## F5-008 checkpoint — APPLIED / PASS
+- Locked F5-008 targeted the negative opening `Resm-i Osmânî’ye uygunluk, her durumda harflerin okuyuşu birebir göstermesi anlamına gelmez.`
+- It was replaced only with `Resm-i Osmânî’ye uygunluk gerçek veya ihtimalî biçimde gerçekleşebilir.` The following Fourth-approved explanations of real and ihtimalî conformity were preserved, as was the later F5-009 target.
+- Deterministic replay: first replay APPLIED P26 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-008-REPLAY.txt`).
+- Candidate SHA `99b579b4c1ea369fbf4f27705d42a1f632d06f5e67bc177dd09363c765a07b32`; body 674; all structural/package invariants passed.
+- SHA-locked QA export workflow run 32088102115 / artifact 9307385656 generated P25–P28; all 3/3 rendered pages were manually inspected and PASS (`work/F5-008-VISUAL-QA.md`).
+- Durable boundary: last F5-008; next F5-009.
