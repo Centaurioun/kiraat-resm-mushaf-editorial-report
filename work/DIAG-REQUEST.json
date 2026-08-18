@@ -1,6 +1,6 @@
 {
-  "script": "work/apply_f4_113.py",
-  "input_docx": "artifacts/checkpoints/manuscript-working-f4-112.docx",
-  "input_sha256": "249337542baa6ad19b9ce0e4065c1ec5c85dc3a4efaee9ac4c4b9b5e7e107641",
-  "diag_file": "work/runtime/F4-113-DIAGNOSTIC.txt"
+  "script": "work/inspect_f5_017.py",
+  "input_docx": "artifacts/checkpoints/manuscript-working-f5-016.docx",
+  "input_sha256": "cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da",
+  "diag_file": "work/runtime/F5-017-INSPECT.txt"
 }
