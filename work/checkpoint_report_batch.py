@@ -12,7 +12,7 @@ head=subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
 rows=[json.loads(x) for x in LEDGER.read_text(encoding='utf-8').splitlines() if x.strip()]
 if len(rows)!=210: raise SystemExit(f'ledger count {len(rows)} != 210')
 byid={(r.get('id') or f"{r['report']}-{int(r['item_number']):03d}"):r for r in rows}
-for iid,u in s['updates'].items():
+for iid,u in s.get('updates',{}).items():
     if iid not in byid: raise SystemExit('missing ledger id '+iid)
     byid[iid].update(u)
 for n in range(1,last+1):
@@ -24,13 +24,20 @@ if nxt is not None:
 else:
     for n in range(1,117):
         if byid[f'F4-{n:03d}'].get('status')=='PENDING': raise SystemExit(f'Fourth Report incomplete at F4-{n:03d}')
+if phase=='FIFTH_APPLY':
+    for n in range(1,95):
+        if byid[f'F5-{n:03d}'].get('status')!='PENDING': raise SystemExit(f'premature Fifth Report state change F5-{n:03d}')
 LEDGER.write_text('\n'.join(json.dumps(r,ensure_ascii=False,separators=(',',':')) for r in rows)+'\n',encoding='utf-8')
 
 next_fourth=f'`F4-{nxt:03d}`' if nxt is not None else 'none — Fourth Report application complete'
 resume_next=f'F4-{nxt:03d}' if nxt is not None else (next_stage or phase)
+next_fifth='`F5-001` — ready to begin from the validated Fourth Report binary' if phase=='FIFTH_APPLY' else '`F5-001` (blocked until Fourth Report validation passes)'
 struct='\n'.join('- '+x for x in s.get('structural_state',[])) or '- Prior completed structural changes remain intact.'
 evidence='\n'.join('- '+x for x in s.get('evidence',[]))
 protected_status=s.get('protected_parts_status','baseline-identical')
+global_validation_file=s.get('global_validation_file')
+global_validation_status=s.get('global_validation_status')
+global_line=(f'- Fourth Report global validation: **{global_validation_status}** (`{global_validation_file}`).\n' if global_validation_file and global_validation_status else '')
 STATE.write_text(f'''# APPLICATION STATE
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
@@ -48,7 +55,7 @@ STATE.write_text(f'''# APPLICATION STATE
 - Last fully completed Fourth Report item: `F4-{last:03d}`
 - Next Fourth Report item: {next_fourth}
 - Last fully completed Fifth Report item: none
-- Next Fifth Report item: `F5-001` (do not start until Fourth Report validation passes)
+- Next Fifth Report item: {next_fifth}
 
 ## Current working state
 - Current working DOCX: `{s['docx']}`
@@ -71,10 +78,9 @@ STATE.write_text(f'''# APPLICATION STATE
 
 ## Holds / validation
 - Open HOLD items: {s.get('holds','none')}.
-- Last item-level validation result: **PASS**.
-- Deterministic replay/idempotency: PASS.
+{global_line}- Deterministic replay/idempotency: PASS.
 - Technical validation: PASS (`{s['technical_file']}`).
-- Bounded visual QA: PASS, {s['visual_pages']}/{s['visual_pages']} pages inspected (`{s['visual_file']}`).
+- Human visual QA: PASS, {s['visual_pages']}/{s['visual_pages']} pages inspected (`{s['visual_file']}`).
 
 ## Exact next action
 {s['next_action']}
@@ -94,7 +100,7 @@ HANDOFF.write_text(f'''# NEXT HANDOFF
 - Current phase: `{phase}`
 
 ## Resume boundary
-- Last completed item: `F4-{last:03d}`
+- Last completed Fourth item: `F4-{last:03d}`
 - Next item/stage: `{resume_next}`
 - DO-NOT-REPEAT: `F4-001`–`F4-{last:03d}`
 
@@ -108,7 +114,7 @@ HANDOFF.write_text(f'''# NEXT HANDOFF
 - Word fields: 520; ADDIN: 466; Zotero: 465 item + 1 bibliography
 - Bookmarks: 53/53; hyperlinks: 52; RTL inventory canonical-equal
 - Protected OOXML: {protected_status}
-
+{global_line}
 ## Latest structural state
 {struct}
 
