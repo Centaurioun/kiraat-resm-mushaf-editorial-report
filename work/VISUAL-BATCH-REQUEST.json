@@ -1,12 +1,12 @@
 {
-  "checkpoint": "F5-001-QA",
+  "checkpoint": "F5-002-AUTH-QA",
   "revision": 2,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-001.docx",
-  "sha256": "c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95",
-  "start": 15,
-  "end": 23,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-002.docx",
+  "sha256": "94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be",
+  "start": 20,
+  "end": 24,
   "allowed_footnote_text_ids": [2,28,32,41,50,66,105,271,272,273,274,292,342,344,345,346,377,380,381,407,409,411,414,421,423,424,425,426,427,428,431],
-  "technical_file": "work/runtime/F5-001-TECHNICAL-VALIDATION.txt",
-  "range_file": "work/runtime/F5-001-QA-RANGE.txt",
-  "pdf_file": "work/runtime/F5-001-QA.pdf"
+  "technical_file": "work/runtime/F5-002-AUTH-TECHNICAL.txt",
+  "range_file": "work/runtime/F5-002-AUTH-QA-RANGE.txt",
+  "pdf_file": "work/runtime/F5-002-AUTH-QA.pdf"
 }
