@@ -1,8 +1,8 @@
 {
-  "checkpoint": "FINAL-FIELD-REFRESH-QA",
+  "checkpoint": "FINALIZATION-ITEM3-QA",
   "revision": 1,
-  "docx": "artifacts/finalization/manuscript-field-refreshed.docx",
-  "sha256": "a5ee8d96fe870086a54da1b6feb95749e443907b97f8e8bfa5b16cae199814c5",
+  "docx": "artifacts/finalization/manuscript-editorial-marks-cleaned.docx",
+  "sha256": "67fc2e5e047957c2dd7ece5f065e612e1b51a331c9894bbb9d20d9b5b49e09f4",
   "start": 0,
   "end": 673
 }
