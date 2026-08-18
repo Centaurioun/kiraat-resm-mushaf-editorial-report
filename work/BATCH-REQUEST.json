@@ -1,13 +1,13 @@
 {
-  "checkpoint": "F5-016",
+  "checkpoint": "F5-017",
   "revision": 1,
-  "input_docx": "artifacts/checkpoints/manuscript-working-f5-015.docx",
-  "input_sha256": "c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19",
-  "script": "work/apply_f5_016.py",
-  "output_docx": "artifacts/checkpoints/manuscript-working-f5-016.docx",
-  "sha_file": "work/runtime/F5-016-SHA256.txt",
-  "postflight_file": "work/runtime/F5-016-POSTFLIGHT.txt",
-  "postflight_start": 40,
-  "postflight_end": 50,
-  "replay_file": "work/runtime/F5-016-REPLAY.txt"
+  "input_docx": "artifacts/checkpoints/manuscript-working-f5-016.docx",
+  "input_sha256": "cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da",
+  "script": "work/apply_f5_017.py",
+  "output_docx": "artifacts/checkpoints/manuscript-working-f5-017.docx",
+  "sha_file": "work/runtime/F5-017-SHA256.txt",
+  "postflight_file": "work/runtime/F5-017-POSTFLIGHT.txt",
+  "postflight_start": 50,
+  "postflight_end": 56,
+  "replay_file": "work/runtime/F5-017-REPLAY.txt"
 }
