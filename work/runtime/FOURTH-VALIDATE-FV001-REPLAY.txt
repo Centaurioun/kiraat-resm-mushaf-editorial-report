@@ -1,0 +1,9 @@
+FIRST_REPLAY_STDOUT
+FOURTH-VALIDATE-FV001	APPLIED	P504	REMOVE_ONLY=` 2 Cilt.`
+BEFORE	Ebû Şâme, Şihâbuddîn Abdurrahmân b. İsmâîl. el-Murşidu’l-vecîz ilâ ulûmin tetaallaku bi’l-kitâbi’l-azîz. thk. Tayyar Altıkulaç. 2 Cilt. Beyrut: Dâr Sadr, 1975.
+AFTER	Ebû Şâme, Şihâbuddîn Abdurrahmân b. İsmâîl. el-Murşidu’l-vecîz ilâ ulûmin tetaallaku bi’l-kitâbi’l-azîz. thk. Tayyar Altıkulaç. Beyrut: Dâr Sadr, 1975.
+
+SECOND_REPLAY_STDOUT
+FOURTH-VALIDATE-FV001	ALREADY_SATISFIED
+
+BYTE_IDENTICAL=PASS

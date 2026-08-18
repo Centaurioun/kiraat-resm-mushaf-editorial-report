@@ -1,0 +1,12 @@
+DOCX=artifacts/checkpoints/manuscript-working-fourth-validated.docx
+BODY_PARAGRAPHS=674
+P500	FN=[]	RTL=0	FLD=0	BOOK=0	Dîb, Velîd Mukbil es-Seyyid Ali. el-Maktû’ ve’l-mavsûl beyne resmi’l-mushafi ve’l-edâi’l-luğaviyyi mushafu’l-Medîneti’n-nebeviyyeti enmûzecen, ts.
+P501	FN=[]	RTL=0	FLD=0	BOOK=0	Durmuş, İsmail. “Hemze”. Türkiye Diyanet Vakfı İslam Ansiklopedisi. 17/190-193. İstanbul: TDV Yayınları, 1998.
+P502	FN=[]	RTL=0	FLD=0	BOOK=0	Ebû Dâvud, Süleymân b. Necâh. Muhtasaru’t-tebyîn li hecâi’t-tenzîl. thk. Ahmed b. Muhammed b. Muammer Şarşâl. 5 Cilt. Riyad: Mecmeu’l-Melik Fehd li’t-Tibâati’l-Mushafi’ş-Şerîf, 2000.
+P503	FN=[]	RTL=0	FLD=0	BOOK=0	Ebû Hayyân, Muhammed b. Yûsuf. el-Bahru’l-muhît. thk. Adil Ahmed Abdülmevcûd - Ali Muhammed Muavvaz. 8 Cilt. Beyrut: Dâru’l-Kütübi’l-İlmiyye, 1993.
+P504	FN=[]	RTL=0	FLD=0	BOOK=0	Ebû Şâme, Şihâbuddîn Abdurrahmân b. İsmâîl. el-Murşidu’l-vecîz ilâ ulûmin tetaallaku bi’l-kitâbi’l-azîz. thk. Tayyar Altıkulaç. Beyrut: Dâr Sadr, 1975.
+P505	FN=[]	RTL=0	FLD=0	BOOK=0	Ebû Şâme, Şihâbuddîn Abdurrahmân İsmâîl. el-Murşidu’l-vecîz ilâ ulûmin tetaallaku bi’l-kitâbi’l-Azîz. thk. Velîd Müsâid et-Tabatabâî. Kuveyt: Mektebetü’l-İmâm ez-Zehebî, 1993.
+P506	FN=[]	RTL=0	FLD=0	BOOK=0	Ebû Şehbe, Muhammed Muhammed. el-Medhal li dirâseti’l-Kur’âni’l-Kerîm. Riyad: Dâru’l-Livâ’, 1987.
+P507	FN=[]	RTL=0	FLD=0	BOOK=0	Ebu’l-Futûh, Muhammed Huseyn. İbn Haldûn ve resmu’l-mushafi’l-Osmânî. Beyrut: Mektebetu Lübnân, 1992.
+
+FOOTNOTES
