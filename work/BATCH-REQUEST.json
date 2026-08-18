@@ -1,6 +1,6 @@
 {
   "checkpoint": "F5-094-NEGATIVE-AUDIT",
-  "revision": 1,
+  "revision": 2,
   "input_docx": "artifacts/checkpoints/manuscript-working-f5-094.docx",
   "input_sha256": "81f97403c0cfcf151260ab7018077145ba260c4fe4f30ca5fe2d3b501d093571",
   "script": "work/inspect_f5_094_negatives.py",
