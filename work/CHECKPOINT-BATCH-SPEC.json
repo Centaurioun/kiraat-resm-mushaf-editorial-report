@@ -1,39 +1,39 @@
 {
-  "last_f4": 116,
-  "next_f4": null,
-  "phase": "FIFTH_APPLY",
-  "next_stage": "F5-001",
-  "docx": "artifacts/checkpoints/manuscript-working-fourth-validated.docx",
+  "last_f5": 1,
+  "next_f5": 2,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-001.docx",
   "sha256": "c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/FOURTH-VALIDATE-FINAL-TECHNICAL.txt",
-  "visual_file": "work/FOURTH-VALIDATE-VISUAL-QA.md",
-  "visual_pages": 2,
-  "global_validation_file": "work/runtime/FOURTH-VALIDATE-FINAL.txt",
-  "global_validation_status": "PASS",
+  "technical_file": "work/runtime/F5-001-REPLAY.txt",
+  "visual_required": false,
   "holds": "none",
-  "protected_parts_status": "baseline-identical except explicitly authorized footnote-text changes from F4-112/F4-113; accepted Fourth bibliography/body result-text edits remain in `word/document.xml`; FOURTH_VALIDATE remediation changes only P504 visible bibliography result text and preserves field instructions/relationships",
-  "validation_marker": "## FOURTH_VALIDATE — PASS",
-  "validation_block": "- Durable Fourth input before global validation: `manuscript-working-f4-116.docx`, SHA `73ccdd0b5e0c63450cf611d175e5fcf547ac0b9a9aaaf11bf09a4e5db5c996bf`, body 674.\n- Read-only global gate `work/runtime/FOURTH-VALIDATE-READONLY.txt`: 210 ledger rows; F4 items 116 complete; all 94 F5 items still PENDING; 469/469 footnotes/references; 520 fields; ADDIN 466; Zotero ITEM 465 + bibliography 1; bookmarks 53/53; hyperlinks 52; fatal errors 0. Exactly one residual defect was identified: FV-001 at P504, where the Ebû Şâme 1975 / Tayyar Altıkulaç bibliography record incorrectly stated `2 Cilt`.\n- Independent catalogue evidence consistently identifies the 1975 Dâr Sadr / Tayyar Altıkulaç edition as a single-volume publication. FV-001 was remediated conservatively by removing only the visible result-text token ` 2 Cilt.`; F4-116's evidence-backed decision to retain both the 1975 and 1993 Ebû Şâme editions remains unchanged.\n- Remediation replay `work/apply_fourth_validate_fv001.py`: first replay changes P504 only; second replay `ALREADY_SATISFIED`; byte-identical idempotency PASS. Final candidate SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`; body remains 674.\n- Final global validator `work/runtime/FOURTH-VALIDATE-FINAL.txt`: PASS; fatal 0; residual defects 0; all F4/F5 ledger and OOXML invariants PASS.\n- Final technical gate `work/runtime/FOURTH-VALIDATE-FINAL-TECHNICAL.txt`: PASS on the final SHA.\n- Final human visual QA P500–P507: workflow run 32082945226 / artifact 9305697542; 2/2 rasterized pages manually inspected and PASS. The corrected 1975 record and retained 1993 record render naturally with no bibliography layout regression.\n- FOURTH_VALIDATE overall PASS. Fifth Report application is now authorized from the final validated Fourth binary; next item F5-001.",
+  "protected_parts_status": "identical to the globally validated Fourth binary for F5-001; F5-001 is byte-identical VERIFIED_NO_CHANGE",
+  "validation_marker": "## F5-001 checkpoint — VERIFIED_NO_CHANGE / PASS",
+  "validation_block": "- Fifth target: replace a negative cem/istinsah contrast in the Giriş with a positive distinction.\n- Current P19 after Fourth Report + FOURTH_VALIDATE already states that the Hz. Ebû Bekir cem and Hz. Osman istinsah were `farklı tarihsel şartlarda gerçekleştirilen iki ayrı uygulama olarak rivâyet edilmiştir`, followed by an explicit source-plurality/caution sentence. The Fifth literal negative target is absent.\n- Fourth scientific/structural precedence therefore controls: replacing the accepted wording with the Fifth suggestion would add no correction and could weaken the historiographic safeguard carried by `rivâyet edilmiştir`.\n- `work/apply_f5_001.py` verified the resolved P19 state and absence of the old target, then carried the binary forward byte-identically twice. Output SHA remains `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`.\n- Structural inventory remains 674 body paragraphs, 469/469 genuine footnotes/references, 520 fields, ADDIN 466, Zotero ITEM 465 + bibliography 1, bookmarks 53/53, hyperlinks 52.\n- Human visual QA: NOT_REQUIRED_NO_BYTE_CHANGE because the F5-001 output is byte-for-byte the already globally validated Fourth binary.\n- Durable boundary: last F5-001; next F5-002.",
   "structural_state": [
-    "F4-001–116 are item-level complete and globally validated.",
-    "FOURTH_VALIDATE resolved one residual bibliography metadata defect: the Ebû Şâme 1975 / Tayyar Altıkulaç record no longer incorrectly states `2 Cilt`; both 1975 and 1993 records remain because both are genuinely used.",
-    "Final validated Fourth binary: `artifacts/checkpoints/manuscript-working-fourth-validated.docx`, SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`, body paragraphs 674.",
-    "All 469 footnote identities/references, 520 field instructions, ADDIN/Zotero field inventory, 53/53 bookmarks, 52 hyperlinks and canonical-equal RTL inventory remain preserved.",
-    "All 94 Fifth Report ledger items remain PENDING at the phase transition; F5-001 is the next exact item."
+    "Fourth Report F4-001–116 and FOURTH_VALIDATE remain fully accepted.",
+    "F5-001 is VERIFIED_NO_CHANGE: the current Giriş already satisfies the positive cem/istinsah distinction with stronger historical caution than the Fifth suggested rewrite.",
+    "Current binary is byte-identical to the globally validated Fourth binary; SHA `c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95`, body 674.",
+    "F5-002 remains PENDING and has not been pre-applied."
   ],
   "evidence": [
-    "Read-only validator: `work/runtime/FOURTH-VALIDATE-READONLY.txt` — fatal 0, residual defect 1 (FV-001)",
-    "Read-only replay: `work/runtime/FOURTH-VALIDATE-READONLY-REPLAY.txt` — byte-identical PASS",
-    "Remediation replay: `work/runtime/FOURTH-VALIDATE-FV001-REPLAY.txt` — P504-only change, second replay ALREADY_SATISFIED",
-    "Final candidate: `artifacts/checkpoints/manuscript-working-fourth-validated.docx`",
-    "Final SHA: `work/runtime/FOURTH-VALIDATE-FINAL-SHA256.txt`",
-    "Final postflight: `work/runtime/FOURTH-VALIDATE-FINAL-POSTFLIGHT.txt`",
-    "Final global validator: `work/runtime/FOURTH-VALIDATE-FINAL.txt` — PASS, residual defects 0",
-    "Final technical gate: `work/runtime/FOURTH-VALIDATE-FINAL-TECHNICAL.txt` — PASS",
-    "Final human visual QA: `work/FOURTH-VALIDATE-VISUAL-QA.md` — 2/2 pages PASS",
-    "Final visual workflow: run 32082945226 / artifact 9305697542"
+    "F5-001 preflight/postflight: `work/runtime/F5-001-PREFLIGHT.txt` and `work/runtime/F5-001-POSTFLIGHT.txt`",
+    "Replay: `work/apply_f5_001.py`",
+    "Replay evidence: `work/runtime/F5-001-REPLAY.txt` — two byte-identical VERIFIED_NO_CHANGE passes",
+    "Adjudication: `work/F5-001-ADJUDICATION.md`",
+    "Candidate: `artifacts/checkpoints/manuscript-working-f5-001.docx`",
+    "Candidate SHA: `work/runtime/F5-001-SHA256.txt`"
   ],
-  "next_action": "Begin FIFTH_APPLY from the final validated Fourth binary. Fetch the exact F5-001 item from `final/fifth-report-locked.md`, resolve it against `artifacts/checkpoints/manuscript-working-fourth-validated.docx`, run a read-only preflight, and apply only F5-001 if unambiguous. Do not repeat F4-001–116 and do not pre-apply F5-002+.",
-  "updates": {}
+  "next_action": "Fetch the exact F5-002 item from `final/fifth-report-locked.md`, resolve it against the durable F5-001 binary, and apply only F5-002 if unambiguous. Preserve Fourth scientific meaning and do not pre-apply F5-003+.",
+  "updates": {
+    "F5-001": {
+      "status": "VERIFIED_NO_CHANGE",
+      "section": "Giriş — cem/istinsah process distinction",
+      "action_type": "FOURTH_PRECEDENCE_RESOLVED_NOOP",
+      "resolved_location": "word/document.xml P19",
+      "affected_body_paragraphs": [],
+      "verification": "LITERAL_TARGET_ABSENT + CURRENT_POSITIVE_DISTINCTION_PRESENT + BYTE_IDENTICAL_REPLAY_PASS",
+      "notes": "Fourth-resolved `rivâyet edilmiştir` formulation retained; no new byte change; visual QA not required for byte-identical no-op."
+    }
+  }
 }
