@@ -1,6 +1,6 @@
 {
   "checkpoint": "F5-002-AUTH-REBUILD",
-  "revision": 2,
+  "revision": 3,
   "input_docx": "artifacts/checkpoints/manuscript-working-f5-001.docx",
   "input_sha256": "c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95",
   "script": "work/apply_f5_002.py",
