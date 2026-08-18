@@ -48,6 +48,10 @@ jobs:
               sha=hashlib.sha256(out.read_bytes()).hexdigest()
               dest=Path(req['output_docx']); dest.parent.mkdir(parents=True,exist_ok=True); dest.write_bytes(out.read_bytes())
               sha_file=Path(req['sha_file']); sha_file.parent.mkdir(parents=True,exist_ok=True); sha_file.write_text(sha+'\n',encoding='utf-8')
+              replay_file=req.get('replay_file')
+              if replay_file:
+                  Path(replay_file).parent.mkdir(parents=True,exist_ok=True)
+                  Path(replay_file).write_text('FIRST_REPLAY_STDOUT\n'+first.stdout+'\nSECOND_REPLAY_STDOUT\n'+second.stdout+'\nBYTE_IDENTICAL=PASS\n',encoding='utf-8')
               if diag.exists(): diag.unlink()
           except Exception:
               diag.parent.mkdir(parents=True,exist_ok=True)
@@ -92,6 +96,16 @@ jobs:
                   if hit: lines.append(f'FN{fid}\t'+''.join(hit[0].xpath('.//w:t/text()',namespaces=NS)))
           out=Path(req['postflight_file']); out.parent.mkdir(parents=True,exist_ok=True); out.write_text('\n'.join(lines),encoding='utf-8')
           PY
+      - name: Run optional validation report
+        if: steps.deterministic.outcome == 'success'
+        run: |
+          set -euo pipefail
+          has=$(python -c "import json;print('yes' if json.load(open('work/BATCH-REQUEST.json')).get('validator_script') else 'no')")
+          if [ "$has" = no ]; then exit 0; fi
+          script=$(python -c "import json;print(json.load(open('work/BATCH-REQUEST.json'))['validator_script'])")
+          docx=$(python -c "import json; r=json.load(open('work/BATCH-REQUEST.json')); print(r.get('validator_input',r['output_docx']))")
+          out=$(python -c "import json;print(json.load(open('work/BATCH-REQUEST.json'))['validator_file'])")
+          python "$script" "$docx" "$out"
       - name: Commit candidate and evidence
         if: steps.deterministic.outcome == 'success'
         run: |
@@ -100,7 +114,8 @@ jobs:
           python - <<'PY' > /tmp/paths
           import json
           r=json.load(open('work/BATCH-REQUEST.json'))
-          print(r['output_docx']);print(r['sha_file']);print(r['postflight_file'])
+          for k in ('output_docx','sha_file','postflight_file','replay_file','validator_file'):
+              if r.get(k): print(r[k])
           PY
           while read -r p; do git add "$p"; done < /tmp/paths
           if git diff --cached --quiet; then exit 0; fi
