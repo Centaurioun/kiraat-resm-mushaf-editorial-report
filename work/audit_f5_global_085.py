@@ -4,7 +4,7 @@ from zipfile import ZipFile
 from lxml import etree
 import hashlib, shutil, sys, re
 W='http://schemas.openxmlformats.org/wordprocessingml/2006/main'; NS={'w':W}
-EXPECTED='869aefdec0d5fe046176e09e690d0e7d928ab53566b641fa6ace912bda31160e'
+EXPECTED='81f97403c0cfcf151260ab7018077145ba260c4fe4f30ca5fe2d3b501d093571'
 PHRASES=['Sonuç olarak','Netice itibarıyla','Hülasa','Bütün bu veriler','Bütün bunlar birlikte düşünüldüğünde','Bu bağlamda','Bu çerçevede','göstermektedir','ortaya koymaktadır','açıkça ortaya koymaktadır','anlaşılmaktadır','Nitekim','Dolayısıyla','Böylece','Bu noktada','Bu yönüyle','Bununla birlikte','Diğer bir ifadeyle','Başka bir ifadeyle','dikkat çekici','önemlidir','önem arz etmektedir','Vurgulamak gerekir','vurgulamak gerekir','Bu durum','Bu yaklaşım','Bu süreç']
 def sha(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def txt(e): return ''.join(e.xpath('.//w:t/text()',namespaces=NS))
