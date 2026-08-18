@@ -1,41 +1,42 @@
 {
-  "last_f5": 8,
-  "next_f5": 9,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-008.docx",
-  "sha256": "99b579b4c1ea369fbf4f27705d42a1f632d06f5e67bc177dd09363c765a07b32",
+  "last_f5": 9,
+  "next_f5": 10,
+  "docx": "artifacts/checkpoints/manuscript-working-f5-009.docx",
+  "sha256": "ff35f3803f24f68dff43f2ce9569c39a275c03acfa518614803e48530d696dbd",
   "body_paragraphs": 674,
-  "technical_file": "work/runtime/F5-008-REPLAY.txt",
+  "technical_file": "work/runtime/F5-009-REPLAY.txt",
   "visual_required": true,
   "visual_pages": 3,
-  "visual_file": "work/F5-008-VISUAL-QA.md",
+  "visual_file": "work/F5-009-VISUAL-QA.md",
   "holds": "none",
-  "protected_parts_status": "Accepted prior package preserved except authorized Fifth visible-text edits; F5-008 validation confirms only P26 changed relative to durable F5-007 and all non-document package parts remained byte-identical",
-  "validation_marker": "## F5-008 checkpoint — APPLIED / PASS",
-  "validation_block": "- Locked F5-008 targeted the negative opening `Resm-i Osmânî’ye uygunluk, her durumda harflerin okuyuşu birebir göstermesi anlamına gelmez.`\n- It was replaced only with `Resm-i Osmânî’ye uygunluk gerçek veya ihtimalî biçimde gerçekleşebilir.` The following Fourth-approved explanations of real and ihtimalî conformity were preserved, as was the later F5-009 target.\n- Deterministic replay: first replay APPLIED P26 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-008-REPLAY.txt`).\n- Candidate SHA `99b579b4c1ea369fbf4f27705d42a1f632d06f5e67bc177dd09363c765a07b32`; body 674; all structural/package invariants passed.\n- SHA-locked QA export workflow run 32088102115 / artifact 9307385656 generated P25–P28; all 3/3 rendered pages were manually inspected and PASS (`work/F5-008-VISUAL-QA.md`).\n- Durable boundary: last F5-008; next F5-009.",
+  "protected_parts_status": "Accepted prior package preserved except authorized Fifth visible-text edits; F5-009 validation confirms only P26 changed relative to durable F5-008 and all non-document package parts remained byte-identical",
+  "validation_marker": "## F5-009 checkpoint — APPLIED / PASS",
+  "validation_block": "- Locked F5-009 targeted the negative sahih/meşhur/âhâd/şâz category opening and the negative shādh-status contrast in P26.\n- Under Fourth-over-Fifth precedence, the existing explanatory dimensions (naklin güvenilirliği, yaygınlığı, kabulü ve genel tilâvet alanındaki konumu) were preserved while the three-sentence negative/positive/negative block was consolidated into two positive sentences.\n- Accepted wording: `Sahih, meşhur, âhâd ve şâz nitelemeleri, naklin güvenilirliği, yaygınlığı, kabulü ve genel tilâvet alanındaki konumuyla ilgili farklı değerlendirme boyutlarını ifade eder. Şâz bir rivâyetin tefsîrî veya dilsel bilgi değeri ile bağlayıcı kırâat statüsü ayrı ayrı değerlendirilmelidir.`\n- Deterministic replay: first replay APPLIED P26 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-009-REPLAY.txt`).\n- Candidate SHA `ff35f3803f24f68dff43f2ce9569c39a275c03acfa518614803e48530d696dbd`; body 674; all structural/package invariants passed.\n- SHA-locked QA export workflow run 32090746409 / artifact 9308227484 generated P25–P28; all 3/3 rendered pages were manually inspected and PASS (`work/F5-009-VISUAL-QA.md`).\n- Durable boundary after checkpoint: last F5-009; next F5-010.",
   "structural_state": [
     "Fourth Report and prior Fifth items remain accepted.",
-    "F5-008 is APPLIED at P26 by replacing only the negative conformity opening with a positive real/ihtimalî formulation.",
-    "Current SHA `99b579b4c1ea369fbf4f27705d42a1f632d06f5e67bc177dd09363c765a07b32`; body 674.",
-    "F5-009 remains PENDING and its negative category sentence is still present."
+    "F5-009 is APPLIED at P26 by consolidating the category discussion into two positive sentences while preserving the Fourth-approved explanatory dimensions.",
+    "Current SHA `ff35f3803f24f68dff43f2ce9569c39a275c03acfa518614803e48530d696dbd`; body 674.",
+    "F5-010 remains PENDING; no F5-010+ text has been applied."
   ],
   "evidence": [
-    "Adjudication: `work/F5-008-ADJUDICATION.md`",
-    "Replay script: `work/apply_f5_008.py`",
-    "Replay: `work/runtime/F5-008-REPLAY.txt`",
-    "SHA: `work/runtime/F5-008-SHA256.txt`",
-    "Human visual QA: `work/F5-008-VISUAL-QA.md` — 3/3 PASS",
-    "QA export: run 32088102115 / artifact 9307385656"
+    "Adjudication: `work/F5-009-ADJUDICATION.md`",
+    "Replay script: `work/apply_f5_009.py`",
+    "Replay: `work/runtime/F5-009-REPLAY.txt`",
+    "SHA: `work/runtime/F5-009-SHA256.txt`",
+    "Postflight: `work/runtime/F5-009-POSTFLIGHT.txt`",
+    "Human visual QA: `work/F5-009-VISUAL-QA.md` — 3/3 PASS",
+    "QA export: run 32090746409 / artifact 9308227484"
   ],
-  "next_action": "Fetch and apply only F5-009 against the durable F5-008 binary. Preserve Fourth scientific meaning and do not pre-apply F5-010+.",
+  "next_action": "Fetch and apply only F5-010 against the durable F5-009 binary. Preserve Fourth scientific meaning and do not pre-apply F5-011+.",
   "updates": {
-    "F5-008": {
+    "F5-009": {
       "status": "APPLIED",
-      "section": "Giriş — resm-i Osmânî'ye uygunluğun olumlu tanımı",
-      "action_type": "TARGETED_POSITIVE_REAL_OR_PROBABILISTIC_CONFORMITY_OPENING",
+      "section": "Giriş — sahih/meşhur/âhâd/şâz kategorilerinin olumlu tanımı",
+      "action_type": "CONSOLIDATE_CATEGORY_BLOCK_TO_POSITIVE_DIMENSIONS_AND_STATUS_DISTINCTION",
       "resolved_location": "word/document.xml P26",
       "affected_body_paragraphs": [26],
       "verification": "P26_ONLY_CHANGE + IDEMPOTENCY_PASS + STRUCTURAL_PASS + 3/3_HUMAN_VISUAL_PASS",
-      "notes": "Only the negative opening was replaced; real/ihtimalî explanations and F5-009+ text remain unchanged."
+      "notes": "Preserved the Fourth-approved explanatory dimensions while replacing the negative category/status framing with two positive sentences; F5-010+ text remains untouched."
     }
   }
 }
