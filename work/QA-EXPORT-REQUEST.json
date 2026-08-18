@@ -1,8 +1,8 @@
 {
-  "checkpoint": "F5-094-QA",
+  "checkpoint": "F5-094-FULL-DOCX-EXPORT",
   "revision": 1,
   "docx": "artifacts/checkpoints/manuscript-working-f5-094.docx",
   "sha256": "81f97403c0cfcf151260ab7018077145ba260c4fe4f30ca5fe2d3b501d093571",
   "start": 0,
-  "end": 456
+  "end": 673
 }
