@@ -7,7 +7,7 @@
   "output_docx": "artifacts/checkpoints/manuscript-working-f5-012.docx",
   "sha_file": "work/runtime/F5-012-SHA256.txt",
   "postflight_file": "work/runtime/F5-012-POSTFLIGHT.txt",
-  "postflight_start": 31,
-  "postflight_end": 36,
+  "postflight_start": 14,
+  "postflight_end": 34,
   "replay_file": "work/runtime/F5-012-REPLAY.txt"
 }
