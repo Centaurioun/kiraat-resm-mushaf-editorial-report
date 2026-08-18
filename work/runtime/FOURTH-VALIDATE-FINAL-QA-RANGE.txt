@@ -2,7 +2,7 @@ DOCX=artifacts/checkpoints/manuscript-working-fourth-validated.docx
 SHA256=c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95
 BODY_PARAGRAPHS=674
 REFERENCE_ORDER_CHANGED=True
-RUN_ID=32082945226
+RUN_ID=32082986335
 ALLOWED_FOOTNOTE_TEXT_IDS=['105', '2', '271', '272', '273', '274', '28', '292', '32', '342', '344', '345', '346', '377', '380', '381', '407', '409', '41', '411', '414', '421', '423', '424', '425', '426', '427', '428', '431', '50', '66']
 P500	FN=[]	RTL=0	BOOK=0	Dîb, Velîd Mukbil es-Seyyid Ali. el-Maktû’ ve’l-mavsûl beyne resmi’l-mushafi ve’l-edâi’l-luğaviyyi mushafu’l-Medîneti’n-nebeviyyeti enmûzecen, ts.
 P501	FN=[]	RTL=0	BOOK=0	Durmuş, İsmail. “Hemze”. Türkiye Diyanet Vakfı İslam Ansiklopedisi. 17/190-193. İstanbul: TDV Yayınları, 1998.
