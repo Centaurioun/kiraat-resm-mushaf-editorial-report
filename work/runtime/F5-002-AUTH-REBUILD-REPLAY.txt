@@ -1,0 +1,10 @@
+FIRST_REPLAY_STDOUT
+F5-002	APPLIED	P22
+BEFORE	Bu sorular birbirinden bağımsız değildir. Osmânî mushafların ortak başvuru metni hâline gelme süreci açıklanmadan resm-i Osmânî’ye uygunluğun kabul ölçüsü oluşu anlaşılamaz. Kırâatin rivâyet mantığı ortaya konulmadan da bu ölçünün sınırlandırıcı işlevi doğru biçimde değerlendirilemez. Şehir mushaflarına ait rivâyetler yalnız erken dönem yazı tarihine, çağdaş baskılar da yalnız matbaa tarihine ait veriler değildir. İlki sahih okuyuşların farklı yazılı biçimler içinde nasıl korunduğunu, ikincisi resm ve zapt tercihlerinin kırâatlerin dolaşımını nasıl etkileyebildiğini göstermektedir. Araştırma, tarihsel teşekkül ile sonraki ilmî kabul ve uygulamalar arasındaki bağı bu meseleler üzerinden incelemektedir.
+AFTER	Araştırma soruları birbirine bağlıdır. Osmânî mushafların ortak başvuru metni hâline gelme süreci açıklanmadan resm-i Osmânî’ye uygunluğun kabul ölçüsü oluşu anlaşılamaz. Kırâatin rivâyet mantığı ortaya konulmadan da bu ölçünün sınırlandırıcı işlevi doğru biçimde değerlendirilemez. Şehir mushaflarına ait rivâyetler yalnız erken dönem yazı tarihine, çağdaş baskılar da yalnız matbaa tarihine ait veriler değildir. İlki sahih okuyuşların farklı yazılı biçimler içinde nasıl korunduğunu, ikincisi resm ve zapt tercihlerinin kırâatlerin dolaşımını nasıl etkileyebildiğini göstermektedir. Araştırma, tarihsel teşekkül ile sonraki ilmî kabul ve uygulamalar arasındaki bağı bu meseleler üzerinden incelemektedir.
+SCOPE	Only the negative first sentence was converted to positive form; accepted Fourth scientific follow-up preserved byte-for-byte at text level.
+
+SECOND_REPLAY_STDOUT
+F5-002	ALREADY_SATISFIED
+
+BYTE_IDENTICAL=PASS
