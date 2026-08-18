@@ -22,12 +22,18 @@ def main(src,out):
         print(f'SHA256={got}')
         print(f'BODY_PARAGRAPHS={len(ps)}')
         hits=[]
-        for i in range(50,76):
-            t=text(ps[i]);
+        for i in range(50,56):
+            t=text(ps[i])
             if TARGET in t: hits.append(i)
             fns=ps[i].xpath('.//w:footnoteReference/@w:id',namespaces=NS)
             print(f'P{i}\tFN={fns}\t{t}')
         print('TARGET_HITS='+repr(hits))
+        p=ps[53]
+        print('P53_SEQUENCE_BEGIN')
+        for j,n in enumerate(p.xpath('.//*[self::w:t or self::w:footnoteReference]',namespaces=NS)):
+            if n.tag==f'{{{W}}}t': print(f'{j:02d}\tTEXT\t{n.text or ""}')
+            else: print(f'{j:02d}\tFN\t{n.get(f"{{{W}}}id")}')
+        print('P53_SEQUENCE_END')
     shutil.copyfile(src,out)
     if sha256(out)!=got: raise RuntimeError('inspection copy not byte-identical')
     print('BYTE_IDENTICAL_COPY=PASS')
