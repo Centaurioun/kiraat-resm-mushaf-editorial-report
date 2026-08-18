@@ -597,3 +597,13 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Candidate SHA `bff8720ab193200c649ef68856a648d74d82d6d40974b9022e3cebd6f5c2d61c`; body 674; all structural/package invariants passed.
 - SHA-locked QA export workflow run 32091158371 / artifact 9308356793 generated P26–P29; all 3/3 rendered pages were manually inspected and PASS (`work/F5-010-VISUAL-QA.md`).
 - Durable boundary after checkpoint: last F5-010; next F5-011.
+
+
+## F5-011 checkpoint — APPLIED / PASS
+- Locked F5-011 targeted the `yalnız ... değil` contrast in the Giriş method paragraph: `Yazım örnekleri yalnız şekil bakımından değil, bağdaştıkları veya dışladıkları kırâat ihtimalleri açısından ele alınmaktadır.`
+- The target alone was replaced with the locked positive formulation: `Yazım örnekleri, şekil özellikleriyle birlikte bağdaştıkları veya dışladıkları kırâat ihtimalleri açısından ele alınmaktadır.`
+- The change preserves both Fourth-approved analytical dimensions (writing/form features and compatible/excluded qirāʾāt possibilities) and does not alter the preceding methodological cautions or following source-ground discussion.
+- Deterministic replay resolved the unique target at P30: first replay APPLIED P30 only; second replay ALREADY_SATISFIED; byte-idempotency PASS (`work/runtime/F5-011-REPLAY.txt`).
+- Candidate SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`; body 674; all structural/package invariants passed.
+- SHA-locked QA export workflow run 32091656503 / artifact 9308514933 generated P29–P32; all 3/3 rendered pages were manually inspected and PASS (`work/F5-011-VISUAL-QA.md`).
+- Durable boundary after checkpoint: last F5-011; next F5-012.
