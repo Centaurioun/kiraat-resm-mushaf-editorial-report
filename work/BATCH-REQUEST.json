@@ -1,16 +1,16 @@
 {
-  "checkpoint": "FINAL-FIELD-REFRESH",
+  "checkpoint": "FINALIZATION-ITEM3-RED-CLEANUP",
   "revision": 1,
-  "input_docx": "artifacts/checkpoints/manuscript-working-f5-094.docx",
-  "input_sha256": "81f97403c0cfcf151260ab7018077145ba260c4fe4f30ca5fe2d3b501d093571",
-  "script": "work/finalize_refresh_fields.py",
-  "output_docx": "artifacts/finalization/manuscript-field-refreshed.docx",
-  "sha_file": "work/runtime/FINAL-FIELD-REFRESH-SHA256.txt",
-  "postflight_file": "work/runtime/FINAL-FIELD-REFRESH-POSTFLIGHT.txt",
+  "input_docx": "artifacts/finalization/manuscript-field-refreshed.docx",
+  "input_sha256": "a5ee8d96fe870086a54da1b6feb95749e443907b97f8e8bfa5b16cae199814c5",
+  "script": "work/finalize_cleanup_editorial_red.py",
+  "output_docx": "artifacts/finalization/manuscript-editorial-marks-cleaned.docx",
+  "sha_file": "work/runtime/FINALIZATION-ITEM3-RED-CLEANUP-SHA256.txt",
+  "postflight_file": "work/runtime/FINALIZATION-ITEM3-RED-CLEANUP-POSTFLIGHT.txt",
   "postflight_start": 0,
-  "postflight_end": 12,
-  "replay_file": "work/runtime/FINAL-FIELD-REFRESH-REPLAY.txt",
-  "validator_script": "work/validate_field_refresh.py",
-  "validator_input": "artifacts/finalization/manuscript-field-refreshed.docx",
-  "validator_file": "work/runtime/FINAL-FIELD-REFRESH-VALIDATION.txt"
+  "postflight_end": 673,
+  "replay_file": "work/runtime/FINALIZATION-ITEM3-RED-CLEANUP-REPLAY.txt",
+  "validator_script": "work/validate_finalization_item3_red_cleanup.py",
+  "validator_input": "artifacts/finalization/manuscript-editorial-marks-cleaned.docx",
+  "validator_file": "work/runtime/FINALIZATION-ITEM3-RED-CLEANUP-VALIDATION.txt"
 }
