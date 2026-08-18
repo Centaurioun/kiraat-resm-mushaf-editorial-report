@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `9f184f62e524fe643882917df0ec02ad2a26919c` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `707d8493f743d613a6cb453cde1f13f9430fe1fe` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -15,14 +15,14 @@
 - Last fully completed Fourth Report item: `F4-116`
 - Next Fourth Report item: none — Fourth Report application complete
 - Fourth Report global validation: PASS
-- Last fully completed Fifth Report item: `F5-018`
-- Next Fifth Report item: `F5-019`
+- Last fully completed Fifth Report item: `F5-085`
+- Next Fifth Report item: `F5-086`
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-018.docx`
-- Current working DOCX SHA-256: `ffd4c4e8fabd7bd157cd21251f18da065e5466ecce357b63efe80361a18e4543`
-- Last known good commit basis: `9f184f62e524fe643882917df0ec02ad2a26919c`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-018.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-085.docx`
+- Current working DOCX SHA-256: `869aefdec0d5fe046176e09e690d0e7d928ab53566b641fa6ace912bda31160e`
+- Last known good commit basis: `707d8493f743d613a6cb453cde1f13f9430fe1fe`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-085.docx`
 - Current body paragraph count: 674
 
 ## Integrity
@@ -32,20 +32,19 @@
 - Zotero: 465 item + 1 bibliography preserved
 - Bookmarks: 53/53; hyperlinks: 52
 - Arabic/RTL structural inventory: canonical-equal
-- Protected OOXML parts: F5-018 changes only word/document.xml body paragraph P54 text; genuine FN27 identity/order and paragraph-end placement, accepted neighboring P53/P55 text, all other body paragraphs, fields, Zotero instructions, bookmarks, hyperlinks and RTL structural inventory remain preserved
+- Protected OOXML parts: F5-019–085 changes only authorized word/document.xml body paragraph text; genuine footnote-reference identity/order, fields, Zotero instructions, bookmarks, hyperlinks, Arabic/RTL structural inventory and all non-document package parts remain preserved
 
 ## Structural-edit state
-- Fourth Report and prior Fifth items remain accepted.
-- F5-018 is APPLIED: P54 meta-discourse and negative contrast were replaced by a positive two-sentence formulation with explicit Zerkeşî→Muhâsibî attribution chain.
-- Genuine FN27 remains at P54 paragraph end; P53/P55 and the pending F5-019 anchor remain untouched.
-- Current DOCX SHA `ffd4c4e8fabd7bd157cd21251f18da065e5466ecce357b63efe80361a18e4543`; body 674; technical and 3/3 human visual QA PASS.
-- F5-019 remains PENDING; no F5-019+ text has been applied.
+- Fourth Report and Fifth items F5-001–085 remain accepted.
+- F5-019–085 were completed sequentially with source-limited epistemic language and the oral-transmission-first scientific framework preserved.
+- Current DOCX SHA `869aefdec0d5fe046176e09e690d0e7d928ab53566b641fa6ace912bda31160e`; body 674; deterministic replay and 127/127 visual QA PASS.
+- F5-086 is next; F5-086–094 remain PENDING.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Fourth Report global validation: **PASS** (`work/runtime/FOURTH-VALIDATE-FINAL.txt`).
-- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-018-REPLAY.txt`).
-- Latest Fifth item human visual QA: **PASS**, 3/3 pages inspected (`work/F5-018-VISUAL-QA.md`).
+- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-085-REPLAY.txt`).
+- Latest Fifth item human visual QA: **PASS**, 127/127 pages inspected (`work/F5-085-VISUAL-QA.md`).
 
 ## Exact next action
-Fetch and apply only F5-019 against the durable F5-018 binary. Preserve Fourth scientific meaning and do not pre-apply F5-020+.
+Apply F5-086 through F5-094 global cleanup sequentially against the durable F5-085 binary, preserving direct quotations and Fourth Report scientific meaning.

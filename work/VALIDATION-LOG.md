@@ -692,3 +692,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - SHA-locked bounded QA export run 32145711242 / artifact 9327677225 covered P52–P56. The slice rendered to 3 pages with `/home/oai/skills/docx/render_docx.py`; all 3/3 pages were manually inspected and PASS (`work/F5-018-VISUAL-QA.md`).
 - P54 paragraph spacing, note-marker placement and neighboring transition rendered cleanly; no clipping, overlap, style leakage or edit-induced pagination defect was observed.
 - Durable boundary after checkpoint: last F5-018; next F5-019.
+
+
+## F5-019–085 checkpoint — PASS
+- F5-019 through F5-085 were adjudicated and executed sequentially against durable F5-018 under Fourth Report scientific precedence.
+- First replay applied the authorized subset and verified the remaining items as no-change; the second replay produced no paragraph changes; byte-idempotency PASS (`work/runtime/F5-085-REPLAY.txt`).
+- Candidate SHA `869aefdec0d5fe046176e09e690d0e7d928ab53566b641fa6ace912bda31160e`; body count 674.
+- Package integrity PASS: 469/469 genuine references; 0/0/0 orphan/dangling/duplicate; 520 fields; ADDIN 466; Zotero 465 item + 1 bibliography; bookmarks 53/53; hyperlinks 52; RTL structural inventory canonical-equal.
+- SHA-locked QA export run 32148785913 / artifact 9328860025 covered P60–P455. The range was split only for rendering after a monolithic LibreOffice render exceeded the execution window; every rendered page was manually inspected: 127/127 PASS (`work/F5-085-VISUAL-QA.md`).
+- F5-086–094 remain pending and were not pre-applied.

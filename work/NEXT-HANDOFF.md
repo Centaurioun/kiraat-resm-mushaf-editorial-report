@@ -2,47 +2,44 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Checkpoint basis HEAD: `9f184f62e524fe643882917df0ec02ad2a26919c` plus this metadata checkpoint commit
+- Checkpoint basis HEAD: `707d8493f743d613a6cb453cde1f13f9430fe1fe` plus this metadata checkpoint commit
 - Current phase: `FIFTH_APPLY`
 
 ## Resume boundary
 - Last completed Fourth item: `F4-116`
-- Last completed Fifth item: `F5-018`
-- Next Fifth item: `F5-019`
+- Last completed Fifth item: `F5-085`
+- Next Fifth item: `F5-086`
 - DO-NOT-REPEAT Fourth: `F4-001`–`F4-116`
-- DO-NOT-REPEAT Fifth: `F5-001`–`F5-018`
+- DO-NOT-REPEAT Fifth: `F5-001`–`F5-085`
 
 ## Working manuscript
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-018.docx`
-- Current working SHA-256: `ffd4c4e8fabd7bd157cd21251f18da065e5466ecce357b63efe80361a18e4543`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-085.docx`
+- Current working SHA-256: `869aefdec0d5fe046176e09e690d0e7d928ab53566b641fa6ace912bda31160e`
 - Last known good DOCX: same path above
 
 ## Integrity snapshot
 - Footnotes/references: 469/469; orphans/dangling/duplicates: 0/0/0
 - Word fields: 520; ADDIN: 466; Zotero: 465 item + 1 bibliography
 - Bookmarks: 53/53; hyperlinks: 52; RTL inventory canonical-equal
-- Protected OOXML: F5-018 changes only word/document.xml body paragraph P54 text; genuine FN27 identity/order and paragraph-end placement, accepted neighboring P53/P55 text, all other body paragraphs, fields, Zotero instructions, bookmarks, hyperlinks and RTL structural inventory remain preserved
+- Protected OOXML: F5-019–085 changes only authorized word/document.xml body paragraph text; genuine footnote-reference identity/order, fields, Zotero instructions, bookmarks, hyperlinks, Arabic/RTL structural inventory and all non-document package parts remain preserved
 - Latest Fifth visual status: PASS
 
 ## Latest state
-- Fourth Report and prior Fifth items remain accepted.
-- F5-018 is APPLIED: P54 meta-discourse and negative contrast were replaced by a positive two-sentence formulation with explicit Zerkeşî→Muhâsibî attribution chain.
-- Genuine FN27 remains at P54 paragraph end; P53/P55 and the pending F5-019 anchor remain untouched.
-- Current DOCX SHA `ffd4c4e8fabd7bd157cd21251f18da065e5466ecce357b63efe80361a18e4543`; body 674; technical and 3/3 human visual QA PASS.
-- F5-019 remains PENDING; no F5-019+ text has been applied.
+- Fourth Report and Fifth items F5-001–085 remain accepted.
+- F5-019–085 were completed sequentially with source-limited epistemic language and the oral-transmission-first scientific framework preserved.
+- Current DOCX SHA `869aefdec0d5fe046176e09e690d0e7d928ab53566b641fa6ace912bda31160e`; body 674; deterministic replay and 127/127 visual QA PASS.
+- F5-086 is next; F5-086–094 remain PENDING.
 
 ## Evidence
-- Adjudication: `work/F5-018-ADJUDICATION.md`
-- Current-state diagnostic: `work/runtime/F5-018-INSPECT.txt`
-- Deterministic runner: `work/apply_f5_018.py`
-- Replay: `work/runtime/F5-018-REPLAY.txt`
-- SHA: `work/runtime/F5-018-SHA256.txt`
-- Postflight: `work/runtime/F5-018-POSTFLIGHT.txt`
-- Accepted application batch: run 32145561012
-- Visual QA: `work/F5-018-VISUAL-QA.md` — SHA-locked export run 32145711242 / artifact 9327677225; 3/3 pages manually inspected PASS
+- Deterministic runner: `work/apply_f5_019_085.py`
+- Replay: `work/runtime/F5-085-REPLAY.txt`
+- SHA: `work/runtime/F5-085-SHA256.txt`
+- Postflight: `work/runtime/F5-085-POSTFLIGHT.txt`
+- Accepted application batch: run 32148596188
+- Visual QA: `work/F5-085-VISUAL-QA.md` — SHA-locked export run 32148785913 / artifact 9328860025; 127/127 pages manually inspected PASS
 
 ## Open HOLDs
 none
 
 ## Exact next action
-Fetch and apply only F5-019 against the durable F5-018 binary. Preserve Fourth scientific meaning and do not pre-apply F5-020+.
+Apply F5-086 through F5-094 global cleanup sequentially against the durable F5-085 binary, preserving direct quotations and Fourth Report scientific meaning.
