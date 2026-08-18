@@ -559,3 +559,12 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Candidate SHA-256 `91a36064fdded4aa1ca72302ceb2d690f2a945fb921eb5ddc5f5e3b5efc1f092`; body remains 674; package/field/footnote/bookmark/hyperlink/RTL invariants passed.
 - SHA-locked QA export workflow run 32087050595 / artifact 9307054073 generated P24–P27. Canonical DOCX render produced 3 pages; all 3/3 were manually inspected and PASS (`work/F5-006-VISUAL-QA.md`).
 - Durable boundary after checkpoint: last F5-006; next F5-007.
+
+
+## F5-007 checkpoint — APPLIED / PASS after visual remediation
+- Locked F5-007 targeted the negative kırâat/rivâyet/tarîk hierarchy sentence. The adjacent `Vecih ise...` sentence would duplicate the Fifth positive hierarchy, so both were consolidated into one positive hierarchy sentence while preserving the preceding İbnü’l-Cezerî definition and all text from `Telakki...` onward.
+- First deterministic candidate SHA `0a019bad3d75933734a29e99bd89028c5ba25d258b6d0322c9bdf28d8f4d17d4` passed structural checks but FAILED human visual QA: LibreOffice rendered `işaret eder.Telakki` because the following run's leading space lacked `xml:space=preserve`. This rejected candidate is documented in `work/F5-007-VISUAL-QA-FAIL-R1.md` and was never checkpointed.
+- R2 replay explicitly preserves the `Telakki` run boundary whitespace and validates that no structural difference beyond this xml:space attribute and the authorized P25 text edit occurs. First replay APPLIED; second replay ALREADY_SATISFIED; byte-idempotency PASS.
+- Accepted R2 candidate SHA `81ea83b68eb3ee24061c522aad07f96507e4b0ff00847a5f140a8dbe66d60c80`; body 674; all field/footnote/bookmark/hyperlink/RTL and non-document package invariants passed.
+- R2 SHA-locked QA export workflow run 32087726229 / artifact 9307270173 rendered P24–P27. All 3/3 pages were manually inspected and PASS; the boundary now visibly reads `işaret eder. Telakki`.
+- Durable boundary after checkpoint: last F5-007; next F5-008.
