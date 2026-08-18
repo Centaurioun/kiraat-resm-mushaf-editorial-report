@@ -1,0 +1,10 @@
+FINAL_FIELD_REFRESH_LO_CROSSCHECK=PASS
+CANDIDATE=artifacts/finalization/manuscript-field-refreshed.docx
+SHA256=a5ee8d96fe870086a54da1b6feb95749e443907b97f8e8bfa5b16cae199814c5
+MODE=IN_MEMORY_ONLY_NO_SAVE
+CONTENT_INDEX_COUNT=1
+RETAINED_TOC_ENTRIES=46
+PAGE_CACHE_MATCH=46/46
+UPDATED_PAGE_SEQUENCE=1,2,7,7,7,9,10,13,17,20,20,21,22,25,28,29,32,33,36,36,36,37,38,39,40,41,46,46,46,48,49,51,53,54,58,70,70,70,72,76,78,82,86,89,94,98
+STALE_TOC_ENTRIES_ABSENT=_Toc235035691,_Toc235035701,_Toc235035702,_Toc235035703,_Toc235035704,_Toc235035705
+NOTE=LibreOffice was used only as an in-memory index/pagination cross-check. Its saved DOCX round-trip was rejected earlier because it rewrote protected OOXML structure; no LibreOffice-saved file was accepted as the candidate.
