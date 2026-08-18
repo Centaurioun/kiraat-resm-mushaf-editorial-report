@@ -665,3 +665,17 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - SHA-locked bounded QA export run 32123704569 / artifact 9319511593 covered P43–P47. The exported slice rendered to 3 pages with `/home/oai/skills/docx/render_docx.py`; all 3/3 pages were manually inspected and PASS (`work/F5-016-VISUAL-QA.md`).
 - No clipping, overlap, abnormal whitespace, paragraph-style leakage, footnote overflow, missing text, or edit-induced pagination defect was observed.
 - Durable boundary after checkpoint: last F5-016; next F5-017.
+
+
+## F5-017 checkpoint — APPLIED / PASS
+- Locked F5-017 targeted the three-stage repetition in 1.2: the Medine practice was first summarized as `çok daha sistemli ve titiz`, then reintroduced with `Nitekim`, then concluded a second time as a regular practice.
+- Current durable F5-016 resolved the target uniquely at P53. P53 carried genuine footnote references 24, 25 and 26 in that order.
+- Fourth Report constraints were preserved: F4-012 had already shortened the general 1.2 opening, while F4-016 deliberately limited the Medine conclusion to what the rivâyet material reports. F5-017 therefore retained source-limited wording rather than asserting an independently verified historical fact.
+- Only P53 was changed. Its opening is now: `Medine dönemine ilişkin rivâyetlerde Hz. Peygamber’in vahiy geldiğinde kâtiplerden birini çağırdığı ve âyetleri yazdırdığı aktarılır. Zeyd b. Sâbit’in (ö. 45/665), “Allah Rasûlü’ne vahiy geldiğinde derhâl beni çağırır, ben de onu yazıya geçirirdim.” şeklindeki ifadesi bu uygulamanın örneklerinden biridir. Rivâyetlerde Medine dönemindeki vahiy kaydı düzenli bir uygulama olarak yer alır.`
+- Zeyd b. Sâbit's existing death date was retained; FN24 remains after the first Medine-report sentence and FN25 remains after the Zeyd quotation. FN26 and every sentence from `Ancak Hz. Peygamber hayatta iken...` onward remain intact.
+- P54, including the locked F5-018 target `özellikle vurgulamamız gerekmektedir`, remains untouched; no F5-018+ text was pre-applied.
+- Deterministic replay: first replay `APPLIED P53`; second replay `ALREADY_SATISFIED P53`; byte-idempotency PASS (`work/runtime/F5-017-REPLAY.txt`). Only P53 changed in document.xml; package/integrity invariants PASS.
+- Candidate `artifacts/checkpoints/manuscript-working-f5-017.docx` SHA `554f4b806c66681e55fcba093764d25bca9e9926ea0f296e7f0b027391b45437`; body 674.
+- SHA-locked bounded QA export run 32132335848 / artifact 9322647363 covered P51–P55. The exported slice rendered to 4 pages with `/home/oai/skills/docx/render_docx.py`; all 4/4 pages were manually inspected and PASS (`work/F5-017-VISUAL-QA.md`).
+- P53 footnote placement, quotation spacing, and `yer alır. Ancak...` transition rendered cleanly. The slice's preserved TOC page and trailing footnote-only page are bounded-export derivatives, not edit-induced candidate defects.
+- Durable boundary after checkpoint: last F5-017; next F5-018.
