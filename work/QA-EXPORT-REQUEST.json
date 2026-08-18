@@ -1,8 +1,8 @@
 {
-  "checkpoint": "F5-011-QA",
+  "checkpoint": "F5-016-QA",
   "revision": 1,
-  "docx": "artifacts/checkpoints/manuscript-working-f5-011.docx",
-  "sha256": "c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19",
-  "start": 29,
-  "end": 32
+  "docx": "artifacts/checkpoints/manuscript-working-f5-016.docx",
+  "sha256": "cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da",
+  "start": 43,
+  "end": 47
 }
