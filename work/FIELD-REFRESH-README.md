@@ -1,0 +1,1 @@
+The final field-refresh stage operates on a copy of the accepted F5-094 binary. The accepted F5-094 file remains the rollback source. Only derived Word fields/indexes may change in the refresh candidate; editorial prose and citation/reference structures are protected.
