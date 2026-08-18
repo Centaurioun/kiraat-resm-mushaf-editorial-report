@@ -607,3 +607,15 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Candidate SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`; body 674; all structural/package invariants passed.
 - SHA-locked QA export workflow run 32091656503 / artifact 9308514933 generated P29–P32; all 3/3 rendered pages were manually inspected and PASS (`work/F5-011-VISUAL-QA.md`).
 - Durable boundary after checkpoint: last F5-011; next F5-012.
+
+
+## F5-012 checkpoint — VERIFIED_NO_CHANGE / PASS
+- Locked F5-012 targeted a negative literature-contribution sentence specifically in `Giriş`: `Kitabın literatüre sağlamayı hedeflediği katkı, resm ilmi ile kırâat ilmini bütünüyle yeni kavramlarla açıklamak değil, çoğu zaman ayrı başlıklar altında incelenen meseleleri ortak bir problem etrafında buluşturmaktır.`
+- Fail-closed inspection of the durable F5-011 binary established that P15 is the `Giriş` heading and P16–P34 contain the current Introduction; the locked target is absent and no equivalent negative literature-contribution sentence occurs in that locked location.
+- P14 is before the `Giriş` heading and therefore outside the locked location. The superficially similar `Kitabın ilmî katkısı ... eklemekten ziyade ...` sentence is at P454 in `Sonuç` and belongs to accepted Fourth F4-110; it was explicitly protected and left unchanged.
+- Under Fourth-over-Fifth precedence, inserting the Fifth suggested replacement would create material no longer present in the current Introduction, while rewriting P454 would violate the locked location and accepted Fourth closure. F5-012 is therefore `VERIFIED_NO_CHANGE`.
+- Deterministic replay: first replay `VERIFIED_NO_CHANGE / GIRIS_TARGET_ABSENT`; second replay same; F4-110/P454 unchanged; complete package byte identity PASS (`work/runtime/F5-012-REPLAY.txt`).
+- Candidate `artifacts/checkpoints/manuscript-working-f5-012.docx` SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`, exactly equal to durable F5-011; body 674 and structural/package invariants PASS.
+- Human visual QA is not required because no manuscript bytes changed.
+- Earlier exploratory batch attempts were fail-closed diagnostics only and produced no accepted candidate.
+- Durable boundary after checkpoint: last F5-012; next F5-013.
