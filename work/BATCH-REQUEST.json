@@ -1,13 +1,13 @@
 {
   "checkpoint": "F5-002",
-  "revision": 2,
+  "revision": 3,
   "input_docx": "artifacts/checkpoints/manuscript-working-f5-001.docx",
   "input_sha256": "c2ca1ee19360cb7d6176f26b1ff894160ebb9b4ecd0492fbaf38ce5b15531a95",
   "script": "work/apply_f5_002.py",
   "output_docx": "artifacts/checkpoints/manuscript-working-f5-002.docx",
   "sha_file": "work/runtime/F5-002-SHA256.txt",
   "postflight_file": "work/runtime/F5-002-POSTFLIGHT.txt",
-  "postflight_start": 15,
-  "postflight_end": 23,
+  "postflight_start": 20,
+  "postflight_end": 24,
   "replay_file": "work/runtime/F5-002-REPLAY.txt"
 }
