@@ -1,16 +1,16 @@
 {
-  "checkpoint": "FINALIZATION-ITEM3-RED-CLEANUP",
+  "checkpoint": "FINALIZATION-ITEM4-PUBLISHING-FREEZE",
   "revision": 1,
-  "input_docx": "artifacts/finalization/manuscript-field-refreshed.docx",
-  "input_sha256": "a5ee8d96fe870086a54da1b6feb95749e443907b97f8e8bfa5b16cae199814c5",
-  "script": "work/finalize_cleanup_editorial_red.py",
-  "output_docx": "artifacts/finalization/manuscript-editorial-marks-cleaned.docx",
-  "sha_file": "work/runtime/FINALIZATION-ITEM3-RED-CLEANUP-SHA256.txt",
-  "postflight_file": "work/runtime/FINALIZATION-ITEM3-RED-CLEANUP-POSTFLIGHT.txt",
+  "input_docx": "artifacts/finalization/manuscript-editorial-marks-cleaned.docx",
+  "input_sha256": "67fc2e5e047957c2dd7ece5f065e612e1b51a331c9894bbb9d20d9b5b49e09f4",
+  "script": "work/finalize_freeze_publishing_delivery.py",
+  "output_docx": "artifacts/delivery/kiraatlerin-rivayetinde-resm-i-mushafin-etkisi-final.docx",
+  "sha_file": "artifacts/delivery/kiraatlerin-rivayetinde-resm-i-mushafin-etkisi-final.sha256",
+  "postflight_file": "work/runtime/FINALIZATION-ITEM4-POSTFLIGHT.txt",
   "postflight_start": 0,
-  "postflight_end": 673,
-  "replay_file": "work/runtime/FINALIZATION-ITEM3-RED-CLEANUP-REPLAY.txt",
-  "validator_script": "work/validate_finalization_item3_red_cleanup.py",
-  "validator_input": "artifacts/finalization/manuscript-editorial-marks-cleaned.docx",
-  "validator_file": "work/runtime/FINALIZATION-ITEM3-RED-CLEANUP-VALIDATION.txt"
+  "postflight_end": 12,
+  "replay_file": "work/runtime/FINALIZATION-ITEM4-REPLAY.txt",
+  "validator_script": "work/validate_finalization_item4_delivery.py",
+  "validator_input": "artifacts/delivery/kiraatlerin-rivayetinde-resm-i-mushafin-etkisi-final.docx",
+  "validator_file": "artifacts/delivery/FINAL-DELIVERY-RECEIPT.txt"
 }
