@@ -7,6 +7,7 @@
   "technical_file": "work/runtime/F5-016-REPLAY.txt",
   "visual_required": true,
   "visual_pages": 3,
+  "visual_file": "work/F5-016-VISUAL-QA.md",
   "holds": "none",
   "protected_parts_status": "F5-016 changes only word/document.xml body paragraph P45 text; FN14 identity/order, the P45 caution sentence, all other body paragraphs, fields, Zotero instructions, bookmarks, hyperlinks and RTL structural inventory remain preserved",
   "validation_marker": "## F5-016 checkpoint — APPLIED / PASS",
