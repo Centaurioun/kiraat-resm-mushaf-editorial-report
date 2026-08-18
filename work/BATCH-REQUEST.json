@@ -1,13 +1,13 @@
 {
-  "checkpoint": "F5-085-GLOBAL-AUDIT",
+  "checkpoint": "F5-094",
   "revision": 1,
   "input_docx": "artifacts/checkpoints/manuscript-working-f5-085.docx",
   "input_sha256": "869aefdec0d5fe046176e09e690d0e7d928ab53566b641fa6ace912bda31160e",
-  "script": "work/audit_f5_global_085.py",
-  "output_docx": "artifacts/checkpoints/manuscript-working-f5-085-global-audit-copy.docx",
-  "sha_file": "work/runtime/F5-085-GLOBAL-AUDIT-SHA256.txt",
-  "postflight_file": "work/runtime/F5-085-GLOBAL-AUDIT-POSTFLIGHT.txt",
+  "script": "work/apply_f5_086_094.py",
+  "output_docx": "artifacts/checkpoints/manuscript-working-f5-094.docx",
+  "sha_file": "work/runtime/F5-094-SHA256.txt",
+  "postflight_file": "work/runtime/F5-094-POSTFLIGHT.txt",
   "postflight_start": 0,
-  "postflight_end": 0,
-  "replay_file": "work/runtime/F5-085-GLOBAL-AUDIT-REPLAY.txt"
+  "postflight_end": 456,
+  "replay_file": "work/runtime/F5-094-REPLAY.txt"
 }
