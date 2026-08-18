@@ -2,7 +2,7 @@
 
 - Repository: `Centaurioun/kiraat-resm-mushaf-editorial-report`
 - Branch: `editorial/apply-fourth-fifth-reports`
-- Current branch HEAD / checkpoint basis: `8b1a0992f9e0378bf98983ef08298b26e97ac6d8` (metadata checkpoint commit follows this basis)
+- Current branch HEAD / checkpoint basis: `b6d07484749efb60e4edbead16c27c2d2f946618` (metadata checkpoint commit follows this basis)
 
 ## Source / reports
 - Source manuscript: `source/manuscript/current/redaktorden_gelen.docx`
@@ -15,14 +15,14 @@
 - Last fully completed Fourth Report item: `F4-116`
 - Next Fourth Report item: none — Fourth Report application complete
 - Fourth Report global validation: PASS
-- Last fully completed Fifth Report item: `F5-015`
-- Next Fifth Report item: `F5-016`
+- Last fully completed Fifth Report item: `F5-016`
+- Next Fifth Report item: `F5-017`
 
 ## Current working state
-- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-015.docx`
-- Current working DOCX SHA-256: `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`
-- Last known good commit basis: `8b1a0992f9e0378bf98983ef08298b26e97ac6d8`
-- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-015.docx`
+- Current working DOCX: `artifacts/checkpoints/manuscript-working-f5-016.docx`
+- Current working DOCX SHA-256: `cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da`
+- Last known good commit basis: `b6d07484749efb60e4edbead16c27c2d2f946618`
+- Last known good DOCX: `artifacts/checkpoints/manuscript-working-f5-016.docx`
 - Current body paragraph count: 674
 
 ## Integrity
@@ -32,19 +32,20 @@
 - Zotero: 465 item + 1 bibliography preserved
 - Bookmarks: 53/53; hyperlinks: 52
 - Arabic/RTL structural inventory: canonical-equal
-- Protected OOXML parts: F5-015 is a Fourth-precedence VERIFIED_NO_CHANGE item; manuscript-working-f5-015.docx is byte-identical to durable F5-014, so the complete OOXML package including RTL structures remains unchanged
+- Protected OOXML parts: F5-016 changes only word/document.xml body paragraph P45 text; FN14 identity/order, the P45 caution sentence, all other body paragraphs, fields, Zotero instructions, bookmarks, hyperlinks and RTL structural inventory remain preserved
 
 ## Structural-edit state
 - Fourth Report and prior Fifth items remain accepted.
-- F5-015 is VERIFIED_NO_CHANGE: accepted F4-011 already consolidates the 1.1 closing at P49; the locked Fifth negative target is absent and the scientifically richer Fourth synthesis remains intact.
-- Current DOCX is byte-identical to F5-014; SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`; body 674.
-- F5-016 remains PENDING; no F5-016+ text has been applied.
+- F5-016 is APPLIED: only P45 first two sentences were simplified to remove repetitive `Nitekim` rhythm while retaining the event as a rivâyet.
+- P45 caution sentence and genuine FN14 remain preserved; no other body paragraph changed.
+- Current DOCX SHA `cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da`; body 674; technical and 3/3 human visual QA PASS.
+- F5-017 remains PENDING; no F5-017+ text has been applied.
 
 ## Holds / validation
 - Open HOLD items: none.
 - Fourth Report global validation: **PASS** (`work/runtime/FOURTH-VALIDATE-FINAL.txt`).
-- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-015-REPLAY.txt`).
-- Latest Fifth item human visual QA: **NOT_REQUIRED_NO_BYTE_CHANGE** — deterministic output is byte-identical to the already validated input binary.
+- Latest Fifth item technical validation: **PASS** (`work/runtime/F5-016-REPLAY.txt`).
+- Latest Fifth item human visual QA: **PASS**, 3/3 pages inspected (`work/F5-016-VISUAL-QA.md`).
 
 ## Exact next action
-Fetch and apply only F5-016 against the durable F5-015 binary. Preserve Fourth scientific meaning and do not pre-apply F5-017+.
+Fetch and apply only F5-017 against the durable F5-016 binary. Preserve Fourth scientific meaning and do not pre-apply F5-018+.

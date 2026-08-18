@@ -653,3 +653,15 @@ Canonical source SHA-256 `d91161926853e0fd2e2204ba2d54277c2861f178f7f2d0415e76f2
 - Candidate `artifacts/checkpoints/manuscript-working-f5-015.docx` SHA `c99826db06c605f5950e682c82af6d5c6f481d0c43a3364d029daadabe51fc19`, exactly equal to durable F5-014; body 674 and structural/package invariants PASS.
 - Human visual QA is not required because no manuscript bytes changed.
 - Durable boundary after checkpoint: last F5-015; next F5-016.
+
+
+## F5-016 checkpoint — APPLIED / PASS
+- Locked F5-016 targeted the repeated `Nitekim` example opening in 1.1: `Tarihe dair eserlerde İslâm öncesi Mekke'de yazının kullanıldığına dair başka örneklere de rastlanmaktadır. Nitekim Hz. Peygamber'in dedelerinden Kusay b. Kilâb'ın (ö. 480) Mekke'nin yönetimiyle ilgili Huzâa ile Beni Bekr arasındaki mücadelede kendisine destek çıkması amacıyla anne bir kardeşi Razâh b. Rebîa'ya bir mektup yazıp gönderdiği rivâyet edilmektedir.`
+- Current durable F5-015 resolved that target uniquely at P45. No accepted Fourth item had rewritten this opening; F4-011 concerns the later P49 synthesis.
+- Only the first two P45 sentences were replaced with the Fifth positive form, normalized to manuscript typography: `Tarih kaynaklarında İslâm öncesi Mekke’de yazının kullanımına ilişkin başka örnekler de aktarılır. Kusay b. Kilâb’ın Razâh b. Rebîa’ya bir mektup gönderdiğine dair rivâyet bunlardan biridir.`
+- The following caution sentence `Bu rivâyet doğru kabul edildiğinde yazının miladi altıncı yüzyılın başlarında bilindiği söylenebilir.` remains unchanged. Genuine footnote reference 14 remains attached to P45 with identity/order preserved.
+- Deterministic replay: first replay `APPLIED P45`; second replay `ALREADY_SATISFIED P45`; byte-idempotency PASS (`work/runtime/F5-016-REPLAY.txt`). Only P45 changed in document.xml; package/integrity invariants PASS.
+- Candidate `artifacts/checkpoints/manuscript-working-f5-016.docx` SHA `cc3d906b77ae5325b6bcb9b5e458b1af30ef37191c5ee956455613161bd693da`; body 674.
+- SHA-locked bounded QA export run 32123704569 / artifact 9319511593 covered P43–P47. The exported slice rendered to 3 pages with `/home/oai/skills/docx/render_docx.py`; all 3/3 pages were manually inspected and PASS (`work/F5-016-VISUAL-QA.md`).
+- No clipping, overlap, abnormal whitespace, paragraph-style leakage, footnote overflow, missing text, or edit-induced pagination defect was observed.
+- Durable boundary after checkpoint: last F5-016; next F5-017.
