@@ -1,6 +1,6 @@
 {
   "checkpoint": "F5-002-AUTH-QA",
-  "revision": 1,
+  "revision": 2,
   "docx": "artifacts/checkpoints/manuscript-working-f5-002.docx",
   "sha256": "94de5908c68755855314954102dd946b6c3b594a200617caecedd9e6c5b7b3be",
   "start": 20,
